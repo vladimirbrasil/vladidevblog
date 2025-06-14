@@ -3,46 +3,46 @@
   "title": "Teste de Artigo",
   "author": "Vladimir Dietrich",
   "date": "2025-06-14",
-  "content": "<p>Um Artigo.</p>\n<p>Mais uma linha. Uma imagem aqui embaixo.</p>\n<p><figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-1.jpg\" alt=\"\" style=\"max-width: 100%; height: auto;\" /></figure></p>\n<p>Uma imagem aqui em cima.</p>\n<p>Uma linha vazia aqui embaixo.</p>\n<p>Uma linha vazia e <em>eu em itálico</em> aqui e <strong>eu em negrito</strong> em cima.</p>\n<h2>Um título 2</h2>\n<p>Texto aqui.</p>\n<h3>Um título 3</h3>\n<p>Texto aqui.</p>\n<p>Mais uma imagem abaixo.</p>\n<p><figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-2.jpg\" alt=\"\" style=\"max-width: 100%; height: auto;\" /></figure></p>\n<p>Mais uma imagem acima.</p>\n<p>Fim.</p>\n",
+  "content": "<p>Um Artigo.</p>\n<p>Mais uma linha. Uma imagem aqui embaixo.</p>\n<p><figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-1.jpg\" alt=\"\" style=\"max-width: 100%; height: auto;\" /></figure></p>\n<p>Uma imagem aqui em cima.</p>\n<p>Uma linha vazia aqui embaixo.</p>\n<p>Uma linha vazia e <em>eu em itálico</em> aqui e <strong>eu em negrito</strong> em cima.</p>\n<h2>Um título 2</h2>\n<p>Texto aqui.</p>\n<h3>Um título 3</h3>\n<p>Texto aqui.</p>\n<p>Mais uma imagem abaixo.</p>\n<p><figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-2.jpg\" alt=\"Teste de alt text no doc\" style=\"max-width: 100%; height: auto;\" /><figcaption>Teste de alt text no doc</figcaption></figure></p>\n<p>Mais uma imagem acima.</p>\n<p>Fim.</p>\n",
   "images": [
     {
       "fileName": "teste-de-artigo-image-0.jpg",
-      "driveUrl": "https://drive.google.com/thumbnail?id=1-qFkIrlF3BZNECthGgyVfu_G49o_jgwi&sz=w1000",
+      "driveUrl": "https://drive.google.com/thumbnail?id=17pDWp1NDocaOH_ZCdYtwC32BFnBZFy8W&sz=w1000",
       "githubPath": "images/teste-de-artigo-image-0.jpg",
       "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-0.jpg",
-      "fileId": "1-qFkIrlF3BZNECthGgyVfu_G49o_jgwi",
+      "fileId": "17pDWp1NDocaOH_ZCdYtwC32BFnBZFy8W",
       "altText": "",
       "caption": ""
     },
     {
       "fileName": "teste-de-artigo-image-1.jpg",
-      "driveUrl": "https://drive.google.com/thumbnail?id=1rSJsdcwmf78DpdPbp054KAs2Ee1CITU1&sz=w1000",
+      "driveUrl": "https://drive.google.com/thumbnail?id=1Ju-NpNwixf0gk-ht0H0odl-EixxisK9w&sz=w1000",
       "githubPath": "images/teste-de-artigo-image-1.jpg",
       "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-1.jpg",
-      "fileId": "1rSJsdcwmf78DpdPbp054KAs2Ee1CITU1",
+      "fileId": "1Ju-NpNwixf0gk-ht0H0odl-EixxisK9w",
       "altText": "",
       "caption": ""
     },
     {
       "fileName": "teste-de-artigo-image-2.jpg",
-      "driveUrl": "https://drive.google.com/thumbnail?id=1uLG29Q8e4XXtA1G1VV4Ramt2RSW6baJ6&sz=w1000",
+      "driveUrl": "https://drive.google.com/thumbnail?id=1MDf53DhYsTgnpNjNbz797vliwvClgLo1&sz=w1000",
       "githubPath": "images/teste-de-artigo-image-2.jpg",
       "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-2.jpg",
-      "fileId": "1uLG29Q8e4XXtA1G1VV4Ramt2RSW6baJ6",
-      "altText": "",
-      "caption": ""
+      "fileId": "1MDf53DhYsTgnpNjNbz797vliwvClgLo1",
+      "altText": "Teste de alt text no doc",
+      "caption": "Teste de alt text no doc"
     }
   ],
   "heroImage": {
     "fileName": "teste-de-artigo-image-0.jpg",
-    "driveUrl": "https://drive.google.com/thumbnail?id=1-qFkIrlF3BZNECthGgyVfu_G49o_jgwi&sz=w1000",
+    "driveUrl": "https://drive.google.com/thumbnail?id=17pDWp1NDocaOH_ZCdYtwC32BFnBZFy8W&sz=w1000",
     "githubPath": "images/teste-de-artigo-image-0.jpg",
     "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-0.jpg",
-    "fileId": "1-qFkIrlF3BZNECthGgyVfu_G49o_jgwi",
+    "fileId": "17pDWp1NDocaOH_ZCdYtwC32BFnBZFy8W",
     "altText": "",
     "caption": ""
   },
   "readingTime": 1,
   "wordCount": 55,
-  "lastUpdated": "2025-06-14T15:29:31.637Z"
+  "lastUpdated": "2025-06-14T15:32:52.703Z"
 }
