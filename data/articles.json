@@ -2,13 +2,21 @@
   "articles": [
     {
       "id": "teste-de-artigo",
-      "title": "teste-de-artigo",
+      "title": "Teste de Artigo",
       "author": "Vladimir Dietrich",
       "date": "2025-06-14",
       "readingTime": 1,
-      "heroImage": null,
-      "lastUpdated": "2025-06-14T17:22:52.508Z"
+      "heroImage": {
+        "fileName": "teste-de-artigo-image-0.jpg",
+        "driveUrl": "https://drive.google.com/thumbnail?id=1RmdLozI34xdW33xJUQPLLP8tQHAy745x&sz=w1000",
+        "githubPath": "images/teste-de-artigo-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-0.jpg",
+        "fileId": "1RmdLozI34xdW33xJUQPLLP8tQHAy745x",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-14T18:02:29.994Z"
     }
   ],
-  "lastUpdated": "2025-06-14T17:43:19.185Z"
+  "lastUpdated": "2025-06-14T18:02:36.398Z"
 }
