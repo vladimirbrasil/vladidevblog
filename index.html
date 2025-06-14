@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vladimir Bergier's Blog</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+    }
+
+    /* Header */
+    .header {
+      border-bottom: 1px solid #e6e6e6;
+      padding: 20px 0;
+      background: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .header-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: #666;
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+    }
+
+    /* Main Container */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Loading state */
+    .loading {
+      text-align: center;
+      padding: 60px 0;
+      color: #666;
+    }
+
+    /* Article List */
+    .article-list {
+      padding: 40px 0;
+    }
+
+    .article-item {
+      border-bottom: 1px solid #f0f0f0;
+      padding: 40px 0;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .article-item:hover {
+      transform: translateY(-2px);
+    }
+
+    .article-item:last-child {
+      border-bottom: none;
+    }
+
+    .article-date {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+
+    .article-title {
+      font-size: 28px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 12px;
+      color: #000;
+    }
+
+    .article-preview {
+      color: #666;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 16px;
+    }
+
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .author-name {
+      font-weight: 500;
+    }
+
+    /* Individual Article View */
+    .article-view {
+      display: none;
+      padding: 40px 0;
+    }
+
+    .article-header {
+      margin-bottom: 40px;
+      text-align: left;
+    }
+
+    .article-header h1 {
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .article-header .meta {
+      color: #666;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .back-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #666;
+      text-decoration: none;
+      margin-bottom: 30px;
+      font-size: 14px;
+      transition: color 0.2s;
+    }
+
+    .back-button:hover {
+      color: #000;
+    }
+
+    .article-content {
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
+    }
+
+    .article-content h1,
+    .article-content h2,
+    .article-content h3 {
+      margin: 40px 0 20px 0;
+      color: #000;
+      font-weight: 700;
+    }
+
+    .article-content h1 {
+      font-size: 32px;
+    }
+
+    .article-content h2 {
+      font-size: 28px;
+    }
+
+    .article-content h3 {
+      font-size: 24px;
+    }
+
+    .article-content p {
+      margin-bottom: 24px;
+    }
+
+    .article-content img {
+      max-width: 100%;
+      height: auto;
+      margin: 30px 0;
+      border-radius: 4px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .article-content strong {
+      font-weight: 700;
+    }
+
+    .article-content em {
+      font-style: italic;
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid #e6e6e6;
+      padding: 40px 0;
+      margin-top: 80px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header-content {
+        padding: 0 16px;
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .logo {
+        font-size: 24px;
+      }
+
+      .nav-links {
+        gap: 20px;
+      }
+
+      .article-title {
+        font-size: 24px;
+      }
+
+      .article-header h1 {
+        font-size: 32px;
+      }
+
+      .article-content {
+        font-size: 16px;
+      }
+    }
+
+    /* Error state */
+    .error {
+      text-align: center;
+      padding: 60px 0;
+      color: #666;
+    }
+
+    .error h2 {
+      color: #000;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="#" class="logo" onclick="showHome()">Vladimir Bergier</a>
+      <nav class="nav-links">
+        <a href="#" onclick="showHome()">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Loading State -->
+    <div id="loading" class="loading">
+      <p>Loading articles...</p>
+    </div>
+
+    <!-- Error State -->
+    <div id="error" class="error" style="display: none;">
+      <h2>Unable to load articles</h2>
+      <p>Please check the configuration and try again.</p>
+    </div>
+
+    <!-- Article List -->
+    <div id="article-list" class="article-list" style="display: none;">
+      <!-- Articles will be populated here -->
+    </div>
+
+    <!-- Individual Article View -->
+    <div id="article-view" class="article-view">
+      <a href="#" class="back-button" onclick="showHome()">
+        ← Back to all articles
+      </a>
+      <div id="article-content">
+        <!-- Individual article content will be populated here -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Vladimir Bergier. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Configuration - No configuration needed, data comes from same repository
+    let articles = [];
+    let currentView = 'home';
+
+    // Initialize the blog
+    document.addEventListener('DOMContentLoaded', function () {
+      loadArticles();
+
+      // Handle browser back/forward
+      window.addEventListener('popstate', function (event) {
+        if (event.state) {
+          if (event.state.view === 'home') {
+            showHome(false);
+          } else if (event.state.view === 'article') {
+            showArticle(event.state.articleId, false);
+          }
+        }
+      });
+    });
+
+    async function loadArticles() {
+      try {
+        showLoading();
+
+        // Load from the same repository's data folder
+        const response = await fetch('./data/articles.json');
+
+        if (!response.ok) {
+          throw new Error('Failed to load articles index');
+        }
+
+        const data = await response.json();
+        articles = data.articles || [];
+
+        displayArticleList();
+
+      } catch (error) {
+        console.error('Error loading articles:', error);
+        showError();
+      }
+    }
+
+    function displayArticleList() {
+      const listContainer = document.getElementById('article-list');
+
+      if (articles.length === 0) {
+        listContainer.innerHTML = '<div class="error"><h2>No articles found</h2><p>No articles have been published yet.</p></div>';
+        showElement('article-list');
+        return;
+      }
+
+      const articlesHtml = articles.map(article => {
+        const date = new Date(article.date).toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
+
+        return `
+                    <div class="article-item" onclick="showArticle('${article.id}')">
+                        <div class="article-date">${date}</div>
+                        <h2 class="article-title">${escapeHtml(article.title)}</h2>
+                        <div class="article-meta">
+                            <span class="author-name">${escapeHtml(article.author)}</span>
+                        </div>
+                    </div>
+                `;
+      }).join('');
+
+      listContainer.innerHTML = articlesHtml;
+      showElement('article-list');
+    }
+
+    async function showArticle(articleId, pushState = true) {
+      try {
+        showLoading();
+
+        // Load from the same repository's data folder
+        const response = await fetch(`./data/${articleId}.json`);
+
+        if (!response.ok) {
+          throw new Error('Failed to load article');
+        }
+
+        const article = await response.json();
+        displayArticle(article);
+
+        if (pushState) {
+          history.pushState(
+            { view: 'article', articleId: articleId },
+            article.title,
+            `#${articleId}`
+          );
+        }
+
+        currentView = 'article';
+
+      } catch (error) {
+        console.error('Error loading article:', error);
+        showError();
+      }
+    }
+
+    function displayArticle(article) {
+      const date = new Date(article.date).toLocaleDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      });
+
+      const articleHtml = `
+                <div class="article-header">
+                    <h1>${escapeHtml(article.title)}</h1>
+                    <div class="meta">
+                        <span class="author-name">${escapeHtml(article.author)}</span>
+                        <span>•</span>
+                        <span>${date}</span>
+                    </div>
+                </div>
+                <div class="article-content">
+                    ${article.content}
+                </div>
+            `;
+
+      document.getElementById('article-content').innerHTML = articleHtml;
+      showElement('article-view');
+
+      // Scroll to top
+      window.scrollTo(0, 0);
+    }
+
+    function showHome(pushState = true) {
+      showElement('article-list');
+
+      if (pushState) {
+        history.pushState({ view: 'home' }, 'Blog', '/');
+      }
+
+      currentView = 'home';
+
+      // Update page title
+      document.title = "Vladimir Bergier's Blog";
+    }
+
+    function showLoading() {
+      hideAllViews();
+      document.getElementById('loading').style.display = 'block';
+    }
+
+    function showError() {
+      hideAllViews();
+      document.getElementById('error').style.display = 'block';
+    }
+
+    function showElement(elementId) {
+      hideAllViews();
+      document.getElementById(elementId).style.display = 'block';
+    }
+
+    function hideAllViews() {
+      document.getElementById('loading').style.display = 'none';
+      document.getElementById('error').style.display = 'none';
+      document.getElementById('article-list').style.display = 'none';
+      document.getElementById('article-view').style.display = 'none';
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // Handle initial URL
+    window.addEventListener('load', function () {
+      const hash = window.location.hash.slice(1);
+      if (hash && articles.length > 0) {
+        const article = articles.find(a => a.id === hash);
+        if (article) {
+          showArticle(hash, false);
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>
