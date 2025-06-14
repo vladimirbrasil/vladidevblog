@@ -1,45 +1,13 @@
 {
   "id": "teste-de-artigo",
-  "title": "Teste de Artigo",
+  "title": "teste-de-artigo",
   "author": "Vladimir Dietrich",
   "date": "2025-06-14",
-  "content": "<p>Um Artigo.</p>\n<p>Mais uma linha. Uma imagem aqui embaixo.</p>\n<p><figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-1.jpg\" alt=\"\" style=\"max-width: 100%; height: auto;\" /></figure></p>\n<p>Uma imagem aqui em cima.</p>\n<p>Uma linha vazia aqui embaixo.</p>\n<p>Uma linha vazia e <em>eu em itálico</em> aqui e <strong>eu em negrito</strong> em cima.</p>\n<h2>Um título 2</h2>\n<p>Texto aqui.</p>\n<h3>Um título 3</h3>\n<p>Texto aqui.</p>\n<p>Mais uma imagem abaixo.</p>\n<p><figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-2.jpg\" alt=\"Teste de alt text no doc\" style=\"max-width: 100%; height: auto;\" /><figcaption>Teste de alt text no doc</figcaption></figure></p>\n<p>Mais uma imagem acima.</p>\n<p>Fim.</p>\n",
-  "images": [
-    {
-      "fileName": "teste-de-artigo-image-0.jpg",
-      "githubPath": "images/teste-de-artigo-image-0.jpg",
-      "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-0.jpg",
-      "fileId": "1u6-xM87XT9zsxHk6ywoN3qL7DuBfWyGB",
-      "altText": "",
-      "caption": ""
-    },
-    {
-      "fileName": "teste-de-artigo-image-1.jpg",
-      "githubPath": "images/teste-de-artigo-image-1.jpg",
-      "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-1.jpg",
-      "fileId": "1q0JkqVZHWwsNDnzeGChA2aU31u9Bfv58",
-      "altText": "",
-      "caption": ""
-    },
-    {
-      "fileName": "teste-de-artigo-image-2.jpg",
-      "githubPath": "images/teste-de-artigo-image-2.jpg",
-      "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-2.jpg",
-      "fileId": "1IVOMkbaI9goNldcTeQQxYU4It_urcvlY",
-      "altText": "Teste de alt text no doc",
-      "caption": "Teste de alt text no doc"
-    }
-  ],
-  "heroImage": {
-    "fileName": "teste-de-artigo-image-0.jpg",
-    "githubPath": "images/teste-de-artigo-image-0.jpg",
-    "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-0.jpg",
-    "fileId": "1u6-xM87XT9zsxHk6ywoN3qL7DuBfWyGB",
-    "altText": "",
-    "caption": ""
-  },
+  "content": "<p>\nTeste de Artigo\nUm Artigo.\nMais uma linha. Uma imagem aqui embaixo.\n\nUma imagem aqui em cima.\nUma linha vazia aqui embaixo.\n\nUma linha vazia modificada e eu em itálico aqui e eu em negrito em cima.\nUm título 2\nTexto aqui.\nUm título 3\nTexto aqui.\nMais uma imagem abaixo.\n\nMais uma imagem acima.\nFim.</p>",
+  "images": [],
+  "heroImage": null,
   "readingTime": 1,
-  "wordCount": 55,
-  "lastUpdated": "2025-06-14T16:36:04.295Z",
-  "contentHash": "69b05d5109e4da0649c292a16da6a1d0"
+  "wordCount": 57,
+  "lastUpdated": "2025-06-14T16:50:45.326Z",
+  "contentHash": "afbd213139dd5554f7c3bde8d417d4a3"
 }
