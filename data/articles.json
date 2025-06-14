@@ -5,8 +5,18 @@
       "title": "Teste de Artigo",
       "author": "Vladimir Dietrich",
       "date": "2025-06-14",
-      "lastUpdated": "2025-06-14T07:06:36.078Z"
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "teste-de-artigo-image-0.jpg",
+        "driveUrl": "https://drive.google.com/thumbnail?id=1-qFkIrlF3BZNECthGgyVfu_G49o_jgwi&sz=w1000",
+        "githubPath": "images/teste-de-artigo-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-0.jpg",
+        "fileId": "1-qFkIrlF3BZNECthGgyVfu_G49o_jgwi",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-14T15:29:31.637Z"
     }
   ],
-  "lastUpdated": "2025-06-14T07:06:40.205Z"
+  "lastUpdated": "2025-06-14T15:29:35.459Z"
 }
