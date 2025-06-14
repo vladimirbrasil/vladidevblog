@@ -7,42 +7,42 @@
   "images": [
     {
       "fileName": "teste-de-artigo-image-0.jpg",
-      "driveUrl": "https://drive.google.com/thumbnail?id=1IM3kxdhrbkOPQEYGUOPzQKzQQ1a14VcT&sz=w1000",
+      "driveUrl": "https://drive.google.com/thumbnail?id=1-qFkIrlF3BZNECthGgyVfu_G49o_jgwi&sz=w1000",
       "githubPath": "images/teste-de-artigo-image-0.jpg",
       "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-0.jpg",
-      "fileId": "1IM3kxdhrbkOPQEYGUOPzQKzQQ1a14VcT",
+      "fileId": "1-qFkIrlF3BZNECthGgyVfu_G49o_jgwi",
       "altText": "",
       "caption": ""
     },
     {
       "fileName": "teste-de-artigo-image-1.jpg",
-      "driveUrl": "https://drive.google.com/thumbnail?id=1r-08f3ivgWb43xwsDrNKxpdk5aMBg0O-&sz=w1000",
+      "driveUrl": "https://drive.google.com/thumbnail?id=1rSJsdcwmf78DpdPbp054KAs2Ee1CITU1&sz=w1000",
       "githubPath": "images/teste-de-artigo-image-1.jpg",
       "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-1.jpg",
-      "fileId": "1r-08f3ivgWb43xwsDrNKxpdk5aMBg0O-",
+      "fileId": "1rSJsdcwmf78DpdPbp054KAs2Ee1CITU1",
       "altText": "",
       "caption": ""
     },
     {
       "fileName": "teste-de-artigo-image-2.jpg",
-      "driveUrl": "https://drive.google.com/thumbnail?id=1YPawR2cTcJkL7MwgivtcDXipkJENnzsI&sz=w1000",
+      "driveUrl": "https://drive.google.com/thumbnail?id=1uLG29Q8e4XXtA1G1VV4Ramt2RSW6baJ6&sz=w1000",
       "githubPath": "images/teste-de-artigo-image-2.jpg",
       "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-2.jpg",
-      "fileId": "1YPawR2cTcJkL7MwgivtcDXipkJENnzsI",
+      "fileId": "1uLG29Q8e4XXtA1G1VV4Ramt2RSW6baJ6",
       "altText": "",
       "caption": ""
     }
   ],
   "heroImage": {
     "fileName": "teste-de-artigo-image-0.jpg",
-    "driveUrl": "https://drive.google.com/thumbnail?id=1IM3kxdhrbkOPQEYGUOPzQKzQQ1a14VcT&sz=w1000",
+    "driveUrl": "https://drive.google.com/thumbnail?id=1-qFkIrlF3BZNECthGgyVfu_G49o_jgwi&sz=w1000",
     "githubPath": "images/teste-de-artigo-image-0.jpg",
     "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-artigo-image-0.jpg",
-    "fileId": "1IM3kxdhrbkOPQEYGUOPzQKzQQ1a14VcT",
+    "fileId": "1-qFkIrlF3BZNECthGgyVfu_G49o_jgwi",
     "altText": "",
     "caption": ""
   },
   "readingTime": 1,
   "wordCount": 55,
-  "lastUpdated": "2025-06-14T15:17:23.592Z"
+  "lastUpdated": "2025-06-14T15:29:31.637Z"
 }
