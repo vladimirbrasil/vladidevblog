@@ -3,7 +3,18 @@
   "title": "Teste de Artigo",
   "author": "Vladimir Dietrich",
   "date": "2025-06-14",
-  "content": "<h1>Teste de Artigo</h1>\n<p>Um Artigo.</p>\n<p>Mais uma linha. Uma imagem aqui embaixo.</p>\n<p>Uma imagem aqui em cima.</p>\n<p>Uma linha vazia aqui embaixo.</p>\n<p>Uma linha vazia aqui em cima.</p>\n<h2>Um t?tulo 2</h2>\n<p>Texto aqui.</p>\n<h3>Um t?tulo 3</h3>\n<p>Texto aqui.</p>\n<p>Mais uma imagem abaixo.</p>\n<p>Mais uma imagem acima.</p>\n<p>Fim.</p>\n",
-  "images": [],
-  "lastUpdated": "2025-06-14T03:33:20.308Z"
+  "content": "<h1>Teste de Artigo</h1>\n<p>Um Artigo.</p>\n<p>Mais uma linha. Uma imagem aqui embaixo.</p>\n<p><img src=\"https://drive.google.com/uc?id=1NT6KFNK8UHo0ymUIawbHf3xrmTT62CvZ\" alt=\"Imagem do artigo\" style=\"max-width: 100%; height: auto;\" /></p>\n<p>Uma imagem aqui em cima.</p>\n<p>Uma linha vazia aqui embaixo.</p>\n<p>Uma linha vazia aqui em cima.</p>\n<h2>Um título 2</h2>\n<p>Texto aqui.</p>\n<h3>Um título 3</h3>\n<p>Texto aqui.</p>\n<p>Mais uma imagem abaixo.</p>\n<p><img src=\"https://drive.google.com/uc?id=1xRa6OyMKrRkl4WqHnFY_cf3t3PN0tMb7\" alt=\"Imagem do artigo\" style=\"max-width: 100%; height: auto;\" /></p>\n<p>Mais uma imagem acima.</p>\n<p>Fim.</p>\n",
+  "images": [
+    {
+      "fileName": "teste-de-artigo-image-0.jpg",
+      "driveUrl": "https://drive.google.com/uc?id=1NT6KFNK8UHo0ymUIawbHf3xrmTT62CvZ",
+      "githubPath": "images/teste-de-artigo-image-0.jpg"
+    },
+    {
+      "fileName": "teste-de-artigo-image-1.jpg",
+      "driveUrl": "https://drive.google.com/uc?id=1xRa6OyMKrRkl4WqHnFY_cf3t3PN0tMb7",
+      "githubPath": "images/teste-de-artigo-image-1.jpg"
+    }
+  ],
+  "lastUpdated": "2025-06-14T03:54:46.314Z"
 }
