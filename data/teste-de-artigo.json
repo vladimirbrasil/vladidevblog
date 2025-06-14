@@ -3,11 +3,11 @@
   "title": "teste-de-artigo",
   "author": "Vladimir Dietrich",
   "date": "2025-06-14",
-  "content": "<p>\nTeste de Artigo\nUm Artigo.\nMais uma linha. Uma imagem aqui embaixo.\n\nUma imagem aqui em cima.\nUma linha vazia aqui embaixo.\n\nUma linha vazia modificada e eu em itálico aqui e eu em negrito em cima.\nUm título 2\nTexto aqui.\nUm título 3\nTexto aqui.\nMais uma imagem abaixo.\n\nMais uma imagem acima.\nFim.</p>",
+  "content": "<p>\nTeste de Artigo\nUm Artigo.\nMais uma linha. Uma imagem aqui embaixo.\n\nUma imagem aqui em cima.\nUma linha vazia aqui embaixo.\n\nUma linha vazia e eu em itálico aqui e eu em negrito em cima.\nUm título 2\nTexto aqui.\nUm título 3\nTexto aqui.\nMais uma imagem abaixo.\n\nMais uma imagem acima.\nFim.</p>",
   "images": [],
   "heroImage": null,
   "readingTime": 1,
-  "wordCount": 57,
-  "lastUpdated": "2025-06-14T16:50:45.326Z",
-  "contentHash": "afbd213139dd5554f7c3bde8d417d4a3"
+  "wordCount": 56,
+  "lastUpdated": "2025-06-14T17:20:41.496Z",
+  "contentHash": "69b05d5109e4da0649c292a16da6a1d0"
 }
