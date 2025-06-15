@@ -7,6 +7,8 @@ Add a google doc to [VladiDevBlogPosts folder](https://drive.google.com/drive/u/
 ### Hero Image
 
 Uma imagem no topo, antes de qualquer texto, adiciona uma hero image.
+Se não tiver imagem no topo, cria uma usando gemini api e adiciona no topo.
+Porém, é melhor criar manualmente usando gemini "criar imagem" prompt. Aí adiciona no topo do google doc.
 
 ### Legenda na imagem
 
