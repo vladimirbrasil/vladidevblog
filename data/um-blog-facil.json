@@ -7,25 +7,25 @@
   "images": [
     {
       "fileName": "um-blog-facil-image-0.png",
-      "driveUrl": "https://drive.google.com/thumbnail?id=1uW7Qp4_SEMuuUcl5q98fYCBu_e4LsjPR&sz=w1000",
+      "driveUrl": "https://drive.google.com/thumbnail?id=1kk75XhVQQJ-ah0Ywi0z2GXLZCoVKAIdI&sz=w1000",
       "githubPath": "images/um-blog-facil-image-0.png",
       "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
-      "fileId": "1uW7Qp4_SEMuuUcl5q98fYCBu_e4LsjPR",
+      "fileId": "1kk75XhVQQJ-ah0Ywi0z2GXLZCoVKAIdI",
       "altText": "Hero image for Um Blog Fácil",
       "caption": "Hero image for Um Blog Fácil"
     }
   ],
   "heroImage": {
     "fileName": "um-blog-facil-image-0.png",
-    "driveUrl": "https://drive.google.com/thumbnail?id=1uW7Qp4_SEMuuUcl5q98fYCBu_e4LsjPR&sz=w1000",
+    "driveUrl": "https://drive.google.com/thumbnail?id=1kk75XhVQQJ-ah0Ywi0z2GXLZCoVKAIdI&sz=w1000",
     "githubPath": "images/um-blog-facil-image-0.png",
     "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
-    "fileId": "1uW7Qp4_SEMuuUcl5q98fYCBu_e4LsjPR",
+    "fileId": "1kk75XhVQQJ-ah0Ywi0z2GXLZCoVKAIdI",
     "altText": "Hero image for Um Blog Fácil",
     "caption": "Hero image for Um Blog Fácil"
   },
   "readingTime": 2,
   "wordCount": 364,
-  "lastUpdated": "2025-06-15T18:36:47.123Z",
-  "contentHash": "ff9f6f9b4a8cbb4c969758385b27a948"
+  "lastUpdated": "2025-06-15T22:07:18.623Z",
+  "contentHash": "21c36af9acae85a4fea6078044a2af1f"
 }
