@@ -1,6 +1,23 @@
 {
   "articles": [
     {
+      "id": "promocao-especial-para-ti",
+      "title": "Promoção especial para ti",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-15",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "promocao-especial-para-ti-image-0.png",
+        "driveUrl": "https://drive.google.com/thumbnail?id=1JL8XAKjkuJSRiexdPbiBNzCR74JRWiGy&sz=w1000",
+        "githubPath": "images/promocao-especial-para-ti-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/promocao-especial-para-ti-image-0.png",
+        "fileId": "1JL8XAKjkuJSRiexdPbiBNzCR74JRWiGy",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-15T01:53:11.107Z"
+    },
+    {
       "id": "teste-de-artigo",
       "title": "Teste de Artigo",
       "author": "Vladimir Dietrich",
@@ -18,5 +35,5 @@
       "lastUpdated": "2025-06-14T18:02:36.396Z"
     }
   ],
-  "lastUpdated": "2025-06-14T18:04:58.463Z"
+  "lastUpdated": "2025-06-15T01:53:15.341Z"
 }
