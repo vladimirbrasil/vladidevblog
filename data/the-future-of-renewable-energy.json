@@ -3,19 +3,29 @@
   "title": "The Future of Renewable Energy",
   "author": "Vladimir Dietrich",
   "date": "2025-06-15",
-  "content": "<p>A deep dive into the advancements in fusion power, and how they are shaping the future of our planet. We will explore the latest technologies, economic impacts, and the push towards a sustainable energy grid.</p>\n",
-  "images": [],
+  "content": "<p></p>\n<p>A deep dive into the advancements in fusion power, and how they are shaping the future of our planet. We will explore the latest technologies, economic impacts, and the push towards a sustainable energy grid.</p>\n",
+  "images": [
+    {
+      "fileName": "the-future-of-renewable-energy-image-0.png",
+      "driveUrl": "https://drive.google.com/thumbnail?id=1d8S5mLFSNOBEEMglTWMYoj53m40zPyPg&sz=w1000",
+      "githubPath": "images/the-future-of-renewable-energy-image-0.png",
+      "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/the-future-of-renewable-energy-image-0.png",
+      "fileId": "1d8S5mLFSNOBEEMglTWMYoj53m40zPyPg",
+      "altText": "Hero image for The Future of Renewable Energy",
+      "caption": "Hero image for The Future of Renewable Energy"
+    }
+  ],
   "heroImage": {
     "fileName": "the-future-of-renewable-energy-image-0.png",
-    "driveUrl": "https://drive.google.com/thumbnail?id=1G9gUln1lwgqXS8ESjm_TJw8xeeOK1P_A&sz=w1000",
+    "driveUrl": "https://drive.google.com/thumbnail?id=1d8S5mLFSNOBEEMglTWMYoj53m40zPyPg&sz=w1000",
     "githubPath": "images/the-future-of-renewable-energy-image-0.png",
     "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/the-future-of-renewable-energy-image-0.png",
-    "fileId": "1G9gUln1lwgqXS8ESjm_TJw8xeeOK1P_A",
-    "altText": "",
-    "caption": ""
+    "fileId": "1d8S5mLFSNOBEEMglTWMYoj53m40zPyPg",
+    "altText": "Hero image for The Future of Renewable Energy",
+    "caption": "Hero image for The Future of Renewable Energy"
   },
   "readingTime": 1,
   "wordCount": 40,
-  "lastUpdated": "2025-06-15T16:03:26.075Z",
-  "contentHash": "71a7b8777e702c5b3972e1a17ab15b4c"
+  "lastUpdated": "2025-06-15T16:07:18.198Z",
+  "contentHash": "05f948c753944b2a4e49c196c0b47da0"
 }
