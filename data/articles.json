@@ -16,7 +16,24 @@
         "caption": ""
       },
       "lastUpdated": "2025-06-15T15:54:56.321Z"
+    },
+    {
+      "id": "um-blog-facil",
+      "title": "Um Blog Fácil",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-15",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "um-blog-facil-image-0.png",
+        "driveUrl": "https://drive.google.com/thumbnail?id=1Y92x2kWIU_dQpB5GOXb4InXRFFHogXV1&sz=w1000",
+        "githubPath": "images/um-blog-facil-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
+        "fileId": "1Y92x2kWIU_dQpB5GOXb4InXRFFHogXV1",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-15T18:08:35.927Z"
     }
   ],
-  "lastUpdated": "2025-06-15T16:09:11.208Z"
+  "lastUpdated": "2025-06-15T18:08:43.648Z"
 }
