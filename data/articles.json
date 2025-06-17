@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "promocao-especial-para-ti",
+      "title": "Promoção especial para ti",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-15",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "promocao-especial-para-ti-image-0.jpg",
+        "githubPath": "images/promocao-especial-para-ti-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/promocao-especial-para-ti-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-17T02:32:58.107Z"
+    },
+    {
       "id": "um-blog-facil",
       "title": "Um Blog Fácil",
       "author": "Vladimir Dietrich",
@@ -14,22 +29,7 @@
         "caption": ""
       },
       "lastUpdated": "2025-06-17T02:29:30.826Z"
-    },
-    {
-      "id": "a-inteligencia-artificial-vai-te-amar-melhor-que-um-humano",
-      "title": "A Inteligência Artificial Vai Te Amar Melhor Que um Humano?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-15",
-      "readingTime": 1,
-      "heroImage": {
-        "fileName": "promocao-especial-para-ti-image-0.jpg",
-        "githubPath": "images/promocao-especial-para-ti-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/promocao-especial-para-ti-image-0.jpg",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-17T02:31:06.437Z"
     }
   ],
-  "lastUpdated": "2025-06-17T02:31:06.478Z"
+  "lastUpdated": "2025-06-17T02:33:00.039Z"
 }
