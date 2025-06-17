@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "augusto-nunes-o-mestre-da-lingua-portuguesa-em-acao",
+      "title": "Augusto Nunes: O Mestre da Língua Portuguesa em Ação",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-17",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "augusto-nunes-o-mestre-da-lingua-portuguesa-em-acao-image-hero.png",
+        "githubPath": "images/augusto-nunes-o-mestre-da-lingua-portuguesa-em-acao-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/augusto-nunes-o-mestre-da-lingua-portuguesa-em-acao-image-hero.png",
+        "altText": "Hero image",
+        "caption": "Hero image"
+      },
+      "lastUpdated": "2025-06-17T15:51:36.132Z"
+    },
+    {
       "id": "promocao-especial-para-ti",
       "title": "Promoção especial para ti",
       "author": "Vladimir Dietrich",
@@ -31,5 +46,5 @@
       "lastUpdated": "2025-06-17T02:41:07.235Z"
     }
   ],
-  "lastUpdated": "2025-06-17T02:41:07.253Z"
+  "lastUpdated": "2025-06-17T15:51:39.513Z"
 }
