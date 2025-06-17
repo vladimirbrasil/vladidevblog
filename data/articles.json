@@ -1,19 +1,19 @@
 {
   "articles": [
     {
-      "id": "blog-simples-do-google-docs-ao-seu-subdominio",
-      "title": "Blog Simples: Do Google Docs ao seu Subdomínio",
+      "id": "um-blog-facil",
+      "title": "Um Blog Fácil",
       "author": "Vladimir Dietrich",
       "date": "2025-06-15",
       "readingTime": 2,
       "heroImage": {
-        "fileName": "blog-simples-do-google-docs-ao-seu-subdominio-image-0.png",
-        "githubPath": "images/blog-simples-do-google-docs-ao-seu-subdominio-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/blog-simples-do-google-docs-ao-seu-subdominio-image-0.png",
+        "fileName": "um-blog-facil-image-0.png",
+        "githubPath": "images/um-blog-facil-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-17T02:13:53.344Z"
+      "lastUpdated": "2025-06-17T02:29:30.826Z"
     },
     {
       "id": "a-inteligencia-artificial-vai-te-amar-melhor-que-um-humano",
@@ -22,14 +22,14 @@
       "date": "2025-06-15",
       "readingTime": 1,
       "heroImage": {
-        "fileName": "a-inteligencia-artificial-vai-te-amar-melhor-que-um-humano-image-0.jpg",
-        "githubPath": "images/a-inteligencia-artificial-vai-te-amar-melhor-que-um-humano-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-inteligencia-artificial-vai-te-amar-melhor-que-um-humano-image-0.jpg",
+        "fileName": "promocao-especial-para-ti-image-0.jpg",
+        "githubPath": "images/promocao-especial-para-ti-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/promocao-especial-para-ti-image-0.jpg",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-17T02:14:00.521Z"
+      "lastUpdated": "2025-06-17T02:29:38.122Z"
     }
   ],
-  "lastUpdated": "2025-06-17T02:14:00.529Z"
+  "lastUpdated": "2025-06-17T02:29:38.128Z"
 }
