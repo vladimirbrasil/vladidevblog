@@ -1,19 +1,19 @@
 {
   "articles": [
     {
-      "id": "documento-sem-nome",
-      "title": "Documento sem nome",
+      "id": "aposentadoria-da-razao",
+      "title": "Aposentadoria da Razão",
       "author": "Vladimir Dietrich",
       "date": "2025-06-21",
-      "readingTime": 1,
+      "readingTime": 2,
       "heroImage": {
-        "fileName": "documento-sem-nome-image-hero.png",
-        "githubPath": "images/documento-sem-nome-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/documento-sem-nome-image-hero.png",
+        "fileName": "aposentadoria-da-razao-image-0.jpg",
+        "githubPath": "images/aposentadoria-da-razao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-22T07:38:41.903Z"
+      "lastUpdated": "2025-06-23T02:32:33.172Z"
     },
     {
       "id": "promocao-especial-para-ti",
@@ -46,5 +46,5 @@
       "lastUpdated": "2025-06-17T02:41:07.235Z"
     }
   ],
-  "lastUpdated": "2025-06-22T07:38:47.194Z"
+  "lastUpdated": "2025-06-23T02:32:36.682Z"
 }
