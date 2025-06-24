@@ -2,7 +2,7 @@
   "articles": [
     {
       "id": "teste-de-blog-em-mais-idiomas",
-      "title": "Teste de Blog em Mais Idiomas",
+      "title": "Blog Test in More Languages",
       "author": "Vladimir Dietrich",
       "date": "2025-06-24",
       "readingTime": 1,
@@ -13,8 +13,8 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-24T02:26:21.076Z"
+      "lastUpdated": "2025-06-24T02:38:56.578Z"
     }
   ],
-  "lastUpdated": "2025-06-24T02:26:37.807Z"
+  "lastUpdated": "2025-06-24T02:39:14.847Z"
 }
