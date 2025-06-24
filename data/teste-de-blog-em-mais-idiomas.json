@@ -11,9 +11,9 @@
     "altText": "",
     "caption": ""
   },
-  "lastUpdated": "2025-06-24T02:38:56.578Z",
+  "lastUpdated": "2025-06-24T02:49:52.275Z",
   "wordCount": 57,
-  "content": "<p>  </p>\n<p>Este texto possui mais idiomas além do português. Uma imagem abaixo não perderá sua localização após a tradução.</p>\n<figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-blog-em-mais-idiomas-image-0.jpg\" alt=\"\" /></figure>\n<p>A imagem (acima) segue no local correto, mesmo após a tradução automática.</p>\n<p>Excelente tradução!</p>\n<h2>Títulos serão mantidos?</h2>\n<p>Os <a href=\"https://google.com\" target=\"_blank\" rel=\"noopener noreferrer\">links</a> se mantêm? E os <em>itálicos</em>? E os <strong>negritos</strong>?</p>\n<figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-blog-em-mais-idiomas-image-0.png\" alt=\"\" /></figure>\n<p>Obrigado pelo teste!</p>\n",
+  "content": "<p>  </p>\n<p>Este texto possui mais idiomas além do português. Uma imagem abaixo não perderá sua localização após a tradução…</p>\n<figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-blog-em-mais-idiomas-image-0.jpg\" alt=\"\" /></figure>\n<p>A imagem (acima) segue no local correto, mesmo após a tradução automática.</p>\n<p>Excelente tradução!</p>\n<h2>Títulos serão mantidos?</h2>\n<p>Os <a href=\"https://google.com\" target=\"_blank\" rel=\"noopener noreferrer\">links</a> se mantêm? E os <em>itálicos</em>? E os <strong>negritos</strong>?</p>\n<figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-blog-em-mais-idiomas-image-0.png\" alt=\"\" /></figure>\n<p>Obrigado pelo teste!</p>\n",
   "images": [
     {
       "fileName": "teste-de-blog-em-mais-idiomas-image-0.jpg",
@@ -30,5 +30,5 @@
       "caption": ""
     }
   ],
-  "contentHash": "5537d809c56e781aef57372"
+  "contentHash": "69391d6cb12fc769b1116c7bb"
 }
