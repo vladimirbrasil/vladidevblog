@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "outro-teste-de-blog",
+      "title": "Another Blog Test",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-24",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "outro-teste-de-blog-image-0.png",
+        "githubPath": "images/outro-teste-de-blog-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/outro-teste-de-blog-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-24T03:31:51.085Z"
+    },
+    {
       "id": "teste-de-blog-em-mais-idiomas",
       "title": "Blog Test in More Languages",
       "author": "Vladimir Dietrich",
@@ -13,8 +28,8 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-24T03:23:15.577Z"
+      "lastUpdated": "2025-06-24T03:31:55.930Z"
     }
   ],
-  "lastUpdated": "2025-06-24T03:23:25.680Z"
+  "lastUpdated": "2025-06-24T03:32:06.547Z"
 }
