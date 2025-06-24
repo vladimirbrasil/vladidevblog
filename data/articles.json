@@ -1,21 +1,6 @@
 {
   "articles": [
     {
-      "id": "outro-teste-de-blog",
-      "title": "Outro Teste de Blog",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-24",
-      "readingTime": 1,
-      "heroImage": {
-        "fileName": "outro-teste-de-blog-image-0.png",
-        "githubPath": "images/outro-teste-de-blog-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/outro-teste-de-blog-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-24T03:31:51.085Z"
-    },
-    {
       "id": "aposentadoria-da-razao",
       "title": "Aposentadoria da Razão",
       "author": "Vladimir Dietrich",
@@ -61,5 +46,5 @@
       "lastUpdated": "2025-06-17T02:41:07.235Z"
     }
   ],
-  "lastUpdated": "2025-06-24T03:33:24.735Z"
+  "lastUpdated": "2025-06-24T03:35:46.931Z"
 }
