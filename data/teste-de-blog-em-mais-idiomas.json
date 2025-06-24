@@ -1,0 +1,34 @@
+{
+  "id": "teste-de-blog-em-mais-idiomas",
+  "title": "Teste de Blog em Mais Idiomas",
+  "author": "Vladimir Dietrich",
+  "date": "2025-06-24",
+  "readingTime": 1,
+  "heroImage": {
+    "fileName": "teste-de-blog-em-mais-idiomas-image-0.png",
+    "githubPath": "images/teste-de-blog-em-mais-idiomas-image-0.png",
+    "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-blog-em-mais-idiomas-image-0.png",
+    "altText": "",
+    "caption": ""
+  },
+  "lastUpdated": "2025-06-24T03:23:15.577Z",
+  "wordCount": 57,
+  "content": "<p>  </p>\n<p>Este texto possui mais idiomas além do português. Uma imagem abaixo não perderá sua localização após a tradução.</p>\n<figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-blog-em-mais-idiomas-image-0.jpg\" alt=\"\" /></figure>\n<p>A imagem (acima) segue no local correto, mesmo após a tradução automática.</p>\n<p>Excelente tradução!</p>\n<h2>Títulos serão mantidos?</h2>\n<p>Os <a href=\"https://google.com\" target=\"_blank\" rel=\"noopener noreferrer\">links</a> se mantêm? E os <em>itálicos</em>? E os <strong>negritos</strong>?</p>\n<figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-blog-em-mais-idiomas-image-0.png\" alt=\"\" /></figure>\n<p>Obrigado pelo teste!</p>\n",
+  "images": [
+    {
+      "fileName": "teste-de-blog-em-mais-idiomas-image-0.jpg",
+      "githubPath": "images/teste-de-blog-em-mais-idiomas-image-0.jpg",
+      "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-blog-em-mais-idiomas-image-0.jpg",
+      "altText": "",
+      "caption": ""
+    },
+    {
+      "fileName": "teste-de-blog-em-mais-idiomas-image-0.png",
+      "githubPath": "images/teste-de-blog-em-mais-idiomas-image-0.png",
+      "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-blog-em-mais-idiomas-image-0.png",
+      "altText": "",
+      "caption": ""
+    }
+  ],
+  "contentHash": "5537d809c56e781aef57372"
+}
