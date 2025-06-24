@@ -1,20 +1,4 @@
 {
-  "articles": [
-    {
-      "id": "teste-de-blog-em-mais-idiomas",
-      "title": "Test de blogue dans plus de langues",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-24",
-      "readingTime": 1,
-      "heroImage": {
-        "fileName": "teste-de-blog-em-mais-idiomas-image-0.png",
-        "githubPath": "images/teste-de-blog-em-mais-idiomas-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/teste-de-blog-em-mais-idiomas-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-24T03:42:11.055Z"
-    }
-  ],
-  "lastUpdated": "2025-06-24T03:42:22.161Z"
+  "articles": [],
+  "lastUpdated": "2025-06-24T03:43:35.374Z"
 }
