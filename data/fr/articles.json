@@ -1,4 +1,20 @@
 {
-  "articles": [],
-  "lastUpdated": "2025-06-24T03:43:35.374Z"
+  "articles": [
+    {
+      "id": "aposentadoria-da-razao",
+      "title": "Retraite de la Raison",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-24",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "aposentadoria-da-razao-image-0.jpg",
+        "githubPath": "images/aposentadoria-da-razao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-24T07:38:33.462Z"
+    }
+  ],
+  "lastUpdated": "2025-06-24T07:38:48.959Z"
 }
