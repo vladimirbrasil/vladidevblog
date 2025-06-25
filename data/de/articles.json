@@ -2,7 +2,7 @@
   "articles": [
     {
       "id": "um-blog-facil",
-      "title": "Un Blog Fácil",
+      "title": "Ein einfacher Blog",
       "author": "Vladimir Dietrich",
       "date": "2025-06-15",
       "readingTime": 2,
@@ -16,5 +16,5 @@
       "lastUpdated": "2025-06-25T07:38:48.926Z"
     }
   ],
-  "lastUpdated": "2025-06-25T07:39:14.426Z"
+  "lastUpdated": "2025-06-25T07:39:14.495Z"
 }

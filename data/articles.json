@@ -16,6 +16,21 @@
       "lastUpdated": "2025-06-24T07:38:33.462Z"
     },
     {
+      "id": "um-blog-facil",
+      "title": "Um Blog Fácil",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-15",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "um-blog-facil-image-0.png",
+        "githubPath": "images/um-blog-facil-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-25T07:38:48.926Z"
+    },
+    {
       "id": "promocao-especial-para-ti",
       "title": "Promoção especial para ti",
       "author": "Vladimir Dietrich",
@@ -29,22 +44,7 @@
         "caption": ""
       },
       "lastUpdated": "2025-06-17T02:40:50.185Z"
-    },
-    {
-      "id": "um-blog-facil",
-      "title": "Um Blog Fácil",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-15",
-      "readingTime": 2,
-      "heroImage": {
-        "fileName": "um-blog-facil-image-0.png",
-        "githubPath": "images/um-blog-facil-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-17T02:41:07.235Z"
     }
   ],
-  "lastUpdated": "2025-06-24T07:38:48.909Z"
+  "lastUpdated": "2025-06-25T07:39:14.341Z"
 }
