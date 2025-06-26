@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "oblivion",
+      "title": "Oblivion",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 9,
+      "heroImage": {
+        "fileName": "oblivion-image-hero.png",
+        "githubPath": "images/oblivion-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-26T19:22:52.992Z"
+    },
+    {
       "id": "human-soup",
       "title": "Soupe humaine",
       "author": "Vladimir Dietrich",
@@ -49,20 +64,44 @@
       "lastUpdated": "2025-06-26T19:20:49.110Z"
     },
     {
-      "id": "oblivion",
-      "title": "Oblivion",
+      "id": "sai-o-emprego-fica-a-producao",
+      "title": "Quitter son emploi, rester à la production",
       "author": "Vladimir Dietrich",
       "date": "2025-06-26",
-      "readingTime": 9,
+      "readingTime": 4,
       "heroImage": {
-        "fileName": "oblivion-image-hero.png",
-        "githubPath": "images/oblivion-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-hero.png",
+        "fileName": "sai-emprego-fica-producao-image-0.jpg",
+        "githubPath": "images/sai-emprego-fica-producao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-26T19:22:52.992Z"
+      "lastUpdated": "2025-06-26T19:24:33.618Z"
+    },
+    {
+      "id": "maximizar-mindfulness",
+      "title": "Maximiser la pleine conscience ?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "maximizar-mindfulness-image-hero.png",
+        "githubPath": "images/maximizar-mindfulness-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-26T19:25:26.478Z"
+    },
+    {
+      "id": "fabrica-de-coringas",
+      "title": "Usine à jokers ?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 4,
+      "heroImage": null,
+      "lastUpdated": "2025-06-26T19:25:59.524Z"
     }
   ],
-  "lastUpdated": "2025-06-26T19:23:39.684Z"
+  "lastUpdated": "2025-06-26T19:27:38.706Z"
 }

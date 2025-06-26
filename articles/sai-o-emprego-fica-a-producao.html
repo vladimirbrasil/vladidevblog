@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai o emprego, fica a produção - Vladimir Dietrich's Blog</title>
+  <meta name="description" content="   ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Sai o emprego, fica a produção - Vladimir Dietrich's Blog">
+  <meta property="og:description" content="   ">
+  <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/sai-o-emprego-fica-a-producao.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="hero-image-container">
+        <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg" alt="" class="hero-image">
+        
+      </div>
+      <div class="article-content-wrapper">
+        <a href="/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Sai o emprego, fica a produção</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>June 25, 2025</span>
+            <span>·</span><span class="reading-time">4 min read</span>
+          </div>
+        </div>
+        
+        
+      <div class="language-switcher">
+        <strong>Português</strong><span>|</span><a href="/en/articles/sai-o-emprego-fica-a-producao.html">English</a><span>|</span><a href="/fr/articles/sai-o-emprego-fica-a-producao.html">Français</a><span>|</span><a href="/de/articles/sai-o-emprego-fica-a-producao.html">Deutsch</a><span>|</span><a href="/es/articles/sai-o-emprego-fica-a-producao.html">Español</a>
+      </div>
+    
+
+        <div class="article-content">
+          <p>   </p>
+<p>[<em>O artigo original é de 7 de julho de 2020, migrado nesta data para este novo blog</em>]</p>
+<p>A essência de derivadas e integrais é a noção de limite. Quando o limite tende ao infinito, ou a zero, inventamos a noção de derivadas e integral. Por exemplo, uma circunferência é um polígono com &quot;infinitos&quot; lados de comprimento tendendo a zero, cada um. No limite, com o número de lados tendendo ao infinito e o comprimento de cada lado tendendo a zero, temos uma circunferência perfeita.</p>
+<p>Forcei a barra na matemática mas quis dizer algo mais simples, pensando melhor: é útil pensar o &quot;exagero&quot; — o limite — de uma situação, às vezes. Este é um bom exemplo. Para ajudar a entender &quot;nosso inimigo&quot;, pode ser útil conhecer o &quot;tamanho máximo&quot;, o limite, dele.</p>
+<p>Qual o tamanho máximo do inimigo a automação que rouba empregos humanos?</p>
+<p>Imagino que seu limite infinito, máximo, seja quando a automação teoricamente conseguir roubar todo e qualquer emprego humano.</p>
+<p>Que raios aprendemos quando fazemos medições teóricas, até inatingíveis, como esta?</p>
+<p>De cara aprendemos o tamanho máximo teórico: nenhum humano trabalhando, máquinas fazendo tudo.</p>
+<p>Que fazer com este limite?Dançar com ele. Entrar na dança.</p>
+<p>Morremos neste limite?Creio que não, ainda que seja uma boa pergunta. Este tipo de pergunta demonstra mais medo do interlocutor — nós, a humanidade — do que previsão sofisticada.</p>
+<p>Máquinas trabalhando me parecem ter mais a ver com: alfaces sendo plantadas, nutridas, colhidas, distribuídas. Idem para carros Mercedes Benz. A matéria prima é produzida, agrupada, montada, distribuída. Também brinquedos. Outras comidas: ostras, bifes, ervilhas. Cobertores, roupas.</p>
+<p>Onde está a morte humana neste limite, neste cenário máximo teórico?</p>
+<p>Não na falta de produção.</p>
+<p>Na distribuição? No terrível ditador que vai deixar todos fenescerem (terminará sozinho com dez loiras?)</p>
+<p>Já sei: talvez na transição patética típica humana — com injustiças, mortes, desventuras?</p>
+<p>Navegar no limite máximo &quot;limpa&quot; a mente da bagunça de pensar em cenários intermediários.</p>
+<p>Não há resposta exata sobre o futuro, mas limpa a mente.</p>
+<p>Pensar o cenário máximo simplifica mente. Não traz resposta exata, mas tira muita bagunça do caminho.</p>
+<p>Ajuda, ao final de todo o pensamento, a entender o caminho que podemos estar percorrendo.</p>
+<p>Belíssimo assunto, apaixonante, em minha particular opinião. Lindo debate, em andamento, longe do fim.</p>
+<p>Inteligência artificial podemos colocar em um patamar ligeiramente — não muito — diferente de &quot;automação&quot;. Claro, inteligência artificial sendo espécie do gênero mais abrangente, automação. Então podemos colocar &quot;programar&quot; como espécie diferente de automação em comparação com a espécie de automação que chamamos de inteligência artificial.</p>
+<p>Agora sem mais delongas, olha que brilhante:</p>
+<p>Inteligência artificial tira o emprego de quem?</p>
+<p>Do próprio programador!</p>
+<p>A inteligência artificial na verdade, então, tira o emprego de tudo que a automação já tira, só que também tira o emprego do próprio programador!</p>
+<p>Inteligência artificial cada vez menos tem &quot;ifs, loops, e um programador adicionado funções e códigos&quot;.</p>
+<p>A inteligência artificial foi criada com esta linda capacidade: ela mesma aperfeiçoa suas &quot;redes neurais&quot;.</p>
+<p>Só precisamos de um &quot;estagiário&quot; — cada vez mais, realmente, só um estagiário sem experiência — para alimentar cada enorme, mas ainda virgem, rede neural, com dados, dados, mais dados e ainda mais dados.</p>
+<p>Muitas gostam de receber dados com respostas corretas — vários dados — para se calibrarem. Mas fazem a calibração cada vez mais sozinhas. Estamos cada vez mais automatizado a própria calibragem de cada tipo de inteligência artificial.</p>
+<p>Na verdade, em breve, nem &quot;estagiário&quot; será necessário. Bastará informar o objetivo (quais dados com quais respostas &quot;engolir&quot;) que uma inteligência artificial saberá engolir novos dados e regurgitar respostas mais prováveis. Quando bem calibrada, informa mais de 90%, mais de 99% até, de chance de estar correta.</p>
+<p>Por exemplo, esta imagem de pulmão possui câncer? 99% de acerto, mais precisa que o melhor médico. Etc.</p>
+<p>Então nem programador sobra quando redes neurais aprendem a se calibrar sozinhas, bastando engolir dados — dados, aliás, que já estarão na nuvem, mesmo, ao lado dela. Nem estagiário &quot;para inserir o disquete com dados&quot; precisa mais.</p>
+<p>É util ter &quot;mantras&quot;, frases curtas, para nos ajudar a compreender novas situações.</p>
+<p>Eu diria, sobre este fértil debate:</p>
+<p>Os empregos podem até acabar (&quot;empregos mudarem&quot; me parece aquele eufemismo de mãe dizendo para filha grávida: &quot;não dói nada o parto&quot;).</p>
+<p>A diferença não está na finitude do emprego.</p>
+<p>A diferença está na consequência.</p>
+<p>Até 1900 acabar emprego era acabar produção.</p>
+<p>Não é o que ocorre com a automação.</p>
+<p>Acaba o emprego, fica a produção.</p>
+<p>Bom mantra, este, aliás.</p>
+<p>&quot;Acaba o emprego, fica a produção&quot;.</p>
+<p>O que fazer quando, ou se, ou durante a transição, em que &quot;Acaba o emprego, fica a produção.&quot;?</p>
+<p>&quot;Acaba o emprego, fica a produção.&quot;</p>
+<p>Ruim? Bom? Transição maluca?Corremos todos? Sofá e dor na coluna para todos? Quem ganha mais Mercedes Benz e alfaces automaticamente produzidas (portanto, sem emprego) do que outros?</p>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "oblivion",
+      "title": "Oblivion",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 9,
+      "heroImage": {
+        "fileName": "oblivion-image-hero.png",
+        "githubPath": "images/oblivion-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-26T19:22:52.992Z"
+    },
+    {
       "id": "a-thought-about-true-cost-the-movie",
       "title": "A Thought About “True Cost”, The Movie",
       "author": "Vladimir Dietrich",
@@ -64,20 +79,116 @@
       "lastUpdated": "2025-06-26T19:00:30.184Z"
     },
     {
-      "id": "oblivion",
-      "title": "Oblivion",
+      "id": "sai-o-emprego-fica-a-producao",
+      "title": "Quit the job, keep the production",
       "author": "Vladimir Dietrich",
       "date": "2025-06-26",
-      "readingTime": 9,
+      "readingTime": 4,
       "heroImage": {
-        "fileName": "oblivion-image-hero.png",
-        "githubPath": "images/oblivion-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-hero.png",
+        "fileName": "sai-emprego-fica-producao-image-0.jpg",
+        "githubPath": "images/sai-emprego-fica-producao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-26T19:22:52.992Z"
+      "lastUpdated": "2025-06-26T19:24:33.618Z"
+    },
+    {
+      "id": "maximizar-mindfulness",
+      "title": "Maximize mindfulness?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "maximizar-mindfulness-image-hero.png",
+        "githubPath": "images/maximizar-mindfulness-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-26T19:25:26.478Z"
+    },
+    {
+      "id": "fabrica-de-coringas",
+      "title": "Wildcard factory?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 4,
+      "heroImage": null,
+      "lastUpdated": "2025-06-26T19:25:59.524Z"
+    },
+    {
+      "id": "noam-chomsky-mixed-with",
+      "title": "Noam Chomsky misturado com…",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 1,
+      "heroImage": null,
+      "lastUpdated": "2025-06-26T19:26:37.963Z"
+    },
+    {
+      "id": "como-agradar-noam-chomsky-yuval-noah-harari",
+      "title": "How to please Noam Chomsky & Yuval Noah Harari?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "githubPath": "images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "altText": "Noam Chomsky (left) & Yuval Noah Harari (right)",
+        "caption": "Noam Chomsky (left) & Yuval Noah Harari (right)"
+      },
+      "lastUpdated": "2025-06-26T19:26:49.932Z"
+    },
+    {
+      "id": "instead-of-whatsapp",
+      "title": "Em vez de whatsapp?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 2,
+      "heroImage": null,
+      "lastUpdated": "2025-06-26T19:27:00.880Z"
+    },
+    {
+      "id": "neither-tv-nor-youtube",
+      "title": "Neither TV nor YouTube",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "neither-tv-nor-youtube-image-0.jpg",
+        "githubPath": "images/neither-tv-nor-youtube-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neither-tv-nor-youtube-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-26T19:27:09.551Z"
+    },
+    {
+      "id": "modern-punch",
+      "title": "Modern punch.",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "modern-punch-image-0.jpg",
+        "githubPath": "images/modern-punch-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/modern-punch-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-26T19:27:23.140Z"
+    },
+    {
+      "id": "devemos-ser-preservados-para-observar",
+      "title": "Devemos ser preservados para observar?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 1,
+      "heroImage": null,
+      "lastUpdated": "2025-06-26T19:27:33.553Z"
     }
   ],
-  "lastUpdated": "2025-06-26T19:23:39.674Z"
+  "lastUpdated": "2025-06-26T19:27:38.672Z"
 }
