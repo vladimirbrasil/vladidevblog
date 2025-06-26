@@ -32,7 +32,37 @@
       "readingTime": 11,
       "heroImage": null,
       "lastUpdated": "2025-06-26T19:00:30.184Z"
+    },
+    {
+      "id": "a-curiosidade-humana",
+      "title": "La curiosité humaine",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 11,
+      "heroImage": {
+        "fileName": "a-curiosidade-humana-image-0.jpg",
+        "githubPath": "images/a-curiosidade-humana-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-26T19:20:49.110Z"
+    },
+    {
+      "id": "oblivion",
+      "title": "Oblivion",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 9,
+      "heroImage": {
+        "fileName": "oblivion-image-hero.png",
+        "githubPath": "images/oblivion-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-26T19:22:52.992Z"
     }
   ],
-  "lastUpdated": "2025-06-26T19:02:03.360Z"
+  "lastUpdated": "2025-06-26T19:23:39.684Z"
 }

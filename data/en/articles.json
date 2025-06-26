@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "a-thought-about-true-cost-the-movie",
+      "title": "A Thought About “True Cost”, The Movie",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "a-thought-about-true-cost-the-movie-image-hero.png",
+        "githubPath": "images/a-thought-about-true-cost-the-movie-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-thought-about-true-cost-the-movie-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-26T18:59:26.873Z"
+    },
+    {
       "id": "clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start",
       "title": "Limpe sua mente? Cancelar a inscrição de e-mails não seria um mau começo",
       "author": "Vladimir Dietrich",
@@ -31,21 +46,6 @@
       "lastUpdated": "2025-06-26T18:58:05.005Z"
     },
     {
-      "id": "a-thought-about-true-cost-the-movie",
-      "title": "A Thought About “True Cost”, The Movie",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 1,
-      "heroImage": {
-        "fileName": "a-thought-about-true-cost-the-movie-image-hero.png",
-        "githubPath": "images/a-thought-about-true-cost-the-movie-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-thought-about-true-cost-the-movie-image-hero.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T18:59:26.873Z"
-    },
-    {
       "id": "spam-calls",
       "title": "Spam Calls",
       "author": "Vladimir Dietrich",
@@ -62,7 +62,22 @@
       "readingTime": 11,
       "heroImage": null,
       "lastUpdated": "2025-06-26T19:00:30.184Z"
+    },
+    {
+      "id": "oblivion",
+      "title": "Oblivion",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 9,
+      "heroImage": {
+        "fileName": "oblivion-image-hero.png",
+        "githubPath": "images/oblivion-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-26T19:22:52.992Z"
     }
   ],
-  "lastUpdated": "2025-06-26T19:02:03.352Z"
+  "lastUpdated": "2025-06-26T19:23:39.674Z"
 }

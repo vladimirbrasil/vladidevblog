@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Die menschliche Neugier - Vladimir Dietrich's Blog</title>
+  <meta name="description" content=" ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Die menschliche Neugier - Vladimir Dietrich's Blog">
+  <meta property="og:description" content=" ">
+  <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/a-curiosidade-humana.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/de/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/de/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="hero-image-container">
+        <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg" alt="" class="hero-image">
+        
+      </div>
+      <div class="article-content-wrapper">
+        <a href="/de/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Die menschliche Neugier</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>June 25, 2025</span>
+            <span>·</span><span class="reading-time">11 min read</span>
+          </div>
+        </div>
+        
+        
+      <div class="language-switcher">
+        <a href="/articles/a-curiosidade-humana.html">Português</a><span>|</span><a href="/fr/articles/a-curiosidade-humana.html">Français</a><span>|</span><strong>Deutsch</strong><span>|</span><a href="/es/articles/a-curiosidade-humana.html">Español</a>
+      </div>
+    
+
+        <div class="article-content">
+          <p> </p>
+<p>[<em>Der Originalartikel stammt vom 11. September 2019 und wurde an diesem Datum in diesen neuen Blog migriert</em>]</p>
+<p>Wenn ein großer Kenner der menschlichen Seele wie ein Bettler auf der Straße oder im Exil in den Bergen Tibets leben kann, ohne sein Ego zu beeinträchtigen (siehe Epicur und/oder Diogenes, der Zyniker), dann ist meine Angst: Was könnte dieses große Genie der Synapsen nicht in der NASA, in neuen Produkten/Dienstleistungen, in großen Labors, im menschlichen Wissen „produzieren“? Ich bezweifle nicht, dass dieses erleuchtete Wesen voll und strahlend ist: umgeben von Hunden, auf dem Bürgersteig, in Tibet. Aber: Was ist mit dem Wissen?</p>
+<p>Wäre die Gier, im Wissen disruptiv zu sein, das Ego, das flüstert: Sei berühmt, (und/oder) sei bedeutsam?</p>
+<h2>Likes: ein Kurzschluss</h2>
+<p>Was das Berühmtsein betrifft, so leben „Zillionen“ (Milliarden) von Menschen umgeben von Likes. Seien es Millionen von Likes – Popstars –, seien es Tausende von Likes, von denen, die ihr Leben durchquert und umkreist haben. Der Facebook-Konzern (Whats/Instagram) hat diesen „Kurzschluss“ für die Menschen perfektioniert und ermöglicht, ohne die Verpflichtung, mit einem Reporter eines großen Senders befreundet zu sein oder tatsächlich eine große Nachricht (groß im Sinne von Publikum) zu repräsentieren. Der eine nährt den anderen mit Likes und umgekehrt, in einem großen kurzgeschlossenen Gebärmutterstrom.</p>
+<p>Diese Zillionen von Likes fördern nicht unbedingt die menschliche Neugier. Sie schaffen ein „Wohlbefinden“, ja (des Egos, sicherlich, wenn es nicht ein paradoxes Wohlbefinden mit Ego ist). Wie eine „mentale Masturbation“ des Egos. Es ermöglicht, das eine oder andere Hormon wirklich zu produzieren – ein „Wohlbefinden“ – unter Verwendung des tückischen (einer Giftschlange?) Egos.</p>
+<p>Ich möchte damit sagen, dass das Streben nach Likes nicht unbedingt „Raketen produziert“. Es produziert nicht unbedingt Wissen für die Menschheit.</p>
+<p>Noch mehr mit der Like-Industrie des Facebook-Konzerns, eines Konzerns, der immer mehr lernt, Egos mit geringeren Kosten aufzublähen. Und es ist niemandes Schuld: außer unserer eigenen – wir haben die Nachfrage geschaffen – und erlauben dem Unternehmen, die Chance zu nutzen und Werbung darauf zu verkaufen.</p>
+<h2>Die Rolle des Egos im Wissen</h2>
+<p>Ich interessiere mich für das, was jetzt kommt:</p>
+<p>Ist Ego notwendig, um effektiv „Raketen zu produzieren“?</p>
+<p>Vielleicht ja – ein bisschen. Vielleicht ist es nicht notwendig.</p>
+<p>(Mit „Raketen produzieren“ meine ich, große öffentliche Fortschritte im globalen menschlichen Wissen zu erzielen – ich verwende den Begriff zur Vereinfachung)</p>
+<p>Wenn kein Ego notwendig ist, um „Raketen zu produzieren“, dann ist in diesem Fall die menschliche Neugier etwas Wesentlicheres als das oberflächliche Ego. Es wäre eine schöne Geschichte, wenn es „wahr“ wäre.</p>
+<p>Aber dann kommen noch ein paar Fragen.</p>
+<h2>Verschwendung von Neugier?</h2>
+<p>Verschwenden in diesem Fall also „Bettler, Genies, die ihr Seelenwissen genießen, still, zufrieden, inmitten von Hunden“ „Neugier“? Entziehen sie dem globalen öffentlichen Wissen neue Erkenntnisse, die dieser Bettler kreativ hätte entwickeln können?</p>
+<p>Dies ist eine weitere interessante Geschichte (ich gestehe ein ‚Wow!‘):</p>
+<h2>Besitzt der Guru in Tibet Neugier?</h2>
+<p>Oder – à la Diogenes, der Philosoph, der ohne Sorge, ohne Ego-Schmerz in einem Fass als Bettler zu leben beginnt – besitzt dieser Zen-Bettler Neugier?</p>
+<p>Wenn dieser super-zen-Bettler, ein tiefer Kenner der Seele, keine Neugier besitzt – wenn dieser „Guru“ gelernt hat und wirklich gelernt hat zu verstehen, dass wir eine Hormonsuppe sind und dass es Hormone sind, nicht wahrer Schmerz, unsere „Gefühle“ – unter anderem, nehme ich an –, dann würde dieser Bettler-Guru in diesem Fall keine wesentliche Neugier verschwenden und die Menschheit daran hindern, ihre Fähigkeit zur Veröffentlichung neuen Wissens auszuüben, anstatt „einfach“ zufrieden inmitten von Hunden zu leben?</p>
+<h2>Selbst-Neugier: und wir, die anderen?</h2>
+<p>Beachten Sie, dass ich hier die Hypothese aufstelle, dass Neugier wesentlich ist und nicht nur eine Laune des Egos im Menschen. Wenn sie wesentlich ist – wenn sie im Wesen des Menschen liegt –, ist es dann eine Verschwendung, diese wesentliche Neugier bei der Selbstentdeckung allein inmitten von Hunden auszuüben? Auch wenn sie wirksam ist: Die Person lebt bis zum Tod nahe der Ekstase, erfüllt, mit warmem Zwerchfell, mit liebenswertem Herzen. Aber nur für sie. Wäre das keine Verschwendung? Ja oder nein? Auch wenn es wirksam ist (besonders für sie)? Ich nehme an, es reicht nicht aus, dass sie nur Kenntnisse untersucht, die ihrem eigenen Komfort dienen, sondern dass sie auch niemandem von diesen Entdeckungen erzählt, die sie möglicherweise macht (z. B. wie man die Ekstase verlängert. Wie man sich nicht um „Ekstase“ kümmert. Wie man sich „einfach“ gut fühlt). Wäre das eine Verschwendung von Talent?</p>
+<p>Angenommen, Neugier ist Teil unseres Wesens, würden dann der Bettler inmitten von Hunden und der Guru ewig im Berg Tibets nicht ihre angeborene Fähigkeit zur Neugier verschwenden? – frage ich.</p>
+<p>Es kann noch schlimmer kommen:</p>
+<p>Wenn der Guru in Tibet Neugier besitzt – Neugier, sich selbst kennenzulernen –, wäre es dann nicht ein kontroverser „Egoismus“, diese Neugier nur für sich selbst auszuüben? Im Gegensatz zum Altruismus, wenn er zum globalen öffentlichen Wissen der Menschheit beitragen würde, indem er von Zeit zu Zeit aus seinem Exil kommt. (Wenn er das Ego überwindet, wäre es paradoxerweise egoistisch, neugierig auf sich selbst zu bleiben.) Aber nichts davon ist schlimm: es würde darauf hindeuten, dass das Streben nach der Unterdrückung des Egos ewig wäre/ist.</p>
+<p>Was mir wichtig ist: Ich schlage die Hypothese vor, dass es eine Verschwendung menschlicher Neugier wäre, ein großer Guru zu sein, aber still zu sein, ohne Wissen zu schaffen und/oder viel weniger zu teilen. Auch wenn es vollkommen wirksam ist: für sich selbst. Perfekt (für sich selbst). Das Wissen würde mit dem Guru sterben.</p>
+<h2>Guru-Und-Wissenschaftler</h2>
+<p>Was wäre, wenn sich „Gurus“ – die wirklich besten, wirklich – nicht in sich selbst verwirklichen würden, d. h. auch ohne Ego, wunderbar, zen, weiterhin zur Entwicklung des globalen öffentlichen Wissens der Menschheit beitragen würden? Und ich beziehe mich auf das komplette Kit des menschlichen Wissens, d. h. menschliches und öffentliches Wissen, das der Menschheit zur Verfügung gestellt wird. Das heißt: auch das Wissen verbreiten (es für sich zwischen Büschen in Tibet zu behalten, wäre eine Schweinerei!).</p>
+<p>Hier kommt ein weiteres leichtes Paradoxon ins Spiel, das aber beherrschbar ist: Das Schaffen und insbesondere das <em>Verbreiten/Veröffentlichen</em> von Wissen hat große Ähnlichkeit mit dem Bedürfnis, das Ego zu nähren – auch wenn es durchaus möglich ist, dass das Ego verkümmert oder fast nicht vorhanden ist und dass die Inspirationsquelle nichts anderes ist als die wesentliche menschliche Neugier.</p>
+<p>„Wir wollen Raketen“ – vielleicht in unserem Wesen.</p>
+<h2>Praktische Implikationen</h2>
+<p>Obwohl es sich um sehr abstrakte Fragen handelt, gibt es äußerst praktische Implikationen, die von den möglichen Antworten auf diese scheinbar abstrakten Fragen abhängen.</p>
+<p>Wenn zum Beispiel der Mensch ein „Genie“ ist, bis zu dem Punkt, dass er sein Ego unterdrückt und auch eine Freude/Ausstrahlung erzeugt, die unabhängiger von anderen Ereignissen ist, dann lassen Sie uns Folgendes denken, wenn er zusammen mit der Notwendigkeit, die globale menschliche Neugier mit immer mehr neuem öffentlichem Wissen zu nähren, unterdrückt:</p>
+<h2>Alle Gurus, Neugier hört auf</h2>
+<p>Nehmen wir an, alle Menschen erreichen diesen „Guru“-Punkt oder wie auch immer er genannt wird. Unter diesen Umständen schlage ich vor, dass wir alle zufrieden „im Wald“ leben würden. Ohne pflastern zu müssen, ohne ein Smartphone zu greifen, ohne Währung zu schaffen, ohne „Ausrüstung“ in großem Maßstab zu produzieren. Wir könnten niemals aufhören, Waldmenschen zu sein. Wir hätten nicht einmal das „Paradies verlassen“ müssen, wenn man die logischste These berücksichtigt, dass der biblische „Ausgang aus dem Paradies“ die Einführung der Landwirtschaft gewesen wäre – aus dem Wald kommend, „IPTU“ (Grundsteuer) zahlen zu müssen. Wir hätten nicht einmal den Wald verlassen müssen. Gurus, die wir wären, alle „gut“ – so einfach wäre es. Auch im „guten“ Umgang mit dem Tod. Auch im guten Umgang damit, oft gejagt zu werden. Im guten Umgang damit, die Welt nicht zu beherrschen. Im guten Umgang sogar mit der Möglichkeit des Aussterbens. Im guten Umgang sogar mit unserem eventuellen totalen, vorzeitigen Aussterben aufgrund von Werkzeugen, die wir nicht geschaffen haben – glücklich, zufrieden, wissend, wie wir mit unseren Schmerzen umgehen, so wie wir uns befanden. Gurus, die wir waren. Dieses Szenario würde auch für die Zukunft gelten: Wir würden Raketenfabriken schließen, den Durst nach Technologien einstellen, die Bevölkerung schrumpfen – wissend, wie wir mit dem Schmerz umgehen, einschließlich des Schmerzes des Todes, ohne Probleme –, wir würden „Hand in Hand“ mit den vollen natürlichen Ressourcen leben, ohne einen größeren Durst als den minimal notwendigen. Pilze und Äpfel sammeln, ohne Gewehre. Jagen und gejagt werden, verbunden, ohne unter Angst zu leiden.</p>
+<p>Es ist nicht notwendig, die ideale Hypothese zu betrachten, dass <em>alle</em> Menschen zu „Gurus“ werden würden – die gut mit sich selbst leben können, selbst im Exil in den Bergen, ohne das Lächeln von den Lippen zu verlieren (warmes Herz). Dieses ideale Szenario ist nicht notwendig. Es ist auch möglich, es in Prozentsätzen statistisch zu analysieren. Wenn also nicht alle, aber je mehr „Gurus“ sich bilden, vorausgesetzt, dass das Guru-Sein die Notwendigkeit, Wissen zu schaffen und zu verbreiten, auslöscht, dann nimmt im gleichen Verhältnis der Fortschritt des globalen menschlichen Wissens ab, je mehr „Gurus“ sich bekehren. Er würde abnehmen. Unter dieser Hypothese.</p>
+<h2>Alle Gurus, Neugier bleibt bestehen: wesentliche Neugier</h2>
+<p>Bereits unter der gegenteiligen Hypothese – wenn das Guru-Sein oder die Annäherung daran den Wissensdurst nicht verringert, dann ist das Feuer, das diesen Wissensdurst speist, wesentlich, dem Menschen innewohnend. Was übrigens gut zu der Notwendigkeit passt, in Gruppen zu arbeiten, wenn wir weniger Beute für andere Arten sein wollen. Unsere große Stärke ist die Geselligkeit.</p>
+<h2>„Unsere große Stärke ist die Geselligkeit“</h2>
+<p>(wenn nicht, sind wir eins gegen eins leichte Beute im Wald). Vielleicht ist es diese darwinistisch gestärkte Geselligkeit, die uns dazu drängt, Wissen zu suchen. Werkzeuge zu schaffen. Um gemeinsam zu töten, anstatt von Bären, Tigern, nennen Sie sie, getötet zu werden.</p>
+<p>Okay, aber was ist dann der praktische Nutzen, zu wissen, dass Geselligkeit das Wesen der Suche nach Wissen sein kann, eine Suche, die daher für uns wesentlich wäre?</p>
+<p>Nun, es gibt eine praktische Implikation: Dies kann bedeuten, dass Wissen, das uns nicht hilft, den „Räuber zu besiegen“, nicht wesentlich ist.</p>
+<p>Ist es möglich? Eine Frage, die man nicht wegwerfen sollte.</p>
+<p>Apropos Räuber:</p>
+<h2>Den Räuber besiegen</h2>
+<p>Wer wäre unser Räuber?</p>
+<p>Wenn sich Tiger und Wölfe in Käfigen befinden oder, wenn sie aus den Wäldern kommen, ein Schlafmittel erhalten und zurück in den Wald getragen oder dann eingesperrt werden, wer sind dann unsere Räuber?</p>
+<p>Der Planet selbst ist ein guter Kandidat: voll von verbranntem Kerosin, Kunststoffen und diesen Nebenprodukten unserer Werkzeuge auf unserem Weg, den Planeten selbst wieder grün, sauerstoffreich und voll erblühen zu lassen, ist eine Möglichkeit, „einen Tiger zu besiegen“.</p>
+<p>Diesmal ein blauer und runder Tiger, aber nicht weniger räuberisch, wenn er „wütend“ ist.</p>
+<p>Oder noch weiter in die Zukunft gehend, können wir als unseren fernen Räuber das vorhergesagte natürliche Erlöschen der Sonne haben – in diesem Fall müssen wir wirklich Raketen erfinden (intergalaktisch, auf dem Weg zu neuen Sonnen, diese aber mit Millionen von Jahren, um von menschlichem Wissen/Neugier erschaffen zu werden).</p>
+<p>Mich interessiert jedoch folgende Frage:</p>
+<h2>Unser (schlecht gepflegter) Planet als Räuber</h2>
+<p>Ich möchte mich darauf konzentrieren, mit dem Räuber unseres eigenen Planeten umzugehen.</p>
+<p>Diese Herausforderung könnte unser Wissen – unsere wesentliche Neugier, die Neugier, die mit dem Überlebensbedürfnis verbunden ist – in die Notwendigkeit drängen, den Planeten zu erhalten. Für unser eigenes Überleben.</p>
+<h2>Eine dunkle Wahrheit hinter diesem Kampf?</h2>
+<p>Wenn dies jedoch „nur“ für unser Überleben ist – gegen den Räuber, der unser eigener schlecht gepflegter Planet wäre –, wäre dies im Wesentlichen keine „Zuneigung/Mitgefühl“ für die Tiere und die Fauna. Es ist hässlich zu sagen, aber ich wage es in dieser Abfolge von Hypothesen, dass wir mehr darauf konzentriert wären, uns selbst zu erhalten als die anderen Lebewesen.</p>
+<p>Dies gilt in dieser Abfolge von Hypothesen: Die wesentliche menschliche Neugier ist an das Überlebensbedürfnis gebunden.</p>
+<p>Ein Überlebensbedürfnis, das die Stärke der Gruppe erfordert – soziale Fähigkeiten –, zumindest gegen Tiger und Wölfe, wie es in der Antike der Fall war, als wir noch „im Wald“ lebten.</p>
+<p>In dieser Abfolge von Hypothesen wage ich zu behaupten, dass, wenn wir einen stabilen Planeten für die menschliche Rasse schaffen könnten, diese Lösung theoretisch mit oder ohne Tiere, mit oder ohne ihre Fauna sein könnte.</p>
+<p>Verrückt?</p>
+<p>Wenn wir dieser Hypothese folgen (auch wenn sie düster ist – aber hier sind es nur Worte: bleiben Sie ruhig), würden wir heute also das Bewahren des Planeten mit der Haltung verwechseln, Fauna und Flora und die kleinen Lebewesen mehr zu bewahren, weil wir – noch – nicht wissen, wie man einen stabilen Planeten „voller Sonnenkollektoren, Wasser und sogar Beton, mit irgendeiner Art von möglicher Nahrung in diesem Format“ macht, als aus echtem Mitgefühl für Lebewesen.</p>
+<p>Beachten Sie, dass diese erschreckende, bizarre Theorie, obwohl sie bizarr und erschreckend ist, besser zu vielen unserer tatsächlichen Handlungen passt, fragen Sie mich mit:</p>
+<h2>Lieben wir Tiere wirklich? In Zoos oder außerhalb?</h2>
+<p>Ich wiederhole die Frage: Lieben wir Tiere wirklich? In Zoos? In Genbanken aufbewahrt, um sie zu klonen, wann und wo wir wollen, wenn wir die Technologie besser beherrschen? In Gefrierschränken? Weit weg von unseren Häusern? Lieben wir sie? (Katze und Hündchen zählen nicht, ich beziehe mich natürlich auf alle).</p>
+<p>Erinnern wir uns, dass wir bereits in den Apfel gebissen haben, d. h. wir sind aus dem Paradies gefallen, d. h. wir haben das wilde Leben verlassen. Die direkte Interdependenz verlassen.</p>
+<h2>Wald in Flammen zehntausend Kilometer entfernt brennt in London</h2>
+<p>Heute verbinden wir uns also nur mit dem Planeten, „wenn wir den Amazonas abbrennen“, d. h. aus Angst vor dem Phänomen, das noch viel größer ist als unser aktuelles Wissen, nämlich die Biosphäre als Ganzes. „Fass den Wald nicht an, es könnte London und Paris ruinieren“, so etwas. Heute. Wir kümmern uns darum, aber wir lassen die Zoos gut verschlossen (denn das Drehen des Schlüssels in Zookäfigen beeinträchtigt die Biosphäre nicht wesentlich).</p>
+<h2>Was ist, wenn wir das Wissen über die Biosphäre beherrschen?</h2>
+<p>Meine Angst ist, dass wir eines Tages, wenn wir das Verständnis der Biosphäre beherrschen, feststellen könnten, dass wir keine Ameisen, Bienen, Pflanzen, Algen usw. brauchen. Wir könnten einen Fluss entwickeln, der uns ohne diese Lebewesen sehr gut am Leben hält. Dann werden wir endgültig wissen, ob wir Tiere, Fauna und Flora wirklich lieben oder ob wir nur die Unordnung der Biosphäre und damit unser Aussterben fürchten.</p>
+<p>Und dann würden wir wissen, ob wir wirklich, wirklich, wesentlich nur unser Überleben wollen.</p>
+<p>Und dass sie „aus dem Weg gehen“.</p>
+<p>Was für ein schöner „Chip“ wäre (ist es?).</p>
+<p>Auch mächtig.</p>
+<p>Noch eine etwas interessante Frage.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

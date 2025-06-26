@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La curiosité humaine - Vladimir Dietrich's Blog</title>
+  <meta name="description" content=" ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="La curiosité humaine - Vladimir Dietrich's Blog">
+  <meta property="og:description" content=" ">
+  <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/a-curiosidade-humana.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/fr/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/fr/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="hero-image-container">
+        <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg" alt="" class="hero-image">
+        
+      </div>
+      <div class="article-content-wrapper">
+        <a href="/fr/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>La curiosité humaine</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>June 25, 2025</span>
+            <span>·</span><span class="reading-time">11 min read</span>
+          </div>
+        </div>
+        
+        
+      <div class="language-switcher">
+        <a href="/articles/a-curiosidade-humana.html">Português</a><span>|</span><strong>Français</strong><span>|</span><a href="/de/articles/a-curiosidade-humana.html">Deutsch</a><span>|</span><a href="/es/articles/a-curiosidade-humana.html">Español</a>
+      </div>
+    
+
+        <div class="article-content">
+          <p> </p>
+<p>[<em>L'article original date du 11 septembre 2019, migré à cette date vers ce nouveau blog</em>]</p>
+<p>Si un grand connaisseur de l'âme humaine peut vivre comme un mendiant, dans les rues, ou en exil dans les montagnes du Tibet, tout cela sans affecter son ego (d'ailleurs, voir Épicure et/ou Diogène le Cynique), ma crainte est : que ce grand génie des synapses ne pourrait-il pas « produire » à la Nasa, dans de nouveaux produits/services, dans de grands laboratoires, dans la connaissance humaine. Je ne doute pas que cet être illuminé soit épanoui et rayonnant : entouré de chiens, sur le trottoir, au Tibet. Cependant : et la connaissance ?</p>
+<p>L'avidité d'être disruptif dans la connaissance serait-elle l'ego qui murmure : sois célèbre, (et/ou) sois significatif ?</p>
+<h2>Likes : un court-circuit</h2>
+<p>Quant à être célèbre, des « zillions » (milliards) d'humains vivent entourés de likes. Que ce soient des millions de likes - pop stars - , que ce soient des milliers de likes, de ceux qui ont parcouru et entourent leur vie. Le conglomérat Facebook (whats/instagram) a perfectionné et offert ce « court-circuit » aux gens, sans l'obligation d'être ami avec un reporter de grande chaîne ou de réellement représenter une grande nouvelle (grande en termes d'audience). L'un alimente l'autre de likes, et vice-versa, dans un grand courant utérin court-circuité.</p>
+<p>Ces zillions de likes n'évoluent pas nécessairement la curiosité humaine. Ils créent un « bien » être, oui (de l'ego, certainement, si ce n'est pas paradoxal comme bien-être avec l'ego). Comme si c'était une « masturbation mentale », de l'ego. Cela permet de produire un et un autre hormone pour de vrai - un « bien » être - en utilisant le capricieux (un serpent venimeux ?) ego.</p>
+<p>Je veux dire que chercher des likes ne « produit » pas nécessairement des fusées. Cela ne produit pas nécessairement de la connaissance pour l'humanité.</p>
+<p>Encore plus avec l'industrie des likes du conglomérat Facebook, conglomérat qui apprend de plus en plus à gonfler les egos à moindre coût. Et ce n'est la faute de personne : si ce n'est de nous-mêmes - qui créons la demande - permettant à l'entreprise d'exploiter le filon et de vendre des publicités dessus.</p>
+<h2>Le rôle de l'ego dans la connaissance</h2>
+<p>Ce qui vient maintenant m'intéresse :</p>
+<p>Est-il nécessaire d'avoir de l'ego pour effectivement « produire des fusées » ?</p>
+<p>Peut-être que oui - un peu. Peut-être que ce n'est pas nécessaire.</p>
+<p>(Avec « produire des fusées », je veux dire produire de grandes avancées publiques dans la connaissance globale humaine - j'utilise le terme pour simplifier)</p>
+<p>Si ce n'est pas nécessaire d'avoir de l'ego pour « produire des fusées », alors dans ce cas la curiosité humaine est quelque chose de plus essentiel que l'ego superficiel. Ce serait un joli scénario, si c'était « vrai ».</p>
+<p>Seulement, il y a encore quelques petites questions.</p>
+<h2>Gaspillage de curiosité ?</h2>
+<p>Dans ce cas, alors, « les mendiants, les génies, profitant de leur connaissance de l'âme, silencieux, satisfaits, entre les chiens » seraient-ils en train de « gaspiller de la curiosité » ? Enlevant à la connaissance publique globale humaine de nouvelles connaissances que ce mendiant aurait pu développer de manière créative ?</p>
+<p>C'est une autre histoire intéressante (j'admets un 'wouah !') :</p>
+<h2>Le gourou au Tibet possède-t-il de la curiosité ?</h2>
+<p>Ou - à la Diogène, le philosophe qui passe sa vie dans un tonneau comme un mendiant, sans s'en soucier, sans douleur d'ego - ce mendiant-zen possède-t-il de la curiosité ?</p>
+<p>Si ce mendiant super zen, profond connaisseur de l'âme, ne possède pas de curiosité - si ce « gourou » a appris, et a réellement appris, à comprendre que nous sommes une soupe d'hormones, et que ce sont des hormones, pas de vraie douleur, nos « sentiments » - entre plusieurs autres découvertes, je suppose - alors dans ce cas, ce mendiant-gourou ne serait-il pas en train de gaspiller une curiosité essentielle, privant l'humanité d'exercer sa capacité à publier de nouvelles connaissances, au lieu de vivre, « simplement » content, entre les chiens ?</p>
+<h2>Auto-curiosité : et nous, les autres ?</h2>
+<p>Notez que je suis ici en train de supposer l'hypothèse que la curiosité est essentielle, et pas seulement un caprice de l'ego, chez l'être humain. Si elle est essentielle - si elle est dans l'essence de l'être humain - exercer cette curiosité essentielle dans l'auto-découverte, seul, entre les chiens, n'est-ce pas un gaspillage ? Bien qu'efficace : la personne vit jusqu'à la mort proche de l'extase, épanouie, diaphragme chaud, cœur accueillant. Mais seulement pour elle. Ne serait-ce pas un gaspillage ? Oui ou non ? Bien qu'efficace (spécialement pour elle) ? Je suppose qu'il ne suffirait pas qu'elle enquête seulement sur les connaissances qui aident à son propre confort, qu'elle en plus de cela ne raconte à personne ces découvertes qu'elle fait éventuellement (par exemple, comment prolonger l'extase. Comment ne pas se soucier de « l'extase ». Comment être « simplement » bien). Serait-ce un gaspillage de talent ?</p>
+<p>En supposant que la curiosité fasse partie de notre essence, le mendiant entre les chiens et le gourou éternellement dans la montagne du Tibet ne seraient-ils pas/ne sont-ils pas en train de gaspiller leur capacité innée de curiosité ? - je demande.</p>
+<p>Cela peut empirer :</p>
+<p>Si le gourou au Tibet possède de la curiosité - curiosité de se connaître soi-même - , alors exercer cette curiosité seulement pour soi-même ne serait-ce pas un « égoïsme » controversé ? En opposition à l'altruisme, s'il contribuait à la connaissance globale publique humaine, en sortant de son exil, de temps en temps. (D'ailleurs, s'il surpasse l'ego, rester curieux à propos de soi serait égoïste, paradoxalement). Mais rien de tout cela n'est grave : cela indiquerait que la recherche pour supprimer l'ego serait/est éternelle.</p>
+<p>Ce qui m'importe est : je propose l'hypothèse que ce serait un gaspillage de curiosité humaine d'être un grand gourou, mais silencieux, sans créer et/ou encore moins partager des connaissances. Bien que pleinement efficace : pour soi-même. Parfait (pour soi-même). La connaissance mourrait avec le gourou.</p>
+<h2>Gourou-Et-scientifique</h2>
+<p>Que diriez-vous si les « gourous » - les meilleurs même, pour de vrai - ne s'enfermaient pas sur eux-mêmes, c'est-à-dire, même sans ego, merveilleux, zen, continuaient à contribuer à l'évolution de la connaissance publique globale humaine ? Et je me réfère au kit complet de la connaissance humaine, c'est-à-dire, connaissance humaine et publique, mise à disposition de l'humanité. C'est-à-dire : en divulguant la connaissance aussi (la garder pour soi entre les arbustes du Tibet serait de la triche !).</p>
+<p>Ici entre un autre léger paradoxe, mais gérable : créer et, notamment, <em>divulguer/publier</em> des connaissances possède une grande similitude avec le besoin d'alimenter l'ego - bien qu'il soit parfaitement possible que l'ego soit atrophié ou presque nul, et que la source d'inspiration ne soit pas plus que l'essentielle curiosité humaine.</p>
+<p>« Nous voulons des fusées » - peut-être dans notre essence.</p>
+<h2>Implications pratiques</h2>
+<p>Malgré des questions bien abstraites, il y a des implications extrêmement pratiques qui dépendent des réponses possibles à ces questions apparemment abstraites.</p>
+<p>Par exemple, si l'être humain « génie » pour de vrai, au point de supprimer son ego et aussi de créer une joie/rayonnement plus indépendante d'autres événements, supprimer en même temps le besoin d'alimenter la curiosité humaine globale avec de plus en plus de nouvelles connaissances publiques, alors pensons à ce qui suit :</p>
+<h2>Tous gourous, la curiosité cesse</h2>
+<p>Supposons que tous les êtres humains arrivent à ce point « gourou », ou le nom que ce soit. Dans ces circonstances, je propose que nous vivrions, tous contents, « dans la forêt ». Sans avoir besoin de paver, ni avoir besoin de saisir un smartphone, ni créer de monnaie, ni produire des « équipements » à l'échelle. Nous pourrions ne jamais cesser d'être des sylvicoles. Nous n'aurions même pas « quitté le paradis », en tenant compte de la thèse la plus logique, que la biblique « sortie du paradis » aurait été d'adopter la culture agricole - en sortant de la forêt, en devant « payer la taxe foncière » (impôt sur l'immeuble). Nous n'aurions même pas besoin d'être sortis de la forêt. Gourous que nous serions, tous, « bien » - simple comme bonjour - nous serions. Y compris en cohabitant « bien » avec la mort. Y compris en cohabitant bien avec être, souvent, chassé. En cohabitant bien avec ne pas dominer le monde. En cohabitant bien même avec la possibilité d'extinction. En cohabitant bien même avec notre éventuelle extinction totale, précoce, due à des outils que nous n'avons pas créés - heureux, satisfaits, sachant gérer nos douleurs, comme nous nous trouvions. Gourous que nous étions. Ce scénario vaudrait aussi pour l'avenir : nous fermerions les usines de fusées, nous cesserions la soif de technologies, nous rétrécirions la population - sachant gérer la douleur y compris celle de la mort, sans problèmes - , nous vivrions « main dans la main » avec les ressources naturelles pleines, sans soif plus grande que le minimum nécessaire. En cueillant des champignons, des pommes, sans fusils. En chassant et en étant chassés, connectés, sans souffrir de peur.</p>
+<p>Il n'est pas nécessaire de considérer l'hypothèse idéale que <em>tous</em> les êtres humains deviendraient des « gourous » - pouvant bien vivre avec eux-mêmes, même en exil dans les montagnes, sans perdre le sourire du coin des lèvres (cœur chaud). Ce scénario idéal n'est pas nécessaire. Il est aussi possible d'analyser en pourcentages, de manière statistique. Alors, si ce n'est pas tous, mais plus il y a de « gourous » qui se forment, étant donné l'hypothèse que être gourou éteint le besoin de créer et de divulguer des connaissances, alors plus les « gourous » se convertissent, diminue, dans une proportion similaire, l'avancée dans la connaissance globale humaine. Cela diminuerait. Dans cette hypothèse.</p>
+<h2>Tous gourous, la curiosité se maintient : curiosité essentielle</h2>
+<p>Déjà dans l'hypothèse opposée - si être ou s'approcher d'être « gourou » ne diminue pas la soif de connaissance, alors le feu qui alimente cette soif de connaissance est essentiel, inhérent, à l'être humain. Ce qui colle bien, d'ailleurs, avec le besoin de travailler en groupe, si nous souhaitons être moins des proies pour d'autres espèces. Notre grande force est la sociabilité.</p>
+<h2>« Notre grande force est la sociabilité »</h2>
+<p>(sinon, un contre un, nous sommes une proie facile dans la forêt). C'est peut-être cette sociabilité renforcée darwinistiquement qui nous pousse à chercher la connaissance. À chercher à créer des outils. Pour ensemble, tuer, au lieu d'être tués par : des ours, des tigres, nommez-les.</p>
+<p>D'accord, mais alors, quelle serait l'utilité pratique de savoir que la sociabilité peut être l'essence de la recherche de la connaissance, recherche qui serait donc essentielle en nous ?</p>
+<p>Car il y a une implication pratique : cela peut signifier que la connaissance qui ne nous aide pas à « vaincre le prédateur » n'est pas essentielle.</p>
+<p>Est-ce possible ? Question à ne pas jeter.</p>
+<p>En parlant de prédateur :</p>
+<h2>Vaincre le prédateur</h2>
+<p>Qui serait notre prédateur ?</p>
+<p>Si les tigres et les loups sont dans des cages ou, quand ils sortent des forêts, reçoivent une fléchette soporifique et sont ramenés à la forêt ou alors sont mis en cage, alors quels sont nos prédateurs ?</p>
+<p>La planète elle-même est une bonne candidate : pleine de kérosène brûlé, de plastiques et de ces sous-produits de nos outils sur notre chemin, faire en sorte que la planète elle-même revienne à viscejar verte, oxygénée et pleine, est une manière de « vaincre un tigre ».</p>
+<p>Cette fois un tigre bleu et rond, mais pas moins prédateur, si « en colère ».</p>
+<p>Ou en marchant encore plus vers l'avenir, nous pouvons avoir comme notre lointain prédateur la disparition naturelle prévue du soleil - dans ce cas oui, nous pourrons réellement avoir besoin d'inventer des fusées (integalactiques, en marchant vers de nouveaux soleils, ceux-ci, mais avec des millions d'années pour être créés par la connaissance/curiosité humaine).</p>
+<p>Ce qui m'intéresse, cependant, est la question suivante :</p>
+<h2>Notre planète (mal entretenue) comme prédateur</h2>
+<p>Je voulais me concentrer sur la gestion du prédateur notre propre planète.</p>
+<p>Ce défi pourrait pousser notre connaissance - notre curiosité essentielle, cette curiosité connectée au besoin de survie - vers le besoin de préserver la planète. Pour notre propre survie.</p>
+<h2>Une vérité ténébreuse derrière cette bagarre ?</h2>
+<p>Cependant si c'est « simplement » pour notre survie - contre le prédateur qui serait notre propre planète mal entretenue - alors cela dans son essence ne serait pas une « affection/compassion » avec les animaux et la faune. Laid à dire, mais j'ose, dans cette séquence d'hypothèses, que nous serions plus concentrés à nous préserver qu'aux autres êtres.</p>
+<p>Cela s'applique dans cette séquence d'hypothèses : la curiosité essentielle humaine étant liée au besoin de survie.</p>
+<p>Besoin de survie qui nécessite la force du groupe - habileté sociale - , au moins contre les tigres et les loups, comme c'était bien autrefois, quand nous vivions encore « dans la forêt ».</p>
+<p>Dans cette séquence d'hypothèses, j'ose proposer que si nous réussissions à créer une planète stable pour la race humaine, en théorie, cette solution pourrait l'être avec ou sans animaux, avec ou sans sa faune.</p>
+<p>Folie ?</p>
+<p>En suivant cette hypothèse (bien que ténébreuse - mais, ici, ce ne sont que des mots : restez calme), aujourd'hui, alors, nous confondrions préserver la planète avec l'attitude de préserver la faune et la flore et les petites bêtes plus parce que nous ne savons pas - encore - faire une planète stable « pleine de plaques solaires, d'eau, et de béton, même, avec un type d'aliment possible dans ce format », que par réelle compassion envers les êtres vivants.</p>
+<p>Notez que cette effrayante, bizarre, théorie, bien que bizarre et effrayante, correspond plus à beaucoup de nos actions effectives, demandez-vous avec moi :</p>
+<h2>Nous aimons vraiment les animaux ? Dans les zoos ou en dehors ?</h2>
+<p>Je répète la question : nous aimons vraiment les animaux ? Dans les zoos ? Préservés dans des banques de gènes, pour quand nous maîtriserons mieux la technologie, les cloner quand et où nous voulons ? Dans les congélateurs ? Loin de nos maisons ? Aimons-nous ? (Chat et chien ne comptent pas, je me réfère à tous, évidemment).</p>
+<p>Rappelons-nous que nous avons déjà « mordu la pomme », c'est-à-dire « sommes tombés du paradis », c'est-à-dire, sommes sortis de la forêt. Nous sommes sortis de la vie sauvage. De l'interdépendance directe.</p>
+<h2>La forêt en flammes à dix mille kilomètres brûle à Londres</h2>
+<p>Aujourd'hui, alors, nous nous connectons seulement avec la planète « quand nous brûlons l'Amazonie », c'est-à-dire, avec la peur du phénomène encore beaucoup plus grand que notre connaissance actuelle, qui est la biosphère dans son ensemble. « Ne touchez pas à la forêt, cela peut foirer Londres et Paris », quelque chose comme ça. Aujourd'hui. Nous nous soucions de cela, mais nous laissons les zoos bien fermés à clé (car le fait de tourner la clé dans les cages des zoos n'affecte pas la biosphère de manière significative).</p>
+<h2>Et si nous maîtrisons la connaissance sur la biosphère ?</h2>
+<p>Ma crainte est que si un jour nous maîtrisons la compréhension de la biosphère, nous pourrons remarquer que nous n'avons pas besoin de : fourmis, abeilles, plantes, algues, je ne sais pas. Nous pourrions engendrer un flux qui nous maintienne très bien, sans ces êtres. Là oui, nous saurons définitivement si nous aimons réellement les animaux, la faune et la flore, ou si nous craignons seulement le désordre de la biosphère et, par conséquent, notre extinction.</p>
+<p>Et là nous saurions si nous voulons, pour de vrai, même, essentiellement, seulement, notre survie.</p>
+<p>Et que « sortent de devant ».</p>
+<p>Quelle belle « puce » ce serait (est-ce ?).</p>
+<p>Puissante aussi.</p>
+<p>Encore une question quelque peu intéressante.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

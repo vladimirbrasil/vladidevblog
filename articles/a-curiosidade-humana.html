@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A curiosidade humana - Vladimir Dietrich's Blog</title>
+  <meta name="description" content="  ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="A curiosidade humana - Vladimir Dietrich's Blog">
+  <meta property="og:description" content="  ">
+  <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/a-curiosidade-humana.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="hero-image-container">
+        <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg" alt="" class="hero-image">
+        
+      </div>
+      <div class="article-content-wrapper">
+        <a href="/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>A curiosidade humana</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>June 25, 2025</span>
+            <span>·</span><span class="reading-time">11 min read</span>
+          </div>
+        </div>
+        
+        
+      <div class="language-switcher">
+        <strong>Português</strong><span>|</span><a href="/fr/articles/a-curiosidade-humana.html">Français</a><span>|</span><a href="/de/articles/a-curiosidade-humana.html">Deutsch</a><span>|</span><a href="/es/articles/a-curiosidade-humana.html">Español</a>
+      </div>
+    
+
+        <div class="article-content">
+          <p>  </p>
+<p>[<em>O artigo original é de 11 de setembro de 2019, migrado nesta data para este novo blog</em>]</p>
+<p>Se um grande conhecedor da alma humana pode viver como um mendigo, nas ruas, ou em exílio em montanhas no Tibet, tudo isso sem afetar seu ego (aliás, vide Epicuro e/ou Diógenes, o cínico), meu medo é: o que este grande gênio das sinapses não poderia “produzir” na: Nasa, em novos produtos/serviços, em grandes laboratórios, no conhecimento humano. Nada duvido que este ser iluminado esteja pleno e radiante: envolto por cachorros, na calçada, no Tibet. Porém: e o conhecimento?</p>
+<p>Será que a avidez por ser disruptivo no conhecimento seria o ego sussurrando: seja famoso, (e/ou) seja significativo?</p>
+<h2>Likes: um curto-circuito</h2>
+<p>Quanto a ser famoso, “zilhões” (bilhões) de humanos vivem rodeados de likes. Sejam milhões de likes — pop stars — , sejam milhares de likes, daqueles que percorreram e circundam sua vida. O conglomerado Facebook (whats/instagram) aperfeiçoou e proporcionou este “curto circuito” às pessoas, sem a obrigação de ser amigo de repórter de grande emissora ou de realmente representar grande noticia (grande em termos de audiência). Um alimenta o outro de like, e vice-versa, em grande corrente uterina curto-circuitada.</p>
+<p>Estes zilhões de likes não necessariamente evoluem a curiosidade humana. Criam um “bem” estar, sim (do ego, certamente, se não for paradoxal bem estar com ego). Como se fosse uma “masturbação mental”, do ego. Permite produzir um e outro hormônio pra valer — um “bem” estar — usando o capicioso (uma cobra venenosa?) ego.</p>
+<p>Quero dizer que buscar likes não necessariamente “produz foguetes”. Não necessariamente produz conhecimento para a humanidade.</p>
+<p>Ainda mais com a indústria de likes do conglomerado Facebook, conglomerado que cada vez mais aprende a inflar egos com menor custo. E não é culpa de ninguém: a não ser de nós mesmos — quem criamos a demanda — permitindo à empresa explorar o filão e vender anúncios em cima.</p>
+<h2>O papel do ego no conhecimento</h2>
+<p>Me interesso pelo que vem agora:</p>
+<p>É necessário ego para efetivamente “produzir foguetes”?</p>
+<p>Talvez sim — um pouco. Talvez não seja necessário.</p>
+<p>(Com “produzir foguetes” quero dizer produzir grandes avanços públicos no conhecimento global humano — uso o termo para simplificar)</p>
+<p>Se não for necessário ego para “produzir foguetes”, então neste caso a curiosidade humana é algo mais essencial do que o superficial ego. Seria um bonito enredo, caso seja “verdade”.</p>
+<p>Só que aí vem mais umas questoezinhas.</p>
+<h2>Desperdício de curiosidade?</h2>
+<p>Neste caso, então, “mendigos, gênios, curtindo seu conhecimento da alma, silenciosos, satisfeitos, entre cachorros” estariam “desperdiçando curiosidade”? Tirando do conhecimento público global humano novos conhecimentos que este mendigo poderia ter criativamente desenvolvido?</p>
+<p>Esta é outra estória interessante (admito um ‘uau!’):</p>
+<h2>O guru no Tibet possui curiosidade?</h2>
+<p>Ou — a la Diógenes, o filósofo que passa a viver em um barril como mendigo, sem se importar, sem dor de ego — este mendigo-zen possui curiosidade?</p>
+<p>Se este mendigo super zen, profundo conhecedor da alma, não possui curiosidade — se este “guru” aprendeu, e realmente aprendeu, a compreender que somos uma sopinha de hormônios, e que são hormônios, não dor de verdade, nossos “sentimentos” — entre várias outras descobertas, suponho — então neste caso, não estaria este mendigo-guru desperdiçando uma curiosidade essencial, privando a humanidade de exercer sua habilidade para publicar novos conhecimentos, ao invés de viver, “simplesmente” contente, entre cachorros?</p>
+<h2>Auto-curiosidade: e nós, os outros?</h2>
+<p>Note que estou aqui supondo a hipótese da curiosidade ser essencial, e não apenas um capricho do ego, no ser humano. Se ela for essencial — estiver na essência do ser humano — exercer esta curiosidade essencial no auto-descobrimento, sozinho, entre cachorros, não é um desperdício? Ainda que eficaz: a pessoa vive até a morte próxima do êxtase, plena, diafragma quentinho, coração abraçador. Mas só para ela. Não seria um desperdício? Sim ou não? Ainda que eficaz (especialmente para ela)? Suponho que não bastasse ela investigar apenas conhecimentos que ajudem em seu próprio conforto, que ela além disto não conte para ninguém estas descobertas que eventualmente faça (por exemplo, como prolongar o êxtase. Como não se importar com “êxtase”. Como estar “simplesmente” bem). Seria um desperdício de talento?</p>
+<p>Supondo que a curiosidade seja parte de nossa essência, o mendigo entre cachorros e o guru eternamente na montanha do Tibet não estariam/estão desperdiçando sua capacidade inata de curiosidade? — pergunto.</p>
+<p>Pode ficar pior:</p>
+<p>Se o guru no Tibet possui curiosidade — curiosidade por conhecer a si próprio — , então exercer esta curiosidade apenas para si próprio não seria um controverso “egoísmo”? Em oposição ao altruísmo, caso contribuísse para o conhecimento global público humano, saindo de seu exílio, de vez em quando. (Aliás, se ele supera o ego, seguir curioso sobre si seria egóico, paradoxalmente). Mas nada disso é grave: indicaria que a busca por suprimir o ego seria/é eterna.</p>
+<p>O que me importa é: proponho a hipótese de que seria um desperdício de curiosidade humana ser um grande guru, porém quieto, sem criar e/ou muito menos dividir conhecimentos. Ainda que plenamente eficaz: para si próprio. Perfeito (para si próprio). O conhecimento morreria com o guru.</p>
+<h2>Guru-E-cientista</h2>
+<p>Que tal se “gurus” — os melhores mesmo, pra valer —não se em-si-mesmassem, ou seja, mesmo sem ego, maravilhosos, zen, seguissem contribuindo para a evolução do conhecimento público global humano? E me refiro ao kit completo do conhecimento humano, ou seja, conhecimento humano e público, disponibilizado para a humanidade. Ou seja: divulgando o conhecimento também (guardar para si entre arbustos do Tibet seria sacanagem!).</p>
+<p>Aqui entra outro leve paradoxo, mas gerenciável: criar e, notadamente, <em>divulgar/publicar</em> conhecimentos possui grande semelhança com necessidade de alimentar o ego — ainda que seja perfeitamente possível o ego estar atrofiado ou quase nulo, e que a fonte de inspiração seja não mais do que a essencial curiosidade humana.</p>
+<p>“Queremos foguetes” — talvez em nossa essência.</p>
+<h2>Implicações práticas</h2>
+<p>Apesar de perguntas bem abstratas, há implicações extremamente práticas a depender das possíveis respostas a estas questões aparentemente abstratas.</p>
+<p>Por exemplo, se o ser humano “gênio” pra valer, a ponto de suprimir seu ego e também criar uma alegria/radiância mais independente de outros eventos, suprimir junto a necessidade de alimentar a curiosidade humana global com cada vez mais novos conhecimentos públicos, então pensemos o seguinte:</p>
+<h2>Todos gurus, curiosidade cessa</h2>
+<p>Vamos supor que todos os seres humanos cheguem a este ponto “guru”, ou o nome que for. Nestas circunstâncias, proponho que viveríamos, todos contentes, “na floresta”. Sem precisar pavimentar, nem precisar agarrar smartphone, nem criar moeda, nem produzir “equipamentos” em escala. Silvícolas poderíamos jamais deixar de ser. Não teríamos sequer “saído do paraíso”, levando em consideração a tese mais lógica, de que a bíblica “saída do paraíso” teria sido adotar a cultura agrícola — saindo da floresta, tendo que “pagar iptu” (imposto sobre imóvel). Nem precisaríamos ter saído da floresta. Gurus que seríamos, todos, “bem” — simples assim — estaríamos. Inclusive convivendo “bem” com a morte. Inclusive convivendo bem com ser, muitas vezes, caçado. Convivendo bem com não dominar o mundo. Convivendo bem até mesmo com a possibilidade de extinção. Convivendo bem até mesmo com eventual nossa total extinção, precoce, devido a ferramentas que não criamos — felizes, satisfeitos, sabendo lidar com nossas dores, como nos encontrávamos. Gurus que éramos. Este cenário também valeria para o futuro: fechariamos fábricas de foguetes, cessariamos a sede por tecnologias, encolheriamos a população — sabendo lidar com a dor inclusive a da morte, sem problemas — , viveríamos “de mãos dadas” com os recursos naturais plenos, sem sede maior do que a mínima necessária. Colhendo cogumelos, maçãs, sem espingardas. Caçando e sendo caçados, conectados, sem sofrer com medo.</p>
+<p>Não é preciso considerar a hipótese ideal de que <em>todos</em> os seres humanos virassem “gurus” — podendo viver bem consigo mesmos, até mesmo em exílio em montanhas, sem perder o sorriso de canto de rosto (coração quente). Não é preciso este cenário ideal. Também é possível analisar em porcentuais, de maneira estatística. Então, se não todos, mas quanto mais, “gurus” se formarem, dada a hipótese de que ser guru extingue a necessidade de criar e divulgar conhecimento, então quanto mais “gurus” se converterem, diminui, em proporção similar, o avanço no conhecimento global humano. Diminuiria. Nesta hipótese.</p>
+<h2>Todos gurus, curiosidade se mantém: curiosidade essencial</h2>
+<p>Já na hipótese oposta — se ser ou aproximar-se de ser “guru” não diminui a sede por conhecimento, então o fogo que abastece esta sede por conhecimento é essencial, inerente, ao ser humano. O que casa bem, aliás, com a necessidade de trabalharmos em grupo, caso desejemos ser menos presas de outras espécies. Nossa grande força é a sociabilidade.</p>
+<h2>“Nossa grande força é a sociabilidade”</h2>
+<p>(se não, um contra um, somos presa fácil na floresta). Talvez seja esta darwinisticamente fortalecida sociabilidade que nos empurra para buscar conhecimento. Buscar criar ferramentas. Para juntos, matarmos, ao invés de sermos mortos por: ursos, tigres, nomeie você.</p>
+<p>Tá, mas e daí, qual seria a utilidade prática de saber que a sociabilidade pode ser a essência da busca por conhecimento, busca que portanto seria essencial em nós?</p>
+<p>Pois há implicação prática: isto pode significar que o conhecimento que não nos ajude a “vencer o predador” não seja essencial.</p>
+<p>É possível? Pergunta para não se jogar fora.</p>
+<p>Por falar em predador:</p>
+<h2>Vencer o predador</h2>
+<p>Quem seria nosso predador?</p>
+<p>Se tigres e lobos estão em jaulas ou, quando saem das florestas, recebem dardo sonífero e são carregados de volta à floresta ou então são enjaulados, então quais são nossos predadores?</p>
+<p>O próprio planeta é bom candidato: cheio de querosene queimado, plásticos e estes subprodutos de nossas ferramentas em nosso caminho, fazer o próprio planeta voltar a viscejar verde, oxigenado e pleno, é maneira de “vencer um tigre”.</p>
+<p>Desta vez um tigre azul e redondo, mas não menos predador, se “zangado”.</p>
+<p>Ou caminhando ainda mais para o futuro, podemos ter como nosso longínquo predador o previsto natural apagamento do sol — neste caso sim, poderemos realmente precisar inventar foguetes (integaláticos, caminhando para novos sóis, estes, mas com milhões de anos para serem criados pelo conhecimento/curiosidade humana).</p>
+<p>Me interessa, porém, a seguinte questão:</p>
+<h2>Nosso planeta (mal cuidado) como predador</h2>
+<p>Queria focar em lidar com o predador nosso próprio planeta.</p>
+<p>Este desafio poderia empurrar nosso conhecimento — nossa curiosidade essencial, aquela curiosidade conectada à necessidade de sobrevivência —para a necessidade de preservar o planeta. Para nossa própria sobrevivência.</p>
+<h2>Uma verdade tenebrosa por trás desta briga?</h2>
+<p>Porém se isto for “meramente” para nossa sobrevivência — contra o predador que seria nosso próprio planeta mal cuidado — então isto em sua essência não seria um “carinho/compaixão” com os animais e a fauna. Feio dizer, mas ouso, nesta sequência de hipóteses, que estaríamos mais focados em nos preservar do que aos demais seres.</p>
+<p>Isto se aplica nesta sequência de hipóteses: a curiosidade essencial humana estando atrelada à necessidade de sobrevivência.</p>
+<p>Necessidade de sobrevivência que requer a força do grupo — habilidade social — , ao menos contra tigres e lobos, como era bem antigamente, quando ainda vivíamos “na floresta”.</p>
+<p>Nesta sequência de hipóteses, ouso propor que se conseguíssemos criar um planeta estável para a raça humana, em tese, esta solução poderia sê-lo com ou sem animais, com ou sem sua fauna.</p>
+<p>Loucura?</p>
+<p>Seguindo esta hipótese (ainda que tenebrosa — mas, aqui, são somente palavras: fique calmo), hoje, então, confundiríamos preservar o planeta com a atitude de preservar fauna e flora e os bichinhos mais porque não sabemos — ainda — fazer um planeta estável “cheio de placas solares, água, e concreto, mesmo, com algum tipo de alimento possível neste formato”, do que por real compaixão aos seres vivos.</p>
+<p>Note que esta assustadora, bizarra, teoria, ainda que bizarra e assustadora, combina mais com muitas de nossas efetivas ações, pergunte comigo:</p>
+<h2>Nós amamos mesmo os animais? Em zoológicos ou fora deles?</h2>
+<p>Repito a pergunta: nós amamos mesmo os animais? Em zoológicos? Preservados em bancos de genes, para quando dominarmos melhor a tecnologia, os clonarmos quando e onde quisermos? Em freezers? Longe de nossas casas? Amamos? (Gatinho e cachorrinho não vale, me refiro a todos, evidentemente).</p>
+<p>Lembremo-nos que já “mordemos a maçã”, ou seja “caímos do paraíso”, ou seja, saímos da floresta. Saímos da vida selvagem. Da interdependência direta.</p>
+<h2>Floresta em chamas a dez mil quilômetros arde em Londres</h2>
+<p>Hoje, então, apenas nos conectamos com o planeta “quando queimamos a Amazônia”, ou seja, com medo do fenômeno ainda muito maior que nosso atual conhecimento, que é a biosfera como um todo. “Não mexa na floresta, pode ferrar com Londres e Paris”, algo assim. Hoje. Nos preocupamos com isso, mas deixamos os zoológicos bem trancados (pois o girar da chave em jaulas de zoológicos não afeta a biosfera de maneira significativa).</p>
+<h2>E se dominarmos o conhecimento sobre a biosfera?</h2>
+<p>Meu medo é que se algum dia dominarmos o entendimento da biosfera, poderemos notar que não precisamos de: formigas, abelhas, plantas, algas, sei lá. Poderíamos engendrar fluxo que nos mantenha muito bem, sem estes seres. Aí sim, saberemos definitivamente se realmente amamos os animais, a fauna e a flora, ou apenas tememos o desgoverno da biosfera e, portanto, nossa extinção.</p>
+<p>E aí saberíamos se queremos, pra valer, mesmo, essencialmente, apenas, nossa sobrevivência.</p>
+<p>E que “saiam da frente”.</p>
+<p>Que belo “chip” seria (é?) este.</p>
+<p>Poderoso também.</p>
+<p>Mais uma questão algo interessante.</p>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

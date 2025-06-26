@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oblivion - Vladimir Dietrich's Blog</title>
+  <meta name="description" content="   ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Oblivion - Vladimir Dietrich's Blog">
+  <meta property="og:description" content="   ">
+  <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-hero.png">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/oblivion.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="hero-image-container">
+        <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-hero.png" alt="" class="hero-image">
+        
+      </div>
+      <div class="article-content-wrapper">
+        <a href="/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Oblivion</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>June 25, 2025</span>
+            <span>·</span><span class="reading-time">9 min read</span>
+          </div>
+        </div>
+        
+        
+      <div class="language-switcher">
+        <strong>Português</strong><span>|</span><a href="/en/articles/oblivion.html">English</a><span>|</span><a href="/fr/articles/oblivion.html">Français</a><span>|</span><a href="/de/articles/oblivion.html">Deutsch</a><span>|</span><a href="/es/articles/oblivion.html">Español</a>
+      </div>
+    
+
+        <div class="article-content">
+          <p>   </p>
+<p>[<em>O artigo original é de 28 de abril de 2020, migrado nesta data para este novo blog</em>]</p>
+<p>Se você não assistiu Oblivion nem toque neste post. Contará sobre o filme, chamam isto de spoiler.♥️</p>
+<p>Oblivion, o filme, permite algumas maneiras de ver. Mais provavelmente culpa de nosso olho, nem tanto do filme.</p>
+<p>1. A cobertura envidraçada altíssima com piscina flutuante com chão de vidro não pode ter sido desenhada para ser &quot;feia&quot;. Parece refletir um tipo de sonho humano.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>2. Precisava embaixo desta &quot;cobertura de sonho&quot; haver desgraça? Meio ambiente &quot;contaminado&quot;, seres &quot;inferiores&quot; vivendo na miséria caçados como rebeldes? Parece que sim.</p>
+<p>Algum recado pode estar sendo passado.</p>
+<p>3. A mulher não sai a campo. Fica em casa - &quot;em segurança&quot;. Isto me lembra a preocupação com os &quot;úteros das mulheres&quot; antes da estreia da primeira locomotiva, que ia a deslumbrantes, para a época, 60km/h. A notícia é <a href="https://www.mentalfloss.com/article/67806/early-trains-were-thought-make-womens-uteruses-fly-out" target="_blank" rel="noopener noreferrer">real</a>, da época. Machismo subsiste, ainda, no filme.</p>
+<p>Ainda estou assistindo.</p>
+<p>Pelo que me recordo,</p>
+<p>4. O amor salva tudo.5. Vão viver no chão, com a natureza, com amor.</p>
+<p>Neste sentido a cobertura e a esposa dentro parecem um relacionamento artificial. Precisava ser a cobertura mais &quot;bonita&quot; representando um relacionamento ruim? Talvez precisasse: compensar com uma grande obra o vazio. Algo nesta linha.</p>
+<p>Dará para ir além.</p>
+<p>A empresa - gigante - engana os &quot;funcionários&quot; sempre prometendo algo a poucas semanas dali. Depois repete o ciclo. Perpetua um &quot;nada&quot;: a própria destruição e contaminação, a mesma, não sem ironia, que constrói a cobertura de sonho.</p>
+<p>Vou publicando antes de terminar de assistir.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>6. A lua destruída não deve ser apenas coadjuvante. Tiro longo: se a lua representar o amor, o amor foi destruído.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>7. Após o onírico beijo embaixo da piscina, sua musa, como uma sereia, vai para baixo. É o amor chamando &quot;para baixo da cobertura: para o chão&quot;.</p>
+<p>8. A insistência no &quot;são você e Jack um time eficaz?&quot; não é coadjuvante. Um mantra corporativo, parece ser. Talvez a questão seja esconder o objetivo real por trás de tantas tarefas eficazes, não questionar a eficácia per se. Mas a eficácia parece um pouco robótica. Per se.</p>
+<p>Ao chegar em seu esconderijo paraíso na terra, com plantas, água cristalina, peixe amigo, camisa de flanela, led zeppelin em vinil e quadra de basquete, a frase:</p>
+<p>9. &quot;Vou sentir saudades deste lugar&quot;. Quando o casal &quot;terminar a missão&quot;. Esta talvez grande mensagem, será a maior? Chamo de paradoxo da tecnologia total, algo assim. Quando realmente tivermos fusão nuclear (nosso próprio sol, em qualquer lugar), dominarmos a química e a biologia, talvez - eu disse talvez - percebamos que só éramos amiguinhos do planeta enquanto ele &quot;era maior que nós&quot;. Enquanto ele era um &quot;útero&quot;. Se não precisarmos dele - mesmo que sempre com gentileza e agradecimento, com até saudades - não o relegaríamos a segundo plano como fazemos com piano e outras coisas antigas? Isto nos confronta com questão pesadíssima, que pergunta &quot;se gostamos, realmente, da natureza?&quot;. O repelente para mosquitos é só uma dica, a resposta verdadeira, se um dia aparecer, é imensa.</p>
+<p>10. &quot;Teria sido ótimo&quot;, logo após &quot;Vou sentir saudades deste lugar&quot;, questiona a tecnologia. A alquimia. Na verdade poderíamos voltar esta questão para antes da agricultura, quando ainda quasi-acasalávamos de tão relacionados que éramos com a natureza. &quot;Antes de mordermos a maçã&quot;, experientes cientistas notam que a maçã mordida representaria esta cisão do homem com a vida na natureza (antes da agricultura de excedentes e religiões atuais). &quot;Teria sido ótimo&quot; pode também apenas representar medo do novo. Simples assim: medo real. Vontade de voltar, antes e ao invés de mudar.</p>
+<p>11. &quot;Nosso trabalho não é lembrar...&quot; &quot;Lembra?&quot;. Esta frase interessantemente mostra que se deve lembrar apenas o que interessa. Não o passado mais distante. Talvez: a lavagem cerebral que empresariar pode trazer: lembre-se da nossa missão e valores (esqueça o resto).</p>
+<p>12. &quot;Não posso proteger você&quot;, diz a esposa e colega de trabalho quando Jack desce com sua musa. O medo de fugir às regras da empresa, ou um tipo de burocracia, sem margem para improvisações. Curiosamente o botão que desconecta e torna a missão &quot;informal&quot;, &quot;offline&quot; é o único botão vermelho dentre todos brancos. Na guerra fria as coisas &quot;ruins&quot; eram vermelhas (em filmes americanos, ao menos). Portanto &quot;estar online seria ruim (vermelho)&quot;. Ao desligar, apaga-se a luz vermelha. Informal com o amor, descem.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>13. O medo de &quot;o que tem lá embaixo&quot; é sincero. A esposa na cobertura genuinamente se arrepia quando Jack está &quot;lá embaixo&quot;. Talvez seria como &quot;gente de bem&quot; se arrepiando com o que acontece em ruas de periferia, em um Brasil. Mas esta analogia forcei.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>14. O amor trespassa lavagens cerebrais de grandes corporações. Jack se lembra. Como neutrinos, como raio-x. O amor trespassa, imparável. É o regurgitar da maçã mordida, realmente ouso propor. Voltar à comunhão com a natureza. Abandonar a corporação. A tecnologia. Voltar para o útero do ponto de vista de DNA (mas não tão longe até o caldo bacterial, né? Até a era selvagem está bem).</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>Uau:</p>
+<p>15. A esposa tecnológica - da cobertura - chora ao ver Jack com seu amor-musa. Através da lente da nave que vai (ia?) salvar Jack. &quot;Salvar&quot;. O que é &quot;salvar&quot; começa a se solidificar. &quot;Uau&quot;, porque seria interessante explicar o choro da esposa tecnológica, da cobertura envidraçada. O que ela quer? Instigante pensar.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>16. Lutar contra nós mesmos é, realmente, a grande luta. O nós da cobertura envidraçada funcionário exemplar, o nós do amor - que redescobre a verdade, que através do amor penetra como neutrino na lavagem cerebral corporativa tecnólogica. Você e você. &quot;Regurgitar&quot; a mordida da maçã, no contexto deste filme. Redescobrir, ao invés de ser expulso, do paraíso. Largar a tecnologia. A eficácia. Largar a piscina de vidro sobre as nuvens. Parar de tratar os debaixo como mosquitos contagiosos. Na verdade, como se não fossem humanos (mas são!).</p>
+<p>17. A esposa da torre 52 (Jack era da torre 49) não percebe a diferença entre os Jacks. Vou forçar: assim nos sentimos, um pouco, com os tratamentos automatizados em spams de email, por telefone, por mensagem. Tentam nos chamar pelo nome, mas mal sabem de nossa essência. Culpados? Ninguém.</p>
+<p>18. Jack convida a esposa tecnológica da torre de vidro 52 para baixo. Ela genuinamente possui uma curiosidade, mas como na melhor produção iso-9000, com previsibilidade garantida rejeita e se sente desconfortável com o assunto. &quot;É contra o regulamento&quot;. Sua lavagem cerebral foi com alvejante bem forte - ou não havia neutrino do amor. Volta para o quarto. &quot;Segura&quot;.</p>
+<p>Jack e sua musa vão para a casa no lago. Jack diz que é só uma cópia do verdadeiro Jack. A musa diz que Jack havia prometido uma casa no lago. Para engordarem e envelhecerem juntos.</p>
+<p>19. O amor também poderia ser considerado uma máquina. Máquina de repetir: casa no lago, vinil dos anos 70, basquete, beisebol. Quem é mais legítimo? A automação via-amor, a automação via tecnologia. Sei lá!</p>
+<p>20. Jack acalma a máquina. O drone caçador de humanos. &quot;Oooouuu&quot; - como se faria com um cavalo. E o drone agitado com a multidão em volta se acalma. Jack conserta e entende a fundo a tecnologia. É um técnico engenheiro. Mas não entendia intenções subjacentes. As pessoas no chão entendem.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>21. O quadro da menina (cabelo igual da musa, portanto, a musa) se arrastando em direção à casa não pode ser apenas coadjuvante. &quot;Voltar para casa&quot;. Para o paraíso. Regurgitar a maçã mordida. Sair da tecnologia, cujo vilão, nada por coincidência, se chama &quot;tet&quot; (quase &quot;tec&quot;).</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>22. O beijo antes da missão kamikaze-mas-salvadora. O beijo. Saliva, sentimento. Não-tinder, não-whatsapp. Sujo, suado. Não tecnológico, sem vidro limpíssimo. Será que nosso &quot;DNA&quot; - ele mesmo, sim! - fala? Será que ele pode gritar mesmo sem cordas vocais? Será que pressente sua extinção? Sua mudança via crispr-cas9. Sua alteração. Videogames, cada vez menos suor - mesmo antes de mexer no DNA. Limpeza, distância. Natureza virando zoológico. Pode nosso DNA compreensivelmente espernear? &quot;Não quero morrer&quot;, gritaria, talvez em forma de artes, já que atua sem cordas vocais? Note que mesmo que seja verdade - o DNA grite - não significa, ao menos não automaticamente, que esteja correto. Mais chance há de ser uma auto-preservação egoísta, ou seja, sem pensar no &quot;próximo DNA&quot; para o qual cederia sua existência. Fui longe, basta ignorar.</p>
+<p>23. A gravação da missão original do Jack original. A máquina &quot;tet&quot; (tec!) usou a verdadeira chefe da missão da época para criar uma chefe clonada. Com os mesmos &quot;bom dia&quot;, &quot;que dia maravilhoso&quot;, &quot;está tudo bem?&quot; &quot;Querido(a)&quot;. Tentamos &quot;levar para o futuro&quot; nossos melhores eus em: spams, atendentes virtuais, mensagens automatizadas. &quot;Como você está, [seu nome]?&quot;. &quot;Está tudo bem?&quot;.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>23B. Tet (tec) é i-men-sa. Somos formiguinhas de pelúcia.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>24. Tet (tec!) clona humanos como quem faz salsicha com porcos. Lado a lado, em escala industrial. Que significa?</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" /></figure>
+<p>25. Tet, a tecnologia, tem a essência - o olhar - vermelho. Novamente a guerra fria dando a dica sobre a real moral de tet (tec).</p>
+<p>&quot;O que Horácio disse foi:Como pode um homem morrer melhor /Que enfrentando adversidades /Pelas cinzas de seus ancestrais /E pelos templos de seus deuses&quot;.</p>
+<p>26. Se isso não é nosso DNA tentando se comunicar, é quem? Um diretor de hollywood?</p>
+<p>&quot;Eu criei você Jack.Eu sou seu deus&quot;,</p>
+<p>Tet, a tecnologia, responde.Jack nem dá bola.</p>
+<p>Horácio, ao menos neste filme, fala mais forte.</p>
+<p>Jack chama Tet (tec) de Sally. Sally é sabidamente uma modelagem tecnológica da verdadeira Sally do passado. Um vídeo. Photoshopado para falar outras coisas, com o mesmo rosto. Chamando tet (tec) de Sally, Jack nem hesita em tratá-la como um spam, ou seja: jogar uma bomba nuclear em seu coração.</p>
+<p>&quot;Se temos alma,Elas são feitas do amor que compartilhamosUndimmed by timeUnbound by death&quot;.[Não acaba nem com tempo nem com a morte]</p>
+<p>&quot;Sou Jack HarperE estou em Casa&quot;.</p>
+<p>Diz o Jack 52, não o 49.Um clone - um spam - pode substituir outro?</p>
+<p>Filho de tet (tec), digamos assim.Muito-bem-clonado, o que muda?</p>
+<p>O clone no paraíso com a musa.Clone e musa.Amor, ancestralidade.</p>
+<p>Sei de nada.</p>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
