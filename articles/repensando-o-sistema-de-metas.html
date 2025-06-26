@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repensando o sistema de metas - Vladimir Dietrich's Blog</title>
+  <meta name="description" content="   ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Repensando o sistema de metas - Vladimir Dietrich's Blog">
+  <meta property="og:description" content="   ">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/repensando-o-sistema-de-metas.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="article-content-wrapper">
+        <a href="/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Repensando o sistema de metas</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>June 25, 2025</span>
+            <span>·</span><span class="reading-time">11 min read</span>
+          </div>
+        </div>
+        
+        
+      <div class="language-switcher">
+        <strong>Português</strong><span>|</span><a href="/en/articles/repensando-o-sistema-de-metas.html">English</a><span>|</span><a href="/fr/articles/repensando-o-sistema-de-metas.html">Français</a><span>|</span><a href="/de/articles/repensando-o-sistema-de-metas.html">Deutsch</a><span>|</span><a href="/es/articles/repensando-o-sistema-de-metas.html">Español</a>
+      </div>
+    
+
+        <div class="article-content">
+          <p>   </p>
+<p>[<em>O artigo original é de 28 de novembro de 2018, migrado nesta data para este novo blog</em>]</p>
+<p>Não vou falar sobre “ganhar menos” para ser “mais humano”. Não. Vou falar sobre ganhar mais: e dinheiro, mesmo, não “amor”.</p>
+<p>Como?</p>
+<p>Spoiler: adicionando a cultura japonesa no atual modelo de representação comercial.</p>
+<p>Agora, explico.</p>
+<p>Venda é área tão tradicional quanto, muitas vezes, dura.</p>
+<p>Leads (possíveis clientes). Telefonemas. Whats. Metas. Novo mês. Tudo de novo.</p>
+<p>Funciona.</p>
+<p>Porém é possível transformar a área de vendas para ainda melhor.</p>
+<p>Permitindo a entrada de um ingrediente unusual neste mercado: a compaixão.</p>
+<p>E refriso: sem ceder, ao contrário, aumentando, as vendas.</p>
+<p>A técnica que aqui proponho é a seguinte.</p>
+<p>Se o representante/vendedor falhar em atingir as metas estabelecidas, ao invés de ser “expulso” daquela região ou da empresa em que atua, ele segue vendendo para aqueles clientes que conseguia vender. Por antiguidade. Enquanto conseguir manter um fluxo mínimo de vendas.</p>
+<p>Espera aí, isto não pode dar certo! — você retruca?</p>
+<p>Se analisarmos os quatro principais atores neste mercado, podemos analisar as vantagens e desvantagens que cada um terá com este tipo de técnica.</p>
+<p>Ao adotar este sistema misto de metas/antiguidade, o empresário ganha dos dois jeitos:</p>
+<li>O empresário não perde nenhuma venda que o representante antigo conseguia efetuar.</li>
+<li>O empresário ganha as vendas que o representante novo, oficial, conseguir somar.</li>
+<p>Dinheiro no bolso. O empresário soma, ao invés de “trocar”. A depender do tipo de produto e do tipo de relacionamento entre clientes e representantes/vendedores, não é incomum representantes levarem juntos “seus” clientes para um produto concorrente. Isto, sempre, a depender dos graus de concorrência e relacionamento. O empresário, quando combina metas/antiguidade, aumenta a chance de não sofrer este tipo de perda, mesmo que temporária. O empresário, portanto, vence.</p>
+<p><em>É oportuno detalhar, agora, como ficam as despesas extras.</em></p>
+<p>É oportuno, agora, adicionar detalhes ao modelo metas/antiguidade: o empresário segue, como no modelo tradicional de metas, somente dando recursos, como viagens, estadia, congresso, para o representante/vendedor oficial, atual. O representante/vendedor que atuar por antiguidade não terá mais nenhum recurso extra da empresa para atuar, a partir do momento que perder seu posto por não atingir metas nos prazos estabelecidos. O representante antigo terá que vender por conta própria. A empresa somente irá, como sempre fez, processar os pedidos. Mas sem arcar com despesas extras (congressos, viagens, estadias).</p>
+<p>O empresário fica protegido. Só tem a ganhar, nada a perder. Como sempre fez, somente arca com despesas de um representante oficial, atual, por região.</p>
+<p>E o representante que não consegue atingir as metas, como fica?</p>
+<p>O representante que não atingir as metas recebe várias vantagens.</p>
+<p>Em uma frase, protege seu coração. Seus fios de cabelo. Sua família.</p>
+<p>O representante que não atinge as metas está segurado contra perdas ou mudanças bruscas. Não existe “expulsão” nesta modalidade mista metas/antiguidade.</p>
+<p>Sua renda está protegida — não aumenta, mas também não cai — a depender de seu próprio esforço de conseguir manter tão-somente aquelas vendas que conseguia efetuar.</p>
+<p><em>É oportuno detalhar, agora, como ficam alguns casos extremos. E se o representante ficar inválido (de alguma maneira)?</em></p>
+<p>Este método serve como um tipo de seguro-desemprego, porém sem incomodar o governo e, mais importante ainda, sem incomodar o empresário nem as vendas.</p>
+<p>Como?</p>
+<p>Vamos supor o cenário mais crítico: o representante que não atinge as metas sofre um derrame ou outro tipo de acidente que, em decorrência, impede o vendedor de atingir suas metas, sequer efetuar uma venda.</p>
+<p>O empresário, os colegas, vão visitá-lo no hospital e solidarizam-se, sinceramente.</p>
+<p>Ok.</p>
+<p>Mas e a empresa?</p>
+<p>A vida não pára. Os outros colegas precisam vender.</p>
+<p>Neste método de metas/antiguidade, o representante/vendedor antigo, que não conseguiu cumprir as metas, tem direito a manter suas vendas antigas, “enquanto conseguir manter um fluxo mínimo de vendas”.</p>
+<p>Porém, neste caso, ele não consegue manter o fluxo de vendas: está incapacitado, por algum motivo.</p>
+<p>Neste caso, basta detalhar como se dá “manter um fluxo mínimo de vendas”.</p>
+<p><em>Fluxo mínimo de vendas por antiguidade</em></p>
+<p>Proponho — por exemplo — que manter um fluxo mínimo de vendas seja conseguir, pelo menos, a cada seis meses, retirar um pedido de venda sem utilização de call center ou de outro representante. A empresa somente recebe o dinheiro e entrega o pedido. Se isto ocorrer pelo menos uma vez (ou mais) a cada seis meses, o cliente permanece gerando comissão para o vendedor antigo, na chamada venda por antiguidade.</p>
+<p>Talvez o leitor já esteja percebendo que no pior dos casos — por exemplo, paralisação total de vendas — o vendedor antigo, que não conseguiu cumprir as metas, ainda receberá, por seis meses, comissões sobre as vendas que qualquer um fizer, em nome de clientes para os quais o antigo vendedor conseguia vender.</p>
+<p>É um “seguro-desemprego”, na prática. Sem incomodar governo, muito menos o empresário. Natural segurança, dentro do fluxo comercial.</p>
+<p>Isto no pior caso. 6 meses de segurança, sem nenhum favor, nem doação. Somente vendas por antiguidade.</p>
+<p>Em casos mais comuns, porém, o vendedor antigo poderá manter, durante toda a vida, suas vendas por antiguidade — enquanto seus clientes continuarem fazendo pedidos com ele e enquanto a própria empresa subsistir.</p>
+<p>É por isso que apelidei o modelo de “adicionar cultura japonesa”.</p>
+<p>No Japão existe a cultura de permanecer durante toda a vida no mesmo emprego.</p>
+<p>Sem chegar a este ponto, mas quase chegando, inserimos a antiguidade “para toda a vida”, para o vendedor antigo:</p>
+<p>Sem incomodar as novas vendas do novo representante, atual (o vendedor por antiguidade não pode expandir suas vendas); e</p>
+<p>Sem incomodar o empresário (o vendedor antigo não recebe ajudas de custo, nem passagens, nem estadias).</p>
+<p>Isto não replica <em>ipsis literis</em> a cultura japonesa, mas consegue amaciar as transições de carreira.</p>
+<p>Vejamos:</p>
+<p>O vendedor antigo se torna antigo, e não atual, porque vende apenas “30” quando a meta era “100”, além do prazo máximo estipulado. Ganha 10% de comissão sobre suas vendas: ganha “3”.</p>
+<p>Se ele puder manter as vendas para estes seus clientes, seguirá recebendo em torno de “3”, mantendo sua renda na mesma faixa de antes de perder a vaga por não atingimento de metas.</p>
+<p>Do ponto de vista do representante que não atingiu as metas, sua renda é preservada, de imediato. A depender dos laços que o representante tem com os clientes que atende, ele poderá manter esta carteira de clientes por toda uma vida.</p>
+<p>Enquanto busca outra fonte de renda; ou até mesmo ao decidir se aposentar.</p>
+<p>Ninguém irá mexer com sua carteira de clientes, por antiguidade.</p>
+<p>Com a condição de que o representante por antiguidade consiga manter o fluxo mínimo de vendas — por exemplo, efetuar, ele mesmo, pelo menos uma venda a cada seis meses, sem call center.</p>
+<p>É excelente combinação da segurança japonesa com o dinamismo do setor de vendas. Um mix saudável: ingredientes na medida correta para que <em>todos</em> ganhem: o empresário; o cliente; os representantes, tanto o antigo, quanto o novo.</p>
+<p>Vamos analisar o que ganham e o que perdem outros dois atores: o cliente e o representante/vendedor novo:</p>
+<p>O que ganha o cliente com a técnica mista metas/antiguidade?</p>
+<p>O cliente, em sintonia com o representante, ganha uma transição mais gradual.</p>
+<p>Vamos supor que um tropeço no sistema de elaboração de metas estabeleça números inatingíveis e, passando desapercebido, ao longo de um ano, três, quatro representantes percam o direito de atuar como representante do setor, por não conseguirem atingir a estas metas exageradamente altas, seguindo as regras da empresa.</p>
+<p>O que acontece com o cliente?</p>
+<p>No sistema misto de metas/antiguidade o cliente sequer percebe este tropeço da empresa.</p>
+<p>Por quê?</p>
+<p>Porque ele seguirá sendo atendido pelo primeiro vendedor que o atendeu, que estaria exercendo seu direito a atuar por antiguidade, mesmo não tendo atingido as metas.</p>
+<p>E o representante seguinte, que conseguiu, supomos, adicionar mais 5 clientes à carteira de clientes da empresa mas, da mesma maneira, não conseguiu atingir as metas gerais do setor? Da mesma maneira, ele seguirá tendo direito a atuar, por antiguidade, nestes cinco clientes que conseguiu trazer para a carteira de clientes da empresa. Enquanto conseguir manter o fluxo mínimo de vendas.</p>
+<p>É sempre salutar refrisar como o empresário só ganha com esta modalidade — não perde nenhuma venda, mesmo com muitas trocas de representantes, mesmo sob tropeços na elaboração de metas.</p>
+<p>O empresário fica segurado contra tropeços no sistema de elaboração de metas.</p>
+<p>É possível, inclusive, trazer de volta o vendedor que atuava antes do eventual, errôneo, estabelecimento de metas abusivas. Até mesmo neste cenário de se fazer “justiça” comercial, os dois ou três representantes que rapidamente passaram pela empresa oportunizados devido à falha no estabelecimento abusivo de metas estariam, também, protegidos pelo direito a manterem suas pequenas carteiras conseguidas em pouco tempo, e consequentemente a pequena renda que obtiveram, porquanto conseguirem manter um fluxo mínimo de vendas, por antiguidade.</p>
+<p>É o fim dos movimentos abruptos. Dos cortes retos. Sem perder nem um centavo de venda. Todos ganham.</p>
+<p>O cliente, como vimos, resta protegido, envolto em uma cápsula de proteção, e sequer fica sabendo de movimentações acima do normal na freqüência de troca de representantes.</p>
+<p>E o representante novo? Será que ele tem vantagens neste sistema?</p>
+<p>Vejamos!</p>
+<p>Neste ponto do texto, já é possível sentir que não há representante “antigo”. Há representante.</p>
+<p>Ou seja, todos hoje somos “Neymar”, atuantes, e amanhã seremos “Casagrande”, com mil estórias para contar.</p>
+<p>Todos seremos representantes/vendedores “antigos”.</p>
+<p>Enquanto não inventarem a pílula da vida eterna (e mesmo após a invenção de pílula de vida eterna; enquanto não inventarem a pílula do atingimento-de-metas eterno), há enormes chances de sermos, todos nós, “antigos”, no futuro.</p>
+<p>Portanto, de imediato, a segurança de poder manter sua renda, no pior dos cenários, passando a ser vendedor por antiguidade, é uma segurança — um “seguro” — que resguarda todo e qualquer representante que atue nesta modalidade de metas/antiguidade aqui proposta.</p>
+<p>Um guarda chuva para todos.</p>
+<p>Sem incomodar governo. Sem parar vendas. Sem incomodar o empresário. O cliente ganha — como vimos. Quem não ganha?</p>
+<p>Há, ainda, mais dois ganhos que é oportuno mencionar:</p>
+<p><em>Todas as vendas do setor entram no cálculo para o atingimento de metas</em></p>
+<p>Todas as vendas do setor — independentemente de para quem vá a comissão, por antiguidade ou não—são computadas para o setor, com a finalidade de verificar o atingimento das metas.</p>
+<p>O que isto significa?</p>
+<p>Isto significa que:</p>
+<p>se a meta de um setor é 100; evendedores por antiguidade são responsáveis por 30 destas vendas;</p>
+<p>Cabe ao representante atual apenas complementar, com suas vendas, o que falta de 30 para 100, para atingir as metas do setor.</p>
+<p>Quais as vantagens deste modelo de cálculo?</p>
+<p>São duas:</p>
+<li>O vendedor que acaba de entrar já sai de 30, e não de zero (seguindo nosso exemplo), no objetivo de atingir as metas do setor.E mais importante ainda:</li>
+<li>Não é necessário “abaixar”, “flexibilizar” metas, temporariamente, para “ajudar” um novo vendedor que entra. Não. Como as vendas que antes já conseguiam ser efetuadas no setor seguem sendo efetuadas, por antiguidade, basta somar todas estas vendas em conjunto com as novas vendas do novo representante, para não precisar mudar as metas. Jamais.</li>
+<p>Metas são calculadas para uma região, não para um representante/vendedor, idealmente.</p>
+<p>Por quê?</p>
+<p>Porque é a região, não o representante, que possui um PIB, um ponto de saturação (por exemplo — conseguir vender para todos os clientes possíveis da região), um cenário.</p>
+<p>Sai vendedor, entra vendedor, a região é a mesma.</p>
+<p>Portanto, do ponto de vista de projeção de vendas, é mais estável manter as metas de uma região de maneira independente de vendedor novo/vendedor antigo.</p>
+<p>Se um vendedor excepcional consegue ir muito além das metas por longo período de tempo, excelente: ele pode estar indicando oportunidade de aumentar as metas da região.</p>
+<p>Portanto, neste sistema misto metas/antiguidade, as metas restam intocadas — mesmo durante a turbulenta necessidade de troca de representantes.</p>
+<p>O representante novo não parte de zero, mas sim do total das vendas ainda mantidas por antiguidade, ao buscar atingir a meta da região.</p>
+<p>Na medida em que posso sugerir, sugiro esticar o prazo, e não mexer nos valores das metas, para que um novo representante tenha um pouco mais de tempo para se adaptar à nova empreitada e poder atingir a meta da região. Por exemplo, dobrar o prazo normal de exigência de atingimento de metas, somente no início. Depois, sim, voltar ao prazo normal de periodo máximo de não atingimento de metas; qualquer que seja.</p>
+<p>Esta é minha peculiar contribuição, na medida de meu conhecimento atual, para o funcionamento do sistema de vendas, somando lucro inalterado com o novo ingrediente da compaixão, da eliminação de movimentos bruscos/desumanos, com a preservação da família, com mais segurança para todos, do empresário ao cliente.</p>
+<p>Compaixão e lucro não são água e óleo, mas sim ingredientes de um belo casamento, proponho e ouso tentar comprovar, por lógica, neste texto que aqui encerro, propondo o modelo metas/antiguidade.</p>
+<p>Obrigado paciente leitor.</p>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

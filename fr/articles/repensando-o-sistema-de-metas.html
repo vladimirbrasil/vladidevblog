@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repenser le système d&#039;objectifs - Vladimir Dietrich's Blog</title>
+  <meta name="description" content=" ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Repenser le système d&#039;objectifs - Vladimir Dietrich's Blog">
+  <meta property="og:description" content=" ">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/repensando-o-sistema-de-metas.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/fr/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/fr/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="article-content-wrapper">
+        <a href="/fr/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Repenser le système d&#039;objectifs</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>June 25, 2025</span>
+            <span>·</span><span class="reading-time">11 min read</span>
+          </div>
+        </div>
+        
+        
+      <div class="language-switcher">
+        <a href="/articles/repensando-o-sistema-de-metas.html">Português</a><span>|</span><a href="/en/articles/repensando-o-sistema-de-metas.html">English</a><span>|</span><strong>Français</strong><span>|</span><a href="/de/articles/repensando-o-sistema-de-metas.html">Deutsch</a><span>|</span><a href="/es/articles/repensando-o-sistema-de-metas.html">Español</a>
+      </div>
+    
+
+        <div class="article-content">
+          <p> </p>
+<p>[<em>L'article original date du 28 novembre 2018, migré à cette date vers ce nouveau blog</em>]</p>
+<p>Je ne vais pas parler de « gagner moins » pour être « plus humain ». Non. Je vais parler de gagner plus : et de l'argent, même, pas de « l'amour ».</p>
+<p>Comment ?</p>
+<p>Spoiler : en ajoutant la culture japonaise au modèle actuel de représentation commerciale.</p>
+<p>Maintenant, je vais vous expliquer.</p>
+<p>La vente est un domaine aussi traditionnel que, souvent, dur.</p>
+<p>Leads (clients potentiels). Appels téléphoniques. WhatsApp. Objectifs. Nouveau mois. Tout recommence.</p>
+<p>Ça fonctionne.</p>
+<p>Mais il est possible de transformer le domaine des ventes pour qu'il soit encore meilleur.</p>
+<p>En permettant l'entrée d'un ingrédient inhabituel sur ce marché : la compassion.</p>
+<p>Et je le répète : sans céder, au contraire, en augmentant les ventes.</p>
+<p>La technique que je propose ici est la suivante.</p>
+<p>Si le représentant/vendeur échoue à atteindre les objectifs fixés, au lieu d'être « expulsé » de cette région ou de l'entreprise dans laquelle il travaille, il continue à vendre aux clients qu'il parvenait à vendre. Par ancienneté. Tant qu'il parvient à maintenir un flux minimum de ventes.</p>
+<p>Attendez, ça ne peut pas marcher ! — vous rétorquez ?</p>
+<p>Si nous analysons les quatre principaux acteurs de ce marché, nous pouvons analyser les avantages et les inconvénients que chacun aura avec ce type de technique.</p>
+<p>En adoptant ce système mixte d'objectifs/ancienneté, l'entrepreneur gagne des deux côtés :</p>
+<li>L'entrepreneur ne perd aucune vente que l'ancien représentant parvenait à effectuer.</li>
+<li>L'entrepreneur gagne les ventes que le nouveau représentant, officiel, parvient à ajouter.</li>
+<p>De l'argent dans la poche. L'entrepreneur ajoute, au lieu de « changer ». Selon le type de produit et le type de relation entre les clients et les représentants/vendeurs, il n'est pas rare que les représentants emmènent avec eux « leurs » clients vers un produit concurrent. Cela dépend toujours des degrés de concurrence et de relation. L'entrepreneur, lorsqu'il combine objectifs/ancienneté, augmente la chance de ne pas subir ce type de perte, même temporaire. L'entrepreneur, par conséquent, gagne.</p>
+<p><em>Il est opportun de détailler, maintenant, comment sont gérées les dépenses supplémentaires.</em></p>
+<p>Il est opportun, maintenant, d'ajouter des détails au modèle objectifs/ancienneté : l'entrepreneur continue, comme dans le modèle traditionnel d'objectifs, à ne donner des ressources, comme les voyages, l'hébergement, les congrès, qu'au représentant/vendeur officiel, actuel. Le représentant/vendeur qui travaille par ancienneté n'aura plus aucune ressource supplémentaire de l'entreprise pour travailler, à partir du moment où il perd son poste pour ne pas avoir atteint les objectifs dans les délais fixés. L'ancien représentant devra vendre à ses propres frais. L'entreprise se contentera de traiter les commandes, comme elle l'a toujours fait. Mais sans prendre en charge les dépenses supplémentaires (congrès, voyages, hébergements).</p>
+<p>L'entrepreneur est protégé. Il n'a que des avantages, rien à perdre. Comme il l'a toujours fait, il ne prend en charge que les dépenses d'un représentant officiel, actuel, par région.</p>
+<p>Et le représentant qui ne parvient pas à atteindre les objectifs, comment ça se passe ?</p>
+<p>Le représentant qui n'atteint pas les objectifs reçoit plusieurs avantages.</p>
+<p>En une phrase, il protège son cœur. Ses cheveux. Sa famille.</p>
+<p>Le représentant qui n'atteint pas les objectifs est assuré contre les pertes ou les changements brusques. Il n'y a pas d'« expulsion » dans cette modalité mixte objectifs/ancienneté.</p>
+<p>Son revenu est protégé — il n'augmente pas, mais il ne diminue pas non plus — selon son propre effort pour parvenir à maintenir uniquement les ventes qu'il parvenait à effectuer.</p>
+<p><em>Il est opportun de détailler, maintenant, comment sont gérés certains cas extrêmes. Et si le représentant devient invalide (d'une manière ou d'une autre) ?</em></p>
+<p>Cette méthode sert de type d'assurance-chômage, mais sans déranger le gouvernement et, plus important encore, sans déranger l'entrepreneur ni les ventes.</p>
+<p>Comment ?</p>
+<p>Supposons le scénario le plus critique : le représentant qui n'atteint pas les objectifs subit un accident vasculaire cérébral ou un autre type d'accident qui, par conséquent, empêche le vendeur d'atteindre ses objectifs, voire d'effectuer une vente.</p>
+<p>L'entrepreneur, les collègues, vont lui rendre visite à l'hôpital et se solidarisent, sincèrement.</p>
+<p>Ok.</p>
+<p>Mais et l'entreprise ?</p>
+<p>La vie ne s'arrête pas. Les autres collègues doivent vendre.</p>
+<p>Dans cette méthode d'objectifs/ancienneté, le représentant/vendeur ancien, qui n'a pas réussi à atteindre les objectifs, a le droit de conserver ses anciennes ventes, « tant qu'il parvient à maintenir un flux minimum de ventes ».</p>
+<p>Cependant, dans ce cas, il ne parvient pas à maintenir le flux de ventes : il est incapable, pour une raison quelconque.</p>
+<p>Dans ce cas, il suffit de détailler comment se déroule le « maintien d'un flux minimum de ventes ».</p>
+<p><em>Flux minimum de ventes par ancienneté</em></p>
+<p>Je propose — par exemple — que maintenir un flux minimum de ventes consiste à parvenir, au moins tous les six mois, à retirer une commande de vente sans utilisation de centre d'appels ou d'un autre représentant. L'entreprise se contente de recevoir l'argent et de livrer la commande. Si cela se produit au moins une fois (ou plus) tous les six mois, le client continue à générer une commission pour l'ancien vendeur, dans ce qu'on appelle la vente par ancienneté.</p>
+<p>Le lecteur est peut-être déjà en train de se rendre compte que dans le pire des cas — par exemple, une paralysie totale des ventes — l'ancien vendeur, qui n'a pas réussi à atteindre les objectifs, recevra encore, pendant six mois, des commissions sur les ventes que quiconque effectuera, au nom de clients pour lesquels l'ancien vendeur parvenait à vendre.</p>
+<p>C'est une « assurance-chômage », en pratique. Sans déranger le gouvernement, encore moins l'entrepreneur. Une sécurité naturelle, au sein du flux commercial.</p>
+<p>Cela dans le pire des cas. 6 mois de sécurité, sans aucune faveur, ni donation. Uniquement des ventes par ancienneté.</p>
+<p>Dans les cas plus courants, cependant, l'ancien vendeur pourra conserver, pendant toute sa vie, ses ventes par ancienneté — tant que ses clients continueront à passer des commandes avec lui et tant que l'entreprise elle-même subsistera.</p>
+<p>C'est pourquoi j'ai surnommé le modèle « ajouter la culture japonaise ».</p>
+<p>Au Japon, il existe une culture de rester dans le même emploi pendant toute sa vie.</p>
+<p>Sans aller jusqu'à ce point, mais en s'en approchant presque, nous insérons l'ancienneté « à vie », pour l'ancien vendeur :</p>
+<p>Sans déranger les nouvelles ventes du nouveau représentant, actuel (le vendeur par ancienneté ne peut pas étendre ses ventes) ; et</p>
+<p>Sans déranger l'entrepreneur (le vendeur ancien ne reçoit pas d'aides aux frais, ni de billets, ni d'hébergements).</p>
+<p>Cela ne reproduit pas <em>ipsis literis</em> la culture japonaise, mais parvient à adoucir les transitions de carrière.</p>
+<p>Voyons :</p>
+<p>L'ancien vendeur devient ancien, et non actuel, parce qu'il vend seulement « 30 » alors que l'objectif était de « 100 », au-delà du délai maximum stipulé. Il gagne 10 % de commission sur ses ventes : il gagne « 3 ».</p>
+<p>S'il peut conserver les ventes pour ces clients, il continuera à recevoir environ « 3 », en maintenant son revenu dans la même tranche qu'avant de perdre le poste pour non-atteinte des objectifs.</p>
+<p>Du point de vue du représentant qui n'a pas atteint les objectifs, son revenu est préservé, immédiatement. Selon les liens que le représentant a avec les clients qu'il sert, il pourra conserver ce portefeuille de clients pendant toute une vie.</p>
+<p>Pendant qu'il cherche une autre source de revenu ; ou même en décidant de prendre sa retraite.</p>
+<p>Personne ne touchera à son portefeuille de clients, par ancienneté.</p>
+<p>À condition que le représentant par ancienneté parvienne à maintenir le flux minimum de ventes — par exemple, effectuer, lui-même, au moins une vente tous les six mois, sans centre d'appels.</p>
+<p>C'est une excellente combinaison de la sécurité japonaise avec le dynamisme du secteur des ventes. Un mélange sain : des ingrédients dans la bonne mesure pour que <em>tout le monde</em> gagne : l'entrepreneur ; le client ; les représentants, tant l'ancien que le nouveau.</p>
+<p>Analysons ce que gagnent et ce que perdent deux autres acteurs : le client et le représentant/vendeur nouveau :</p>
+<p>Que gagne le client avec la technique mixte objectifs/ancienneté ?</p>
+<p>Le client, en accord avec le représentant, gagne une transition plus graduelle.</p>
+<p>Supposons qu'un faux pas dans le système d'élaboration des objectifs établisse des chiffres inatteignables et que, passant inaperçu, tout au long d'une année, trois, quatre représentants perdent le droit d'agir en tant que représentant du secteur, pour ne pas parvenir à atteindre ces objectifs exagérément élevés, en suivant les règles de l'entreprise.</p>
+<p>Qu'arrive-t-il au client ?</p>
+<p>Dans le système mixte d'objectifs/ancienneté, le client ne perçoit même pas ce faux pas de l'entreprise.</p>
+<p>Pourquoi ?</p>
+<p>Parce qu'il continuera à être servi par le premier vendeur qui l'a servi, qui exercerait son droit d'agir par ancienneté, même s'il n'a pas atteint les objectifs.</p>
+<p>Et le représentant suivant, qui a réussi, supposons, à ajouter 5 clients supplémentaires au portefeuille de clients de l'entreprise mais, de la même manière, n'a pas réussi à atteindre les objectifs généraux du secteur ? De la même manière, il continuera à avoir le droit d'agir, par ancienneté, auprès de ces cinq clients qu'il a réussi à amener dans le portefeuille de clients de l'entreprise. Tant qu'il parvient à maintenir le flux minimum de ventes.</p>
+<p>Il est toujours salutaire de rappeler comment l'entrepreneur ne fait que gagner avec cette modalité — il ne perd aucune vente, même avec de nombreux changements de représentants, même en cas de faux pas dans l'élaboration des objectifs.</p>
+<p>L'entrepreneur est assuré contre les faux pas dans le système d'élaboration des objectifs.</p>
+<p>Il est possible, même, de faire revenir le vendeur qui agissait avant l'éventuel établissement erroné d'objectifs abusifs. Même dans ce scénario de « justice » commerciale, les deux ou trois représentants qui ont rapidement traversé l'entreprise, bénéficiant de l'opportunité en raison de l'erreur dans l'établissement abusif des objectifs, seraient également protégés par le droit de conserver leurs petits portefeuilles obtenus en peu de temps, et par conséquent le petit revenu qu'ils ont obtenu, pour autant qu'ils parviennent à maintenir un flux minimum de ventes, par ancienneté.</p>
+<p>C'est la fin des mouvements brusques. Des coupes franches. Sans perdre un seul centime de vente. Tout le monde gagne.</p>
+<p>Le client, comme nous l'avons vu, reste protégé, enveloppé dans une capsule de protection, et ne se rend même pas compte des mouvements supérieurs à la normale dans la fréquence de changement de représentants.</p>
+<p>Et le représentant nouveau ? A-t-il des avantages dans ce système ?</p>
+<p>Voyons !</p>
+<p>À ce stade du texte, il est déjà possible de sentir qu'il n'y a pas de représentant « ancien ». Il y a un représentant.</p>
+<p>Autrement dit, aujourd'hui, nous sommes tous des « Neymar », actifs, et demain, nous serons des « Casagrande », avec mille histoires à raconter.</p>
+<p>Nous serons tous des représentants/vendeurs « anciens ».</p>
+<p>En attendant qu'ils inventent la pilule de la vie éternelle (et même après l'invention de la pilule de la vie éternelle ; en attendant qu'ils inventent la pilule de l'atteinte-d'objectifs éternelle), il y a d'énormes chances que nous soyons, nous tous, « anciens », à l'avenir.</p>
+<p>Par conséquent, immédiatement, la sécurité de pouvoir maintenir son revenu, dans le pire des scénarios, en devenant vendeur par ancienneté, est une sécurité — une « assurance » — qui protège tout représentant qui agit dans cette modalité d'objectifs/ancienneté ici proposée.</p>
+<p>Un parapluie pour tous.</p>
+<p>Sans déranger le gouvernement. Sans arrêter les ventes. Sans déranger l'entrepreneur. Le client gagne — comme nous l'avons vu. Qui ne gagne pas ?</p>
+<p>Il y a, encore, deux autres gains qu'il est opportun de mentionner :</p>
+<p><em>Toutes les ventes du secteur entrent dans le calcul pour l'atteinte des objectifs</em></p>
+<p>Toutes les ventes du secteur — indépendamment de qui reçoit la commission, par ancienneté ou non — sont comptabilisées pour le secteur, afin de vérifier l'atteinte des objectifs.</p>
+<p>Qu'est-ce que cela signifie ?</p>
+<p>Cela signifie que :</p>
+<p>si l'objectif d'un secteur est de 100 ; et que les vendeurs par ancienneté sont responsables de 30 de ces ventes ;</p>
+<p>Il incombe au représentant actuel de compléter seulement, avec ses ventes, ce qui manque de 30 à 100, pour atteindre les objectifs du secteur.</p>
+<p>Quels sont les avantages de ce modèle de calcul ?</p>
+<p>Il y en a deux :</p>
+<li>Le vendeur qui vient d'arriver part déjà de 30, et non de zéro (en suivant notre exemple), dans l'objectif d'atteindre les objectifs du secteur. Et plus important encore :</li>
+<li>Il n'est pas nécessaire d'« abaisser », de « flexibiliser » les objectifs, temporairement, pour « aider » un nouveau vendeur qui arrive. Non. Comme les ventes qui étaient déjà effectuées dans le secteur continuent à être effectuées, par ancienneté, il suffit d'additionner toutes ces ventes conjointement avec les nouvelles ventes du nouveau représentant, pour ne pas avoir à changer les objectifs. Jamais.</li>
+<p>Les objectifs sont calculés pour une région, pas pour un représentant/vendeur, idéalement.</p>
+<p>Pourquoi ?</p>
+<p>Parce que c'est la région, pas le représentant, qui possède un PIB, un point de saturation (par exemple — parvenir à vendre à tous les clients possibles de la région), un scénario.</p>
+<p>Un vendeur part, un vendeur arrive, la région est la même.</p>
+<p>Par conséquent, du point de vue de la projection des ventes, il est plus stable de maintenir les objectifs d'une région de manière indépendante du vendeur nouveau/vendeur ancien.</p>
+<p>Si un vendeur exceptionnel parvient à aller bien au-delà des objectifs pendant une longue période de temps, excellent : il peut être en train d'indiquer une opportunité d'augmenter les objectifs de la région.</p>
+<p>Par conséquent, dans ce système mixte objectifs/ancienneté, les objectifs restent intacts — même pendant la turbulente nécessité de changer de représentants.</p>
+<p>Le représentant nouveau ne part pas de zéro, mais du total des ventes encore maintenues par ancienneté, en cherchant à atteindre l'objectif de la région.</p>
+<p>Dans la mesure où je peux le suggérer, je suggère d'étirer le délai, et de ne pas toucher aux valeurs des objectifs, pour qu'un nouveau représentant ait un peu plus de temps pour s'adapter à la nouvelle entreprise et pouvoir atteindre l'objectif de la région. Par exemple, doubler le délai normal d'exigence d'atteinte des objectifs, seulement au début. Ensuite, oui, revenir au délai normal de période maximale de non-atteinte des objectifs ; quel qu'il soit.</p>
+<p>C'est ma contribution particulière, dans la mesure de mes connaissances actuelles, au fonctionnement du système de ventes, en additionnant un profit inchangé avec le nouvel ingrédient de la compassion, de l'élimination des mouvements brusques/déshumains, avec la préservation de la famille, avec plus de sécurité pour tous, de l'entrepreneur au client.</p>
+<p>Compassion et profit ne sont pas eau et huile, mais plutôt des ingrédients d'un beau mariage, je propose et j'ose essayer de le prouver, par logique, dans ce texte que je termine ici, en proposant le modèle objectifs/ancienneté.</p>
+<p>Merci patient lecteur.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

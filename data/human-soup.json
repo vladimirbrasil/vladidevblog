@@ -1,0 +1,41 @@
+{
+  "id": "human-soup",
+  "title": "Human Soup",
+  "author": "Vladimir Dietrich",
+  "date": "2025-06-26",
+  "readingTime": 5,
+  "heroImage": {
+    "fileName": "human-soup-image-0.png",
+    "githubPath": "images/human-soup-image-0.png",
+    "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.png",
+    "altText": "",
+    "caption": ""
+  },
+  "lastUpdated": "2025-06-26T18:58:05.005Z",
+  "wordCount": 928,
+  "content": "<p>   </p>\n<p>[<em>O artigo original é de 23 de agosto de 2018, migrado nesta data para este novo blog</em>]</p>\n<p>A truck transforms me into human soup. Sadness, flowers, bye.</p>\n<p>Or, not to offend our species, let’s say a laboratory mouse was hit and transformed into soup (good thing they have no union to defend them).</p>\n<p>The question is:</p>\n<p>It is not “Oracle”, nor “Firebase”, the king of databases.</p>\n<p>I propose that the king of the databases will be the database that can recreate the mouse.</p>\n<p>Not a clone, using 70’s technology. Not a “Dolly” mouse.</p>\n<p>Nope.</p>\n<p>I mean to recreate the same mouse that turned into soup. With the same memories. The same skin. Aged.</p>\n<p>Each cell with its own genome. With genes and 98% of non-gene information, precise, in each cell of each organ.</p>\n<p><em>This</em> probably might be the same mouse.</p>\n<p>With the same memories. The same day’s ones.</p>\n<figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg\" alt=\"\" /></figure>\n<p>And now?</p>\n<p>Questions just begin:</p>\n<p>1. How about adding a little more collagen, since we are rebuilding from scratch?</p>\n<p>2. Why not look at the backup and rebuild the “20-years-old” version (at mouse age)?</p>\n<p>3. In the case of recovering the “20-years-old” version, the memory after the 20 years goes away altogether. The “20-years-old” shyness. The “20-years-old” lack of knowledge.</p>\n<p>4. What, then, we might want would be all from the 20-year-old-epoch minus the lack of knowledge?</p>\n<p>That would be a new “soup” of information. Solidly materialized. Real. Ready.</p>\n<p>Neither Oracle nor Firebase.</p>\n<p>The king of the databases is still undiscovered.</p>\n<p>But it has its place marked, already. Let’s doubt while we can.</p>\n<p>Warning: boring mathematical area below.\rGo ahead only if you want to know about storing ourselves in the cloud.</p>\n<p>I do not mean to store genes — that would be easy; they do not change, they’re only 20 thousand.</p>\n<p>I want to store <em>the interactions with the environment</em>.</p>\n<p><em>Genome-environment interactions.</em></p>\n<p>These interactions change the non-gene 98% other parts of our genome.</p>\n<p>For each cell.</p>\n<p>Can we do it?</p>\n<p>There are 3 billion a, t, c, g bases within each genome.</p>\n<p>9 zeros (3,000,000,000).</p>\n<p>This is nothing. Ridiculously small. The cloud swallows all this zeroes of data as a breeze.</p>\n<p>Now our body. Our body has 10 trillion cells.</p>\n<p>13 zeros.</p>\n<p>Each of these cells containing its own unique 3 billion a, t, c, g pairs.</p>\n<p>13 + 9 = 21 zeros.</p>\n<p>Piece of cake still.</p>\n<p>A breeze to the capacity of our clouds today. Imagine tomorrow.</p>\n<figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg\" alt=\"\" /></figure>\n<p>Google cloud | <a href=\"http://www.datacenterdynamics.com/content-tracks/power-cooling/google-uses-deepmind-ai-to-cut-data-center-pue-by-15/96620.fullarticle\" target=\"_blank\" rel=\"noopener noreferrer\">source</a></p>\n<p>21 zeros guard the entire human genome of each of all our cells, each one with all its variations and interactions recorded throughout life, throughout the body of a human being.</p>\n<p>All this ex-tre-me-ly compressible.</p>\n<p>So much compressible that I do not doubt it would fit inside a 21st century pen-drive.</p>\n<p>Our red blood producing cells are very repetitive. As are the ones from the liver. From the kidney. We are a lot compressible, can we deny?</p>\n<p><em>(As a jpeg-like compressed image, would someone perceive our “pixels” — that’s a good another topic, duly noted).</em></p>\n<p>But anyway, we do not even have to compress “ourselves”. The cloud swallows 21 zeros of uncompressed information smiling. Without a burp.</p>\n<p>Once a year: two more zeros. (100 years, 100 “pictures of you”).</p>\n<p>We are going so easy that we could take a “snapshot” of our entire genome from all our cells every 5 minutes - and that would add nothing more than a few zeros of information:</p>\n<p>5 minutes, 12 times / hour, 24 hours / day, 365 days / year.\r365 * 24 * 12 = 5 more zeros (one hundred thousand).</p>\n<p>26 zeros to take a picture of your entire genome from all your cells every 5 minutes.</p>\n<p>Every millisecond?</p>\n<p>Sure!</p>\n<p>A thousand, times 60, times 5. Only 5 more zeros. 6 to ensure.\r32 zeros.</p>\n<p>Every millisecond of you kept forever.</p>\n<p>The problem happens to be “bandwidth”, whoever subscribes to cable internet knows well. How to convey all this (21 zeros every millisecond)?</p>\n<p>Soon this will also be easy. While it is not, we can “save ourselves” only every 5 minutes. Or every year. Who cares?</p>\n<p>It matters to know that we will have our “photos”.</p>\n<p>Of the whole genome of each of our cells. In the cloud.</p>\n<p>Size is nothing. Even uncompressed.</p>\n<p>We only have to <em>measure</em>.</p>\n<p>Well, the genome is measured, already. Impossible is not.</p>\n<p>“Right there” — can you see? — is the ability to measure the genome of all our cells — not only one cell.</p>\n<figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg\" alt=\"\" /></figure>\n<p>One genome sequencer | <a href=\"https://www.thermofisher.com/order/catalog/product/4462921\" target=\"_blank\" rel=\"noopener noreferrer\">source</a></p>\n<p>And quickly: say, every 5 minutes Or every year at least.</p>\n<p>This recording would include any and all marked interaction of each of our cell’s genome with the environment along the years passed.</p>\n<p>Who says this does not include our memories?</p>\n<p>Memories are physical.</p>\n<p>It’s not because you can not catch them (can’t you?) that they are not physical as much as a dime on the floor.</p>\n<p>Myelin. Neurons. The geometry.</p>\n<p>Geometry: if it becomes necessary to store geometry, many zeros it won’t add: let’s store geometry wherever we need it.</p>\n<p>Without forgetting to store the tiny genome of our mitochondria, beautiful mitochondria, who derives from our <em>mothers (all of them!)</em>, until our first mother 200,000 years ago in South Africa and region. Mitochondria with its tiny genome but whose power and ångströns precision that it coordinates easily impact our lives.</p>\n<p>And so “<strong>we</strong> are” in the cloud.</p>\n<p>Each year. Every 5 minutes. Every millisecond.</p>\n<p>Is that <strong>it</strong>? How come?</p>\n",
+  "images": [
+    {
+      "fileName": "human-soup-image-0.jpg",
+      "githubPath": "images/human-soup-image-0.jpg",
+      "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg",
+      "altText": "",
+      "caption": ""
+    },
+    {
+      "fileName": "human-soup-image-0.jpg",
+      "githubPath": "images/human-soup-image-0.jpg",
+      "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg",
+      "altText": "",
+      "caption": ""
+    },
+    {
+      "fileName": "human-soup-image-0.jpg",
+      "githubPath": "images/human-soup-image-0.jpg",
+      "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg",
+      "altText": "",
+      "caption": ""
+    }
+  ],
+  "contentHash": "221ce1137928d40d2a29494bb"
+}

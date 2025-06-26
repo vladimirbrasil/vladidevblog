@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Human Soup - Vladimir Dietrich's Blog</title>
+  <meta name="description" content=" ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Human Soup - Vladimir Dietrich's Blog">
+  <meta property="og:description" content=" ">
+  <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.png">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/human-soup.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/en/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/en/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="hero-image-container">
+        <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.png" alt="" class="hero-image">
+        
+      </div>
+      <div class="article-content-wrapper">
+        <a href="/en/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Human Soup</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>June 25, 2025</span>
+            <span>·</span><span class="reading-time">5 min read</span>
+          </div>
+        </div>
+        
+        
+      <div class="language-switcher">
+        <a href="/articles/human-soup.html">Português</a><span>|</span><strong>English</strong><span>|</span><a href="/fr/articles/human-soup.html">Français</a><span>|</span><a href="/de/articles/human-soup.html">Deutsch</a><span>|</span><a href="/es/articles/human-soup.html">Español</a>
+      </div>
+    
+
+        <div class="article-content">
+          <p> </p>
+<p>[<em>The original article is from August 23, 2018, migrated to this new blog on this date</em>]</p>
+<p>A truck transforms me into human soup. Sadness, flowers, bye.</p>
+<p>Or, not to offend our species, let’s say a laboratory mouse was hit and transformed into soup (good thing they have no union to defend them).</p>
+<p>The question is:</p>
+<p>It is not “Oracle”, nor “Firebase”, the king of databases.</p>
+<p>I propose that the king of the databases will be the database that can recreate the mouse.</p>
+<p>Not a clone, using 70’s technology. Not a “Dolly” mouse.</p>
+<p>Nope.</p>
+<p>I mean to recreate the same mouse that turned into soup. With the same memories. The same skin. Aged.</p>
+<p>Each cell with its own genome. With genes and 98% of non-gene information, precise, in each cell of each organ.</p>
+<p><em>This</em> probably might be the same mouse.</p>
+<p>With the same memories. The same day’s ones.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg" alt="" /></figure>
+<p>And now?</p>
+<p>Questions just begin:</p>
+<p>1. How about adding a little more collagen, since we are rebuilding from scratch?</p>
+<p>2. Why not look at the backup and rebuild the “20-years-old” version (at mouse age)?</p>
+<p>3. In the case of recovering the “20-years-old” version, the memory after the 20 years goes away altogether. The “20-years-old” shyness. The “20-years-old” lack of knowledge.</p>
+<p>4. What, then, we might want would be all from the 20-year-old-epoch minus the lack of knowledge?</p>
+<p>That would be a new “soup” of information. Solidly materialized. Real. Ready.</p>
+<p>Neither Oracle nor Firebase.</p>
+<p>The king of the databases is still undiscovered.</p>
+<p>But it has its place marked, already. Let’s doubt while we can.</p>
+<p>Warning: boring mathematical area below.Go ahead only if you want to know about storing ourselves in the cloud.</p>
+<p>I do not mean to store genes — that would be easy; they do not change, they’re only 20 thousand.</p>
+<p>I want to store <em>the interactions with the environment</em>.</p>
+<p><em>Genome-environment interactions.</em></p>
+<p>These interactions change the non-gene 98% other parts of our genome.</p>
+<p>For each cell.</p>
+<p>Can we do it?</p>
+<p>There are 3 billion a, t, c, g bases within each genome.</p>
+<p>9 zeros (3,000,000,000).</p>
+<p>This is nothing. Ridiculously small. The cloud swallows all this zeroes of data as a breeze.</p>
+<p>Now our body. Our body has 10 trillion cells.</p>
+<p>13 zeros.</p>
+<p>Each of these cells containing its own unique 3 billion a, t, c, g pairs.</p>
+<p>13 + 9 = 21 zeros.</p>
+<p>Piece of cake still.</p>
+<p>A breeze to the capacity of our clouds today. Imagine tomorrow.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg" alt="" /></figure>
+<p>Google cloud | <a href="http://www.datacenterdynamics.com/content-tracks/power-cooling/google-uses-deepmind-ai-to-cut-data-center-pue-by-15/96620.fullarticle" target="_blank" rel="noopener noreferrer">source</a></p>
+<p>21 zeros guard the entire human genome of each of all our cells, each one with all its variations and interactions recorded throughout life, throughout the body of a human being.</p>
+<p>All this ex-tre-me-ly compressible.</p>
+<p>So much compressible that I do not doubt it would fit inside a 21st century pen-drive.</p>
+<p>Our red blood producing cells are very repetitive. As are the ones from the liver. From the kidney. We are a lot compressible, can we deny?</p>
+<p><em>(As a jpeg-like compressed image, would someone perceive our “pixels” — that’s a good another topic, duly noted).</em></p>
+<p>But anyway, we do not even have to compress “ourselves”. The cloud swallows 21 zeros of uncompressed information smiling. Without a burp.</p>
+<p>Once a year: two more zeros. (100 years, 100 “pictures of you”).</p>
+<p>We are going so easy that we could take a “snapshot” of our entire genome from all our cells every 5 minutes - and that would add nothing more than a few zeros of information:</p>
+<p>5 minutes, 12 times / hour, 24 hours / day, 365 days / year.365 * 24 * 12 = 5 more zeros (one hundred thousand).</p>
+<p>26 zeros to take a picture of your entire genome from all your cells every 5 minutes.</p>
+<p>Every millisecond?</p>
+<p>Sure!</p>
+<p>A thousand, times 60, times 5. Only 5 more zeros. 6 to ensure.32 zeros.</p>
+<p>Every millisecond of you kept forever.</p>
+<p>The problem happens to be “bandwidth”, whoever subscribes to cable internet knows well. How to convey all this (21 zeros every millisecond)?</p>
+<p>Soon this will also be easy. While it is not, we can “save ourselves” only every 5 minutes. Or every year. Who cares?</p>
+<p>It matters to know that we will have our “photos”.</p>
+<p>Of the whole genome of each of our cells. In the cloud.</p>
+<p>Size is nothing. Even uncompressed.</p>
+<p>We only have to <em>measure</em>.</p>
+<p>Well, the genome is measured, already. Impossible is not.</p>
+<p>“Right there” — can you see? — is the ability to measure the genome of all our cells — not only one cell.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg" alt="" /></figure>
+<p>One genome sequencer | <a href="https://www.thermofisher.com/order/catalog/product/4462921" target="_blank" rel="noopener noreferrer">source</a></p>
+<p>And quickly: say, every 5 minutes Or every year at least.</p>
+<p>This recording would include any and all marked interaction of each of our cell’s genome with the environment along the years passed.</p>
+<p>Who says this does not include our memories?</p>
+<p>Memories are physical.</p>
+<p>It’s not because you can not catch them (can’t you?) that they are not physical as much as a dime on the floor.</p>
+<p>Myelin. Neurons. The geometry.</p>
+<p>Geometry: if it becomes necessary to store geometry, many zeros it won’t add: let’s store geometry wherever we need it.</p>
+<p>Without forgetting to store the tiny genome of our mitochondria, beautiful mitochondria, who derives from our <em>mothers (all of them!)</em>, until our first mother 200,000 years ago in South Africa and region. Mitochondria with its tiny genome but whose power and ångströns precision that it coordinates easily impact our lives.</p>
+<p>And so “<strong>we</strong> are” in the cloud.</p>
+<p>Each year. Every 5 minutes. Every millisecond.</p>
+<p>Is that <strong>it</strong>? How come?</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

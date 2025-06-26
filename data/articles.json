@@ -1,50 +1,68 @@
 {
   "articles": [
     {
-      "id": "aposentadoria-da-razao",
-      "title": "Aposentadoria da Razão",
+      "id": "clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start",
+      "title": "Clean your mind? Unsubscribe emails wouldn’t be a bad start",
       "author": "Vladimir Dietrich",
-      "date": "2025-06-24",
+      "date": "2025-06-26",
       "readingTime": 2,
       "heroImage": {
-        "fileName": "aposentadoria-da-razao-image-0.jpg",
-        "githubPath": "images/aposentadoria-da-razao-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg",
+        "fileName": "clean-your-mind-image-0.png",
+        "githubPath": "images/clean-your-mind-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.png",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-24T07:38:33.462Z"
+      "lastUpdated": "2025-06-26T18:57:37.312Z"
     },
     {
-      "id": "um-blog-facil",
-      "title": "Um Blog Fácil",
+      "id": "human-soup",
+      "title": "Human Soup",
       "author": "Vladimir Dietrich",
-      "date": "2025-06-15",
-      "readingTime": 2,
+      "date": "2025-06-26",
+      "readingTime": 5,
       "heroImage": {
-        "fileName": "um-blog-facil-image-0.png",
-        "githubPath": "images/um-blog-facil-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
+        "fileName": "human-soup-image-0.png",
+        "githubPath": "images/human-soup-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.png",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-25T07:38:48.926Z"
+      "lastUpdated": "2025-06-26T18:58:05.005Z"
     },
     {
-      "id": "promocao-especial-para-ti",
-      "title": "Promoção especial para ti",
+      "id": "a-thought-about-true-cost-the-movie",
+      "title": "A Thought About “True Cost”, The Movie",
       "author": "Vladimir Dietrich",
-      "date": "2025-06-15",
+      "date": "2025-06-26",
       "readingTime": 1,
       "heroImage": {
-        "fileName": "promocao-especial-para-ti-image-0.jpg",
-        "githubPath": "images/promocao-especial-para-ti-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/promocao-especial-para-ti-image-0.jpg",
+        "fileName": "a-thought-about-true-cost-the-movie-image-hero.png",
+        "githubPath": "images/a-thought-about-true-cost-the-movie-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-thought-about-true-cost-the-movie-image-hero.png",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-17T02:40:50.185Z"
+      "lastUpdated": "2025-06-26T18:59:26.873Z"
+    },
+    {
+      "id": "spam-calls",
+      "title": "Spam Calls",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 4,
+      "heroImage": null,
+      "lastUpdated": "2025-06-26T18:59:43.118Z"
+    },
+    {
+      "id": "repensando-o-sistema-de-metas",
+      "title": "Repensando o sistema de metas",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 11,
+      "heroImage": null,
+      "lastUpdated": "2025-06-26T19:00:30.184Z"
     }
   ],
-  "lastUpdated": "2025-06-25T07:39:14.341Z"
+  "lastUpdated": "2025-06-26T19:02:03.347Z"
 }

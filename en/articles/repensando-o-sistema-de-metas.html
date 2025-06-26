@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rethinking the goals system - Vladimir Dietrich's Blog</title>
+  <meta name="description" content=" ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Rethinking the goals system - Vladimir Dietrich's Blog">
+  <meta property="og:description" content=" ">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/repensando-o-sistema-de-metas.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/en/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/en/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="article-content-wrapper">
+        <a href="/en/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Rethinking the goals system</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>June 25, 2025</span>
+            <span>·</span><span class="reading-time">11 min read</span>
+          </div>
+        </div>
+        
+        
+      <div class="language-switcher">
+        <a href="/articles/repensando-o-sistema-de-metas.html">Português</a><span>|</span><strong>English</strong><span>|</span><a href="/fr/articles/repensando-o-sistema-de-metas.html">Français</a><span>|</span><a href="/de/articles/repensando-o-sistema-de-metas.html">Deutsch</a><span>|</span><a href="/es/articles/repensando-o-sistema-de-metas.html">Español</a>
+      </div>
+    
+
+        <div class="article-content">
+          <p> </p>
+<p>[<em>The original article is from November 28, 2018, migrated to this new blog on this date</em>]</p>
+<p>I'm not going to talk about "earning less" to be "more human." No. I'm going to talk about earning more: and money, even, not "love."</p>
+<p>How?</p>
+<p>Spoiler: adding Japanese culture to the current model of commercial representation.</p>
+<p>Now, I'll explain.</p>
+<p>Sales is an area as traditional as it is, often, tough.</p>
+<p>Leads (potential customers). Phone calls. Whats. Goals. New month. All over again.</p>
+<p>It works.</p>
+<p>But it's possible to transform the sales area to be even better.</p>
+<p>Allowing the entry of an unusual ingredient into this market: compassion.</p>
+<p>And I repeat: without yielding, on the contrary, increasing, sales.</p>
+<p>The technique I propose here is as follows.</p>
+<p>If the representative/seller fails to reach the established goals, instead of being "expelled" from that region or the company in which they operate, they continue selling to those customers they could sell to. By seniority. As long as they can maintain a minimum flow of sales.</p>
+<p>Wait a minute, this can't work! — you retort?</p>
+<p>If we analyze the four main actors in this market, we can analyze the advantages and disadvantages that each will have with this type of technique.</p>
+<p>By adopting this mixed system of goals/seniority, the entrepreneur wins in both ways:</p>
+<li>The entrepreneur does not lose any sale that the old representative could make.</li>
+<li>The entrepreneur gains the sales that the new, official representative can add.</li>
+<p>Money in the pocket. The entrepreneur adds, instead of "swapping." Depending on the type of product and the type of relationship between customers and representatives/sellers, it is not uncommon for representatives to take "their" customers together to a competitor's product. This, always, depending on the degrees of competition and relationship. The entrepreneur, when combining goals/seniority, increases the chance of not suffering this type of loss, even if temporary. The entrepreneur, therefore, wins.</p>
+<p><em>It is opportune to detail, now, how the extra expenses are.</em></p>
+<p>It is opportune, now, to add details to the goals/seniority model: the entrepreneur continues, as in the traditional goals model, only giving resources, such as trips, lodging, congresses, to the official, current representative/seller. The representative/seller who acts by seniority will no longer have any extra resources from the company to act, from the moment they lose their position for not meeting goals within the established deadlines. The old representative will have to sell on their own. The company will only, as it always has, process the orders. But without bearing extra expenses (congresses, trips, stays).</p>
+<p>The entrepreneur is protected. They only have to gain, nothing to lose. As they always have, they only bear the expenses of an official, current representative, per region.</p>
+<p>And the representative who cannot reach the goals, how does it go?</p>
+<p>The representative who does not reach the goals receives several advantages.</p>
+<p>In one sentence, it protects your heart. Your hair strands. Your family.</p>
+<p>The representative who does not reach the goals is insured against losses or abrupt changes. There is no "expulsion" in this mixed goals/seniority modality.</p>
+<p>Your income is protected — it does not increase, but it also does not fall — depending on your own effort to be able to maintain only those sales that you could make.</p>
+<p><em>It is opportune to detail, now, how some extreme cases are. What if the representative becomes invalid (in some way)?</em></p>
+<p>This method serves as a type of unemployment insurance, but without bothering the government and, more importantly, without bothering the entrepreneur or sales.</p>
+<p>How?</p>
+<p>Let's assume the most critical scenario: the representative who does not reach the goals suffers a stroke or another type of accident that, as a result, prevents the seller from reaching their goals, even making a sale.</p>
+<p>The entrepreneur, the colleagues, will visit them in the hospital and sympathize, sincerely.</p>
+<p>Ok.</p>
+<p>But what about the company?</p>
+<p>Life doesn't stop. The other colleagues need to sell.</p>
+<p>In this goals/seniority method, the old representative/seller, who could not meet the goals, has the right to maintain their old sales, "as long as they can maintain a minimum flow of sales."</p>
+<p>However, in this case, they cannot maintain the flow of sales: they are incapacitated, for some reason.</p>
+<p>In this case, just detail how "maintaining a minimum flow of sales" occurs.</p>
+<p><em>Minimum flow of sales by seniority</em></p>
+<p>I propose — for example — that maintaining a minimum flow of sales is to be able, at least, every six months, to withdraw a sales order without the use of a call center or another representative. The company only receives the money and delivers the order. If this occurs at least once (or more) every six months, the customer remains generating commission for the old seller, in the so-called sale by seniority.</p>
+<p>Perhaps the reader is already realizing that in the worst case — for example, total paralysis of sales — the old seller, who could not meet the goals, will still receive, for six months, commissions on sales that anyone makes, in the name of customers for whom the old seller could sell.</p>
+<p>It's an "unemployment insurance," in practice. Without bothering the government, much less the entrepreneur. Natural security, within the commercial flow.</p>
+<p>This in the worst case. 6 months of security, without any favor, nor donation. Only sales by seniority.</p>
+<p>In more common cases, however, the old seller will be able to maintain, throughout their life, their sales by seniority — as long as their customers continue to place orders with them and as long as the company itself subsists.</p>
+<p>That's why I nicknamed the model "adding Japanese culture."</p>
+<p>In Japan, there is a culture of staying in the same job for life.</p>
+<p>Without reaching this point, but almost reaching it, we insert seniority "for life," for the old seller:</p>
+<p>Without bothering the new sales of the new, current representative (the seller by seniority cannot expand their sales); and</p>
+<p>Without bothering the entrepreneur (the old seller does not receive cost assistance, nor tickets, nor stays).</p>
+<p>This does not replicate <em>ipsis literis</em> the Japanese culture, but it manages to soften career transitions.</p>
+<p>Let's see:</p>
+<p>The old seller becomes old, and not current, because they sell only "30" when the goal was "100", in addition to the maximum stipulated deadline. They earn 10% commission on their sales: they earn "3."</p>
+<p>If they can maintain sales to these customers, they will continue to receive around "3", maintaining their income in the same range as before losing the position for not meeting goals.</p>
+<p>From the point of view of the representative who did not reach the goals, their income is preserved, immediately. Depending on the ties that the representative has with the customers they serve, they may be able to maintain this customer base for a lifetime.</p>
+<p>While looking for another source of income; or even when deciding to retire.</p>
+<p>No one will mess with their customer base, by seniority.</p>
+<p>With the condition that the representative by seniority can maintain the minimum flow of sales — for example, make, themselves, at least one sale every six months, without a call center.</p>
+<p>It is an excellent combination of Japanese security with the dynamism of the sales sector. A healthy mix: ingredients in the correct measure so that <em>everyone</em> wins: the entrepreneur; the customer; the representatives, both the old and the new.</p>
+<p>Let's analyze what other two actors gain and lose: the customer and the new representative/seller:</p>
+<p>What does the customer gain with the mixed goals/seniority technique?</p>
+<p>The customer, in sync with the representative, gains a more gradual transition.</p>
+<p>Let's suppose that a stumble in the system of elaboration of goals establishes unattainable numbers and, passing unnoticed, over a year, three, four representatives lose the right to act as representative of the sector, for not being able to reach these exaggeratedly high goals, following the rules of the company.</p>
+<p>What happens to the customer?</p>
+<p>In the mixed system of goals/seniority the customer does not even perceive this stumble of the company.</p>
+<p>Why?</p>
+<p>Because they will continue to be served by the first seller who served them, who would be exercising their right to act by seniority, even if they have not reached the goals.</p>
+<p>And the following representative, who managed, we suppose, to add 5 more customers to the company's customer base but, in the same way, could not reach the general goals of the sector? In the same way, they will continue to have the right to act, by seniority, in these five customers that they managed to bring to the company's customer base. As long as they can maintain the minimum flow of sales.</p>
+<p>It is always healthy to reiterate how the entrepreneur only gains with this modality — does not lose any sale, even with many exchanges of representatives, even under stumbles in the elaboration of goals.</p>
+<p>The entrepreneur is insured against stumbles in the system of elaboration of goals.</p>
+<p>It is possible, even, to bring back the seller who acted before the eventual, erroneous, establishment of abusive goals. Even in this scenario of making commercial "justice", the two or three representatives who quickly passed through the company, opportunized due to the failure in the abusive establishment of goals, would also be protected by the right to maintain their small portfolios achieved in a short time, and consequently the small income they obtained, as long as they can maintain a minimum flow of sales, by seniority.</p>
+<p>It is the end of abrupt movements. Of straight cuts. Without losing a penny of sale. Everyone wins.</p>
+<p>The customer, as we have seen, remains protected, wrapped in a capsule of protection, and does not even know of movements above the normal in the frequency of exchange of representatives.</p>
+<p>And the new representative? Does he have advantages in this system?</p>
+<p>Let's see!</p>
+<p>At this point in the text, it is already possible to feel that there is no "old" representative. There is a representative.</p>
+<p>That is, today we are all "Neymar", active, and tomorrow we will be "Casagrande", with a thousand stories to tell.</p>
+<p>We will all be "old" representatives/sellers.</p>
+<p>While they do not invent the pill of eternal life (and even after the invention of the pill of eternal life; while they do not invent the pill of eternal-goal-achievement), there are enormous chances of us all being "old" in the future.</p>
+<p>Therefore, immediately, the security of being able to maintain your income, in the worst of scenarios, becoming a seller by seniority, is a security — an "insurance" — that protects any and every representative who acts in this modality of goals/seniority proposed here.</p>
+<p>An umbrella for everyone.</p>
+<p>Without bothering the government. Without stopping sales. Without bothering the entrepreneur. The customer wins — as we have seen. Who doesn't win?</p>
+<p>There are still two more gains that are opportune to mention:</p>
+<p><em>All sales of the sector enter the calculation for the achievement of goals</em></p>
+<p>All sales of the sector — regardless of who the commission goes to, by seniority or not — are computed for the sector, with the purpose of verifying the achievement of the goals.</p>
+<p>What does this mean?</p>
+<p>This means that:</p>
+<p>if the goal of a sector is 100; and sellers by seniority are responsible for 30 of these sales;</p>
+<p>It is up to the current representative only to complement, with their sales, what is missing from 30 to 100, to reach the goals of the sector.</p>
+<p>What are the advantages of this calculation model?</p>
+<p>There are two:</p>
+<li>The seller who has just entered already starts from 30, and not from zero (following our example), in the objective of reaching the goals of the sector. And more importantly:</li>
+<li>It is not necessary to "lower", "flexibilize" goals, temporarily, to "help" a new seller who enters. No. As the sales that could already be made in the sector continue to be made, by seniority, just add all these sales together with the new sales of the new representative, so as not to need to change the goals. Never.</li>
+<p>Goals are calculated for a region, not for a representative/seller, ideally.</p>
+<p>Why?</p>
+<p>Because it is the region, not the representative, that has a GDP, a saturation point (for example — being able to sell to all possible customers in the region), a scenario.</p>
+<p>Seller leaves, seller enters, the region is the same.</p>
+<p>Therefore, from the point of view of sales projection, it is more stable to maintain the goals of a region independently of new seller/old seller.</p>
+<p>If an exceptional seller manages to go far beyond the goals for a long period of time, excellent: they may be indicating an opportunity to increase the goals of the region.</p>
+<p>Therefore, in this mixed goals/seniority system, the goals remain untouched — even during the turbulent need to exchange representatives.</p>
+<p>The new representative does not start from zero, but from the total of sales still maintained by seniority, when seeking to reach the goal of the region.</p>
+<p>To the extent that I can suggest, I suggest stretching the deadline, and not messing with the values of the goals, so that a new representative has a little more time to adapt to the new endeavor and be able to reach the goal of the region. For example, double the normal deadline for requiring the achievement of goals, only at the beginning. Then, yes, return to the normal deadline of maximum period of non-achievement of goals; whatever it is.</p>
+<p>This is my peculiar contribution, to the extent of my current knowledge, to the functioning of the sales system, adding unaltered profit with the new ingredient of compassion, of the elimination of abrupt/inhuman movements, with the preservation of the family, with more security for all, from the entrepreneur to the customer.</p>
+<p>Compassion and profit are not water and oil, but ingredients of a beautiful marriage, I propose and dare to try to prove, by logic, in this text that I end here, proposing the goals/seniority model.</p>
+<p>Thank you, patient reader.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

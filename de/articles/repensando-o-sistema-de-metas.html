@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Das Zielsystem überdenken - Vladimir Dietrich's Blog</title>
+  <meta name="description" content=" ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Das Zielsystem überdenken - Vladimir Dietrich's Blog">
+  <meta property="og:description" content=" ">
+  <meta property="og:image" content="">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/repensando-o-sistema-de-metas.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/de/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/de/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="article-content-wrapper">
+        <a href="/de/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Das Zielsystem überdenken</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>June 25, 2025</span>
+            <span>·</span><span class="reading-time">11 min read</span>
+          </div>
+        </div>
+        
+        
+      <div class="language-switcher">
+        <a href="/articles/repensando-o-sistema-de-metas.html">Português</a><span>|</span><a href="/en/articles/repensando-o-sistema-de-metas.html">English</a><span>|</span><a href="/fr/articles/repensando-o-sistema-de-metas.html">Français</a><span>|</span><strong>Deutsch</strong><span>|</span><a href="/es/articles/repensando-o-sistema-de-metas.html">Español</a>
+      </div>
+    
+
+        <div class="article-content">
+          <p> </p>
+<p>[<em>Der Originalartikel stammt vom 28. November 2018 und wurde an diesem Datum in diesen neuen Blog migriert</em>]</p>
+<p>Ich werde nicht darüber sprechen, „weniger zu verdienen“, um „menschlicher“ zu sein. Nein. Ich werde darüber sprechen, mehr zu verdienen: und zwar Geld, nicht „Liebe“.</p>
+<p>Wie?</p>
+<p>Spoiler: Hinzufügen der japanischen Kultur zum aktuellen Modell der Handelsvertretung.</p>
+<p>Jetzt erkläre ich es.</p>
+<p>Der Verkauf ist ein ebenso traditioneller wie oft harter Bereich.</p>
+<p>Leads (potenzielle Kunden). Anrufe. Whats. Ziele. Neuer Monat. Alles von vorne.</p>
+<p>Es funktioniert.</p>
+<p>Es ist jedoch möglich, den Verkaufsbereich noch weiter zu verbessern.</p>
+<p>Indem man eine ungewöhnliche Zutat in diesen Markt einbringt: Mitgefühl.</p>
+<p>Und ich wiederhole: Ohne nachzugeben, im Gegenteil, die Verkäufe zu steigern.</p>
+<p>Die Technik, die ich hier vorschlage, ist die folgende.</p>
+<p>Wenn der Vertreter/Verkäufer die gesteckten Ziele nicht erreicht, wird er nicht aus dieser Region oder dem Unternehmen, in dem er tätig ist, „vertrieben“, sondern verkauft weiterhin an die Kunden, an die er verkaufen konnte. Aufgrund des Dienstalters. Solange er einen Mindestumsatz aufrechterhalten kann.</p>
+<p>Warte mal, das kann doch nicht funktionieren! – widersprichst du?</p>
+<p>Wenn wir die vier Hauptakteure in diesem Markt analysieren, können wir die Vor- und Nachteile analysieren, die jeder mit dieser Art von Technik haben wird.</p>
+<p>Durch die Einführung dieses gemischten Systems aus Zielen/Dienstalter profitiert der Unternehmer auf zweierlei Weise:</p>
+<li>Der Unternehmer verliert keine Verkäufe, die der alte Vertreter tätigen konnte.</li>
+<li>Der Unternehmer gewinnt die Verkäufe, die der neue, offizielle Vertreter hinzufügen kann.</li>
+<p>Geld in der Tasche. Der Unternehmer addiert, anstatt zu „tauschen“. Je nach Art des Produkts und der Art der Beziehung zwischen Kunden und Vertretern/Verkäufern ist es nicht ungewöhnlich, dass Vertreter „ihre“ Kunden gemeinsam zu einem Konkurrenzprodukt mitnehmen. Dies hängt immer vom Grad des Wettbewerbs und der Beziehung ab. Wenn der Unternehmer Ziele/Dienstalter kombiniert, erhöht er die Wahrscheinlichkeit, diese Art von Verlust nicht zu erleiden, auch wenn er nur vorübergehend ist. Der Unternehmer gewinnt also.</p>
+<p><em>Es ist angebracht, jetzt zu erläutern, wie die zusätzlichen Kosten aussehen.</em></p>
+<p>Es ist angebracht, dem Modell Ziele/Dienstalter nun Details hinzuzufügen: Der Unternehmer stellt, wie im traditionellen Zielmodell, nur Ressourcen wie Reisen, Unterkunft, Kongresse für den offiziellen, aktuellen Vertreter/Verkäufer bereit. Der Vertreter/Verkäufer, der aufgrund des Dienstalters tätig ist, erhält ab dem Zeitpunkt, an dem er seine Position aufgrund Nichterreichens der Ziele innerhalb der festgelegten Fristen verliert, keine zusätzlichen Ressourcen mehr vom Unternehmen. Der alte Vertreter muss auf eigene Rechnung verkaufen. Das Unternehmen wird, wie immer, nur die Bestellungen bearbeiten. Aber ohne zusätzliche Kosten (Kongresse, Reisen, Unterkünfte) zu tragen.</p>
+<p>Der Unternehmer ist geschützt. Er kann nur gewinnen, nichts verlieren. Wie immer trägt er nur die Kosten eines offiziellen, aktuellen Vertreters pro Region.</p>
+<p>Und wie geht es dem Vertreter, der die Ziele nicht erreicht?</p>
+<p>Der Vertreter, der die Ziele nicht erreicht, erhält mehrere Vorteile.</p>
+<p>In einem Satz schützt er sein Herz. Seine Haare. Seine Familie.</p>
+<p>Der Vertreter, der die Ziele nicht erreicht, ist gegen Verluste oder abrupte Veränderungen abgesichert. Es gibt keine „Vertreibung“ in dieser gemischten Modalität Ziele/Dienstalter.</p>
+<p>Sein Einkommen ist geschützt – es steigt nicht, fällt aber auch nicht – je nachdem, wie sehr er sich bemüht, nur die Verkäufe aufrechtzuerhalten, die er tätigen konnte.</p>
+<p><em>Es ist angebracht, jetzt zu erläutern, wie einige extreme Fälle aussehen. Und was ist, wenn der Vertreter (in irgendeiner Weise) invalide wird?</em></p>
+<p>Diese Methode dient als eine Art Arbeitslosenversicherung, ohne jedoch die Regierung zu belästigen und, was noch wichtiger ist, ohne den Unternehmer oder die Verkäufe zu belästigen.</p>
+<p>Wie?</p>
+<p>Nehmen wir das kritischste Szenario an: Der Vertreter, der die Ziele nicht erreicht, erleidet einen Schlaganfall oder eine andere Art von Unfall, der in der Folge den Verkäufer daran hindert, seine Ziele zu erreichen oder auch nur einen Verkauf zu tätigen.</p>
+<p>Der Unternehmer, die Kollegen, besuchen ihn im Krankenhaus und zeigen aufrichtig Mitgefühl.</p>
+<p>Okay.</p>
+<p>Aber was ist mit dem Unternehmen?</p>
+<p>Das Leben geht weiter. Die anderen Kollegen müssen verkaufen.</p>
+<p>Bei dieser Methode der Ziele/Dienstalter hat der alte Vertreter/Verkäufer, der die Ziele nicht erreichen konnte, das Recht, seine alten Verkäufe aufrechtzuerhalten, „solange er einen Mindestumsatz aufrechterhalten kann“.</p>
+<p>In diesem Fall kann er den Umsatz jedoch nicht aufrechterhalten: Er ist aus irgendeinem Grund behindert.</p>
+<p>In diesem Fall reicht es aus, zu erläutern, wie die „Aufrechterhaltung eines Mindestumsatzes“ erfolgt.</p>
+<p><em>Mindestumsatz aufgrund des Dienstalters</em></p>
+<p>Ich schlage vor – zum Beispiel –, dass die Aufrechterhaltung eines Mindestumsatzes bedeutet, mindestens alle sechs Monate eine Verkaufsbestellung ohne Nutzung eines Callcenters oder eines anderen Vertreters entgegenzunehmen. Das Unternehmen erhält lediglich das Geld und liefert die Bestellung. Wenn dies mindestens einmal (oder mehrmals) alle sechs Monate geschieht, generiert der Kunde weiterhin eine Provision für den alten Verkäufer, den sogenannten Verkauf aufgrund des Dienstalters.</p>
+<p>Vielleicht erkennt der Leser bereits, dass der alte Verkäufer, der die Ziele nicht erreichen konnte, im schlimmsten Fall – zum Beispiel bei einer vollständigen Verkaufsunterbrechung – noch sechs Monate lang Provisionen auf die Verkäufe erhält, die jemand im Namen von Kunden tätigt, an die der alte Verkäufer verkaufen konnte.</p>
+<p>Es ist in der Praxis eine „Arbeitslosenversicherung“. Ohne die Regierung zu belästigen, geschweige denn den Unternehmer. Natürliche Sicherheit innerhalb des kommerziellen Flusses.</p>
+<p>Dies ist der schlimmste Fall. 6 Monate Sicherheit, ohne Gefallen oder Spende. Nur Verkäufe aufgrund des Dienstalters.</p>
+<p>In häufigeren Fällen kann der alte Verkäufer seine Verkäufe aufgrund des Dienstalters jedoch sein Leben lang aufrechterhalten – solange seine Kunden weiterhin Bestellungen bei ihm aufgeben und solange das Unternehmen selbst existiert.</p>
+<p>Deshalb habe ich das Modell als „Hinzufügen der japanischen Kultur“ bezeichnet.</p>
+<p>In Japan gibt es die Kultur, das ganze Leben lang im selben Beruf zu bleiben.</p>
+<p>Ohne diesen Punkt zu erreichen, aber fast, führen wir das Dienstalter „für das ganze Leben“ für den alten Verkäufer ein:</p>
+<p>Ohne die neuen Verkäufe des neuen, aktuellen Vertreters zu beeinträchtigen (der Verkäufer aufgrund des Dienstalters kann seine Verkäufe nicht ausweiten); und</p>
+<p>Ohne den Unternehmer zu beeinträchtigen (der alte Verkäufer erhält keine Zuschüsse, keine Fahrkarten, keine Unterkünfte).</p>
+<p>Dies repliziert die japanische Kultur nicht <em>ipsis literis</em>, kann aber die Karriereübergänge erleichtern.</p>
+<p>Schauen wir mal:</p>
+<p>Der alte Verkäufer wird alt und nicht aktuell, weil er nur „30“ verkauft, obwohl das Ziel „100“ war, zusätzlich zu der maximal festgelegten Frist. Er erhält 10 % Provision auf seine Verkäufe: Er verdient „3“.</p>
+<p>Wenn er die Verkäufe an diese Kunden aufrechterhalten kann, erhält er weiterhin etwa „3“ und behält sein Einkommen im gleichen Bereich wie vor dem Verlust des Arbeitsplatzes aufgrund Nichterreichens der Ziele.</p>
+<p>Aus Sicht des Vertreters, der die Ziele nicht erreicht hat, wird sein Einkommen sofort gesichert. Abhängig von der Bindung des Vertreters zu den betreuten Kunden kann er diesen Kundenstamm ein Leben lang pflegen.</p>
+<p>Während er nach einer anderen Einnahmequelle sucht; oder sich sogar für den Ruhestand entscheidet.</p>
+<p>Niemand wird sich mit seinem Kundenstamm aufgrund des Dienstalters anlegen.</p>
+<p>Mit der Bedingung, dass der Vertreter aufgrund des Dienstalters den Mindestumsatz aufrechterhalten kann – zum Beispiel, dass er selbst mindestens alle sechs Monate einen Verkauf ohne Callcenter tätigt.</p>
+<p>Es ist eine ausgezeichnete Kombination aus japanischer Sicherheit und der Dynamik des Verkaufssektors. Ein gesunder Mix: Zutaten im richtigen Verhältnis, damit <em>alle</em> gewinnen: der Unternehmer, der Kunde, die Vertreter, sowohl der alte als auch der neue.</p>
+<p>Analysieren wir, was die anderen beiden Akteure gewinnen und was sie verlieren: der Kunde und der neue Vertreter/Verkäufer:</p>
+<p>Was gewinnt der Kunde mit der gemischten Technik Ziele/Dienstalter?</p>
+<p>Der Kunde gewinnt im Einklang mit dem Vertreter einen allmählicheren Übergang.</p>
+<p>Nehmen wir an, ein Stolpern im System der Zielsetzung führt zu unerreichbaren Zahlen, und drei, vier Vertreter verlieren im Laufe eines Jahres unbemerkt das Recht, als Vertreter des Sektors zu fungieren, da sie diese übertrieben hohen Ziele nicht erreichen können und die Regeln des Unternehmens befolgen.</p>
+<p>Was passiert mit dem Kunden?</p>
+<p>Im gemischten System Ziele/Dienstalter bemerkt der Kunde dieses Stolpern des Unternehmens nicht einmal.</p>
+<p>Warum?</p>
+<p>Weil er weiterhin von dem ersten Verkäufer betreut wird, der ihn betreut hat und der sein Recht ausüben würde, aufgrund des Dienstalters zu fungieren, auch wenn er die Ziele nicht erreicht hat.</p>
+<p>Und der folgende Vertreter, der, wie wir annehmen, der Kundenkartei des Unternehmens 5 weitere Kunden hinzufügen konnte, aber auf die gleiche Weise die allgemeinen Ziele des Sektors nicht erreichen konnte? Auf die gleiche Weise hat er weiterhin das Recht, aufgrund des Dienstalters in diesen fünf Kunden, die er der Kundenkartei des Unternehmens hinzufügen konnte, tätig zu werden. Solange er den Mindestumsatz aufrechterhalten kann.</p>
+<p>Es ist immer ratsam zu wiederholen, dass der Unternehmer mit dieser Modalität nur gewinnt – er verliert keine Verkäufe, auch nicht bei vielen Vertreterwechseln, selbst wenn er bei der Zielsetzung stolpert.</p>
+<p>Der Unternehmer ist gegen Stolpern im System der Zielsetzung abgesichert.</p>
+<p>Es ist sogar möglich, den Verkäufer zurückzubringen, der vor der eventuellen, fehlerhaften Festlegung missbräuchlicher Ziele tätig war. Selbst in diesem Szenario der Herstellung kommerzieller „Gerechtigkeit“ wären die beiden oder drei Vertreter, die aufgrund des Fehlers bei der missbräuchlichen Zielsetzung schnell das Unternehmen durchlaufen haben, auch durch das Recht geschützt, ihre kleinen in kurzer Zeit erzielten Kundenstämme und folglich das kleine Einkommen, das sie erzielt haben, zu behalten, solange sie einen Mindestumsatz aufgrund des Dienstalters aufrechterhalten können.</p>
+<p>Es ist das Ende der abrupten Bewegungen. Der geraden Schnitte. Ohne auch nur einen Cent an Verkäufen zu verlieren. Alle gewinnen.</p>
+<p>Der Kunde bleibt, wie wir gesehen haben, geschützt, eingehüllt in eine Schutzkapsel, und bekommt nicht einmal die übernormalen Bewegungen in der Häufigkeit des Vertreterwechsels mit.</p>
+<p>Und der neue Vertreter? Hat er Vorteile in diesem System?</p>
+<p>Schauen wir mal!</p>
+<p>An dieser Stelle des Textes ist es bereits möglich zu spüren, dass es keinen „alten“ Vertreter gibt. Es gibt einen Vertreter.</p>
+<p>Das heißt, wir sind heute alle „Neymar“, aktiv, und morgen werden wir „Casagrande“ sein, mit tausend Geschichten zu erzählen.</p>
+<p>Wir werden alle „alte“ Vertreter/Verkäufer sein.</p>
+<p>Solange die Pille des ewigen Lebens nicht erfunden wird (und selbst nach der Erfindung der Pille des ewigen Lebens; solange die Pille der ewigen Zielerreichung nicht erfunden wird), besteht eine große Chance, dass wir alle in Zukunft „alt“ sein werden.</p>
+<p>Daher ist die Sicherheit, im schlimmsten Fall sein Einkommen aufrechterhalten zu können, indem man Verkäufer aufgrund des Dienstalters wird, eine Sicherheit – eine „Versicherung“ –, die jeden Vertreter schützt, der in dieser hier vorgeschlagenen Modalität Ziele/Dienstalter tätig ist.</p>
+<p>Ein Regenschirm für alle.</p>
+<p>Ohne die Regierung zu belästigen. Ohne die Verkäufe zu stoppen. Ohne den Unternehmer zu belästigen. Der Kunde gewinnt – wie wir gesehen haben. Wer gewinnt nicht?</p>
+<p>Es gibt noch zwei weitere Gewinne, die es wert sind, erwähnt zu werden:</p>
+<p><em>Alle Verkäufe des Sektors werden in die Berechnung zur Zielerreichung einbezogen</em></p>
+<p>Alle Verkäufe des Sektors – unabhängig davon, an wen die Provision geht, ob aufgrund des Dienstalters oder nicht – werden für den Sektor berechnet, um die Zielerreichung zu überprüfen.</p>
+<p>Was bedeutet das?</p>
+<p>Das bedeutet:</p>
+<p>Wenn das Ziel eines Sektors 100 beträgt; und Verkäufer aufgrund des Dienstalters für 30 dieser Verkäufe verantwortlich sind;</p>
+<p>Es obliegt dem aktuellen Vertreter lediglich, mit seinen Verkäufen das zu ergänzen, was von 30 auf 100 fehlt, um die Ziele des Sektors zu erreichen.</p>
+<p>Welche Vorteile bietet dieses Berechnungsmodell?</p>
+<p>Es gibt zwei:</p>
+<li>Der Verkäufer, der gerade eintritt, startet bereits bei 30 und nicht bei Null (gemäß unserem Beispiel), um die Ziele des Sektors zu erreichen. Und noch wichtiger:</li>
+<li>Es ist nicht notwendig, die Ziele vorübergehend zu „senken“, zu „flexibilisieren“, um einem neuen Verkäufer zu „helfen“, der eintritt. Nein. Da die Verkäufe, die zuvor im Sektor getätigt werden konnten, weiterhin aufgrund des Dienstalters getätigt werden, reicht es aus, alle diese Verkäufe zusammen mit den neuen Verkäufen des neuen Vertreters zu addieren, um die Ziele nicht ändern zu müssen. Niemals.</li>
+<p>Ziele werden idealerweise für eine Region berechnet, nicht für einen Vertreter/Verkäufer.</p>
+<p>Warum?</p>
+<p>Weil es die Region und nicht der Vertreter ist, die ein BIP, einen Sättigungspunkt (zum Beispiel – die Möglichkeit, an alle möglichen Kunden in der Region zu verkaufen) und ein Szenario hat.</p>
+<p>Verkäufer geht, Verkäufer kommt, die Region ist dieselbe.</p>
+<p>Daher ist es aus Sicht der Verkaufsprognose stabiler, die Ziele einer Region unabhängig von einem neuen/alten Verkäufer beizubehalten.</p>
+<p>Wenn ein außergewöhnlicher Verkäufer die Ziele über einen langen Zeitraum deutlich übertrifft, ist dies ausgezeichnet: Dies kann auf eine Möglichkeit hinweisen, die Ziele der Region zu erhöhen.</p>
+<p>Daher bleiben in diesem gemischten System Ziele/Dienstalter die Ziele unberührt – selbst während der turbulenten Notwendigkeit, Vertreter auszutauschen.</p>
+<p>Der neue Vertreter startet nicht bei Null, sondern bei der Gesamtzahl der Verkäufe, die noch aufgrund des Dienstalters aufrechterhalten werden, um das Ziel der Region zu erreichen.</p>
+<p>In dem Maße, in dem ich es vorschlagen kann, schlage ich vor, die Frist zu verlängern und die Werte der Ziele nicht zu ändern, damit ein neuer Vertreter etwas mehr Zeit hat, sich an das neue Unterfangen anzupassen und das Ziel der Region zu erreichen. Zum Beispiel die normale Frist für die Zielerreichung nur am Anfang zu verdoppeln. Danach ja, zur normalen Frist für den maximalen Zeitraum der Nichterreichung von Zielen zurückzukehren, was auch immer es sein mag.</p>
+<p>Dies ist mein besonderer Beitrag, im Rahmen meines aktuellen Wissens, zum Funktionieren des Verkaufssystems, der unveränderten Gewinn mit der neuen Zutat des Mitgefühls, der Beseitigung abrupter/unmenschlicher Bewegungen, der Erhaltung der Familie, mit mehr Sicherheit für alle, vom Unternehmer bis zum Kunden, verbindet.</p>
+<p>Mitgefühl und Gewinn sind kein Wasser und Öl, sondern Zutaten einer schönen Ehe, schlage ich vor und wage zu versuchen, sie logisch in diesem Text zu beweisen, den ich hier beende, indem ich das Modell Ziele/Dienstalter vorschlage.</p>
+<p>Vielen Dank, geduldiger Leser.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

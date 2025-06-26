@@ -1,0 +1,34 @@
+{
+  "id": "clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start",
+  "title": "Clean your mind? Unsubscribe emails wouldn’t be a bad start",
+  "author": "Vladimir Dietrich",
+  "date": "2025-06-26",
+  "readingTime": 2,
+  "heroImage": {
+    "fileName": "clean-your-mind-image-0.png",
+    "githubPath": "images/clean-your-mind-image-0.png",
+    "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.png",
+    "altText": "",
+    "caption": ""
+  },
+  "lastUpdated": "2025-06-26T18:57:37.312Z",
+  "wordCount": 448,
+  "content": "<p></p>\n<p>[<em>O artigo original é de 27 de julho de 2018, migrado nesta data para este novo blog</em>]</p>\n<p>You can unsubscribe from spam. The power is on them to unsubscribe you. But you can as well filter out messages that you don’t feel accommodate well in your life.</p>\n<p>If you don’t know the gmail filter tool, that’s your friend to clean your mind in what regards to email.</p>\n<p>Other email providers hopefully have similar filters, like the gmail one:</p>\n<h2>Gmail</h2>\n<h3>Gmail is email that&#039;s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access.</h3>\n<p><a href=\"https://mail.google.com/mail/u/0/?source=post_page-----5d4a7b539887---------------------------------------#settings/filters\" target=\"_blank\" rel=\"noopener noreferrer\">mail.google.com</a></p>\n<p>At the bottom of the filter’s page click “Add new filter”.</p>\n<p>Now the best part: cleaning.</p>\n<p>You have at least two powerful tools:</p>\n<li>The “OR” command.</li>\n<p>2. The asterisk “*”.</p>\n<p>At the “from” field, a great cleaner sentence is like this:</p>\n<p><strong>specific-recipient@anybotheringdomain.com OR\r@this-will-block-any-text-before-the-at-symbol OR\r@*.this-will-usually-block-email-marketing-from-this-still-respectable-domain</strong></p>\n<p>Add to the filter sentence email addresses that you did not request. Take some time to search for them. Your mindfulness deserve some work of your part. Let the sentence be long. Full of “OR”s. Full of addresses. Asterisks generalize the email, for companies that change the address a little bit so they think they would be able to pass your filter.</p>\n<figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.png\" alt=\"\" /></figure>\n<p>These are tools.</p>\n<p>Now we “just” need to handle our mind.</p>\n<p>Click “continue” and choose: “Delete it”.</p>\n<p>If possible choose “Also apply filter to matching conversations”. This will not only delete future but also current messages that your I hope long filter matches.</p>\n<figure><img src=\"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.png\" alt=\"\" /></figure>\n<p>Do not hesitate to “delete it”, if you allow me to suggest.</p>\n<p>Clean your mind.</p>\n<p>Usual doubts are:</p>\n<li>“I still fly with this company. And if they send me important flight info?”</li>\n<p>Answer: check their marketing email address. Usually you’ll see “sender@<strong>something-that-separates-your-flight-info-from-mkt-info.</strong>yourcompanyname.com”. So filter only this specific marketing info address, in cases like this.</p>\n<p>But this is an edge case.</p>\n<p>I’d say that if a company dared to send you email without a previous clear request, “the god of the IT clouds” won’t punish somebody that puts a powerful asterisk as a huge filter into this company main address.</p>\n<p>The worst nightmare to filter a company’s email would be:</p>\n<p>“@*companydomain.com”</p>\n<p>A filter like this would filter any email from that company. And if by any chance the filter fails in some way, add even more asterisks: to the end, everywhere.</p>\n<p>What would you be afraid of?</p>\n<p>Afraid of the silence? Maybe. That’s another topic.</p>\n<p>You are the king of your mind.</p>\n<p>You can, and should, be able to decide who knocks your door. Knocking is enough to grab some of your human-limited-daily quota of attention.</p>\n<p>I did not even mention: messaging apps.</p>\n<p>That’s another whole, huge, story.</p>\n",
+  "images": [
+    {
+      "fileName": "clean-your-mind-image-0.png",
+      "githubPath": "images/clean-your-mind-image-0.png",
+      "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.png",
+      "altText": "",
+      "caption": ""
+    },
+    {
+      "fileName": "clean-your-mind-image-0.png",
+      "githubPath": "images/clean-your-mind-image-0.png",
+      "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.png",
+      "altText": "",
+      "caption": ""
+    }
+  ],
+  "contentHash": "672f4eae4a1348e706e1b1"
+}

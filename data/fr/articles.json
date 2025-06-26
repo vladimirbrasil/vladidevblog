@@ -1,35 +1,38 @@
 {
   "articles": [
     {
-      "id": "aposentadoria-da-razao",
-      "title": "Retraite de la Raison",
+      "id": "human-soup",
+      "title": "Soupe humaine",
       "author": "Vladimir Dietrich",
-      "date": "2025-06-24",
-      "readingTime": 2,
+      "date": "2025-06-26",
+      "readingTime": 5,
       "heroImage": {
-        "fileName": "aposentadoria-da-razao-image-0.jpg",
-        "githubPath": "images/aposentadoria-da-razao-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg",
+        "fileName": "human-soup-image-0.png",
+        "githubPath": "images/human-soup-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.png",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-24T07:38:33.462Z"
+      "lastUpdated": "2025-06-26T18:58:05.005Z"
     },
     {
-      "id": "um-blog-facil",
-      "title": "Un Blog Facile",
+      "id": "spam-calls",
+      "title": "Appels indésirables",
       "author": "Vladimir Dietrich",
-      "date": "2025-06-15",
-      "readingTime": 2,
-      "heroImage": {
-        "fileName": "um-blog-facil-image-0.png",
-        "githubPath": "images/um-blog-facil-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-25T07:38:48.926Z"
+      "date": "2025-06-26",
+      "readingTime": 4,
+      "heroImage": null,
+      "lastUpdated": "2025-06-26T18:59:43.118Z"
+    },
+    {
+      "id": "repensando-o-sistema-de-metas",
+      "title": "Repenser le système d'objectifs",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-26",
+      "readingTime": 11,
+      "heroImage": null,
+      "lastUpdated": "2025-06-26T19:00:30.184Z"
     }
   ],
-  "lastUpdated": "2025-06-25T07:39:14.453Z"
+  "lastUpdated": "2025-06-26T19:02:03.360Z"
 }
