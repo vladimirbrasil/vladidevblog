@@ -179,7 +179,52 @@
         "caption": ""
       },
       "lastUpdated": "2025-06-27T16:03:38.669Z"
+    },
+    {
+      "id": "repensando-o-sistema-de-metas",
+      "title": "Repenser le système d'objectifs",
+      "author": "Vladimir Dietrich",
+      "date": "2018-11-28",
+      "readingTime": 11,
+      "heroImage": {
+        "fileName": "repensando-o-sistema-de-metas-image-0.jpg",
+        "githubPath": "images/repensando-o-sistema-de-metas-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/repensando-o-sistema-de-metas-image-0.jpg",
+        "altText": "Photo by J W on Unsplash",
+        "caption": "Photo by J W on Unsplash"
+      },
+      "lastUpdated": "2025-06-27T16:10:49.262Z"
+    },
+    {
+      "id": "spam-calls",
+      "title": "Appels indésirables",
+      "author": "Vladimir Dietrich",
+      "date": "2018-09-20",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "spam-calls-image-0.jpg",
+        "githubPath": "images/spam-calls-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/spam-calls-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:12:27.535Z"
+    },
+    {
+      "id": "human-soup",
+      "title": "Soupe Humaine",
+      "author": "Vladimir Dietrich",
+      "date": "2018-08-23",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "human-soup-image-0.jpg",
+        "githubPath": "images/human-soup-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg",
+        "altText": "Peter Dazeley / Getty Images",
+        "caption": "Peter Dazeley / Getty Images"
+      },
+      "lastUpdated": "2025-06-27T16:12:54.642Z"
     }
   ],
-  "lastUpdated": "2025-06-27T16:04:36.861Z"
+  "lastUpdated": "2025-06-27T16:13:33.627Z"
 }
