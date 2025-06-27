@@ -166,7 +166,7 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-27T14:19:39.635Z"
+      "lastUpdated": "2025-06-27T14:35:28.969Z"
     },
     {
       "id": "por-que-cuspir-a-consciencia",
@@ -182,7 +182,112 @@
         "caption": ""
       },
       "lastUpdated": "2025-06-27T14:20:10.015Z"
+    },
+    {
+      "id": "neuragame",
+      "title": "Neuragame",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-16",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "neuragame-image-0.jpg",
+        "githubPath": "images/neuragame-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:35:52.012Z"
+    },
+    {
+      "id": "previsivel",
+      "title": "Previsível?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-05",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "previsivel-image-0.jpg",
+        "githubPath": "images/previsivel-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/previsivel-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:36:49.950Z"
+    },
+    {
+      "id": "vanilla-skyourself",
+      "title": "Vanilla Skyourself",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-04",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "vanilla-skyourself-image-0.jpg",
+        "githubPath": "images/vanilla-skyourself-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/vanilla-skyourself-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:37:08.752Z"
+    },
+    {
+      "id": "sentimento-digital",
+      "title": "Sentimento Digital",
+      "author": "Vladimir Dietrich",
+      "date": "2021-10-23",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "sentimento-digital-image-0.jpg",
+        "githubPath": "images/sentimento-digital-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sentimento-digital-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:37:30.853Z"
+    },
+    {
+      "id": "aspirar-o-proprio-rabo",
+      "title": "Aspirar o próprio rabo?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-09-25",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "aspirar-o-proprio-rabo-image-0.jpg",
+        "githubPath": "images/aspirar-o-proprio-rabo-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aspirar-o-proprio-rabo-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:37:39.934Z"
+    },
+    {
+      "id": "esquerda-vs-direita-ou-emocao-vs-razao",
+      "title": "Esquerda vs Direita ou Emoção vs Razão?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-09-10",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "esquerda-vs-direita-ou-emocao-vs-razao-image-0.jpg",
+        "githubPath": "images/esquerda-vs-direita-ou-emocao-vs-razao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/esquerda-vs-direita-ou-emocao-vs-razao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:37:45.542Z"
+    },
+    {
+      "id": "qual-e-o-esporte-mais-dificil-do-mundo",
+      "title": "Qual é o esporte mais difícil do mundo?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-05-17",
+      "readingTime": 13,
+      "heroImage": {
+        "fileName": "qual-e-o-esporte-mais-dificil-do-mundo-image-hero.png",
+        "githubPath": "images/qual-e-o-esporte-mais-dificil-do-mundo-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/qual-e-o-esporte-mais-dificil-do-mundo-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:38:41.053Z"
     }
   ],
-  "lastUpdated": "2025-06-27T14:20:54.610Z"
+  "lastUpdated": "2025-06-27T14:38:41.064Z"
 }

@@ -74,7 +74,52 @@
         "caption": ""
       },
       "lastUpdated": "2025-06-27T14:20:10.015Z"
+    },
+    {
+      "id": "neuragame",
+      "title": "Neuragame",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-16",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "neuragame-image-0.jpg",
+        "githubPath": "images/neuragame-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:35:52.012Z"
+    },
+    {
+      "id": "previsivel",
+      "title": "Vorhersehbar?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-05",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "previsivel-image-0.jpg",
+        "githubPath": "images/previsivel-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/previsivel-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:36:49.950Z"
+    },
+    {
+      "id": "vanilla-skyourself",
+      "title": "Vanilla Skyourself",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-04",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "vanilla-skyourself-image-0.jpg",
+        "githubPath": "images/vanilla-skyourself-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/vanilla-skyourself-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:37:08.752Z"
     }
   ],
-  "lastUpdated": "2025-06-27T14:20:54.668Z"
+  "lastUpdated": "2025-06-27T14:38:41.098Z"
 }

@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neuragame - Vladimir Dietrich's Blog</title>
+  <meta name="description" content=" ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Neuragame - Vladimir Dietrich's Blog">
+  <meta property="og:description" content=" ">
+  <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/neuragame.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/de/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/de/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="hero-image-container">
+        <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg" alt="" class="hero-image">
+        
+      </div>
+      <div class="article-content-wrapper">
+        <a href="/de/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Neuragame</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>November 15, 2021</span>
+            <span>·</span><span class="reading-time">5 min read</span>
+          </div>
+        </div>
+        
+        
+      <div class="language-switcher">
+        <a href="/articles/neuragame.html">Português</a><span>|</span><a href="/en/articles/neuragame.html">English</a><span>|</span><a href="/fr/articles/neuragame.html">Français</a><span>|</span><strong>Deutsch</strong><span>|</span><a href="/es/articles/neuragame.html">Español</a>
+      </div>
+    
+
+        <div class="article-content">
+          <p> </p>
+<p></p>
+<p>Ein <a href="https://youtu.be/78kmJm2SFw4" target="_blank" rel="noopener noreferrer">Videospiel ermöglicht es, einen Sportwagen zu fahren</a>. Ohne vorher Millionär werden zu müssen.</p>
+<p>Das Spiel ermöglicht es, durch die Straßen einer Stadt zu fahren. Mit oder ohne Rennen. Spazieren gehen. Oder rennen. Ohne Drehbuch.</p>
+<p>Die Prozessoren und Designer von Videospielen schaffen es zunehmend, ein Videospiel der Realität anzunähern. Das Aussehen ähnelt immer mehr der Realität. In den Details. Die Gesetze der Physik werden zunehmend im Motorengeräusch, in der Federung, im Bodengeräusch, in den Wetterbedingungen reproduziert.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-1.jpg" alt="" /></figure>
+<p><a href="https://youtu.be/gPaFgNEF82Q" target="_blank" rel="noopener noreferrer">Omniverse Reality Replicator von NVidia</a>. Unwissende könnten es mit einem Foto oder Video verwechseln.</p>
+<p>Im Falle des Fahrens von Autos oder des Fliegens von Flugzeugen gibt es Cockpits zu kaufen, die eine weitere Schicht der Annäherung an die Realität hinzufügen. Diese Cockpits bilden die Vibrationen des Bodens nach. Sie simulieren Bremsungen, Beschleunigungen und Kurven mit ihren Kolben, die ihre entsprechenden Kräfte erzeugen.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-2.jpg" alt="" /></figure>
+<p>Foto. <a href="https://youtu.be/61MD3bv1qeQ" target="_blank" rel="noopener noreferrer">Cockpit Yaw 2 VR</a></p>
+<p>Dreidimensionale Brillen simulieren unsere Sicht noch besser. Wir können das Gesicht drehen, wie wir es im wirklichen Leben tun. Eine weitere Dimension der Annäherung an die Realität.</p>
+<p>Was können wir in Videospielen noch von der Realität imitieren?</p>
+<p>Wird es sehr schwierig sein, Winde, Feuchtigkeit, Gerüche zu reproduzieren? Kommerziell ist es teuer, aber technisch ist es nicht schwierig, weitere Realitätsschichten hinzuzufügen. Ein Ventilator kann beispielsweise Wind simulieren.</p>
+<p>Was ist die Grenze der Nachahmung der Realität in Videospielen? Ein Cockpit mit allen Bewegungen, Ventilatoren, Geruchsreproduzenten, Feuchtigkeit?</p>
+<p>Selbst das beste Cockpit könnte keinen langen Sturz reproduzieren. Nur kleine Bewegungen durch Kolben.</p>
+<p>Aber es gibt eine Alternative, die mehr Annäherungen an die Realität ermöglicht. Oder alle. Oder sogar mehr als alle.</p>
+<p>Wir könnten <a href="https://neuralink.com/" target="_blank" rel="noopener noreferrer">unseren Geist</a> mit dem Videospiel verbinden.</p>
+<p>Wenn wir unseren Geist mit dem Videospiel verbinden, benötigen wir keine externen Geräte.</p>
+<p>Geeignete Impulse könnten alles, was wir kennen, ohne Einschränkung wiederherstellen. Wir könnten lange Stürze reproduzieren. Aufstiege. Jeder Geruch. Wind, Brise, Blumenduft – und sogar neue Empfindungen und Erregungen.</p>
+<p>Verbunden mit dem Gehirn in einem bidirektionalen Weg könnte eine künstliche Intelligenz – ein Gehirn von außen – für jeden Spieler spezifisch lernen, welche Impulse zu mehr Vergnügen für den Spieler führen.</p>
+<p>In diesem Fall könnte das Videospiel nicht nur Impulse an das Gehirn senden, sondern auch lesen, was das Gehirn fühlt. Freude? Schmerz? Reizung? Angst? Hat unser Gehirn mit einer Empfindung von Schauern reagiert, die sich auf die Wirbelsäule richtet? Eine Wärme, die auf das Herz gerichtet ist? Hat die Reaktion unseres Gehirns dazu geführt, dass wir ein „Kribbeln im Bauch“ verspüren?</p>
+<p>Diese Lawine von Gehirnreaktionen ist ein gefundenes Fressen für ein anderes Gehirn, nur dass es sich hierbei um eine künstliche Intelligenz handelt. Es ist nicht wirklich ein Gehirn, sondern ein neuronales Netzwerk.</p>
+<p>Ein neuronales Netzwerk kann so programmiert werden, dass es beispielsweise das Vergnügen maximiert.</p>
+<p>Das wird es tun.</p>
+<p>In diesem Fall wird die künstliche Intelligenz als engagierte Mitarbeiterin des Vergnügens Indizes in ihrem neuronalen Netzwerk erstellen, die abbilden, welche verschiedenen Impulse, die das Spiel dem Spieler gibt, als Reaktion mehr oder weniger Vergnügen hervorrufen.</p>
+<p>Diese künstliche Intelligenz – eine Art Hilfsgehirn von außen – würde anfangen zu erraten, welche Impulse speziell für diesen Spieler das meiste Vergnügen verursachen. Sie könnte dann das Videospiel, seine Szenarien und möglichen Ereignisse auf die Teile konzentrieren, die speziell für diesen Spieler das meiste Vergnügen verursachen.</p>
+<p>Zum Beispiel. Es ist möglich, dass das Empfinden von Impulsen, die großen und starken Muskeln entsprechen, bei vielen Menschen Glücksgefühle auslöst. In bestimmten Handlungen oder Umständen.</p>
+<p>Können wir unserem Spieler Stärke, Kraft oder Disposition simulieren?</p>
+<p>Mal sehen. Unser Geist bittet darum, ein Bein zu bewegen. Sofort erhält er das Signal zurück, dass sich ein großer Beinmuskel bewegt. Es ist dieses Gefühl von „groß“, das wir in unserem Simulator künstlich verstärken, abschwächen oder verändern können.</p>
+<p>Wir können den tatsächlichen Wunsch des Spielers nutzen, eine Gruppe von Muskeln zu bewegen, und nur in die tatsächliche Reaktion eingreifen, die diese Muskeln an das Gehirn des Spielers zurückgeben. Wir können beispielsweise das Gefühl von Stärke und Agilität dieser Reaktion verstärken.</p>
+<p>Mehrere Muskeln werden in mehreren Interaktionen pro Sekunde bewegt, wenn wir eine einfache Bewegung ausführen möchten. Moderne Computer können mehr als Millionen Mal pro Sekunde agieren und simulieren Tausende von Muskeln gleichzeitig. Daher ist es zumindest theoretisch nicht unerreichbar für die Computertechnik, reale Muskelreaktionen für reale Gehirne zu simulieren.</p>
+<p>Wenn es möglich ist, Größe und Agilität von Muskeln zu simulieren, sollten wir uns dann an die normalen Größen menschlicher Muskeln halten?</p>
+<p>Wenn es möglich ist, Muskelreaktionen für jeden Muskelbefehl unseres Spielers zu simulieren, dann können wir Kräfte simulieren, die über die Reichweite echter Muskeln hinausgehen. Wir können – einschließlich Fühlen – eine riesige, starke Brust haben, wie die eines riesigen Gorillas. Wir können die Agilität eines Tigers simulieren. Oder etwas Ähnliches.</p>
+<p>Das Senden von Impulsen direkt an das Gehirn in den richtigen Maßen und Frequenzen ermöglicht es, Kraft, Stärke, Disposition über das hinaus zu simulieren, was uns das Trainieren, Essen von Proteinen selbst bei unseren engagiertesten Absichten im wirklichen Leben ermöglicht.</p>
+<p>Wir können sowohl die Welt als auch die Kraft des Spielers simulieren. Wir können ein neuronales Netzwerk trainieren, um die Szenarien, Aktionen und Impulse zu maximieren, die auf personalisierte Weise für jeden Spieler mehr Vergnügen bringen.</p>
+<p>Hier können wir uns an Tom Cruise aus dem Film Vanilla Sky erinnern. Er lebte in einem „Videospiel“, das darauf ausgelegt war, ihm Vergnügen zu bereiten. In seinem Videospiel hatte Tom Cruises Figur eine Beziehung mit Penélope Cruz in einer humorvollen Romanze.</p>
+<p>Oder wir können uns an den Film Matrix erinnern. In Matrix war alles ein großes Videospiel.</p>
+<p>In beiden Filmen zwingen Defekte die Charaktere, in das reale menschliche Leben zurückzukehren. In Hollywood war die Rückkehr ins reale Leben das Ende dieser Art von Filmen.</p>
+<p>Aber hier werden technisch Möglichkeiten für künstliche Intelligenzen aufgezeigt, die uns über Cockpits, Fernseher und Lautsprecher hinaus ernähren. Über einige Bewegungen, Sehen und Hören hinaus.</p>
+<p>Da wir normalerweise unsere Entdeckungen nicht rückgängig machen, könnte es einen laufenden Trend geben, der, wie ich zu Beginn sagte, mit Videospielen wie diesem <a href="https://youtu.be/78kmJm2SFw4" target="_blank" rel="noopener noreferrer">kleinen fahrbaren Auto</a> beginnt, heute.</p>
+<p>Wie wird es morgen sein?</p>
+<p>Wenn wir das nächste Mal jemanden beobachten, der mit einem Mobiltelefon interagiert, können wir anfangen zu denken, dass die Verwendung von Fingern und Wörtern auf einem kleinen Bildschirm sich weiterentwickeln kann, es hört nicht da auf.</p>
+<p>In Star Trek gab es die Möglichkeit, sofort von einem Ort zum anderen zu gelangen. Nun, wir haben den Star Trek-Tunnel noch nicht erschaffen können. Aber wir können in einem Neuragame sofort von Paris nach Tokio reisen. Wenn man darüber nachdenkt, was ist der Unterschied? Übrigens: Wir können sogar zum Mars reisen. Sofort. Oder wo immer wir hinkommen wollen. Wo wäre das?</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
