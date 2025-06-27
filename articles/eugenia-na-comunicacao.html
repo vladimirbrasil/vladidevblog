@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍎 Eugenia na comunicação? - Vladimir Dietrich's Blog</title>
+  <meta name="description" content="">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="🍎 Eugenia na comunicação? - Vladimir Dietrich's Blog">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/eugenia-na-comunicacao.html">
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
+@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+</style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <a href="/index.html" class="logo">Vladimir Dietrich</a>
+      <nav class="nav-links">
+        <a href="/index.html">Blog</a>
+        <a href="https://vladi.dev" target="_blank">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="hero-image-container">
+        <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" class="hero-image">
+        
+      </div>
+      <div class="article-content-wrapper">
+        <a href="/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>🍎 Eugenia na comunicação?</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>February 10, 2022</span>
+            <span>·</span><span class="reading-time">12 min read</span>
+          </div>
+        </div>
+        
+        
+
+        <div class="article-content">
+          <p></p>
+<p><em>Oito perspectivas sobre a crise das antenas — em que todos, agora, podem falar e publicar — , mas também em que ocorrem flertes com a restrição de liberdade, talvez oriundo de uma mágoa de quem esteja perdendo um espaço até pouco tempo atrás bem seleto, usando justificativas tão atraentes quanto a maçã vermelhíssima da branca de neve.</em></p>
+<h2>Primeira perspectiva: mágoa dos ressentidos, até há pouco tempo, poucos donos da informação.</h2>
+<p>O mundo quer mais controle, ou a imprensa do mundo quer mais controle? Acho que a imprensa do mundo, não o mundo, quer mais controle da população.</p>
+<p>Humanos que somos, sonhamos com eloquentes teorias da conspiração, mas o motivo real é rasteiro. Reptiliano. Animaizinhos somos, mas sonhamos estarmos longe dos animais.</p>
+<p>Antenas! Eis o reptiliano motivo rasteiro da crise atual.</p>
+<p>Até poucos anos atrás, 4 ou 5 antenas nos prédios mais altos das regiões mais altas de cada cidade propagavam as grandes ideias e informações do mundo a todos nós.</p>
+<p>De repente todo mundo virou antena. Faz um upload com seu celularzinho no YouTube. Um tweet. Uma postagem no trio de empresas do Zuckerberg, face-insta-whats. Um grupo no Telegram.</p>
+<p>As notícias das grandes poucas antenas lentamente começaram a chegar atrasadas em relação às postagens dos celulares.</p>
+<p>Cada vez mais sabíamos das coisas por outros humanos em seus celulares.</p>
+<p>Minguava o mundinho restrito das poucas antenas. Não dava mais para tomar um uísque com 25% da comunicação de um país, se encontrasse o dono de uma grande antena em um bar perto do congresso.</p>
+<p>Não dava mais para ser amigo próximo de 75% de toda a comunicação de uma região, tendo 3 ou 4 amigos influentes com antenas grandes.</p>
+<p>Crise das antenas. Todo mundo passou a ter, e muitos a usar, sua antena em seu smartphone.</p>
+<p>Daí pessoas com muito medo criaram o perigo estrondoso da fake news. Como se pessoas em excesso significassem jegues, trata-se antenas no coletivo como proibido, fonte de mentiras que enganam idiotas.</p>
+<p>Como se pode opor todos-com-antenas?</p>
+<p>Com poucas antenas.</p>
+<p>Com um tipo de ditadura de poucas antenas</p>
+<p>Com não-confiança na multidão. No povo. Como não se confia em jegues.</p>
+<p>O Google deu a solução mais bonita antes da primeira eleição de trump. Pressionado na primeira pressão das fake news, ele criou, até a hoje, a solução mais libertadora que já vi:</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<p>Ao invés de restringir, amordaçar, calar, censurar, o Google multiplicou a liberdade: para cada notícia postada, seus algoritmos iam atrás de várias fontes para a mesma notícia, ou notícia similar. E criou o botão para ver mais versões da mesma notícia, que chamou de “cobertura completa”. Ampliou a informação.</p>
+<p>Mas não. Não era esse o objetivo. O objetivo não era ampliar a liberdade. Ampliar a informação. O objetivo é mais rasteiro. Mais reptiliano.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<p>a maçã vermelha.</p>
+<p>Simples: os donos e amigos de donos das poucas antenas que antes eram exclusivas no mundo estão estrebuchando. Convulsionando. Não sabem onde enfiar a cabeça. Não sabem como parar de derreter os anunciantes. Não sabem como pagar despesas que antes podiam ser as maiores.</p>
+<p>Poderosos e com amigos poderosos, os antigos poucos donos do mundo, quando estrebucham, o mundo sente.</p>
+<p>Aparecem ondas de autoritarismo. Caminhoneiros precisam representar a liberdade.</p>
+<p>São répteis estrebuchando.</p>
+<p>Playboys agarrados em seus brinquedos de luxo: monopólio da informação.</p>
+<p>Não tem volta. Estamos assistindo, de camarote, a morte de um animal. Influente. Estrebuchante. Morto.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<p><em>Uma </em><a href="https://link.estadao.com.br/noticias/cultura-digital,nazistas-do-pao-e-circo,70003975703" target="_blank" rel="noopener noreferrer"><em>coluna</em></a><em> de um jornalista flerta com restringir liberdade. Cria justificativas as mais sedutoras possíveis.</em></p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<p>Esta coluna do Pedro Doria é produto do problema que ando refletindo, cuja postagem <a href="https://www.facebook.com/vla.brasil/posts/10227127588765657" target="_blank" rel="noopener noreferrer">linkei</a> aqui, que ando chamando de “crise das antenas”. Que todo mundo, agora, é dono de uma antena: seu celular.</p>
+<h2>Segunda perspectiva: sentimento. O que você sente? Um exemplo do trânsito.</h2>
+<p>O que você acaba de sentir? Ao ouvir “todo mundo tem uma antena”. Não mais somente poucos donos de antenas?</p>
+<p>Porque o sentimento é independente do fenômeno, a bilhionização de antenas.</p>
+<p>Se você sente que quer colocar uma fita adesiva na boca de bilhões, ou centenas de milhões de pessoas que agora possuem antenas, agora estamos conversando. Isto é uma posição com profunda implicação política.</p>
+<p>Se quer deixar a vida se ajustar por si, as bilhões de novas antenas comunicadoras se entendendo de alguma maneira sei-lá-qual, também estamos conversando. É uma posição com profunda implicação política.</p>
+<p>Mais controle? Menos controle?</p>
+<p>Será que meus problemas pessoais — mais controle, menos controle no nível pessoal, psicanalítico — influenciam minha decisão sobre todos os demais? Ou sabemos separar?</p>
+<p>O exemplo do trânsito pode trazer prática para assunto ainda um pouco abstrato.</p>
+<p>Imagine uma cidade que cresce. O número de carros nas ruas quadruplica. Quintuplica. Ano após ano. Ao invés de antenas, carros. Todo mundo agora tem um carro e quer usá-lo.</p>
+<p>Em Porto Alegre vi esta transição com meus próprios olhos.</p>
+<p>No início, acontece uma selvageria: ninguém quer dar espaço para ninguém. Após umas duas décadas, se chega no nível “São Paulo”, onde ao ligar a seta o carro de trás libera a passagem ao invés de acelerar. Aqui em Porto Alegre estamos no meio deste caminho. A selvageria diminuiu, mas ainda existe. E em ambas as cidades as exceções nunca deixarão de existir.</p>
+<p>Neste exemplo do trânsito podemos observar as duas posições, controle e descontrole. Em ambas as cidades a central de engenharia de tráfego (cet) ou empresa pública de transportes (eptc) cresceram, produziram cartilhas, campanhas na tv, multas. Mas também as pessoas se ajustaram sem terem seus carros proibidos de circular. Tudo acaba funcionando.</p>
+<p>Que fazer?</p>
+<p><em>Aliás, há ainda outra maneira de observar o fenômeno em que todos, não mais poucos, possuímos antenas, podemos e queremos transmitir informação e opiniões.</em></p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<p>branca de neve e a maçã vermelha.</p>
+<h2>Terceira perspectiva: poder de processamento. Uma enchurrada de sinapses.</h2>
+<p>Somos, mais ou menos, capazes de 1 quatrilhão de sinapses utilizando nossos 100 bilhões de neurônios. Cada um de nós!</p>
+<p>[Caramba. Pausa pois isto é incrível.]</p>
+<p>Somos, portanto, opinião. Somos informação. Somos processamento. Capacidade. Raciocínio.</p>
+<p>Vamos fazer uma analogia com a rede de criptomoedas, por exemplo bitcoin. O bitcoin depende de inúmeros computadores com enormes capacidades de processamento para verificar transações de criptomoedas. A todo instante.</p>
+<p>Da mesma maneira podemos pensar seres humanos.</p>
+<p>Cada ser humaninho (inho?) pode e quer contribuir seu quatrilhão de sinapses com a humanidade.</p>
+<p>Por enquanto isto é só uma maneira de enxergar. Sem solução. Uma maneira de fazer as perguntas certas.</p>
+<p>Por exemplo: falta uma estrutura para abrigar tanta capacidade de raciocínio?</p>
+<p>Ainda é cedo para saber muito sobre este assunto, sinto.</p>
+<p>Note que eu acabo de dar um exemplo prático: “mexi”, “usei” minhas capacidades sinápticas para tentar aumentar nosso conhecimento sobre o assunto. Me esforcei. “Esquentei minha cabeça”. Contribui, por algum motivo psicanaliticamente explicável (desejo de conexão, medo do desamparo, ou outro motivo). Doei esforço e energia. Doei capacidade sináptica. Bilhões de pessoas também querem doar, e doam, quatrilhões de sinapses, todo dia, por todo assunto. Bilhão vezes quatrilhão.</p>
+<p>Aos poucos, vamos pensando, literalmente. Somando processamentos. Somos processamento. Somos 7 bilhões de quatrilhões de capacidade sináptica, como um todo.</p>
+<p>Será que bilhões de antenas não são bem vindas? Charrete foi substituída por carro à combustão. Um mundo com poucas gigantes antenas não pode ser substituído?</p>
+<p>Em seguida falarei sobre algo que também ainda não foi dito: especialização.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<p>veneno na maçã?</p>
+<h2>Quarta perspectiva: especialização. O especialista vs o não-especialista.</h2>
+<p>É possível que o jornalista do artigo acima esteja argumentando pela especialização.</p>
+<p>Poucas antenas deixariam apenas os especialistas falarem, transmitirem, com grande alcance.</p>
+<p>Vamos primeiro entender o lado positivo deste argumento.</p>
+<p>O que mudaria no projeto de foguetes do Elon Musk se ele tivesse que limpar a casa, todo dia?</p>
+<p>Para isto inventaram a especialização.</p>
+<p>Uma pessoa especializada em limpeza faz mais rápido, com mais eficiência, aquilo que o dono da empresa de foguetes SpaceX demoraria para fazer. E vice versa, a pessoa que cuidar da limpeza não seria tão eficiente no projeto de foguetes.</p>
+<p>E com comunicação?</p>
+<p>Deixar todos comunicarem é abandonar a especialização e, junto, uma eficiência?</p>
+<p>Esta é uma pergunta, um argumento que não é pequeno.</p>
+<p>No exemplo da locomoção, não é qualquer um que pode pilotar Boeing’s. Existe uma especialização. E carros? Dirigir um carro já não exige tanta especialização: requer apenas uma habilitação mais simples.</p>
+<p>Estes exemplos práticos não respondem, apenas adicionam maneiras de enxergar o problema de todos poderem comunicar, ao invés de como era antes, quando poucos tinham este poder de longo alcance.</p>
+<p>Aliás, por falar em alcance!</p>
+<p>Há uma enorme diferença no tipo de alcance:</p>
+<p>Próximo comentário.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<p>Poderemos acordar?</p>
+<h2>Quinta perspectiva: sistema complexo vs topologia simples da comunicação.</h2>
+<p>A crise em que todos podem se comunicar, ao invés de poucas grandes antenas, apresenta uma mudança importante, pouco discutida:</p>
+<p>Mudamos do método direto, mais simples, para um método indireto, mais complexo, de divulgação e espalhamento de informações.</p>
+<p>Com poucas antenas poucos falavam por todos nós. Direto.</p>
+<p>Agora, “todos” falam. Quais notícias espalham ou não acontece de uma maneira mais indireta.</p>
+<p>Aí permite trazer de novo a questão do controle.</p>
+<p>Nossos mais controladores desejos querem a morte de sistemas complexos, quase indecifráveis. “Poucas antenas queremos de volta!”, diriam nossos mais controladores desejos.</p>
+<p>Nossos mais libertadores desejos adoram a criatividade e efervescência da complexidade.</p>
+<p>Vida! (Literalmente).</p>
+<p>Só compliquei o tema.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<p>Cabe ainda mais um comentário (caramba!).</p>
+<h2>Sexta perspectiva: profissionalismo. Doar comunicação, vs ser pago para comunicar.</h2>
+<p>Eu “doei” 4 comentários, acima, sobre este assunto. Realmente me esforcei usando minha capacidade sináptica típica humana. Capacidade de processamento. Doei.</p>
+<p>Porém porque eu doei tanto esforço em uma página gratuita e pública (facebook, medium)?</p>
+<p>Porque não sou profissional é uma primeira resposta.</p>
+<p>Não sou profissional porque não sou tão bom nesta área é outra boa hipótese.</p>
+<p>Mas também não sou de todo ruim. Sou como o Elon Musk limpando a própria casa. Mais devagar, vai errar alguns produtos, esquecer algo, mas vai ficar mais limpa.</p>
+<p>E o profissional?</p>
+<p>O profissional cobra para contribuir. Para comunicar. Para transmitir. Ganha salário. Comissão.</p>
+<p>Eis o quinto e novo argumento!</p>
+<p>Na sociedade que escolhemos por enquanto, não é difícil que anunciantes, sustento, dinheiro, possam influenciar quando se está em um nível bem profissional.</p>
+<p>Então o profissionalismo tem a beleza real da especialização, da eficiência, mas também um pouco de interesses subreptícios, não por maldade, mas para pagar a conta de luz da redação. Para pagar a cervejinha gelada.</p>
+<p>Então o não-profissional ganha uma beleza: é movido mais pelo medo do desamparo, pelo desejo de conexão, com menos vínculo a contracheques ou a terminar logo o expediente, nem mesmo precisa preencher uma folha em branco quando não quer, por uma exigência de periodicidade profissional. Mas isto não vem sem ônus: o cara não é profissional, como eu não sou profissional, porque é mais burro, menos especialista, no assunto.</p>
+<p>Por isso não-profissionais, por definição, como eu, doamos sinapses: de graça.</p>
+<p>Gerenciar bilhões de quatrilhões de sinapses menos especializadas, mas não de todo ruins, pode ser linda perspectiva.</p>
+<p>Ainda apenas uma boa perspectiva para fazer as perguntas certas. A solução está longe ainda!</p>
+<p>Quem tem pressa?</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<p>A maçã é super-atraente.</p>
+<p>Portanto, uma boa perspectiva para abordar o problema poderia ser:</p>
+<p>Podemos aproveitar melhor nossa limitada capacidade de 7 bilhões de quatrilhões de sinapses?</p>
+<p>Podemos desconcentrar o sistema?</p>
+<p>Podemos escutar?</p>
+<p>Ainda só estou esboçando.</p>
+<p>Aguardo mais doadores de quatrilhões de sinapses! Nossa força está no grupo.</p>
+<p><em>Ainda mais uma perspectiva para a crise das antenas, em que há flertes com a restrição de liberdade, com justificativas tão atraentes quanto a maçã vermelhíssima da branca de neve.</em></p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<h2>Sétima perspectiva: o exemplo da fotografia, da música.</h2>
+<p>Hoje todo mundo é fotógrafo, mas também não é fotógrafo.</p>
+<p>Antes poucos tinham o investimento para ter o equipamento de fotografia. Revelar uma foto era um processo químico para poucos.</p>
+<p>Hoje todo mundo tem câmera, mas nem todo mundo é fotógrafo “pra valer”.</p>
+<p>Mas há muito mais fotógrafos “pra valer”, muito bons, hoje, do que quando ter o equipamento e acesso a laboratório de revelação era difícil.</p>
+<p>E mais importante ainda: quem decide quais são os fotógrafos muito bons, dentre todos os possíveis?</p>
+<p>Nós mesmos. Com fotografia, pelo menos, é assim.</p>
+<p>E com música?</p>
+<p>Já não requer mais bajular uma gigante gráfica impressora de vinis, ter sua música publicada.</p>
+<p>Ainda assim, todos sendo músicos em potencial, quantos de nós somos bons músicos “pra valer”?</p>
+<p>Menos que todos os músicos potenciais, mas muito mais músicos do que quando era caro imprimir um vinil.</p>
+<p>Sexto comentário meu!</p>
+<p>Que bicho dentro de mim movimenta tanto minha teclas?</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+<p><em>A maçã vermelha que justifica flertar com a liberdade mexe comigo? Com você?</em></p>
+<h2>Oitava perspectiva: eugenia na comunicação?</h2>
+<p>Pedro Dória, em seu artigo “<a href="https://link.estadao.com.br/noticias/cultura-digital,nazistas-do-pao-e-circo,70003975703" target="_blank" rel="noopener noreferrer">Nazistas de Pão e Circo</a>”, pode estar sendo nazista, ao mesmo tempo que abomina ser nazista.</p>
+<p>Neste trecho do artigo, ele abomina ser nazista:</p>
+<p><em>“aqui, como em qualquer canto do Ocidente, não se cruza a segunda regra de ouro. Holocausto e pedofilia são temas com que não se mexe”</em>.</p>
+<p>Já neste trecho aqui, observemos:</p>
+<p><em>“Conseguiam falar com muitas pessoas apenas aqueles que desenvolvessem uma ou mais capacidades. Estudavam muito ou sofisticavam suas habilidades políticas (…)”</em></p>
+<p>Pouca gente sabe — o caso é uma vergonha histórica — que muito antes de Hitler chegar ao poder na Alemanha Carrie Buck foi esterilizada, por decisão da suprema corte americana, por ser estúpida (feebleminded, <a href="https://en.wikipedia.org/wiki/Buck_v._Bell" target="_blank" rel="noopener noreferrer">Buck v. Bell, 1927</a>). Hitler nem tinha chegado ao poder, ainda.</p>
+<p>Pedro Dória, sem perceber, está acusando de estúpidos ou idiotas aqueles que NÃO “<em>desenvolvem uma ou mais capacidades</em>”. que NÃO “<em>estudam muito</em>” ou que NÃO “<em>sofisticam suas habilidades políticas</em>”. Diz, ainda, que estes, se fosse nas regras de antigamente, não poderiam falar.</p>
+<p>Antes de ser esterilizada por decisão da suprema corte americana, Carrie Buck, sob a acusação de “idiota”, foi internada no campo de concentração, chamado de “colônia”, de “Lynchburg Colony”, na Virgínia, em 1924.</p>
+<p>Então 9 anos mais tarde Hitler vira chanceler alemão. Faz o que sabemos que fez. E todo mundo esconde embaixo do tapete aquilo que faziam fora da Alemanha, antes de Hitler chegar ao poder.</p>
+<p>Este argumento de Pedro Dória vai, no futuro, para baixo do tapete, fingindo jamais existir — errar é humano e compreensível — , ou realmente possui substância?</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="" /></figure>
+
+        </div>
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

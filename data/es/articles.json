@@ -44,7 +44,37 @@
         "caption": ""
       },
       "lastUpdated": "2025-06-27T14:08:33.957Z"
+    },
+    {
+      "id": "arranha-vaidades",
+      "title": "Rasca-[cielos]",
+      "author": "Vladimir Dietrich",
+      "date": "2022-03-08",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "arranha-vaidades-image-0.jpg",
+        "githubPath": "images/arranha-vaidades-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/arranha-vaidades-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:18:05.674Z"
+    },
+    {
+      "id": "por-que-cuspir-a-consciencia",
+      "title": "¿Por qué escupir la conciencia?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-30",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "por-que-cuspir-a-consciencia-image-0.jpg",
+        "githubPath": "images/por-que-cuspir-a-consciencia-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:20:10.015Z"
     }
   ],
-  "lastUpdated": "2025-06-27T14:11:52.308Z"
+  "lastUpdated": "2025-06-27T14:20:54.635Z"
 }
