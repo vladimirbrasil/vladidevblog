@@ -403,6 +403,75 @@
       "lastUpdated": "2025-06-27T15:18:40.632Z"
     },
     {
+      "id": "noam-chomsky-mixed-with",
+      "title": "Noam Chomsky mixed with…",
+      "author": "Vladimir Dietrich",
+      "date": "2020-12-12",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "noam-chomsky-mixed-with-image-hero.png",
+        "githubPath": "images/noam-chomsky-mixed-with-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/noam-chomsky-mixed-with-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:01:29.074Z"
+    },
+    {
+      "id": "fabrica-de-coringas",
+      "title": "Fábrica de coringas?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-10-31",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "fabrica-de-coringas-image-0.png",
+        "githubPath": "images/fabrica-de-coringas-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:01:47.130Z"
+    },
+    {
+      "id": "o-que-e-belo",
+      "title": "O que é belo",
+      "author": "Vladimir Dietrich",
+      "date": "2020-09-10",
+      "readingTime": 3,
+      "heroImage": null,
+      "lastUpdated": "2025-06-27T16:02:28.627Z"
+    },
+    {
+      "id": "sai-o-emprego-fica-a-producao",
+      "title": "Sai o emprego, fica a produção",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-07",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "sai-emprego-fica-producao-image-0.jpg",
+        "githubPath": "images/sai-emprego-fica-producao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:02:35.417Z"
+    },
+    {
+      "id": "a-curiosidade-humana",
+      "title": "A curiosidade humana",
+      "author": "Vladimir Dietrich",
+      "date": "2019-09-11",
+      "readingTime": 11,
+      "heroImage": {
+        "fileName": "a-curiosidade-humana-image-0.jpg",
+        "githubPath": "images/a-curiosidade-humana-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:03:38.669Z"
+    },
+    {
       "id": "lixeiros-nao-utilizam-cinto-de-seguranca-utilizam",
       "title": "Lixeiros não utilizam cinto de segurança, utilizam?",
       "author": "Vladimir Dietrich",
@@ -418,5 +487,5 @@
       "lastUpdated": "2025-06-27T15:15:58.395Z"
     }
   ],
-  "lastUpdated": "2025-06-27T15:18:40.637Z"
+  "lastUpdated": "2025-06-27T16:04:36.838Z"
 }

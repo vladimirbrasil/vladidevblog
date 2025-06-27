@@ -188,7 +188,52 @@
         "caption": "Noam Chomsky (left) & Yuval Noah Harari (right)"
       },
       "lastUpdated": "2025-06-27T15:18:40.632Z"
+    },
+    {
+      "id": "noam-chomsky-mixed-with",
+      "title": "Noam Chomsky mixed with…",
+      "author": "Vladimir Dietrich",
+      "date": "2020-12-12",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "noam-chomsky-mixed-with-image-hero.png",
+        "githubPath": "images/noam-chomsky-mixed-with-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/noam-chomsky-mixed-with-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:01:29.074Z"
+    },
+    {
+      "id": "fabrica-de-coringas",
+      "title": "Wildcard factory?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-10-31",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "fabrica-de-coringas-image-0.png",
+        "githubPath": "images/fabrica-de-coringas-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:01:47.130Z"
+    },
+    {
+      "id": "sai-o-emprego-fica-a-producao",
+      "title": "Job gone, production remains",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-07",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "sai-emprego-fica-producao-image-0.jpg",
+        "githubPath": "images/sai-emprego-fica-producao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:02:35.417Z"
     }
   ],
-  "lastUpdated": "2025-06-27T15:18:40.642Z"
+  "lastUpdated": "2025-06-27T16:04:36.848Z"
 }
