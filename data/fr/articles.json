@@ -1,107 +1,50 @@
 {
   "articles": [
     {
-      "id": "oblivion",
-      "title": "Oblivion",
+      "id": "a-menininha-que-nos-leva-para-casa",
+      "title": "La petite fille qui nous ramène à la maison",
       "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 9,
-      "heroImage": {
-        "fileName": "oblivion-image-hero.png",
-        "githubPath": "images/oblivion-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-hero.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T19:22:52.992Z"
-    },
-    {
-      "id": "human-soup",
-      "title": "Soupe humaine",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
+      "date": "2024-04-22",
       "readingTime": 5,
       "heroImage": {
-        "fileName": "human-soup-image-0.png",
-        "githubPath": "images/human-soup-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.png",
-        "altText": "",
-        "caption": ""
+        "fileName": "a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "githubPath": "images/a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "altText": "jargões",
+        "caption": "jargões"
       },
-      "lastUpdated": "2025-06-26T18:58:05.005Z"
+      "lastUpdated": "2025-06-27T14:10:01.432Z"
     },
     {
-      "id": "spam-calls",
-      "title": "Appels indésirables",
+      "id": "onde-estamos",
+      "title": "Où sommes-nous ?",
       "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 4,
-      "heroImage": null,
-      "lastUpdated": "2025-06-26T18:59:43.118Z"
-    },
-    {
-      "id": "repensando-o-sistema-de-metas",
-      "title": "Repenser le système d'objectifs",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 11,
-      "heroImage": null,
-      "lastUpdated": "2025-06-26T19:00:30.184Z"
-    },
-    {
-      "id": "a-curiosidade-humana",
-      "title": "La curiosité humaine",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 11,
+      "date": "2023-09-19",
+      "readingTime": 3,
       "heroImage": {
-        "fileName": "a-curiosidade-humana-image-0.jpg",
-        "githubPath": "images/a-curiosidade-humana-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg",
-        "altText": "",
-        "caption": ""
+        "fileName": "onde-estamos-image-0.jpg",
+        "githubPath": "images/onde-estamos-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg",
+        "altText": "emptiness.",
+        "caption": "emptiness."
       },
-      "lastUpdated": "2025-06-26T19:20:49.110Z"
+      "lastUpdated": "2025-06-27T14:09:13.683Z"
     },
     {
-      "id": "sai-o-emprego-fica-a-producao",
-      "title": "Quitter son emploi, rester à la production",
+      "id": "troncos-no-universo",
+      "title": "Des troncs dans l'univers ?",
       "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
+      "date": "2023-04-11",
       "readingTime": 4,
       "heroImage": {
-        "fileName": "sai-emprego-fica-producao-image-0.jpg",
-        "githubPath": "images/sai-emprego-fica-producao-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg",
+        "fileName": "troncos-no-universo-image-0.png",
+        "githubPath": "images/troncos-no-universo-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/troncos-no-universo-image-0.png",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-26T19:24:33.618Z"
-    },
-    {
-      "id": "maximizar-mindfulness",
-      "title": "Maximiser la pleine conscience ?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 2,
-      "heroImage": {
-        "fileName": "maximizar-mindfulness-image-hero.png",
-        "githubPath": "images/maximizar-mindfulness-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-hero.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T19:25:26.478Z"
-    },
-    {
-      "id": "fabrica-de-coringas",
-      "title": "Usine à jokers ?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 4,
-      "heroImage": null,
-      "lastUpdated": "2025-06-26T19:25:59.524Z"
+      "lastUpdated": "2025-06-27T14:08:33.957Z"
     }
   ],
-  "lastUpdated": "2025-06-26T19:27:38.706Z"
+  "lastUpdated": "2025-06-27T14:11:52.311Z"
 }

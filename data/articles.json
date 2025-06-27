@@ -1,257 +1,128 @@
 {
   "articles": [
     {
-      "id": "oblivion",
-      "title": "Oblivion",
+      "id": "a-menininha-que-nos-leva-para-casa",
+      "title": "A menininha que nos leva para casa",
       "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 9,
-      "heroImage": {
-        "fileName": "oblivion-image-hero.png",
-        "githubPath": "images/oblivion-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-hero.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T19:22:52.992Z"
-    },
-    {
-      "id": "cerebros-livres",
-      "title": "Cérebros livres",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 3,
-      "heroImage": {
-        "fileName": "cerebros-livres-image-0.png",
-        "githubPath": "images/cerebros-livres-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/cerebros-livres-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T19:20:18.803Z"
-    },
-    {
-      "id": "a-thought-about-true-cost-the-movie",
-      "title": "A Thought About “True Cost”, The Movie",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 1,
-      "heroImage": {
-        "fileName": "a-thought-about-true-cost-the-movie-image-hero.png",
-        "githubPath": "images/a-thought-about-true-cost-the-movie-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-thought-about-true-cost-the-movie-image-hero.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T18:59:26.873Z"
-    },
-    {
-      "id": "clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start",
-      "title": "Clean your mind? Unsubscribe emails wouldn’t be a bad start",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 2,
-      "heroImage": {
-        "fileName": "clean-your-mind-image-0.png",
-        "githubPath": "images/clean-your-mind-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T18:57:37.312Z"
-    },
-    {
-      "id": "human-soup",
-      "title": "Human Soup",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
+      "date": "2024-04-22",
       "readingTime": 5,
       "heroImage": {
-        "fileName": "human-soup-image-0.png",
-        "githubPath": "images/human-soup-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.png",
-        "altText": "",
-        "caption": ""
+        "fileName": "a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "githubPath": "images/a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "altText": "jargões",
+        "caption": "jargões"
       },
-      "lastUpdated": "2025-06-26T18:58:05.005Z"
+      "lastUpdated": "2025-06-27T14:10:01.432Z"
     },
     {
-      "id": "spam-calls",
-      "title": "Spam Calls",
+      "id": "onde-estamos",
+      "title": "Onde estamos?",
       "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 4,
-      "heroImage": null,
-      "lastUpdated": "2025-06-26T18:59:43.118Z"
-    },
-    {
-      "id": "repensando-o-sistema-de-metas",
-      "title": "Repensando o sistema de metas",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 11,
-      "heroImage": null,
-      "lastUpdated": "2025-06-26T19:00:30.184Z"
-    },
-    {
-      "id": "a-curiosidade-humana",
-      "title": "A curiosidade humana",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 11,
-      "heroImage": {
-        "fileName": "a-curiosidade-humana-image-0.jpg",
-        "githubPath": "images/a-curiosidade-humana-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T19:20:49.110Z"
-    },
-    {
-      "id": "sai-o-emprego-fica-a-producao",
-      "title": "Sai o emprego, fica a produção",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 4,
-      "heroImage": {
-        "fileName": "sai-emprego-fica-producao-image-0.jpg",
-        "githubPath": "images/sai-emprego-fica-producao-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T19:24:33.618Z"
-    },
-    {
-      "id": "maximizar-mindfulness",
-      "title": "Maximizar mindfulness?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 2,
-      "heroImage": {
-        "fileName": "maximizar-mindfulness-image-hero.png",
-        "githubPath": "images/maximizar-mindfulness-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-hero.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T19:25:26.478Z"
-    },
-    {
-      "id": "o-que-e-belo",
-      "title": "O que é belo",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 3,
-      "heroImage": null,
-      "lastUpdated": "2025-06-26T19:25:52.346Z"
-    },
-    {
-      "id": "fabrica-de-coringas",
-      "title": "Fábrica de coringas?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 4,
-      "heroImage": null,
-      "lastUpdated": "2025-06-26T19:25:59.524Z"
-    },
-    {
-      "id": "noam-chomsky-mixed-with",
-      "title": "Noam Chomsky mixed with…",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 1,
-      "heroImage": null,
-      "lastUpdated": "2025-06-26T19:26:37.963Z"
-    },
-    {
-      "id": "como-agradar-noam-chomsky-yuval-noah-harari",
-      "title": "Como agradar Noam Chomsky & Yuval Noah Harari?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 4,
-      "heroImage": {
-        "fileName": "como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
-        "githubPath": "images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
-        "altText": "Noam Chomsky (left) & Yuval Noah Harari (right)",
-        "caption": "Noam Chomsky (left) & Yuval Noah Harari (right)"
-      },
-      "lastUpdated": "2025-06-26T19:26:49.932Z"
-    },
-    {
-      "id": "instead-of-whatsapp",
-      "title": "Instead of whatsapp?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 2,
-      "heroImage": null,
-      "lastUpdated": "2025-06-26T19:27:00.880Z"
-    },
-    {
-      "id": "neither-tv-nor-youtube",
-      "title": "Neither tv, nor youtube",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 2,
-      "heroImage": {
-        "fileName": "neither-tv-nor-youtube-image-0.jpg",
-        "githubPath": "images/neither-tv-nor-youtube-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neither-tv-nor-youtube-image-0.jpg",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T19:27:09.551Z"
-    },
-    {
-      "id": "modern-punch",
-      "title": "Modern punch.",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 1,
-      "heroImage": {
-        "fileName": "modern-punch-image-0.jpg",
-        "githubPath": "images/modern-punch-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/modern-punch-image-0.jpg",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-06-26T19:27:23.140Z"
-    },
-    {
-      "id": "aco-ou-vento",
-      "title": "Aço ou Vento?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 4,
-      "heroImage": null,
-      "lastUpdated": "2025-06-26T19:27:32.030Z"
-    },
-    {
-      "id": "devemos-ser-preservados-para-observar",
-      "title": "Devemos ser preservados para observar?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
-      "readingTime": 1,
-      "heroImage": null,
-      "lastUpdated": "2025-06-26T19:27:33.553Z"
-    },
-    {
-      "id": "lixeiros-nao-utilizam-cinto-de-seguranca-utilizam",
-      "title": "Lixeiros não utilizam cinto de segurança, utilizam?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-26",
+      "date": "2023-09-19",
       "readingTime": 3,
       "heroImage": {
-        "fileName": "lixeiros-nao-utilizam-cinto-de-seguranca-utilizam-image-0.jpg",
-        "githubPath": "images/lixeiros-nao-utilizam-cinto-de-seguranca-utilizam-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/lixeiros-nao-utilizam-cinto-de-seguranca-utilizam-image-0.jpg",
+        "fileName": "onde-estamos-image-0.jpg",
+        "githubPath": "images/onde-estamos-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg",
+        "altText": "emptiness.",
+        "caption": "emptiness."
+      },
+      "lastUpdated": "2025-06-27T14:09:13.683Z"
+    },
+    {
+      "id": "auto-traicao",
+      "title": "Auto traição?",
+      "author": "Vladimir Dietrich",
+      "date": "2023-07-15",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "auto-traicao-image-0.jpg",
+        "githubPath": "images/auto-traicao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/auto-traicao-image-0.jpg",
+        "altText": "a terrifying skull transforming into a beautiful heart.",
+        "caption": "a terrifying skull transforming into a beautiful heart."
+      },
+      "lastUpdated": "2025-06-27T14:11:52.279Z"
+    },
+    {
+      "id": "consciencia-entre-as-pernas",
+      "title": "Consciência entre as pernas",
+      "author": "Vladimir Dietrich",
+      "date": "2023-06-08",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "consciencia-entre-as-pernas-image-0.jpg",
+        "githubPath": "images/consciencia-entre-as-pernas-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/consciencia-entre-as-pernas-image-0.jpg",
+        "altText": "an humanoid robot barefoot inside a jungle",
+        "caption": "an humanoid robot barefoot inside a jungle"
+      },
+      "lastUpdated": "2025-06-27T14:10:50.438Z"
+    },
+    {
+      "id": "ocio-a-esquerda",
+      "title": "Ócio à esquerda",
+      "author": "Vladimir Dietrich",
+      "date": "2023-05-29",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "ocio-a-esquerda-image-0.jpg",
+        "githubPath": "images/ocio-a-esquerda-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/ocio-a-esquerda-image-0.jpg",
+        "altText": "an humanoid robot barefoot inside a jungle",
+        "caption": "an humanoid robot barefoot inside a jungle"
+      },
+      "lastUpdated": "2025-06-27T14:11:35.888Z"
+    },
+    {
+      "id": "caixao-nao-tem-gavetas",
+      "title": "Caixão não tem gavetas",
+      "author": "Vladimir Dietrich",
+      "date": "2023-04-14",
+      "readingTime": 4,
+      "heroImage": null,
+      "lastUpdated": "2025-06-27T14:11:27.158Z"
+    },
+    {
+      "id": "troncos-no-universo",
+      "title": "Troncos no universo?",
+      "author": "Vladimir Dietrich",
+      "date": "2023-04-11",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "troncos-no-universo-image-0.png",
+        "githubPath": "images/troncos-no-universo-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/troncos-no-universo-image-0.png",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-26T19:27:38.648Z"
+      "lastUpdated": "2025-06-27T14:08:33.957Z"
+    },
+    {
+      "id": "podemos-ser-traidos-pelo-nosso-dinheiro",
+      "title": "Podemos ser traídos pelo nosso dinheiro?",
+      "author": "Vladimir Dietrich",
+      "date": "2023-03-11",
+      "readingTime": 5,
+      "heroImage": null,
+      "lastUpdated": "2025-06-27T14:11:19.976Z"
+    },
+    {
+      "id": "esquerda-direita-papais-nenens",
+      "title": "Esquerda, Direita, Papais, Nenéns",
+      "author": "Vladimir Dietrich",
+      "date": "2023-03-07",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "esquerda-direita-papais-nenens-image-hero.png",
+        "githubPath": "images/esquerda-direita-papais-nenens-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/esquerda-direita-papais-nenens-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T14:11:10.410Z"
     }
   ],
-  "lastUpdated": "2025-06-26T19:27:38.656Z"
+  "lastUpdated": "2025-06-27T14:11:52.295Z"
 }
