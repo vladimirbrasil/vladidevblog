@@ -1,6 +1,36 @@
 {
   "articles": [
     {
+      "id": "aposentadoria-da-razao",
+      "title": "Aposentadoria da Razão",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-24",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "aposentadoria-da-razao-image-0.jpg",
+        "githubPath": "images/aposentadoria-da-razao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:24:10.552Z"
+    },
+    {
+      "id": "um-blog-facil",
+      "title": "Un Blog Facile",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-15",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "um-blog-facil-image-0.png",
+        "githubPath": "images/um-blog-facil-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:23:47.014Z"
+    },
+    {
       "id": "te-amo",
       "title": "❤️ Je t'aime",
       "author": "Vladimir Dietrich",
@@ -151,6 +181,21 @@
       "lastUpdated": "2025-06-27T16:01:47.130Z"
     },
     {
+      "id": "maximizar-mindfulness",
+      "title": "Maximiser la pleine conscience ?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-09",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "maximizar-mindfulness-image-0.png",
+        "githubPath": "images/maximizar-mindfulness-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:23:14.947Z"
+    },
+    {
       "id": "sai-o-emprego-fica-a-producao",
       "title": "Quitter son emploi, rester productif",
       "author": "Vladimir Dietrich",
@@ -241,5 +286,5 @@
       "lastUpdated": "2025-06-27T16:12:54.642Z"
     }
   ],
-  "lastUpdated": "2025-06-27T16:17:56.232Z"
+  "lastUpdated": "2025-06-27T16:24:28.974Z"
 }

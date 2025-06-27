@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "um-blog-facil",
+      "title": "Um Blog Fácil",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-15",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "um-blog-facil-image-0.png",
+        "githubPath": "images/um-blog-facil-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:23:47.014Z"
+    },
+    {
       "id": "te-amo",
       "title": "❤️ Te Amo",
       "author": "Vladimir Dietrich",
@@ -136,6 +151,21 @@
       "lastUpdated": "2025-06-27T16:01:47.130Z"
     },
     {
+      "id": "maximizar-mindfulness",
+      "title": "Maximizar mindfulness?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-09",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "maximizar-mindfulness-image-0.png",
+        "githubPath": "images/maximizar-mindfulness-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:23:14.947Z"
+    },
+    {
       "id": "sai-o-emprego-fica-a-producao",
       "title": "Se va el empleo, queda la producción",
       "author": "Vladimir Dietrich",
@@ -211,5 +241,5 @@
       "lastUpdated": "2025-06-27T16:12:54.642Z"
     }
   ],
-  "lastUpdated": "2025-06-27T16:17:56.220Z"
+  "lastUpdated": "2025-06-27T16:24:28.963Z"
 }

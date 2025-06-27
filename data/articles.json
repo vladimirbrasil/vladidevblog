@@ -1,6 +1,51 @@
 {
   "articles": [
     {
+      "id": "aposentadoria-da-razao",
+      "title": "Aposentadoria da Razão",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-24",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "aposentadoria-da-razao-image-0.jpg",
+        "githubPath": "images/aposentadoria-da-razao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:24:10.552Z"
+    },
+    {
+      "id": "um-blog-facil",
+      "title": "Um Blog Fácil",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-15",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "um-blog-facil-image-0.png",
+        "githubPath": "images/um-blog-facil-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:23:47.014Z"
+    },
+    {
+      "id": "promocao-especial-para-ti",
+      "title": "Promoção especial para ti",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-15",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "promocao-especial-para-ti-image-0.jpg",
+        "githubPath": "images/promocao-especial-para-ti-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/promocao-especial-para-ti-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:24:28.915Z"
+    },
+    {
       "id": "te-amo",
       "title": "❤️ Te Amo",
       "author": "Vladimir Dietrich",
@@ -442,6 +487,21 @@
       "lastUpdated": "2025-06-27T16:02:28.627Z"
     },
     {
+      "id": "maximizar-mindfulness",
+      "title": "Maximizar mindfulness?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-09",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "maximizar-mindfulness-image-0.png",
+        "githubPath": "images/maximizar-mindfulness-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:23:14.947Z"
+    },
+    {
       "id": "sai-o-emprego-fica-a-producao",
       "title": "Sai o emprego, fica a produção",
       "author": "Vladimir Dietrich",
@@ -592,5 +652,5 @@
       "lastUpdated": "2025-06-27T15:15:58.395Z"
     }
   ],
-  "lastUpdated": "2025-06-27T16:17:56.191Z"
+  "lastUpdated": "2025-06-27T16:24:28.931Z"
 }
