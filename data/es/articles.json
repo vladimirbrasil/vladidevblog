@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "te-amo",
+      "title": "❤️ Te Amo",
+      "author": "Vladimir Dietrich",
+      "date": "2024-09-11",
+      "readingTime": 9,
+      "heroImage": {
+        "fileName": "te-amo-image-0.jpg",
+        "githubPath": "images/te-amo-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg",
+        "altText": "um robô amamenta um bebê",
+        "caption": "um robô amamenta um bebê"
+      },
+      "lastUpdated": "2025-06-27T15:16:33.135Z"
+    },
+    {
       "id": "a-menininha-que-nos-leva-para-casa",
       "title": "La niña que nos lleva a casa",
       "author": "Vladimir Dietrich",
@@ -89,7 +104,22 @@
         "caption": ""
       },
       "lastUpdated": "2025-06-27T14:35:52.012Z"
+    },
+    {
+      "id": "devemos-ser-preservados-para-observar",
+      "title": "¿Debemos ser preservados para observar?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-05-07",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "devemos-ser-preservados-para-observar-image-0.png",
+        "githubPath": "images/devemos-ser-preservados-para-observar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T15:16:00.310Z"
     }
   ],
-  "lastUpdated": "2025-06-27T14:38:41.079Z"
+  "lastUpdated": "2025-06-27T15:18:40.646Z"
 }
