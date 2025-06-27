@@ -457,6 +457,36 @@
       "lastUpdated": "2025-06-27T16:02:35.417Z"
     },
     {
+      "id": "oblivion",
+      "title": "Oblivion",
+      "author": "Vladimir Dietrich",
+      "date": "2020-04-28",
+      "readingTime": 8,
+      "heroImage": {
+        "fileName": "oblivion-image-0.jpg",
+        "githubPath": "images/oblivion-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:16:42.750Z"
+    },
+    {
+      "id": "cerebros-livres",
+      "title": "Cérebros livres",
+      "author": "Vladimir Dietrich",
+      "date": "2019-12-21",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "cerebros-livres-image-0.png",
+        "githubPath": "images/cerebros-livres-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/cerebros-livres-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:16:05.055Z"
+    },
+    {
       "id": "a-curiosidade-humana",
       "title": "A curiosidade humana",
       "author": "Vladimir Dietrich",
@@ -517,6 +547,36 @@
       "lastUpdated": "2025-06-27T16:12:54.642Z"
     },
     {
+      "id": "a-thought-about-true-cost-the-movie",
+      "title": "A Thought About “True Cost”, The Movie",
+      "author": "Vladimir Dietrich",
+      "date": "2018-07-31",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "a-thought-about-true-cost-the-movie-image-0.png",
+        "githubPath": "images/a-thought-about-true-cost-the-movie-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-thought-about-true-cost-the-movie-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:15:33.761Z"
+    },
+    {
+      "id": "clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start",
+      "title": "Clean your mind? Unsubscribe emails wouldn’t be a bad start",
+      "author": "Vladimir Dietrich",
+      "date": "2018-07-27",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "clean-your-mind-image-0.jpg",
+        "githubPath": "images/clean-your-mind-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:15:00.818Z"
+    },
+    {
       "id": "lixeiros-nao-utilizam-cinto-de-seguranca-utilizam",
       "title": "Lixeiros não utilizam cinto de segurança, utilizam?",
       "author": "Vladimir Dietrich",
@@ -532,5 +592,5 @@
       "lastUpdated": "2025-06-27T15:15:58.395Z"
     }
   ],
-  "lastUpdated": "2025-06-27T16:13:33.600Z"
+  "lastUpdated": "2025-06-27T16:17:56.191Z"
 }

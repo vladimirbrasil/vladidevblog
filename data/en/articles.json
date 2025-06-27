@@ -235,6 +235,21 @@
       "lastUpdated": "2025-06-27T16:02:35.417Z"
     },
     {
+      "id": "oblivion",
+      "title": "Oblivion",
+      "author": "Vladimir Dietrich",
+      "date": "2020-04-28",
+      "readingTime": 8,
+      "heroImage": {
+        "fileName": "oblivion-image-0.jpg",
+        "githubPath": "images/oblivion-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:16:42.750Z"
+    },
+    {
       "id": "repensando-o-sistema-de-metas",
       "title": "Rethinking the goal system",
       "author": "Vladimir Dietrich",
@@ -278,7 +293,37 @@
         "caption": "Peter Dazeley / Getty Images"
       },
       "lastUpdated": "2025-06-27T16:12:54.642Z"
+    },
+    {
+      "id": "a-thought-about-true-cost-the-movie",
+      "title": "A Thought About “True Cost”, The Movie",
+      "author": "Vladimir Dietrich",
+      "date": "2018-07-31",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "a-thought-about-true-cost-the-movie-image-0.png",
+        "githubPath": "images/a-thought-about-true-cost-the-movie-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-thought-about-true-cost-the-movie-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:15:33.761Z"
+    },
+    {
+      "id": "clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start",
+      "title": "Limpar sua mente? Cancelar a inscrição de e-mails não seria um mau começo",
+      "author": "Vladimir Dietrich",
+      "date": "2018-07-27",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "clean-your-mind-image-0.jpg",
+        "githubPath": "images/clean-your-mind-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:15:00.818Z"
     }
   ],
-  "lastUpdated": "2025-06-27T16:13:33.611Z"
+  "lastUpdated": "2025-06-27T16:17:56.207Z"
 }

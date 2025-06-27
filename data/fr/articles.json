@@ -166,6 +166,21 @@
       "lastUpdated": "2025-06-27T16:02:35.417Z"
     },
     {
+      "id": "oblivion",
+      "title": "Oblivion",
+      "author": "Vladimir Dietrich",
+      "date": "2020-04-28",
+      "readingTime": 8,
+      "heroImage": {
+        "fileName": "oblivion-image-0.jpg",
+        "githubPath": "images/oblivion-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-06-27T16:16:42.750Z"
+    },
+    {
       "id": "a-curiosidade-humana",
       "title": "La curiosité humaine",
       "author": "Vladimir Dietrich",
@@ -226,5 +241,5 @@
       "lastUpdated": "2025-06-27T16:12:54.642Z"
     }
   ],
-  "lastUpdated": "2025-06-27T16:13:33.627Z"
+  "lastUpdated": "2025-06-27T16:17:56.232Z"
 }
