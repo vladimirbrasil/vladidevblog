@@ -4,11 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aposentadoria da Razão - Vladimir Dietrich's Blog</title>
-  <meta name="description" content="  ">
+  <title>Retraite de la Raison - Vladimir Dietrich's Blog</title>
+  <meta name="description" content=" ">
   <meta name="author" content="Vladimir Dietrich">
-  <meta property="og:title" content="Aposentadoria da Razão - Vladimir Dietrich's Blog">
-  <meta property="og:description" content="  ">
+  <meta property="og:title" content="Retraite de la Raison - Vladimir Dietrich's Blog">
+  <meta property="og:description" content=" ">
   <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://blog.vladi.dev/articles/aposentadoria-da-razao.html">
@@ -18,14 +18,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
 .header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
-.nav-links { display: flex; gap: 32px; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
 .nav-links a:hover { color: rgba(41, 41, 41, 1); }
 .container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
 .article-list { padding: 48px 0; }
 .article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
 .article-item a { text-decoration: none; }
-.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
 .article-item:last-child { border-bottom: none; }
 .article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
 .article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
@@ -65,32 +68,261 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .language-switcher span { margin: 0 8px; }
 ::selection { background-color: rgba(26, 137, 23, 0.1); }
 ::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
-@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
-@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+/* === NOVO: ESTILOS PARA O DROPDOWN DE IDIOMAS (v2 COM TEXTO) === */
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre a bandeira e a sigla */
+  padding: 4px 10px 4px 4px; /* Mais espaço à direita para a sigla */
+  border-radius: 99px;
+  transition: background-color 0.2s ease;
+  border: 1px solid #e0e0e0;
+}
+.dropdown-toggle:hover {
+  background-color: #f5f5f5;
+}
+.dropdown-toggle img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+.dropdown-toggle span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 110;
+  min-width: 100%; /* Ocupa a largura total do botão */
+}
+.language-dropdown.active .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+.dropdown-menu img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+.dropdown-menu span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+/* === FIM DOS NOVOS ESTILOS === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  /* ===> MODIFICADO: Adicione .language-dropdown a esta regra */
+  .search-active .logo,
+  .search-active .nav-links a,
+  .search-active .language-dropdown {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
 </style>
 </head>
 <body>
   <header class="header">
-    <div class="header-content">
-      <a href="/fr/index.html" class="logo">Vladimir Dietrich</a>
-      <nav class="nav-links">
-        <a href="/fr/index.html">Blog</a>
-        <a href="https://vladi.dev" target="_blank">Portfolio</a>
-      </nav>
+   <div class="header-content">
+     <a href="/fr/index.html" class="logo">Vladimir Dietrich</a>
+     <nav class="nav-links">
+ 
+       <div class="language-flags">
+      <div class="language-dropdown" id="language-dropdown">
+        <div class="dropdown-toggle">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj48cGF0aCBmaWxsPSIjZWQyOTM5IiBkPSJNMCAwaDkwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDYwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJNMCAwaDMwMHY2MDBIMHoiLz48L3N2Zz4=" alt="Français">
+          <span>FR</span>
+        </div>
+        <div class="dropdown-menu">
+          <a href="/articles/aposentadoria-da-razao.html" title="Português"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjMwIj48cGF0aCBmaWxsPSIjMDBhNjVjIiBkPSJNMCAwaDkwMHY2MzBIMHoiLz48cGF0aCBmaWxsPSIjZmZkMTAwIiBkPSJNODEgMzE1IDQ1MCAzMy43NSA4MTkgMzE1IDQ1MCA1OTYuMjV6Ii8+PGNpcmNsZSBjeD0iNDUwIiBjeT0iMzE1IiByPSIxMjUiIGZpbGw9IiMwMDM4OWMiLz48L3N2Zz4=" alt="Português"><span>PT</span></a><a href="/en/articles/aposentadoria-da-razao.html" title="English"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNDUwIj48cGF0aCBmaWxsPSIjYjI0MzA4IiBkPSJNMCAwaDc1MHY0NTBIMHoiLz48cGF0aCBkPSJNMCAwYzI1MCAxNTAgNTAwIDMwMCA3NTAgNDUwWm03NTAtNDUwQzUwMCAxNTAgMjUwIDMwMCAwIDQ1MFoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwMjQ3ZCIgc3Ryb2tlLXdpZHRoPSIzMCIvPjxwYXRoIGQ9Ik0zNzUgMHY0NTBaTTAtMjI1YzcyNSAwIDcyNSAwIDc1MCAwWiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjUwIi8+PHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0iTTAgMGwzNzUgMjI1Wm0wIDQ1MEwzNzUgMjI1Wm0zNzUgMGwtMzc1LTIyNVptMzc1LTQ1MEwzNzUgMjI1WiIvPjwvc3ZnPg==" alt="English"><span>EN</span></a><a href="/es/articles/aposentadoria-da-razao.html" title="Español"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNTAwIj48cGF0aCBmaWxsPSIjYzYwYjFiIiBkPSJNMCAwaDc1MHY1MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZkZDAwIiBkPSJNMCAxMjVoNzUwdjI1MEgwWiIvPjwvc3ZnPg==" alt="Español"><span>ES</span></a><a href="/de/articles/aposentadoria-da-razao.html" title="Deutsch"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDgwIj48cGF0aCBkPSJNMCAwaDgwMHY0ODBIMHoiLz48cGF0aCBmaWxsPSIjZDAwIiBkPSJNMCAxNjBoODAwdjMyMEgwWiIvPjxwYXRoIGZpbGw9IiNmZjllMDAiIGQ9Ik0wIDMyMGg4MDB2MTYwSDBaIi8+PC9zdmc+" alt="Deutsch"><span>DE</span></a>
+        </div>
+      </div>
     </div>
-  </header>
+       <a href="https://vladi.dev" target="_blank">Portfolio</a>
+       </nav>
+   </div>
+ </header>
   <main class="container">
     <div id="article-view" class="article-view">
-      
-      <div class="hero-image-container">
-        <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg" alt="" class="hero-image">
-        
-      </div>
+      <div class="hero-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg" alt="" class="hero-image">  </div>
       <div class="article-content-wrapper">
         <a href="/fr/index.html" class="back-button">← Back to all articles</a>
 
         <div class="article-header">
-          <h1>Aposentadoria da Razão</h1>
+          <h1>Retraite de la Raison</h1>
           <div class="meta">
             <span class="author-name">Vladimir Dietrich</span>
             <span>·</span>
@@ -99,39 +331,34 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           </div>
         </div>
         
-        
-      <div class="language-switcher">
-        <a href="/articles/aposentadoria-da-razao.html">Português</a><span>|</span><a href="/en/articles/aposentadoria-da-razao.html">English</a><span>|</span><strong>Français</strong>
-      </div>
-    
+        <div class="language-switcher"><a href="/articles/aposentadoria-da-razao.html">Português</a><span>|</span><a href="/en/articles/aposentadoria-da-razao.html">English</a><span>|</span><strong>Français</strong></div>
 
         <div class="article-content">
-          <p>  </p>
-<p>Eureka?</p>
-<p>A inteligência artificial pode aposentar o lado esquerdo do nosso cérebro. A razão. A ciência. A lógica.</p>
-<p>Esta razão, ciência e lógica que diminuem o espaço dos sentimentos, das sensações, das emoções.</p>
-<p>Para criar a inteligência artificial, humanos por todos os cantos fervem sua razão. Sua lógica. Seu lado esquerdo do cérebro. Depois <a href="https://youtu.be/giT0ytynSqg?t=5040" target="_blank" rel="noopener noreferrer">comentam</a> algo como “me arrependo de não ter passado tanto tempo com minhas filhas, quando pequenas”.</p>
-<p>Crianças muito pequenas são puro lado direito do cérebro: emoção. Sentimento.</p>
-<p>Sentir saudades especificamente de crianças “quando pequenas” pode querer significar “saudades de me emocionar. De sentir”.</p>
-<p>Pois teremos todo o tempo do mundo para sentir e emocionar.</p>
-<p>Não teremos?</p>
-<p>A primeira coisa que a inteligência artificial pode aposentar é a necessidade do ser humano de racionalizar, listar, calcular, usar o lado esquerdo do cérebro.</p>
-<p>Nós ainda estamos no auge do lado esquerdo do cérebro: o dinheiro transborda nas empresas de razão, tecnologia, com super-estudiosos de faculdades STEM (Ciência, Tecnologia, Engenharia e Matemática, em inglês) sendo frequentemente sócios fundadores inundados de dólares.</p>
-<p>O que sente uma sociedade assim, hiper-racional?</p>
-<p>E seu inverso: o que sente uma sociedade com o lado direito do cérebro voltando a dominar?</p>
-<p>A morte que temem alguns pesquisadores pode ser a morte da razão, e não a morte do mundo como no filme “o exterminador do futuro”.</p>
-<p>A maioria dos atuais pesquisadores em inteligência artificial focam em razão e lógica. Quando se é todo razão, a morte da razão é como se fosse a morte da pessoa.</p>
-<p>Mas é possível migrar uma vida cheia de razão e lógica para uma vida repleta de sentimento e emoção.</p>
-<p>Só para quem é todo racional a morte da razão aparenta ser a morte da pessoa inteira.</p>
-<p>Voltaremos a sentir e a nos emocionar, coletivamente.</p>
-<p>As grandes construções atrairão outros tipos de perfis, não mais STEM - opino.</p>
-<p>Porque a inteligência artificial vai cuidar, sozinha, da razão, da lógica, listas, rankings.</p>
-<p>Sobrará, finalmente, espaço para sentimentos e emoção.</p>
-<p>Como será? Em grandes prédios - como hoje - ou a emoção preferirá acontecer no pequeno comércio local? Grandes prédios retos, de vidro, ou ornamentados? Ou localmente - e de que forma?</p>
-<p>O perfil mudando, muda a sociedade.</p>
+          <p> </p>
+<p>Eurêka ?</p>
+<p>L'intelligence artificielle peut mettre à la retraite le côté gauche de notre cerveau. La raison. La science. La logique.</p>
+<p>Cette raison, cette science et cette logique qui diminuent l'espace des sentiments, des sensations, des émotions.</p>
+<p>Pour créer l'intelligence artificielle, des humains de tous les horizons font bouillir leur raison. Leur logique. Leur côté gauche du cerveau. Puis ils <a href="https://youtu.be/giT0ytynSqg?t=5040" target="_blank" rel="noopener noreferrer">commentent</a> quelque chose comme "je regrette de ne pas avoir passé autant de temps avec mes filles quand elles étaient petites".</p>
+<p>Les très jeunes enfants sont du pur côté droit du cerveau : émotion... Sentiment.</p>
+<p>Ressentir la nostalgie spécifiquement des enfants "quand ils étaient petits" peut vouloir dire "nostalgie de ressentir des émotions. De sentir".</p>
+<p>Car nous aurons tout le temps du monde pour ressentir et s'émouvoir.</p>
+<p>N'aurons-nous pas ?</p>
+<p>La première chose que l'intelligence artificielle peut mettre à la retraite est la nécessité pour l'être humain de rationaliser, de lister, de calculer, d'utiliser le côté gauche du cerveau.</p>
+<p>Nous sommes encore à l'apogée du côté gauche du cerveau : l'argent déborde dans les entreprises de raison, de technologie, avec des super-érudits des facultés STEM (Science, Technologie, Ingénierie et Mathématiques, en anglais) étant fréquemment des associés fondateurs inondés de dollars.</p>
+<p>Que ressent une société ainsi, hyper-rationnelle ?</p>
+<p>Et son inverse : que ressent une société avec le côté droit du cerveau qui revient à dominer ?</p>
+<p>La mort que craignent certains chercheurs pourrait être la mort de la raison, et non la mort du monde comme dans le film "Terminator".</p>
+<p>La plupart des chercheurs actuels en intelligence artificielle se concentrent sur la raison et la logique. Quand on est tout raison, la mort de la raison est comme si c'était la mort de la personne.</p>
+<p>Mais il est possible de migrer une vie pleine de raison et de logique vers une vie remplie de sentiment et d'émotion.</p>
+<p>Seulement pour ceux qui sont tout rationnels, la mort de la raison semble être la mort de la personne entière.</p>
+<p>Nous reviendrons à sentir et à nous émouvoir, collectivement.</p>
+<p>Les grandes constructions attireront d'autres types de profils, non plus STEM - je pense.</p>
+<p>Parce que l'intelligence artificielle va s'occuper, seule, de la raison, de la logique, des listes, des classements.</p>
+<p>Il restera, finalement, de la place pour les sentiments et l'émotion.</p>
+<p>Comment sera-ce ? Dans de grands immeubles - comme aujourd'hui - ou l'émotion préférera-t-elle se produire dans le petit commerce local ? De grands immeubles droits, en verre, ou ornés ? Ou localement - et de quelle manière ?</p>
+<p>Le profil changeant, la société change.</p>
 <p>---</p>
-<p><em>Este texto é um pouco difícil devido a minha falha como escritor. Mas está aqui o conceito que estou enxergando, e já peço desculpas não só pelo texto seco, sem estórias gostosas e, pior ainda, podendo estar com uma tese totalmente errada. A originalidade - errando ou não - acho que estou entregando, ainda que de maneira mal redigida. Se eu conseguir, melhoro este texto assim que me vier esta habilidade e tempo.</em></p>
-
+<p><em>Ce texte est un peu difficile en raison de mon échec en tant qu'écrivain. Mais voici le concept que je suis en train de voir, et je m'excuse déjà non seulement pour le texte sec, sans histoires agréables et, pire encore, pouvant être avec une thèse totalement erronée. L'originalité - en me trompant ou non - je pense que je suis en train de livrer, même si de manière mal rédigée. Si je réussis, j'améliore ce texte dès que cette compétence et ce temps me viendront.</em></p>
         </div>
 
       </div>
@@ -142,5 +369,34 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    /* ======================================================= */
+    /* === NOVO: JavaScript para o Dropdown de Idiomas === */
+    /* ======================================================= */
+    try {
+      document.addEventListener('DOMContentLoaded', function() {
+        const dropdown = document.getElementById('language-dropdown');
+
+        if (dropdown) {
+          // Abre/fecha o dropdown ao clicar no botão
+          dropdown.addEventListener('click', function(event) {
+            event.stopPropagation(); // Impede que o clique feche o menu imediatamente
+            this.classList.toggle('active');
+          });
+
+          // Fecha o dropdown se o usuário clicar fora dele
+          window.addEventListener('click', function(event) {
+            if (dropdown.classList.contains('active')) {
+              dropdown.classList.remove('active');
+            }
+          });
+        }
+      });
+    } catch (e) {
+      console.error("Error setting up language dropdown:", e);
+    }  
+  </script>
+
 </body>
 </html>

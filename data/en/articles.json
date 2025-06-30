@@ -2,7 +2,7 @@
   "articles": [
     {
       "id": "aposentadoria-da-razao",
-      "title": "Aposentadoria da Razão",
+      "title": "Reason Retirement",
       "author": "Vladimir Dietrich",
       "date": "2025-06-24",
       "readingTime": 2,
@@ -13,7 +13,7 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-27T16:24:10.552Z"
+      "lastUpdated": "2025-06-30T22:12:35.446Z"
     },
     {
       "id": "um-blog-facil",
@@ -370,5 +370,5 @@
       "lastUpdated": "2025-06-27T16:15:00.818Z"
     }
   ],
-  "lastUpdated": "2025-06-30T22:07:44.541Z"
+  "lastUpdated": "2025-06-30T22:13:30.590Z"
 }
