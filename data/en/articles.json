@@ -17,7 +17,7 @@
     },
     {
       "id": "um-blog-facil",
-      "title": "Um Blog Fácil",
+      "title": "An Easy Blog",
       "author": "Vladimir Dietrich",
       "date": "2025-06-15",
       "readingTime": 2,
@@ -28,7 +28,7 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-27T16:23:47.014Z"
+      "lastUpdated": "2025-06-30T22:16:43.534Z"
     },
     {
       "id": "te-amo",
@@ -370,5 +370,5 @@
       "lastUpdated": "2025-06-27T16:15:00.818Z"
     }
   ],
-  "lastUpdated": "2025-06-30T22:13:30.590Z"
+  "lastUpdated": "2025-06-30T22:17:37.949Z"
 }
