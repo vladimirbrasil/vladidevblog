@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/fabrica-de-coringas.html">Português</a><span>|</span><a href="/en/articles/fabrica-de-coringas.html">English</a><span>|</span><a href="/fr/articles/fabrica-de-coringas.html">Français</a><span>|</span><a href="/de/articles/fabrica-de-coringas.html">Deutsch</a><span>|</span><strong>Español</strong></div>
 
         <div class="article-content">
+          
           
           <p> </p>
 <p></p>
@@ -364,6 +378,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Además, cariño y belleza probablemente serían un círculo virtuoso, uno alimentando al otro, de manera cíclica.</p>
 <p>Para dejar de teorías muy abstractas, es posible dejar una cuestión puramente práctica:</p>
 <p>¿Cómo sería la ciudad opuesta a &quot;Gotham City&quot; que alimenta jokers? En detalles.</p>
+        
         
         </div>
 

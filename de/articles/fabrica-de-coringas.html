@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/fabrica-de-coringas.html">Português</a><span>|</span><a href="/en/articles/fabrica-de-coringas.html">English</a><span>|</span><a href="/fr/articles/fabrica-de-coringas.html">Français</a><span>|</span><strong>Deutsch</strong><span>|</span><a href="/es/articles/fabrica-de-coringas.html">Español</a></div>
 
         <div class="article-content">
+          
           
           <p> </p>
 <p></p>
@@ -364,6 +378,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Übrigens wären Zuneigung und Schönheit wahrscheinlich ein Tugendkreis, der sich gegenseitig zyklisch nährt.</p>
 <p>Um von allzu abstrakten Theorien abzukommen, ist es möglich, eine rein praktische Frage zu stellen:</p>
 <p>Wie würde die Stadt aussehen, die das Gegenteil von &quot;Gotham City&quot; ist, das Joker hervorbringt? Im Detail.</p>
+        
         
         </div>
 

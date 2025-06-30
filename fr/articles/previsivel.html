@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p> </p>
 <p></p>
 <p>Je vais énumérer ici quelques points qui me semblent importants pour l'avenir. Ils peuvent aider à prévoir, même si cela n'a pas beaucoup d'importance.</p>
@@ -344,6 +358,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>• la laideur. Est-il honnête qu'un super-laid soit beau dans le monde virtuel ? Évidemment oui. Je réponds tout de suite. Si le monde est virtuel, il n'y a même pas de laideur (&quot;réelle&quot; ?). De plus, la beauté semble avoir des composantes beaucoup plus fortes que les sensuelles d'autrefois, de l'époque du monopole du gène (fesses, thorax, etcteras), dans les relations amoureuses de fait. L'argent (travail) et la célébrité semblent être tout sauf accessoires, bien au contraire.</p>
 <p>• les tendances crient. Les NFT existent déjà. Le tang ping (non-travail) commence déjà à apparaître. Les mondes virtuels augmentent, au lieu de diminuer. La vie réelle diminue, au lieu d'augmenter (comment ça ? Temps arrêté. En ligne. Par là).</p>
 <p>• la belle question de ce qu'est la vie. Toujours une belle poésie. Poésie parce que je ne vois pas de &quot;référence&quot;. Le correct. C'est de la fumée !</p>
+        
         
         </div>
 

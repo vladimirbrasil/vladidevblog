@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/a-curiosidade-humana.html">Português</a><span>|</span><strong>Français</strong><span>|</span><a href="/de/articles/a-curiosidade-humana.html">Deutsch</a><span>|</span><a href="/es/articles/a-curiosidade-humana.html">Español</a></div>
 
         <div class="article-content">
+          
           
           <p> </p>
 <p></p>
@@ -407,6 +421,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Quel beau "chip" serait (est ?) celui-ci.</p>
 <p>Puissant aussi.</p>
 <p>Encore une question un peu intéressante.</p>
+        
         
         </div>
 

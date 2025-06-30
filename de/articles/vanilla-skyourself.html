@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p></p>
 <p></p>
 <p>Schau dir das Durcheinander an! Vanilla Sky mit Freud, mit fortgeschrittener Genetik und mit virtueller Welt. Ich werde spielen, wie zwei neugeborene Welpen spielen. Schau dir den Schlamm an, der fliegt!</p>
@@ -360,6 +374,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Der Schlamm fliegt. Ich spiele köstlich.</p>
 <p>Eines Tages werde ich lernen, reifer mit den Zutaten umzugehen, die so viel Freude bereiten, wenn ich jetzt am Anfang mit ihnen spiele.</p>
 <p>Die vorläufige Schlussfolgerung ist nicht "sich im virtuellen Raum des eigenen psychischen Apparats für immer schön zu machen". Es gibt noch keine Schlussfolgerung. Nur spielen!</p>
+        
         
         </div>
 

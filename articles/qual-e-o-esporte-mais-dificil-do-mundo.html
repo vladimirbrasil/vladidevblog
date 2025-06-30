@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
 
         <div class="article-content">
+          
           
           <p></p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/qual-e-o-esporte-mais-dificil-do-mundo-image-1.jpg" alt="" /></figure>
@@ -536,6 +550,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Pontuação Total — 44</p>
 <p><a href="https://bleacherreport.com/articles/832927-what-is-the-worlds-toughest-sport" target="_blank" rel="noopener noreferrer">Artigo original</a> de <a href="https://ie.linkedin.com/in/chris-siddell-105a2083" target="_blank" rel="noopener noreferrer">Chris Siddell</a>.<em>Traduzido pelo </em><a href="https://translate.google.com/" target="_blank" rel="noopener noreferrer"><em>tradutor do google</em></a><em>.Adicionei algumas imagens para ilustrar cada esporte.</em></p>
 
+        
         
         </div>
 

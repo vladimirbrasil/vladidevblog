@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p> </p>
 <p></p>
 <p>Creo que puedo deshacer un mito. El mito del &quot;ultra, ultra billonario&quot;.</p>
@@ -360,6 +374,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <li>¿Qué queremos con esto que inventamos — el famoso “dinero”? Si podemos ser como la naturaleza, o por lo menos empresas-robot pueden trabajar sin jamás saber lo que es un dólar o un bitcoin, el foco del dinero alcanza nuestras propias cabezas, pensamientos, deseos, vanidades.</li>
 <li>Si usted puede imaginar empresas-robot lidiando con la escasez de manera automatizada y bien comportada, es aún más fácil dejar el foco del (mucho) dinero iluminar apenas a nosotros mismos. Lo que queremos no es una cuestión pequeña.</li>
 <p>¡Óptima lectura! :)</p>
+        
         
         </div>
 

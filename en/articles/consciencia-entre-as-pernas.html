@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p></p>
 <p></p>
 <p>We are training robots to be useful to us.</p>
@@ -359,6 +373,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Thus, perhaps we have to put &quot;a lust between the legs&quot; of artificial intelligences, under penalty of them becoming zen, monks, stable, stopped, with all the knowledge in the world.</p>
 <p>Something like that. I could elaborate much more!</p>
 <p>☀️☀️☀️☀️☀️</p>
+        
         
         </div>
 

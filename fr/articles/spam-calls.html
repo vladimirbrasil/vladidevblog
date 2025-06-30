@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/spam-calls.html">Português</a><span>|</span><a href="/en/articles/spam-calls.html">English</a><span>|</span><strong>Français</strong></div>
 
         <div class="article-content">
+          
           
           <p> </p>
 <p></p>
@@ -375,6 +389,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Malheureusement, nous qui savons comment gérer le spam, nous ne sommes que quelques-uns.</p>
 <p>Le monde ne changera donc pas, seulement ma vie et, je l'espère, la vôtre.</p>
 <p>Toujours : merci d'avoir écouté.</p>
+        
         
         </div>
 

@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/neuragame.html">Português</a><span>|</span><a href="/en/articles/neuragame.html">English</a><span>|</span><a href="/fr/articles/neuragame.html">Français</a><span>|</span><strong>Deutsch</strong><span>|</span><a href="/es/articles/neuragame.html">Español</a></div>
 
         <div class="article-content">
+          
           
           <p> </p>
 <p></p>
@@ -374,6 +388,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Wie wird es morgen sein?</p>
 <p>Wenn wir das nächste Mal jemanden beobachten, der mit einem Mobiltelefon interagiert, können wir anfangen zu denken, dass die Verwendung von Fingern und Wörtern auf einem kleinen Bildschirm sich weiterentwickeln kann, es hört nicht da auf.</p>
 <p>In Star Trek gab es die Möglichkeit, sofort von einem Ort zum anderen zu gelangen. Nun, wir haben den Star Trek-Tunnel noch nicht erschaffen können. Aber wir können in einem Neuragame sofort von Paris nach Tokio reisen. Wenn man darüber nachdenkt, was ist der Unterschied? Übrigens: Wir können sogar zum Mars reisen. Sofort. Oder wo immer wir hinkommen wollen. Wo wäre das?</p>
+        
         
         </div>
 

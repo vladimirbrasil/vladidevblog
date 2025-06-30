@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p> </p>
 <p></p>
 <p>The following question is best contextualized with this <a href="https://youtu.be/cRvzrg02gmc" target="_blank" rel="noopener noreferrer">presentation</a> .</p>
@@ -341,6 +355,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Now, shorter and clearer: should we evolve anything?; or anything except to change our consciousness, our genetic code, our way of organizing 50 trillion cells and billions of individuals?</p>
 <p>Even more summarized: should we be preserved to observe all future evolution? Even if we become relatively obsolete?</p>
 <p>Thank you very much for your patience in listening to this question.</p>
+        
         
         </div>
 

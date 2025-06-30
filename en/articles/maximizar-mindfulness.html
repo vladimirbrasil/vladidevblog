@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p> </p>
 <p></p>
 <p>By simply asking it to "maximize the number of points obtained," an artificial intelligence broke the scoreboard of "River Raid" - an old video game. It had to play "zillions" of times, something that artificial intelligence does in a few minutes. The method matters less than the end result. It became a master at the game, forever.</p>
@@ -349,6 +363,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Note that, like "River Raid," at every moment it scores, or not - measuring heartbeats, blood oxygenation, hormones, endorphins, synapses, face image, skin softness, everything.</p>
 <p>You realize that such "movements" score less, that moving "like this" before "roasted" scores more than the movements in isolation. It composes. Maximizing what? Everything good.</p>
 <p>But even less humble is not to restrict oneself to music, in the game of life.</p>
+        
         
         </div>
 

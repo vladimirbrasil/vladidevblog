@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p> </p>
 <p></p>
 <p>Ich werde hier einige Punkte auflisten, die mir für die Zukunft wichtig erscheinen. Sie können helfen, vorherzusagen, nicht dass das sehr wichtig wäre.</p>
@@ -344,6 +358,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>• Hässlichkeit. Ist es ehrlich, wenn ein Superhässlicher in der virtuellen Welt schön ist? Offensichtlich ja. Ich antworte gleich. Wenn die Welt virtuell ist, gibt es auch keine Hässlichkeit (&quot;real&quot;?). Darüber hinaus scheint Schönheit viel stärkere Komponenten zu haben als die alten sinnlichen, aus der Zeit des Genmonopols (Po, Brustkorb, usw.), bei tatsächlichen Beziehungen. Geld (Arbeit) und Ruhm scheinen keineswegs Nebensache zu sein, ganz im Gegenteil.</p>
 <p>• Die Trends schreien. NFTs gibt es bereits. Tang Ping (Nicht-Arbeit) taucht bereits auf. Virtuelle Welten nehmen zu, anstatt abzunehmen. Das reale Leben nimmt ab, anstatt zuzunehmen (wie das? Stillstand. Online. So in etwa).</p>
 <p>• Die schöne Frage, was Leben ist. Immer eine schöne Poesie. Poesie, weil ich keine &quot;Vorlage&quot; sehe. Das Richtige. Es ist Rauch!</p>
+        
         
         </div>
 

@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p></p>
 <p></p>
 <p>Musk had the great idea to question <a href="https://twitter.com/elonmusk/status/1507259709224632344?s=20&amp;t=-f5xMfAtszuT1AbZcyz5ew" target="_blank" rel="noopener noreferrer">too much regulation at some social medias.</a></p>
@@ -349,6 +363,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Similar to the world wide web protocol, but with social media apps, dealing with notifications and interactions.</p>
 <p>I am not sure if this is an eureka moment. That’s why we are 7 billion thinking humans, and that’s why I post ideas like this: to be criticized, disregarded, adapted.</p>
 <p>Several brains think better ☀️.</p>
+        
         
         </div>
 

@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p> </p>
 <p></p>
 <p>Ich würde vermuten, dass diejenigen von uns, die an einer Ideologie oder einer Leidenschaft festhalten, sich an einem Baumstamm in einem etwas unermesslichen Ozean festhalten.</p>
@@ -358,6 +372,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Selbst mit Vergnügen, selbst mit klarem Geist, selbst wenn wir zum Mars fliegen oder - heutzutage in Mode - selbst wenn ein ChatGpt alles für uns löst, uns Trauben in den Mund legt und wir nicht mehr arbeiten müssen (in diesem Fall helfen dem ChatGpt mehrere Roboterarme, autonome Autos und Lastwagen - schließlich müssen die Trauben in unseren Mund geliefert werden, kostenlos, ohne dass ein Mensch auf diesem Weg bezahlt werden muss, der (immer mehr) Energie und Atome in Dinge für uns verwandelt: die Theorie der <a href="https://vladi.dev/artigos/agi-e-as-arvores-robos/" target="_blank" rel="noopener noreferrer">Roboterbäume</a>, wie Obstbäume).</p>
 <p>Trotzdem kann es schwierig sein zu verbergen, dass das Universum groß ist und wir uns vielleicht deshalb an Ideologien, Religionen, der Theorie des Vergnügens, interstellaren Reisen festhalten müssen.</p>
 <p>Zumindest auf dem Weg ins Nirgendwo gibt es kein Entkommen vor dem Vergnügen, wie herrlich.</p>
+        
         
         </div>
 

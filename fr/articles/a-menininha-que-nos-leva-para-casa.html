@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/a-menininha-que-nos-leva-para-casa.html">Português</a><span>|</span><a href="/en/articles/a-menininha-que-nos-leva-para-casa.html">English</a><span>|</span><strong>Français</strong><span>|</span><a href="/de/articles/a-menininha-que-nos-leva-para-casa.html">Deutsch</a><span>|</span><a href="/es/articles/a-menininha-que-nos-leva-para-casa.html">Español</a></div>
 
         <div class="article-content">
+          
           
           <p> </p>
 <p></p>
@@ -372,6 +386,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Y aura-t-il un ou une poignée de propriétaires d'IA qui nous asserviront tous ? Il n'y en aura pas, je pense.</p>
 <p>Etc.</p>
 <p>Excellente révolution à nous tous ☀️.</p>
+        
         
         </div>
 

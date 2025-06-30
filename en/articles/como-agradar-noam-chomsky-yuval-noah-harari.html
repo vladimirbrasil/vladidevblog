@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/como-agradar-noam-chomsky-yuval-noah-harari.html">Português</a><span>|</span><strong>English</strong></div>
 
         <div class="article-content">
+          
           
           <p></p>
 <p>[<em>The original article is from December 13, 2020, migrated on this date to this new blog</em>]</p>
@@ -368,6 +382,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Politically, I am calm because it is enough for us to want to, even if slowly forming majorities.</p>
 <p>Becoming more relaxed trying to satisfy two geniuses, little by little.</p>
 <p>Thank you for transmitting ideas similar to this, and/or correcting and pointing out my flaws.</p>
+        
         
         </div>
 

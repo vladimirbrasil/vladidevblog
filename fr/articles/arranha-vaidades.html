@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p> </p>
 <p></p>
 <p>Je pense que je peux défaire un mythe. Le mythe de l'&quot;ultra, ultra milliardaire&quot;.</p>
@@ -360,6 +374,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <li>Que voulons-nous avec cela que nous avons inventé — le fameux &quot;argent&quot; ? Si nous pouvons être comme la nature, ou au moins les entreprises-robots peuvent travailler sans jamais savoir ce qu'est un dollar ou un bitcoin, l'objectif de l'argent atteint nos propres têtes, pensées, désirs, vanités.</li>
 <li>Si vous pouvez imaginer des entreprises-robots gérant la pénurie de manière automatisée et bien comportée, il est encore plus facile de laisser l'objectif de (beaucoup) d'argent n'éclairer que nous-mêmes. Ce que nous voulons n'est pas une petite question.</li>
 <p>Bonne lecture ! :)</p>
+        
         
         </div>
 

@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/te-amo.html">Português</a><span>|</span><a href="/en/articles/te-amo.html">English</a><span>|</span><a href="/fr/articles/te-amo.html">Français</a><span>|</span><strong>Deutsch</strong><span>|</span><a href="/es/articles/te-amo.html">Español</a></div>
 
         <div class="article-content">
+          
           
           <p> </p>
 <p></p>
@@ -407,6 +421,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Wenn die selbstlose Hingabe eines Roboters als Liebe, als eine Mutter behandelt werden kann, dann kann er dem Duft von Knoblauch folgen, der auf dem Rindersteak zu bräunen beginnt, und ihn dort umarmen, den Roboter. Er wird – logisch – die Bedeutung der Umarmung verstehen. &quot;Vielen Dank!&quot;</p>
 <p>&quot;Ich liebe dich&quot;. ❤️</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-1.jpg" alt="um robô amamenta um bebê" /><figcaption>um robô amamenta um bebê</figcaption></figure>
+        
         
         </div>
 

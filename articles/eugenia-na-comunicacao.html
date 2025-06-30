@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
 
         <div class="article-content">
+          
           
           <p></p>
 <p><em>Oito perspectivas sobre a crise das antenas — em que todos, agora, podem falar e publicar — , mas também em que ocorrem flertes com a restrição de liberdade, talvez oriundo de uma mágoa de quem esteja perdendo um espaço até pouco tempo atrás bem seleto, usando justificativas tão atraentes quanto a maçã vermelhíssima da branca de neve.</em></p>
@@ -482,6 +496,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Este argumento de Pedro Dória vai, no futuro, para baixo do tapete, fingindo jamais existir — errar é humano e compreensível — , ou realmente possui substância?</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-14.jpg" alt="" /></figure>
 
+        
         
         </div>
 

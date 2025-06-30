@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p>  </p>
 <p>Eureka?</p>
 <p>A inteligência artificial pode aposentar o lado esquerdo do nosso cérebro. A razão. A ciência. A lógica.</p>
@@ -357,6 +371,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>---</p>
 <p><em>Este texto é um pouco difícil devido a minha falha como escritor. Mas está aqui o conceito que estou enxergando, e já peço desculpas não só pelo texto seco, sem estórias gostosas e, pior ainda, podendo estar com uma tese totalmente errada. A originalidade - errando ou não - acho que estou entregando, ainda que de maneira mal redigida. Se eu conseguir, melhoro este texto assim que me vier esta habilidade e tempo.</em></p>
 
+        
         
         </div>
 

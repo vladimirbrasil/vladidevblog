@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/repensando-o-sistema-de-metas.html">Português</a><span>|</span><a href="/en/articles/repensando-o-sistema-de-metas.html">English</a><span>|</span><strong>Français</strong><span>|</span><a href="/de/articles/repensando-o-sistema-de-metas.html">Deutsch</a><span>|</span><a href="/es/articles/repensando-o-sistema-de-metas.html">Español</a></div>
 
         <div class="article-content">
+          
           
           <p> </p>
 <p></p>
@@ -436,6 +450,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>C'est ma contribution particulière, dans la mesure de mes connaissances actuelles, au fonctionnement du système de ventes, en additionnant un profit inchangé avec le nouvel ingrédient de la compassion, de l'élimination des mouvements brusques/inhumains, avec la préservation de la famille, avec plus de sécurité pour tous, de l'entrepreneur au client.</p>
 <p>Compassion et profit ne sont pas de l'eau et de l'huile, mais plutôt des ingrédients d'un beau mariage, je propose et j'ose tenter de le prouver, par logique, dans ce texte que je termine ici, en proposant le modèle objectifs/ancienneté.</p>
 <p>Merci patient lecteur.</p>
+        
         
         </div>
 

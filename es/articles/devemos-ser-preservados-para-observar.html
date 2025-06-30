@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -331,6 +344,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 
         <div class="article-content">
           
+          
           <p> </p>
 <p></p>
 <p>La siguiente pregunta se contextualiza mejor con esta <a href="https://youtu.be/cRvzrg02gmc" target="_blank" rel="noopener noreferrer">presentación</a> .</p>
@@ -341,6 +355,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Ahora, más corto y claro: ¿debemos evolucionar cualquier cosa?; o cualquier cosa, excepto para cambiar nuestra conciencia, nuestro código genético, nuestra manera de organizar 50 billones de células y miles de millones de individuos?</p>
 <p>Aún más resumido: ¿debemos ser preservados para observar toda evolución futura? ¿Incluso si nos volvemos relativamente obsoletos?</p>
 <p>Muchas gracias por su paciencia al escuchar esta pregunta.</p>
+        
         
         </div>
 

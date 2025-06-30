@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/repensando-o-sistema-de-metas.html">Português</a><span>|</span><strong>English</strong><span>|</span><a href="/fr/articles/repensando-o-sistema-de-metas.html">Français</a><span>|</span><a href="/de/articles/repensando-o-sistema-de-metas.html">Deutsch</a><span>|</span><a href="/es/articles/repensando-o-sistema-de-metas.html">Español</a></div>
 
         <div class="article-content">
+          
           
           <p> </p>
 <p></p>
@@ -436,6 +450,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>This is my peculiar contribution, to the extent of my current knowledge, to the functioning of the sales system, adding unchanged profit with the new ingredient of compassion, of eliminating abrupt/inhuman movements, with the preservation of the family, with more security for everyone, from the entrepreneur to the customer.</p>
 <p>Compassion and profit are not water and oil, but ingredients of a beautiful marriage, I propose and dare to try to prove, by logic, in this text that I end here, proposing the goals/seniority model.</p>
 <p>Thank you patient reader.</p>
+        
         
         </div>
 

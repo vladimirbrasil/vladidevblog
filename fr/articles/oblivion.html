@@ -298,6 +298,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
     z-index: 120;
   }
 }
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
 </style>
 </head>
 <body>
@@ -330,6 +343,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/oblivion.html">Português</a><span>|</span><a href="/en/articles/oblivion.html">English</a><span>|</span><strong>Français</strong><span>|</span><a href="/de/articles/oblivion.html">Deutsch</a><span>|</span><a href="/es/articles/oblivion.html">Español</a></div>
 
         <div class="article-content">
+          
           
           <p> </p>
 <p></p>
@@ -396,6 +410,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Fils de tet (tec), disons-le ainsi. Très bien cloné, qu'est-ce qui change ?</p>
 <p>Le clone au paradis avec la muse. Clone et muse. Amour, ancestralité.</p>
 <p>Je ne sais rien.</p>
+        
         
         </div>
 
