@@ -82,28 +82,62 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .article-image-container img { width: 100%; height: 100%; object-fit: cover; }
 /* === END OF INDEX PAGE STYLES === */
 
-/* === NOVO: ESTILOS PARA AS BANDEIRAS DE IDIOMA === */
-.language-flags {
+/* === NOVO: ESTILOS PARA O DROPDOWN DE IDIOMAS === */
+.language-dropdown {
+  position: relative; /* Essencial para posicionar o menu */
+  display: inline-block;
+}
+.dropdown-toggle {
+  cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 6px; /* Espaço entre a bandeira e a seta (se houver) */
+  padding: 4px;
+  border-radius: 99px; /* Torna o fundo circular se quisermos */
+  transition: background-color 0.2s ease;
 }
-.language-flags a {
-  display: inline-block;
-  line-height: 0; /* Remove espaço extra abaixo da imagem */
-  transition: opacity 0.2s ease, transform 0.2s ease;
+.dropdown-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
-.language-flags a:hover {
-  opacity: 0.85;
-  transform: scale(1.1);
-}
-.language-flags img {
+.dropdown-toggle img {
   width: 26px;
   height: 26px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  object-fit: cover; /* Garante que a imagem cubra o círculo */
-  display: block; /* Remove espaço extra */
+  object-fit: cover;
+  display: block;
+}
+.dropdown-menu {
+  display: none; /* Oculto por padrão */
+  position: absolute;
+  top: 110%; /* Posição logo abaixo do botão */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 110; /* Garante que fique acima de outros elementos */
+  min-width: 50px;
+  text-align: center;
+}
+.language-dropdown.active .dropdown-menu {
+  display: block; /* Mostra o menu quando o dropdown está ativo */
+}
+.dropdown-menu a {
+  display: block;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+.dropdown-menu a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.dropdown-menu img {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* === FIM DOS NOVOS ESTILOS === */
 
@@ -302,7 +336,16 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
        <a href="/de/index.html" class="logo">Vladimir Dietrich</a>
        <nav class="nav-links">
  
-        <div class="language-flags"><a href="/index.html" title="Português"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjMwIj48cGF0aCBmaWxsPSIjMDBhNjVjIiBkPSJNMCAwaDkwMHY2MzBIMHoiLz48cGF0aCBmaWxsPSIjZmZkMTAwIiBkPSJNODEgMzE1IDQ1MCAzMy43NSA4MTkgMzE1IDQ1MCA1OTYuMjV6Ii8+PGNpcmNsZSBjeD0iNDUwIiBjeT0iMzE1IiByPSIxMjUiIGZpbGw9IiMwMDM4OWMiLz48L3N2Zz4=" alt="Português"></a><a href="/en/index.html" title="English"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNDUwIj48cGF0aCBmaWxsPSIjYjI0MzA4IiBkPSJNMCAwaDc1MHY0NTBIMHoiLz48cGF0aCBkPSJNMCAwYzI1MCAxNTAgNTAwIDMwMCA3NTAgNDUwWm03NTAtNDUwQzUwMCAxNTAgMjUwIDMwMCAwIDQ1MFoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwMjQ3ZCIgc3Ryb2tlLXdpZHRoPSIzMCIvPjxwYXRoIGQ9Ik0zNzUgMHY0NTBaTTAtMjI1YzcyNSAwIDcyNSAwIDc1MCAwWiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjUwIi8+PHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0iTTAgMGwzNzUgMjI1Wm0wIDQ1MEwzNzUgMjI1Wm0zNzUgMGwtMzc1LTIyNVptMzc1LTQ1MEwzNzUgMjI1WiIvPjwvc3ZnPg==" alt="English"></a><a href="/es/index.html" title="Español"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNTAwIj48cGF0aCBmaWxsPSIjYzYwYjFiIiBkPSJNMCAwaDc1MHY1MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZkZDAwIiBkPSJNMCAxMjVoNzUwdjI1MEgwWiIvPjwvc3ZnPg==" alt="Español"></a><a href="/fr/index.html" title="Français"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj48cGF0aCBmaWxsPSIjZWQyOTM5IiBkPSJNMCAwaDkwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDYwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJNMCAwaDMwMHY2MDBIMHoiLz48L3N2Zz4=" alt="Français"></a><a href="/de/index.html" title="Deutsch"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDgwIj48cGF0aCBkPSJNMCAwaDgwMHY0ODBIMHoiLz48cGF0aCBmaWxsPSIjZDAwIiBkPSJNMCAxNjBoODAwdjMyMEgwWiIvPjxwYXRoIGZpbGw9IiNmZjllMDAiIGQ9Ik0wIDMyMGg4MDB2MTYwSDBaIi8+PC9zdmc+" alt="Deutsch"></a></div>
+        <div class="language-flags">
+      <div class="language-dropdown" id="language-dropdown">
+        <div class="dropdown-toggle">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDgwIj48cGF0aCBkPSJNMCAwaDgwMHY0ODBIMHoiLz48cGF0aCBmaWxsPSIjZDAwIiBkPSJNMCAxNjBoODAwdjMyMEgwWiIvPjxwYXRoIGZpbGw9IiNmZjllMDAiIGQ9Ik0wIDMyMGg4MDB2MTYwSDBaIi8+PC9zdmc+" alt="Deutsch">
+        </div>
+        <div class="dropdown-menu">
+          <a href="/index.html" title="Português"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjMwIj48cGF0aCBmaWxsPSIjMDBhNjVjIiBkPSJNMCAwaDkwMHY2MzBIMHoiLz48cGF0aCBmaWxsPSIjZmZkMTAwIiBkPSJNODEgMzE1IDQ1MCAzMy43NSA4MTkgMzE1IDQ1MCA1OTYuMjV6Ii8+PGNpcmNsZSBjeD0iNDUwIiBjeT0iMzE1IiByPSIxMjUiIGZpbGw9IiMwMDM4OWMiLz48L3N2Zz4=" alt="Português"></a><a href="/en/index.html" title="English"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNDUwIj48cGF0aCBmaWxsPSIjYjI0MzA4IiBkPSJNMCAwaDc1MHY0NTBIMHoiLz48cGF0aCBkPSJNMCAwYzI1MCAxNTAgNTAwIDMwMCA3NTAgNDUwWm03NTAtNDUwQzUwMCAxNTAgMjUwIDMwMCAwIDQ1MFoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwMjQ3ZCIgc3Ryb2tlLXdpZHRoPSIzMCIvPjxwYXRoIGQ9Ik0zNzUgMHY0NTBaTTAtMjI1YzcyNSAwIDcyNSAwIDc1MCAwWiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjUwIi8+PHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0iTTAgMGwzNzUgMjI1Wm0wIDQ1MEwzNzUgMjI1Wm0zNzUgMGwtMzc1LTIyNVptMzc1LTQ1MEwzNzUgMjI1WiIvPjwvc3ZnPg==" alt="English"></a><a href="/es/index.html" title="Español"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNTAwIj48cGF0aCBmaWxsPSIjYzYwYjFiIiBkPSJNMCAwaDc1MHY1MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZkZDAwIiBkPSJNMCAxMjVoNzUwdjI1MEgwWiIvPjwvc3ZnPg==" alt="Español"></a><a href="/fr/index.html" title="Français"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj48cGF0aCBmaWxsPSIjZWQyOTM5IiBkPSJNMCAwaDkwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDYwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJNMCAwaDMwMHY2MDBIMHoiLz48L3N2Zz4=" alt="Français"></a>
+        </div>
+      </div>
+    </div>
 
          <div class="search-widget-wrapper">
            <button id="search-icon-btn" class="search-toggle-icon">
@@ -329,9 +372,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       <div id="article-list" class="article-list">
       <div class="article-item">
         <a href="/de/articles/um-blog-facil.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png" alt="Ein einfacher Blog">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png" alt="Ein einfacher Blog"></div>
           <div class="article-text-content">
             <div class="article-date">Jun 14, 2025</div>
             <h2 class="article-title">Ein einfacher Blog</h2>
@@ -344,9 +385,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/te-amo.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg" alt="❤️ Ich liebe dich">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg" alt="❤️ Ich liebe dich"></div>
           <div class="article-text-content">
             <div class="article-date">Sep 10, 2024</div>
             <h2 class="article-title">❤️ Ich liebe dich</h2>
@@ -359,9 +398,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/a-menininha-que-nos-leva-para-casa.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg" alt="Das kleine Mädchen, das uns nach Hause bringt">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg" alt="Das kleine Mädchen, das uns nach Hause bringt"></div>
           <div class="article-text-content">
             <div class="article-date">Apr 21, 2024</div>
             <h2 class="article-title">Das kleine Mädchen, das uns nach Hause bringt</h2>
@@ -374,9 +411,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/onde-estamos.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg" alt="Wo sind wir?">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg" alt="Wo sind wir?"></div>
           <div class="article-text-content">
             <div class="article-date">Sep 18, 2023</div>
             <h2 class="article-title">Wo sind wir?</h2>
@@ -389,9 +424,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/troncos-no-universo.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/troncos-no-universo-image-0.png" alt="Baumstämme im Universum?">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/troncos-no-universo-image-0.png" alt="Baumstämme im Universum?"></div>
           <div class="article-text-content">
             <div class="article-date">Apr 10, 2023</div>
             <h2 class="article-title">Baumstämme im Universum?</h2>
@@ -404,9 +437,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/arranha-vaidades.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/arranha-vaidades-image-0.jpg" alt="Wolkenkratzer-[Eitelkeiten]">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/arranha-vaidades-image-0.jpg" alt="Wolkenkratzer-[Eitelkeiten]"></div>
           <div class="article-text-content">
             <div class="article-date">Mar 7, 2022</div>
             <h2 class="article-title">Wolkenkratzer-[Eitelkeiten]</h2>
@@ -419,9 +450,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/por-que-cuspir-a-consciencia.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg" alt="Warum das Gewissen ausspucken?">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg" alt="Warum das Gewissen ausspucken?"></div>
           <div class="article-text-content">
             <div class="article-date">Nov 29, 2021</div>
             <h2 class="article-title">Warum das Gewissen ausspucken?</h2>
@@ -434,9 +463,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/neuragame.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg" alt="Neuragame">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg" alt="Neuragame"></div>
           <div class="article-text-content">
             <div class="article-date">Nov 15, 2021</div>
             <h2 class="article-title">Neuragame</h2>
@@ -449,9 +476,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/previsivel.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/previsivel-image-0.jpg" alt="Vorhersehbar?">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/previsivel-image-0.jpg" alt="Vorhersehbar?"></div>
           <div class="article-text-content">
             <div class="article-date">Nov 4, 2021</div>
             <h2 class="article-title">Vorhersehbar?</h2>
@@ -464,9 +489,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/vanilla-skyourself.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/vanilla-skyourself-image-0.jpg" alt="Vanilla Skyourself">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/vanilla-skyourself-image-0.jpg" alt="Vanilla Skyourself"></div>
           <div class="article-text-content">
             <div class="article-date">Nov 3, 2021</div>
             <h2 class="article-title">Vanilla Skyourself</h2>
@@ -479,9 +502,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/devemos-ser-preservados-para-observar.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png" alt="Sollten wir erhalten bleiben, um zu beobachten?">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png" alt="Sollten wir erhalten bleiben, um zu beobachten?"></div>
           <div class="article-text-content">
             <div class="article-date">May 6, 2021</div>
             <h2 class="article-title">Sollten wir erhalten bleiben, um zu beobachten?</h2>
@@ -494,9 +515,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/fabrica-de-coringas.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png" alt="Platzhalter-Fabrik?">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png" alt="Platzhalter-Fabrik?"></div>
           <div class="article-text-content">
             <div class="article-date">Oct 30, 2020</div>
             <h2 class="article-title">Platzhalter-Fabrik?</h2>
@@ -509,9 +528,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/maximizar-mindfulness.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png" alt="Maximizar mindfulness?">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png" alt="Maximizar mindfulness?"></div>
           <div class="article-text-content">
             <div class="article-date">Jul 8, 2020</div>
             <h2 class="article-title">Maximizar mindfulness?</h2>
@@ -524,9 +541,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/sai-o-emprego-fica-a-producao.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg" alt="Job weg, Produktion bleibt">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg" alt="Job weg, Produktion bleibt"></div>
           <div class="article-text-content">
             <div class="article-date">Jul 6, 2020</div>
             <h2 class="article-title">Job weg, Produktion bleibt</h2>
@@ -539,9 +554,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/oblivion.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="Oblivion">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="Oblivion"></div>
           <div class="article-text-content">
             <div class="article-date">Apr 27, 2020</div>
             <h2 class="article-title">Oblivion</h2>
@@ -554,9 +567,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/a-curiosidade-humana.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg" alt="Menschliche Neugier">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg" alt="Menschliche Neugier"></div>
           <div class="article-text-content">
             <div class="article-date">Sep 10, 2019</div>
             <h2 class="article-title">Menschliche Neugier</h2>
@@ -569,9 +580,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/repensando-o-sistema-de-metas.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/repensando-o-sistema-de-metas-image-0.jpg" alt="Das Zielsystem überdenken">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/repensando-o-sistema-de-metas-image-0.jpg" alt="Das Zielsystem überdenken"></div>
           <div class="article-text-content">
             <div class="article-date">Nov 27, 2018</div>
             <h2 class="article-title">Das Zielsystem überdenken</h2>
@@ -584,9 +593,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       </div>
       <div class="article-item">
         <a href="/de/articles/human-soup.html">
-          <div class="article-image-container">
-           <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg" alt="Menschensuppe">
-         </div>
+          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg" alt="Menschensuppe"></div>
           <div class="article-text-content">
             <div class="article-date">Aug 22, 2018</div>
             <h2 class="article-title">Menschensuppe</h2>
@@ -699,6 +706,32 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       });
     } catch(e) {
       console.error("Error setting up search toggle:", e);
+    }
+
+    /* ======================================================= */
+    /* === NOVO: JavaScript para o Dropdown de Idiomas === */
+    /* ======================================================= */
+    try {
+      document.addEventListener('DOMContentLoaded', function() {
+        const dropdown = document.getElementById('language-dropdown');
+
+        if (dropdown) {
+          // Abre/fecha o dropdown ao clicar no botão
+          dropdown.addEventListener('click', function(event) {
+            event.stopPropagation(); // Impede que o clique feche o menu imediatamente
+            this.classList.toggle('active');
+          });
+
+          // Fecha o dropdown se o usuário clicar fora dele
+          window.addEventListener('click', function(event) {
+            if (dropdown.classList.contains('active')) {
+              dropdown.classList.remove('active');
+            }
+          });
+        }
+      });
+    } catch (e) {
+      console.error("Error setting up language dropdown:", e);
     }
 
   </script>
