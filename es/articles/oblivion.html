@@ -86,6 +86,84 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .article-image-container img { width: 100%; height: 100%; object-fit: cover; }
 /* === END OF INDEX PAGE STYLES === */
 
+/* === NOVO: ESTILOS PARA O DROPDOWN DE IDIOMAS (v3 DESSATURADO) === */
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px 4px 4px;
+  border-radius: 99px;
+  transition: background-color 0.2s ease;
+  border: 1px solid #e0e0e0;
+}
+.dropdown-toggle:hover {
+  background-color: #f5f5f5;
+}
+.dropdown-toggle img, .dropdown-menu img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  /* ===> MODIFICADO: Dessatura a imagem e adiciona transição */
+  filter: saturate(40%);
+  transition: filter 0.25s ease-in-out;
+}
+.dropdown-toggle:hover img, .dropdown-menu a:hover img {
+  /* ===> NOVO: Restaura a cor no hover */
+  filter: saturate(100%);
+}
+.dropdown-toggle span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 110;
+  min-width: 100%;
+}
+.language-dropdown.active .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+.dropdown-menu img {
+  width: 28px; /* Mantém um tamanho ligeiramente maior no menu */
+  height: 28px;
+}
+.dropdown-menu span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+/* === FIM DOS NOVOS ESTILOS === */
+
 @media (max-width: 768px) {
   /* THIS IS THE FIX: We change the header to a stacking column layout */
   .header-content {
@@ -166,8 +244,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
   /* STEP 3: Define the ACTIVE overlay state when body.search-active */
 
   /* Hide the logo and nav links GRACEFULLY with a transition */
+  /* ===> MODIFICADO: Adicione .language-dropdown a esta regra */
   .search-active .logo,
-  .search-active .nav-links a {
+  .search-active .nav-links a,
+  .search-active .language-dropdown {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease-in-out;
@@ -222,21 +302,18 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 </head>
 <body>
   <header class="header">
-    <div class="header-content">
-      <a href="/es/index.html" class="logo">Vladimir Dietrich</a>
-      <nav class="nav-links">
-        <a href="/es/index.html">Blog</a>
-        <a href="https://vladi.dev" target="_blank">Portfolio</a>
-      </nav>
-    </div>
-  </header>
+   <div class="header-content">
+     <a href="/es/index.html" class="logo">Vladimir Dietrich</a>
+     <nav class="nav-links">
+ 
+       <div class="language-flags"></div>
+       <a href="https://vladi.dev" target="_blank">Portfolio</a>
+       </nav>
+   </div>
+ </header>
   <main class="container">
     <div id="article-view" class="article-view">
-      
-      <div class="hero-image-container">
-        <img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" class="hero-image">
-        
-      </div>
+      <div class="hero-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="" class="hero-image">  </div>
       <div class="article-content-wrapper">
         <a href="/es/index.html" class="back-button">← Back to all articles</a>
 
@@ -250,13 +327,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           </div>
         </div>
         
-        
-      <div class="language-switcher">
-        <a href="/articles/oblivion.html">Português</a><span>|</span><a href="/en/articles/oblivion.html">English</a><span>|</span><a href="/fr/articles/oblivion.html">Français</a><span>|</span><a href="/de/articles/oblivion.html">Deutsch</a><span>|</span><strong>Español</strong>
-      </div>
-    
+        <div class="language-switcher"><a href="/articles/oblivion.html">Português</a><span>|</span><a href="/en/articles/oblivion.html">English</a><span>|</span><a href="/fr/articles/oblivion.html">Français</a><span>|</span><a href="/de/articles/oblivion.html">Deutsch</a><span>|</span><strong>Español</strong></div>
 
         <div class="article-content">
+          
           <p> </p>
 <p></p>
 <p>Si no has visto Oblivion, ni toques esta publicación. Contará sobre la película, a esto le llaman spoiler.♥️</p>
@@ -322,6 +396,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Hijo de tet (tec), digamos así. Muy-bien-clonado, ¿qué cambia?</p>
 <p>El clon en el paraíso con la musa. Clon y musa. Amor, ancestralidad.</p>
 <p>No sé de nada.</p>
+        
         </div>
 
       </div>
@@ -332,5 +407,34 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       <p>© 2025 Vladimir Dietrich. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    /* ======================================================= */
+    /* === NOVO: JavaScript para o Dropdown de Idiomas === */
+    /* ======================================================= */
+    try {
+      document.addEventListener('DOMContentLoaded', function() {
+        const dropdown = document.getElementById('language-dropdown');
+
+        if (dropdown) {
+          // Abre/fecha o dropdown ao clicar no botão
+          dropdown.addEventListener('click', function(event) {
+            event.stopPropagation(); // Impede que o clique feche o menu imediatamente
+            this.classList.toggle('active');
+          });
+
+          // Fecha o dropdown se o usuário clicar fora dele
+          window.addEventListener('click', function(event) {
+            if (dropdown.classList.contains('active')) {
+              dropdown.classList.remove('active');
+            }
+          });
+        }
+      });
+    } catch (e) {
+      console.error("Error setting up language dropdown:", e);
+    }  
+  </script>
+
 </body>
 </html>

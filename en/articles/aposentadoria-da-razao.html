@@ -86,7 +86,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .article-image-container img { width: 100%; height: 100%; object-fit: cover; }
 /* === END OF INDEX PAGE STYLES === */
 
-/* === NOVO: ESTILOS PARA O DROPDOWN DE IDIOMAS (v2 COM TEXTO) === */
+/* === NOVO: ESTILOS PARA O DROPDOWN DE IDIOMAS (v3 DESSATURADO) === */
 .language-dropdown {
   position: relative;
   display: inline-block;
@@ -95,8 +95,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 8px; /* Espaço entre a bandeira e a sigla */
-  padding: 4px 10px 4px 4px; /* Mais espaço à direita para a sigla */
+  gap: 8px;
+  padding: 4px 10px 4px 4px;
   border-radius: 99px;
   transition: background-color 0.2s ease;
   border: 1px solid #e0e0e0;
@@ -104,12 +104,19 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .dropdown-toggle:hover {
   background-color: #f5f5f5;
 }
-.dropdown-toggle img {
+.dropdown-toggle img, .dropdown-menu img {
   width: 26px;
   height: 26px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
+  /* ===> MODIFICADO: Dessatura a imagem e adiciona transição */
+  filter: saturate(40%);
+  transition: filter 0.25s ease-in-out;
+}
+.dropdown-toggle:hover img, .dropdown-menu a:hover img {
+  /* ===> NOVO: Restaura a cor no hover */
+  filter: saturate(100%);
 }
 .dropdown-toggle span {
   font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -128,7 +135,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   padding: 8px;
   z-index: 110;
-  min-width: 100%; /* Ocupa a largura total do botão */
+  min-width: 100%;
 }
 .language-dropdown.active .dropdown-menu {
   display: block;
@@ -146,9 +153,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
   background-color: #f5f5f5;
 }
 .dropdown-menu img {
-  width: 28px;
+  width: 28px; /* Mantém um tamanho ligeiramente maior no menu */
   height: 28px;
-  border-radius: 50%;
 }
 .dropdown-menu span {
   font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -300,17 +306,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
      <a href="/en/index.html" class="logo">Vladimir Dietrich</a>
      <nav class="nav-links">
  
-       <div class="language-flags">
-      <div class="language-dropdown" id="language-dropdown">
-        <div class="dropdown-toggle">
-          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNDUwIj48cGF0aCBmaWxsPSIjYjI0MzA4IiBkPSJNMCAwaDc1MHY0NTBIMHoiLz48cGF0aCBkPSJNMCAwYzI1MCAxNTAgNTAwIDMwMCA3NTAgNDUwWm03NTAtNDUwQzUwMCAxNTAgMjUwIDMwMCAwIDQ1MFoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwMjQ3ZCIgc3Ryb2tlLXdpZHRoPSIzMCIvPjxwYXRoIGQ9Ik0zNzUgMHY0NTBaTTAtMjI1YzcyNSAwIDcyNSAwIDc1MCAwWiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjUwIi8+PHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0iTTAgMGwzNzUgMjI1Wm0wIDQ1MEwzNzUgMjI1Wm0zNzUgMGwtMzc1LTIyNVptMzc1LTQ1MEwzNzUgMjI1WiIvPjwvc3ZnPg==" alt="English">
-          <span>EN</span>
-        </div>
-        <div class="dropdown-menu">
-          <a href="/articles/aposentadoria-da-razao.html" title="Português"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjMwIj48cGF0aCBmaWxsPSIjMDBhNjVjIiBkPSJNMCAwaDkwMHY2MzBIMHoiLz48cGF0aCBmaWxsPSIjZmZkMTAwIiBkPSJNODEgMzE1IDQ1MCAzMy43NSA4MTkgMzE1IDQ1MCA1OTYuMjV6Ii8+PGNpcmNsZSBjeD0iNDUwIiBjeT0iMzE1IiByPSIxMjUiIGZpbGw9IiMwMDM4OWMiLz48L3N2Zz4=" alt="Português"><span>PT</span></a><a href="/es/articles/aposentadoria-da-razao.html" title="Español"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNTAwIj48cGF0aCBmaWxsPSIjYzYwYjFiIiBkPSJNMCAwaDc1MHY1MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZkZDAwIiBkPSJNMCAxMjVoNzUwdjI1MEgwWiIvPjwvc3ZnPg==" alt="Español"><span>ES</span></a><a href="/fr/articles/aposentadoria-da-razao.html" title="Français"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj48cGF0aCBmaWxsPSIjZWQyOTM5IiBkPSJNMCAwaDkwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDYwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJNMCAwaDMwMHY2MDBIMHoiLz48L3N2Zz4=" alt="Français"><span>FR</span></a><a href="/de/articles/aposentadoria-da-razao.html" title="Deutsch"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDgwIj48cGF0aCBkPSJNMCAwaDgwMHY0ODBIMHoiLz48cGF0aCBmaWxsPSIjZDAwIiBkPSJNMCAxNjBoODAwdjMyMEgwWiIvPjxwYXRoIGZpbGw9IiNmZjllMDAiIGQ9Ik0wIDMyMGg4MDB2MTYwSDBaIi8+PC9zdmc+" alt="Deutsch"><span>DE</span></a>
-        </div>
-      </div>
-    </div>
+       <div class="language-flags"></div>
        <a href="https://vladi.dev" target="_blank">Portfolio</a>
        </nav>
    </div>
@@ -334,6 +330,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/aposentadoria-da-razao.html">Português</a><span>|</span><strong>English</strong><span>|</span><a href="/fr/articles/aposentadoria-da-razao.html">Français</a></div>
 
         <div class="article-content">
+          
           <p> </p>
 <p>Eureka?</p>
 <p>Artificial intelligence may retire the left side of our brain. The reason. The science. The logic.</p>
@@ -359,6 +356,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>The profile changing, the society changes.</p>
 <p>---</p>
 <p><em>This text is a little difficult due to my failure as a writer. But here is the concept I am seeing, and I already apologize not only for the dry text, without pleasant stories and, even worse, possibly with a totally wrong thesis. The originality - wrong or not - I think I am delivering, even if in a poorly written way. If I can, I will improve this text as soon as I have this ability and time.</em></p>
+        
         </div>
 
       </div>
