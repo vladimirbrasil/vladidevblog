@@ -18,14 +18,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
 .header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
-.nav-links { display: flex; gap: 32px; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
 .nav-links a:hover { color: rgba(41, 41, 41, 1); }
 .container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
 .article-list { padding: 48px 0; }
 .article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
 .article-item a { text-decoration: none; }
-.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
 .article-item:last-child { border-bottom: none; }
 .article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
 .article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
@@ -65,8 +68,156 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .language-switcher span { margin: 0 8px; }
 ::selection { background-color: rgba(26, 137, 23, 0.1); }
 ::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
-@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
-@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  .search-active .logo,
+  .search-active .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
 </style>
 </head>
 <body>
@@ -109,66 +260,66 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           <p>Oblivion</p>
 <p> </p>
 <p></p>
-<p>If you haven't watched Oblivion, don't even touch this post. It will talk about the movie, they call it a spoiler.♥️</p>
-<p>Oblivion, the movie, allows for a few ways to see it. Most likely the fault of our eye, not so much the movie.</p>
-<p>1. The towering glass enclosure with a floating pool with a glass floor could not have been designed to be "ugly". It seems to reflect a type of human dream.</p>
+<p>If you haven't watched Oblivion, don't touch this post. It will talk about the film, they call this a spoiler.♥️</p>
+<p>Oblivion, the film, allows some ways to see. Most likely the fault of our eye, not so much the film.</p>
+<p>1. The towering glazed cover with a floating pool with a glass floor cannot have been designed to be &quot;ugly&quot;. It seems to reflect a type of human dream.</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-1.jpg" alt="" /></figure>
-<p>2. Did there need to be disgrace beneath this "dream covering"? A "contaminated" environment, "inferior" beings living in misery hunted as rebels? It seems so.</p>
-<p>Some message might be being passed.</p>
-<p>3. The woman doesn't go out into the field. She stays at home - "safe". This reminds me of the concern for women's "uteruses" before the premiere of the first locomotive, which went at a dazzling, for the time, 60km/h. The news is <a href="https://www.mentalfloss.com/article/67806/early-trains-were-thought-make-womens-uteruses-fly-out" target="_blank" rel="noopener noreferrer">real</a>, from the time. Machismo persists, still, in the film.</p>
+<p>2. Did there need to be disgrace under this &quot;dream cover&quot;? &quot;Contaminated&quot; environment, &quot;inferior&quot; beings living in misery hunted as rebels? It seems so.</p>
+<p>Some message may be being passed.</p>
+<p>3. The woman doesn't go out into the field. Stays at home - &quot;safe&quot;. This reminds me of the concern with &quot;women's wombs&quot; before the premiere of the first locomotive, which was going at a dazzling, for the time, 60km/h. The news is <a href="https://www.mentalfloss.com/article/67806/early-trains-were-thought-make-womens-uteruses-fly-out" target="_blank" rel="noopener noreferrer">real</a>, from the time. Machismo persists, still, in the film.</p>
 <p>I'm still watching.</p>
-<p>From what I remember,</p>
+<p>From what I recall,</p>
 <p>4. Love saves everything. 5. They will live on the ground, with nature, with love.</p>
-<p>In this sense, the covering and the wife inside seem like an artificial relationship. Did the most "beautiful" covering need to be representing a bad relationship? Perhaps it needed to: compensate for the emptiness with a great work. Something along these lines.</p>
+<p>In this sense, the cover and the wife inside seem like an artificial relationship. Did the &quot;most beautiful&quot; cover need to represent a bad relationship? Perhaps it needed to: compensate for the emptiness with a great work. Something along these lines.</p>
 <p>It will be possible to go further.</p>
-<p>The company - giant - always deceives the "employees" by promising something a few weeks away. Then it repeats the cycle. It perpetuates a "nothing": its own destruction and contamination, the same one, not without irony, that builds the dream covering.</p>
-<p>I'm going to publish before I finish watching.</p>
+<p>The company - giant - always deceives the &quot;employees&quot; by promising something a few weeks from now. Then repeats the cycle. Perpetuates a &quot;nothing&quot;: its own destruction and contamination, the same, not without irony, that builds the dream cover.</p>
+<p>I'll publish before I finish watching.</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-2.jpg" alt="" /></figure>
 <p>6. The destroyed moon should not just be a supporting character. Long shot: if the moon represents love, love has been destroyed.</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-3.jpg" alt="" /></figure>
-<p>7. After the dreamlike kiss under the pool, his muse, like a mermaid, goes down. It is love calling "down from the covering: to the ground".</p>
-<p>8. The insistence on "are you and Jack an effective team?" is not a supporting character. A corporate mantra, it seems to be. Perhaps the question is to hide the real objective behind so many effective tasks, not to question the effectiveness per se. But the effectiveness seems a bit robotic. Per se.</p>
-<p>Upon arriving at his paradise hideaway on earth, with plants, crystal clear water, a friendly fish, a flannel shirt, Led Zeppelin on vinyl, and a basketball court, the phrase:</p>
-<p>9. "I'm going to miss this place". When the couple "finish the mission". This perhaps great message, will it be the greatest? I call it the paradox of total technology, something like that. When we really have nuclear fusion (our own sun, anywhere), master chemistry and biology, perhaps - I said perhaps - we will realize that we were only friends of the planet while it "was bigger than us". While it was a "uterus". If we don't need it - even if always with kindness and gratitude, even with longing - wouldn't we relegate it to the background as we do with piano and other old things? This confronts us with a very heavy question, which asks "if we really like nature?". The mosquito repellent is just a tip, the true answer, if it ever appears, is immense.</p>
-<p>10. "It would have been great", shortly after "I'm going to miss this place", questions technology. Alchemy. In fact, we could go back to before agriculture, when we were still quasi-mating because of how related we were to nature. "Before we bit the apple", experienced scientists note that the bitten apple would represent this split between man and life in nature (before surplus agriculture and current religions). "It would have been great" may also just represent fear of the new. Simple as that: real fear. A desire to return, before and instead of changing.</p>
-<p>11. "Our job is not to remember..." "Remember?". This sentence interestingly shows that you should only remember what is of interest. Not the more distant past. Perhaps: the brainwashing that being a businessman can bring: remember our mission and values (forget the rest).</p>
-<p>12. "I can't protect you", says the wife and co-worker when Jack goes down with his muse. The fear of escaping company rules, or a type of bureaucracy, without room for improvisation. Curiously, the button that disconnects and makes the mission "informal", "offline" is the only red button among all the white ones. In the Cold War, "bad" things were red (in American films, at least). Therefore "being online would be bad (red)". When turning off, the red light goes out. Informal with love, they go down.</p>
+<p>7. After the dreamlike kiss under the pool, his muse, like a mermaid, goes down. It's love calling &quot;down from the cover: to the ground&quot;.</p>
+<p>8. The insistence on &quot;are you and Jack an effective team?&quot; is not a supporting character. A corporate mantra, it seems to be. Perhaps the question is to hide the real objective behind so many effective tasks, not to question the effectiveness per se. But the effectiveness seems a bit robotic. Per se.</p>
+<p>Upon arriving at his paradise hideout on earth, with plants, crystal clear water, a friendly fish, a flannel shirt, Led Zeppelin on vinyl and a basketball court, the phrase:</p>
+<p>9. &quot;I'm going to miss this place.&quot; When the couple &quot;finish the mission&quot;. This perhaps great message, will it be the greatest? I call it the paradox of total technology, something like that. When we really have nuclear fusion (our own sun, anywhere), master chemistry and biology, maybe - I said maybe - we will realize that we were just little friends of the planet while it &quot;was bigger than us&quot;. While he was a &quot;womb&quot;. If we don't need it - even if always with kindness and gratitude, even with longing - wouldn't we relegate it to the background as we do with piano and other old things? This confronts us with a very heavy question, which asks &quot;if we really like nature?&quot;. Mosquito repellent is just a hint, the true answer, if it ever appears, is immense.</p>
+<p>10. &quot;It would have been great&quot;, shortly after &quot;I'm going to miss this place&quot;, questions technology. Alchemy. In fact, we could go back to before agriculture, when we were still quasi-mating because of how related we were to nature. &quot;Before we bit the apple&quot;, experienced scientists note that the bitten apple would represent this split between man and life in nature (before surplus agriculture and current religions). &quot;It would have been great&quot; may also just represent fear of the new. Simple as that: real fear. Desire to go back, before and instead of changing.</p>
+<p>11. &quot;Our job is not to remember...&quot; &quot;Remember?&quot;. This phrase interestingly shows that you should only remember what is of interest. Not the more distant past.. Perhaps: the brainwashing that managing can bring: remember our mission and values (forget the rest).</p>
+<p>12. &quot;I can't protect you&quot;, says the wife and colleague when Jack goes down with his muse. The fear of breaking company rules, or a type of bureaucracy, with no room for improvisation. Interestingly, the button that disconnects and makes the mission &quot;informal&quot;, &quot;offline&quot; is the only red button among all the white ones. In the cold war, &quot;bad&quot; things were red (in American films, at least). Therefore &quot;being online would be bad (red)&quot;. When turned off, the red light goes out. Informal with love, they go down.</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-4.jpg" alt="" /></figure>
-<p>13. The fear of "what's down there" is sincere. The wife in the penthouse genuinely shudders when Jack is "down there". Perhaps it would be like "good people" shuddering at what happens on the streets of the periphery, in a Brazil. But I forced this analogy.</p>
+<p>13. The fear of &quot;what's down there&quot; is sincere. The wife on the cover genuinely shivers when Jack is &quot;down there&quot;. Perhaps it would be like &quot;good people&quot; shivering at what happens in the streets of the suburbs, in a Brazil. But I forced this analogy.</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-5.jpg" alt="" /></figure>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-6.jpg" alt="" /></figure>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-7.jpg" alt="" /></figure>
-<p>14. Love pierces the brainwashing of large corporations. Jack remembers. Like neutrinos, like X-rays. Love pierces, unstoppable. It is the regurgitation of the bitten apple, I really dare to propose. Return to communion with nature. Abandon the corporation. Technology. Return to the womb from the point of view of DNA (but not so far to the bacterial soup, right? Until the wild age is fine).</p>
+<p>14. Love pierces brainwashing by large corporations. Jack remembers. Like neutrinos, like x-rays. Love pierces, unstoppable. It is the regurgitation of the bitten apple, I really dare to propose. Return to communion with nature. Abandon the corporation. The technology. Return to the womb from a DNA point of view (but not so far to the bacterial broth, right? Until the wild era is fine).</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-8.jpg" alt="" /></figure>
 <p>Wow:</p>
-<p>15. The technological wife - from the penthouse - cries when she sees Jack with his love-muse. Through the lens of the ship that will (was?) save Jack. "Save". What is "saving" begins to solidify. "Wow", because it would be interesting to explain the technological wife's cry, from the glass covering. What does she want? Instigating to think.</p>
+<p>15. The technological wife - from the cover - cries when she sees Jack with his love-muse. Through the lens of the ship that will (was?) save Jack. &quot;Save&quot;. What is &quot;saving&quot; begins to solidify. &quot;Wow&quot;, because it would be interesting to explain the technological wife's crying, from the glazed cover. What does she want? Intriguing to think.</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-9.jpg" alt="" /></figure>
-<p>16. Fighting against ourselves is, really, the great fight. The us of the exemplary employee glass covering, the us of love - which rediscovers the truth, which through love penetrates like a neutrino in corporate technological brainwashing. You and you. "Regurgitating" the bite of the apple, in the context of this film. Rediscover, instead of being expelled, from paradise. Drop technology. Effectiveness. Leave the glass pool above the clouds. Stop treating those below as contagious mosquitoes. In fact, as if they weren't human (but they are!).</p>
-<p>17. The wife from tower 52 (Jack was from tower 49) doesn't notice the difference between the Jacks. I'm going to force it: that's how we feel, a little, with automated treatments in email spams, by phone, by message. They try to call us by name, but they hardly know our essence. Guilty? Nobody.</p>
-<p>18. Jack invites the technological wife from the glass tower 52 down. She genuinely has a curiosity, but as in the best iso-9000 production, with guaranteed predictability, she rejects and feels uncomfortable with the subject. "It's against the rules". Her brainwashing was with very strong bleach - or there was no love neutrino. Go back to the room. "Safe".</p>
+<p>16. Fighting against ourselves is, really, the great fight. The we of the glazed cover, an exemplary employee, the we of love - who rediscovers the truth, who through love penetrates like a neutrino in the technological corporate brainwashing. You and you. &quot;Regurgitate&quot; the apple bite, in the context of this film. Rediscover, instead of being expelled, from paradise. Let go of technology. Effectiveness. Let go of the glass pool above the clouds. Stop treating those below as contagious mosquitoes. In fact, as if they weren't human (but they are!).</p>
+<p>17. The wife from tower 52 (Jack was from tower 49) doesn't notice the difference between the Jacks. I'm going to force it: that's how we feel, a little, with automated treatments in email spams, by telephone, by message. They try to call us by name, but they hardly know our essence. Guilty? No one.</p>
+<p>18. Jack invites the technological wife from the glass tower 52 down. She genuinely has a curiosity, but as in the best iso-9000 production, with guaranteed predictability, she rejects and feels uncomfortable with the subject. &quot;It's against the rules&quot;. Her brainwashing was with very strong bleach - or there was no neutrino of love. Go back to the room. &quot;Safe&quot;.</p>
 <p>Jack and his muse go to the lake house. Jack says it's just a copy of the real Jack. The muse says that Jack had promised a lake house. To get fat and old together.</p>
-<p>19. Love could also be considered a machine. Repetition machine: lake house, 70s vinyl, basketball, baseball. Who is more legitimate? Automation via-love, automation via technology. I don't know!</p>
-<p>20. Jack calms the machine. The human hunting drone. "Oooouuu" - as you would do with a horse. And the drone agitated by the crowd around it calms down. Jack fixes and understands the technology in depth. He is an engineer technician. But he didn't understand underlying intentions. The people on the ground understand.</p>
+<p>19. Love could also be considered a machine. Repeating machine: lake house, 70s vinyl, basketball, baseball. Who is more legitimate? Automation via love, automation via technology. I don't know!</p>
+<p>20. Jack calms the machine. The human-hunting drone. &quot;Oooouuu&quot; - as you would do with a horse. And the drone, agitated with the crowd around it, calms down. Jack fixes and deeply understands the technology. He is a technical engineer. But he didn't understand underlying intentions. The people on the ground understand.</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-10.jpg" alt="" /></figure>
-<p>21. The picture of the girl (hair like the muse, therefore, the muse) crawling towards the house cannot just be a supporting character. "Going home". To paradise. Regurgitating the bitten apple. Get out of technology, whose villain, not by coincidence, is called "tet" (almost "tec").</p>
+<p>21. The painting of the girl (hair the same as the muse, therefore, the muse) dragging herself towards the house cannot just be a supporting character. &quot;Go home&quot;. To paradise. Regurgitate the bitten apple. Get out of technology, whose villain, not by coincidence, is called &quot;tet&quot; (almost &quot;tec&quot;).</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-11.jpg" alt="" /></figure>
-<p>22. The kiss before the kamikaze-but-saving mission. The kiss. Saliva, feeling. Non-tinder, non-whatsapp. Dirty, sweaty. Non-technological, without a very clean glass. Could our "DNA" - itself, yes! - speak? Can it scream even without vocal cords? Does it sense its extinction? Its change via crispr-cas9. Its alteration. Video games, less and less sweat - even before tinkering with DNA. Cleanliness, distance. Nature turning into a zoo. Can our DNA understandably thrash around? "I don't want to die", it would scream, perhaps in the form of arts, since it acts without vocal cords? Note that even if it's true - the DNA screams - it doesn't mean, at least not automatically, that it's correct. There is more chance of it being a selfish self-preservation, that is, without thinking about the "next DNA" to which it would cede its existence. I went far, just ignore it.</p>
-<p>23. The recording of the original Jack's original mission. The "tet" (tec!) machine used the true head of the mission at the time to create a cloned head. With the same "good morning", "what a wonderful day", "is everything okay?" "Dear". We try to "take to the future" our best selves in: spams, virtual attendants, automated messages. "How are you, [your name]?". "Is everything okay?".</p>
+<p>22. The kiss before the kamikaze-but-saving mission. The kiss. Saliva, feeling. Non-tinder, non-whatsapp. Dirty, sweaty. Not technological, without crystal clear glass. Does our &quot;DNA&quot; - itself, yes! - speak? Can it scream even without vocal cords? Does it sense its extinction? Its change via crispr-cas9. Its alteration. Video games, less and less sweat - even before messing with DNA. Cleaning, distance. Nature turning into a zoo. Can our DNA understandably struggle? &quot;I don't want to die&quot;, it would scream, perhaps in the form of arts, since it acts without vocal cords? Note that even if it is true - the DNA screams - it does not mean, at least not automatically, that it is correct. There is a greater chance that it is a selfish self-preservation, that is, without thinking about the &quot;next DNA&quot; to which it would yield its existence. I went far, just ignore it.</p>
+<p>23. The recording of the original Jack's original mission. The machine &quot;tet&quot; (tec!) used the true head of the mission at the time to create a cloned head. With the same &quot;good morning&quot;, &quot;what a wonderful day&quot;, &quot;is everything okay?&quot; &quot;Dear&quot;. We try to &quot;take our best selves into the future&quot; in: spams, virtual attendants, automated messages. &quot;How are you, [your name]?&quot;. &quot;Is everything okay?&quot;.</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-12.jpg" alt="" /></figure>
-<p>23B. Tet (tec) is i-men-se. We are plush ants.</p>
+<p>23B. Tet (tec) is i-men-sa. We are plush ants.</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-13.jpg" alt="" /></figure>
-<p>24. Tet (tec!) clones humans like someone making sausage with pigs. Side by side, on an industrial scale. What does it mean?</p>
+<p>24. Tet (tec!) clones humans like making sausage with pigs. Side by side, on an industrial scale. What does it mean?</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-14.jpg" alt="" /></figure>
-<p>25. Tet, technology, has the essence - the look - red. Again, the Cold War giving a hint about the real moral of tet (tec).</p>
-<p>"What Horace said was:How can a man die better /Than facing adversity /For the ashes of his ancestors /And for the temples of his gods".</p>
+<p>25. Tet, the technology, has the essence - the look - red. Again, the cold war giving a hint about the real moral of tet (tec).</p>
+<p>&quot;What Horace said was: How can a man die better / Than facing adversity / For the ashes of his ancestors / And for the temples of his gods&quot;.</p>
 <p>26. If that's not our DNA trying to communicate, who is it? A hollywood director?</p>
-<p>"I created you Jack.I am your god",</p>
-<p>Tet, technology, responds. Jack doesn't even care.</p>
+<p>&quot;I created you Jack. I am your god&quot;,</p>
+<p>Tet, the technology, responds. Jack doesn't even care.</p>
 <p>Horace, at least in this film, speaks louder.</p>
-<p>Jack calls Tet (tec) Sally. Sally is known to be a technological model of the real Sally from the past. A video. Photoshopped to say other things, with the same face. Calling tet (tec) Sally, Jack doesn't hesitate to treat her like a spam, that is: drop a nuclear bomb in her heart.</p>
-<p>"If we have souls,They are made of the love we shareUndimmed by timeUnbound by death".[It doesn't end with time or death]</p>
-<p>"I am Jack HarperAnd I am Home".</p>
-<p>Says Jack 52, not 49. Can a clone - a spam - replace another?</p>
+<p>Jack calls Tet (tec) Sally. Sally is known to be a technological model of the real Sally from the past. A video. Photoshopped to say other things, with the same face. Calling tet (tec) Sally, Jack doesn't hesitate to treat her like a spam, that is: throw a nuclear bomb into her heart.</p>
+<p>&quot;If we have souls, They are made of the love we share Undimmed by time Unbound by death&quot;. [It doesn't end with time or death]</p>
+<p>&quot;I'm Jack Harper And I'm Home&quot;.</p>
+<p>Says Jack 52, not 49. Can one clone - one spam - replace another?</p>
 <p>Son of tet (tec), let's say. Very-well-cloned, what changes?</p>
 <p>The clone in paradise with the muse. Clone and muse. Love, ancestry.</p>
 <p>I know nothing.</p>
