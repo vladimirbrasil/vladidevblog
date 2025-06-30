@@ -82,6 +82,31 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .article-image-container img { width: 100%; height: 100%; object-fit: cover; }
 /* === END OF INDEX PAGE STYLES === */
 
+/* === NOVO: ESTILOS PARA AS BANDEIRAS DE IDIOMA === */
+.language-flags {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.language-flags a {
+  display: inline-block;
+  line-height: 0; /* Remove espaço extra abaixo da imagem */
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.language-flags a:hover {
+  opacity: 0.85;
+  transform: scale(1.1);
+}
+.language-flags img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Garante que a imagem cubra o círculo */
+  display: block; /* Remove espaço extra */
+}
+/* === FIM DOS NOVOS ESTILOS === */
+
 @media (max-width: 768px) {
   /* THIS IS THE FIX: We change the header to a stacking column layout */
   .header-content {
@@ -274,28 +299,27 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <body>
   <header class="header">
      <div class="header-content">
-        <a href="/index.html" class="logo">Vladimir Dietrich</a>
-        <nav class="nav-links">
+       <a href="/index.html" class="logo">Vladimir Dietrich</a>
+       <nav class="nav-links">
+ 
+        <div class="language-flags"><a href="/index.html" title="Português"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjMwIj48cGF0aCBmaWxsPSIjMDBhNjVjIiBkPSJNMCAwaDkwMHY2MzBIMHoiLz48cGF0aCBmaWxsPSIjZmZkMTAwIiBkPSJNODEgMzE1IDQ1MCAzMy43NSA4MTkgMzE1IDQ1MCA1OTYuMjV6Ii8+PGNpcmNsZSBjeD0iNDUwIiBjeT0iMzE1IiByPSIxMjUiIGZpbGw9IiMwMDM4OWMiLz48L3N2Zz4=" alt="Português"></a><a href="/en/index.html" title="English"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNDUwIj48cGF0aCBmaWxsPSIjYjI0MzA4IiBkPSJNMCAwaDc1MHY0NTBIMHoiLz48cGF0aCBkPSJNMCAwYzI1MCAxNTAgNTAwIDMwMCA3NTAgNDUwWm03NTAtNDUwQzUwMCAxNTAgMjUwIDMwMCAwIDQ1MFoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwMjQ3ZCIgc3Ryb2tlLXdpZHRoPSIzMCIvPjxwYXRoIGQ9Ik0zNzUgMHY0NTBaTTAtMjI1YzcyNSAwIDcyNSAwIDc1MCAwWiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjUwIi8+PHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0iTTAgMGwzNzUgMjI1Wm0wIDQ1MEwzNzUgMjI1Wm0zNzUgMGwtMzc1LTIyNVptMzc1LTQ1MEwzNzUgMjI1WiIvPjwvc3ZnPg==" alt="English"></a><a href="/es/index.html" title="Español"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNTAwIj48cGF0aCBmaWxsPSIjYzYwYjFiIiBkPSJNMCAwaDc1MHY1MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZkZDAwIiBkPSJNMCAxMjVoNzUwdjI1MEgwWiIvPjwvc3ZnPg==" alt="Español"></a><a href="/fr/index.html" title="Français"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj48cGF0aCBmaWxsPSIjZWQyOTM5IiBkPSJNMCAwaDkwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDYwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJNMCAwaDMwMHY2MDBIMHoiLz48L3N2Zz4=" alt="Français"></a><a href="/de/index.html" title="Deutsch"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDgwIj48cGF0aCBkPSJNMCAwaDgwMHY0ODBIMHoiLz48cGF0aCBmaWxsPSIjZDAwIiBkPSJNMCAxNjBoODAwdjMyMEgwWiIvPjxwYXRoIGZpbGw9IiNmZjllMDAiIGQ9Ik0wIDMyMGg4MDB2MTYwSDBaIi8+PC9zdmc+" alt="Deutsch"></a></div>
 
-
-          <div class="search-widget-wrapper">
-            <button id="search-icon-btn" class="search-toggle-icon">
-              <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="rgba(117, 117, 117, 1)" fill-rule="evenodd" d="M4.092 11.06a6.95 6.95 0 1 1 13.9 0 6.95 6.95 0 0 1-13.9 0m6.95-8.05a8.05 8.05 0 1 0 5.13 14.26l3.75 3.75a.56.56 0 1 0 .79-.79l-3.73-3.73A8.05 8.05 0 0 0 11.042 3z" clip-rule="evenodd"></path></svg>
-            </button>
-
-            <div id="searchbox-container">
-              <button id="search-close-btn" class="search-toggle-icon">
-                <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="rgba(117, 117, 117, 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75l-10.5 10.5M6.75 6.75l10.5 10.5"></path></svg>
-              </button>
-            </div>
-          </div>
-
-
-          <a href="/index.html">Blog</a>
-          <a href="https://vladi.dev" target="_blank">Portfolio</a>
-        </nav>
-      </div>
-  </header>
+         <div class="search-widget-wrapper">
+           <button id="search-icon-btn" class="search-toggle-icon">
+             <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="rgba(117, 117, 117, 1)" fill-rule="evenodd" d="M4.092 11.06a6.95 6.95 0 1 1 13.9 0 6.95 6.95 0 0 1-13.9 0m6.95-8.05a8.05 8.05 0 1 0 5.13 14.26l3.75 3.75a.56.56 0 1 0 .79-.79l-3.73-3.73A8.05 8.05 0 0 0 11.042 3z" clip-rule="evenodd"></path></svg>
+           </button>
+ 
+           <div id="searchbox-container">
+             <button id="search-close-btn" class="search-toggle-icon">
+               <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="rgba(117, 117, 117, 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75l-10.5 10.5M6.75 6.75l10.5 10.5"></path></svg>
+             </button>
+           </div>
+         </div>
+ 
+         <a href="https://vladi.dev" target="_blank">Portfolio</a>
+         </nav>
+     </div>
+   </header>
 
   <main class="container">
     <div id="hits-container" style="display: none;">
