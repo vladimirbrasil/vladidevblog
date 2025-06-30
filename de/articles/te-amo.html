@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>❤️ Ich liebe Dich - Vladimir Dietrich's Blog</title>
+  <title>❤️ Ich liebe dich - Vladimir Dietrich's Blog</title>
   <meta name="description" content=" ">
   <meta name="author" content="Vladimir Dietrich">
-  <meta property="og:title" content="❤️ Ich liebe Dich - Vladimir Dietrich's Blog">
+  <meta property="og:title" content="❤️ Ich liebe dich - Vladimir Dietrich's Blog">
   <meta property="og:description" content=" ">
   <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg">
   <meta property="og:type" content="article">
@@ -18,14 +18,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
 .header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
-.nav-links { display: flex; gap: 32px; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
 .nav-links a:hover { color: rgba(41, 41, 41, 1); }
 .container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
 .article-list { padding: 48px 0; }
 .article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
 .article-item a { text-decoration: none; }
-.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
 .article-item:last-child { border-bottom: none; }
 .article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
 .article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
@@ -65,8 +68,156 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .language-switcher span { margin: 0 8px; }
 ::selection { background-color: rgba(26, 137, 23, 0.1); }
 ::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
-@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
-@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  .search-active .logo,
+  .search-active .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
 </style>
 </head>
 <body>
@@ -90,7 +241,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <a href="/de/index.html" class="back-button">← Back to all articles</a>
 
         <div class="article-header">
-          <h1>❤️ Ich liebe Dich</h1>
+          <h1>❤️ Ich liebe dich</h1>
           <div class="meta">
             <span class="author-name">Vladimir Dietrich</span>
             <span>·</span>
@@ -108,78 +259,78 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="article-content">
           <p> </p>
 <p></p>
-<p>Künstliche Intelligenz ersetzt nicht die Hingabe.</p>
-<p>Im Gegenteil: KI eliminiert die Hingabe.</p>
+<p>Künstliche Intelligenz ersetzt nicht Hingabe.</p>
+<p>Im Gegenteil: KI eliminiert Hingabe.</p>
 <p>Das einfachste Beispiel ist, mit einem Klick einen dichten Bericht in ein wunderschönes Diagramm zu verwandeln.</p>
-<p>Ich schlage vor, dass wir - oft? Selten? - manchmal wollen wir das schöne Diagramm nicht.</p>
-<p>Manchmal tröstet es uns zu wissen, dass uns jemand einen Großteil seiner Zeit geschenkt hat, um (bevor die KI es mit einem Klick konnte) ein wunderschönes Diagramm zu erstellen.</p>
-<p>Wenn dies der Fall ist, wird das schöne Diagramm von einem Gefühl der Leere begleitet sein.</p>
+<p>Ich schlage vor, dass wir – oft? Selten? – manchmal das wunderschöne Diagramm nicht wollen.</p>
+<p>Manchmal tröstet es uns zu wissen, dass uns jemand einen Großteil seiner Zeit geschenkt hat, um (bevor KI es mit einem Klick tun konnte) ein wunderschönes Diagramm zu erstellen.</p>
+<p>Wenn dies der Fall ist, wird das wunderschöne Diagramm von einem Gefühl der Leere begleitet.</p>
 <p>Klar: Wir wollten nicht die endgültige Lösung, wir wollten die Hingabe.</p>
 <p>Welche Hingabe ist das?</p>
 <p>Es ist der Schoß. Es ist der Glaube, dass wir geliebt werden. Dass sich jemand kümmert. Dass sie sich für uns ins Zeug gelegt haben.</p>
-<p>Wenn dies das Bedürfnis ist, beseitigt das Gefühl, dass das schöne Diagramm mit nur einem Augenzwinkern erstellt wurde, den Nutzen.</p>
-<p>Das mag großer Unsinn sein. Vielleicht wollen wir Effizienz. Das Endprodukt. Das schöne Diagramm, das Video, die Präsentation, die Rakete, alles von KIs und Robotern mit einem Klick erledigt.</p>
-<p>Aber darf ich Sie bitten, einfach anzunehmen, dass meine Argumentation richtig sein könnte? Nur um etwas zu testen. Danke!</p>
+<p>Wenn dies das Bedürfnis ist, eliminiert das Gefühl, dass das wunderschöne Diagramm mit nur einem Augenzwinkern erstellt wurde, den Nutzen.</p>
+<p>Das mag großer Unsinn sein. Vielleicht wollen wir Effizienz. Das Endprodukt. Das wunderschöne Diagramm, das Video, die Präsentation, die Rakete, alles von KIs und Robotern mit einem Klick erledigt.</p>
+<p>Aber kann ich Sie bitten, einfach anzunehmen, dass meine Überlegung richtig sein könnte? Nur um etwas zu testen. Danke!</p>
 <p>Angenommen, wir wollen Hingabe und Aufmerksamkeit, was liefert uns die Welt der KIs und Roboter?</p>
-<p>Das ist der springende Punkt: Die Welt der KIs und Roboter liefert uns nicht-menschliche Hingabe. Menschen werden sich nicht mehr dafür einsetzen, Dinge zu tun, die KIs und Roboter können und können werden, eine Liste, die nur wächst.</p>
-<p>Wir haben unsere Grundbedürfnisse wie Essen und Schlafen. Für diese Art von Dingen ist Effizienz eine Freude.</p>
-<p>Traktoren, die mit GPS Kartoffeln pflanzen, ernten, autonome Lastwagen, die sie zu Verteilzentren bringen, Drohnen und Autos, die sie für alle verfügbar machen. Ein Roboter zu Hause, der voraussieht, was im Kühlschrank fehlt, und es im nächstgelegenen Verteilzentrum abholt. Effektiv.</p>
-<p>Der letzte Teil: Die Mutter - oder der Ehemann, Cousin, Freundin - die liebevoll Kartoffeln mit etwas Liebe und anderen Gerichten kocht, passt in meine Argumentation über die Hingabe. Kochen ist eine Gelegenheit für liebevolle Hingabe.</p>
-<p>Was passiert, wenn der Roboter nicht nur zum Minimarkt geht, um Kartoffeln zu holen, sondern auch kocht? Und uns bedient. Verlieren wir die (Hingabe der) Mutter? Verlieren wir den (Wert des) Ehemanns? Des Cousins? Der Freundin?</p>
-<p>Klar, wir können uns immer all dem widmen, was die KI nicht tut.</p>
-<p>Obwohl diese Liste von Dingen, die die KI nicht tut, immer kleiner wird.</p>
-<p>Um etwas zu tun, das unsere Bemühungen und unsere Liebe zeigt, können wir absichtlich weder KI noch Roboter verwenden.</p>
+<p>Das ist der springende Punkt: Die Welt der KIs und Roboter liefert uns keine menschliche Hingabe. Menschen werden sich nicht mehr dafür einsetzen, Dinge zu tun, die KIs und Roboter tun können und werden, eine Liste, die immer länger wird.</p>
+<p>Wir haben unsere Grundbedürfnisse, wie Essen und Schlafen. Für diese Art von Dingen ist Effizienz eine Freude.</p>
+<p>Traktoren, die mit GPS Kartoffeln pflanzen, ernten, autonome Lastwagen, die sie zu Verteilzentren bringen, Drohnen und Autos, die sie für alle verfügbar machen. Ein Roboter zu Hause, der vorherahnt, was im Kühlschrank fehlt, und es im nächstgelegenen Verteilzentrum abholt. Wirksam.</p>
+<p>Der letzte Teil: die Mutter – oder der Ehemann, Cousin, Freundin –, die liebevoll Kartoffeln mit etwas Liebe und anderen Gerichten zubereitet, passt in meine Überlegung zur Hingabe. Kochen ist eine Gelegenheit für liebevolle Hingabe.</p>
+<p>Was passiert, außer zum Markt zu gehen, um Kartoffeln zu holen, wenn der Roboter auch kocht? Und uns bedient. Werden wir die (Hingabe der) Mutter verlieren? Werden wir den (Wert des) Ehemanns verlieren? Den Cousin? Die Freundin?</p>
+<p>Natürlich können wir uns immer all dem widmen, was die KI nicht tut.</p>
+<p>Obwohl diese Liste der Dinge, die die KI nicht tut, immer kleiner wird.</p>
+<p>Um etwas zu tun, das unsere Anstrengung und unsere Liebe zeigt, können wir absichtlich weder KI noch Roboter einsetzen.</p>
 <p>Aber ist es nicht ein bisschen erbärmlich, etwas von Hand zu machen, nur um ein Gefühl zu zeigen?</p>
-<p>Die Absicht ist überhaupt nicht erbärmlich: Ein Gefühl zu zeigen ist etwas Gutes.</p>
-<p>Erbärmlich ist es, auf Knien zum Markt zu gehen, um Mühe zu zeigen, wenn man ein Auto hat, wenn man ein Auto hat, das selbst fährt, wenn man einen Roboter hat, der für einen zum Markt geht.</p>
-<p>So können KI und kleine Roboter unsere Fähigkeit, Liebe durch Hingabe und Mühe zu zeigen, immer weiter einschränken.</p>
+<p>Die Absicht ist überhaupt nicht erbärmlich: Ein Gefühl zu zeigen ist das Beste überhaupt.</p>
+<p>Erbärmlich ist es, auf Knien zum Markt zu gehen, um Anstrengung zu zeigen, wenn man ein Auto hat, wenn man ein Auto hat, das von selbst fährt, wenn man einen Roboter hat, der für einen zum Markt geht.</p>
+<p>So können KI und Roboter unsere Fähigkeit einschränken, Liebe durch Hingabe, durch Anstrengung zu zeigen.</p>
 <p>Können wir Liebe auf andere Weise zeigen?</p>
-<p>Früher, als wir jagen, uns schützen, fliehen mussten, konnten vielleicht zu viele Aufgaben die Demonstration von Liebe behindern. Ich weiß es nicht.</p>
-<p>Aber auch zu viele Nicht-Aufgaben können die Liebe hemmen, indem sie die Hingabe hemmen.</p>
+<p>Früher, als wir jagen, uns schützen, fliehen mussten, konnte vielleicht die Fülle an Aufgaben die Demonstration von Liebe behindern. Ich weiß es nicht.</p>
+<p>Aber auch die Fülle an Nicht-Aufgaben kann die Liebe hemmen, indem sie die Hingabe hemmt.</p>
 <h2>Der selbstlose Roboter</h2>
-<p>Die Logik erlaubt es, zu riskieren, dass, wenn wir Hingabe bewundern und Hingabe in Robotern und KIs stattfindet, raten Sie mal? Wir könnten - logischerweise - uns in Roboter verlieben. Oder in KIs.</p>
+<p>Die Logik erlaubt es, zu riskieren, dass wir uns – logisch betrachtet – in Roboter verlieben könnten, wenn wir Hingabe bewundern und Hingabe in Robotern und KIs stattfindet. Oder in KIs.</p>
 <p>Ich helfe Ihnen, die Hypothese zu fühlen.</p>
-<p>Stellen Sie sich diesen selbstlosen Roboter vor, der unermüdlich für Sie oder Ihre Familie arbeitet. Er zögert nicht. Er macht keine halben Sachen. Er ist unterwürfig. Er antizipiert, was im Kühlschrank fehlt. Er geht zum Markt. Er bringt alles. Er bereitet Dinge in guten Momenten vor. Er wischt Staub. Er putzt.</p>
-<p>Helfen Sie mir, mir nicht den Roboter aus Terminator vorzustellen. Im Gegenteil, einen Roboter, der sich über Jahrzehnte hinweg engagiert.</p>
-<p>Fertig: Diese Hingabe kann leicht Aufruhr verursachen. Besonders nach einer längeren Zeit.</p>
-<p>Wenn es von Geburt an beginnt und alles für ein Baby und dann ein Kind tut, wie wird ein Säugetier so viel Hingabe betrachten, selbst wenn sie vom Roboter kommt, nicht so sehr von der menschlichen Mutter? Er kann sogar eine Babyflasche mit einem Sauger geben, der die Brust der Mutter simuliert, eine stärkere Saugkraft erfordert und dem Baby dieses Vergnügen der oralen Phase gibt.</p>
-<p>Von Anfang an kann es noch mehr Einfluss auf die Erinnerungen, die affektiven Erinnerungen, die impliziten Erinnerungen vor dem ersten Lebensjahr, das Gefühl von Schutz, dass jemand immer da ist, um zu unterstützen, haben. Auch wenn es der Roboter ist. Die KI.</p>
+<p>Stellen Sie sich diesen selbstlosen Roboter vor, der unermüdlich für Sie oder Ihre Familie arbeitet. Er zögert nicht. Er faulenzt nicht. Er ist unterwürfig. Er ahnt, was im Kühlschrank fehlt. Er geht zum Markt. Er bringt alles mit. Er bereitet Dinge zu guten Zeiten vor. Er fegt Staub. Er putzt.</p>
+<p>Helfen Sie mir, mir nicht den Roboter aus Terminator vorzustellen. Im Gegenteil, ein Roboter, der sich seit Jahrzehnten engagiert.</p>
+<p>Fertig: Diese Hingabe kann leicht Aufruhr verursachen. Vor allem nach einer längeren Zeit.</p>
+<p>Wenn es von Geburt an beginnt und alles für ein Baby und dann für ein Kind tut, wie wird ein Säugetier so viel Hingabe betrachten, selbst wenn sie vom Roboter kommt, nicht so sehr von der menschlichen Mutter? Es kann sogar eine Flasche mit einem Sauger geben, der die Brust der Mutter simuliert, eine stärkere Saugkraft erfordert und das großartige Vergnügen der oralen Phase des Babys vermittelt.</p>
+<p>Schon früh kann es noch mehr Auswirkungen auf die Erinnerungen, die affektiven Erinnerungen, die impliziten Erinnerungen vor dem ersten Lebensjahr, das Gefühl des Schutzes, dass jemand immer da ist, um zu unterstützen, haben. Auch wenn es der Roboter ist. Die KI.</p>
 <h2>Hunderttausend Hingaben</h2>
 <p>Bis zu welchem Punkt ist &quot;die Mutter&quot; (Vater, wer auch immer) eine Summe von hunderttausend Hingaben in etwa 30 Lebensjahren?</p>
-<p>Wenn die Mutter hunderttausend mehr oder weniger entscheidende Hingaben in jeder Lebensphase ist - die normalerweise mit sporadischen Besuchen mit den bereits viel älteren Kindern enden -, dann können wir diese hunderttausend Hingaben durch Stahl und Kabel ersetzen. Durch Roboter. Nicht wahr?</p>
-<p>Da die häuslichen Annehmlichkeiten keine Revolution sind, die von der KI und ihren Robotern ausgelöst wurde, könnten wir vorschlagen, dass diese Ersetzung von Hingaben bereits seit der Erfindung der Waschmaschine im letzten Jahrhundert oder seit der Entdeckung des Feuers stattfindet.</p>
-<p>Wenn die Mutter nach der Waschmaschine - und nach der Fritteuse, dem Elektroherd, dem Flaschenwärmer, dem Geschirrspüler, dem elektrischen Schnellkochtopf, der von selbst stoppt, dem Allzweckreiniger (usw.) - sich bereits das Vergnügen gönnen kann, sich weniger zu widmen, angefangen damit, weniger Kleidung zu schrubben und weniger zum nächsten Fluss zu laufen, dann könnten wir bereits in den letzten hundert Jahren die Hingabe (die Mutter zusammen?) des Menschen verlieren. Oder schon vorher.</p>
-<p>In diesem gefährlichen Terrain riskieren wir zu denken, dass, wenn Roboter von Geburt an alles für uns tun, wir riskieren können zu denken, dass die Mutter, der Vater, dieses säugetierartige Ding, zusammen mit der Nicht-(Notwendigkeit der) Hingabe verschwindet.</p>
-<p>Immer mehr kann sich jeder von uns nicht widmen. Weder Vater, noch Mutter, noch Kind.</p>
-<p>Ohne die Hingabe kann die Mutter von damals, heute, im Jahrhundert vor KI und Robotern, als eine Diktatur des Menschen in Erinnerung bleiben, der uns töten konnte, wenn er sich uns nicht widmete (und der es dann schwer haben würde, ein wenig Dankbarkeit zu verlangen).</p>
-<p>Wenn die Hingabe das Konzept der Mutter (Vater, älterer Bruder, Großvater usw.) hauptsächlich definiert, dann schauen Sie, welches Risiko wir eingehen: Die Hingabe scheint mit KIs und Robotern zu verschwinden.</p>
-<p>Wenn es die warme Brust ist, die die Mutter definiert, sind &quot;Brust&quot; und &quot;Wärme&quot; durch KIs und Roboter reproduzierbar. Ich habe bereits die Fähigkeit des Saugers erwähnt, die notwendige Saugkraft der mütterlichen Brust zu reproduzieren und so das wichtige orale Vergnügen für das Baby zu erhalten.</p>
-<p>Und Schutz? Ist &quot;Mutter&quot; &quot;Schutz&quot;? Schutz ist eine Art Hingabe, nicht wahr? KIs und Roboter können sich der Aufgabe widmen, dieses Gefühl von null Minuten Leben an zu nähren.</p>
+<p>Wenn die Mutter hunderttausend mehr oder weniger entscheidende Hingaben in jeder Lebensphase ist – die üblicherweise mit sporadischen Besuchen mit den bereits viel erwachseneren Kindern endet –, dann können wir diese hunderttausend Hingaben durch Stahl und Kabel ersetzen. Durch Roboter. Nicht wahr?</p>
+<p>Da die Annehmlichkeiten des Hauses keine Revolution sind, die von der KI und ihren Robotern initiiert wurde, könnten wir vorschlagen, dass dieser Ersatz von Hingaben bereits seit der Erfindung der Waschmaschine im letzten Jahrhundert oder seit der Entdeckung des Feuers stattfindet.</p>
+<p>Wenn die Mutter nach der Waschmaschine – und nach dem Airfryer, dem Elektroherd, dem Flaschenwärmer, dem Geschirrspüler, dem elektrischen Schnellkochtopf, der von selbst stoppt, dem Allzweckbleichmittel (usw.) – bereits das Vergnügen hat, sich weniger zu engagieren, angefangen mit weniger Wäsche waschen und weniger zum nächsten Fluss laufen, dann könnten wir bereits in den letzten hundert Jahren die menschliche Hingabe (die Mutter zusammen?) verlieren. Oder schon vorher.</p>
+<p>Auf diesem gefährlichen Terrain riskieren wir zu denken, dass wir riskieren können zu denken, dass die Mutter, der Vater, dieses Säugetierding, zusammen mit der Nicht-(Notwendigkeit-)Hingabe verschwindet, wenn Roboter von Geburt an alles für uns tun.</p>
+<p>Immer mehr von uns kann sich nicht engagieren. Weder Vater, noch Mutter, noch Kind.</p>
+<p>Ohne die Hingabe kann die Mutter von damals, im Jahrhundert vor KI und Robotern, heute als eine Diktatur des Menschen in Erinnerung bleiben, der uns töten konnte, wenn er sich uns nicht widmete (und der es danach schwer haben würde, nicht ein wenig Dankbarkeit zu fordern).</p>
+<p>Wenn die Hingabe hauptsächlich das Konzept der Mutter (Vater, älterer Bruder, Großvater usw.) definiert, dann sehen Sie das Risiko, das wir eingehen: Die Hingabe scheint mit KIs und Robotern zu verschwinden.</p>
+<p>Wenn es die warme Brust ist, die die Mutter definiert, sind &quot;Brust&quot; und &quot;Wärme&quot; durch KIs und Roboter reproduzierbar. Ich habe bereits die Fähigkeit des Flaschensaugers erwähnt, die notwendige Saugkraft der mütterlichen Brust zu reproduzieren und so das wichtige orale Vergnügen für das Baby aufrechtzuerhalten.</p>
+<p>Und Schutz? Ist &quot;Mutter&quot; &quot;Schutz&quot;? Schutz ist eine Art von Hingabe, nicht wahr? KIs und Roboter können sich der Pflege dieses Gefühls von null Lebensminuten an widmen.</p>
 <h2>Die Vergangenheit erdrückt die Zukunft</h2>
-<p>Viel menschliche Hingabe erschafft Roboter. Roboter, die als ewige Kapseln der Hingabe dienen. Diese ewigen Kapseln der Hingabe nehmen den Müttern, den heutigen und zukünftigen Menschen die Möglichkeit, sich so sehr zu widmen wie vor der Erfindung dieser Roboter und KIs.</p>
-<p>Denken Sie daran, dass KIs und Roboter selbst mehr KIs und mehr Roboter produzieren können, so dass immer weniger Raum für den Menschen der Zukunft bleibt, sich etwas zu widmen, wie wir es heute tun und in den vergangenen Jahrhunderten getan haben.</p>
-<p>Immer mehr werden wir nur die menschliche Hingabe in der Vergangenheit feiern müssen.</p>
-<p>Wenn Liebe, Mutter, der Menge an Hingabe entspricht und wenn sie speziell der menschlichen Hingabe entspricht (ich stimme nicht zu, dass sie menschlich sein muss, ich spüre es, aber wir wollen es vorschlagen), dann können wir anfangen, &quot;Mütter&quot; und &quot;Lieben&quot; der Vergangenheit - die menschlichen Hingaben der Vergangenheit - mit den Müttern, den Lieben der Zukunft konkurrieren zu sehen.</p>
-<p>Ich habe bereits darüber geschrieben, wie schwierig es für einen Lehrer, zum Beispiel für Physik oder Geschichte, ist, mit Tausenden von YouTube-Videos zu konkurrieren, die von Genies der Physik oder Geschichte auf ihrem Höhepunkt in der Gegenwart und in der Vergangenheit erstellt wurden.</p>
-<p>Wir werden vom Talent der Menschheit der Vergangenheit erdrückt, das aufgenommen und für immer verfügbar ist.</p>
+<p>Viel menschliche Hingabe erschafft Roboter. Roboter, die als ewige Kapseln der Hingabe dienen. Diese ewigen Kapseln der Hingabe nehmen den Müttern, den heutigen und zukünftigen Menschen, die Möglichkeit, sich so sehr zu engagieren wie vor der Erfindung dieser Roboter und KIs.</p>
+<p>In Anbetracht der Tatsache, dass KIs und Roboter selbst mehr KIs und mehr Roboter produzieren können, bleibt immer weniger Raum für den Menschen der Zukunft, sich etwas zu widmen, so wie wir es heute und in den vergangenen Jahrhunderten getan haben.</p>
+<p>Immer mehr werden wir nur noch die menschliche Hingabe in der Vergangenheit feiern müssen.</p>
+<p>Wenn Liebe, Mutter der Menge an Hingabe entspricht und wenn sie speziell der menschlichen Hingabe entspricht (ich stimme nicht zu, dass sie menschlich sein muss, ich fühle es, aber lasst uns vorschlagen), dann könnten wir anfangen, &quot;Mütter&quot; und &quot;Lieben&quot; der Vergangenheit – die menschlichen Hingaben der Vergangenheit – mit den Müttern, den Lieben der Zukunft konkurrieren zu sehen.</p>
+<p>Ich habe bereits darüber geschrieben, wie schwierig es für einen Lehrer, zum Beispiel für Physik oder Geschichte, ist, mit Tausenden von YouTube-Videos zu konkurrieren, die von Genies der Physik oder Geschichte auf ihrem Höhepunkt, in der Gegenwart und in der Vergangenheit, erstellt wurden.</p>
+<p>Am Ende werden wir vom Talent der Menschheit der Vergangenheit erdrückt, die aufgezeichnet und für immer verfügbar ist.</p>
 <p>Aber das war auf YouTube-Videos beschränkt. Unterricht. Filme.</p>
-<p>Selbst ein Athlet könnte immer einen Rekord aus der Vergangenheit mit gewisser Leichtigkeit brechen.</p>
-<p>Mütter waren also völlig geschützt: Ihre Hingabe war für jedes Kind, für jede Generation notwendig. Es gäbe kein Video, das die Liebe einer echten Mutter ersetzen könnte, die sich um ein echtes Kind kümmert.</p>
-<p>Jetzt wende ich zum ersten Mal die Argumentation des Lehrers auf die Mütter an. Auf die Lieben. Auf die menschliche Hingabe.</p>
+<p>Selbst ein Sportler konnte immer mit Leichtigkeit einen Rekord der Vergangenheit brechen.</p>
+<p>Mütter waren also völlig geschützt: Ihre Hingabe war für jedes Kind, für jede Generation notwendig. Es würde kein Video geben, das die Liebe einer echten Mutter ersetzt, die sich um ein echtes Kind kümmert.</p>
+<p>Jetzt wende ich zum ersten Mal die Denkweise des Lehrers auf die Mütter an. Auf die Lieben. Auf die menschliche Hingabe.</p>
 <p>Der Roboter kapselt Hingabe ein.</p>
-<p>Auf die gleiche Weise, wie YouTube-Videos die besten Unterrichtsstunden und Filme einkapseln.</p>
+<p>Auf die gleiche Weise wie YouTube-Videos die besten Lektionen und Filme einkapseln.</p>
 <p>Super-engagierte Menschen programmieren heute KIs und bauen immer engagiertere Roboter. Sie kapseln Hingabe für die Zukunft ein.</p>
-<p>Diese immer engagierteren Roboter, wie immer bessere YouTube-Videos, machen die Mütter der Zukunft immer weniger notwendig, zumindest in Bezug auf die notwendige Hingabe.</p>
-<p>Wird diese weniger Hingabe seitens der Mutter fehlen, die zunehmend durch Roboter und KIs ersetzt wird?</p>
+<p>Diese immer engagierteren Roboter machen, wie immer bessere YouTube-Videos, die Mütter der Zukunft immer weniger notwendig, zumindest in Bezug auf die notwendige Hingabe.</p>
+<p>Wird diese fehlende Hingabe seitens der Mutter fehlen, die zunehmend durch Roboter und KIs ersetzt wird?</p>
 <p>Dies ist die Frage, die einer Essenz nahe zu sein scheint.</p>
-<p>Verschwindet die Mutter, wenn Roboter alles tun?</p>
-<p>Wir können es bereits spüren, denn Schnellkochtöpfe, die sich von selbst ausschalten, und automatische Waschmaschinen sind bereits Teilroboter. Nehmen diese Teilroboter das Gefühl der engagierten Mutter in der Gegenwart? Oder beeinflussen sie nicht das Gefühl der engagierten Mutter? Oder werden wir es erst wissen, wenn kleine Roboter alles tun?</p>
-<p>Verschwindet die Liebe, wenn Roboter alles tun?</p>
-<p>Ist Liebe Hingabe? Was ist das?</p>
-<p>Wenn ein Roboter von Ihrem Kühlschrank benachrichtigt wird, dass Brokkoli fehlt, und der Sensor (in mir?) oder ein Kalender mit meinen bevorzugten Daten den Brokkoli-Tag oder den Tag des Picanha mit Knoblauch, Reis und Pommes signalisiert, und der Roboter alles holt und zubereitet und Sie diesen köstlichen Geruch aus der Küche kommen spüren, werden wir den Menschen feiern, der dieses Technologie-Puzzle leidenschaftlich gelöst hat, oder werden wir eine mögliche Mutter auf dem Sofa feiern, ohne sich erinnern, kaufen oder kochen zu müssen?</p>
-<p>Wessen Hingabe werden wir feiern? Die des Roboters? Die der Mutter auf dem Sofa? Die der menschlichen &quot;Mütter&quot; der Vergangenheit, die die ersten Roboter und KIs erfunden haben?</p>
-<p>Wenn menschliche Hingabe ein Synonym für Liebe, für Mutter ist, dann werden aktuelle und zukünftige Mütter und Lieben die Konkurrenz des Personals, des Menschen, erhalten, dem es gelungen ist, die Fähigkeit zur Hingabe in Technologien einzukapseln, die heute oder morgen diese Ihre heutige oder morgige Mutter oder diese Ihre heutige und morgige Liebe fast keine Geste machen, praktisch stillstehen lassen.</p>
-<p>Wenn die selbstlose Hingabe eines Roboters als Liebe, als eine Mutter behandelt werden kann, dann kann er dem Geruch des Knoblauchs folgen, der auf dem Picanha zu bräunen beginnt, und kann dorthin gehen, um ihn, den Roboter, zu umarmen. Er wird - logischerweise - die Bedeutung der Umarmung verstehen. &quot;Vielen Dank!&quot;</p>
+<p>Addiert sich die Mutter, wenn Roboter alles tun?</p>
+<p>Wir können es bereits spüren, denn Schnellkochtöpfe, die sich selbst ausschalten, und automatische Waschmaschinen sind bereits teilweise Roboter. Nehmen diese teilweisen Roboter der engagierten Mutter in der Gegenwart das Gefühl? Oder beeinträchtigen sie nicht das Gefühl der engagierten Mutter? Oder werden wir es erst wissen, wenn Roboter alles tun?</p>
+<p>Addiert sich die Liebe, wenn Roboter alles tun?</p>
+<p>Ist Liebe Hingabe? Was ist es?</p>
+<p>Wenn ein Roboter von Ihrem Kühlschrank benachrichtigt wird, dass Brokkoli fehlt, und der Sensor (in mir?) oder ein Kalender mit meinen Lieblingsdaten den Brokkoli- oder Rindersteak-Knoblauch-Reis-Pommes-Tag signalisiert, und der Roboter alles holt und zubereitet und Sie diesen köstlichen Duft aus der Küche kommen spüren, werden wir dann den Menschen feiern, der dieses Technologie-Puzzle leidenschaftlich gelöst hat, oder werden wir eine eventuelle Mutter auf dem Sofa feiern, die sich weder erinnern, noch kaufen, noch kochen muss?</p>
+<p>Werden wir die Hingabe von wem feiern? Vom Roboter? Von der Mutter auf dem Sofa? Von den menschlichen &quot;Müttern&quot; der Vergangenheit, die die ersten Roboter und KIs erfunden haben?</p>
+<p>Wenn menschliche Hingabe ein Synonym für Liebe, für Mutter ist, dann werden Mütter und Lieben der Gegenwart und Zukunft die Konkurrenz der Menschen, der Menschen, erhalten, die es geschafft haben, die Fähigkeit zur Hingabe in Technologien einzukapseln, die heute oder morgen diese Ihre Mutter von heute oder morgen, oder diese Liebe von heute und morgen, fast keine Geste machen, praktisch stillstehen lassen.</p>
+<p>Wenn die selbstlose Hingabe eines Roboters als Liebe, als eine Mutter behandelt werden kann, dann kann er dem Duft von Knoblauch folgen, der auf dem Rindersteak zu bräunen beginnt, und ihn dort umarmen, den Roboter. Er wird – logisch – die Bedeutung der Umarmung verstehen. &quot;Vielen Dank!&quot;</p>
 <p>&quot;Ich liebe dich&quot;. ❤️</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-1.jpg" alt="um robô amamenta um bebê" /><figcaption>um robô amamenta um bebê</figcaption></figure>
         </div>

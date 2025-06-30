@@ -18,14 +18,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
 .header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
-.nav-links { display: flex; gap: 32px; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
 .nav-links a:hover { color: rgba(41, 41, 41, 1); }
 .container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
 .article-list { padding: 48px 0; }
 .article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
 .article-item a { text-decoration: none; }
-.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
 .article-item:last-child { border-bottom: none; }
 .article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
 .article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
@@ -65,8 +68,156 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .language-switcher span { margin: 0 8px; }
 ::selection { background-color: rgba(26, 137, 23, 0.1); }
 ::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
-@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
-@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  .search-active .logo,
+  .search-active .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
 </style>
 </head>
 <body>
@@ -110,76 +261,76 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p></p>
 <p>Artificial intelligence does not replace dedication.</p>
 <p>On the contrary: AI eliminates dedication.</p>
-<p>The simplest example is, with one click, transforming a dense report into a beautiful chart.</p>
-<p>I propose that - frequently? Rarely? - sometimes we don't want the beautiful chart.</p>
-<p>Sometimes, it comforts us to know that someone has given us much of their time, creating (before AI could do it in one click) a beautiful chart.</p>
-<p>When this is the case, a feeling of emptiness will accompany the beautiful chart.</p>
+<p>The simplest example is, with one click, transforming a dense report into a beautiful graph.</p>
+<p>I propose that - frequently? Rarely? - sometimes we don't want the beautiful graph.</p>
+<p>Sometimes, it comforts us to know that someone has gifted us with a large part of their time, creating (before AI could do it in one click) a beautiful graph.</p>
+<p>When this is the case, a feeling of emptiness will accompany the beautiful graph.</p>
 <p>Of course: we didn't want the final solution, we wanted the dedication.</p>
-<p>What dedication is that?</p>
-<p>It's the lap. It's believing that we are loved. That someone cares. That they put care into it, for us.</p>
-<p>If this is the need, feeling that the beautiful chart was made with just the blink of an eye eliminates the benefit.</p>
-<p>This may be a load of nonsense. It may be that we want efficiency. The final product. The beautiful chart, the video, the presentation, the rocket, all made by AIs and robots with one click.</p>
+<p>What dedication is this?</p>
+<p>It's the lap. It is believing that we are loved. That someone cares. That they put care into it, for us.</p>
+<p>If this is the need, feeling that the beautiful graph was made with just a blink of an eye eliminates the benefit.</p>
+<p>This may be a lot of nonsense. We may want efficiency. The final product. The beautiful graph, the video, the presentation, the rocket, all made by AIs and robots with one click.</p>
 <p>But can I ask you to just assume that my reasoning may be correct? Just to test something. Thank you!</p>
 <p>Assuming we want dedication and attention, what does the world of AIs and robots deliver to us?</p>
 <p>This is the curious point: the world of AIs and robots delivers non-human-dedication. Humans will no longer dedicate themselves to doing things that AIs and robots can and will do, a list that only grows.</p>
 <p>We have our basic needs, such as eating, sleeping. For this type of thing, efficiency is a delight.</p>
-<p>Tractors planting potatoes by GPS, harvesting, autonomous trucks taking them to distribution centers, drones and cars making them available to everyone. A robot at home anticipating what's missing in the refrigerator and going to get it at the nearest distribution center. Effective.</p>
+<p>Tractors planting potatoes by GPS, harvesting, autonomous trucks taking them to distribution centers, drones and cars making them available to everyone. A robot at home anticipating what's missing in the fridge and going to get it at the nearest distribution center. Effective.</p>
 <p>The final part: the mother - or husband, cousin, friend - lovingly cooking potatoes with something loving and other dishes, fits into my reasoning about dedication. Cooking is an opportunity for loving dedication.</p>
 <p>Besides going to the market to get potatoes, what happens when the robot also cooks? And serves us. Will we lose the (dedication of the) mother? Will we lose the (value of the) husband? The cousin? The friend?</p>
 <p>Of course, we can always dedicate ourselves to everything that AI doesn't do.</p>
-<p>Despite this list of things that AI doesn't do being increasingly meager.</p>
-<p>To do something that shows our effort and our love, we may purposefully not use either AI or robots.</p>
+<p>Despite this list of things that AI doesn't do being increasingly small.</p>
+<p>To do something that shows our effort and our love, we can intentionally not use either AI or robots.</p>
 <p>But isn't it a bit pathetic to do something by hand just to demonstrate a feeling?</p>
-<p>The intention is not at all pathetic: demonstrating a feeling is all good.</p>
+<p>The intention is not pathetic at all: demonstrating a feeling is all good.</p>
 <p>Pathetic is going on your knees to the market to demonstrate effort, if you have a car, if you have a car that drives itself, if you have a robot that goes to the market for you.</p>
-<p>Thus, AI and little robots can surround our ability to demonstrate love through dedication, through effort.</p>
+<p>Thus, AI and the little robots can surround our ability to demonstrate love through dedication, through effort.</p>
 <p>Can we demonstrate love in other ways?</p>
 <p>Before, when we needed to hunt, protect ourselves, flee, perhaps the excess of tasks could hinder the demonstration of love. I don't know.</p>
 <p>But also the excess of non-tasks can inhibit love by inhibiting dedication.</p>
 <h2>The Selfless Robot</h2>
 <p>Logic allows us to risk that, if we admire dedication, and dedication starts to happen in robots and AIs, guess what? We could - logically - fall in love with robots. Or with AIs.</p>
-<p>I'll help you feel the hypothesis.</p>
-<p>Imagine that selfless robot, who works tirelessly for you, or for your family. It doesn't hesitate. It doesn't slack off. It is subservient. It anticipates what's missing in the refrigerator. It goes to the market. It brings everything. It prepares things at good times. It sweeps the dust. It cleans.</p>
-<p>Help me not imagine the robot from the Terminator. On the contrary, a robot dedicated for decades.</p>
-<p>Ready: that dedication can easily cause commotion. Especially after a longer period.</p>
+<p>I will help you feel the hypothesis.</p>
+<p>Imagine that selfless robot, which works tirelessly for you, or for your family. He doesn't hesitate. Doesn't slack off. He is subservient. Anticipates what's missing in the fridge. Goes to the market. Brings everything. Prepares things in good times. Sweeps the dust. Cleans.</p>
+<p>Help me not imagining the robot from the terminator. On the contrary, a robot dedicated for decades.</p>
+<p>Ready: this dedication can easily cause commotion. Especially after a longer period.</p>
 <p>If it starts from babyhood, doing everything for a baby and then a child, how will a mammal face so much dedication, even if it comes from the robot, not so much from the human mother? It can even give a bottle with a nipple that simulates the mother's breast, requiring stronger suction and giving that great pleasure of the baby's oral phase.</p>
-<p>Starting early, it can create even more impact on memories, affective memories, implicit memories from before one year, on the feeling of protection, that someone is always there to support. Even if it's the robot. The AI.</p>
-<h2>One Hundred Thousand Dedications</h2>
-<p>To what extent is &quot;the mother&quot; (father, whoever) a sum of one hundred thousand dedications in about 30 years of life?</p>
-<p>If the mother is one hundred thousand more or less crucial dedications, in each phase of life - usually ending with sporadic visits with the children already much more adult - then we can replace these one hundred thousand dedications with steel and cables. With robots. Right?</p>
-<p>Since domestic facilities are not a revolution initiated by AI and its robots, we could propose that this replacement of dedications has been happening since the invention of the washing machine in the last century, or since the discovery of fire.</p>
-<p>If the mother after the washing machine - and after the air fryer, electric oven, bottle warmer, dishwasher, electric pressure cooker that stops on its own, bleach cleans everything (etceteras) - can already give herself the pleasure of dedicating herself less, starting by scrubbing fewer clothes and walking less to the nearest river, then we may already be losing the (mother together?) human dedication in the last hundred years. Or since even before.</p>
+<p>Starting early, it can create even more impact on memories, on affective memories, on implicit memories from before one year, on the feeling of protection, that someone is always there to support. Even if it's the robot. The AI.</p>
+<h2>A Hundred Thousand Dedications</h2>
+<p>To what extent is &quot;the mother&quot; (father, whoever) a sum of a hundred thousand dedications in about 30 years of life?</p>
+<p>If the mother is a hundred thousand more or less crucial dedications, in each phase of life - usually ending with sporadic visits with the children already much older - then we can replace these hundred thousand dedications with steel and cables. By robots. Right?</p>
+<p>As domestic facilities are not a revolution started by AI and its robots, we could propose that this substitution of dedications has been happening since the invention of the washing machine in the last century, or since the discovery of fire.</p>
+<p>If the post-washing machine mother - and post-air fryer, electric oven, bottle warmer, dishwasher, electric pressure cooker that stops on its own, all-cleaning bleach (etc.) - can already give herself the pleasure of dedicating herself less, starting by scrubbing fewer clothes and walking less to the nearest river, then we may already be losing human dedication (the mother along?) in the last hundred years. Or since even before.</p>
 <p>In this dangerous terrain, we run the risk of thinking that when robots do everything for us from babies, we can risk thinking that the mother, the father, that mammalian thing, goes away along with the non (need for) dedication.</p>
-<p>Each time more each one of us may not dedicate ourselves. Neither father, nor mother, nor child.</p>
-<p>Without dedication, today, the mother from back then can be remembered, there in the century before AI and robots, as a dictatorship of the human that could kill us if it didn't dedicate itself to us (and that afterwards would have difficulty avoiding charging a bit of gratitude).</p>
+<p>More and more each of us may not dedicate ourselves. Neither father, nor mother, nor child.</p>
+<p>Without the dedication, today, the mother from back then can be remembered, there in the century before AI and robots, as a dictatorship of the human that could kill us if she didn't dedicate herself to us (and who would later have difficulty avoiding demanding a little gratitude).</p>
 <p>If it is the dedication that predominantly defines the concept of mother (father, older brother, grandfather, etc), then look at the risk we run: dedication seems to be going away with AIs and robots.</p>
-<p>If it's the warm chest that defines mother, &quot;chest&quot; and &quot;warmth&quot; are reproducible by AIs and robots. I've already mentioned, including, the ability of the bottle nipple to reproduce the necessary suction force of the maternal breast, maintaining the important oral pleasure for the baby.</p>
+<p>If it is the warm chest that defines mother, &quot;chest&quot; and &quot;heat&quot; are reproducible by AIs and robots. I have already mentioned, including, the ability of the bottle nipple to reproduce the necessary suction force of the maternal breast, maintaining the important oral pleasure for the baby.</p>
 <p>And Protection? Is &quot;mother&quot; &quot;protection&quot;? Protection is a type of dedication, isn't it? AIs and robots can dedicate themselves to nurturing this feeling from zero minutes of life.</p>
 <h2>The Past Crushing the Future</h2>
-<p>Much human dedication creates robots. Robots that serve as eternal capsules of dedication. These eternal capsules of dedication take away from mothers, from current and future humans, the possibility of dedicating themselves as much as before the invention of these robots and AIs.</p>
-<p>Remembering that AIs and robots can themselves produce more AIs and more robots, each time less space is left for the human of the future to be able to dedicate themselves to something, as we do today and did in previous centuries.</p>
-<p>Each time more we will have to celebrate, only, human dedication in the past.</p>
-<p>If love, mother, equates to the amount of dedication, and if it equates specifically to human dedication (I disagree that it needs to be human, I feel, but let's propose), then we can start to see &quot;mothers&quot; and &quot;loves&quot; of the past - the human dedications of the past - competing with the mothers, the loves, of the future.</p>
-<p>I have already written about how difficult it is for a teacher, for example of physics or history, to compete with thousands of YouTube videos made by geniuses of physics or history at their peak, in the present and in the past.</p>
+<p>A lot of human dedication creates robots. Robots that serve as eternal capsules of dedication. These eternal capsules of dedication take away from mothers, from current and future humans, the possibility of dedicating themselves as much as before the invention of these robots and AIs.</p>
+<p>Remembering that AIs and robots can themselves produce more AIs and more robots, less and less space is left for the human of the future to be able to dedicate themselves to something, as we do today and did in previous centuries.</p>
+<p>More and more we will have to celebrate, only, human dedication in the past.</p>
+<p>If love, mother, equates to the amount of dedication, and if it equates specifically to human dedication (I disagree that it needs to be human, I feel, but let's propose), then we can start to see &quot;mothers&quot; and &quot;loves&quot; of the past - the human dedications of the past - compete with the mothers, the loves, of the future.</p>
+<p>I have already written about how difficult it is for a professor, for example of physics or history, to compete with thousands of YouTube videos made by geniuses of physics or history at their peak, in the present and in the past.</p>
 <p>We end up being crushed by the talent of humanity of the past, recorded and available forever.</p>
 <p>But that was restricted to YouTube videos. Classes. Movies.</p>
 <p>Even an athlete could always break a record of the past, with some ease.</p>
-<p>Mothers, then, were totally protected: their dedication was necessary to each child, to each generation. There would be no video that would replace the love of a real mother, taking care of a real child.</p>
-<p>Now for the first time I apply the reasoning of the teacher to the mothers. To the loves. To human dedication.</p>
+<p>Mothers, then, were totally protected: their dedication was necessary for each child, for each generation. There would be no video that would replace the love of a real mother, taking care of a real child.</p>
+<p>Now for the first time I apply the reasoning of the professor to mothers. To loves. To human dedication.</p>
 <p>The robot encapsulates dedication.</p>
 <p>In the same way that YouTube videos encapsulate the best classes and movies.</p>
 <p>Super-dedicated humans today program AIs and build increasingly dedicated robots. Encapsulating dedication for the future.</p>
-<p>These increasingly dedicated robots, like increasingly better YouTube videos, make the mothers of the future increasingly less necessary, at least with respect to the necessary dedication.</p>
+<p>These increasingly dedicated robots, like increasingly better YouTube videos, make the mothers of the future less and less necessary, at least with regard to the necessary dedication.</p>
 <p>Will this less dedication on the part of the mother be missed, increasingly replaced by robots and AIs?</p>
 <p>This is the question that seems close to an essence.</p>
 <p>Does the mother disappear when robots do everything?</p>
-<p>We can already feel, as pressure cookers that turn off on their own and automatic washers are already partial little robots. Are these partial little robots taking away the feeling of a dedicated mother in the present? Or do they not affect the feeling of the dedicated mother? Or will we only know when little robots do everything?</p>
+<p>We can already feel, because pressure cookers that turn off on their own and automatic washing machines are already partial little robots. Are these partial little robots taking away the feeling of a dedicated mother today? Or do they not affect the feeling of the dedicated mother? Or will we only know when little robots do everything?</p>
 <p>Does love disappear when robots do everything?</p>
 <p>Is love dedication? What is it?</p>
-<p>When a robot is warned by your refrigerator that broccoli is missing, and the sensor (in me?) or a calendar with my favorite dates signal broccoli day, or garlic sirloin with rice and fries, and the robot searches and prepares everything and you feel that delicious smell starting to come from the kitchen, will we celebrate the human who passionately solved this technology puzzle, or will we celebrate a possible mother on the sofa, without needing to remember, nor buy, nor cook?</p>
+<p>When a robot is warned by your fridge that broccoli is missing, and the sensor (in me?) or a calendar with my favorite dates signal broccoli day, or garlic picanha with rice and fries, and the robot searches and prepares everything and you feel that delicious smell starting to come from the kitchen, will we celebrate the human who passionately solved this technology puzzle, or will we celebrate a possible mother on the sofa, without needing to remember, buy, or cook?</p>
 <p>Will we celebrate the dedication of whom? Of the robot? Of the mother on the sofa? Of the human &quot;mothers&quot; of the past who invented the first robots and AIs?</p>
-<p>If human dedication is synonymous with love, with mother, then current and future mothers and loves will receive the competition of the personnel, human, who managed to encapsulate the capacity for dedication in technologies that, today, or tomorrow, leave this mother of today or tomorrow, or this love of today and tomorrow, making almost no gesture, practically standing still.</p>
-<p>If the selfless dedication of a robot can be treated as love, as a mother, then you can follow the smell of the garlic starting to brown on top of the sirloin and you can go there and give him a hug, to the robot. He will understand - logically - the meaning of the hug. &quot;Thank you very much!&quot;</p>
+<p>If human dedication is synonymous with love, with mother, then current and future mothers and loves will receive competition from the staff, human, who managed to encapsulate the ability to dedicate in technologies that, today, or tomorrow, leave this mother of yours today or tomorrow, or this love of today and tomorrow, making almost no gesture, practically stopped.</p>
+<p>If the selfless dedication of a robot can be treated as love, as a mother, then you can follow the smell of the garlic starting to brown on top of the picanha and you can go there and give him a hug, the robot.. He will understand - logically - the meaning of the hug. &quot;Thank you very much!&quot;</p>
 <p>&quot;I Love You&quot;. ❤️</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-1.jpg" alt="um robô amamenta um bebê" /><figcaption>um robô amamenta um bebê</figcaption></figure>
         </div>
