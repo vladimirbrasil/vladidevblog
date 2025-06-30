@@ -82,62 +82,75 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .article-image-container img { width: 100%; height: 100%; object-fit: cover; }
 /* === END OF INDEX PAGE STYLES === */
 
-/* === NOVO: ESTILOS PARA O DROPDOWN DE IDIOMAS === */
+/* === NOVO: ESTILOS PARA O DROPDOWN DE IDIOMAS (v2 COM TEXTO) === */
 .language-dropdown {
-  position: relative; /* Essencial para posicionar o menu */
+  position: relative;
   display: inline-block;
 }
 .dropdown-toggle {
   cursor: pointer;
   display: flex;
   align-items: center;
-  gap: 6px; /* Espaço entre a bandeira e a seta (se houver) */
-  padding: 4px;
-  border-radius: 99px; /* Torna o fundo circular se quisermos */
+  gap: 8px; /* Espaço entre a bandeira e a sigla */
+  padding: 4px 10px 4px 4px; /* Mais espaço à direita para a sigla */
+  border-radius: 99px;
   transition: background-color 0.2s ease;
+  border: 1px solid #e0e0e0;
 }
 .dropdown-toggle:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #f5f5f5;
 }
 .dropdown-toggle img {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
   object-fit: cover;
   display: block;
 }
+.dropdown-toggle span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
 .dropdown-menu {
-  display: none; /* Oculto por padrão */
+  display: none;
   position: absolute;
-  top: 110%; /* Posição logo abaixo do botão */
+  top: 115%;
   left: 50%;
   transform: translateX(-50%);
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   padding: 8px;
-  z-index: 110; /* Garante que fique acima de outros elementos */
-  min-width: 50px;
-  text-align: center;
+  z-index: 110;
+  min-width: 100%; /* Ocupa a largura total do botão */
 }
 .language-dropdown.active .dropdown-menu {
-  display: block; /* Mostra o menu quando o dropdown está ativo */
+  display: block;
 }
 .dropdown-menu a {
-  display: block;
-  padding: 4px;
-  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 6px;
   transition: background-color 0.2s ease;
+  text-decoration: none;
 }
 .dropdown-menu a:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #f5f5f5;
 }
 .dropdown-menu img {
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
 }
 /* === FIM DOS NOVOS ESTILOS === */
 
@@ -221,8 +234,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
   /* STEP 3: Define the ACTIVE overlay state when body.search-active */
 
   /* Hide the logo and nav links GRACEFULLY with a transition */
+  /* ===> MODIFICADO: Adicione .language-dropdown a esta regra */
   .search-active .logo,
-  .search-active .nav-links a {
+  .search-active .nav-links a,
+  .search-active .language-dropdown {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease-in-out;
@@ -340,9 +355,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       <div class="language-dropdown" id="language-dropdown">
         <div class="dropdown-toggle">
           <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjMwIj48cGF0aCBmaWxsPSIjMDBhNjVjIiBkPSJNMCAwaDkwMHY2MzBIMHoiLz48cGF0aCBmaWxsPSIjZmZkMTAwIiBkPSJNODEgMzE1IDQ1MCAzMy43NSA4MTkgMzE1IDQ1MCA1OTYuMjV6Ii8+PGNpcmNsZSBjeD0iNDUwIiBjeT0iMzE1IiByPSIxMjUiIGZpbGw9IiMwMDM4OWMiLz48L3N2Zz4=" alt="Português">
+          <span>PT</span>
         </div>
         <div class="dropdown-menu">
-          <a href="/en/index.html" title="English"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNDUwIj48cGF0aCBmaWxsPSIjYjI0MzA4IiBkPSJNMCAwaDc1MHY0NTBIMHoiLz48cGF0aCBkPSJNMCAwYzI1MCAxNTAgNTAwIDMwMCA3NTAgNDUwWm03NTAtNDUwQzUwMCAxNTAgMjUwIDMwMCAwIDQ1MFoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwMjQ3ZCIgc3Ryb2tlLXdpZHRoPSIzMCIvPjxwYXRoIGQ9Ik0zNzUgMHY0NTBaTTAtMjI1YzcyNSAwIDcyNSAwIDc1MCAwWiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjUwIi8+PHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0iTTAgMGwzNzUgMjI1Wm0wIDQ1MEwzNzUgMjI1Wm0zNzUgMGwtMzc1LTIyNVptMzc1LTQ1MEwzNzUgMjI1WiIvPjwvc3ZnPg==" alt="English"></a><a href="/es/index.html" title="Español"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNTAwIj48cGF0aCBmaWxsPSIjYzYwYjFiIiBkPSJNMCAwaDc1MHY1MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZkZDAwIiBkPSJNMCAxMjVoNzUwdjI1MEgwWiIvPjwvc3ZnPg==" alt="Español"></a><a href="/fr/index.html" title="Français"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj48cGF0aCBmaWxsPSIjZWQyOTM5IiBkPSJNMCAwaDkwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDYwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJNMCAwaDMwMHY2MDBIMHoiLz48L3N2Zz4=" alt="Français"></a><a href="/de/index.html" title="Deutsch"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDgwIj48cGF0aCBkPSJNMCAwaDgwMHY0ODBIMHoiLz48cGF0aCBmaWxsPSIjZDAwIiBkPSJNMCAxNjBoODAwdjMyMEgwWiIvPjxwYXRoIGZpbGw9IiNmZjllMDAiIGQ9Ik0wIDMyMGg4MDB2MTYwSDBaIi8+PC9zdmc+" alt="Deutsch"></a>
+          <a href="/en/index.html" title="English"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNDUwIj48cGF0aCBmaWxsPSIjYjI0MzA4IiBkPSJNMCAwaDc1MHY0NTBIMHoiLz48cGF0aCBkPSJNMCAwYzI1MCAxNTAgNTAwIDMwMCA3NTAgNDUwWm03NTAtNDUwQzUwMCAxNTAgMjUwIDMwMCAwIDQ1MFoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwMjQ3ZCIgc3Ryb2tlLXdpZHRoPSIzMCIvPjxwYXRoIGQ9Ik0zNzUgMHY0NTBaTTAtMjI1YzcyNSAwIDcyNSAwIDc1MCAwWiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjUwIi8+PHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0iTTAgMGwzNzUgMjI1Wm0wIDQ1MEwzNzUgMjI1Wm0zNzUgMGwtMzc1LTIyNVptMzc1LTQ1MEwzNzUgMjI1WiIvPjwvc3ZnPg==" alt="English"><span>EN</span></a><a href="/es/index.html" title="Español"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNTAwIj48cGF0aCBmaWxsPSIjYzYwYjFiIiBkPSJNMCAwaDc1MHY1MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZkZDAwIiBkPSJNMCAxMjVoNzUwdjI1MEgwWiIvPjwvc3ZnPg==" alt="Español"><span>ES</span></a><a href="/fr/index.html" title="Français"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj48cGF0aCBmaWxsPSIjZWQyOTM5IiBkPSJNMCAwaDkwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDYwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJNMCAwaDMwMHY2MDBIMHoiLz48L3N2Zz4=" alt="Français"><span>FR</span></a><a href="/de/index.html" title="Deutsch"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDgwIj48cGF0aCBkPSJNMCAwaDgwMHY0ODBIMHoiLz48cGF0aCBmaWxsPSIjZDAwIiBkPSJNMCAxNjBoODAwdjMyMEgwWiIvPjxwYXRoIGZpbGw9IiNmZjllMDAiIGQ9Ik0wIDMyMGg4MDB2MTYwSDBaIi8+PC9zdmc+" alt="Deutsch"><span>DE</span></a>
         </div>
       </div>
     </div>
@@ -369,592 +385,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div id="hits" class="article-list"></div>
     </div>
     <div id="article-list-container">
-      <div id="article-list" class="article-list">
-      <div class="article-item">
-        <a href="/articles/aposentadoria-da-razao.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg" alt="Aposentadoria da Razão"></div>
-          <div class="article-text-content">
-            <div class="article-date">Jun 23, 2025</div>
-            <h2 class="article-title">Aposentadoria da Razão</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/um-blog-facil.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png" alt="Um Blog Fácil"></div>
-          <div class="article-text-content">
-            <div class="article-date">Jun 14, 2025</div>
-            <h2 class="article-title">Um Blog Fácil</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/promocao-especial-para-ti.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/promocao-especial-para-ti-image-0.jpg" alt="Promoção especial para ti"></div>
-          <div class="article-text-content">
-            <div class="article-date">Jun 14, 2025</div>
-            <h2 class="article-title">Promoção especial para ti</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">1 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/te-amo.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg" alt="❤️ Te Amo"></div>
-          <div class="article-text-content">
-            <div class="article-date">Sep 10, 2024</div>
-            <h2 class="article-title">❤️ Te Amo</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">9 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/a-menininha-que-nos-leva-para-casa.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg" alt="A menininha que nos leva para casa"></div>
-          <div class="article-text-content">
-            <div class="article-date">Apr 21, 2024</div>
-            <h2 class="article-title">A menininha que nos leva para casa</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">5 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/onde-estamos.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg" alt="Onde estamos?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Sep 18, 2023</div>
-            <h2 class="article-title">Onde estamos?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">3 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/auto-traicao.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/auto-traicao-image-0.jpg" alt="Auto traição?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Jul 14, 2023</div>
-            <h2 class="article-title">Auto traição?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">4 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/consciencia-entre-as-pernas.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/consciencia-entre-as-pernas-image-0.jpg" alt="Consciência entre as pernas"></div>
-          <div class="article-text-content">
-            <div class="article-date">Jun 7, 2023</div>
-            <h2 class="article-title">Consciência entre as pernas</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/ocio-a-esquerda.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/ocio-a-esquerda-image-0.jpg" alt="Ócio à esquerda"></div>
-          <div class="article-text-content">
-            <div class="article-date">May 28, 2023</div>
-            <h2 class="article-title">Ócio à esquerda</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/caixao-nao-tem-gavetas.html">
-          <div class="article-image-placeholder"></div>
-          <div class="article-text-content">
-            <div class="article-date">Apr 13, 2023</div>
-            <h2 class="article-title">Caixão não tem gavetas</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">4 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/troncos-no-universo.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/troncos-no-universo-image-0.png" alt="Troncos no universo?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Apr 10, 2023</div>
-            <h2 class="article-title">Troncos no universo?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">4 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/podemos-ser-traidos-pelo-nosso-dinheiro.html">
-          <div class="article-image-placeholder"></div>
-          <div class="article-text-content">
-            <div class="article-date">Mar 10, 2023</div>
-            <h2 class="article-title">Podemos ser traídos pelo nosso dinheiro?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">5 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/esquerda-direita-papais-nenens.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/esquerda-direita-papais-nenens-image-hero.png" alt="Esquerda, Direita, Papais, Nenéns"></div>
-          <div class="article-text-content">
-            <div class="article-date">Mar 6, 2023</div>
-            <h2 class="article-title">Esquerda, Direita, Papais, Nenéns</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">3 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/global-and-focused-social-medias.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/global-and-focused-social-medias-image-0.jpg" alt="Global and Focused Social Medias ❤️"></div>
-          <div class="article-text-content">
-            <div class="article-date">Apr 1, 2022</div>
-            <h2 class="article-title">Global and Focused Social Medias ❤️</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">1 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/arranha-vaidades.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/arranha-vaidades-image-0.jpg" alt="Arranha-[vaidades]"></div>
-          <div class="article-text-content">
-            <div class="article-date">Mar 7, 2022</div>
-            <h2 class="article-title">Arranha-[vaidades]</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">3 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/eugenia-na-comunicacao.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="🍎 Eugenia na comunicação?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Feb 10, 2022</div>
-            <h2 class="article-title">🍎 Eugenia na comunicação?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">12 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/por-que-cuspir-a-consciencia.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg" alt="Por que cuspir a consciência?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Nov 29, 2021</div>
-            <h2 class="article-title">Por que cuspir a consciência?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">4 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/neuragame.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg" alt="Neuragame"></div>
-          <div class="article-text-content">
-            <div class="article-date">Nov 15, 2021</div>
-            <h2 class="article-title">Neuragame</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">5 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/previsivel.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/previsivel-image-0.jpg" alt="Previsível?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Nov 4, 2021</div>
-            <h2 class="article-title">Previsível?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/vanilla-skyourself.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/vanilla-skyourself-image-0.jpg" alt="Vanilla Skyourself"></div>
-          <div class="article-text-content">
-            <div class="article-date">Nov 3, 2021</div>
-            <h2 class="article-title">Vanilla Skyourself</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/sentimento-digital.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sentimento-digital-image-0.jpg" alt="Sentimento Digital"></div>
-          <div class="article-text-content">
-            <div class="article-date">Oct 22, 2021</div>
-            <h2 class="article-title">Sentimento Digital</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">4 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/aspirar-o-proprio-rabo.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aspirar-o-proprio-rabo-image-0.jpg" alt="Aspirar o próprio rabo?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Sep 24, 2021</div>
-            <h2 class="article-title">Aspirar o próprio rabo?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/corpus-callosum-politicus.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/corpus-callosum-politicus-image-0.jpg" alt="Corpus Callosum Polīticus"></div>
-          <div class="article-text-content">
-            <div class="article-date">Sep 20, 2021</div>
-            <h2 class="article-title">Corpus Callosum Polīticus</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/esquerda-vs-direita-ou-emocao-vs-razao.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/esquerda-vs-direita-ou-emocao-vs-razao-image-0.jpg" alt="Esquerda vs Direita ou Emoção vs Razão?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Sep 9, 2021</div>
-            <h2 class="article-title">Esquerda vs Direita ou Emoção vs Razão?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/qual-e-o-esporte-mais-dificil-do-mundo.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/qual-e-o-esporte-mais-dificil-do-mundo-image-0.png" alt="Qual é o esporte mais difícil do mundo?"></div>
-          <div class="article-text-content">
-            <div class="article-date">May 16, 2021</div>
-            <h2 class="article-title">Qual é o esporte mais difícil do mundo?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">13 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/devemos-ser-preservados-para-observar.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png" alt="Devemos ser preservados para observar?"></div>
-          <div class="article-text-content">
-            <div class="article-date">May 6, 2021</div>
-            <h2 class="article-title">Devemos ser preservados para observar?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">1 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/aco-ou-vento.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aco-ou-vento-image-0.jpg" alt="Aço ou Vento?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Apr 29, 2021</div>
-            <h2 class="article-title">Aço ou Vento?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">3 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/modern-punch.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/modern-punch-image-0.jpg" alt="Modern punch."></div>
-          <div class="article-text-content">
-            <div class="article-date">Mar 11, 2021</div>
-            <h2 class="article-title">Modern punch.</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">1 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/neither-tv-nor-youtube.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neither-tv-nor-youtube-image-0.jpg" alt="Neither tv, nor youtube"></div>
-          <div class="article-text-content">
-            <div class="article-date">Feb 2, 2021</div>
-            <h2 class="article-title">Neither tv, nor youtube</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/instead-of-whatsapp.html">
-          <div class="article-image-placeholder"></div>
-          <div class="article-text-content">
-            <div class="article-date">Jan 11, 2021</div>
-            <h2 class="article-title">Instead of whatsapp?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/como-agradar-noam-chomsky-yuval-noah-harari.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg" alt="Como agradar Noam Chomsky &amp; Yuval Noah Harari?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Dec 12, 2020</div>
-            <h2 class="article-title">Como agradar Noam Chomsky &amp; Yuval Noah Harari?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">4 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/noam-chomsky-mixed-with.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/noam-chomsky-mixed-with-image-hero.png" alt="Noam Chomsky mixed with…"></div>
-          <div class="article-text-content">
-            <div class="article-date">Dec 11, 2020</div>
-            <h2 class="article-title">Noam Chomsky mixed with…</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">1 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/fabrica-de-coringas.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png" alt="Fábrica de coringas?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Oct 30, 2020</div>
-            <h2 class="article-title">Fábrica de coringas?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">4 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/o-que-e-belo.html">
-          <div class="article-image-placeholder"></div>
-          <div class="article-text-content">
-            <div class="article-date">Sep 9, 2020</div>
-            <h2 class="article-title">O que é belo</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">3 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/maximizar-mindfulness.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png" alt="Maximizar mindfulness?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Jul 8, 2020</div>
-            <h2 class="article-title">Maximizar mindfulness?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/sai-o-emprego-fica-a-producao.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg" alt="Sai o emprego, fica a produção"></div>
-          <div class="article-text-content">
-            <div class="article-date">Jul 6, 2020</div>
-            <h2 class="article-title">Sai o emprego, fica a produção</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">4 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/oblivion.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="Oblivion"></div>
-          <div class="article-text-content">
-            <div class="article-date">Apr 27, 2020</div>
-            <h2 class="article-title">Oblivion</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">8 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/cerebros-livres.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/cerebros-livres-image-0.png" alt="Cérebros livres"></div>
-          <div class="article-text-content">
-            <div class="article-date">Dec 20, 2019</div>
-            <h2 class="article-title">Cérebros livres</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">3 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/a-curiosidade-humana.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg" alt="A curiosidade humana"></div>
-          <div class="article-text-content">
-            <div class="article-date">Sep 10, 2019</div>
-            <h2 class="article-title">A curiosidade humana</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">11 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/repensando-o-sistema-de-metas.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/repensando-o-sistema-de-metas-image-0.jpg" alt="Repensando o sistema de metas"></div>
-          <div class="article-text-content">
-            <div class="article-date">Nov 27, 2018</div>
-            <h2 class="article-title">Repensando o sistema de metas</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">11 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/spam-calls.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/spam-calls-image-0.jpg" alt="Spam Calls"></div>
-          <div class="article-text-content">
-            <div class="article-date">Sep 19, 2018</div>
-            <h2 class="article-title">Spam Calls</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">4 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/human-soup.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg" alt="Human Soup"></div>
-          <div class="article-text-content">
-            <div class="article-date">Aug 22, 2018</div>
-            <h2 class="article-title">Human Soup</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">5 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/a-thought-about-true-cost-the-movie.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-thought-about-true-cost-the-movie-image-0.jpg" alt="A Thought About “True Cost”, The Movie"></div>
-          <div class="article-text-content">
-            <div class="article-date">Jul 30, 2018</div>
-            <h2 class="article-title">A Thought About “True Cost”, The Movie</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">1 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.jpg" alt="Clean your mind? Unsubscribe emails wouldn’t be a bad start"></div>
-          <div class="article-text-content">
-            <div class="article-date">Jul 26, 2018</div>
-            <h2 class="article-title">Clean your mind? Unsubscribe emails wouldn’t be a bad start</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">2 min read</span>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="article-item">
-        <a href="/articles/lixeiros-nao-utilizam-cinto-de-seguranca-utilizam.html">
-          <div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/lixeiros-nao-utilizam-cinto-de-seguranca-utilizam-image-0.jpg" alt="Lixeiros não utilizam cinto de segurança, utilizam?"></div>
-          <div class="article-text-content">
-            <div class="article-date">Apr 10, 2015</div>
-            <h2 class="article-title">Lixeiros não utilizam cinto de segurança, utilizam?</h2>
-            <div class="article-meta">
-              <span class="author-name">Vladimir Dietrich</span>
-              <span>·</span><span class="reading-time">3 min read</span>
-            </div>
-          </div>
-        </a>
-      </div></div>
+      <div id="article-list" class="article-list"><div class="article-item"><a href="/articles/aposentadoria-da-razao.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg" alt="Aposentadoria da Razão"></div><div class="article-text-content"><div class="article-date">Jun 23, 2025</div><h2 class="article-title">Aposentadoria da Razão</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/um-blog-facil.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png" alt="Um Blog Fácil"></div><div class="article-text-content"><div class="article-date">Jun 14, 2025</div><h2 class="article-title">Um Blog Fácil</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/promocao-especial-para-ti.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/promocao-especial-para-ti-image-0.jpg" alt="Promoção especial para ti"></div><div class="article-text-content"><div class="article-date">Jun 14, 2025</div><h2 class="article-title">Promoção especial para ti</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">1 min read</span></div></div></a></div><div class="article-item"><a href="/articles/te-amo.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg" alt="❤️ Te Amo"></div><div class="article-text-content"><div class="article-date">Sep 10, 2024</div><h2 class="article-title">❤️ Te Amo</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">9 min read</span></div></div></a></div><div class="article-item"><a href="/articles/a-menininha-que-nos-leva-para-casa.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg" alt="A menininha que nos leva para casa"></div><div class="article-text-content"><div class="article-date">Apr 21, 2024</div><h2 class="article-title">A menininha que nos leva para casa</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">5 min read</span></div></div></a></div><div class="article-item"><a href="/articles/onde-estamos.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg" alt="Onde estamos?"></div><div class="article-text-content"><div class="article-date">Sep 18, 2023</div><h2 class="article-title">Onde estamos?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">3 min read</span></div></div></a></div><div class="article-item"><a href="/articles/auto-traicao.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/auto-traicao-image-0.jpg" alt="Auto traição?"></div><div class="article-text-content"><div class="article-date">Jul 14, 2023</div><h2 class="article-title">Auto traição?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">4 min read</span></div></div></a></div><div class="article-item"><a href="/articles/consciencia-entre-as-pernas.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/consciencia-entre-as-pernas-image-0.jpg" alt="Consciência entre as pernas"></div><div class="article-text-content"><div class="article-date">Jun 7, 2023</div><h2 class="article-title">Consciência entre as pernas</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/ocio-a-esquerda.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/ocio-a-esquerda-image-0.jpg" alt="Ócio à esquerda"></div><div class="article-text-content"><div class="article-date">May 28, 2023</div><h2 class="article-title">Ócio à esquerda</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/caixao-nao-tem-gavetas.html"><div class="article-image-placeholder"></div><div class="article-text-content"><div class="article-date">Apr 13, 2023</div><h2 class="article-title">Caixão não tem gavetas</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">4 min read</span></div></div></a></div><div class="article-item"><a href="/articles/troncos-no-universo.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/troncos-no-universo-image-0.png" alt="Troncos no universo?"></div><div class="article-text-content"><div class="article-date">Apr 10, 2023</div><h2 class="article-title">Troncos no universo?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">4 min read</span></div></div></a></div><div class="article-item"><a href="/articles/podemos-ser-traidos-pelo-nosso-dinheiro.html"><div class="article-image-placeholder"></div><div class="article-text-content"><div class="article-date">Mar 10, 2023</div><h2 class="article-title">Podemos ser traídos pelo nosso dinheiro?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">5 min read</span></div></div></a></div><div class="article-item"><a href="/articles/esquerda-direita-papais-nenens.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/esquerda-direita-papais-nenens-image-hero.png" alt="Esquerda, Direita, Papais, Nenéns"></div><div class="article-text-content"><div class="article-date">Mar 6, 2023</div><h2 class="article-title">Esquerda, Direita, Papais, Nenéns</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">3 min read</span></div></div></a></div><div class="article-item"><a href="/articles/global-and-focused-social-medias.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/global-and-focused-social-medias-image-0.jpg" alt="Global and Focused Social Medias ❤️"></div><div class="article-text-content"><div class="article-date">Apr 1, 2022</div><h2 class="article-title">Global and Focused Social Medias ❤️</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">1 min read</span></div></div></a></div><div class="article-item"><a href="/articles/arranha-vaidades.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/arranha-vaidades-image-0.jpg" alt="Arranha-[vaidades]"></div><div class="article-text-content"><div class="article-date">Mar 7, 2022</div><h2 class="article-title">Arranha-[vaidades]</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">3 min read</span></div></div></a></div><div class="article-item"><a href="/articles/eugenia-na-comunicacao.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg" alt="🍎 Eugenia na comunicação?"></div><div class="article-text-content"><div class="article-date">Feb 10, 2022</div><h2 class="article-title">🍎 Eugenia na comunicação?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">12 min read</span></div></div></a></div><div class="article-item"><a href="/articles/por-que-cuspir-a-consciencia.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg" alt="Por que cuspir a consciência?"></div><div class="article-text-content"><div class="article-date">Nov 29, 2021</div><h2 class="article-title">Por que cuspir a consciência?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">4 min read</span></div></div></a></div><div class="article-item"><a href="/articles/neuragame.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg" alt="Neuragame"></div><div class="article-text-content"><div class="article-date">Nov 15, 2021</div><h2 class="article-title">Neuragame</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">5 min read</span></div></div></a></div><div class="article-item"><a href="/articles/previsivel.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/previsivel-image-0.jpg" alt="Previsível?"></div><div class="article-text-content"><div class="article-date">Nov 4, 2021</div><h2 class="article-title">Previsível?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/vanilla-skyourself.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/vanilla-skyourself-image-0.jpg" alt="Vanilla Skyourself"></div><div class="article-text-content"><div class="article-date">Nov 3, 2021</div><h2 class="article-title">Vanilla Skyourself</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/sentimento-digital.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sentimento-digital-image-0.jpg" alt="Sentimento Digital"></div><div class="article-text-content"><div class="article-date">Oct 22, 2021</div><h2 class="article-title">Sentimento Digital</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">4 min read</span></div></div></a></div><div class="article-item"><a href="/articles/aspirar-o-proprio-rabo.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aspirar-o-proprio-rabo-image-0.jpg" alt="Aspirar o próprio rabo?"></div><div class="article-text-content"><div class="article-date">Sep 24, 2021</div><h2 class="article-title">Aspirar o próprio rabo?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/corpus-callosum-politicus.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/corpus-callosum-politicus-image-0.jpg" alt="Corpus Callosum Polīticus"></div><div class="article-text-content"><div class="article-date">Sep 20, 2021</div><h2 class="article-title">Corpus Callosum Polīticus</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/esquerda-vs-direita-ou-emocao-vs-razao.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/esquerda-vs-direita-ou-emocao-vs-razao-image-0.jpg" alt="Esquerda vs Direita ou Emoção vs Razão?"></div><div class="article-text-content"><div class="article-date">Sep 9, 2021</div><h2 class="article-title">Esquerda vs Direita ou Emoção vs Razão?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/qual-e-o-esporte-mais-dificil-do-mundo.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/qual-e-o-esporte-mais-dificil-do-mundo-image-0.png" alt="Qual é o esporte mais difícil do mundo?"></div><div class="article-text-content"><div class="article-date">May 16, 2021</div><h2 class="article-title">Qual é o esporte mais difícil do mundo?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">13 min read</span></div></div></a></div><div class="article-item"><a href="/articles/devemos-ser-preservados-para-observar.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png" alt="Devemos ser preservados para observar?"></div><div class="article-text-content"><div class="article-date">May 6, 2021</div><h2 class="article-title">Devemos ser preservados para observar?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">1 min read</span></div></div></a></div><div class="article-item"><a href="/articles/aco-ou-vento.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aco-ou-vento-image-0.jpg" alt="Aço ou Vento?"></div><div class="article-text-content"><div class="article-date">Apr 29, 2021</div><h2 class="article-title">Aço ou Vento?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">3 min read</span></div></div></a></div><div class="article-item"><a href="/articles/modern-punch.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/modern-punch-image-0.jpg" alt="Modern punch."></div><div class="article-text-content"><div class="article-date">Mar 11, 2021</div><h2 class="article-title">Modern punch.</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">1 min read</span></div></div></a></div><div class="article-item"><a href="/articles/neither-tv-nor-youtube.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neither-tv-nor-youtube-image-0.jpg" alt="Neither tv, nor youtube"></div><div class="article-text-content"><div class="article-date">Feb 2, 2021</div><h2 class="article-title">Neither tv, nor youtube</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/instead-of-whatsapp.html"><div class="article-image-placeholder"></div><div class="article-text-content"><div class="article-date">Jan 11, 2021</div><h2 class="article-title">Instead of whatsapp?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/como-agradar-noam-chomsky-yuval-noah-harari.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg" alt="Como agradar Noam Chomsky &amp; Yuval Noah Harari?"></div><div class="article-text-content"><div class="article-date">Dec 12, 2020</div><h2 class="article-title">Como agradar Noam Chomsky &amp; Yuval Noah Harari?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">4 min read</span></div></div></a></div><div class="article-item"><a href="/articles/noam-chomsky-mixed-with.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/noam-chomsky-mixed-with-image-hero.png" alt="Noam Chomsky mixed with…"></div><div class="article-text-content"><div class="article-date">Dec 11, 2020</div><h2 class="article-title">Noam Chomsky mixed with…</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">1 min read</span></div></div></a></div><div class="article-item"><a href="/articles/fabrica-de-coringas.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png" alt="Fábrica de coringas?"></div><div class="article-text-content"><div class="article-date">Oct 30, 2020</div><h2 class="article-title">Fábrica de coringas?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">4 min read</span></div></div></a></div><div class="article-item"><a href="/articles/o-que-e-belo.html"><div class="article-image-placeholder"></div><div class="article-text-content"><div class="article-date">Sep 9, 2020</div><h2 class="article-title">O que é belo</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">3 min read</span></div></div></a></div><div class="article-item"><a href="/articles/maximizar-mindfulness.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png" alt="Maximizar mindfulness?"></div><div class="article-text-content"><div class="article-date">Jul 8, 2020</div><h2 class="article-title">Maximizar mindfulness?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/sai-o-emprego-fica-a-producao.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg" alt="Sai o emprego, fica a produção"></div><div class="article-text-content"><div class="article-date">Jul 6, 2020</div><h2 class="article-title">Sai o emprego, fica a produção</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">4 min read</span></div></div></a></div><div class="article-item"><a href="/articles/oblivion.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg" alt="Oblivion"></div><div class="article-text-content"><div class="article-date">Apr 27, 2020</div><h2 class="article-title">Oblivion</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">8 min read</span></div></div></a></div><div class="article-item"><a href="/articles/cerebros-livres.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/cerebros-livres-image-0.png" alt="Cérebros livres"></div><div class="article-text-content"><div class="article-date">Dec 20, 2019</div><h2 class="article-title">Cérebros livres</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">3 min read</span></div></div></a></div><div class="article-item"><a href="/articles/a-curiosidade-humana.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg" alt="A curiosidade humana"></div><div class="article-text-content"><div class="article-date">Sep 10, 2019</div><h2 class="article-title">A curiosidade humana</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">11 min read</span></div></div></a></div><div class="article-item"><a href="/articles/repensando-o-sistema-de-metas.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/repensando-o-sistema-de-metas-image-0.jpg" alt="Repensando o sistema de metas"></div><div class="article-text-content"><div class="article-date">Nov 27, 2018</div><h2 class="article-title">Repensando o sistema de metas</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">11 min read</span></div></div></a></div><div class="article-item"><a href="/articles/spam-calls.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/spam-calls-image-0.jpg" alt="Spam Calls"></div><div class="article-text-content"><div class="article-date">Sep 19, 2018</div><h2 class="article-title">Spam Calls</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">4 min read</span></div></div></a></div><div class="article-item"><a href="/articles/human-soup.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg" alt="Human Soup"></div><div class="article-text-content"><div class="article-date">Aug 22, 2018</div><h2 class="article-title">Human Soup</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">5 min read</span></div></div></a></div><div class="article-item"><a href="/articles/a-thought-about-true-cost-the-movie.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-thought-about-true-cost-the-movie-image-0.jpg" alt="A Thought About “True Cost”, The Movie"></div><div class="article-text-content"><div class="article-date">Jul 30, 2018</div><h2 class="article-title">A Thought About “True Cost”, The Movie</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">1 min read</span></div></div></a></div><div class="article-item"><a href="/articles/clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.jpg" alt="Clean your mind? Unsubscribe emails wouldn’t be a bad start"></div><div class="article-text-content"><div class="article-date">Jul 26, 2018</div><h2 class="article-title">Clean your mind? Unsubscribe emails wouldn’t be a bad start</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">2 min read</span></div></div></a></div><div class="article-item"><a href="/articles/lixeiros-nao-utilizam-cinto-de-seguranca-utilizam.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/lixeiros-nao-utilizam-cinto-de-seguranca-utilizam-image-0.jpg" alt="Lixeiros não utilizam cinto de segurança, utilizam?"></div><div class="article-text-content"><div class="article-date">Apr 10, 2015</div><h2 class="article-title">Lixeiros não utilizam cinto de segurança, utilizam?</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">3 min read</span></div></div></a></div></div>
     </div>
   </main>
 
