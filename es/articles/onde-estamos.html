@@ -18,14 +18,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
 .header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
-.nav-links { display: flex; gap: 32px; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
 .nav-links a:hover { color: rgba(41, 41, 41, 1); }
 .container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
 .article-list { padding: 48px 0; }
 .article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
 .article-item a { text-decoration: none; }
-.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
 .article-item:last-child { border-bottom: none; }
 .article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
 .article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
@@ -65,8 +68,156 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .language-switcher span { margin: 0 8px; }
 ::selection { background-color: rgba(26, 137, 23, 0.1); }
 ::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
-@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
-@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  .search-active .logo,
+  .search-active .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
 </style>
 </head>
 <body>
@@ -108,37 +259,37 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="article-content">
           <p> </p>
 <p></p>
-<p>El profesionalismo que llegó a Instagram está asombrando a aquel amateurismo que había al principio. ¿Recuerdas? Aquellas fotos personales. Tú en el restaurante. Tu familia reunida en el sofá. Aquellas publicaciones menos elaboradas.</p>
+<p>El profesionalismo que ha llegado a Instagram está asombrando a aquel amateurismo que había al principio. ¿Recuerdas? Aquellas fotos personales. Tú en el restaurante. Tu familia reunida en el sofá. Aquellas publicaciones menos trabajadas.</p>
 <p>Pero eso es noticia vieja.</p>
 <p>Quiero llegar a esto:</p>
-<p>En esta noticia ya vieja, los profesionales especialistas en publicaciones que asombran a las publicaciones amateur todavía son humanos. Humanos expulsando humanos, por lo tanto.</p>
+<p>En esta noticia ya vieja, los profesionales especialistas en publicaciones que asombran las publicaciones amateur aún son humanos. Humanos expulsando humanos, por lo tanto.</p>
 <p>¿Por cuánto tiempo estos profesionales especialistas en publicaciones necesitan ser humanos?</p>
-<p>El chatGpt consigue elaborar una publicación para cualquier plataforma, por ejemplo con un teaser bien llamativo justo al principio y una &quot;call to action&quot; al final, o en el formato de cualquier estructura de marketing profesional del momento. Basta literalmente con pedirlo.</p>
-<p>Por lo tanto, un día los profesionales todavía humanos de Instagram deben ser sustituidos por el profesionalismo aún más competente de chatGpts.</p>
+<p>El chatGPT puede elaborar una publicación para cualquier plataforma, por ejemplo, con un teaser bien llamativo justo al principio y un &quot;call to action&quot; al final, o en el formato de cualquier estructura de marketing profesional del momento. Basta literalmente con pedirlo.</p>
+<p>Por lo tanto, un día los profesionales aún humanos de Instagram deben ser reemplazados por el profesionalismo aún más competente de los chatGPTs.</p>
 <p>¿Percibimos un escenario nuevo?</p>
 <p>Todos los humanos - nuestro lado amateur, nuestro lado profesional - acaban expulsados de la red social.</p>
-<p>Olvidé decir que la red social es, en teoría, una nueva calle, una nueva acera, un nuevo parque para encuentros.</p>
+<p>Olvidé decir que la red social es, en tesis, una nueva calle, una nueva acera, un nuevo parque para encuentros.</p>
 <p>Vaciadas las redes sociales, estaríamos vaciando el encuentro. Las calles y plazas de pantallas de vidrio.</p>
 <p>Es posible que luchemos contra esa tendencia. Es posible que no renunciemos al encuentro humano.</p>
 <p>Pero no es obligatorio.</p>
-<p>Es posible que cambiemos, sí, gradativamente, la relación humano-humano por la relación humano-chatGpt. Cada vez más.</p>
+<p>Es posible que cambiemos, sí, gradualmente, la relación humano-humano por la relación humano-chatGPT. Cada vez más.</p>
 <p>Si es para encontrar profesionalismo, dispensar al humano en la ecuación del encuentro es prácticamente cierto.</p>
-<p>Como ya sucede en Instagram. En Instagram humanos amateur ya fueron sustituidos por humanos profesionales. Donde el profesionalismo es preferido en relación al amateurismo - profesionalismo con o sin la necesidad de humanos produciendo - la audiencia seguirá fiel al profesionalismo, no al humano que antes había detrás de este profesionalismo.</p>
+<p>Como ya sucede en Instagram. En Instagram, los humanos amateurs ya han sido reemplazados por humanos profesionales. Donde el profesionalismo es preferido en relación con el amateurismo - profesionalismo con o sin la necesidad de humanos produciendo - la audiencia seguirá fiel al profesionalismo, no al humano que antes había detrás de este profesionalismo.</p>
 <p>Lo que podrá - ¿será? - restar es un nicho de humanismo. Una búsqueda por el amateurismo asumido. Una búsqueda por el comportamiento &quot;idiota&quot; en comparación con el profesionalismo que habrá.</p>
-<p>Pero, ¿es obligatorio que eso suceda? ¿Es obligatorio que busquemos humanos y sus errores, hartándonos del profesionalismo competente?</p>
+<p>Pero, ¿es obligatorio que eso suceda? ¿Es obligatorio que busquemos humanos y sus errores, aburriéndonos del profesionalismo competente?</p>
 <p>¿Es obligatorio restar un nicho de humanismo amateur asumido, idiota comparado con el profesional?</p>
-<p>No veo como cierto que seremos fieles a nosotros mismos, humanos con humanos. No apuesto ni allí ni acá. No lo sé.</p>
-<p>Espero que noten la cuestión que propongo: el profesionalismo del chatGpt sustituirá los encuentros humanos que deseen profesionalismo - en esto yo apuesto/opino que ocurrirá. Lo que en seguida no sé es si nosotros todavía seguiremos queriendo &quot;amateurismo humano&quot; &quot;en las horas libres&quot;. ¿Iremos a querer &quot;amateurismo humano&quot; &quot;en las horas libres&quot;?</p>
-<p>¿Pero qué es el &quot;amateurismo humano&quot;? ¿Son nuestros defectos encantadores? ¿El fallo?</p>
-<p>Si es el fallo, o el defecto encantador, hasta eso un chatGpt sabe, tranquilamente, reproducir. Defectos son tan reproducibles como crear &quot;call to actions&quot; o frases iniciales llamativas.</p>
-<p>Si nuestro &quot;humanismo&quot; - tal vez nuestros fallos, nuestra imperfección - también fuera posible de ser imitado, entonces hasta mismo el eventual &quot;encanto&quot; del &quot;amateurismo&quot; humano será sustituible por máquinas.</p>
+<p>No veo como cierto que seremos fieles a nosotros mismos, humanos con humanos. No apuesto ni allá ni acá. No sé.</p>
+<p>Espero que noten la cuestión que propongo: el profesionalismo del chatGPT sustituirá los encuentros humanos que deseen profesionalismo - en esto yo apuesto/opino que ocurrirá. Lo que en seguida no sé es si nosotros aún seguiremos queriendo &quot;amateurismo humano&quot; &quot;en las horas libres&quot;. ¿Iremos a querer &quot;amateurismo humano&quot; &quot;en las horas libres&quot;?</p>
+<p>Pero, ¿qué es el &quot;amateurismo humano&quot;? ¿Son nuestros defectos encantadores? ¿El fallo?</p>
+<p>Si es el fallo, o el defecto encantador, hasta eso un chatGPT sabe, tranquilamente, reproducir. Defectos son tan reproducibles como crear &quot;call to actions&quot; o frases iniciales llamativas.</p>
+<p>Si nuestro &quot;humanismo&quot; - tal vez nuestras fallas, nuestra imperfección - también fuera posible de ser imitado, entonces hasta mismo el eventual &quot;encanto&quot; del &quot;amateurismo&quot; humano será sustituible por máquinas.</p>
 <p>En un escenario de esos, no solo la selva se vaciaría - hace tiempo vaciamos las selvas -, no solamente las calles y cafés en las calles - que estamos vaciando aún -, sino, hasta mismo, las calles virtuales, estas calles que deslizamos en la vertical con el dedo en pantallas de vidrio, se vaciarían.</p>
-<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg" alt="&quot;Emptiness&quot;. Imagem produzida para o filme Vanilla Sky (2001)." /><figcaption>&quot;Emptiness&quot;. Imagem produzida para o filme Vanilla Sky (2001).</figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-1.jpg" alt="&quot;Emptiness&quot;. Imagem produzida para o filme Vanilla Sky (2001)." /><figcaption>&quot;Emptiness&quot;. Imagem produzida para o filme Vanilla Sky (2001).</figcaption></figure>
 <p>&quot;Emptiness&quot;. Imagen producida para la película <a href="https://en.wikipedia.org/wiki/Vanilla_Sky" target="_blank" rel="noopener noreferrer">Vanilla Sky (2001)</a>.</p>
-<p>Así como tememos, hoy, a la selva - mosquitos, cobras -, temeremos las calles - desviar de coches de una tonelada, sol fuerte, lluvias -, podremos temer hasta mismo las redes sociales humanas: amateurismo, falta de competencia.</p>
-<p>¿Vamos pensando juntos? Mientras aún tenemos competencia relativa para eso.</p>
-<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg" alt="&quot;Emptiness&quot;. Imagem gerada por um humano (eu) usando cena de vanilla sky." /><figcaption>&quot;Emptiness&quot;. Imagem gerada por um humano (eu) usando cena de vanilla sky.</figcaption></figure>
-<p>&quot;Emptiness&quot;. Imagen generada por un humano (yo) usando escena de Vanilla Sky.</p>
+<p>Así como tememos, hoy, a la selva - mosquitos, cobras -, temeremos las calles - desviar de carros de una tonelada, sol fuerte, lluvias -, podremos temer hasta mismo las redes sociales humanas: amateurismo, falta de competencia.</p>
+<p>¿Vamos pensando juntos? Mientras aún tenemos competencia relativa para eso..</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-2.jpg" alt="&quot;Emptiness&quot;. Imagem gerada por um humano (eu) usando cena de vanilla sky." /><figcaption>&quot;Emptiness&quot;. Imagem gerada por um humano (eu) usando cena de vanilla sky.</figcaption></figure>
+<p>&quot;Emptiness&quot;. Imagen generada por un humano (yo) usando escena de vanilla sky.</p>
         </div>
 
       </div>

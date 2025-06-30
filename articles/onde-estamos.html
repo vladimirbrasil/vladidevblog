@@ -18,14 +18,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
 .header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
-.nav-links { display: flex; gap: 32px; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
 .nav-links a:hover { color: rgba(41, 41, 41, 1); }
 .container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
 .article-list { padding: 48px 0; }
 .article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
 .article-item a { text-decoration: none; }
-.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
 .article-item:last-child { border-bottom: none; }
 .article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
 .article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
@@ -65,8 +68,156 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .language-switcher span { margin: 0 8px; }
 ::selection { background-color: rgba(26, 137, 23, 0.1); }
 ::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
-@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
-@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  .search-active .logo,
+  .search-active .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
 </style>
 </head>
 <body>
@@ -133,11 +284,11 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Se for a falha, ou o defeito charmoso, até isso um chatGpt sabe, tranquilamente, reproduzir. Defeitos são tão reproduzíveis quanto criar &quot;call to actions&quot; ou frases iniciais chamativas.</p>
 <p>Se nosso &quot;humanismo&quot; - talvez nossas falhas, nossa imperfeição - também for possível de ser imitado, então até mesmo o eventual &quot;charme&quot; do &quot;amadorismo&quot; humano será substituível por máquinas.</p>
 <p>Num cenário desses, não só a selva se esvaziaria - faz tempo esvaziamos as selvas -, não somente as ruas e cafés nas ruas - que estamos esvaziando ainda -, mas, até mesmo, as ruas virtuais, estas ruas que deslizamos na vertical com o dedo em telas de vidro, se esvaziariam.</p>
-<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg" alt="&quot;Emptiness&quot;. Imagem produzida para o filme Vanilla Sky (2001)." /><figcaption>&quot;Emptiness&quot;. Imagem produzida para o filme Vanilla Sky (2001).</figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-1.jpg" alt="&quot;Emptiness&quot;. Imagem produzida para o filme Vanilla Sky (2001)." /><figcaption>&quot;Emptiness&quot;. Imagem produzida para o filme Vanilla Sky (2001).</figcaption></figure>
 <p>&quot;Emptiness&quot;. Imagem produzida para o filme <a href="https://en.wikipedia.org/wiki/Vanilla_Sky" target="_blank" rel="noopener noreferrer">Vanilla Sky (2001)</a>.</p>
 <p>Assim como tememos, hoje, a selva - mosquitos, cobras -, temeremos as ruas - desviar de carros de uma tonelada, sol forte, chuvas -, poderemos temer até mesmo as redes sociais humanas: amadorismo, falta de competência.</p>
-<p>Vamos pensando juntos? Enquanto ainda temos competência relativa para isso.</p>
-<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg" alt="&quot;Emptiness&quot;. Imagem gerada por um humano (eu) usando cena de vanilla sky." /><figcaption>&quot;Emptiness&quot;. Imagem gerada por um humano (eu) usando cena de vanilla sky.</figcaption></figure>
+<p>Vamos pensando juntos? Enquanto ainda temos competência relativa para isso..</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-2.jpg" alt="&quot;Emptiness&quot;. Imagem gerada por um humano (eu) usando cena de vanilla sky." /><figcaption>&quot;Emptiness&quot;. Imagem gerada por um humano (eu) usando cena de vanilla sky.</figcaption></figure>
 <p>&quot;Emptiness&quot;. Imagem gerada por um humano (eu) usando cena de vanilla sky.</p>
 
         </div>

@@ -88,7 +88,7 @@
         "altText": "emptiness.",
         "caption": "emptiness."
       },
-      "lastUpdated": "2025-06-27T14:09:13.683Z"
+      "lastUpdated": "2025-06-30T19:16:16.767Z"
     },
     {
       "id": "auto-traicao",
@@ -133,7 +133,7 @@
         "altText": "an humanoid robot barefoot inside a jungle",
         "caption": "an humanoid robot barefoot inside a jungle"
       },
-      "lastUpdated": "2025-06-27T14:11:35.888Z"
+      "lastUpdated": "2025-06-30T19:16:05.007Z"
     },
     {
       "id": "caixao-nao-tem-gavetas",
@@ -241,7 +241,7 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-27T14:20:10.015Z"
+      "lastUpdated": "2025-06-30T19:15:15.253Z"
     },
     {
       "id": "neuragame",
@@ -355,13 +355,13 @@
       "date": "2021-05-17",
       "readingTime": 13,
       "heroImage": {
-        "fileName": "qual-e-o-esporte-mais-dificil-do-mundo-image-hero.png",
-        "githubPath": "images/qual-e-o-esporte-mais-dificil-do-mundo-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/qual-e-o-esporte-mais-dificil-do-mundo-image-hero.png",
+        "fileName": "qual-e-o-esporte-mais-dificil-do-mundo-image-0.png",
+        "githubPath": "images/qual-e-o-esporte-mais-dificil-do-mundo-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/qual-e-o-esporte-mais-dificil-do-mundo-image-0.png",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-06-27T14:38:41.053Z"
+      "lastUpdated": "2025-06-30T19:14:59.948Z"
     },
     {
       "id": "devemos-ser-preservados-para-observar",
@@ -652,5 +652,5 @@
       "lastUpdated": "2025-06-27T15:15:58.395Z"
     }
   ],
-  "lastUpdated": "2025-06-30T18:53:09.941Z"
+  "lastUpdated": "2025-06-30T19:17:36.722Z"
 }

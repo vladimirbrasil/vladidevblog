@@ -18,14 +18,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
 .header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
-.nav-links { display: flex; gap: 32px; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
 .nav-links a:hover { color: rgba(41, 41, 41, 1); }
 .container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
 .article-list { padding: 48px 0; }
 .article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
 .article-item a { text-decoration: none; }
-.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
 .article-item:last-child { border-bottom: none; }
 .article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
 .article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
@@ -65,8 +68,156 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .language-switcher span { margin: 0 8px; }
 ::selection { background-color: rgba(26, 137, 23, 0.1); }
 ::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
-@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
-@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  .search-active .logo,
+  .search-active .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
 </style>
 </head>
 <body>
@@ -108,61 +259,61 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="article-content">
           <p> </p>
 <p></p>
-<p>Nehmen wir an, die Art und Weise, wie Atome sich zu Molekülen, Geweben, Leben und Bewusstsein zusammenfügen, sei so frei wie ein leeres Blatt Papier.</p>
-<p>Was ist auf diesem ursprünglich leeren Blatt die aktuelle Zeichnung?</p>
-<p>Hier auf der Erde sind Atome so gruppiert, dass das Überleben einer superwichtigen Gruppierung Priorität hat: des Gens.</p>
+<p>Nehmen wir an, die Art und Weise, wie Atome in Molekülen, Geweben, Leben, Bewusstsein gruppiert werden, sei so frei wie ein leeres Blatt Papier.</p>
+<p>Wie sieht die aktuelle Zeichnung auf diesem ursprünglich leeren Blatt aus?</p>
+<p>Hier auf der Erde sind die Atome so gruppiert, dass das Überleben einer sehr wichtigen Gruppierung im Vordergrund steht: dem Gen.</p>
 <p>Eine Ansammlung von Atomen, organisiert, das Gen.</p>
-<p>Ich. Du. Wir produzieren genetisches Material, das sich fortpflanzt, wenn wir Kinder bekommen.</p>
+<p>Ich. Du. Wir produzieren genetisches Material, das sich fortsetzt, wenn wir Kinder bekommen.</p>
 <p>Wir sterben. Das Gen folgt.</p>
 <p>Die Genetik der Menschheit folgt.</p>
 <p>Individuell stirbt jeder menschliche Körper. Shakespeare stirbt. Einstein stirbt. Ich sterbe. Du stirbst. Aristoteles stirbt.</p>
-<p>Aber die Gene der Art leben sehr gut weiter.</p>
+<p>Aber die Gene der Spezies bleiben sehr lebendig.</p>
 <p>Nicht nur Gene: Meme.</p>
-<p>Richard Dawkins nannte ein Stück Information, das sich fortpflanzt, ein <a href="https://pt.wikipedia.org/wiki/Meme" target="_blank" rel="noopener noreferrer">Mem</a>.</p>
-<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg" alt="" /></figure>
+<p>Richard Dawkins nannte ein <a href="https://pt.wikipedia.org/wiki/Meme" target="_blank" rel="noopener noreferrer">Mem</a> ein Stück Information, das sich fortsetzt.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-1.jpg" alt="" /></figure>
 <p>Richard Dawkins</p>
-<p>Wir pflanzen Meme fort. Information. Vom Logarithmus zur Sprache, von der Poesie zum Bau von Instrumenten pflanzen wir Informationen fort.</p>
-<p>So kann ein Stück von Shakespeare, eine Theorie von Einstein, eine Denkweise von Aristoteles genauso lebendig bleiben wie ein Gen.</p>
-<p>Auch nachdem die Körper und das Bewusstsein von Einstein, Aristoteles und Shakespeare verschwunden sind. Die Idee bleibt.</p>
+<p>Wir setzen Meme fort. Information. Vom Logarithmus bis zur Sprache, von der Poesie bis zum Bau von Instrumenten setzen wir Informationen fort.</p>
+<p>So kann ein Stück von Shakespeare, eine Theorie von Einstein, eine Denkweise von Aristoteles so lebendig bleiben wie ein Gen.</p>
+<p>Auch nachdem die Körper und das Bewusstsein von Einstein, Aristoteles, Shakespeare bereits verschwunden sind. Die Idee bleibt.</p>
 <p>Meme und Gene bleiben erhalten. Kultur und DNA.</p>
 <p>Weggehen: Körper und Bewusstsein.</p>
 <p>Wie ein leeres Blatt Papier,</p>
-<p>können wir davon ausgehen, dass die Zeichnung, die Atome unter Priorisierung von Genen und Verwerfung von Körpern organisiert, so "Matrix" ist wie die Fantasie des Films Matrix.</p>
+<p>können wir davon ausgehen, dass die Zeichnung, die Atome unter Priorisierung von Genen organisiert und Körper verwirft, genauso „Matrix“ ist wie die Fantasie des Films Matrix.</p>
 <p>Eine Zeichnung.</p>
-<p>Eine Möglichkeit, Atome zu organisieren.</p>
-<p>Eine "Matrix". Warum nicht?</p>
-<p>So erfunden wie das für Tom Cruise im Film Vanilla Sky erschaffene Leben oder die Matrix des Films Matrix.</p>
-<p>Mit einem brutalen Unterschied: Es gäbe kein "echtes" Leben, in das wir zurückkehren könnten, wie es in den Hollywood-Filmen Matrix und Vanilla Sky der Fall war.</p>
-<p>Wenn wir die Konfiguration der Atome als völlig frei betrachten, gibt es keine richtige Methode. Es gibt kein "Echt".</p>
-<p>Dieser Mangel an Sinn, des Richtigen, wird durch Religionen gefüllt, die nicht nur Sinn stiften, sondern auch die Menschheit in Gruppen organisieren.</p>
-<p>Wer sicher ist, dass ein Gott den Fokus auf das Gen so geschaffen hat, wie es heute der Fall ist, und dass diese Art, Atome, Moleküle, Gewebe, Leben und Bewusstsein zu organisieren, nicht in Frage gestellt werden sollte, sollte nicht weiterlesen, denn in den nächsten Abschnitten werde ich davon ausgehen, dass es kein Richtig oder Falsch in der breiten Möglichkeit der Organisation von Atomen gibt.</p>
-<p>Wer unsere Biologie und unsere Genetik programmiert hat – der Zufall, komplexe Interaktionen, das Überleben der Tüchtigsten – hat das Überleben des Gens programmiert. Das Gen ist jetzt in dir, aber später, zur Hälfte, in deinen Kindern. Und Enkeln.</p>
-<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg" alt="" /></figure>
-<p>Darwin sprach vom Überleben der Tüchtigsten.</p>
-<p>Bewusstsein und Körper schwinden im Durchschnitt in etwa 80 Jahren. Das Gen schreitet fort.</p>
-<p>Aus dieser Realität – so schlage ich vor – können wir fliehen.</p>
-<p>Wir können davon ausgehen, dass diese aktuelle Zeichnung unsere aktuelle "Matrix" ist.</p>
+<p>Eine Art, die Atome zu organisieren.</p>
+<p>Eine „Matrix“. Warum nicht?</p>
+<p>Genauso erfunden wie das für Tom Cruise im Film Vanilla Sky erschaffene Leben oder die Matrix des Films Matrix.</p>
+<p>Mit einem brutalen Unterschied: Es gäbe kein „echtes“ Leben, in das wir zurückkehren könnten, wie es in den Hollywood-Filmen Matrix und Vanilla Sky der Fall war.</p>
+<p>Wenn wir die Konfiguration der Atome als völlig frei betrachten, gibt es keine richtige Methode. Es gibt kein „Echt“.</p>
+<p>Dieser Mangel an Sinn, an Richtigem, wird durch Religionen gefüllt, die nicht nur Sinn stiften, sondern die Menschheit auch in Gruppen organisieren.</p>
+<p>Wer sicher ist, dass ein Gott den Fokus auf das Gen so geschaffen hat, wie es heute vorkommt, und dass diese Art, Atome, Moleküle, Gewebe, Leben und Bewusstsein zu organisieren, nicht in Frage gestellt werden sollte, soll nicht weiterlesen, denn in den nächsten Absätzen werde ich davon ausgehen, dass es in der breiten Möglichkeit der Organisation von Atomen kein Richtig und kein Falsch gibt.</p>
+<p>Wer unsere Biologie und unsere Genetik programmiert hat – Zufall, komplexe Interaktionen, das Überleben des Stärkeren – hat das Überleben des Gens programmiert. Das Gen ist jetzt in dir, aber später, zur Hälfte, in deinen Kindern. Und Enkelkindern.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-2.jpg" alt="" /></figure>
+<p>Darwin sprach über das Überleben des Stärkeren.</p>
+<p>Bewusstsein und Körper schwinden im Durchschnitt in etwa 80 Jahren. Das Gen setzt sich fort.</p>
+<p>Vor dieser Realität – so schlage ich vor – können wir fliehen.</p>
+<p>Wir können davon ausgehen, dass diese aktuelle Zeichnung unsere aktuelle „Matrix“ ist.</p>
 <p>Warum können wir keine andere Zeichnung haben?</p>
 <p>Zum Beispiel: Wie wäre es mit einer Zeichnung, in der das Bewusstsein – du selbst, nicht nur deine Gene – lange fortbesteht?</p>
-<p>In diesem Fall würden wir dieser "Matrix" entkommen, in der das Überleben der Gene vorherrscht, während Körper und Bewusstsein verworfen werden. Wie jemand, der die Schale einer Orange ausspuckt.</p>
-<p>Ich sage das nicht, ohne zu wissen, dass es in unserer Reichweite liegt. Das Buch <a href="https://www.amazon.com.br/Lifespan-Why-Age_and-Dont-Have/dp/1982135875" target="_blank" rel="noopener noreferrer">Lebensspanne</a> erklärt die Therapie mit den drei Genen "OSK" – oct4, sox2, klf4 –, die unsere Hülle aus Genen – unseren Körper, unser Bewusstsein – verjüngen.</p>
+<p>In diesem Fall würden wir dieser „Matrix“ entkommen, in der das Überleben der Gene vorherrscht, während Körper und Bewusstsein verworfen werden. Wie jemand, der die Schale einer Orange ausspuckt.</p>
+<p>Ich sage das nicht, ohne zu wissen, dass es in unserer Reichweite liegt. Das Buch <a href="https://www.amazon.com.br/Lifespan-Why-Age_and-Dont-Have/dp/1982135875" target="_blank" rel="noopener noreferrer">Lebensspanne</a> erklärt die Therapie mit den drei Genen „OSK“ – oct4, sox2, klf4 – die unsere Genhülle – unseren Körper, unser Bewusstsein – verjüngen.</p>
 <p><a href="https://www.cnbc.com/2021/09/21/silicon-valleys-quest-to-live-forever-could-benefit-the-rest-of-us.html" target="_blank" rel="noopener noreferrer">Jeff Bezos, der Besitzer von Amazon, investiert bereits in dieses Unterfangen</a>.</p>
 <p>Warum den Körper ausspucken und nur die Gene Tausende oder Millionen von Jahren leben lassen?</p>
-<p>Kann es sein, dass diese von der Biologie ausgeheckte "Matrix" mit ihren Partnern Zufall, komplexen Interaktionen und dem Überleben der Tüchtigsten uns erstickt?</p>
-<p>Diese Zeichnung erstickt nicht unsere Gene. Die lange dauern.</p>
-<p>Aber sie erstickt unseren Körper. Sie verwirft unser Bewusstsein.</p>
-<p>In der aktuellen Zeichnung müssen wir Kinder zwanzig Jahre lang ausbilden, damit sie das Wissen, das sie erben, in etwa 40 Jahren aktiven Lebens erweitern, bevor sie in Rente gehen und sterben. All dies, während sie die nächste Generation vorbereiten und versuchen, das allgemeine Wissen der Menschheit zwischen dem Suchen und Bringen von Kindern aus der Welt zur Schule zu verbessern. Alles zusammen.</p>
+<p>Kann es sein, dass uns diese von der Biologie gewebte „Matrix“ mit ihren Partnern Zufall, komplexe Interaktionen und Überleben des Stärkeren erstickt?</p>
+<p>Diese Zeichnung erstickt unsere Gene nicht. Die lange andauern.</p>
+<p>Aber es erstickt unseren Körper. Es verwirft unser Bewusstsein.</p>
+<p>In der aktuellen Zeichnung müssen wir Kinder zwanzig Jahre lang trainieren, damit diese das Wissen, das sie erben, in etwa 40 Jahren aktiven Lebens erweitern, bevor sie in Rente gehen und sterben. All dies, während sie die nächste Generation vorbereiten und versuchen, das allgemeine Wissen der Menschheit zu verbessern, indem sie Kinder aus der ganzen Welt suchen und zur Schule bringen. Alles zusammen.</p>
 <p>Diese Art der Wissenserweiterung wirft viel Erfahrung weg.</p>
 <p>Wie wäre es, Lehrer und Schüler mit tausend, zehntausend, einer Million Jahren Erfahrung zu haben?</p>
-<p>Informationen könnten an Tiefe gewinnen.</p>
-<p>Oder nur zum Spaß: Wenn wir uns entscheiden können, dem Bewusstsein Langlebigkeit zu verleihen, warum nicht wählen?</p>
-<p>Die Gene würden auch zusammen überleben.</p>
+<p>Die Information könnte an Tiefe gewinnen.</p>
+<p>Oder nur zum Spaß: Wenn wir wählen können, dem Bewusstsein Langlebigkeit zu verleihen, warum wählen wir es dann nicht?</p>
+<p>Die Gene würden trotzdem zusammen überleben.</p>
 <p>Wir alle gewinnen: Gene und Bewusstsein.</p>
-<p>Wäre es nicht cool, aus der von der Biologie aufgebauten Matrix auszusteigen? Für ein Leben, das sich auch auf das Bewusstsein konzentriert?</p>
-<p>Oder bleiben wir in der Matrix gefangen, die "über uns hereingebrochen ist"?</p>
-<p>In Wahrheit haben wir keine Möglichkeit, uns nicht weiterzuentwickeln.</p>
+<p>Wäre es nicht cool, die von der Biologie konstruierte Matrix zu verlassen? Für ein Leben, das sich auch auf das Bewusstsein konzentriert?</p>
+<p>Oder bleiben wir in der Matrix gefangen, die „über uns hereingebrochen ist“?</p>
+<p>In Wirklichkeit haben wir keine Möglichkeit, uns nicht weiterzuentwickeln.</p>
 <p>Es ist natürlich. Es ist eine Frage der Zeit. Es ist sogar, warum nicht, biologisch.</p>
-<p>Denn wir sind Früchte der Natur. Wir sind auch Früchte des Zufalls, komplexer Interaktionen, mit dem Überleben der Tüchtigsten.</p>
+<p>Denn wir sind Früchte der Natur. Wir sind auch Früchte des Zufalls, komplexer Interaktionen mit dem Überleben des Stärkeren.</p>
 <p>Auch wenn wir uns entscheiden, die Matrix zu wechseln.</p>
         </div>
 

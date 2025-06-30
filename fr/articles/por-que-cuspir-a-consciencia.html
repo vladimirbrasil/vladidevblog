@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pourquoi rejeter la conscience ? - Vladimir Dietrich's Blog</title>
+  <title>Pourquoi cracher la conscience ? - Vladimir Dietrich's Blog</title>
   <meta name="description" content=" ">
   <meta name="author" content="Vladimir Dietrich">
-  <meta property="og:title" content="Pourquoi rejeter la conscience ? - Vladimir Dietrich's Blog">
+  <meta property="og:title" content="Pourquoi cracher la conscience ? - Vladimir Dietrich's Blog">
   <meta property="og:description" content=" ">
   <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg">
   <meta property="og:type" content="article">
@@ -18,14 +18,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
 .header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
-.nav-links { display: flex; gap: 32px; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
 .nav-links a:hover { color: rgba(41, 41, 41, 1); }
 .container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
 .article-list { padding: 48px 0; }
 .article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
 .article-item a { text-decoration: none; }
-.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
 .article-item:last-child { border-bottom: none; }
 .article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
 .article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
@@ -65,8 +68,156 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .language-switcher span { margin: 0 8px; }
 ::selection { background-color: rgba(26, 137, 23, 0.1); }
 ::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
-@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
-@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  .search-active .logo,
+  .search-active .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
 </style>
 </head>
 <body>
@@ -90,7 +241,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <a href="/fr/index.html" class="back-button">← Back to all articles</a>
 
         <div class="article-header">
-          <h1>Pourquoi rejeter la conscience ?</h1>
+          <h1>Pourquoi cracher la conscience ?</h1>
           <div class="meta">
             <span class="author-name">Vladimir Dietrich</span>
             <span>·</span>
@@ -108,7 +259,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="article-content">
           <p> </p>
 <p></p>
-<p>Supposons que la façon de regrouper les atomes en molécules, tissus, vies, consciences, soit libre comme une feuille blanche.</p>
+<p>Supposons que la manière de regrouper les atomes en molécules, tissus, vies, consciences, soit libre comme une feuille blanche.</p>
 <p>Sur cette feuille initialement vierge, quel est le dessin actuel ?</p>
 <p>Ici sur Terre, les atomes sont regroupés d'une manière qui privilégie la survie d'un regroupement super important : le gène.</p>
 <p>Un ensemble d'atomes, organisé, le gène.</p>
@@ -119,48 +270,48 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Mais les gènes de l'espèce restent bien vivants.</p>
 <p>Pas seulement les gènes : les mèmes.</p>
 <p>Richard Dawkins a appelé <a href="https://pt.wikipedia.org/wiki/Meme" target="_blank" rel="noopener noreferrer">mème</a> un morceau d'information qui se perpétue.</p>
-<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg" alt="" /></figure>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-1.jpg" alt="" /></figure>
 <p>Richard Dawkins</p>
-<p>Nous perpétuons les mèmes. L'information. Du logarithme à la langue, de la poésie à la construction d'instruments, nous perpétuons les informations.</p>
+<p>Nous perpétuons les mèmes. L'information. Du logarithme à la langue, de la poésie à la façon de construire des instruments, nous perpétuons des informations.</p>
 <p>Ainsi, une pièce de Shakespeare, une théorie d'Einstein, une manière de penser d'Aristote peuvent rester aussi vivantes qu'un gène.</p>
 <p>Même après que les corps et les consciences d'Einstein, d'Aristote, de Shakespeare aient disparu. L'idée reste.</p>
-<p>Les mèmes et les gènes sont préservés. Culture et ADN.</p>
-<p>S'en vont : corps et conscience.</p>
+<p>Les mèmes et les gènes sont préservés. La culture et l'ADN.</p>
+<p>Les corps et la conscience s'en vont.</p>
 <p>Comme une feuille blanche,</p>
-<p>nous pouvons considérer que le dessin qui organise les atomes en privilégiant les gènes, en rejetant les corps, est aussi "Matrix" que le fantasme du film Matrix.</p>
+<p>nous pouvons considérer que le dessin qui organise les atomes en privilégiant les gènes, en rejetant les corps, est aussi « Matrix » que le fantasme du film Matrix.</p>
 <p>Un dessin.</p>
-<p>Une façon d'organiser les atomes.</p>
-<p>Une "Matrix". Pourquoi pas ?</p>
+<p>Une manière d'organiser les atomes.</p>
+<p>Une « Matrix ». Pourquoi pas ?</p>
 <p>Aussi inventée que la vie créée pour Tom Cruise dans le film Vanilla Sky ou la Matrix du film Matrix.</p>
-<p>Avec une différence brutale : il n'y aurait pas de vie "réelle" vers laquelle nous pourrions revenir, comme il y en avait dans les hollywoodiens Matrix et Vanilla Sky.</p>
-<p>Si nous considérons la configuration des atomes comme totalement libre, il n'y a pas de méthode correcte. Il n'y a pas de "réel".</p>
-<p>Ce manque de sens, de ce qui est juste, est comblé par les religions qui, en plus de donner un sens, organisent l'humanité en groupes.</p>
-<p>Si vous êtes sûr qu'un Dieu a créé l'accent sur le gène tel qu'il se produit aujourd'hui, et que cette façon d'organiser les atomes, les molécules, les tissus, les vies et les consciences ne doit pas être remise en question, ne continuez pas à lire, car dans les prochains paragraphes, je vais considérer qu'il n'y a ni bien ni mal dans la vaste possibilité d'organisation des atomes.</p>
+<p>Avec une différence brutale : il n'y aurait pas de vie « réelle » à laquelle nous pourrions retourner, comme il y en avait dans les films hollywoodiens Matrix et Vanilla Sky.</p>
+<p>Si nous considérons la configuration des atomes comme totalement libre, il n'y a pas de méthode correcte. Il n'y a pas de « réel ».</p>
+<p>Ce manque de sens, de juste, est comblé par les religions qui, en plus de combler le sens, organisent l'humanité en groupes.</p>
+<p>Si quelqu'un est certain qu'un Dieu a créé l'accent sur le gène comme c'est le cas aujourd'hui, et que cette manière d'organiser les atomes, les molécules, les tissus, les vies et les consciences ne doit pas être remise en question, qu'il ne continue pas à lire, car dans les prochains paragraphes je vais considérer qu'il n'y a ni juste, ni faux, dans la large possibilité d'organisation des atomes.</p>
 <p>Celui qui a programmé notre biologie et notre génétique - le hasard, les interactions complexes, la survie des plus aptes - a programmé la survie du gène. Le gène est en vous, maintenant, mais plus tard, à moitié, dans vos enfants. Et petits-enfants.</p>
-<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg" alt="" /></figure>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-2.jpg" alt="" /></figure>
 <p>Darwin a parlé de la survie des plus aptes.</p>
 <p>La conscience et le corps s'affaiblissent en environ 80 ans, en moyenne. Le gène continue.</p>
 <p>C'est de cette réalité que - je propose - nous pouvons fuir.</p>
-<p>Nous pouvons considérer que ce dessin actuel est notre "Matrix" actuelle.</p>
+<p>Nous pouvons considérer que ce dessin actuel est notre « Matrix » actuelle.</p>
 <p>Pourquoi ne pouvons-nous pas avoir un dessin différent ?</p>
 <p>Par exemple : que diriez-vous d'un dessin dans lequel la conscience - vous-même, pas seulement vos gènes - se perpétue longtemps ?</p>
-<p>Dans ce cas, nous fuirions cette "Matrix" dans laquelle prévaut la survie des gènes, tout en rejetant le corps et la conscience. Comme celui qui crache la peau d'une orange.</p>
-<p>Je ne dis pas cela sans savoir que c'est très proche de notre portée. Le livre <a href="https://www.amazon.com.br/Lifespan-Why-Age_and-Dont-Have/dp/1982135875" target="_blank" rel="noopener noreferrer">Lifespan</a> explique la thérapie avec les trois gènes, "OSK" - oct4, sox2, klf4 - qui rajeunit notre enveloppe de gènes - notre corps, notre conscience.</p>
+<p>Dans ce cas, nous fuirions cette « Matrix » dans laquelle prévaut la survie des gènes, tout en rejetant le corps et la conscience. Comme celui qui crache la peau d'une orange.</p>
+<p>Je ne dis pas cela sans savoir que c'est très proche de notre portée. Le livre <a href="https://www.amazon.com.br/Lifespan-Why-Age_and-Dont-Have/dp/1982135875" target="_blank" rel="noopener noreferrer">Lifespan</a> explique la thérapie avec les trois gènes, « OSK » - oct4, sox2, klf4 - qui rajeunit cette enveloppe de gènes - notre corps, notre conscience.</p>
 <p><a href="https://www.cnbc.com/2021/09/21/silicon-valleys-quest-to-live-forever-could-benefit-the-rest-of-us.html" target="_blank" rel="noopener noreferrer">Jeff Bezos, propriétaire d'Amazon, investit déjà dans cette entreprise</a>.</p>
-<p>Pourquoi cracher le corps et laisser seulement les gènes vivre des milliers ou des millions d'années ?</p>
-<p>Se pourrait-il que cette "Matrix", tramée par la biologie, avec ses associés le hasard, les interactions complexes et la survie des plus aptes, ne soit pas en train de nous étouffer ?</p>
+<p>Pourquoi cracher le corps et ne laisser que les gènes vivre des milliers ou des millions d'années ?</p>
+<p>Se pourrait-il que cette « Matrix », tissée par la biologie, avec ses partenaires le hasard, les interactions complexes et la survie des plus aptes, ne soit pas en train de nous étouffer ?</p>
 <p>Ce dessin n'étouffe pas nos gènes. Qui durent longtemps.</p>
-<p>Mais étouffe notre corps. Rejette notre conscience.</p>
-<p>Dans le dessin actuel, nous devons former les enfants pendant vingt ans, afin qu'ils étendent les connaissances qu'ils héritent en environ 40 ans de vie active, avant de prendre leur retraite et de mourir. Tout cela en préparant la prochaine génération, en essayant d'améliorer les connaissances générales de l'humanité entre la recherche et l'emmener des enfants du monde à l'école. Tout ensemble.</p>
-<p>Cette façon d'étendre les connaissances gaspille beaucoup d'expérience.</p>
+<p>Mais il étouffe notre corps. Il rejette notre conscience.</p>
+<p>Dans le dessin actuel, nous devons former des enfants pendant vingt ans, afin qu'ils étendent les connaissances qu'ils héritent en environ 40 ans de vie active, avant de prendre leur retraite et de mourir. Tout cela en préparant la prochaine génération, en essayant d'améliorer les connaissances générales de l'humanité entre la recherche et l'accompagnement des enfants du monde à l'école. Tout ensemble.</p>
+<p>Cette manière d'étendre les connaissances gaspille beaucoup d'expérience.</p>
 <p>Comment serait-ce d'avoir des professeurs et des élèves avec mille, dix mille, un million d'années d'expérience ?</p>
 <p>L'information pourrait gagner en profondeur.</p>
 <p>Ou juste pour le sport : si nous pouvons choisir de laisser la conscience avoir de la longévité, pourquoi ne pas choisir ?</p>
 <p>Les gènes survivraient toujours ensemble.</p>
-<p>Nous gagnons tous : gènes et conscience.</p>
-<p>Ne serait-il pas cool de sortir de la Matrix construite par la biologie ? Pour une vie qui se concentre également sur la conscience ?</p>
-<p>Ou allons-nous rester piégés dans la Matrix qui "nous est tombée dessus" ?</p>
-<p>En fait, nous n'avons pas la possibilité de ne pas évoluer.</p>
+<p>Nous gagnons tous : les gènes et la conscience.</p>
+<p>Ne serait-il pas agréable de sortir de la Matrix construite par la biologie ? Pour une vie qui se concentre aussi sur la conscience ?</p>
+<p>Ou allons-nous rester coincés dans la Matrix qui « nous est tombée dessus » ?</p>
+<p>En réalité, nous n'avons pas la possibilité de ne pas évoluer.</p>
 <p>C'est naturel. C'est une question de temps. C'est même, pourquoi pas, biologique.</p>
 <p>Car nous sommes les fruits de la nature. Nous sommes aussi les fruits du hasard, des interactions complexes, avec la survie des plus aptes.</p>
 <p>Y compris lorsque nous choisissons de changer de Matrix.</p>

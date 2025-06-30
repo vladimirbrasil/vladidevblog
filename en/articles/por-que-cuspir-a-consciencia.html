@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Why spit out your conscience? - Vladimir Dietrich's Blog</title>
+  <title>Why spit out the conscience? - Vladimir Dietrich's Blog</title>
   <meta name="description" content=" ">
   <meta name="author" content="Vladimir Dietrich">
-  <meta property="og:title" content="Why spit out your conscience? - Vladimir Dietrich's Blog">
+  <meta property="og:title" content="Why spit out the conscience? - Vladimir Dietrich's Blog">
   <meta property="og:description" content=" ">
   <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg">
   <meta property="og:type" content="article">
@@ -18,14 +18,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
 .header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
 .logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
-.nav-links { display: flex; gap: 32px; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
 .nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
 .nav-links a:hover { color: rgba(41, 41, 41, 1); }
 .container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
 .article-list { padding: 48px 0; }
 .article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
 .article-item a { text-decoration: none; }
-.article-item:hover { transform: translateY(-1px); transition: transform 0.15s ease; }
 .article-item:last-child { border-bottom: none; }
 .article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
 .article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
@@ -65,8 +68,156 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .language-switcher span { margin: 0 8px; }
 ::selection { background-color: rgba(26, 137, 23, 0.1); }
 ::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
-@media (max-width: 768px) { .header-content { padding: 0 24px; } .container { padding: 0 20px; } .logo { font-size: 28px; } .nav-links { gap: 24px; } .article-title { font-size: 20px; } .hero-image-container { height: 250px; } .article-header h1 { font-size: 32px; line-height: 1.1; } .article-content { font-size: 19px; } .article-content h1 { font-size: 28px; } .article-content h2 { font-size: 24px; } .article-content h3 { font-size: 21px; } }
-@media (max-width: 480px) { .header-content { padding: 0 16px; } .container { padding: 0 16px; } .hero-image-container { height: 200px; } .article-header h1 { font-size: 28px; } .article-content { font-size: 18px; } }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  .search-active .logo,
+  .search-active .nav-links a {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
 </style>
 </head>
 <body>
@@ -90,7 +241,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <a href="/en/index.html" class="back-button">← Back to all articles</a>
 
         <div class="article-header">
-          <h1>Why spit out your conscience?</h1>
+          <h1>Why spit out the conscience?</h1>
           <div class="meta">
             <span class="author-name">Vladimir Dietrich</span>
             <span>·</span>
@@ -108,62 +259,62 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="article-content">
           <p> </p>
 <p></p>
-<p>Let's assume that the way atoms are grouped into molecules, tissues, lives, consciousnesses, is as free as a blank sheet of paper.</p>
-<p>On this originally blank sheet of paper, what is the current design?</p>
+<p>Let's assume that the way to group atoms into molecules, tissues, lives, consciousnesses, is as free as a blank sheet of paper.</p>
+<p>On this originally blank sheet, what is the current design?</p>
 <p>Here on Earth, atoms are grouped in a way that prioritizes the survival of a super important grouping: the gene.</p>
 <p>A set of atoms, organized, the gene.</p>
-<p>I. You. We produce genetic material that perpetuates when we have children.</p>
+<p>Me. You. We produce genetic material that perpetuates when we have children.</p>
 <p>We die. The gene follows.</p>
 <p>The genetics of humanity follows.</p>
 <p>Individually each human body dies. Shakespeare dies. Einstein dies. I die. You die. Aristotle dies.</p>
 <p>But the genes of the species continue very much alive.</p>
 <p>Not just genes: memes.</p>
-<p>Richard Dawkins called a <a href="https://pt.wikipedia.org/wiki/Meme" target="_blank" rel="noopener noreferrer">meme</a> a piece of information that perpetuates itself.</p>
-<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg" alt="" /></figure>
+<p>Richard Dawkins called a <a href="https://pt.wikipedia.org/wiki/Meme" target="_blank" rel="noopener noreferrer">meme</a> a piece of information that perpetuates.</p>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-1.jpg" alt="" /></figure>
 <p>Richard Dawkins</p>
-<p>We perpetuate memes. Information. From logarithm to language, from poetry to how to build instruments, we perpetuate information.</p>
-<p>Thus, a play by Shakespeare, a theory by Einstein, a way of thinking by Aristotle can continue as alive as a gene.</p>
+<p>We perpetuate memes. Information. From logarithms to language, from poetry to how to build instruments, we perpetuate information.</p>
+<p>Thus, a play by Shakespeare, a theory by Einstein, a way of thinking by Aristotle can remain as alive as a gene.</p>
 <p>Even after the bodies and consciousnesses of Einstein, Aristotle, Shakespeare have already disappeared. The idea remains.</p>
 <p>Memes and genes are preserved. Culture and DNA.</p>
-<p>Gone are: bodies and consciousness.</p>
+<p>Bodies and consciousness go away.</p>
 <p>Like a blank sheet of paper,</p>
 <p>we can consider that the design that organizes atoms prioritizing genes, discarding bodies, is as “Matrix” as the fantasy of the movie Matrix.</p>
 <p>A design.</p>
 <p>A way to organize atoms.</p>
 <p>A “Matrix”. Why not?</p>
 <p>As invented as the life created for Tom Cruise in the movie Vanilla Sky or the Matrix of the movie Matrix.</p>
-<p>With a brutal difference: there would be no “real” life for us to return to, as there was in the Hollywood movies Matrix and Vanilla Sky.</p>
+<p>With a brutal difference: there would be no “real” life for us to return to, as there was in the Hollywoodian Matrix and Vanilla Sky.</p>
 <p>If we consider the configuration of atoms as totally free, there is no correct method. There is no “real”.</p>
 <p>This lack of meaning, of right, is filled by religions that, in addition to filling meaning, organize humanity into groups.</p>
-<p>Anyone who is sure that a God created the focus on the gene as it occurs today, and that this way of organizing atoms, molecules, tissues, lives and consciousnesses should not be questioned, do not continue reading, because in the next paragraphs I will consider that there is no right or wrong in the wide possibility of organizing atoms.</p>
+<p>Whoever is certain that a God created the focus on the gene as it occurs today, and that this way of organizing atoms, molecules, tissues, lives and consciousnesses should not be questioned, do not continue reading, because in the next paragraphs I will consider that there is neither a right nor a wrong in the broad possibility of organizing atoms.</p>
 <p>Whoever programmed our biology and our genetics — chance, complex interactions, the survival of the fittest — programmed the survival of the gene. The gene is in you, now, but later, in half, in your children. And grandchildren.</p>
-<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg" alt="" /></figure>
+<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-2.jpg" alt="" /></figure>
 <p>Darwin spoke about the survival of the fittest.</p>
-<p>Consciousness and body wither in about 80 years, on average. The gene continues.</p>
+<p>Consciousness and body wither in about 80 years, on average. The gene proceeds.</p>
 <p>It is from this reality that — I propose — we can escape.</p>
 <p>We can consider that this current design is our current “Matrix”.</p>
 <p>Why can't we have a different design?</p>
 <p>For example: how about a design in which consciousness — yourself, not just your genes — is perpetuated for a long time?</p>
-<p>In this case, we would escape this “Matrix” in which the survival of genes prevails, while discarding body and consciousness. Like spitting out the peel of an orange.</p>
-<p>I don't say this without knowing that it is very close to our reach. The book <a href="https://www.amazon.com.br/Lifespan-Why-Age_and-Dont-Have/dp/1982135875" target="_blank" rel="noopener noreferrer">Lifespan</a> explains the therapy with the three genes, “OSK”— oct4, sox2, klf4 — that rejuvenates this envelope of genes — our body, our consciousness.</p>
-<p><a href="https://www.cnbc.com/2021/09/21/silicon-valleys-quest-to-live-forever-could-benefit-the-rest-of-us.html" target="_blank" rel="noopener noreferrer">Jeff Bezos, owner of Amazon, is already investing in this venture</a>.</p>
+<p>In this case, we would escape this “Matrix” in which the survival of genes prevails, while discarding body and consciousness. Like someone spitting out the peel of an orange.</p>
+<p>I don't say this without knowing that it is very close to our reach. The book <a href="https://www.amazon.com.br/Lifespan-Why-Age_and-Dont-Have/dp/1982135875" target="_blank" rel="noopener noreferrer">Lifespan</a> explains the therapy with the three genes, “OSK”— oct4, sox2, klf4 — that rejuvenates this wrapping of our genes — our body, our consciousness.</p>
+<p><a href="https://www.cnbc.com/2021/09/21/silicon-valleys-quest-to-live-forever-could-benefit-the-rest-of-us.html" target="_blank" rel="noopener noreferrer">Jeff Bezos, owner of Amazon, is already investing in this endeavor</a>.</p>
 <p>Why spit out the body and let only the genes live for thousands or millions of years?</p>
 <p>Could it be that this “Matrix”, woven by biology, with its partners chance, complex interactions and survival of the fittest, may be suffocating us?</p>
 <p>This design does not suffocate our genes. Which last for a long time.</p>
 <p>But it suffocates our body. Discards our consciousness.</p>
-<p>In the current design, we need to train children for twenty years, so that they expand the knowledge they inherit in approximately 40 years of active life, before retiring and dying. All this while preparing the next generation, trying to improve the general knowledge of humanity between picking up and taking children from the world to school. All together.</p>
-<p>This way of expanding knowledge throws away a lot of experience.</p>
+<p>In the current design, we need to train children for twenty years, so that they expand the knowledge they inherit in approximately 40 years of active life, before retiring and dying. All this while preparing the next generation, trying to improve the general knowledge of humanity between taking and bringing children from the world to school. All together.</p>
+<p>This way of expanding knowledge throws a lot of experience away.</p>
 <p>What would it be like to have teachers and students with a thousand, ten thousand, a million years of experience?</p>
-<p>Information could gain in depth.</p>
+<p>The information could gain in depth.</p>
 <p>Or just for sport: if we can choose to let consciousness have longevity, why not choose?</p>
 <p>The genes would still survive together.</p>
 <p>We all win: genes and consciousness.</p>
 <p>Wouldn't it be cool to get out of the Matrix built by biology? For a life that also focuses on consciousness?</p>
-<p>Or are we going to be trapped in the Matrix that “fell upon us”?</p>
+<p>Or will we be trapped in the Matrix that “fell upon us”?</p>
 <p>In fact, we don't have the option not to evolve.</p>
-<p>It's natural. It's a matter of time. It's even, why not, biological.</p>
+<p>It's natural. It's a matter of time. It is even, why not, biological.</p>
 <p>Because we are fruits of nature. We are also fruits of chance, of complex interactions, with survival of the fittest.</p>
-<p>Including when we choose to change Matrix.</p>
+<p>Even when we choose to change Matrix.</p>
         </div>
 
       </div>
