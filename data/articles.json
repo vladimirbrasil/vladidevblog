@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "a-ultima-tecnologia",
+      "title": "A Última Tecnologia",
+      "author": "Vladimir Dietrich",
+      "date": "2025-07-10",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "a-ultima-tecnologia-image-hero.png",
+        "githubPath": "images/a-ultima-tecnologia-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-ultima-tecnologia-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-07-11T07:40:27.316Z"
+    },
+    {
       "id": "aposentadoria-da-razao",
       "title": "Aposentadoria da Razão",
       "author": "Vladimir Dietrich",
@@ -652,5 +667,5 @@
       "lastUpdated": "2025-06-27T15:15:58.395Z"
     }
   ],
-  "lastUpdated": "2025-06-30T22:52:11.134Z"
+  "lastUpdated": "2025-07-11T07:41:26.856Z"
 }
