@@ -7,13 +7,13 @@
       "date": "2025-07-10",
       "readingTime": 1,
       "heroImage": {
-        "fileName": "a-ultima-tecnologia-image-hero.png",
-        "githubPath": "images/a-ultima-tecnologia-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-ultima-tecnologia-image-hero.png",
+        "fileName": "a-ultima-tecnologia-image-0.png",
+        "githubPath": "images/a-ultima-tecnologia-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-ultima-tecnologia-image-0.png",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-07-11T07:40:27.316Z"
+      "lastUpdated": "2025-07-12T14:03:04.120Z"
     },
     {
       "id": "aposentadoria-da-razao",
@@ -667,5 +667,5 @@
       "lastUpdated": "2025-06-27T15:15:58.395Z"
     }
   ],
-  "lastUpdated": "2025-07-11T07:41:26.856Z"
+  "lastUpdated": "2025-07-12T14:03:51.207Z"
 }
