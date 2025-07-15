@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "quando-a-maquina-pensa-o-homem-sente",
+      "title": "Quando a Máquina Pensa, o Homem Sente",
+      "author": "Vladimir Dietrich",
+      "date": "2025-07-15",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "githubPath": "images/quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-07-15T14:04:36.124Z"
+    },
+    {
       "id": "a-ultima-tecnologia",
       "title": "A Última Tecnologia",
       "author": "Vladimir Dietrich",
@@ -667,5 +682,5 @@
       "lastUpdated": "2025-06-27T15:15:58.395Z"
     }
   ],
-  "lastUpdated": "2025-07-12T14:03:51.207Z"
+  "lastUpdated": "2025-07-15T14:05:11.893Z"
 }
