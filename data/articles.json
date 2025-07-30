@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "juventude-eterna-uma-tirania",
+      "title": "Juventude eterna: uma tirania?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-07-30",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "juventude-eterna-uma-tirania-image-0.png",
+        "githubPath": "images/juventude-eterna-uma-tirania-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-07-30T20:01:53.125Z"
+    },
+    {
       "id": "quando-a-maquina-pensa-o-homem-sente",
       "title": "Quando a Máquina Pensa, o Homem Sente",
       "author": "Vladimir Dietrich",
@@ -682,5 +697,5 @@
       "lastUpdated": "2025-06-27T15:15:58.395Z"
     }
   ],
-  "lastUpdated": "2025-07-15T14:05:11.893Z"
+  "lastUpdated": "2025-07-30T20:02:28.136Z"
 }
