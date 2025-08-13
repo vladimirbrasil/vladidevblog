@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "adeus-empresariar",
+      "title": "Adeus, empresariar",
+      "author": "Vladimir Dietrich",
+      "date": "2025-08-12",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "adeus-empresariar-image-hero.png",
+        "githubPath": "images/adeus-empresariar-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-08-13T07:39:41.037Z"
+    },
+    {
       "id": "juventude-eterna-uma-tirania",
       "title": "Juventude eterna: uma tirania?",
       "author": "Vladimir Dietrich",
@@ -697,5 +712,5 @@
       "lastUpdated": "2025-06-27T15:15:58.395Z"
     }
   ],
-  "lastUpdated": "2025-08-01T07:41:13.418Z"
+  "lastUpdated": "2025-08-13T07:39:42.778Z"
 }
