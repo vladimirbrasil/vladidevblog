@@ -7,13 +7,13 @@
       "date": "2025-08-12",
       "readingTime": 2,
       "heroImage": {
-        "fileName": "adeus-empresariar-image-hero.png",
-        "githubPath": "images/adeus-empresariar-image-hero.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-hero.png",
+        "fileName": "adeus-empresariar-image-0.png",
+        "githubPath": "images/adeus-empresariar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-0.png",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-08-13T07:39:41.037Z"
+      "lastUpdated": "2025-08-16T07:39:41.623Z"
     },
     {
       "id": "juventude-eterna-uma-tirania",
@@ -712,5 +712,5 @@
       "lastUpdated": "2025-06-27T15:15:58.395Z"
     }
   ],
-  "lastUpdated": "2025-08-13T07:39:42.778Z"
+  "lastUpdated": "2025-08-16T07:40:01.412Z"
 }

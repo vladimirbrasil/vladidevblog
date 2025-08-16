@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "adeus-empresariar",
+      "title": "Au revoir, l'esprit d'entreprise",
+      "author": "Vladimir Dietrich",
+      "date": "2025-08-12",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "adeus-empresariar-image-0.png",
+        "githubPath": "images/adeus-empresariar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-08-16T07:39:41.623Z"
+    },
+    {
       "id": "juventude-eterna-uma-tirania",
       "title": "La jeunesse éternelle: une tyrannie?",
       "author": "Vladimir Dietrich",
@@ -316,5 +331,5 @@
       "lastUpdated": "2025-06-27T16:12:54.642Z"
     }
   ],
-  "lastUpdated": "2025-08-13T07:39:43.175Z"
+  "lastUpdated": "2025-08-16T07:40:01.718Z"
 }
