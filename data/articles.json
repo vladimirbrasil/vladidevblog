@@ -1,21 +1,6 @@
 {
   "articles": [
     {
-      "id": "entrevista-de-duas-horas",
-      "title": "Entrevista de duas horas",
-      "author": "Vladimir Dietrich",
-      "date": "2025-08-18",
-      "readingTime": 5,
-      "heroImage": {
-        "fileName": "entrevista-de-duas-horas-image-0.png",
-        "githubPath": "images/entrevista-de-duas-horas-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/entrevista-de-duas-horas-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-08-18T13:35:55.764Z"
-    },
-    {
       "id": "adeus-empresariar",
       "title": "Adeus, empresariar",
       "author": "Vladimir Dietrich",
@@ -727,5 +712,5 @@
       "lastUpdated": "2025-06-27T15:15:58.395Z"
     }
   ],
-  "lastUpdated": "2025-08-18T13:35:56.114Z"
+  "lastUpdated": "2025-08-19T07:41:49.265Z"
 }
