@@ -14,7 +14,37 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-02T20:22:31.991Z"
+    },
+    {
+      "id": "adeus-empresariar",
+      "title": "Abschied vom Unternehmertum",
+      "author": "Vladimir Dietrich",
+      "date": "2025-08-12",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "adeus-empresariar-image-0.png",
+        "githubPath": "images/adeus-empresariar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-02T20:29:55.565Z"
+    },
+    {
+      "id": "juventude-eterna-uma-tirania",
+      "title": "Ewige Jugend: Eine Tyrannei?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-07-30",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "juventude-eterna-uma-tirania-image-0.png",
+        "githubPath": "images/juventude-eterna-uma-tirania-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-02T20:31:11.904Z"
     }
   ],
-  "lastUpdated": "2025-09-02T20:24:47.465Z"
+  "lastUpdated": "2025-09-02T20:32:31.247Z"
 }
