@@ -2,7 +2,7 @@
   "articles": [
     {
       "id": "entrevista-de-duas-horas",
-      "title": "Zweistündiges Interview",
+      "title": "Zwei-Stunden-Interview",
       "author": "Vladimir Dietrich",
       "date": "2025-08-18",
       "readingTime": 5,
@@ -13,8 +13,8 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-08-21T07:41:02.858Z"
+      "lastUpdated": "2025-09-02T20:22:31.991Z"
     }
   ],
-  "lastUpdated": "2025-08-21T07:41:56.191Z"
+  "lastUpdated": "2025-09-02T20:24:47.465Z"
 }
