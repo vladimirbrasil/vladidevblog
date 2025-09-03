@@ -119,7 +119,22 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-02T21:04:53.616Z"
+    },
+    {
+      "id": "a-thought-about-true-cost-the-movie",
+      "title": "A Thought About “True Cost”, The Movie",
+      "author": "Vladimir Dietrich",
+      "date": "2018-07-31",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "a-thought-about-true-cost-the-movie-image-0.jpg",
+        "githubPath": "images/a-thought-about-true-cost-the-movie-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-thought-about-true-cost-the-movie-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-03T07:39:40.520Z"
     }
   ],
-  "lastUpdated": "2025-09-03T02:27:14.303Z"
+  "lastUpdated": "2025-09-03T07:43:12.707Z"
 }
