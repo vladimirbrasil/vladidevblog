@@ -61,6 +61,36 @@
       "lastUpdated": "2025-09-02T21:03:54.965Z"
     },
     {
+      "id": "um-blog-facil",
+      "title": "Ein einfacher Blog",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-15",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "um-blog-facil-image-0.png",
+        "githubPath": "images/um-blog-facil-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-03T02:24:13.258Z"
+    },
+    {
+      "id": "por-que-cuspir-a-consciencia",
+      "title": "Warum das Bewusstsein ausspucken?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-30",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "por-que-cuspir-a-consciencia-image-0.jpg",
+        "githubPath": "images/por-que-cuspir-a-consciencia-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-03T02:26:09.130Z"
+    },
+    {
       "id": "oblivion",
       "title": "Oblivion",
       "author": "Vladimir Dietrich",
@@ -76,5 +106,5 @@
       "lastUpdated": "2025-09-02T21:04:53.616Z"
     }
   ],
-  "lastUpdated": "2025-09-02T21:06:28.417Z"
+  "lastUpdated": "2025-09-03T02:27:14.572Z"
 }
