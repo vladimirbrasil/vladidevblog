@@ -1,155 +1,20 @@
 {
   "articles": [
     {
-      "id": "entrevista-de-duas-horas",
-      "title": "Entretien de deux heures",
+      "id": "politica-de-uso-e-reproducao-de-conteudo",
+      "title": "Politique d'utilisation et de reproduction du contenu",
       "author": "Vladimir Dietrich",
-      "date": "2025-08-18",
-      "readingTime": 5,
-      "heroImage": {
-        "fileName": "entrevista-de-duas-horas-image-0.png",
-        "githubPath": "images/entrevista-de-duas-horas-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/entrevista-de-duas-horas-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-09-02T20:22:31.991Z"
-    },
-    {
-      "id": "adeus-empresariar",
-      "title": "Adieu, l'entrepreneuriat",
-      "author": "Vladimir Dietrich",
-      "date": "2025-08-12",
+      "date": "1990-01-01",
       "readingTime": 2,
       "heroImage": {
-        "fileName": "adeus-empresariar-image-0.png",
-        "githubPath": "images/adeus-empresariar-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-0.png",
+        "fileName": "politica-de-uso-e-reproducao-de-conteudo-image-hero.png",
+        "githubPath": "images/politica-de-uso-e-reproducao-de-conteudo-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/politica-de-uso-e-reproducao-de-conteudo-image-hero.png",
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-09-02T20:29:55.565Z"
-    },
-    {
-      "id": "juventude-eterna-uma-tirania",
-      "title": "Jeunesse éternelle : une tyrannie ?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-07-30",
-      "readingTime": 4,
-      "heroImage": {
-        "fileName": "juventude-eterna-uma-tirania-image-0.png",
-        "githubPath": "images/juventude-eterna-uma-tirania-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-09-02T20:31:11.904Z"
-    },
-    {
-      "id": "quando-a-maquina-pensa-o-homem-sente",
-      "title": "Quand la machine pense, l'homme ressent",
-      "author": "Vladimir Dietrich",
-      "date": "2025-07-15",
-      "readingTime": 3,
-      "heroImage": {
-        "fileName": "quando-a-maquina-pensa-o-homem-sente-image-0.png",
-        "githubPath": "images/quando-a-maquina-pensa-o-homem-sente-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quando-a-maquina-pensa-o-homem-sente-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-09-02T21:03:54.965Z"
-    },
-    {
-      "id": "aposentadoria-da-razao",
-      "title": "La retraite de la raison",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-24",
-      "readingTime": 2,
-      "heroImage": {
-        "fileName": "aposentadoria-da-razao-image-0.jpg",
-        "githubPath": "images/aposentadoria-da-razao-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-09-03T02:24:46.746Z"
-    },
-    {
-      "id": "um-blog-facil",
-      "title": "Un blog facile",
-      "author": "Vladimir Dietrich",
-      "date": "2025-06-15",
-      "readingTime": 2,
-      "heroImage": {
-        "fileName": "um-blog-facil-image-0.png",
-        "githubPath": "images/um-blog-facil-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-09-03T02:24:13.258Z"
-    },
-    {
-      "id": "te-amo",
-      "title": "❤️ Je t'aime",
-      "author": "Vladimir Dietrich",
-      "date": "2024-09-11",
-      "readingTime": 9,
-      "heroImage": {
-        "fileName": "te-amo-image-0.jpg",
-        "githubPath": "images/te-amo-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg",
-        "altText": "um robô amamenta um bebê",
-        "caption": "um robô amamenta um bebê"
-      },
-      "lastUpdated": "2025-09-03T13:49:05.629Z"
-    },
-    {
-      "id": "onde-estamos",
-      "title": "Où sommes-nous ?",
-      "author": "Vladimir Dietrich",
-      "date": "2023-09-19",
-      "readingTime": 3,
-      "heroImage": {
-        "fileName": "onde-estamos-image-0.jpg",
-        "githubPath": "images/onde-estamos-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg",
-        "altText": "emptiness.",
-        "caption": "emptiness."
-      },
-      "lastUpdated": "2025-09-03T13:48:08.301Z"
-    },
-    {
-      "id": "por-que-cuspir-a-consciencia",
-      "title": "Pourquoi cracher la conscience ?",
-      "author": "Vladimir Dietrich",
-      "date": "2021-11-30",
-      "readingTime": 4,
-      "heroImage": {
-        "fileName": "por-que-cuspir-a-consciencia-image-0.jpg",
-        "githubPath": "images/por-que-cuspir-a-consciencia-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-09-03T02:26:09.130Z"
-    },
-    {
-      "id": "oblivion",
-      "title": "Oblivion",
-      "author": "Vladimir Dietrich",
-      "date": "2020-04-28",
-      "readingTime": 8,
-      "heroImage": {
-        "fileName": "oblivion-image-0.jpg",
-        "githubPath": "images/oblivion-image-0.jpg",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-09-02T21:04:53.616Z"
+      "lastUpdated": "2025-09-03T14:24:29.157Z"
     }
   ],
-  "lastUpdated": "2025-09-03T13:51:16.249Z"
+  "lastUpdated": "2025-09-03T14:27:28.758Z"
 }
