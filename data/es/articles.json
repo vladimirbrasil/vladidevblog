@@ -76,6 +76,36 @@
       "lastUpdated": "2025-09-03T02:24:13.258Z"
     },
     {
+      "id": "te-amo",
+      "title": "❤️ Te Amo",
+      "author": "Vladimir Dietrich",
+      "date": "2024-09-11",
+      "readingTime": 9,
+      "heroImage": {
+        "fileName": "te-amo-image-0.jpg",
+        "githubPath": "images/te-amo-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg",
+        "altText": "um robô amamenta um bebê",
+        "caption": "um robô amamenta um bebê"
+      },
+      "lastUpdated": "2025-09-03T13:49:05.629Z"
+    },
+    {
+      "id": "onde-estamos",
+      "title": "¿Dónde estamos?",
+      "author": "Vladimir Dietrich",
+      "date": "2023-09-19",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "onde-estamos-image-0.jpg",
+        "githubPath": "images/onde-estamos-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg",
+        "altText": "emptiness.",
+        "caption": "emptiness."
+      },
+      "lastUpdated": "2025-09-03T13:48:08.301Z"
+    },
+    {
       "id": "por-que-cuspir-a-consciencia",
       "title": "¿Por qué escupir la conciencia?",
       "author": "Vladimir Dietrich",
@@ -106,5 +136,5 @@
       "lastUpdated": "2025-09-02T21:04:53.616Z"
     }
   ],
-  "lastUpdated": "2025-09-03T07:43:12.855Z"
+  "lastUpdated": "2025-09-03T13:51:16.138Z"
 }

@@ -106,6 +106,36 @@
       "lastUpdated": "2025-09-03T02:24:13.258Z"
     },
     {
+      "id": "te-amo",
+      "title": "❤️ Te Amo",
+      "author": "Vladimir Dietrich",
+      "date": "2024-09-11",
+      "readingTime": 9,
+      "heroImage": {
+        "fileName": "te-amo-image-0.jpg",
+        "githubPath": "images/te-amo-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg",
+        "altText": "um robô amamenta um bebê",
+        "caption": "um robô amamenta um bebê"
+      },
+      "lastUpdated": "2025-09-03T13:49:05.629Z"
+    },
+    {
+      "id": "onde-estamos",
+      "title": "Onde estamos?",
+      "author": "Vladimir Dietrich",
+      "date": "2023-09-19",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "onde-estamos-image-0.jpg",
+        "githubPath": "images/onde-estamos-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg",
+        "altText": "emptiness.",
+        "caption": "emptiness."
+      },
+      "lastUpdated": "2025-09-03T13:48:08.301Z"
+    },
+    {
       "id": "auto-traicao",
       "title": "Auto traição?",
       "author": "Vladimir Dietrich",
@@ -134,6 +164,21 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-03T02:25:10.517Z"
+    },
+    {
+      "id": "eugenia-na-comunicacao",
+      "title": "🍎 Eugenia na comunicação?",
+      "author": "Vladimir Dietrich",
+      "date": "2022-02-11",
+      "readingTime": 12,
+      "heroImage": {
+        "fileName": "eugenia-na-comunicacao-image-0.jpg",
+        "githubPath": "images/eugenia-na-comunicacao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-03T13:51:07.696Z"
     },
     {
       "id": "por-que-cuspir-a-consciencia",
@@ -166,6 +211,21 @@
       "lastUpdated": "2025-09-03T02:25:53.387Z"
     },
     {
+      "id": "noam-chomsky-mixed-with",
+      "title": "Noam Chomsky mixed with…",
+      "author": "Vladimir Dietrich",
+      "date": "2020-12-12",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "noam-chomsky-mixed-with-image-0.png",
+        "githubPath": "images/noam-chomsky-mixed-with-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/noam-chomsky-mixed-with-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-03T13:50:36.209Z"
+    },
+    {
       "id": "oblivion",
       "title": "Oblivion",
       "author": "Vladimir Dietrich",
@@ -196,5 +256,5 @@
       "lastUpdated": "2025-09-03T07:39:40.520Z"
     }
   ],
-  "lastUpdated": "2025-09-03T07:43:12.555Z"
+  "lastUpdated": "2025-09-03T13:51:15.854Z"
 }
