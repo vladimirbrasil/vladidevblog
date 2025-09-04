@@ -13,41 +13,11 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-09-04T19:30:05.375Z"
-    },
-    {
-      "id": "adeus-empresariar",
-      "title": "Auf Wiedersehen, Unternehmertum",
-      "author": "Vladimir Dietrich",
-      "date": "2025-08-12",
-      "readingTime": 2,
-      "heroImage": {
-        "fileName": "adeus-empresariar-image-0.png",
-        "githubPath": "images/adeus-empresariar-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-09-04T19:32:29.746Z"
-    },
-    {
-      "id": "juventude-eterna-uma-tirania",
-      "title": "Ewige Jugend: Eine Tyrannei?",
-      "author": "Vladimir Dietrich",
-      "date": "2025-07-30",
-      "readingTime": 4,
-      "heroImage": {
-        "fileName": "juventude-eterna-uma-tirania-image-0.png",
-        "githubPath": "images/juventude-eterna-uma-tirania-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2025-09-04T19:38:49.312Z"
+      "lastUpdated": "2025-09-04T20:05:44.315Z"
     },
     {
       "id": "politica-de-uso-e-reproducao-de-conteudo",
-      "title": "Richtlinie zur Nutzung und Vervielfältigung von Inhalten",
+      "title": "Richtlinien für die Nutzung und Vervielfältigung von Inhalten",
       "author": "Vladimir Dietrich",
       "date": "1990-01-01",
       "readingTime": 2,
@@ -58,8 +28,8 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-09-03T16:18:26.057Z"
+      "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T19:39:24.128Z"
+  "lastUpdated": "2025-09-04T20:06:30.054Z"
 }
