@@ -211,6 +211,21 @@
       "lastUpdated": "2025-09-04T20:35:03.588Z"
     },
     {
+      "id": "maximizar-mindfulness",
+      "title": "¿Maximizar la atención plena?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-09",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "maximizar-mindfulness-image-0.png",
+        "githubPath": "images/maximizar-mindfulness-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:42:09.702Z"
+    },
+    {
       "id": "sai-o-emprego-fica-a-producao",
       "title": "Sale el empleo, queda la producción",
       "author": "Vladimir Dietrich",
@@ -256,6 +271,36 @@
       "lastUpdated": "2025-09-04T20:36:43.380Z"
     },
     {
+      "id": "repensando-o-sistema-de-metas",
+      "title": "Repensando el sistema de metas",
+      "author": "Vladimir Dietrich",
+      "date": "2018-11-28",
+      "readingTime": 11,
+      "heroImage": {
+        "fileName": "repensando-o-sistema-de-metas-image-0.jpg",
+        "githubPath": "images/repensando-o-sistema-de-metas-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/repensando-o-sistema-de-metas-image-0.jpg",
+        "altText": "Photo by J W on Unsplash",
+        "caption": "Photo by J W on Unsplash"
+      },
+      "lastUpdated": "2025-09-04T20:38:53.775Z"
+    },
+    {
+      "id": "human-soup",
+      "title": "Sopa Humana",
+      "author": "Vladimir Dietrich",
+      "date": "2018-08-23",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "human-soup-image-0.jpg",
+        "githubPath": "images/human-soup-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg",
+        "altText": "Peter Dazeley / Getty Images",
+        "caption": "Peter Dazeley / Getty Images"
+      },
+      "lastUpdated": "2025-09-04T20:40:52.678Z"
+    },
+    {
       "id": "politica-de-uso-e-reproducao-de-conteudo",
       "title": "Política de Uso y Reproducción de Contenido",
       "author": "Vladimir Dietrich",
@@ -271,5 +316,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T20:37:49.672Z"
+  "lastUpdated": "2025-09-04T20:42:26.482Z"
 }

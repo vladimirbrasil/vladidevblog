@@ -316,6 +316,21 @@
       "lastUpdated": "2025-09-04T20:35:03.588Z"
     },
     {
+      "id": "maximizar-mindfulness",
+      "title": "Maximize mindfulness?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-09",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "maximizar-mindfulness-image-0.png",
+        "githubPath": "images/maximizar-mindfulness-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:42:09.702Z"
+    },
+    {
       "id": "sai-o-emprego-fica-a-producao",
       "title": "Job goes away, production stays",
       "author": "Vladimir Dietrich",
@@ -346,6 +361,51 @@
       "lastUpdated": "2025-09-04T20:14:55.814Z"
     },
     {
+      "id": "repensando-o-sistema-de-metas",
+      "title": "Rethinking the Goal System",
+      "author": "Vladimir Dietrich",
+      "date": "2018-11-28",
+      "readingTime": 11,
+      "heroImage": {
+        "fileName": "repensando-o-sistema-de-metas-image-0.jpg",
+        "githubPath": "images/repensando-o-sistema-de-metas-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/repensando-o-sistema-de-metas-image-0.jpg",
+        "altText": "Photo by J W on Unsplash",
+        "caption": "Photo by J W on Unsplash"
+      },
+      "lastUpdated": "2025-09-04T20:38:53.775Z"
+    },
+    {
+      "id": "spam-calls",
+      "title": "Spam Calls",
+      "author": "Vladimir Dietrich",
+      "date": "2018-09-20",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "spam-calls-image-0.jpg",
+        "githubPath": "images/spam-calls-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/spam-calls-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:40:28.568Z"
+    },
+    {
+      "id": "human-soup",
+      "title": "Human Soup",
+      "author": "Vladimir Dietrich",
+      "date": "2018-08-23",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "human-soup-image-0.jpg",
+        "githubPath": "images/human-soup-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg",
+        "altText": "Peter Dazeley / Getty Images",
+        "caption": "Peter Dazeley / Getty Images"
+      },
+      "lastUpdated": "2025-09-04T20:40:52.678Z"
+    },
+    {
       "id": "a-thought-about-true-cost-the-movie",
       "title": "A Thought About “True Cost”, The Movie",
       "author": "Vladimir Dietrich",
@@ -359,6 +419,21 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-04T20:23:26.449Z"
+    },
+    {
+      "id": "clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start",
+      "title": "Clean your mind? Unsubscribe emails wouldn’t be a bad start",
+      "author": "Vladimir Dietrich",
+      "date": "2018-07-27",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "clean-your-mind-image-0.jpg",
+        "githubPath": "images/clean-your-mind-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:41:45.188Z"
     },
     {
       "id": "politica-de-uso-e-reproducao-de-conteudo",
@@ -376,5 +451,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T20:37:49.582Z"
+  "lastUpdated": "2025-09-04T20:42:26.385Z"
 }
