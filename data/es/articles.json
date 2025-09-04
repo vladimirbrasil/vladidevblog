@@ -1,6 +1,36 @@
 {
   "articles": [
     {
+      "id": "entrevista-de-duas-horas",
+      "title": "Entrevista de dos horas",
+      "author": "Vladimir Dietrich",
+      "date": "2025-08-18",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "entrevista-de-duas-horas-image-0.png",
+        "githubPath": "images/entrevista-de-duas-horas-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/entrevista-de-duas-horas-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T19:30:05.375Z"
+    },
+    {
+      "id": "adeus-empresariar",
+      "title": "Adiós, el mundo empresarial",
+      "author": "Vladimir Dietrich",
+      "date": "2025-08-12",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "adeus-empresariar-image-0.png",
+        "githubPath": "images/adeus-empresariar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T19:32:29.746Z"
+    },
+    {
       "id": "politica-de-uso-e-reproducao-de-conteudo",
       "title": "Política de Uso y Reproducción de Contenido",
       "author": "Vladimir Dietrich",
@@ -16,5 +46,5 @@
       "lastUpdated": "2025-09-03T16:18:26.057Z"
     }
   ],
-  "lastUpdated": "2025-09-04T07:42:42.667Z"
+  "lastUpdated": "2025-09-04T19:32:51.521Z"
 }
