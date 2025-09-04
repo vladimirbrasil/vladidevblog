@@ -121,6 +121,21 @@
       "lastUpdated": "2025-09-04T20:24:24.257Z"
     },
     {
+      "id": "a-menininha-que-nos-leva-para-casa",
+      "title": "A menininha que nos leva para casa",
+      "author": "Vladimir Dietrich",
+      "date": "2024-04-22",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "githubPath": "images/a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "altText": "jargões",
+        "caption": "jargões"
+      },
+      "lastUpdated": "2025-09-04T20:28:36.128Z"
+    },
+    {
       "id": "onde-estamos",
       "title": "Onde estamos?",
       "author": "Vladimir Dietrich",
@@ -151,6 +166,21 @@
       "lastUpdated": "2025-09-04T20:23:52.299Z"
     },
     {
+      "id": "consciencia-entre-as-pernas",
+      "title": "Consciência entre as pernas",
+      "author": "Vladimir Dietrich",
+      "date": "2023-06-08",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "consciencia-entre-as-pernas-image-0.jpg",
+        "githubPath": "images/consciencia-entre-as-pernas-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/consciencia-entre-as-pernas-image-0.jpg",
+        "altText": "an humanoid robot barefoot inside a jungle",
+        "caption": "an humanoid robot barefoot inside a jungle"
+      },
+      "lastUpdated": "2025-09-04T20:29:29.674Z"
+    },
+    {
       "id": "ocio-a-esquerda",
       "title": "Ócio à esquerda",
       "author": "Vladimir Dietrich",
@@ -164,6 +194,15 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-04T20:18:37.358Z"
+    },
+    {
+      "id": "caixao-nao-tem-gavetas",
+      "title": "Caixão não tem gavetas",
+      "author": "Vladimir Dietrich",
+      "date": "2023-04-14",
+      "readingTime": 4,
+      "heroImage": null,
+      "lastUpdated": "2025-09-04T20:30:12.571Z"
     },
     {
       "id": "troncos-no-universo",
@@ -181,6 +220,21 @@
       "lastUpdated": "2025-09-04T20:26:58.607Z"
     },
     {
+      "id": "podemos-ser-traidos-pelo-nosso-dinheiro",
+      "title": "Podemos ser traídos pelo nosso dinheiro?",
+      "author": "Vladimir Dietrich",
+      "date": "2023-03-11",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "podemos-ser-traidos-pelo-nosso-dinheiro-image-hero.png",
+        "githubPath": "images/podemos-ser-traidos-pelo-nosso-dinheiro-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/podemos-ser-traidos-pelo-nosso-dinheiro-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:30:05.300Z"
+    },
+    {
       "id": "esquerda-direita-papais-nenens",
       "title": "Esquerda, Direita, Papais, Nenéns",
       "author": "Vladimir Dietrich",
@@ -194,6 +248,36 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-04T20:26:43.106Z"
+    },
+    {
+      "id": "global-and-focused-social-medias",
+      "title": "Global and Focused Social Medias ❤️",
+      "author": "Vladimir Dietrich",
+      "date": "2022-04-02",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "global-and-focused-social-medias-image-0.jpg",
+        "githubPath": "images/global-and-focused-social-medias-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/global-and-focused-social-medias-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:30:16.374Z"
+    },
+    {
+      "id": "arranha-vaidades",
+      "title": "Arranha-[vaidades]",
+      "author": "Vladimir Dietrich",
+      "date": "2022-03-08",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "arranha-vaidades-image-0.jpg",
+        "githubPath": "images/arranha-vaidades-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/arranha-vaidades-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:30:29.052Z"
     },
     {
       "id": "eugenia-na-comunicacao",
@@ -224,6 +308,21 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-04T20:20:11.038Z"
+    },
+    {
+      "id": "neuragame",
+      "title": "Neuragame",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-16",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "neuragame-image-0.jpg",
+        "githubPath": "images/neuragame-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:31:11.168Z"
     },
     {
       "id": "qual-e-o-esporte-mais-dificil-do-mundo",
@@ -301,5 +400,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T20:27:24.097Z"
+  "lastUpdated": "2025-09-04T20:32:00.655Z"
 }

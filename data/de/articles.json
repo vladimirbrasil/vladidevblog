@@ -91,6 +91,21 @@
       "lastUpdated": "2025-09-04T20:24:24.257Z"
     },
     {
+      "id": "a-menininha-que-nos-leva-para-casa",
+      "title": "Das kleine Mädchen, das uns nach Hause bringt",
+      "author": "Vladimir Dietrich",
+      "date": "2024-04-22",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "githubPath": "images/a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "altText": "jargões",
+        "caption": "jargões"
+      },
+      "lastUpdated": "2025-09-04T20:28:36.128Z"
+    },
+    {
       "id": "onde-estamos",
       "title": "Wo stehen wir?",
       "author": "Vladimir Dietrich",
@@ -121,6 +136,21 @@
       "lastUpdated": "2025-09-04T20:26:58.607Z"
     },
     {
+      "id": "arranha-vaidades",
+      "title": "Kratzer-[Eitelkeiten]",
+      "author": "Vladimir Dietrich",
+      "date": "2022-03-08",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "arranha-vaidades-image-0.jpg",
+        "githubPath": "images/arranha-vaidades-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/arranha-vaidades-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:30:29.052Z"
+    },
+    {
       "id": "por-que-cuspir-a-consciencia",
       "title": "Warum das Bewusstsein ausspucken?",
       "author": "Vladimir Dietrich",
@@ -134,6 +164,21 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-04T20:20:11.038Z"
+    },
+    {
+      "id": "neuragame",
+      "title": "Neuragame",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-16",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "neuragame-image-0.jpg",
+        "githubPath": "images/neuragame-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:31:11.168Z"
     },
     {
       "id": "oblivion",
@@ -166,5 +211,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T20:27:24.449Z"
+  "lastUpdated": "2025-09-04T20:32:01.070Z"
 }
