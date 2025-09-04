@@ -31,6 +31,21 @@
       "lastUpdated": "2025-09-04T19:32:29.746Z"
     },
     {
+      "id": "juventude-eterna-uma-tirania",
+      "title": "Juventud eterna: ¿una tiranía?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-07-30",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "juventude-eterna-uma-tirania-image-0.png",
+        "githubPath": "images/juventude-eterna-uma-tirania-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T19:38:49.312Z"
+    },
+    {
       "id": "politica-de-uso-e-reproducao-de-conteudo",
       "title": "Política de Uso y Reproducción de Contenido",
       "author": "Vladimir Dietrich",
@@ -46,5 +61,5 @@
       "lastUpdated": "2025-09-03T16:18:26.057Z"
     }
   ],
-  "lastUpdated": "2025-09-04T19:32:51.521Z"
+  "lastUpdated": "2025-09-04T19:39:23.508Z"
 }
