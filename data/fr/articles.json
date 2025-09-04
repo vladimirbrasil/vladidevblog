@@ -91,6 +91,21 @@
       "lastUpdated": "2025-09-04T20:17:40.943Z"
     },
     {
+      "id": "te-amo",
+      "title": "❤️ Je t'aime",
+      "author": "Vladimir Dietrich",
+      "date": "2024-09-11",
+      "readingTime": 9,
+      "heroImage": {
+        "fileName": "te-amo-image-0.jpg",
+        "githubPath": "images/te-amo-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg",
+        "altText": "um robô amamenta um bebê",
+        "caption": "um robô amamenta um bebê"
+      },
+      "lastUpdated": "2025-09-04T20:24:24.257Z"
+    },
+    {
       "id": "onde-estamos",
       "title": "Où en sommes-nous ?",
       "author": "Vladimir Dietrich",
@@ -104,6 +119,21 @@
         "caption": "emptiness."
       },
       "lastUpdated": "2025-09-04T20:21:14.978Z"
+    },
+    {
+      "id": "troncos-no-universo",
+      "title": "Des troncs dans l'univers ?",
+      "author": "Vladimir Dietrich",
+      "date": "2023-04-11",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "troncos-no-universo-image-0.png",
+        "githubPath": "images/troncos-no-universo-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/troncos-no-universo-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:26:58.607Z"
     },
     {
       "id": "por-que-cuspir-a-consciencia",
@@ -151,5 +181,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T20:21:49.664Z"
+  "lastUpdated": "2025-09-04T20:27:24.352Z"
 }
