@@ -46,6 +46,36 @@
       "lastUpdated": "2025-09-04T20:11:24.857Z"
     },
     {
+      "id": "quando-a-maquina-pensa-o-homem-sente",
+      "title": "Quand la machine pense, l'homme ressent",
+      "author": "Vladimir Dietrich",
+      "date": "2025-07-15",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "githubPath": "images/quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:13:54.691Z"
+    },
+    {
+      "id": "oblivion",
+      "title": "Oblivion",
+      "author": "Vladimir Dietrich",
+      "date": "2020-04-28",
+      "readingTime": 8,
+      "heroImage": {
+        "fileName": "oblivion-image-0.jpg",
+        "githubPath": "images/oblivion-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:14:55.814Z"
+    },
+    {
       "id": "politica-de-uso-e-reproducao-de-conteudo",
       "title": "Politique d'utilisation et de reproduction du contenu",
       "author": "Vladimir Dietrich",
@@ -61,5 +91,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T20:11:56.185Z"
+  "lastUpdated": "2025-09-04T20:16:23.304Z"
 }
