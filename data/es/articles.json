@@ -181,6 +181,51 @@
       "lastUpdated": "2025-09-04T20:31:11.168Z"
     },
     {
+      "id": "devemos-ser-preservados-para-observar",
+      "title": "¿Deberíamos ser preservados para observar?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-05-07",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "devemos-ser-preservados-para-observar-image-0.png",
+        "githubPath": "images/devemos-ser-preservados-para-observar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:33:48.125Z"
+    },
+    {
+      "id": "fabrica-de-coringas",
+      "title": "¿Fábrica de Jokers?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-10-31",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "fabrica-de-coringas-image-0.png",
+        "githubPath": "images/fabrica-de-coringas-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:35:03.588Z"
+    },
+    {
+      "id": "sai-o-emprego-fica-a-producao",
+      "title": "Sale el empleo, queda la producción",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-07",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "sai-emprego-fica-producao-image-0.jpg",
+        "githubPath": "images/sai-emprego-fica-producao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:35:46.403Z"
+    },
+    {
       "id": "oblivion",
       "title": "Oblivion",
       "author": "Vladimir Dietrich",
@@ -194,6 +239,21 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-04T20:14:55.814Z"
+    },
+    {
+      "id": "a-curiosidade-humana",
+      "title": "La curiosidad humana",
+      "author": "Vladimir Dietrich",
+      "date": "2019-09-11",
+      "readingTime": 11,
+      "heroImage": {
+        "fileName": "a-curiosidade-humana-image-0.jpg",
+        "githubPath": "images/a-curiosidade-humana-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:36:43.380Z"
     },
     {
       "id": "politica-de-uso-e-reproducao-de-conteudo",
@@ -211,5 +271,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T20:32:00.861Z"
+  "lastUpdated": "2025-09-04T20:37:49.672Z"
 }

@@ -211,6 +211,81 @@
       "lastUpdated": "2025-09-04T20:31:11.168Z"
     },
     {
+      "id": "devemos-ser-preservados-para-observar",
+      "title": "Should we be preserved to observe?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-05-07",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "devemos-ser-preservados-para-observar-image-0.png",
+        "githubPath": "images/devemos-ser-preservados-para-observar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:33:48.125Z"
+    },
+    {
+      "id": "modern-punch",
+      "title": "Modern punch.",
+      "author": "Vladimir Dietrich",
+      "date": "2021-03-12",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "modern-punch-image-0.jpg",
+        "githubPath": "images/modern-punch-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/modern-punch-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:34:07.250Z"
+    },
+    {
+      "id": "neither-tv-nor-youtube",
+      "title": "Neither tv, nor youtube",
+      "author": "Vladimir Dietrich",
+      "date": "2021-02-03",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "neither-tv-nor-youtube-image-0.jpg",
+        "githubPath": "images/neither-tv-nor-youtube-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neither-tv-nor-youtube-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:34:11.030Z"
+    },
+    {
+      "id": "instead-of-whatsapp",
+      "title": "Instead of whatsapp?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-01-12",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "instead-of-whatsapp-image-hero.png",
+        "githubPath": "images/instead-of-whatsapp-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/instead-of-whatsapp-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:34:31.247Z"
+    },
+    {
+      "id": "como-agradar-noam-chomsky-yuval-noah-harari",
+      "title": "How to please Noam Chomsky & Yuval Noah Harari?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-12-13",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "githubPath": "images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "altText": "Noam Chomsky (left) & Yuval Noah Harari (right)",
+        "caption": "Noam Chomsky (left) & Yuval Noah Harari (right)"
+      },
+      "lastUpdated": "2025-09-04T20:34:44.083Z"
+    },
+    {
       "id": "noam-chomsky-mixed-with",
       "title": "Noam Chomsky mixed with…",
       "author": "Vladimir Dietrich",
@@ -224,6 +299,36 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-04T20:25:47.179Z"
+    },
+    {
+      "id": "fabrica-de-coringas",
+      "title": "Joker Factory?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-10-31",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "fabrica-de-coringas-image-0.png",
+        "githubPath": "images/fabrica-de-coringas-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:35:03.588Z"
+    },
+    {
+      "id": "sai-o-emprego-fica-a-producao",
+      "title": "Job goes away, production stays",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-07",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "sai-emprego-fica-producao-image-0.jpg",
+        "githubPath": "images/sai-emprego-fica-producao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:35:46.403Z"
     },
     {
       "id": "oblivion",
@@ -271,5 +376,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T20:32:00.766Z"
+  "lastUpdated": "2025-09-04T20:37:49.582Z"
 }

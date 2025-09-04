@@ -325,6 +325,96 @@
       "lastUpdated": "2025-09-04T20:31:11.168Z"
     },
     {
+      "id": "previsivel",
+      "title": "Previsível?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-05",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "previsivel-image-0.jpg",
+        "githubPath": "images/previsivel-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/previsivel-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:33:01.216Z"
+    },
+    {
+      "id": "vanilla-skyourself",
+      "title": "Vanilla Skyourself",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-04",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "vanilla-skyourself-image-0.jpg",
+        "githubPath": "images/vanilla-skyourself-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/vanilla-skyourself-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:33:17.980Z"
+    },
+    {
+      "id": "sentimento-digital",
+      "title": "Sentimento Digital",
+      "author": "Vladimir Dietrich",
+      "date": "2021-10-23",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "sentimento-digital-image-0.jpg",
+        "githubPath": "images/sentimento-digital-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sentimento-digital-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:33:29.704Z"
+    },
+    {
+      "id": "aspirar-o-proprio-rabo",
+      "title": "Aspirar o próprio rabo?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-09-25",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "aspirar-o-proprio-rabo-image-0.jpg",
+        "githubPath": "images/aspirar-o-proprio-rabo-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aspirar-o-proprio-rabo-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:33:34.465Z"
+    },
+    {
+      "id": "corpus-callosum-politicus",
+      "title": "Corpus Callosum Polīticus",
+      "author": "Vladimir Dietrich",
+      "date": "2021-09-21",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "corpus-callosum-politicus-image-0.jpg",
+        "githubPath": "images/corpus-callosum-politicus-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/corpus-callosum-politicus-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:33:41.659Z"
+    },
+    {
+      "id": "esquerda-vs-direita-ou-emocao-vs-razao",
+      "title": "Esquerda vs Direita ou Emoção vs Razão?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-09-10",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "esquerda-vs-direita-ou-emocao-vs-razao-image-0.jpg",
+        "githubPath": "images/esquerda-vs-direita-ou-emocao-vs-razao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/esquerda-vs-direita-ou-emocao-vs-razao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:33:38.157Z"
+    },
+    {
       "id": "qual-e-o-esporte-mais-dificil-do-mundo",
       "title": "Qual é o esporte mais difícil do mundo?",
       "author": "Vladimir Dietrich",
@@ -338,6 +428,96 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-04T20:19:49.838Z"
+    },
+    {
+      "id": "devemos-ser-preservados-para-observar",
+      "title": "Devemos ser preservados para observar?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-05-07",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "devemos-ser-preservados-para-observar-image-0.png",
+        "githubPath": "images/devemos-ser-preservados-para-observar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:33:48.125Z"
+    },
+    {
+      "id": "aco-ou-vento",
+      "title": "Aço ou Vento?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-04-30",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "aco-ou-vento-image-0.jpg",
+        "githubPath": "images/aco-ou-vento-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aco-ou-vento-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:34:03.104Z"
+    },
+    {
+      "id": "modern-punch",
+      "title": "Modern punch.",
+      "author": "Vladimir Dietrich",
+      "date": "2021-03-12",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "modern-punch-image-0.jpg",
+        "githubPath": "images/modern-punch-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/modern-punch-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:34:07.250Z"
+    },
+    {
+      "id": "neither-tv-nor-youtube",
+      "title": "Neither tv, nor youtube",
+      "author": "Vladimir Dietrich",
+      "date": "2021-02-03",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "neither-tv-nor-youtube-image-0.jpg",
+        "githubPath": "images/neither-tv-nor-youtube-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neither-tv-nor-youtube-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:34:11.030Z"
+    },
+    {
+      "id": "instead-of-whatsapp",
+      "title": "Instead of whatsapp?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-01-12",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "instead-of-whatsapp-image-hero.png",
+        "githubPath": "images/instead-of-whatsapp-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/instead-of-whatsapp-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:34:31.247Z"
+    },
+    {
+      "id": "como-agradar-noam-chomsky-yuval-noah-harari",
+      "title": "Como agradar Noam Chomsky & Yuval Noah Harari?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-12-13",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "githubPath": "images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "altText": "Noam Chomsky (left) & Yuval Noah Harari (right)",
+        "caption": "Noam Chomsky (left) & Yuval Noah Harari (right)"
+      },
+      "lastUpdated": "2025-09-04T20:34:44.083Z"
     },
     {
       "id": "noam-chomsky-mixed-with",
@@ -355,6 +535,45 @@
       "lastUpdated": "2025-09-04T20:25:47.179Z"
     },
     {
+      "id": "fabrica-de-coringas",
+      "title": "Fábrica de coringas?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-10-31",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "fabrica-de-coringas-image-0.png",
+        "githubPath": "images/fabrica-de-coringas-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:35:03.588Z"
+    },
+    {
+      "id": "o-que-e-belo",
+      "title": "O que é belo",
+      "author": "Vladimir Dietrich",
+      "date": "2020-09-10",
+      "readingTime": 3,
+      "heroImage": null,
+      "lastUpdated": "2025-09-04T20:35:40.521Z"
+    },
+    {
+      "id": "sai-o-emprego-fica-a-producao",
+      "title": "Sai o emprego, fica a produção",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-07",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "sai-emprego-fica-producao-image-0.jpg",
+        "githubPath": "images/sai-emprego-fica-producao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:35:46.403Z"
+    },
+    {
       "id": "oblivion",
       "title": "Oblivion",
       "author": "Vladimir Dietrich",
@@ -368,6 +587,21 @@
         "caption": ""
       },
       "lastUpdated": "2025-09-04T20:14:55.814Z"
+    },
+    {
+      "id": "a-curiosidade-humana",
+      "title": "A curiosidade humana",
+      "author": "Vladimir Dietrich",
+      "date": "2019-09-11",
+      "readingTime": 11,
+      "heroImage": {
+        "fileName": "a-curiosidade-humana-image-0.jpg",
+        "githubPath": "images/a-curiosidade-humana-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:36:43.380Z"
     },
     {
       "id": "a-thought-about-true-cost-the-movie",
@@ -385,6 +619,21 @@
       "lastUpdated": "2025-09-04T20:23:26.449Z"
     },
     {
+      "id": "lixeiros-nao-utilizam-cinto-de-seguranca-utilizam",
+      "title": "Lixeiros não utilizam cinto de segurança, utilizam?",
+      "author": "Vladimir Dietrich",
+      "date": "2015-04-11",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "lixeiros-nao-utilizam-cinto-de-seguranca-utilizam-image-0.jpg",
+        "githubPath": "images/lixeiros-nao-utilizam-cinto-de-seguranca-utilizam-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/lixeiros-nao-utilizam-cinto-de-seguranca-utilizam-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:33:45.992Z"
+    },
+    {
       "id": "politica-de-uso-e-reproducao-de-conteudo",
       "title": "Política de Uso e Reprodução de Conteúdo",
       "author": "Vladimir Dietrich",
@@ -400,5 +649,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T20:32:00.655Z"
+  "lastUpdated": "2025-09-04T20:37:49.494Z"
 }
