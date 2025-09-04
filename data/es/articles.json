@@ -16,6 +16,36 @@
       "lastUpdated": "2025-09-04T20:05:44.315Z"
     },
     {
+      "id": "adeus-empresariar",
+      "title": "Adiós, el mundo empresarial",
+      "author": "Vladimir Dietrich",
+      "date": "2025-08-12",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "adeus-empresariar-image-0.png",
+        "githubPath": "images/adeus-empresariar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:10:17.343Z"
+    },
+    {
+      "id": "juventude-eterna-uma-tirania",
+      "title": "Juventud eterna: ¿una tiranía?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-07-30",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "juventude-eterna-uma-tirania-image-0.png",
+        "githubPath": "images/juventude-eterna-uma-tirania-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:11:24.857Z"
+    },
+    {
       "id": "politica-de-uso-e-reproducao-de-conteudo",
       "title": "Política de Uso y Reproducción de Contenido",
       "author": "Vladimir Dietrich",
@@ -31,5 +61,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T20:06:29.893Z"
+  "lastUpdated": "2025-09-04T20:11:56.092Z"
 }
