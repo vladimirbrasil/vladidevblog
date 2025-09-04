@@ -106,6 +106,21 @@
       "lastUpdated": "2025-09-04T20:17:40.943Z"
     },
     {
+      "id": "promocao-especial-para-ti",
+      "title": "Promoção especial para ti",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-15",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "promocao-especial-para-ti-image-0.jpg",
+        "githubPath": "images/promocao-especial-para-ti-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/promocao-especial-para-ti-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:43:48.654Z"
+    },
+    {
       "id": "te-amo",
       "title": "❤️ Te Amo",
       "author": "Vladimir Dietrich",
@@ -739,5 +754,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-04T20:42:26.289Z"
+  "lastUpdated": "2025-09-04T20:43:48.814Z"
 }
