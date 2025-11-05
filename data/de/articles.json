@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "onde-estao-as-pessoas-legais",
+      "title": "Wo sind die netten Leute?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-11-05",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "onde-estao-as-pessoas-legais-image-0.png",
+        "githubPath": "images/onde-estao-as-pessoas-legais-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estao-as-pessoas-legais-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-11-05T12:59:03.558Z"
+    },
+    {
       "id": "mudando-o-ponto-de-equilibrio-da-humanidade",
       "title": "Die Veränderung des Gleichgewichtspunkts der Menschheit",
       "author": "Vladimir Dietrich",
@@ -361,5 +376,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2025-09-24T18:50:59.511Z"
+  "lastUpdated": "2025-11-05T12:59:18.608Z"
 }
