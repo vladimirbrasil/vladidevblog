@@ -1,0 +1,585 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yin Yang - Blog de Vladimir Dietrich</title>
+  
+  <meta name="description" content="   ">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Yin Yang - Blog de Vladimir Dietrich">
+  <meta property="og:description" content="   ">
+  <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg">
+  <meta property="og:image:alt" content="Yin Yang">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/yin-yang.html">
+  <link rel="alternate" type="application/rss+xml" title="Blog de Vladimir Dietrich" href="https://blog.vladi.dev/feed.xml" />
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+/* === NOVO: ESTILOS PARA O DROPDOWN DE IDIOMAS (v3 DESSATURADO) === */
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px 4px 4px;
+  border-radius: 99px;
+  transition: background-color 0.2s ease;
+  border: 1px solid #e0e0e0;
+}
+.dropdown-toggle:hover {
+  background-color: #f5f5f5;
+}
+.dropdown-toggle img, .dropdown-menu img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  /* ===> MODIFICADO: Dessatura a imagem e adiciona transição */
+  filter: saturate(40%);
+  transition: filter 0.25s ease-in-out;
+}
+.dropdown-toggle:hover img, .dropdown-menu a:hover img {
+  /* ===> NOVO: Restaura a cor no hover */
+  filter: saturate(100%);
+}
+.dropdown-toggle span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 110;
+  min-width: 100%;
+}
+.language-dropdown.active .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+.dropdown-menu img {
+  width: 28px; /* Mantém um tamanho ligeiramente maior no menu */
+  height: 28px;
+}
+.dropdown-menu span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+/* === FIM DOS NOVOS ESTILOS === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  /* ===> MODIFICADO: Adicione .language-dropdown a esta regra */
+  .search-active .logo,
+  .search-active .nav-links a,
+  .search-active .language-dropdown {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
+/* ======================================================================== */
+/* === Newsletter Subscription Form === */
+/* ======================================================================== */
+.newsletter-section {
+  background: rgba(26, 137, 23, 0.06);
+  border: 1px solid rgba(26, 137, 23, 0.15);
+  border-radius: 12px;
+  padding: 32px;
+  margin: 32px 0;
+  text-align: center;
+}
+.newsletter-section h3 {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(41, 41, 41, 1);
+  margin-bottom: 16px;
+}
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.newsletter-form input[type="email"] {
+  padding: 10px 16px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-width: 220px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+.newsletter-form input[type="email"]:focus {
+  border-color: rgba(26, 137, 23, 0.5);
+}
+.newsletter-form select {
+  padding: 10px 12px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.newsletter-form button {
+  padding: 10px 24px;
+  background: rgba(26, 137, 23, 1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.newsletter-form button:hover {
+  background: rgba(21, 117, 19, 1);
+}
+.newsletter-form button:disabled {
+  background: rgba(117, 117, 117, 0.5);
+  cursor: not-allowed;
+}
+.newsletter-message {
+  margin-top: 12px;
+  font-size: 14px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+.newsletter-message.success { color: rgba(26, 137, 23, 1); }
+.newsletter-message.error { color: #d32f2f; }
+
+</style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Yin Yang","author":{"@type":"Person","name":"Vladimir Dietrich"},"datePublished":"2026-01-26","image":"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg","description":"   "}</script>
+</head>
+<body>
+  
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v18.0&appId=1284673459606715&autoLogAppEvents=1" nonce="a1b2c3d4"></script>
+    
+  <header class="header">
+   <div class="header-content">
+     <a href="/index.html" class="logo">Vladimir Dietrich</a>
+     <nav class="nav-links">
+ 
+       <div class="language-flags"></div>
+       <a href="https://vladi.dev" target="_blank">Portfolio</a>
+       </nav>
+   </div>
+ </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      <div class="hero-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg" alt="Yin Yang" class="hero-image">  </div>
+      <div class="article-content-wrapper">
+        <a href="/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Yin Yang</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>January 25, 2026</span>
+            <span>·</span><span class="reading-time">5 min read</span>
+          </div>
+        </div>
+        
+        <div class="language-switcher"><strong>Português</strong><span>|</span><a href="/en/articles/yin-yang.html">English</a><span>|</span><a href="/fr/articles/yin-yang.html">Français</a><span>|</span><a href="/de/articles/yin-yang.html">Deutsch</a><span>|</span><a href="/es/articles/yin-yang.html">Español</a></div>
+
+        <div class="article-content">
+          <p>   </p>
+<p>Kerstin Uvnäs Moberg (The Oxitocin Factor) compara com a filosofia do Yin Yang nossos dois grandes sistemas:</p>
+<p>O modo estressado.</p>
+<p>O modo paz e amor.</p>
+<p>Nosso modo estressado - fuja ou lute - tem cada vez menos leões para nos alertar rapidamente, pois os leões estão cada vez mais enjaulados.</p>
+<p>Mas um novo leão nunca desativa nosso modo estressado, vou palpitar aqui: o leão do consumo compulsivo.</p>
+<p>Começo o argumento dizendo que “vinagre não dá lucro”, ou seja, que produtos sem grande valor agregado, fáceis de produzir, são vendidos a quase seu preço de custo, dando pouco ou nenhum lucro para qualquer empresário, usualmente vários, que decidam produzi-lo. É um parágrafo simplificado, mas importante parte do argumento.</p>
+<p>O que dá lucro? Marca. Valor. Pagar muito mais do que o custo real do produto. Pagar muito mais do que o custo real do produto é, literalmente, lucro para o produtor. Em oposição ao vinagre, vamos chamar esse produto de “água orgânica em lata ecológica”.</p>
+<p>Imagine passar uma infância caminhando por anúncios de águas ecológicas a 40 reais a lata, camisetas originais do surfista tal a 450 reais a peça - e por aí vai.</p>
+<p>Imagine que vinagre e água da torneira, e camisetas por 7 reais não anunciem em local algum. Apenas estão disponíveis, se você procurar.</p>
+<p>É preciso criar uma camada de “stress” para empurrar pessoas - desde a infância, melhor ainda - para desejar os produtos anunciados.</p>
+<p>Por outro lado, é preciso muita tranquilidade, muita paz e amor, para não se sentir acuado por anúncios quase inescapáveis, por todos os lados. Nas telas grandes, nas telas pequenas, em novelas e nos filmes, nos outdoors, no merchandising, na boca das pessoas já fisgadas comentando.</p>
+<p>Nós temos os dois modos: o modo estressado e o modo paz e amor.</p>
+<p>Podemos plantar o modo estressado desde o útero, com creches competitivas trilingues e pais preocupados em manter a competitividade da próxima geração, sem jamais parar.</p>
+<p>Mas e se nascer uma única criança - e quem sabe, seus pais e vizinhos - no modo paz e amor?</p>
+<p>O modo paz e amor é contagioso - tanto quanto é contagioso o modo estressado.</p>
+<p>É possível sequestrar o modo paz e amor tirando dele coisas essenciais à vida como, por exemplo, um lugar para morar.</p>
+<p>Este fenômeno particularmente acontece nas cidades imensas, como por exemplo Nova Iorque. Londres, Tóquio. São Paulo. </p>
+<p>Nestas cidades o modo estressado tomou conta de tanta gente, em tão pouco espaço, que já não dá para conseguir um espaço na cidade sem estar, no modo estressado, tentando produzir coisas com alto valor agregado. É muito caro o imóvel. Todo mundo é “meio rico”. Não há espaço para pouco trabalho.</p>
+<p>Outra maneira de sequestrar o modo paz e amor é sequestrar as pessoas mais bonitas.</p>
+<p>Se as pessoas mais bonitas procurarem as pessoas mais ricas, por algum motivo - por exemplo, por ser caro um imóvel, o que nos traz novamente ao problema das cidades imensas - então pessoas mais focadas no modo paz e amor terão que se contentar com pessoas menos bonitas e imóveis menos valiosos.</p>
+<p>Outra maneira de vender “vento” é vender fama.</p>
+<p>Se pessoas no modo paz e amor se deixarem levar por telas expondo pessoas raras, como por exemplo pessoas muito belas e, frequentemente, pessoas atraentes pelo próprio fato de estarem em telas de difícil alcance, famosas portanto, então também estas pessoas terão que entrar no modo estressado para poderem “entrar nas telas”, ou seja, fazerem parte do seleto grupo filmado por telas raras.</p>
+<p>O modo paz e amor é governado pela ocitocina. </p>
+<p>O modo estressado é governado pelo cortisol.</p>
+<p>O modo paz e amor é perigoso para as grandes cidades estressadas, por quê?</p>
+<p>Porque ele é extremamente auto-suficiente. No modo paz e amor tudo está bem ou quase bem. Incluindo a camiseta de sete reais, o vinagre de dois reais e a água da torneira. Somos todos amigos.</p>
+<p>Só o modo estressado compete com o próximo para ver quem tem a camiseta mais valiosa. Ou a água mais “tchan”.</p>
+<p>Só o modo estressado trabalha a vida inteira estressado, fugindo do stress das contas, fugindo do stress de ser apenas mais um (com camiseta de sete reais e vinagre de dois reais). Tentando chegar “lá” - longe do chão, do vinagre, da água da torneira.</p>
+<p>O chão “é lava”, no modo estressado. O chão é gostoso, no modo paz e amor.</p>
+<p>Temos ambos os modos. Usamos ambos os modos. Como a filosofia do yin a yang.</p>
+<p>Podemos, porém, estar com o modo paz e amor sequestrado pelo modo estressado, através do sequestro do nosso chão - literalmente os imóveis, nas cidades grandes, mais a necessidade - artificialmente criada? -  de morarmos todos nestas imensas cidades.</p>
+<p>Sequestram nossas pessoas mais bonitas que se vendem por chão, por produtos caros, em troca de sua rara beleza. Deixando as pessoas que estariam apenas no modo paz e amor sem as maiores belezas, que são sequestradas pelo modo estressado de vida - nos topos de arranhas-céus, com telas raras as filmando.</p>
+<p>Como em filmes de zumbi, o modo estressado vai contagiando todos que consegue. Quem não está no topo de arranhas-céus sonha estar em um e compra este sonho, mordido também portanto pelo modo estressado.</p>
+<p>O modo estressado vai ganhando ares de normalidade, com sua agitação, preocupação, trabalho quase incessante. </p>
+<p>O modo paz e amor ganha ares de doença. Peculiaridade. Estranho. Conformismo?</p>
+<p>O inconformismo do modo estressado vira normal.</p>
+<p>A era da abundância que pode estar chegando quando bilhões de robôs e inteligências artificiais funcionarem bem poderá ser um banho de água fria no modo estressado.</p>
+<p>Vamos chamar de yang o modo estressado e de yin o modo paz e amor.</p>
+<p>Pode ser que transformemos o predomínio do yang em predomínio do yin.</p>
+<p>Pode ser que o modo paz e amor rapidamente substitua o predomínio do modo estressado.</p>
+<p>Se realmente temos estes dois modos - é o que a biologia nos indica - seria interessante ver a humanidade florescer com predomínio do modo paz e amor, só para comparar com nosso predomínio atual, que é o ṕredomínio do modo estressado.</p>
+
+        </div>
+
+        
+      <div class="comments-section" style="margin-top: 80px;">
+        <div class="fb-comments" data-href="https://blog.vladi.dev/articles/yin-yang.html" data-width="100%" data-numposts="5"></div>
+      </div>
+     
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+        
+    <div class="newsletter-section">
+      <h3>Receba novos artigos por email</h3>
+      <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
+        <input type="email" id="newsletter-email" placeholder="Seu email" required>
+        <select id="newsletter-lang"><option value="pt" selected>Português</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option></select>
+        <button type="button" id="newsletter-btn" onclick="submitNewsletter()">Inscrever-se</button>
+      </form>
+      <div class="newsletter-message" id="newsletter-message"></div>
+    </div>
+    <script>
+      function submitNewsletter() {
+        var email = document.getElementById('newsletter-email').value.trim();
+        var lang = document.getElementById('newsletter-lang').value;
+        var btn = document.getElementById('newsletter-btn');
+        var msg = document.getElementById('newsletter-message');
+        if (!email) return;
+        btn.disabled = true;
+        msg.textContent = '';
+        msg.className = 'newsletter-message';
+        var WEBAPP_URL = 'null';
+        fetch(WEBAPP_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
+          mode: 'no-cors'
+        }).then(function(r) {
+          if (r.type === 'opaque') {
+            msg.textContent = "Inscrição realizada com sucesso!";
+            msg.className = 'newsletter-message success';
+            document.getElementById('newsletter-email').value = '';
+          } else {
+            return r.json();
+          }
+        }).then(function(data) {
+          if (!data) return;
+          if (data.success) {
+            msg.textContent = "Inscrição realizada com sucesso!";
+            msg.className = 'newsletter-message success';
+            document.getElementById('newsletter-email').value = '';
+          } else if (data.error === 'already_subscribed') {
+            msg.textContent = "Este email já está inscrito.";
+            msg.className = 'newsletter-message error';
+          } else {
+            msg.textContent = "Erro ao inscrever. Tente novamente.";
+            msg.className = 'newsletter-message error';
+          }
+        }).catch(function() {
+          msg.textContent = "Inscrição realizada com sucesso!";
+          msg.className = 'newsletter-message success';
+          document.getElementById('newsletter-email').value = '';
+        }).finally(function() {
+          btn.disabled = false;
+        });
+      }
+    </script>
+  
+        <div style="text-align: center; line-height: 1.6;">
+            <p>© 2026 Vladimir Dietrich</p>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" title="Licença Creative Commons Atribuição 4.0 Internacional">
+                <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+            </a>
+            <p style="font-size: 0.9em; color: #666;">
+                Esta obra está licenciada sob <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+                <br>
+                <a href="/articles/politica-de-uso-e-reproducao-de-conteudo.html">Saiba como republicar este conteúdo</a>
+            </p>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ======================================================= */
+    /* === NOVO: JavaScript para o Dropdown de Idiomas === */
+    /* ======================================================= */
+    try {
+      document.addEventListener('DOMContentLoaded', function() {
+        const dropdown = document.getElementById('language-dropdown');
+
+        if (dropdown) {
+          // Abre/fecha o dropdown ao clicar no botão
+          dropdown.addEventListener('click', function(event) {
+            event.stopPropagation(); // Impede que o clique feche o menu imediatamente
+            this.classList.toggle('active');
+          });
+
+          // Fecha o dropdown se o usuário clicar fora dele
+          window.addEventListener('click', function(event) {
+            if (dropdown.classList.contains('active')) {
+              dropdown.classList.remove('active');
+            }
+          });
+        }
+      });
+    } catch (e) {
+      console.error("Error setting up language dropdown:", e);
+    }  
+  </script>
+
+</body>
+</html>

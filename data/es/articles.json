@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "yin-yang",
+      "title": "Yin Yang",
+      "author": "Vladimir Dietrich",
+      "date": "2026-01-26",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "yin-yang-image-0.jpg",
+        "githubPath": "images/yin-yang-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-02-14T02:48:32.745Z"
+    },
+    {
       "id": "onde-estao-as-pessoas-legais",
       "title": "¿Dónde está la gente genial?",
       "author": "Vladimir Dietrich",
@@ -346,5 +361,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-02-14T02:45:36.877Z"
+  "lastUpdated": "2026-02-14T02:49:43.989Z"
 }

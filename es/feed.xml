@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/es/</link>
     <description>Blog de Vladimir Dietrich - Vladimir Dietrich</description>
     <language>es</language>
-    <lastBuildDate>Sat, 14 Feb 2026 02:45:36 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 14 Feb 2026 02:49:44 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/es/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Yin Yang</title>
+      <link>https://blog.vladi.dev/es/articles/yin-yang.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/yin-yang.html</guid>
+      <pubDate>Mon, 26 Jan 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg&quot; alt=&quot;Yin Yang&quot; /&gt;</description>
+    </item>
     <item>
       <title>¿Dónde está la gente genial?</title>
       <link>https://blog.vladi.dev/es/articles/onde-estao-as-pessoas-legais.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 28 Apr 2020 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg&quot; alt=&quot;Oblivion&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>La curiosidad humana</title>
-      <link>https://blog.vladi.dev/es/articles/a-curiosidade-humana.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/a-curiosidade-humana.html</guid>
-      <pubDate>Wed, 11 Sep 2019 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg&quot; alt=&quot;La curiosidad humana&quot; /&gt;</description>
     </item>
   </channel>
 </rss>
