@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>Die folgende Frage lässt sich am besten mit dieser <a href="https://youtu.be/cRvzrg02gmc" target="_blank" rel="noopener noreferrer">Präsentation</a> kontextualisieren.</p>
@@ -467,6 +468,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Jetzt kürzer und klarer: Sollen wir überhaupt etwas weiterentwickeln?; oder irgendetwas, außer um unser Bewusstsein, unseren genetischen Code, unsere Art und Weise, 50 Billionen Zellen und Milliarden von Individuen zu organisieren, zu verändern?</p>
 <p>Noch kürzer: Sollen wir erhalten werden, um jede zukünftige Evolution zu beobachten? Selbst wenn wir relativ veraltet werden?</p>
 <p>Vielen Dank für Ihre Geduld, diese Frage anzuhören.</p>
+        
         
         
         
@@ -507,6 +509,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>Il y a un peu plus de cent ans, il n'y avait même pas de voiture. Ni de lumière électrique.</p>
 <p>C'est la vitesse de la raison. De l'invention. De la technologie.</p>
@@ -486,6 +487,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Je pense que je devrais commencer à réfléchir à ces sujets, réfléchir un peu à nous, au monde, avec ces outils et ce point de vue de la raison et de l'émotion.</p>
 <p>Pour l'instant, je ne fais qu'étaler les outils sur la table.</p>
 <p>Non concluant ! Pas encore.</p>
+        
         
         
         
@@ -526,6 +528,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

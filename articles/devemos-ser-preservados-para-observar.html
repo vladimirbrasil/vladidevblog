@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p>   </p>
 <p></p>
 <p>A pergunta a seguir é melhor contextualizada com esta <a href="https://youtu.be/cRvzrg02gmc" target="_blank" rel="noopener noreferrer">apresentação</a> .</p>
@@ -468,6 +469,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Ainda mais resumido: devemos ser preservados para observar toda evolução futura? Mesmo se nos tornarmos relativamente obsoletos?</p>
 <p>Muito obrigado por sua paciência em ouvir esta pergunta.</p>
 
+        
         
         
         
@@ -508,6 +510,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

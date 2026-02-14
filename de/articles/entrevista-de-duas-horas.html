@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>In wie vielen Stunden Interviewzeit sprichst du alles aus, was du zu sagen hast?</p>
 <p>Über die Welt. Über das Leben. Über jedes spezifische Thema.</p>
@@ -504,6 +505,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
         
         
+        
         </div>
 
         
@@ -540,6 +542,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

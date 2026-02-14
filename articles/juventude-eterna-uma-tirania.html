@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p>   </p>
 <p>Vou chamar de síndrome de Peter Pan o desejo por jamais morrer e, também, sempre permanecer jovem e saudável.</p>
 <p>Parece bom, não?</p>
@@ -491,6 +492,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Nada sabemos, estamos aprendendo e, mais ainda, nem há um certo e um errado.</p>
 <p>Deixo a reflexão.</p>
 
+        
         
         
         
@@ -531,6 +533,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

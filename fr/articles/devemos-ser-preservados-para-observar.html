@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>La question suivante est mieux contextualisée avec cette <a href="https://youtu.be/cRvzrg02gmc" target="_blank" rel="noopener noreferrer">présentation</a> .</p>
@@ -467,6 +468,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Maintenant, plus court et plus clair : devons-nous faire évoluer quoi que ce soit ?; ou quoi que ce soit, sauf pour modifier notre conscience, notre code génétique, notre façon d’organiser 50 000 milliards de cellules et des milliards d’individus ?</p>
 <p>Encore plus résumé : devons-nous être préservés pour observer toute évolution future ? Même si nous devenons relativement obsolètes ?</p>
 <p>Merci beaucoup de votre patience pour avoir écouté cette question.</p>
+        
         
         
         
@@ -507,6 +509,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

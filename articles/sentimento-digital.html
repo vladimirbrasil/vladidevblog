@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p></p>
 <p>O banco digital substitui o banco físico.Meu medo é que o filtro do Instagram substitua salões de beleza.</p>
 <p>Medo por quê?É porque realmente passaríamos a lotear e conviver no mundo virtual.</p>
@@ -500,6 +501,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
         
         
+        
         </div>
 
         
@@ -536,6 +538,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

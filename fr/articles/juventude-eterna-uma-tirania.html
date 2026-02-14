@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>Je vais appeler syndrome de Peter Pan le désir de ne jamais mourir et, aussi, de toujours rester jeune et en bonne santé.</p>
 <p>Ça a l'air bien, non ?</p>
@@ -490,6 +491,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>S'il n'y avait pas de hiérarchie entre les âges, alors même l'âge peu avant de mourir et sa partenaire la mort subséquente seraient des comportements valides, mettant donc fin à l'éternité de ce que j'ai appelé le syndrome de Peter Pan.</p>
 <p>Nous ne savons rien, nous apprenons et, plus encore, il n'y a même pas de bien et de mal.</p>
 <p>Je laisse la réflexion.</p>
+        
         
         
         
@@ -530,6 +532,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

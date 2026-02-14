@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>Le professionnalisme qui a envahi Instagram est en train d'anéantir l'amateurisme qui régnait à ses débuts. Vous vous souvenez ? Ces photos personnelles. Vous au restaurant. Votre famille réunie sur le canapé. Ces publications moins travaillées.</p>
@@ -490,6 +491,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Continuons à réfléchir ensemble ? Pendant que nous avons encore une compétence relative pour cela..</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-2.jpg" alt="&quot;Emptiness&quot;. Imagem gerada por um humano (eu) usando cena de vanilla sky." /><figcaption>&quot;Emptiness&quot;. Image générée par un humain (moi) utilisant une scène de Vanilla Sky.</figcaption></figure>
 <p>&quot;Emptiness&quot;. Image générée par un humain (moi) utilisant une scène de Vanilla Sky.</p>
+        
         
         
         
@@ -530,6 +532,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

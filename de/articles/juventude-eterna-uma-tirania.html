@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>Ich nenne das Peter-Pan-Syndrom den Wunsch, niemals zu sterben und immer jung und gesund zu bleiben.</p>
 <p>Klingt gut, oder?</p>
@@ -490,6 +491,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Wenn es keine Hierarchie zwischen den Altersgruppen gäbe, dann wären sogar das Alter kurz vor dem Tod und sein Partner, der anschließende Tod, gültige Verhaltensweisen, die die Ewigkeit dessen, was ich das Peter-Pan-Syndrom genannt habe, beenden würden.</p>
 <p>Wir wissen nichts, wir lernen und es gibt nicht einmal ein Richtig und ein Falsch.</p>
 <p>Ich lasse die Überlegung offen.</p>
+        
         
         
         
@@ -530,6 +532,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

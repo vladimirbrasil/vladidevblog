@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>Je propose que l'automatisation généralisée, c'est-à-dire les robots et les intelligences travaillant à notre place, nous pousse hors d'un point d'équilibre qui est resté stable pendant un bon moment - jusqu'à ce que nous créions, avec notre propre dévouement, ceux qui travaillent pour nous, de plus en plus, dans plus de domaines.</p>
 <p>Nous étions bien équilibrés dans la création d'enfants pour le marché du travail, obéissants et créatifs. Les mariages maintiennent la procréation sans interrompre le flux de travailleurs allant au travail. Les personnes âgées ne dérangent pas trop ceux qui travaillent. Nous pourrions appeler cet ensemble de comportements un équilibre stable.</p>
@@ -520,6 +521,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
         
         
+        
         </div>
 
         
@@ -556,6 +558,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

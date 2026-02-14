@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p></p>
 <p>Por que tentar, certamente sem sucesso (há sucesso?) definir &quot;beleza&quot;?</p>
 <p>Realmente, não vale o esforço, inútil.</p>
@@ -484,6 +485,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Enjoar significaria enfeiar? Ausência de revoada de hormônios seria feio?</p>
 <p>Há poesia na mecanização da beleza.Um amigo, uma amiga que nos faz rir, nos sentir mais leves, de alguma maneira, ao ser visto, vista, injeta dopamina em nossas veias. A promessa do riso. Da leveza. Antes de acontecer. Belo, bela?</p>
 
+        
         
         
         
@@ -524,6 +526,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

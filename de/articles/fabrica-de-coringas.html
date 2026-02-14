@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>Der Joker-Film ist eine Büchse der Pandora.</p>
@@ -490,6 +491,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Außerdem wären Zuneigung und Schönheit wahrscheinlich ein Tugendkreislauf, der sich gegenseitig auf zyklische Weise nährt.</p>
 <p>Um von sehr abstrakten Theorien abzukommen, kann man eine rein praktische Frage stellen:</p>
 <p>Wie würde die Stadt aussehen, die das Gegenteil von &quot;Gotham City&quot; ist, das Joker hervorbringt? Im Detail.</p>
+        
         
         
         
@@ -530,6 +532,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

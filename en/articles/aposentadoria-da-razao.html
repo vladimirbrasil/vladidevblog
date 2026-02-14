@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>Eureka?</p>
 <p>Artificial intelligence can retire the left side of our brain. Reason. Science. Logic.</p>
@@ -482,6 +483,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>The profile changing, society changes.</p>
 <p>---</p>
 <p><em>This text is a bit difficult due to my failure as a writer. But here is the concept I am seeing, and I already apologize not only for the dry text, without pleasant stories and, even worse, possibly being with a totally wrong thesis. The originality - wrong or not - I think I'm delivering, even if in a poorly written way. If I can, I'll improve this text as soon as I have this ability and time.</em></p>
+        
         
         
         
@@ -522,6 +524,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

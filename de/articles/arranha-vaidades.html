@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>Ich glaube, ich kann einen Mythos entkräften. Den Mythos des "Ultra-, Ultra-Milliardärs".</p>
@@ -486,6 +487,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <li>Was wollen wir mit dem, was wir erfunden haben – dem berühmten "Geld"? Wenn wir wie die Natur sein können, oder zumindest Roboterfirmen arbeiten können, ohne jemals zu wissen, was ein Dollar oder ein Bitcoin ist, richtet sich der Fokus des Geldes auf unsere eigenen Köpfe, Gedanken, Wünsche, Eitelkeiten.</li>
 <li>Wenn man sich Roboterfirmen vorstellen kann, die mit Knappheit automatisiert und wohlerzogen umgehen, ist es noch einfacher, den Fokus des (viel) Geldes nur auf uns selbst zu richten. Was wir wollen, ist keine kleine Frage.</li>
 <p>Viel Spaß beim Lesen! :)</p>
+        
         
         
         
@@ -526,6 +528,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

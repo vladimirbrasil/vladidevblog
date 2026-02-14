@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>Ich habe das Gefühl, dass das Unternehmertum die anderen Phasen unseres Lebens erstickt.</p>
 <p>Welche Phasen? Die Phasen, in denen wir noch Kinder sind, und die Phasen, in denen wir allmählich aus dem Arbeitsmarkt gedrängt werden.</p>
@@ -484,6 +485,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Dann werden kleine und große Menschen aller Phasen ihr Lachen, ihre Tränen, ihre Entdeckung, ihre Feststellung, ihr Wort hoch geschätzt wissen, ohne in einen Strudel von CNPJs hinein- oder herausgestoßen zu werden.</p>
 <p>Beobachten wir?.</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-1.png" alt="" /></figure>
+        
         
         
         
@@ -524,6 +526,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

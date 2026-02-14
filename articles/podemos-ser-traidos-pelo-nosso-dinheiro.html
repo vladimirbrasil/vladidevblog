@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p></p>
 <p>Em 2023 Lula venceu a eleição presidencial no Brasil com um paraquedas: Alckmin, seu vice-presidente.</p>
 <p>Alckmin pode ser acionado por morte ou por mau comportamento de Lula. Por mau comportamento a imprensa queima Lula em fogo lento, vê se ele cede à pressão, se não ceder, aumenta o fogo, provoca um impeachment após 2 anos, aciona o paraquedas.</p>
@@ -518,6 +519,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
         
         
+        
         </div>
 
         
@@ -554,6 +556,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>I propose that widespread automation, that is, robots and intelligences working in place of us humans, pushes us out of an equilibrium point that has been stable for quite some time - until we created, with our own dedication, those who work for us, increasingly, in more areas.</p>
 <p>We were well balanced in creating children for the labor market, obedient and creative. Marriages maintaining procreation without interrupting the flow of workers going to work. Seniors don't bother those who work much. We could call this set of behaviors a stable equilibrium.</p>
@@ -520,6 +521,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
         
         
+        
         </div>
 
         
@@ -556,6 +558,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

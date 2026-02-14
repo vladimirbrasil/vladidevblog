@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>Everywhere!</p>
 <p>I'm going to propose the thesis that cool people are everywhere.</p>
@@ -470,6 +471,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Robots don't need money. So it's not right to say that robots will start trying to get money and attention from humans.</p>
 <p>Robots and artificial brains will produce what humans like to have most, without much competition for our attention.</p>
 <p>Will the cool people appear?</p>
+        
         
         
         
@@ -510,6 +512,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>Partout !</p>
 <p>Je vais proposer la thèse selon laquelle les gens sympas sont partout.</p>
@@ -470,6 +471,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Les robots n'ont pas besoin d'argent. Il n'est donc pas logique de dire que ce sont les robots qui essaieront d'obtenir de l'argent et de l'attention des humains.</p>
 <p>Les robots et les cerveaux artificiels produiront ce que les humains aiment le plus avoir, sans grande concurrence pour notre attention.</p>
 <p>Les gens sympas apparaîtront-ils ?</p>
+        
         
         
         
@@ -510,6 +512,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

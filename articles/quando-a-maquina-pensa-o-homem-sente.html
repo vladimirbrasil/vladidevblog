@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p>   </p>
 <p>Há pouco mais de cem anos não havia nem carro. Nem luz elétrica.</p>
 <p>Essa é a velocidade da razão. Da invenção. Da tecnologia.</p>
@@ -487,6 +488,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Por enquanto apenas espalho as ferramentas na mesa. </p>
 <p>Inconclusivo! Ainda.</p>
 
+        
         
         
         
@@ -527,6 +529,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

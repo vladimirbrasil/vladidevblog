@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p>  </p>
 <p></p>
 <p>Se um grande conhecedor da alma humana pode viver como um mendigo, nas ruas, ou em exílio em montanhas no Tibet, tudo isso sem afetar seu ego (aliás, vide Epicuro e/ou Diógenes, o cínico), meu medo é: o que este grande gênio das sinapses não poderia “produzir” na: Nasa, em novos produtos/serviços, em grandes laboratórios, no conhecimento humano. Nada duvido que este ser iluminado esteja pleno e radiante: envolto por cachorros, na calçada, no Tibet. Porém: e o conhecimento?</p>
@@ -538,6 +539,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
         
         
+        
         </div>
 
         
@@ -574,6 +576,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

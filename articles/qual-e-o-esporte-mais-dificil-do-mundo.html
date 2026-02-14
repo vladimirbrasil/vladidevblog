@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p></p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/qual-e-o-esporte-mais-dificil-do-mundo-image-1.jpg" alt="" /></figure>
 <p><a href="https://bleacherreport.com/articles/832927-what-is-the-worlds-toughest-sport" target="_blank" rel="noopener noreferrer">Artigo original</a> de <a href="https://ie.linkedin.com/in/chris-siddell-105a2083" target="_blank" rel="noopener noreferrer">Chris Siddell</a>.</p>
@@ -666,6 +667,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
         
         
+        
         </div>
 
         
@@ -702,6 +704,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

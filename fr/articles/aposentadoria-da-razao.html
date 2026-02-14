@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>Eurêka ?</p>
 <p>L’intelligence artificielle peut mettre à la retraite le côté gauche de notre cerveau. La raison. La science. La logique.</p>
@@ -482,6 +483,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Le profil changeant, la société change.</p>
 <p>---</p>
 <p><em>Ce texte est un peu difficile en raison de mon échec en tant qu’écrivain. Mais voici le concept que je suis en train de voir, et je m’excuse déjà non seulement pour le texte sec, sans histoires agréables et, pire encore, pouvant être avec une thèse totalement erronée. L’originalité - en me trompant ou non - je pense que je suis en train de la livrer, même si de manière mal rédigée. Si je réussis, j’améliore ce texte dès que cette compétence et le temps me viendront.</em></p>
+        
         
         
         
@@ -522,6 +524,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

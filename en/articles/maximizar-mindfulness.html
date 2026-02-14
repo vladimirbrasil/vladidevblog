@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>By simply asking to "maximize the number of points obtained," an artificial intelligence broke the scoreboard of "River Raid" - an old video game. It needed to play "zillions" of times, something that artificial intelligence does in a few minutes. The method matters less than the final result. It became an expert at the game, forever.</p>
@@ -475,6 +476,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Note that, like "River Raid," at every moment it scores, or not - measuring heartbeats, blood oxygenation, hormones, endorphins, synapses, face image, skin softness, everything.</p>
 <p>You realize that such "movements" score less, that moving "this way" before "that way" scores more than the movements in isolation. It composes. Maximizing what? Everything good.</p>
 <p>But even less humble is not restricting oneself to music, in the game of life.</p>
+        
         
         
         
@@ -515,6 +517,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

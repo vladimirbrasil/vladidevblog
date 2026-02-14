@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>La siguiente pregunta se contextualiza mejor con esta <a href="https://youtu.be/cRvzrg02gmc" target="_blank" rel="noopener noreferrer">presentación</a> .</p>
@@ -467,6 +468,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Ahora, más corto y claro: ¿deberíamos evolucionar cualquier cosa?; o cualquier cosa, excepto para cambiar nuestra conciencia, nuestro código genético, nuestra manera de organizar 50 billones de células y miles de millones de individuos?</p>
 <p>Aún más resumido: ¿deberíamos ser preservados para observar toda evolución futura? ¿Incluso si nos volvemos relativamente obsoletos?</p>
 <p>Muchas gracias por su paciencia al escuchar esta pregunta.</p>
+        
         
         
         
@@ -507,6 +509,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();

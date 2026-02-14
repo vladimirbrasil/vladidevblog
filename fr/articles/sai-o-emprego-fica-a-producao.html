@@ -457,6 +457,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>L'essence des dérivées et des intégrales est la notion de limite. Lorsque la limite tend vers l'infini ou vers zéro, nous inventons la notion de dérivées et d'intégrale. Par exemple, une circonférence est un polygone avec des côtés &quot;infinis&quot; dont la longueur tend vers zéro, chacun. À la limite, avec le nombre de côtés tendant vers l'infini et la longueur de chaque côté tendant vers zéro, nous avons une circonférence parfaite.</p>
@@ -506,6 +507,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
         
         
+        
         </div>
 
         
@@ -542,6 +544,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
           return r.json();
