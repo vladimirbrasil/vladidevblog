@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>Le professionnalisme qui a envahi Instagram est en train d'anéantir l'amateurisme qui régnait à ses débuts. Vous vous souvenez ? Ces photos personnelles. Vous au restaurant. Votre famille réunie sur le canapé. Ces publications moins travaillées.</p>
@@ -489,6 +490,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Continuons à réfléchir ensemble ? Pendant que nous avons encore une compétence relative pour cela..</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-2.jpg" alt="&quot;Emptiness&quot;. Imagem gerada por um humano (eu) usando cena de vanilla sky." /><figcaption>&quot;Emptiness&quot;. Image générée par un humain (moi) utilisant une scène de Vanilla Sky.</figcaption></figure>
 <p>&quot;Emptiness&quot;. Image générée par un humain (moi) utilisant une scène de Vanilla Sky.</p>
+        
         
         
         
@@ -528,19 +530,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "Abonnement réussi !";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "Abonnement réussi !";
             msg.className = 'newsletter-message success';
@@ -553,9 +546,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "Abonnement réussi !";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Erreur lors de l'abonnement. Réessayez.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });

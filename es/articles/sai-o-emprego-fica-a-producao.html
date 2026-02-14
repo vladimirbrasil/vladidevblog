@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>La esencia de derivadas e integrales es la noción de límite. Cuando el límite tiende al infinito, o a cero, inventamos la noción de derivadas e integral. Por ejemplo, una circunferencia es un polígono con &quot;infinitos&quot; lados de longitud tendiendo a cero, cada uno. En el límite, con el número de lados tendiendo al infinito y la longitud de cada lado tendiendo a cero, tenemos una circunferencia perfecta.</p>
@@ -504,6 +505,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
         
         
+        
         </div>
 
         
@@ -540,19 +542,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "¡Suscripción exitosa!";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "¡Suscripción exitosa!";
             msg.className = 'newsletter-message success';
@@ -565,9 +558,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "¡Suscripción exitosa!";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Error al suscribirse. Inténtalo de nuevo.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });

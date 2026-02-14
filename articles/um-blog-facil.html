@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p>   </p>
 <p>Há bastante tempo eu queria poder ter um blog tão simples quanto criar um google doc, até mesmo pelo celular.</p>
 <p>Eu já tinha um blog. Mas precisava editar o html diretamente e, então, atualizar no github.</p>
@@ -477,6 +478,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>---</p>
 <p>Atualização: agora o blog traduz e posta em outras línguas, também, bastando pedir no texto “versão em (qualquer idioma que eu desejar)”. </p>
 
+        
         
         
         
@@ -516,19 +518,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "Inscrição realizada com sucesso!";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "Inscrição realizada com sucesso!";
             msg.className = 'newsletter-message success';
@@ -541,9 +534,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "Inscrição realizada com sucesso!";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Erro ao inscrever. Tente novamente.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });

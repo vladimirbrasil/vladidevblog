@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p></p>
 <p>Por que tentar, certamente sem sucesso (há sucesso?) definir &quot;beleza&quot;?</p>
 <p>Realmente, não vale o esforço, inútil.</p>
@@ -483,6 +484,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Enjoar significaria enfeiar? Ausência de revoada de hormônios seria feio?</p>
 <p>Há poesia na mecanização da beleza.Um amigo, uma amiga que nos faz rir, nos sentir mais leves, de alguma maneira, ao ser visto, vista, injeta dopamina em nossas veias. A promessa do riso. Da leveza. Antes de acontecer. Belo, bela?</p>
 
+        
         
         
         
@@ -522,19 +524,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "Inscrição realizada com sucesso!";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "Inscrição realizada com sucesso!";
             msg.className = 'newsletter-message success';
@@ -547,9 +540,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "Inscrição realizada com sucesso!";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Erro ao inscrever. Tente novamente.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });

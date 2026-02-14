@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p></p>
 <p></p>
 <p>Olha a lambança! Vanilla Sky com Freud com genética avançada e com mundo virtual. Vou brincar como dois filhotes recém nascidos brincam. Olha a lama voando!</p>
@@ -486,6 +487,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Um dia aprendo a lidar de maneira mais madura com os ingredientes que tanto prazer dão, ao brincar com eles, agora no início.</p>
 <p>A conclusão preliminar não é “eternizar-se belíssimo no mundo virtual do seu próprio aparelho psíquico&quot;. Não há conclusão, ainda. Apenas brincar!</p>
 
+        
         
         
         
@@ -525,19 +527,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "Inscrição realizada com sucesso!";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "Inscrição realizada com sucesso!";
             msg.className = 'newsletter-message success';
@@ -550,9 +543,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "Inscrição realizada com sucesso!";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Erro ao inscrever. Tente novamente.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });

@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>Propongo que la automatización generalizada, es decir, robots e inteligencias trabajando en lugar de nosotros, los humanos, nos empujan fuera de un punto de equilibrio que se mantuvo estable durante un buen tiempo - hasta que creáramos, con nuestra propia dedicación, quien trabajase por nosotros, cada vez más, en más áreas.</p>
 <p>Estábamos bien equilibrados en la creación de niños para el mercado laboral, obedientes y creativos. Matrimonios manteniendo la procreación sin interrumpir el flujo de trabajadores yendo a trabajar. Los ancianos no molestan mucho a aquellos que trabajan. Podríamos llamar a este conjunto de comportamientos como un equilibrio estable.</p>
@@ -518,6 +519,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
         
         
+        
         </div>
 
         
@@ -554,19 +556,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "¡Suscripción exitosa!";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "¡Suscripción exitosa!";
             msg.className = 'newsletter-message success';
@@ -579,9 +572,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "¡Suscripción exitosa!";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Error al suscribirse. Inténtalo de nuevo.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });

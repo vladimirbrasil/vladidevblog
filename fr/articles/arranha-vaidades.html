@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>Je pense pouvoir défaire un mythe. Le mythe de l'"ultra, ultra milliardaire".</p>
@@ -485,6 +486,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <li>Que voulons-nous avec cela que nous avons inventé - le fameux "argent" ? Si nous pouvons être comme la nature, ou au moins les entreprises-robots peuvent travailler sans jamais savoir ce qu'est un dollar ou un bitcoin, l'objectif de l'argent atteint nos propres têtes, pensées, désirs, vanités.</li>
 <li>Si vous pouvez imaginer des entreprises-robots gérant la rareté de manière automatisée et bien comportée, il est encore plus facile de laisser l'objectif du (beaucoup) d'argent n'illuminer que nous-mêmes. Ce que nous voulons n'est pas une petite question.</li>
 <p>Bonne lecture ! :)</p>
+        
         
         
         
@@ -524,19 +526,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "Abonnement réussi !";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "Abonnement réussi !";
             msg.className = 'newsletter-message success';
@@ -549,9 +542,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "Abonnement réussi !";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Erreur lors de l'abonnement. Réessayez.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });

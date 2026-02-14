@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>Indem man einfach nur darum bat, &quot;die Anzahl der erzielten Punkte zu maximieren&quot;, sprengte eine Art künstliche Intelligenz die Anzeigetafel von &quot;River Raid&quot; - einem alten Videospiel. Sie musste &quot;Zilliarden&quot; Male spielen, was die künstliche Intelligenz in wenigen Minuten erledigt. Die Methode ist weniger wichtig als das Endergebnis. Sie wurde für immer zum Crack in diesem Spiel.</p>
@@ -474,6 +475,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Beachten Sie, dass sie, wie bei &quot;River Raid&quot;, jeden Moment punktet oder nicht - indem sie Herzschlag, Blutsauerstoffsättigung, Hormone, Endorphine, Synapsen, Gesichtsbild, Hautweichheit misst, alles.</p>
 <p>Sie bemerkt, dass solche &quot;Bewegungen&quot; weniger punkten, dass das Bewegen &quot;so&quot; vor &quot;gebraten&quot; mehr punktet als die Bewegungen isoliert. Sie komponiert. Was maximiert sie? Alles Gute.</p>
 <p>Aber noch weniger demütig ist es, sich im Spiel des Lebens nicht auf Musik zu beschränken.</p>
+        
         
         
         
@@ -513,19 +515,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "Erfolgreich abonniert!";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "Erfolgreich abonniert!";
             msg.className = 'newsletter-message success';
@@ -538,9 +531,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "Erfolgreich abonniert!";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Fehler beim Abonnieren. Bitte versuchen Sie es erneut.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });

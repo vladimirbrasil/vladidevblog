@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p></p>
 <p>Não podemos juntar o amor e criatividade à esquerda com liberdade e estados menores à direita? &quot;Caetano e quinta emenda&quot;? &quot;Anitta e privatização&quot;?</p>
 <p>Pelo menos não ter religiosidade e &quot;do bem&quot; na parte artística com estado enorme e totalitarismo na política.</p>
@@ -472,6 +473,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Que tal transferirmos para a política um corpo caloso bem grosso e desentupido? Fluido e integrador. Que conecte nossas diferenças mais deslumbrantes e arrebatadoras. A melhor emoção com a razão mais sofisticada.</p>
 <p>Devagarinho. De manhã em manhã. De 7 bilhões em 7 bilhões. Teclando.</p>
 
+        
         
         
         
@@ -511,19 +513,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "Inscrição realizada com sucesso!";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "Inscrição realizada com sucesso!";
             msg.className = 'newsletter-message success';
@@ -536,9 +529,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "Inscrição realizada com sucesso!";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Erro ao inscrever. Tente novamente.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });

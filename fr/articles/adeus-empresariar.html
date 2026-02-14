@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p>J'ai l'impression que l'esprit d'entreprise étouffe les autres étapes de notre vie.</p>
 <p>Quelles étapes ? Les étapes où nous sommes encore des enfants et les étapes où nous sommes progressivement expulsés du marché du travail.</p>
@@ -483,6 +484,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Alors, les petits humains et les grands humains, de toutes les phases, auront leur rire, leurs pleurs, leur découverte, leur constatation, leur parole, très valorisés, sans être poussés à l'intérieur ou à l'extérieur d'un tourbillon de CNPJ.</p>
 <p>Observons, voulez-vous ?</p>
 <figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-1.png" alt="" /></figure>
+        
         
         
         
@@ -522,19 +524,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "Abonnement réussi !";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "Abonnement réussi !";
             msg.className = 'newsletter-message success';
@@ -547,9 +540,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "Abonnement réussi !";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Erreur lors de l'abonnement. Réessayez.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });

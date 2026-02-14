@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>En demandant simplement de « maximiser le nombre de points obtenus », un type d’intelligence artificielle a fait exploser le tableau de bord de « river raid » : un vieux jeu vidéo. Il a fallu jouer des « zillions » de fois, ce que l’intelligence artificielle fait en quelques minutes. La méthode importe moins que le résultat final. Il est devenu un expert du jeu, pour toujours.</p>
@@ -474,6 +475,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Notez que, comme « river raid », à chaque instant, elle marque, ou pas, en mesurant le rythme cardiaque, l’oxygénation du sang, les hormones, l’endorphine, les synapses, l’image du visage, la douceur de la peau, tout.</p>
 <p>Vous réalisez que ces « mouvements » marquent moins, que le fait de bouger « comme ça » avant de « cuire » marque plus que les mouvements isolément. Elle compose. En maximisant quoi ? Tout ce qui est bon.</p>
 <p>Mais encore moins humble est de ne pas se limiter à la musique, dans le jeu de la vie.</p>
+        
         
         
         
@@ -513,19 +515,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "Abonnement réussi !";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "Abonnement réussi !";
             msg.className = 'newsletter-message success';
@@ -538,9 +531,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "Abonnement réussi !";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Erreur lors de l'abonnement. Réessayez.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });

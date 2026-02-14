@@ -456,6 +456,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p>
 <p></p>
 <p>Ich werde hier einige Punkte auflisten, die mir für die Zukunft wichtig erscheinen. Sie können helfen, vorherzusagen, nicht dass das sehr wichtig wäre.</p>
@@ -469,6 +470,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>• Hässlichkeit. Ist es ehrlich, wenn ein Super-Hässlicher in der virtuellen Welt schön ist? Offensichtlich ja. Ich antworte gleich. Wenn die Welt virtuell ist, gibt es nicht einmal Hässlichkeit (&quot;real&quot;?). Darüber hinaus scheint Schönheit viel stärkere Komponenten zu haben als die alten sinnlichen, aus der Zeit des Genmonopols (Hintern, Brustkorb, usw.), bei tatsächlichen Verabredungen. Das Geld (Arbeit) und der Ruhm scheinen keineswegs nebensächlich zu sein, ganz im Gegenteil.</p>
 <p>• Die Tendenzen schreien. NFTs existieren bereits. Tang Ping (Nicht-Arbeit) taucht bereits auf. Virtuelle Welten nehmen zu, anstatt abzunehmen. Das reale Leben nimmt ab, anstatt zuzunehmen (wie das? Stillstand. Online. So ungefähr).</p>
 <p>• Die schöne Frage, was Leben ist. Immer eine schöne Poesie. Poesie, weil ich keinen &quot;Maßstab&quot; sehe. Das Richtige. Es ist Rauch!</p>
+        
         
         
         
@@ -508,19 +510,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var WEBAPP_URL = 'null';
         fetch(WEBAPP_URL, {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' }),
-          mode: 'no-cors'
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
         }).then(function(r) {
-          if (r.type === 'opaque') {
-            msg.textContent = "Erfolgreich abonniert!";
-            msg.className = 'newsletter-message success';
-            document.getElementById('newsletter-email').value = '';
-          } else {
-            return r.json();
-          }
+          return r.json();
         }).then(function(data) {
-          if (!data) return;
           if (data.success) {
             msg.textContent = "Erfolgreich abonniert!";
             msg.className = 'newsletter-message success';
@@ -533,9 +526,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.className = 'newsletter-message error';
           }
         }).catch(function() {
-          msg.textContent = "Erfolgreich abonniert!";
-          msg.className = 'newsletter-message success';
-          document.getElementById('newsletter-email').value = '';
+          msg.textContent = "Fehler beim Abonnieren. Bitte versuchen Sie es erneut.";
+          msg.className = 'newsletter-message error';
         }).finally(function() {
           btn.disabled = false;
         });
