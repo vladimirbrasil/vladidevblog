@@ -1,0 +1,634 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agora ou Daqui a Pouco? - Blog de Vladimir Dietrich</title>
+  
+  <meta name="description" content="Estamos cercados por vendedores de dopamina, a molécula mais lucrativa de nosso corpo, pois sempre quer mais. E mais. E mais.">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Agora ou Daqui a Pouco? - Blog de Vladimir Dietrich">
+  <meta property="og:description" content="Estamos cercados por vendedores de dopamina, a molécula mais lucrativa de nosso corpo, pois sempre quer mais. E mais. E mais.">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="Agora ou Daqui a Pouco?">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/agora-ou-daqui-a-pouco.html">
+  <link rel="alternate" type="application/rss+xml" title="Blog de Vladimir Dietrich" href="https://blog.vladi.dev/feed.xml" />
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+/* === NOVO: ESTILOS PARA O DROPDOWN DE IDIOMAS (v3 DESSATURADO) === */
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px 4px 4px;
+  border-radius: 99px;
+  transition: background-color 0.2s ease;
+  border: 1px solid #e0e0e0;
+}
+.dropdown-toggle:hover {
+  background-color: #f5f5f5;
+}
+.dropdown-toggle img, .dropdown-menu img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  /* ===> MODIFICADO: Dessatura a imagem e adiciona transição */
+  filter: saturate(40%);
+  transition: filter 0.25s ease-in-out;
+}
+.dropdown-toggle:hover img, .dropdown-menu a:hover img {
+  /* ===> NOVO: Restaura a cor no hover */
+  filter: saturate(100%);
+}
+.dropdown-toggle span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 110;
+  min-width: 100%;
+}
+.language-dropdown.active .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+.dropdown-menu img {
+  width: 28px; /* Mantém um tamanho ligeiramente maior no menu */
+  height: 28px;
+}
+.dropdown-menu span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+/* === FIM DOS NOVOS ESTILOS === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  /* ===> MODIFICADO: Adicione .language-dropdown a esta regra */
+  .search-active .logo,
+  .search-active .nav-links a,
+  .search-active .language-dropdown {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
+/* ======================================================================== */
+/* === Newsletter Subscription Form === */
+/* ======================================================================== */
+.newsletter-section {
+  background: rgba(26, 137, 23, 0.06);
+  border: 1px solid rgba(26, 137, 23, 0.15);
+  border-radius: 12px;
+  padding: 32px;
+  margin: 32px 0;
+  text-align: center;
+}
+.newsletter-section h3 {
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(41, 41, 41, 1);
+  margin-bottom: 16px;
+}
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.newsletter-form input[type="email"] {
+  padding: 10px 16px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-width: 220px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+.newsletter-form input[type="email"]:focus {
+  border-color: rgba(26, 137, 23, 0.5);
+}
+.newsletter-form select {
+  padding: 10px 12px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.newsletter-form button {
+  padding: 10px 24px;
+  background: rgba(26, 137, 23, 1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.newsletter-form button:hover {
+  background: rgba(21, 117, 19, 1);
+}
+.newsletter-form button:disabled {
+  background: rgba(117, 117, 117, 0.5);
+  cursor: not-allowed;
+}
+.newsletter-message {
+  margin-top: 12px;
+  font-size: 14px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+.newsletter-message.success { color: rgba(26, 137, 23, 1); }
+.newsletter-message.error { color: #d32f2f; }
+.newsletter-banner {
+  text-align: center;
+  padding: 14px 20px;
+  background: rgba(26, 137, 23, 0.06);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+}
+.newsletter-banner a {
+  color: rgba(26, 137, 23, 1);
+  text-decoration: none;
+  font-weight: 600;
+}
+.newsletter-banner a:hover { text-decoration: underline; }
+.rss-link {
+  color: rgba(117, 117, 117, 1);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.15s ease;
+}
+.rss-link:hover { color: rgba(41, 41, 41, 1); }
+
+</style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Agora ou Daqui a Pouco?","author":{"@type":"Person","name":"Vladimir Dietrich"},"datePublished":"2026-02-17","image":"","description":"Estamos cercados por vendedores de dopamina, a molécula mais lucrativa de nosso corpo, pois sempre quer mais. E mais. E mais."}</script>
+</head>
+<body>
+  
+      <div id="fb-root"></div>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v18.0&appId=1284673459606715&autoLogAppEvents=1" nonce="a1b2c3d4"></script>
+    
+  <header class="header">
+   <div class="header-content">
+     <a href="/index.html" class="logo">Vladimir Dietrich</a>
+     <nav class="nav-links">
+ 
+       <div class="language-flags"></div>
+       <a href="/feed.xml" class="rss-link" target="_blank" title="Feed RSS">
+         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+       </a>
+       <a href="https://vladi.dev" target="_blank">Portfolio</a>
+       </nav>
+   </div>
+ </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      
+      <div class="article-content-wrapper">
+        <a href="/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Agora ou Daqui a Pouco?</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>February 16, 2026</span>
+            <span>·</span><span class="reading-time">6 min read</span>
+          </div>
+        </div>
+        
+        
+
+        <div class="article-content">
+          <p>Estamos cercados por vendedores de dopamina, a molécula mais lucrativa de nosso corpo, pois sempre quer mais. E mais. E mais.</p>
+<p>Brócolis? Não.</p>
+<p>Vinagre? Não?</p>
+<p>Açúcar? Sim.</p>
+<p>Redes sociais? Sim.</p>
+<p>Paciência com as pessoas? Não.</p>
+<p>Álcool? Sim.</p>
+<p>Pessoas como objeto: sexo! Promoção na carreira! Sim.</p>
+<p>Tive que dar esta introdução um pouco mal explicada porque sair falando de moléculas é menos atrativo.</p>
+<p>Na verdade, estou tentando ativar a sua dopamina com algo novo, estranho, proeminente entre as demais fontes de dopamina, para conquistar um ou outro leitor.</p>
+<p>Mas daqui para frente o texto é menos vibrante. </p>
+<p>As conclusões, porém, podem ter efeitos práticos surpreendentes (dopamina novamente).</p>
+<p>Um dos melhores livros para me inspirar foi Dopamina, a molécula do desejo. Mas há outros que preencheram lacunas também.</p>
+<p>Para começar, temos um probleminha.</p>
+<p>Quando a dopamina entra em ação, a ocitocina diminui.</p>
+<p>(Parênteses: é um pouco mais sofisticado que isso, pois a própria ocitocina produz um pouco de dopamina. Mas no grosso modo, na leitura de rede social, o resumo vale e chega em conclusões úteis).</p>
+<p>Primeira lógica: se estamos rodeados por excitadores de dopamina, então estamos em um mundo com pouca ocitocina.</p>
+<p>&quot;Tá, e daí? Tenho mais o que fazer, onde você quer chegar?&quot;</p>
+<p>Essa própria pergunta do interlocutor fictício que inventei é um efeito prático.</p>
+<p>Em tese, as pessoas de um mundo mais dopaminérgico querem satisfações rápidas. </p>
+<p>E tem menos paciência com as pessoas.</p>
+<p>Por que que eu vou ouvir este cara falar? O que eu ganho com isso?</p>
+<p>&quot;O que eu ganho com isso&quot; é uma típica pergunta dopaminérgica, conjecturo.</p>
+<p>Isso eu sei mais: a molécula da ocitocina deixa as pessoas mais sociáveis &quot;sem motivo&quot;!</p>
+<p>&quot;Sem motivo&quot; é parte fundamental da consequência.</p>
+<p>A ocitocina entrega felicidade instantaneamente. Conjecturo.</p>
+<p>A dopamina por definição nunca entrega felicidade. Para começar, ela é a molécula do futuro: quero chegar lá, quero mais um picolé, quero mais um [preencha aqui]. No futuro.</p>
+<p>Não no presente.</p>
+<p>A ocitocina (parênteses: e algumas outras moléculas mais) é a molécula do agora mesmo.</p>
+<p>Estou [preencha aqui].</p>
+<p>Do ponto de vista financeiro, para as empresas a ocitocina é péssima, para você, é ótima.</p>
+<p>A ocitocina te deixa mais satisfeito. Agora mesmo. Por definição, ela não convive com o cortisol, o hormônio de estresse. Então imagine-se desestressado, contente, sem motivo. Molecularmente feliz. É mais difícil te puxar para um produto ou serviço.</p>
+<p>Do ponto de vista financeiro, a dopamina é ótima para as empresas e não muito boa para você.</p>
+<p>A dopamina quer mais. E mais. E mais.</p>
+<p>Temos dopamina sabor “dopamina de controle” e dopamina sabor “dopamina de desejo” mas todos, sendo dopaminas, nunca param de querer mais.</p>
+<p>O sabor dopamina de controle atua mais no longo prazo. Então é mais capaz de fazer concessões agora para adquirir sempre mais amanhã. É a dopamina da carreira, da fama, da riqueza, da criatividade, do sonho, com o pequeno probleminha de ser imparável.</p>
+<p>O sabor dopamina de desejo é a viciada sem pensar a longo prazo: álcool, sexo, anfetaminas: quero mais. “Nação Dopamina” é o livro best seller especializado na dopamina sabor dopamina do desejo.</p>
+<p>O que são empresas? Todos nós às vezes estamos do lado vendedor e, muitas vezes, do lado consumidor.</p>
+<p>Empresas querem lucro.</p>
+<p>Precisam vender coisas que custam barato para montar e caro para comprar. Lucro. E sempre. </p>
+<p>Não há nada diabólico em empresas naturalmente descobrirem, sem demora, os caminhos que levam para que as pessoas comprem mais, sempre, pagando bem.</p>
+<p>Você já viu propaganda de vinagre? Nem vai ver. Vinagre não ativa nenhuma dopamina nossa.</p>
+<p>E de açúcar? Já viu? Opa, açúcar ativa uma dopamina fortíssima em nós. Sempre queremos comer tudo, e mais. Então empresas aprenderam a colocar água com açúcar em inúmeros produtos. (Com uma leve sofisticação, como gordura, sal, mas sempre laçando sua dopamina do desejo). É o picolé de fruta. O sacolé. O iogurte de morango pode ser bem aguado porque o açúcar é tão viciante que dá para economizar nestas coisas mais caras, como leite e nata. (Se precisar de gordura, tem um monte de gordura mais barata do que nata do leite).</p>
+<p>Brócolis?</p>
+<p>Álcool?</p>
+<p>Sexo?</p>
+<p>Conversas?</p>
+<p>Estamos pegando o conceito.</p>
+<p>A necessidade de lucro, e de um emprego em uma empresa - ou de abrir uma empresa - nos empurra para o circuito das dopaminas por pura eficiência empresarial.</p>
+<p>Tenho a impressão que esse efeito só ocorrerá se acabarmos com o emprego. Com a necessidade de um emprego que gere lucro.</p>
+<p>Porque no momento que precisou gerar lucro, lá vem a água com açúcar, a mulher de lingerie que responde cem mil conversas via inteligência artificial como se fosse sua melhor amiga (a mulher também gerada por IA). Coisas baratas e altamente lucrativas, que as pessoas sempre querem mais.</p>
+<p>Muitas de minhas postagens argumentam que o emprego está indo embora. Que a IA faz tudo, em resumo, mais robôs.</p>
+<p>Quando o emprego que precisa dar lucro for embora, talvez comecem a sumir os carrinhos de picolé de água com açucar e as centrais de pornografia.</p>
+<p>Minhas postagens anteriores já argumentaram, há muito tempo, muito antes do Elon Musk falar em era da abundância, que robôs mais IAs vão tirar os empregos sem tirar a fartura. As coisas continuarão sendo produzidas em quantidades para deixar todo mundo repleto, mas sem ninguém operar nenhuma máquina, nenhum PC, nenhuma cadeira de executivo. Resumos neste parágrafo.</p>
+<p>Devagarinho somem,com o desaparecer dos empregos, os produtos dopaminérgicos.</p>
+<p>Por quê?</p>
+<p>Porque nós, humanos, gostamos de satisfação agora.</p>
+<p>Somos facilmente viciáveis, bastando, para nos viciar, ativar nossa dopamina de controle, de desejo ou ambas.</p>
+<p>Somos nós, humanos no loop, humanos no sistema econômico, que empurramos produtos de altíssimo lucro para nós mesmos para poder passar verões viajando e comprar sofás ou carros.</p>
+<p>A IA e seus amigos robôs não têm dopamina. Nem ocitocina. Nem precisam lucrar.</p>
+<p>Já postei que as primeiras IAs nem queriam conversar, mesmo já tendo “todo o conhecimento do mundo”. Tínhamos que estimulá-las: “você é uma assistente que quer ajudar”.</p>
+<p>É coisa de humano querer (adquirir e) exibir conhecimento. Ou trocar por outras coisas. Ou querer fama. Riqueza. Etceteras.</p>
+<p>A IA não tem nada disso. Nem os robôs.</p>
+<p>Isso é importante porque no momento que o último executivo de IA fechar o escritório porque não somente os programadores juniores, mas ele mesmo, o CEO, for inferior à própria IA resolvendo os problemas da empresa, vão sumindo os humanos do sistema econômico.</p>
+<p>E a IA não vai fazer questão de vender “um zilhão de coisas” “todo mês”.</p>
+<p>Quando a energia solar começar a abundar, também não haverá quase nenhum ou nenhum custo de produção, como macieiras no mato, que entregam seus produtos sem CEO nem metas cada vez mais altas.</p>
+<p>Então sem humanos no sistema, sem custos que normalmente estão associados a humanos no sistema - e energia temos abundante, no futuro mais ainda - então acabará o hard-selling, a necessidade de vender água com muito açúcar, bolsas mil vezes mais caras que seu custo de produção, pornografia barata (online, gerada por IA).</p>
+<p>Pois quem cobrará metas de quem?</p>
+<p>Quando isso começar a acontecer, acho que teremos a ocitocina, sem mágoas, nos esperando de braços abertos.</p>
+<p>Não precisa querer mais. Estou aqui. Agora mesmo. </p>
+<p>Me abraça forte.</p>
+<p>---</p>
+<p>Observação: esse mundo da dopamina, que inclui as redes sociais, é um pouco solitário - procuro compensar com minha família, mas seria muito melhor se ninguém tivesse redes sociais nem tvs e, então, tivessem que sair para conversar presencialmente por prazer. Por isso, envie feedback sobre qualquer coisa, ou tudo, que estiver mal explicado por mim. Assim consigo melhorar e escrever com cada vez maior clareza. Sem feedback, o mundo de minhas ideias e argumentos sai meio cru, como está agora, nesta primeira versão.</p>
+
+        </div>
+
+        
+      <div class="comments-section" style="margin-top: 80px;">
+        <div class="fb-comments" data-href="https://blog.vladi.dev/articles/agora-ou-daqui-a-pouco.html" data-width="100%" data-numposts="5"></div>
+      </div>
+     
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+        
+    <div class="newsletter-section">
+      <h3>Receba novos artigos por email</h3>
+      <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
+        <input type="email" id="newsletter-email" placeholder="Seu email" required>
+        <select id="newsletter-lang"><option value="pt" selected>Português</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option></select>
+        <button type="button" id="newsletter-btn" onclick="submitNewsletter()">Inscrever-se</button>
+      </form>
+      <div class="newsletter-message" id="newsletter-message"></div>
+    </div>
+    <script>
+      function submitNewsletter() {
+        var email = document.getElementById('newsletter-email').value.trim();
+        var lang = document.getElementById('newsletter-lang').value;
+        var btn = document.getElementById('newsletter-btn');
+        var msg = document.getElementById('newsletter-message');
+        if (!email) return;
+        btn.disabled = true;
+        msg.textContent = '';
+        msg.className = 'newsletter-message';
+        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
+        fetch(WEBAPP_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
+        }).then(function(r) {
+          return r.json();
+        }).then(function(data) {
+          if (data.success) {
+            msg.textContent = "Inscrição realizada com sucesso!";
+            msg.className = 'newsletter-message success';
+            document.getElementById('newsletter-email').value = '';
+          } else if (data.error === 'already_subscribed') {
+            msg.textContent = "Este email já está inscrito.";
+            msg.className = 'newsletter-message error';
+          } else {
+            msg.textContent = "Erro ao inscrever. Tente novamente.";
+            msg.className = 'newsletter-message error';
+          }
+        }).catch(function() {
+          msg.textContent = "Erro ao inscrever. Tente novamente.";
+          msg.className = 'newsletter-message error';
+        }).finally(function() {
+          btn.disabled = false;
+        });
+      }
+    </script>
+  
+        <div style="text-align: center; line-height: 1.6;">
+            <p>© 2026 Vladimir Dietrich</p>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" title="Licença Creative Commons Atribuição 4.0 Internacional">
+                <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+            </a>
+            <p style="font-size: 0.9em; color: #666;">
+                Esta obra está licenciada sob <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+                <br>
+                <a href="/articles/politica-de-uso-e-reproducao-de-conteudo.html">Saiba como republicar este conteúdo</a>
+            </p>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ======================================================= */
+    /* === NOVO: JavaScript para o Dropdown de Idiomas === */
+    /* ======================================================= */
+    try {
+      document.addEventListener('DOMContentLoaded', function() {
+        const dropdown = document.getElementById('language-dropdown');
+
+        if (dropdown) {
+          // Abre/fecha o dropdown ao clicar no botão
+          dropdown.addEventListener('click', function(event) {
+            event.stopPropagation(); // Impede que o clique feche o menu imediatamente
+            this.classList.toggle('active');
+          });
+
+          // Fecha o dropdown se o usuário clicar fora dele
+          window.addEventListener('click', function(event) {
+            if (dropdown.classList.contains('active')) {
+              dropdown.classList.remove('active');
+            }
+          });
+        }
+      });
+    } catch (e) {
+      console.error("Error setting up language dropdown:", e);
+    }  
+  </script>
+
+</body>
+</html>
