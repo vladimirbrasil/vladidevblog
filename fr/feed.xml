@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/fr/</link>
     <description>Blog de Vladimir Dietrich - Vladimir Dietrich</description>
     <language>fr</language>
-    <lastBuildDate>Wed, 18 Feb 2026 07:40:10 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 13:41:01 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/fr/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maintenant ou plus tard ?</title>
+      <link>https://blog.vladi.dev/fr/articles/agora-ou-daqui-a-pouco.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/fr/articles/agora-ou-daqui-a-pouco.html</guid>
+      <pubDate>Tue, 17 Feb 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/agora-ou-daqui-a-pouco-image-0.jpg&quot; alt=&quot;Maintenant ou plus tard ?&quot; /&gt;</description>
+    </item>
     <item>
       <title>Yin Yang</title>
       <link>https://blog.vladi.dev/fr/articles/yin-yang.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 31 Oct 2020 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png&quot; alt=&quot;Usine à jokers ?&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Maximiser la pleine conscience ?</title>
-      <link>https://blog.vladi.dev/fr/articles/maximizar-mindfulness.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/fr/articles/maximizar-mindfulness.html</guid>
-      <pubDate>Thu, 09 Jul 2020 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png&quot; alt=&quot;Maximiser la pleine conscience ?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "agora-ou-daqui-a-pouco",
+      "title": "¿Ahora o Después?",
+      "author": "Vladimir Dietrich",
+      "date": "2026-02-17",
+      "readingTime": 7,
+      "heroImage": {
+        "fileName": "agora-ou-daqui-a-pouco-image-0.jpg",
+        "githubPath": "images/agora-ou-daqui-a-pouco-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/agora-ou-daqui-a-pouco-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-02-18T13:39:18.849Z"
+    },
+    {
       "id": "yin-yang",
       "title": "Yin Yang",
       "author": "Vladimir Dietrich",
@@ -361,5 +376,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-02-18T07:40:09.781Z"
+  "lastUpdated": "2026-02-18T13:41:00.816Z"
 }
