@@ -5,7 +5,7 @@
     <link>https://blog.vladi.dev/es/</link>
     <description>Blog de Vladimir Dietrich - Vladimir Dietrich</description>
     <language>es</language>
-    <lastBuildDate>Thu, 19 Feb 2026 07:43:32 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 18 Feb 2026 13:41:00 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/es/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>¿Ahora o Después?</title>
@@ -14,6 +14,158 @@
       <pubDate>Tue, 17 Feb 2026 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/agora-ou-daqui-a-pouco-image-0.jpg&quot; alt=&quot;¿Ahora o Después?&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>Yin Yang</title>
+      <link>https://blog.vladi.dev/es/articles/yin-yang.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/yin-yang.html</guid>
+      <pubDate>Mon, 26 Jan 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg&quot; alt=&quot;Yin Yang&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>¿Dónde está la gente genial?</title>
+      <link>https://blog.vladi.dev/es/articles/onde-estao-as-pessoas-legais.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/onde-estao-as-pessoas-legais.html</guid>
+      <pubDate>Wed, 05 Nov 2025 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estao-as-pessoas-legais-image-0.png&quot; alt=&quot;¿Dónde está la gente genial?&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>Cambiando el punto de equilibrio de la humanidad</title>
+      <link>https://blog.vladi.dev/es/articles/mudando-o-ponto-de-equilibrio-da-humanidade.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/mudando-o-ponto-de-equilibrio-da-humanidade.html</guid>
+      <pubDate>Tue, 23 Sep 2025 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/mudando-o-ponto-de-equilibrio-da-humanidade-image-0.jpg&quot; alt=&quot;Cambiando el punto de equilibrio de la humanidad&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>Entrevista de dos horas</title>
+      <link>https://blog.vladi.dev/es/articles/entrevista-de-duas-horas.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/entrevista-de-duas-horas.html</guid>
+      <pubDate>Mon, 18 Aug 2025 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/entrevista-de-duas-horas-image-0.png&quot; alt=&quot;Entrevista de dos horas&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>Adiós, el mundo empresarial</title>
+      <link>https://blog.vladi.dev/es/articles/adeus-empresariar.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/adeus-empresariar.html</guid>
+      <pubDate>Tue, 12 Aug 2025 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-0.png&quot; alt=&quot;Adiós, el mundo empresarial&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>Juventud eterna: ¿una tiranía?</title>
+      <link>https://blog.vladi.dev/es/articles/juventude-eterna-uma-tirania.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/juventude-eterna-uma-tirania.html</guid>
+      <pubDate>Wed, 30 Jul 2025 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-0.png&quot; alt=&quot;Juventud eterna: ¿una tiranía?&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>Cuando la Máquina Piensa, el Hombre Siente</title>
+      <link>https://blog.vladi.dev/es/articles/quando-a-maquina-pensa-o-homem-sente.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/quando-a-maquina-pensa-o-homem-sente.html</guid>
+      <pubDate>Tue, 15 Jul 2025 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quando-a-maquina-pensa-o-homem-sente-image-0.png&quot; alt=&quot;Cuando la Máquina Piensa, el Hombre Siente&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>Un Blog Fácil</title>
+      <link>https://blog.vladi.dev/es/articles/um-blog-facil.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/um-blog-facil.html</guid>
+      <pubDate>Sun, 15 Jun 2025 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png&quot; alt=&quot;Un Blog Fácil&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>❤️ Te Amo</title>
+      <link>https://blog.vladi.dev/es/articles/te-amo.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/te-amo.html</guid>
+      <pubDate>Wed, 11 Sep 2024 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg&quot; alt=&quot;❤️ Te Amo&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>La niña que nos lleva a casa</title>
+      <link>https://blog.vladi.dev/es/articles/a-menininha-que-nos-leva-para-casa.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/a-menininha-que-nos-leva-para-casa.html</guid>
+      <pubDate>Mon, 22 Apr 2024 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg&quot; alt=&quot;La niña que nos lleva a casa&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>¿Dónde estamos?</title>
+      <link>https://blog.vladi.dev/es/articles/onde-estamos.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/onde-estamos.html</guid>
+      <pubDate>Tue, 19 Sep 2023 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg&quot; alt=&quot;¿Dónde estamos?&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>¿Troncos en el universo?</title>
+      <link>https://blog.vladi.dev/es/articles/troncos-no-universo.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/troncos-no-universo.html</guid>
+      <pubDate>Tue, 11 Apr 2023 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/troncos-no-universo-image-0.png&quot; alt=&quot;¿Troncos en el universo?&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>Rasca-[vanidades]</title>
+      <link>https://blog.vladi.dev/es/articles/arranha-vaidades.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/arranha-vaidades.html</guid>
+      <pubDate>Tue, 08 Mar 2022 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/arranha-vaidades-image-0.jpg&quot; alt=&quot;Rasca-[vanidades]&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>¿Por qué escupir la conciencia?</title>
+      <link>https://blog.vladi.dev/es/articles/por-que-cuspir-a-consciencia.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/por-que-cuspir-a-consciencia.html</guid>
+      <pubDate>Tue, 30 Nov 2021 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg&quot; alt=&quot;¿Por qué escupir la conciencia?&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>Neuragame</title>
+      <link>https://blog.vladi.dev/es/articles/neuragame.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/neuragame.html</guid>
+      <pubDate>Tue, 16 Nov 2021 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg&quot; alt=&quot;Neuragame&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>¿Deberíamos ser preservados para observar?</title>
+      <link>https://blog.vladi.dev/es/articles/devemos-ser-preservados-para-observar.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/devemos-ser-preservados-para-observar.html</guid>
+      <pubDate>Fri, 07 May 2021 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png&quot; alt=&quot;¿Deberíamos ser preservados para observar?&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>¿Fábrica de Jokers?</title>
+      <link>https://blog.vladi.dev/es/articles/fabrica-de-coringas.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/fabrica-de-coringas.html</guid>
+      <pubDate>Sat, 31 Oct 2020 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png&quot; alt=&quot;¿Fábrica de Jokers?&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>¿Maximizar la atención plena?</title>
+      <link>https://blog.vladi.dev/es/articles/maximizar-mindfulness.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/maximizar-mindfulness.html</guid>
+      <pubDate>Thu, 09 Jul 2020 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png&quot; alt=&quot;¿Maximizar la atención plena?&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>Sale el empleo, queda la producción</title>
+      <link>https://blog.vladi.dev/es/articles/sai-o-emprego-fica-a-producao.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/sai-o-emprego-fica-a-producao.html</guid>
+      <pubDate>Tue, 07 Jul 2020 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg&quot; alt=&quot;Sale el empleo, queda la producción&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

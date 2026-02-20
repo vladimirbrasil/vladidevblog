@@ -13,8 +13,503 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2026-02-19T07:42:06.621Z"
+      "lastUpdated": "2026-02-18T13:39:18.849Z"
+    },
+    {
+      "id": "yin-yang",
+      "title": "Yin Yang",
+      "author": "Vladimir Dietrich",
+      "date": "2026-01-26",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "yin-yang-image-0.jpg",
+        "githubPath": "images/yin-yang-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-02-14T02:48:32.745Z"
+    },
+    {
+      "id": "onde-estao-as-pessoas-legais",
+      "title": "Where are the cool people?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-11-05",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "onde-estao-as-pessoas-legais-image-0.png",
+        "githubPath": "images/onde-estao-as-pessoas-legais-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estao-as-pessoas-legais-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-11-05T12:59:03.558Z"
+    },
+    {
+      "id": "mudando-o-ponto-de-equilibrio-da-humanidade",
+      "title": "Changing Humanity's Equilibrium Point",
+      "author": "Vladimir Dietrich",
+      "date": "2025-09-23",
+      "readingTime": 7,
+      "heroImage": {
+        "fileName": "mudando-o-ponto-de-equilibrio-da-humanidade-image-0.jpg",
+        "githubPath": "images/mudando-o-ponto-de-equilibrio-da-humanidade-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/mudando-o-ponto-de-equilibrio-da-humanidade-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-24T18:49:53.720Z"
+    },
+    {
+      "id": "entrevista-de-duas-horas",
+      "title": "Two-Hour Interview",
+      "author": "Vladimir Dietrich",
+      "date": "2025-08-18",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "entrevista-de-duas-horas-image-0.png",
+        "githubPath": "images/entrevista-de-duas-horas-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/entrevista-de-duas-horas-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:05:44.315Z"
+    },
+    {
+      "id": "adeus-empresariar",
+      "title": "Goodbye, Businessing",
+      "author": "Vladimir Dietrich",
+      "date": "2025-08-12",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "adeus-empresariar-image-0.png",
+        "githubPath": "images/adeus-empresariar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:10:17.343Z"
+    },
+    {
+      "id": "juventude-eterna-uma-tirania",
+      "title": "Eternal Youth: A Tyranny?",
+      "author": "Vladimir Dietrich",
+      "date": "2025-07-30",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "juventude-eterna-uma-tirania-image-0.png",
+        "githubPath": "images/juventude-eterna-uma-tirania-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:11:24.857Z"
+    },
+    {
+      "id": "quando-a-maquina-pensa-o-homem-sente",
+      "title": "When the Machine Thinks, Man Feels",
+      "author": "Vladimir Dietrich",
+      "date": "2025-07-15",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "githubPath": "images/quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:13:54.691Z"
+    },
+    {
+      "id": "aposentadoria-da-razao",
+      "title": "Retirement of Reason",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-24",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "aposentadoria-da-razao-image-0.jpg",
+        "githubPath": "images/aposentadoria-da-razao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:18:12.008Z"
+    },
+    {
+      "id": "um-blog-facil",
+      "title": "An Easy Blog",
+      "author": "Vladimir Dietrich",
+      "date": "2025-06-15",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "um-blog-facil-image-0.png",
+        "githubPath": "images/um-blog-facil-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:17:40.943Z"
+    },
+    {
+      "id": "te-amo",
+      "title": "❤️ I Love You",
+      "author": "Vladimir Dietrich",
+      "date": "2024-09-11",
+      "readingTime": 9,
+      "heroImage": {
+        "fileName": "te-amo-image-0.jpg",
+        "githubPath": "images/te-amo-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg",
+        "altText": "um robô amamenta um bebê",
+        "caption": "um robô amamenta um bebê"
+      },
+      "lastUpdated": "2025-09-04T20:24:24.257Z"
+    },
+    {
+      "id": "a-menininha-que-nos-leva-para-casa",
+      "title": "The Little Girl Who Leads Us Home",
+      "author": "Vladimir Dietrich",
+      "date": "2024-04-22",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "githubPath": "images/a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg",
+        "altText": "jargões",
+        "caption": "jargões"
+      },
+      "lastUpdated": "2025-09-04T20:28:36.128Z"
+    },
+    {
+      "id": "onde-estamos",
+      "title": "Where are we?",
+      "author": "Vladimir Dietrich",
+      "date": "2023-09-19",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "onde-estamos-image-0.jpg",
+        "githubPath": "images/onde-estamos-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg",
+        "altText": "emptiness.",
+        "caption": "emptiness."
+      },
+      "lastUpdated": "2025-09-04T20:21:14.978Z"
+    },
+    {
+      "id": "consciencia-entre-as-pernas",
+      "title": "Awareness Between the Legs",
+      "author": "Vladimir Dietrich",
+      "date": "2023-06-08",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "consciencia-entre-as-pernas-image-0.jpg",
+        "githubPath": "images/consciencia-entre-as-pernas-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/consciencia-entre-as-pernas-image-0.jpg",
+        "altText": "an humanoid robot barefoot inside a jungle",
+        "caption": "an humanoid robot barefoot inside a jungle"
+      },
+      "lastUpdated": "2025-09-04T20:29:29.674Z"
+    },
+    {
+      "id": "global-and-focused-social-medias",
+      "title": "Global and Focused Social Medias ❤️",
+      "author": "Vladimir Dietrich",
+      "date": "2022-04-02",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "global-and-focused-social-medias-image-0.jpg",
+        "githubPath": "images/global-and-focused-social-medias-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/global-and-focused-social-medias-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:30:16.374Z"
+    },
+    {
+      "id": "arranha-vaidades",
+      "title": "Scratch-[Vanities]",
+      "author": "Vladimir Dietrich",
+      "date": "2022-03-08",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "arranha-vaidades-image-0.jpg",
+        "githubPath": "images/arranha-vaidades-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/arranha-vaidades-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:30:29.052Z"
+    },
+    {
+      "id": "por-que-cuspir-a-consciencia",
+      "title": "Why spit out consciousness?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-30",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "por-que-cuspir-a-consciencia-image-0.jpg",
+        "githubPath": "images/por-que-cuspir-a-consciencia-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:20:11.038Z"
+    },
+    {
+      "id": "neuragame",
+      "title": "Neuragame",
+      "author": "Vladimir Dietrich",
+      "date": "2021-11-16",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "neuragame-image-0.jpg",
+        "githubPath": "images/neuragame-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:31:11.168Z"
+    },
+    {
+      "id": "devemos-ser-preservados-para-observar",
+      "title": "Should we be preserved to observe?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-05-07",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "devemos-ser-preservados-para-observar-image-0.png",
+        "githubPath": "images/devemos-ser-preservados-para-observar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:33:48.125Z"
+    },
+    {
+      "id": "modern-punch",
+      "title": "Modern punch.",
+      "author": "Vladimir Dietrich",
+      "date": "2021-03-12",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "modern-punch-image-0.jpg",
+        "githubPath": "images/modern-punch-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/modern-punch-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:34:07.250Z"
+    },
+    {
+      "id": "neither-tv-nor-youtube",
+      "title": "Neither tv, nor youtube",
+      "author": "Vladimir Dietrich",
+      "date": "2021-02-03",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "neither-tv-nor-youtube-image-0.jpg",
+        "githubPath": "images/neither-tv-nor-youtube-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neither-tv-nor-youtube-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:34:11.030Z"
+    },
+    {
+      "id": "instead-of-whatsapp",
+      "title": "Instead of whatsapp?",
+      "author": "Vladimir Dietrich",
+      "date": "2021-01-12",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "instead-of-whatsapp-image-hero.png",
+        "githubPath": "images/instead-of-whatsapp-image-hero.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/instead-of-whatsapp-image-hero.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:34:31.247Z"
+    },
+    {
+      "id": "como-agradar-noam-chomsky-yuval-noah-harari",
+      "title": "How to please Noam Chomsky & Yuval Noah Harari?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-12-13",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "githubPath": "images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/como-agradar-noam-chomsky-yuval-noah-harari-image-0.jpg",
+        "altText": "Noam Chomsky (left) & Yuval Noah Harari (right)",
+        "caption": "Noam Chomsky (left) & Yuval Noah Harari (right)"
+      },
+      "lastUpdated": "2025-09-04T20:34:44.083Z"
+    },
+    {
+      "id": "noam-chomsky-mixed-with",
+      "title": "Noam Chomsky mixed with…",
+      "author": "Vladimir Dietrich",
+      "date": "2020-12-12",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "noam-chomsky-mixed-with-image-0.png",
+        "githubPath": "images/noam-chomsky-mixed-with-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/noam-chomsky-mixed-with-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:25:47.179Z"
+    },
+    {
+      "id": "fabrica-de-coringas",
+      "title": "Joker Factory?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-10-31",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "fabrica-de-coringas-image-0.png",
+        "githubPath": "images/fabrica-de-coringas-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:35:03.588Z"
+    },
+    {
+      "id": "maximizar-mindfulness",
+      "title": "Maximize mindfulness?",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-09",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "maximizar-mindfulness-image-0.png",
+        "githubPath": "images/maximizar-mindfulness-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:42:09.702Z"
+    },
+    {
+      "id": "sai-o-emprego-fica-a-producao",
+      "title": "Job goes away, production stays",
+      "author": "Vladimir Dietrich",
+      "date": "2020-07-07",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "sai-emprego-fica-producao-image-0.jpg",
+        "githubPath": "images/sai-emprego-fica-producao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/sai-emprego-fica-producao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:35:46.403Z"
+    },
+    {
+      "id": "oblivion",
+      "title": "Oblivion",
+      "author": "Vladimir Dietrich",
+      "date": "2020-04-28",
+      "readingTime": 8,
+      "heroImage": {
+        "fileName": "oblivion-image-0.jpg",
+        "githubPath": "images/oblivion-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/oblivion-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:14:55.814Z"
+    },
+    {
+      "id": "repensando-o-sistema-de-metas",
+      "title": "Rethinking the Goal System",
+      "author": "Vladimir Dietrich",
+      "date": "2018-11-28",
+      "readingTime": 11,
+      "heroImage": {
+        "fileName": "repensando-o-sistema-de-metas-image-0.jpg",
+        "githubPath": "images/repensando-o-sistema-de-metas-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/repensando-o-sistema-de-metas-image-0.jpg",
+        "altText": "Photo by J W on Unsplash",
+        "caption": "Photo by J W on Unsplash"
+      },
+      "lastUpdated": "2025-09-04T20:38:53.775Z"
+    },
+    {
+      "id": "spam-calls",
+      "title": "Spam Calls",
+      "author": "Vladimir Dietrich",
+      "date": "2018-09-20",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "spam-calls-image-0.jpg",
+        "githubPath": "images/spam-calls-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/spam-calls-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:40:28.568Z"
+    },
+    {
+      "id": "human-soup",
+      "title": "Human Soup",
+      "author": "Vladimir Dietrich",
+      "date": "2018-08-23",
+      "readingTime": 5,
+      "heroImage": {
+        "fileName": "human-soup-image-0.jpg",
+        "githubPath": "images/human-soup-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/human-soup-image-0.jpg",
+        "altText": "Peter Dazeley / Getty Images",
+        "caption": "Peter Dazeley / Getty Images"
+      },
+      "lastUpdated": "2025-09-04T20:40:52.678Z"
+    },
+    {
+      "id": "a-thought-about-true-cost-the-movie",
+      "title": "A Thought About “True Cost”, The Movie",
+      "author": "Vladimir Dietrich",
+      "date": "2018-07-31",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "a-thought-about-true-cost-the-movie-image-0.jpg",
+        "githubPath": "images/a-thought-about-true-cost-the-movie-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-thought-about-true-cost-the-movie-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:23:26.449Z"
+    },
+    {
+      "id": "clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start",
+      "title": "Clean your mind? Unsubscribe emails wouldn’t be a bad start",
+      "author": "Vladimir Dietrich",
+      "date": "2018-07-27",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "clean-your-mind-image-0.jpg",
+        "githubPath": "images/clean-your-mind-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/clean-your-mind-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:41:45.188Z"
+    },
+    {
+      "id": "politica-de-uso-e-reproducao-de-conteudo",
+      "title": "Content Usage and Reproduction Policy",
+      "author": "Vladimir Dietrich",
+      "date": "1990-01-01",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "politica-de-uso-e-reproducao-image-0.jpg",
+        "githubPath": "images/politica-de-uso-e-reproducao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/politica-de-uso-e-reproducao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-02-19T07:43:32.332Z"
+  "lastUpdated": "2026-02-18T13:41:00.674Z"
 }
