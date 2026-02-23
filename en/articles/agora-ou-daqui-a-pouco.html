@@ -417,10 +417,6 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Now or Later?","author":{"@type":"Person","name":"Vladimir Dietrich"},"datePublished":"2026-02-17","image":"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/agora-ou-daqui-a-pouco-image-0.jpg","description":"We are surrounded by dopamine sellers, the most profitable molecule in our body, as it always wants more. And more. And more."}</script>
 </head>
 <body>
-  
-      <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v18.0&appId=1284673459606715&autoLogAppEvents=1" nonce="a1b2c3d4"></script>
-    
   <header class="header">
    <div class="header-content">
      <a href="/en/index.html" class="logo">Vladimir Dietrich</a>
@@ -457,8 +453,43 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         </div>
 
         
-      <div class="comments-section" style="margin-top: 80px;">
-        <div class="fb-comments" data-href="https://blog.vladi.dev/articles/agora-ou-daqui-a-pouco.html" data-width="100%" data-numposts="5"></div>
+      <div class="comments-section" style="border-top: 1px solid rgba(230,230,230,1); padding-top: 48px; margin-top: 80px;">
+        <h2 style="font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; font-size: 28px; font-weight: 700; color: rgba(41,41,41,1); letter-spacing: -0.015em; margin-bottom: 32px;">Responses</h2>
+        <div id="cusdis_thread"
+          data-host="https://cusdis.com"
+          data-app-id="15f4a544-1f72-4e07-a280-65c732aa1076"
+          data-page-id="blog.vladi.dev:agora-ou-daqui-a-pouco"
+          data-page-url="https://blog.vladi.dev/articles/agora-ou-daqui-a-pouco.html"
+          data-page-title="Agora ou Daqui a Pouco?"
+        ></div>
+        <script defer src="https://cusdis.com/js/cusdis.es.js"></script>
+        <script>
+          (function() {
+            var thread = document.getElementById('cusdis_thread');
+            if (!thread) return;
+            new MutationObserver(function(mutations) {
+              mutations.forEach(function(m) {
+                m.addedNodes.forEach(function(node) {
+                  if (node.nodeName === 'IFRAME') {
+                    node.scrolling = 'no';
+                    node.style.cssText = 'width:100%;border:none;display:block;min-height:280px;overflow:hidden;';
+                  }
+                });
+              });
+            }).observe(thread, { childList: true });
+            window.addEventListener('message', function(e) {
+              if (!e.origin || e.origin.indexOf('cusdis.com') === -1) return;
+              var iframe = thread.querySelector('iframe');
+              if (!iframe) return;
+              try {
+                var d = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
+                if (d.from === 'cusdis' && d.event === 'resize' && d.data > 50) {
+                  iframe.style.height = d.data + 'px';
+                }
+              } catch(err) {}
+            });
+          })();
+        </script>
       </div>
      
 
