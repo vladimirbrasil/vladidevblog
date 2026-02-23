@@ -536,37 +536,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           data-page-url="https://blog.vladi.dev/articles/agora-ou-daqui-a-pouco.html"
           data-page-title="Agora ou Daqui a Pouco?"
         ></div>
-        <script defer src="https://cusdis.com/js/cusdis.es.js"></script>
-        <script>
-          (function() {
-            var thread = document.getElementById('cusdis_thread');
-            if (!thread) return;
-            new MutationObserver(function(mutations) {
-              mutations.forEach(function(m) {
-                m.addedNodes.forEach(function(node) {
-                  if (node.nodeName === 'IFRAME') {
-                    node.scrolling = 'no';
-                    node.style.cssText = 'width:100%;border:none;display:block;min-height:280px;overflow:hidden;';
-                  }
-                });
-              });
-            }).observe(thread, { childList: true });
-            window.addEventListener('message', function(e) {
-              if (!e.origin || e.origin.indexOf('cusdis.com') === -1) return;
-              var iframe = thread.querySelector('iframe');
-              if (!iframe) return;
-              try {
-                var d = typeof e.data === 'string' ? JSON.parse(e.data) : e.data;
-                if (d.from === 'cusdis' && d.event === 'resize' && d.data > 50) {
-                  iframe.style.height = d.data + 'px';
-                }
-              } catch(err) {}
-            });
-          })();
-        </script>
-      </div>
-     
-
+        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
       </div>
     </div>
   </main>
