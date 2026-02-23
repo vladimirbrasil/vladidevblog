@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yin Yang - Blog de Vladimir Dietrich</title>
   
-  <meta name="description" content="   ">
+  <meta name="description" content="Kerstin Uvnäs Moberg (The Oxitocin Factor) compara con la filosofía del Yin Yang nuestros dos grandes sistemas:">
   <meta name="author" content="Vladimir Dietrich">
   <meta property="og:title" content="Yin Yang - Blog de Vladimir Dietrich">
-  <meta property="og:description" content="   ">
+  <meta property="og:description" content="Kerstin Uvnäs Moberg (The Oxitocin Factor) compara con la filosofía del Yin Yang nuestros dos grandes sistemas:">
   <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg">
   <meta property="og:image:alt" content="Yin Yang">
   <meta property="og:type" content="article">
@@ -318,20 +318,69 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 /* === Newsletter Subscription Form === */
 /* ======================================================================== */
 .newsletter-section {
-  background: rgba(26, 137, 23, 0.06);
-  border: 1px solid rgba(26, 137, 23, 0.15);
-  border-radius: 12px;
-  padding: 32px;
-  margin: 32px 0;
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  padding: 48px 0 32px;
+  margin: 48px 0 0;
   text-align: center;
 }
 .newsletter-section h3 {
-  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-size: 24px;
+  font-weight: 700;
   color: rgba(41, 41, 41, 1);
-  margin-bottom: 16px;
+  letter-spacing: -0.015em;
+  margin-bottom: 20px;
 }
+.comments-section {
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  padding-top: 48px;
+  margin-top: 80px;
+}
+.comments-section h2 {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(41, 41, 41, 1);
+  letter-spacing: -0.015em;
+  margin-bottom: 32px;
+}
+/* ======================================================================== */
+/* === Native Comments System === */
+/* ======================================================================== */
+.native-comments-container { margin-top: 24px; }
+.comment-item { 
+  border-bottom: 1px solid rgba(230, 230, 230, 0.6); 
+  padding: 16px 0; 
+}
+.comment-item.is-reply {
+  margin-left: 32px;
+  border-left: 2px solid rgba(230,230,230,1);
+  padding-left: 16px;
+}
+.comment-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
+.comment-author { font-weight: 600; font-size: 15px; color: rgba(41, 41, 41, 1); }
+.comment-date { font-size: 13px; color: rgba(117, 117, 117, 1); }
+.comment-body { font-size: 16px; color: rgba(41, 41, 41, 0.9); line-height: 1.5; white-space: pre-wrap; }
+.comment-reply-btn {
+  background: none; border: none; color: rgba(26, 137, 23, 1); cursor: pointer;
+  font-size: 13px; font-weight: 500; padding: 0; margin-top: 8px;
+}
+
+.custom-comment-form { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; background: #fbfbfb; padding: 24px; border-radius: 8px; border: 1px solid rgba(230, 230, 230, 0.6); }
+.custom-comment-form input, .custom-comment-form textarea {
+  width: 100%; padding: 12px; border: 1px solid rgba(230, 230, 230, 1); border-radius: 6px;
+  font-family: 'SF Pro Text', sans-serif; font-size: 15px;
+}
+.custom-comment-form textarea { resize: vertical; min-height: 100px; }
+.custom-comment-form button {
+  align-self: flex-start; padding: 10px 24px; background: rgba(26, 137, 23, 1);
+  color: #fff; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;
+}
+.custom-comment-form button:disabled { background: #ccc; cursor: not-allowed; }
+.replying-to-badge {
+  display: none; background: #e8f5e9; color: #2e7d32; padding: 6px 12px; border-radius: 4px; font-size: 13px; margin-bottom: 12px; justify-content: space-between; align-items: center;
+}
+.cancel-reply-btn { cursor: pointer; font-weight: bold; margin-left: 8px; }
 .newsletter-form {
   display: flex;
   gap: 10px;
@@ -414,9 +463,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .rss-link:hover { color: rgba(41, 41, 41, 1); }
 
 </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Yin Yang","author":{"@type":"Person","name":"Vladimir Dietrich"},"datePublished":"2026-01-26","image":"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg","description":"   "}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Yin Yang","author":{"@type":"Person","name":"Vladimir Dietrich"},"datePublished":"2026-01-26","image":"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg","description":"Kerstin Uvnäs Moberg (The Oxitocin Factor) compara con la filosofía del Yin Yang nuestros dos grandes sistemas:"}</script>
 </head>
 <body>
+  
   <header class="header">
    <div class="header-content">
      <a href="/es/index.html" class="logo">Vladimir Dietrich</a>
@@ -455,7 +505,9 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p>   </p><p>Kerstin Uvnäs Moberg (The Oxitocin Factor) compara con la filosofía del Yin Yang nuestros dos grandes sistemas:</p><p>El modo estresado.</p><p>El modo paz y amor.</p><p>Nuestro modo estresado - huye o lucha - tiene cada vez menos leones para alertarnos rápidamente, pues los leones están cada vez más enjaulados.</p><p>Pero un nuevo león nunca desactiva nuestro modo estresado, voy a aventurar aquí: el león del consumo compulsivo.</p><p>Empiezo el argumento diciendo que “el vinagre no da ganancias”, es decir, que productos sin gran valor agregado, fáciles de producir, se venden a casi su precio de costo, dando poca o ninguna ganancia a cualquier empresario, usualmente varios, que decidan producirlo. Es un párrafo simplificado, pero una parte importante del argumento.</p><p>¿Qué da ganancias? Marca. Valor. Pagar mucho más que el costo real del producto. Pagar mucho más que el costo real del producto es, literalmente, ganancia para el productor. En oposición al vinagre, llamaremos a este producto “agua orgánica en lata ecológica”.</p><p>Imagina pasar una infancia caminando entre anuncios de aguas ecológicas a 40 reales la lata, camisetas originales del surfista tal a 450 reales la prenda - y así sucesivamente.</p><p>Imagina que el vinagre y el agua del grifo, y camisetas por 7 reales no se anuncien en ningún lugar. Solo están disponibles, si los buscas.</p><p>Es preciso crear una capa de “estrés” para empujar a las personas - desde la infancia, mejor aún - a desear los productos anunciados.</p><p>Por otro lado, se necesita mucha tranquilidad, mucha paz y amor, para no sentirse acorralado por anuncios casi ineludibles, por todos lados. En las pantallas grandes, en las pantallas pequeñas, en telenovelas y en las películas, en las vallas publicitarias, en el merchandising, en la boca de las personas ya enganchadas comentando.</p><p>Nosotros tenemos los dos modos: el modo estresado y el modo paz y amor.</p><p>Podemos plantar el modo estresado desde el útero, con guarderías competitivas trilingües y padres preocupados en mantener la competitividad de la próxima generación, sin jamás parar.</p><p>Pero ¿y si nace un único niño - y quién sabe, sus padres y vecinos - en el modo paz y amor?</p><p>El modo paz y amor es contagioso - tanto como es contagioso el modo estresado.</p><p>Es posible secuestrar el modo paz y amor quitándole cosas esenciales a la vida como, por ejemplo, un lugar para vivir.</p><p>Este fenómeno particularmente ocurre en las ciudades inmensas, como por ejemplo Nueva York. Londres, Tokio. São Paulo. </p><p>En estas ciudades el modo estresado se apoderó de tanta gente, en tan poco espacio, que ya no es posible conseguir un espacio en la ciudad sin estar, en el modo estresado, intentando producir cosas con alto valor agregado. Es muy caro el inmueble. Todo el mundo es “medio rico”. No hay espacio para poco trabajo.</p><p>Otra manera de secuestrar el modo paz y amor es secuestrar a las personas más bonitas.</p><p>Si las personas más bonitas buscan a las personas más ricas, por algún motivo - por ejemplo, por ser caro un inmueble, lo que nos trae nuevamente al problema de las ciudades inmensas - entonces las personas más enfocadas en el modo paz y amor tendrán que conformarse con personas menos bonitas e inmuebles menos valiosos.</p><p>Otra manera de vender “viento” es vender fama.</p><p>Si las personas en modo paz y amor se dejan llevar por pantallas que exponen a personas raras, como por ejemplo personas muy bellas y, frecuentemente, personas atractivas por el propio hecho de estar en pantallas de difícil alcance, famosas por lo tanto, entonces también estas personas tendrán que entrar en el modo estresado para poder “entrar en las pantallas”, es decir, formar parte del selecto grupo filmado por pantallas raras.</p><p>El modo paz y amor está gobernado por la oxitocina. </p><p>El modo estresado está gobernado por el cortisol.</p><p>El modo paz y amor es peligroso para las grandes ciudades estresadas, ¿por qué?</p><p>Porque es extremadamente autosuficiente. En el modo paz y amor todo está bien o casi bien. Incluyendo la camiseta de siete reales, el vinagre de dos reales y el agua del grifo. Somos todos amigos.</p><p>Solo el modo estresado compite con el prójimo para ver quién tiene la camiseta más valiosa. O el agua más “glamorosa”.</p><p>Solo el modo estresado trabaja la vida entera estresado, huyendo del estrés de las cuentas, huyendo del estrés de ser solo uno más (con camiseta de siete reales y vinagre de dos reales). Intentando llegar “allá” - lejos del suelo, del vinagre, del agua del grifo.</p><p>El suelo “es lava”, en el modo estresado. El suelo es agradable, en el modo paz y amor.</p><p>Tenemos ambos modos. Usamos ambos modos. Como la filosofía del yin y el yang.</p><p>Podemos, sin embargo, tener el modo paz y amor secuestrado por el modo estresado, a través del secuestro de nuestro suelo - literalmente los inmuebles, en las grandes ciudades, más la necesidad - ¿artificialmente creada? - de que vivamos todos en estas inmensas ciudades.</p><p>Secuestran a nuestras personas más bonitas que se venden por suelo, por productos caros, a cambio de su rara belleza. Dejando a las personas que estarían solo en el modo paz y amor sin las mayores bellezas, que son secuestradas por el modo estresado de vida - en las cimas de rascacielos, con pantallas raras filmándolas.</p><p>Como en películas de zombis, el modo estresado va contagiando a todos los que puede. Quien no está en la cima de rascacielos sueña con estar en uno y compra este sueño, mordido también por lo tanto por el modo estresado.</p><p>El modo estresado va adquiriendo aires de normalidad, con su agitación, preocupación, trabajo casi incesante. </p><p>El modo paz y amor adquiere aires de enfermedad. Peculiaridad. Extraño. ¿Conformismo?</p><p>El inconformismo del modo estresado se vuelve normal.</p><p>La era de la abundancia que puede estar llegando cuando miles de millones de robots e inteligencias artificiales funcionen bien podrá ser un jarro de agua fría para el modo estresado.</p><p>Llamaremos yang al modo estresado y yin al modo paz y amor.</p><p>Puede ser que transformemos el predominio del yang en predominio del yin.</p><p>Puede ser que el modo paz y amor rápidamente sustituya el predominio del modo estresado.</p><p>Si realmente tenemos estos dos modos - es lo que la biología nos indica - sería interesante ver a la humanidad florecer con predominio del modo paz y amor, solo para comparar con nuestro predominio actual, que es el predominio del modo estresado.</p>
+        
         
         
         
@@ -465,111 +517,214 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         </div>
 
         
-      <style>
-        .cusdis-wrapper {
-          border: 1px solid rgba(230, 230, 230, 0.6);
-          border-radius: 8px;
-          background-color: #fbfbfb;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 24px;
-        }
-        #cusdis_thread {
-          width: 100%;
-          height: 600px;
-          min-height: 400px;
-          padding: 8px 8px 0 8px;
-          box-sizing: border-box;
-          background: transparent;
-          border: none;
-        }
-        #cusdis_thread iframe {
-          width: 100% !important;
-          height: 100% !important;
-          border: none !important;
-          display: block;
-        }
-        .cusdis-resizer {
-          width: 100%;
-          height: 32px;
-          background-color: transparent;
-          cursor: ns-resize;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          touch-action: none;
-          border-top: 1px solid rgba(230,230,230,0.4);
-          transition: background-color 0.2s ease;
-        }
-        .cusdis-resizer:hover, .cusdis-resizer:active {
-          background-color: #ebebeb;
-        }
-        .cusdis-resizer-pill {
-          width: 48px;
-          height: 5px;
-          background-color: #c0c0c0;
-          border-radius: 3px;
-        }
-      </style>
+    <div class="comments-section">
+      <h2>Respuestas</h2>
       
-      <div class="comments-section" style="border-top: 1px solid rgba(230,230,230,1); padding-top: 48px; margin-top: 80px;">
-        <h2 style="font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; font-size: 28px; font-weight: 700; color: rgba(41,41,41,1); letter-spacing: -0.015em; margin-bottom: 32px;">Respuestas</h2>
-        
-        <div class="cusdis-wrapper">
-          <div id="cusdis_thread"
-            data-host="https://cusdis.com"
-            data-app-id="15f4a544-1f72-4e07-a280-65c732aa1076"
-            data-page-id="blog.vladi.dev:yin-yang"
-            data-page-url="https://blog.vladi.dev/articles/yin-yang.html"
-            data-page-title="Yin Yang"
-          ></div>
-          
-          <div id="cusdis_resizer" class="cusdis-resizer">
-             <div class="cusdis-resizer-pill"></div>
-          </div>
+      <div id="native-comments-list" class="native-comments-container">
+        <div id="loading-comments" style="display: flex; align-items: center; gap: 8px; color: #757575; font-size: 15px; padding: 20px 0;">
+          <style>@keyframes spin { 100% { transform: rotate(360deg); } }</style>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation: spin 1s linear infinite;"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>
+          Carregando respostas...
         </div>
-        
-        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-        
-        <script>
-          (function() {
-            var resizer = document.getElementById('cusdis_resizer');
-            var thread = document.getElementById('cusdis_thread');
-            if (!resizer || !thread) return;
-            
-            var startY = 0;
-            var startHeight = 0;
-            
-            function onPointerDown(e) {
-              startY = e.clientY;
-              startHeight = parseInt(window.getComputedStyle(thread).height, 10);
-              document.addEventListener('pointermove', onPointerMove);
-              document.addEventListener('pointerup', onPointerUp);
-              document.addEventListener('pointercancel', onPointerUp);
-              resizer.style.backgroundColor = '#ebebeb';
-            }
-            
-            function onPointerMove(e) {
-              e.preventDefault();
-              var newHeight = startHeight + (e.clientY - startY);
-              if (newHeight >= 400) {
-                thread.style.setProperty('height', newHeight + 'px', 'important');
-              }
-            }
-            
-            function onPointerUp(e) {
-              document.removeEventListener('pointermove', onPointerMove);
-              document.removeEventListener('pointerup', onPointerUp);
-              document.removeEventListener('pointercancel', onPointerUp);
-              resizer.style.backgroundColor = '';
-            }
-            
-            resizer.addEventListener('pointerdown', onPointerDown);
-          })();
-        </script>
       </div>
-     
+
+      <form id="native-comment-form" class="custom-comment-form" onsubmit="return false;">
+        <h3 style="font-size: 18px; margin-bottom: 8px; font-family: Charter, serif;">Deixe seu comentário</h3>
+        
+        <div id="reply-badge" class="replying-to-badge">
+          Respondendo a <span id="reply-to-name"></span>
+          <span class="cancel-reply-btn" onclick="cancelReply()">✕</span>
+        </div>
+
+        <input type="hidden" id="comment-parent-id" value="">
+        
+        <input type="text" id="website_url_hp" name="website_url_hp" style="display:none" tabindex="-1" autocomplete="off">
+        
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <input type="text" id="comment-name" placeholder="Seu nome" required style="flex: 1; min-width: 200px;">
+          <input type="email" id="comment-email" placeholder="Seu email (não será publicado)" required style="flex: 1; min-width: 200px;">
+        </div>
+        <textarea id="comment-text" placeholder="Escreva sua resposta..." required></textarea>
+        
+        <button type="button" id="submit-comment-btn" onclick="submitNativeComment()">Enviar</button>
+        <div id="comment-status-msg" style="font-size: 14px; margin-top: 8px;"></div>
+      </form>
+
+      <script>
+        const WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
+        const BLOG_ID = 'vladidev';
+        const ARTICLE_SLUG = 'yin-yang';
+
+        function loadComments() {
+          if(!WEBAPP_URL) return;
+          fetch(WEBAPP_URL + '?action=get_comments&blogId=' + BLOG_ID + '&slug=' + ARTICLE_SLUG)
+            .then(res => res.json())
+            .then(data => {
+              const container = document.getElementById('native-comments-list');
+              container.innerHTML = '';
+              
+              if(data.length === 0) {
+                container.innerHTML = '<p style="color: #757575; font-size: 14px;">Nenhum comentário ainda. Seja o primeiro!</p>';
+                return;
+              }
+
+              // Organiza em thread simples (pai e filho)
+              const parents = data.filter(c => !c.parentId);
+              const replies = data.filter(c => c.parentId);
+
+              parents.forEach(parent => {
+                container.appendChild(createCommentNode(parent));
+                // Anexa as respostas logo abaixo do pai
+                replies.filter(r => r.parentId === parent.id).forEach(reply => {
+                  container.appendChild(createCommentNode(reply, true));
+                });
+              });
+
+              // ========================================================
+              // NOVA LÓGICA: Rolar até a âncora (Hash) após carregar
+              // ========================================================
+              if (window.location.hash) {
+                // Remove o '#' do início para pegar só o ID
+                const targetId = window.location.hash.substring(1); 
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                  // Um pequeno delay de 100ms garante que o navegador terminou de pintar o HTML na tela
+                  setTimeout(() => {
+                    // Rola a tela suavemente até o elemento ficar no centro
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    // Toque de mestre: destaca o comentário temporariamente com um fundo verde bem clarinho
+                    targetElement.style.transition = 'background-color 1s ease-out';
+                    targetElement.style.backgroundColor = 'rgba(26, 137, 23, 0.1)'; 
+                    
+                    // Remove o destaque após 2 segundos
+                    setTimeout(() => {
+                      targetElement.style.backgroundColor = 'transparent';
+                    }, 2000);
+                  }, 100);
+                }
+              }
+              // ========================================================
+
+            })
+            .catch(err => console.error('Erro ao carregar comentários', err));
+        }
+
+        function createCommentNode(c, isReply = false) {
+          const div = document.createElement('div');
+          div.className = 'comment-item' + (isReply ? ' is-reply' : '');
+          
+          // NOVA LINHA: Adiciona o ID para a âncora funcionar
+          div.id = 'comment-' + c.id; 
+          
+          const dateStr = new Date(c.date).toLocaleDateString();
+          
+          div.innerHTML = `
+            <div class="comment-header">
+              <span class="comment-author">${escapeHTML(c.name)}</span>
+              <span class="comment-date">${dateStr}</span>
+            </div>
+            <div class="comment-body">${escapeHTML(c.comment)}</div>
+            ${!isReply ? `<button class="comment-reply-btn" onclick="setReply('${c.id}', '${escapeHTML(c.name)}')">Responder</button>` : ''}
+          `;
+          return div;
+        }
+
+        function escapeHTML(str) {
+          return str.replace(/[&<>'"]/g, tag => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+          }[tag]));
+        }
+
+        function setReply(parentId, parentName) {
+          document.getElementById('comment-parent-id').value = parentId;
+          document.getElementById('reply-to-name').innerText = parentName;
+          document.getElementById('reply-badge').style.display = 'flex';
+          document.getElementById('comment-text').focus();
+        }
+
+        function cancelReply() {
+          document.getElementById('comment-parent-id').value = '';
+          document.getElementById('reply-badge').style.display = 'none';
+        }
+
+        function submitNativeComment() {
+          const btn = document.getElementById('submit-comment-btn');
+          const msg = document.getElementById('comment-status-msg');
+          
+          const name = document.getElementById('comment-name').value;
+          const email = document.getElementById('comment-email').value;
+          const text = document.getElementById('comment-text').value;
+          const honeypot = document.getElementById('website_url_hp').value;
+          const parentId = document.getElementById('comment-parent-id').value;
+
+          if(!name || !email || !text) {
+            msg.style.color = 'red';
+            msg.innerText = 'Por favor, preencha todos os campos.';
+            return;
+          }
+
+          btn.disabled = true;
+          msg.style.color = '#1a8917';
+          msg.innerText = 'Enviando...';
+
+          const payload = {
+            action: 'comment',
+            blogId: BLOG_ID,
+            slug: ARTICLE_SLUG,
+            name: name,
+            email: email,
+            comment: text,
+            parentId: parentId,
+            honeypot: honeypot
+          };
+
+          fetch(WEBAPP_URL, {
+            method: 'POST',
+            body: JSON.stringify(payload)
+          })
+          .then(res => res.json())
+          .then(data => {
+            if(data.success) {
+              msg.innerText = 'Comentário publicado com sucesso!';
+              document.getElementById('native-comment-form').reset();
+              cancelReply();
+              
+              // NOVA LINHA: Puxa os comentários de novo para o usuário 
+              // ver o que acabou de escrever sem precisar dar F5 na página
+              loadComments(); 
+            } else {
+              msg.style.color = 'red';
+              msg.innerText = 'Erro ao enviar. Tente novamente.';
+            }
+          })
+          .catch(() => {
+            msg.style.color = 'red';
+            msg.innerText = 'Erro de conexão.';
+          })
+          .finally(() => btn.disabled = false);
+        }
+
+        // Carrega os comentários e gerencia o scroll inicial
+        document.addEventListener('DOMContentLoaded', () => {
+          // Se o usuário veio de um link de e-mail (com hash de comentário),
+          // desce a tela imediatamente para a seção de comentários para ele ver o "Carregando..."
+          if (window.location.hash && window.location.hash.startsWith('#comment-')) {
+            const commentsSection = document.querySelector('.comments-section');
+            if (commentsSection) {
+              // 'auto' faz o pulo ser instantâneo, sem animação, 
+              // para o usuário já "nascer" no lugar certo da página
+              commentsSection.scrollIntoView({ behavior: 'auto' }); 
+            }
+          }
+          
+          // Agora sim, chama a API do Google Sheets
+          loadComments();
+        });        
+      </script>
+    </div>
+   
 
       </div>
     </div>
@@ -596,7 +751,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         btn.disabled = true;
         msg.textContent = '';
         msg.className = 'newsletter-message';
-        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
+        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbzhe08vhP5f-yqYmQ87mS7pN1c35usLNSw8782VRESX/dev';
         fetch(WEBAPP_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'text/plain;charset=utf-8' },

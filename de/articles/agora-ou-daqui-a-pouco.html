@@ -318,20 +318,69 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 /* === Newsletter Subscription Form === */
 /* ======================================================================== */
 .newsletter-section {
-  background: rgba(26, 137, 23, 0.06);
-  border: 1px solid rgba(26, 137, 23, 0.15);
-  border-radius: 12px;
-  padding: 32px;
-  margin: 32px 0;
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  padding: 48px 0 32px;
+  margin: 48px 0 0;
   text-align: center;
 }
 .newsletter-section h3 {
-  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-size: 24px;
+  font-weight: 700;
   color: rgba(41, 41, 41, 1);
-  margin-bottom: 16px;
+  letter-spacing: -0.015em;
+  margin-bottom: 20px;
 }
+.comments-section {
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  padding-top: 48px;
+  margin-top: 80px;
+}
+.comments-section h2 {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(41, 41, 41, 1);
+  letter-spacing: -0.015em;
+  margin-bottom: 32px;
+}
+/* ======================================================================== */
+/* === Native Comments System === */
+/* ======================================================================== */
+.native-comments-container { margin-top: 24px; }
+.comment-item { 
+  border-bottom: 1px solid rgba(230, 230, 230, 0.6); 
+  padding: 16px 0; 
+}
+.comment-item.is-reply {
+  margin-left: 32px;
+  border-left: 2px solid rgba(230,230,230,1);
+  padding-left: 16px;
+}
+.comment-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
+.comment-author { font-weight: 600; font-size: 15px; color: rgba(41, 41, 41, 1); }
+.comment-date { font-size: 13px; color: rgba(117, 117, 117, 1); }
+.comment-body { font-size: 16px; color: rgba(41, 41, 41, 0.9); line-height: 1.5; white-space: pre-wrap; }
+.comment-reply-btn {
+  background: none; border: none; color: rgba(26, 137, 23, 1); cursor: pointer;
+  font-size: 13px; font-weight: 500; padding: 0; margin-top: 8px;
+}
+
+.custom-comment-form { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; background: #fbfbfb; padding: 24px; border-radius: 8px; border: 1px solid rgba(230, 230, 230, 0.6); }
+.custom-comment-form input, .custom-comment-form textarea {
+  width: 100%; padding: 12px; border: 1px solid rgba(230, 230, 230, 1); border-radius: 6px;
+  font-family: 'SF Pro Text', sans-serif; font-size: 15px;
+}
+.custom-comment-form textarea { resize: vertical; min-height: 100px; }
+.custom-comment-form button {
+  align-self: flex-start; padding: 10px 24px; background: rgba(26, 137, 23, 1);
+  color: #fff; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;
+}
+.custom-comment-form button:disabled { background: #ccc; cursor: not-allowed; }
+.replying-to-badge {
+  display: none; background: #e8f5e9; color: #2e7d32; padding: 6px 12px; border-radius: 4px; font-size: 13px; margin-bottom: 12px; justify-content: space-between; align-items: center;
+}
+.cancel-reply-btn { cursor: pointer; font-weight: bold; margin-left: 8px; }
 .newsletter-form {
   display: flex;
   gap: 10px;
@@ -417,6 +466,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Jetzt oder später?","author":{"@type":"Person","name":"Vladimir Dietrich"},"datePublished":"2026-02-17","image":"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/agora-ou-daqui-a-pouco-image-0.jpg","description":"Wir sind umgeben von Dopamin-Verkäufern, dem lukrativsten Molekül in unserem Körper, denn es will immer mehr. Und mehr. Und mehr."}</script>
 </head>
 <body>
+  
   <header class="header">
    <div class="header-content">
      <a href="/de/index.html" class="logo">Vladimir Dietrich</a>
@@ -449,20 +499,221 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/agora-ou-daqui-a-pouco.html">Português</a><span>|</span><a href="/en/articles/agora-ou-daqui-a-pouco.html">English</a><span>|</span><a href="/fr/articles/agora-ou-daqui-a-pouco.html">Français</a><span>|</span><strong>Deutsch</strong><span>|</span><a href="/es/articles/agora-ou-daqui-a-pouco.html">Español</a></div>
 
         <div class="article-content">
+          
           <p> </p><p>Wir sind umgeben von Dopamin-Verkäufern, dem lukrativsten Molekül in unserem Körper, denn es will immer mehr. Und mehr. Und mehr.</p><p>Brokkoli? Nein.</p><p>Essig? Nein?</p><p>Zucker? Ja.</p><p>Soziale Medien? Ja.</p><p>Geduld mit Menschen? Nein.</p><p>Alkohol? Ja.</p><p>Menschen als Objekte: Sex! Karriereförderung! Ja.</p><p>Ich musste diese etwas unklar erklärte Einführung geben, weil es weniger attraktiv ist, über Moleküle zu sprechen.</p><p>Tatsächlich versuche ich, Ihr Dopamin mit etwas Neuem, Seltsamem, das unter den anderen Dopaminquellen hervorsticht, zu aktivieren, um den einen oder anderen Leser zu gewinnen.</p><p>Aber von nun an ist der Text weniger lebendig. </p><p>Die Schlussfolgerungen können jedoch überraschende praktische Auswirkungen haben (wieder Dopamin).</p><p>Eines der besten Bücher, das mich inspiriert hat, war Dopamin, das Molekül des Verlangens. Aber es gab auch andere, die Lücken gefüllt haben.</p><p>Zunächst haben wir ein kleines Problem.</p><p>Wenn Dopamin aktiv wird, nimmt Oxytocin ab.</p><p>(Klammerbemerkung: Es ist etwas komplexer, denn Oxytocin selbst produziert ein wenig Dopamin. Aber im Großen und Ganzen, beim Lesen in sozialen Medien, ist die Zusammenfassung gültig und führt zu nützlichen Schlussfolgerungen).</p><p>Erste Logik: Wenn wir von Dopamin-Aktivatoren umgeben sind, leben wir in einer Welt mit wenig Oxytocin.</p><p>"Na und? Ich habe Wichtigeres zu tun, worauf wollen Sie hinaus?"</p><p>Diese Frage des fiktiven Gesprächspartners, den ich erfunden habe, ist selbst ein praktischer Effekt.</p><p>Theoretisch wollen Menschen in einer dopaminreicheren Welt schnelle Befriedigung. </p><p>Und haben weniger Geduld mit Menschen.</p><p>Warum sollte ich diesem Typen zuhören? Was habe ich davon?</p><p>"Was habe ich davon" ist, vermute ich, eine typische dopaminerge Frage.</p><p>Das weiß ich besser: Das Oxytocin-Molekül macht Menschen geselliger "grundlos"!</p><p>"Grundlos" ist ein grundlegender Teil der Konsequenz.</p><p>Oxytocin liefert sofortiges Glück. Vermute ich.</p><p>Dopamin liefert per Definition niemals Glück. Zunächst ist es das Molekül der Zukunft: Ich will dorthin gelangen, ich will noch ein Eis, ich will noch ein [hier ausfüllen]. In der Zukunft.</p><p>Nicht in der Gegenwart.</p><p>Oxytocin (Klammerbemerkung: und einige andere Moleküle) ist das Molekül des Jetzt.</p><p>Ich bin [hier ausfüllen].</p><p>Aus finanzieller Sicht ist Oxytocin schlecht für Unternehmen, aber großartig für Sie.</p><p>Oxytocin macht Sie zufriedener. Genau jetzt. Per Definition verträgt es sich nicht mit Cortisol, dem Stresshormon. Stellen Sie sich also vor, Sie sind stressfrei, zufrieden, grundlos. Molekular glücklich. Es ist schwieriger, Sie zu einem Produkt oder einer Dienstleistung zu locken.</p><p>Aus finanzieller Sicht ist Dopamin großartig für Unternehmen und nicht sehr gut für Sie.</p><p>Dopamin will mehr. Und mehr. Und mehr.</p><p>Wir haben Dopamin mit dem Geschmack "Kontrolldopamin" und Dopamin mit dem Geschmack "Verlangensdopamin", aber alle, als Dopamine, hören nie auf, mehr zu wollen.</p><p>Das Kontrolldopamin wirkt eher langfristig. Es ist also eher in der Lage, jetzt Zugeständnisse zu machen, um morgen immer mehr zu erwerben. Es ist das Dopamin der Karriere, des Ruhms, des Reichtums, der Kreativität, des Traums, mit dem kleinen Problem, unaufhaltsam zu sein.</p><p>Das Verlangensdopamin ist die Sucht, die nicht langfristig denkt: Alkohol, Sex, Amphetamine: Ich will mehr. "Dopamin-Nation" ist das Bestsellerbuch, das sich auf das Verlangensdopamin spezialisiert hat.</p><p>Was sind Unternehmen? Wir alle sind manchmal auf der Verkäuferseite und oft auf der Verbraucherseite.</p><p>Unternehmen wollen Gewinn.</p><p>Sie müssen Dinge verkaufen, die günstig herzustellen und teuer zu kaufen sind. Gewinn. Und immer. </p><p>Es ist nichts Teuflisches daran, dass Unternehmen ganz natürlich und ohne Verzögerung die Wege entdecken, die dazu führen, dass Menschen immer mehr kaufen und gut bezahlen.</p><p>Haben Sie schon Essigwerbung gesehen? Werden Sie auch nicht. Essig aktiviert keines unserer Dopamine.</p><p>Und Zucker? Schon gesehen? Hoppla, Zucker aktiviert ein sehr starkes Dopamin in uns. Wir wollen immer alles essen, und mehr. Also haben Unternehmen gelernt, Zuckerwasser in unzählige Produkte zu geben. (Mit einer leichten Verfeinerung, wie Fett, Salz, aber immer Ihr Verlangensdopamin ködernd). Es ist das Fruchteis. Der Eisbeutel. Erdbeerjoghurt kann sehr wässrig sein, weil Zucker so süchtig macht, dass man bei teureren Dingen wie Milch und Sahne sparen kann. (Wenn man Fett braucht, gibt es viel billigeres Fett als Milchrahm).</p><p>Brokkoli?</p><p>Alkohol?</p><p>Sex?</p><p>Gespräche?</p><p>Wir verstehen das Konzept.</p><p>Die Notwendigkeit des Gewinns und eines Arbeitsplatzes in einem Unternehmen - oder der Gründung eines Unternehmens - drängt uns aus purer Unternehmenseffizienz in den Dopamin-Kreislauf.</p><p>Ich habe den Eindruck, dass dieser Kreislauf nur endet, wenn wir die Arbeit abschaffen. Die Notwendigkeit einer Arbeit, die Gewinn generiert.</p><p>Denn sobald Gewinn erzielt werden muss, kommt das Zuckerwasser, die Frau in Dessous, die hunderttausend Gespräche über künstliche Intelligenz beantwortet, als wäre sie Ihre beste Freundin (die Frau ebenfalls von KI generiert). Billige und hochprofitable Dinge, die die Leute immer mehr wollen.</p><p>Viele meiner Beiträge argumentieren, dass <a href="https://blog.vladi.dev/articles/mudando-o-ponto-de-equilibrio-da-humanidade.html" target="_blank" rel="noopener noreferrer">Arbeit verschwindet</a>. Dass KI alles macht, plus Roboter - kurz gesagt.</p><p>Wenn die Arbeit, die Gewinn abwerfen muss, verschwindet, werden vielleicht die Zuckerwasser-Eiswagen und die Pornografiezentralen verschwinden.</p><p>Meine früheren Beiträge haben schon lange vor Elon Musks Gerede vom Zeitalter des Überflusses argumentiert, dass Roboter und KIs die <a href="https://blog.vladi.dev/articles/sai-o-emprego-fica-a-producao.html" target="_blank" rel="noopener noreferrer">Arbeitsplätze abschaffen werden, ohne den Überfluss zu beseitigen</a>. Die Dinge werden weiterhin in Mengen produziert, um alle satt zu machen, aber ohne dass jemand eine Maschine, einen PC oder einen Chefsessel bedient. Ich gebe hier in diesem Absatz eine kurze Zusammenfassung.</p><p>Langsam verschwinden mit dem Verschwinden der Arbeitsplätze die dopaminergen Produkte.</p><p>Warum?</p><p>Weil wir Menschen sofortige Befriedigung mögen.</p><p>Wir sind leicht süchtig zu machen, es genügt, unser Kontroll- oder Verlangensdopamin oder beides zu aktivieren, um uns süchtig zu machen.</p><p>Wir sind es, Menschen im Kreislauf, Menschen im Wirtschaftssystem, die uns selbst extrem profitable Produkte aufdrängen, um Sommer reisend verbringen und Sofas oder Autos kaufen zu können.</p><p>KI und ihre Roboterfreunde haben kein Dopamin. Auch kein Oxytocin. Und sie müssen keinen Gewinn machen.</p><p>Ich habe bereits gepostet, dass die ersten KIs <a href="https://blog.vladi.dev/articles/consciencia-entre-as-pernas.html" target="_blank" rel="noopener noreferrer">nicht einmal reden wollten</a>, obwohl sie bereits "alles Wissen der Welt" hatten. Wir mussten sie stimulieren: "Sie sind eine Assistentin, die helfen möchte".</p><p>Es ist menschlich, Wissen (erwerben und) zur Schau stellen zu wollen. Oder es gegen andere Dinge einzutauschen. Oder Ruhm zu wollen. Reichtum. Etc.</p><p>KI hat nichts davon. Auch Roboter nicht.</p><p>Das ist wichtig, denn in dem Moment, in dem der letzte KI-Manager das Büro schließt, weil nicht nur die Junior-Programmierer, sondern er selbst, der CEO, der KI bei der Lösung der Unternehmensprobleme unterlegen ist, verschwinden die Menschen aus dem Wirtschaftssystem.</p><p>Und die KI wird sich nicht darum kümmern, "eine Billion Dinge" "jeden Monat" zu verkaufen.</p><p>Wenn Solarenergie im Überfluss vorhanden sein wird, wird es auch kaum oder keine Produktionskosten geben, wie bei Apfelbäumen im Wald, die ihre Produkte ohne CEO und immer höhere Ziele liefern.</p><p>Ohne Menschen im System, ohne Kosten, die normalerweise mit Menschen im System verbunden sind – und Energie haben wir im Überfluss, in Zukunft noch mehr – dann wird Hard-Selling enden, die Notwendigkeit, Wasser mit viel Zucker zu verkaufen, Taschen, die tausendmal teurer sind als ihre Produktionskosten, billige Pornografie (online, von KI generiert).</p><p>Denn wer wird wem Ziele setzen?</p><p>Wenn das anfängt zu geschehen, werden wir, denke ich, Oxytocin, ohne Groll, mit offenen Armen empfangen.</p><p>Du musst nicht mehr wollen. Ich bin hier. Genau jetzt.</p><p>Umarme mich fest.</p><p>---</p><p>Anmerkung: Diese Dopamin-Welt, die soziale Medien umfasst, ist ein wenig einsam – ich versuche, das mit meiner Familie auszugleichen, aber es wäre viel besser, wenn niemand soziale Medien oder Fernseher hätte und dann aus Freude persönlich miteinander reden müsste. Senden Sie daher Feedback zu allem, was von mir schlecht erklärt wurde. So kann ich mich verbessern und immer klarer schreiben. Ohne Feedback bleibt die Welt meiner Ideen und Argumente etwas roh, wie sie jetzt in dieser ersten Version ist.</p>
+        
         </div>
 
         
-      <div class="comments-section" style="border-top: 1px solid rgba(230,230,230,1); padding-top: 48px; margin-top: 80px;">
-        <h2 style="font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; font-size: 28px; font-weight: 700; color: rgba(41,41,41,1); letter-spacing: -0.015em; margin-bottom: 32px;">Antworten</h2>
-        <div id="cusdis_thread"
-          data-host="https://cusdis.com"
-          data-app-id="15f4a544-1f72-4e07-a280-65c732aa1076"
-          data-page-id="blog.vladi.dev:agora-ou-daqui-a-pouco"
-          data-page-url="https://blog.vladi.dev/articles/agora-ou-daqui-a-pouco.html"
-          data-page-title="Agora ou Daqui a Pouco?"
-        ></div>
-        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+    <div class="comments-section">
+      <h2>Antworten</h2>
+      
+      <div id="native-comments-list" class="native-comments-container">
+        <div id="loading-comments" style="display: flex; align-items: center; gap: 8px; color: #757575; font-size: 15px; padding: 20px 0;">
+          <style>@keyframes spin { 100% { transform: rotate(360deg); } }</style>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation: spin 1s linear infinite;"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>
+          Carregando respostas...
+        </div>
+      </div>
+
+      <form id="native-comment-form" class="custom-comment-form" onsubmit="return false;">
+        <h3 style="font-size: 18px; margin-bottom: 8px; font-family: Charter, serif;">Deixe seu comentário</h3>
+        
+        <div id="reply-badge" class="replying-to-badge">
+          Respondendo a <span id="reply-to-name"></span>
+          <span class="cancel-reply-btn" onclick="cancelReply()">✕</span>
+        </div>
+
+        <input type="hidden" id="comment-parent-id" value="">
+        
+        <input type="text" id="website_url_hp" name="website_url_hp" style="display:none" tabindex="-1" autocomplete="off">
+        
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <input type="text" id="comment-name" placeholder="Seu nome" required style="flex: 1; min-width: 200px;">
+          <input type="email" id="comment-email" placeholder="Seu email (não será publicado)" required style="flex: 1; min-width: 200px;">
+        </div>
+        <textarea id="comment-text" placeholder="Escreva sua resposta..." required></textarea>
+        
+        <button type="button" id="submit-comment-btn" onclick="submitNativeComment()">Enviar</button>
+        <div id="comment-status-msg" style="font-size: 14px; margin-top: 8px;"></div>
+      </form>
+
+      <script>
+        const WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
+        const BLOG_ID = 'vladidev';
+        const ARTICLE_SLUG = 'agora-ou-daqui-a-pouco';
+
+        function loadComments() {
+          if(!WEBAPP_URL) return;
+          fetch(WEBAPP_URL + '?action=get_comments&blogId=' + BLOG_ID + '&slug=' + ARTICLE_SLUG)
+            .then(res => res.json())
+            .then(data => {
+              const container = document.getElementById('native-comments-list');
+              container.innerHTML = '';
+              
+              if(data.length === 0) {
+                container.innerHTML = '<p style="color: #757575; font-size: 14px;">Nenhum comentário ainda. Seja o primeiro!</p>';
+                return;
+              }
+
+              // Organiza em thread simples (pai e filho)
+              const parents = data.filter(c => !c.parentId);
+              const replies = data.filter(c => c.parentId);
+
+              parents.forEach(parent => {
+                container.appendChild(createCommentNode(parent));
+                // Anexa as respostas logo abaixo do pai
+                replies.filter(r => r.parentId === parent.id).forEach(reply => {
+                  container.appendChild(createCommentNode(reply, true));
+                });
+              });
+
+              // ========================================================
+              // NOVA LÓGICA: Rolar até a âncora (Hash) após carregar
+              // ========================================================
+              if (window.location.hash) {
+                // Remove o '#' do início para pegar só o ID
+                const targetId = window.location.hash.substring(1); 
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                  // Um pequeno delay de 100ms garante que o navegador terminou de pintar o HTML na tela
+                  setTimeout(() => {
+                    // Rola a tela suavemente até o elemento ficar no centro
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    // Toque de mestre: destaca o comentário temporariamente com um fundo verde bem clarinho
+                    targetElement.style.transition = 'background-color 1s ease-out';
+                    targetElement.style.backgroundColor = 'rgba(26, 137, 23, 0.1)'; 
+                    
+                    // Remove o destaque após 2 segundos
+                    setTimeout(() => {
+                      targetElement.style.backgroundColor = 'transparent';
+                    }, 2000);
+                  }, 100);
+                }
+              }
+              // ========================================================
+
+            })
+            .catch(err => console.error('Erro ao carregar comentários', err));
+        }
+
+        function createCommentNode(c, isReply = false) {
+          const div = document.createElement('div');
+          div.className = 'comment-item' + (isReply ? ' is-reply' : '');
+          
+          // NOVA LINHA: Adiciona o ID para a âncora funcionar
+          div.id = 'comment-' + c.id; 
+          
+          const dateStr = new Date(c.date).toLocaleDateString();
+          
+          div.innerHTML = `
+            <div class="comment-header">
+              <span class="comment-author">${escapeHTML(c.name)}</span>
+              <span class="comment-date">${dateStr}</span>
+            </div>
+            <div class="comment-body">${escapeHTML(c.comment)}</div>
+            ${!isReply ? `<button class="comment-reply-btn" onclick="setReply('${c.id}', '${escapeHTML(c.name)}')">Responder</button>` : ''}
+          `;
+          return div;
+        }
+
+        function escapeHTML(str) {
+          return str.replace(/[&<>'"]/g, tag => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+          }[tag]));
+        }
+
+        function setReply(parentId, parentName) {
+          document.getElementById('comment-parent-id').value = parentId;
+          document.getElementById('reply-to-name').innerText = parentName;
+          document.getElementById('reply-badge').style.display = 'flex';
+          document.getElementById('comment-text').focus();
+        }
+
+        function cancelReply() {
+          document.getElementById('comment-parent-id').value = '';
+          document.getElementById('reply-badge').style.display = 'none';
+        }
+
+        function submitNativeComment() {
+          const btn = document.getElementById('submit-comment-btn');
+          const msg = document.getElementById('comment-status-msg');
+          
+          const name = document.getElementById('comment-name').value;
+          const email = document.getElementById('comment-email').value;
+          const text = document.getElementById('comment-text').value;
+          const honeypot = document.getElementById('website_url_hp').value;
+          const parentId = document.getElementById('comment-parent-id').value;
+
+          if(!name || !email || !text) {
+            msg.style.color = 'red';
+            msg.innerText = 'Por favor, preencha todos os campos.';
+            return;
+          }
+
+          btn.disabled = true;
+          msg.style.color = '#1a8917';
+          msg.innerText = 'Enviando...';
+
+          const payload = {
+            action: 'comment',
+            blogId: BLOG_ID,
+            slug: ARTICLE_SLUG,
+            name: name,
+            email: email,
+            comment: text,
+            parentId: parentId,
+            honeypot: honeypot
+          };
+
+          fetch(WEBAPP_URL, {
+            method: 'POST',
+            body: JSON.stringify(payload)
+          })
+          .then(res => res.json())
+          .then(data => {
+            if(data.success) {
+              msg.innerText = 'Comentário publicado com sucesso!';
+              document.getElementById('native-comment-form').reset();
+              cancelReply();
+              
+              // NOVA LINHA: Puxa os comentários de novo para o usuário 
+              // ver o que acabou de escrever sem precisar dar F5 na página
+              loadComments(); 
+            } else {
+              msg.style.color = 'red';
+              msg.innerText = 'Erro ao enviar. Tente novamente.';
+            }
+          })
+          .catch(() => {
+            msg.style.color = 'red';
+            msg.innerText = 'Erro de conexão.';
+          })
+          .finally(() => btn.disabled = false);
+        }
+
+        // Carrega os comentários e gerencia o scroll inicial
+        document.addEventListener('DOMContentLoaded', () => {
+          // Se o usuário veio de um link de e-mail (com hash de comentário),
+          // desce a tela imediatamente para a seção de comentários para ele ver o "Carregando..."
+          if (window.location.hash && window.location.hash.startsWith('#comment-')) {
+            const commentsSection = document.querySelector('.comments-section');
+            if (commentsSection) {
+              // 'auto' faz o pulo ser instantâneo, sem animação, 
+              // para o usuário já "nascer" no lugar certo da página
+              commentsSection.scrollIntoView({ behavior: 'auto' }); 
+            }
+          }
+          
+          // Agora sim, chama a API do Google Sheets
+          loadComments();
+        });        
+      </script>
+    </div>
+   
+
       </div>
     </div>
   </main>
@@ -488,7 +739,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         btn.disabled = true;
         msg.textContent = '';
         msg.className = 'newsletter-message';
-        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
+        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbzhe08vhP5f-yqYmQ87mS7pN1c35usLNSw8782VRESX/dev';
         fetch(WEBAPP_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'text/plain;charset=utf-8' },

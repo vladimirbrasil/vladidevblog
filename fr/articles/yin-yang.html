@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yin Yang - Blog de Vladimir Dietrich</title>
   
-  <meta name="description" content=" ">
+  <meta name="description" content="Kerstin Uvnäs Moberg (Le Facteur Oxytocine) compare nos deux grands systèmes à la philosophie du Yin Yang:">
   <meta name="author" content="Vladimir Dietrich">
   <meta property="og:title" content="Yin Yang - Blog de Vladimir Dietrich">
-  <meta property="og:description" content=" ">
+  <meta property="og:description" content="Kerstin Uvnäs Moberg (Le Facteur Oxytocine) compare nos deux grands systèmes à la philosophie du Yin Yang:">
   <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg">
   <meta property="og:image:alt" content="Yin Yang">
   <meta property="og:type" content="article">
@@ -318,20 +318,69 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 /* === Newsletter Subscription Form === */
 /* ======================================================================== */
 .newsletter-section {
-  background: rgba(26, 137, 23, 0.06);
-  border: 1px solid rgba(26, 137, 23, 0.15);
-  border-radius: 12px;
-  padding: 32px;
-  margin: 32px 0;
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  padding: 48px 0 32px;
+  margin: 48px 0 0;
   text-align: center;
 }
 .newsletter-section h3 {
-  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-size: 24px;
+  font-weight: 700;
   color: rgba(41, 41, 41, 1);
-  margin-bottom: 16px;
+  letter-spacing: -0.015em;
+  margin-bottom: 20px;
 }
+.comments-section {
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  padding-top: 48px;
+  margin-top: 80px;
+}
+.comments-section h2 {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(41, 41, 41, 1);
+  letter-spacing: -0.015em;
+  margin-bottom: 32px;
+}
+/* ======================================================================== */
+/* === Native Comments System === */
+/* ======================================================================== */
+.native-comments-container { margin-top: 24px; }
+.comment-item { 
+  border-bottom: 1px solid rgba(230, 230, 230, 0.6); 
+  padding: 16px 0; 
+}
+.comment-item.is-reply {
+  margin-left: 32px;
+  border-left: 2px solid rgba(230,230,230,1);
+  padding-left: 16px;
+}
+.comment-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
+.comment-author { font-weight: 600; font-size: 15px; color: rgba(41, 41, 41, 1); }
+.comment-date { font-size: 13px; color: rgba(117, 117, 117, 1); }
+.comment-body { font-size: 16px; color: rgba(41, 41, 41, 0.9); line-height: 1.5; white-space: pre-wrap; }
+.comment-reply-btn {
+  background: none; border: none; color: rgba(26, 137, 23, 1); cursor: pointer;
+  font-size: 13px; font-weight: 500; padding: 0; margin-top: 8px;
+}
+
+.custom-comment-form { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; background: #fbfbfb; padding: 24px; border-radius: 8px; border: 1px solid rgba(230, 230, 230, 0.6); }
+.custom-comment-form input, .custom-comment-form textarea {
+  width: 100%; padding: 12px; border: 1px solid rgba(230, 230, 230, 1); border-radius: 6px;
+  font-family: 'SF Pro Text', sans-serif; font-size: 15px;
+}
+.custom-comment-form textarea { resize: vertical; min-height: 100px; }
+.custom-comment-form button {
+  align-self: flex-start; padding: 10px 24px; background: rgba(26, 137, 23, 1);
+  color: #fff; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;
+}
+.custom-comment-form button:disabled { background: #ccc; cursor: not-allowed; }
+.replying-to-badge {
+  display: none; background: #e8f5e9; color: #2e7d32; padding: 6px 12px; border-radius: 4px; font-size: 13px; margin-bottom: 12px; justify-content: space-between; align-items: center;
+}
+.cancel-reply-btn { cursor: pointer; font-weight: bold; margin-left: 8px; }
 .newsletter-form {
   display: flex;
   gap: 10px;
@@ -414,9 +463,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 .rss-link:hover { color: rgba(41, 41, 41, 1); }
 
 </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Yin Yang","author":{"@type":"Person","name":"Vladimir Dietrich"},"datePublished":"2026-01-26","image":"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg","description":" "}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Yin Yang","author":{"@type":"Person","name":"Vladimir Dietrich"},"datePublished":"2026-01-26","image":"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg","description":"Kerstin Uvnäs Moberg (Le Facteur Oxytocine) compare nos deux grands systèmes à la philosophie du Yin Yang:"}</script>
 </head>
 <body>
+  
   <header class="header">
    <div class="header-content">
      <a href="/fr/index.html" class="logo">Vladimir Dietrich</a>
@@ -455,7 +505,9 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p> </p><p>Kerstin Uvnäs Moberg (Le Facteur Oxytocine) compare nos deux grands systèmes à la philosophie du Yin Yang:</p><p>Le mode stressé.</p><p>Le mode paix et amour.</p><p>Notre mode stressé - fuir ou combattre - a de moins en moins de lions pour nous alerter rapidement, car les lions sont de plus en plus en cage.</p><p>Mais un nouveau lion ne désactive jamais notre mode stressé, je vais spéculer ici: le lion de la consommation compulsive.</p><p>Je commence l'argument en disant que "le vinaigre ne rapporte pas", c'est-à-dire que les produits sans grande valeur ajoutée, faciles à produire, sont vendus à un prix proche de leur coût, générant peu ou pas de profit pour tout entrepreneur, généralement plusieurs, qui décident de les produire. C'est un paragraphe simplifié, mais une partie importante de l'argument.</p><p>Qu'est-ce qui rapporte? La marque. La valeur. Payer beaucoup plus que le coût réel du produit. Payer beaucoup plus que le coût réel du produit est, littéralement, un profit pour le producteur. Contrairement au vinaigre, appelons ce produit "eau organique en canette écologique".</p><p>Imaginez passer une enfance à traverser des publicités pour des eaux écologiques à 40 reais la canette, des t-shirts originaux de tel surfeur à 450 reais la pièce - et ainsi de suite.</p><p>Imaginez que le vinaigre et l'eau du robinet, et les t-shirts à 7 reais ne fassent de publicité nulle part. Ils sont juste disponibles, si vous cherchez.</p><p>Il faut créer une couche de "stress" pour pousser les gens - dès l'enfance, encore mieux - à désirer les produits annoncés.</p><p>D'autre part, il faut beaucoup de tranquillité, beaucoup de paix et d'amour, pour ne pas se sentir acculé par des publicités presque inéluctables, de tous les côtés. Sur les grands écrans, sur les petits écrans, dans les feuilletons et les films, sur les panneaux d'affichage, dans le merchandising, dans la bouche des gens déjà accros qui en parlent.</p><p>Nous avons les deux modes: le mode stressé et le mode paix et amour.</p><p>Nous pouvons planter le mode stressé dès l'utérus, avec des crèches compétitives trilingues et des parents soucieux de maintenir la compétitivité de la prochaine génération, sans jamais s'arrêter.</p><p>Mais et si un seul enfant - et qui sait, ses parents et voisins - naissait en mode paix et amour?</p><p>Le mode paix et amour est contagieux - tout autant que le mode stressé est contagieux.</p><p>Il est possible de détourner le mode paix et amour en lui retirant des choses essentielles à la vie comme, par exemple, un endroit où vivre.</p><p>Ce phénomène se produit particulièrement dans les villes immenses, comme New York. Londres, Tokyo. São Paulo.</p><p>Dans ces villes, le mode stressé a envahi tant de gens, dans si peu d'espace, qu'il n'est plus possible d'obtenir un espace en ville sans être, en mode stressé, en train d'essayer de produire des choses à forte valeur ajoutée. L'immobilier est très cher. Tout le monde est "à moitié riche". Il n'y a pas de place pour peu de travail.</p><p>Une autre manière de détourner le mode paix et amour est de détourner les plus belles personnes.</p><p>Si les plus belles personnes recherchent les personnes les plus riches, pour une raison quelconque - par exemple, parce qu'un bien immobilier est cher, ce qui nous ramène au problème des villes immenses - alors les personnes plus axées sur le mode paix et amour devront se contenter de personnes moins belles et de biens immobiliers moins précieux.</p><p>Une autre façon de vendre du "vent" est de vendre la célébrité.</p><p>Si les personnes en mode paix et amour se laissent emporter par des écrans exposant des personnes rares, comme par exemple des personnes très belles et, fréquemment, des personnes attirantes du fait même d'être sur des écrans difficiles d'accès, célèbres donc, alors ces personnes devront aussi entrer en mode stressé pour pouvoir "entrer dans les écrans", c'est-à-dire faire partie du groupe sélect filmé par des écrans rares.</p><p>Le mode paix et amour est gouverné par l'ocytocine.</p><p>Le mode stressé est gouverné par le cortisol.</p><p>Le mode paix et amour est dangereux pour les grandes villes stressées, pourquoi?</p><p>Parce qu'il est extrêmement auto-suffisant. En mode paix et amour, tout va bien ou presque bien. Y compris le t-shirt à sept reais, le vinaigre à deux reais et l'eau du robinet. Nous sommes tous amis.</p><p>Seul le mode stressé entre en compétition avec son voisin pour voir qui a le t-shirt le plus précieux. Ou l'eau la plus "tchan".</p><p>Seul le mode stressé travaille toute sa vie stressé, fuyant le stress des factures, fuyant le stress d'être juste un de plus (avec un t-shirt à sept reais et du vinaigre à deux reais). Essayant d'arriver "là-haut" - loin du sol, du vinaigre, de l'eau du robinet.</p><p>Le sol "est de la lave", en mode stressé. Le sol est agréable, en mode paix et amour.</p><p>Nous avons les deux modes. Nous utilisons les deux modes. Comme la philosophie du yin et du yang.</p><p>Nous pouvons, cependant, avoir le mode paix et amour détourné par le mode stressé, par le détournement de notre sol - littéralement les biens immobiliers, dans les grandes villes, plus la nécessité - artificiellement créée? - de nous loger tous dans ces immenses villes.</p><p>Ils détournent nos plus belles personnes qui se vendent pour du sol, pour des produits chers, en échange de leur rare beauté. Laissant les personnes qui seraient simplement en mode paix et amour sans les plus grandes beautés, qui sont détournées par le mode de vie stressé - au sommet des gratte-ciel, avec des écrans rares les filmant.</p><p>Comme dans les films de zombies, le mode stressé contamine tous ceux qu'il peut. Qui n'est pas au sommet des gratte-ciel rêve d'y être et achète ce rêve, mordu aussi par le mode stressé.</p><p>Le mode stressé prend des airs de normalité, avec son agitation, son inquiétude, son travail presque incessant.</p><p>Le mode paix et amour prend des airs de maladie. Particularité. Étrange. Conformisme?</p><p>L'inconformisme du mode stressé devient normal.</p><p>L'ère d'abondance qui pourrait arriver lorsque des milliards de robots et d'intelligences artificielles fonctionneront bien pourrait être une douche froide pour le mode stressé.</p><p>Appelons yang le mode stressé et yin le mode paix et amour.</p><p>Il se pourrait que nous transformions la prédominance du yang en prédominance du yin.</p><p>Il se pourrait que le mode paix et amour remplace rapidement la prédominance du mode stressé.</p><p>Si nous avons réellement ces deux modes - c'est ce que la biologie nous indique - il serait intéressant de voir l'humanité s'épanouir avec une prédominance du mode paix et amour, juste pour comparer avec notre prédominance actuelle, qui est la prédominance du mode stressé.</p>
+        
         
         
         
@@ -465,111 +517,214 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         </div>
 
         
-      <style>
-        .cusdis-wrapper {
-          border: 1px solid rgba(230, 230, 230, 0.6);
-          border-radius: 8px;
-          background-color: #fbfbfb;
-          overflow: hidden;
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 24px;
-        }
-        #cusdis_thread {
-          width: 100%;
-          height: 600px;
-          min-height: 400px;
-          padding: 8px 8px 0 8px;
-          box-sizing: border-box;
-          background: transparent;
-          border: none;
-        }
-        #cusdis_thread iframe {
-          width: 100% !important;
-          height: 100% !important;
-          border: none !important;
-          display: block;
-        }
-        .cusdis-resizer {
-          width: 100%;
-          height: 32px;
-          background-color: transparent;
-          cursor: ns-resize;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          touch-action: none;
-          border-top: 1px solid rgba(230,230,230,0.4);
-          transition: background-color 0.2s ease;
-        }
-        .cusdis-resizer:hover, .cusdis-resizer:active {
-          background-color: #ebebeb;
-        }
-        .cusdis-resizer-pill {
-          width: 48px;
-          height: 5px;
-          background-color: #c0c0c0;
-          border-radius: 3px;
-        }
-      </style>
+    <div class="comments-section">
+      <h2>Réponses</h2>
       
-      <div class="comments-section" style="border-top: 1px solid rgba(230,230,230,1); padding-top: 48px; margin-top: 80px;">
-        <h2 style="font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; font-size: 28px; font-weight: 700; color: rgba(41,41,41,1); letter-spacing: -0.015em; margin-bottom: 32px;">Réponses</h2>
-        
-        <div class="cusdis-wrapper">
-          <div id="cusdis_thread"
-            data-host="https://cusdis.com"
-            data-app-id="15f4a544-1f72-4e07-a280-65c732aa1076"
-            data-page-id="blog.vladi.dev:yin-yang"
-            data-page-url="https://blog.vladi.dev/articles/yin-yang.html"
-            data-page-title="Yin Yang"
-          ></div>
-          
-          <div id="cusdis_resizer" class="cusdis-resizer">
-             <div class="cusdis-resizer-pill"></div>
-          </div>
+      <div id="native-comments-list" class="native-comments-container">
+        <div id="loading-comments" style="display: flex; align-items: center; gap: 8px; color: #757575; font-size: 15px; padding: 20px 0;">
+          <style>@keyframes spin { 100% { transform: rotate(360deg); } }</style>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation: spin 1s linear infinite;"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>
+          Carregando respostas...
         </div>
-        
-        <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-        
-        <script>
-          (function() {
-            var resizer = document.getElementById('cusdis_resizer');
-            var thread = document.getElementById('cusdis_thread');
-            if (!resizer || !thread) return;
-            
-            var startY = 0;
-            var startHeight = 0;
-            
-            function onPointerDown(e) {
-              startY = e.clientY;
-              startHeight = parseInt(window.getComputedStyle(thread).height, 10);
-              document.addEventListener('pointermove', onPointerMove);
-              document.addEventListener('pointerup', onPointerUp);
-              document.addEventListener('pointercancel', onPointerUp);
-              resizer.style.backgroundColor = '#ebebeb';
-            }
-            
-            function onPointerMove(e) {
-              e.preventDefault();
-              var newHeight = startHeight + (e.clientY - startY);
-              if (newHeight >= 400) {
-                thread.style.setProperty('height', newHeight + 'px', 'important');
-              }
-            }
-            
-            function onPointerUp(e) {
-              document.removeEventListener('pointermove', onPointerMove);
-              document.removeEventListener('pointerup', onPointerUp);
-              document.removeEventListener('pointercancel', onPointerUp);
-              resizer.style.backgroundColor = '';
-            }
-            
-            resizer.addEventListener('pointerdown', onPointerDown);
-          })();
-        </script>
       </div>
-     
+
+      <form id="native-comment-form" class="custom-comment-form" onsubmit="return false;">
+        <h3 style="font-size: 18px; margin-bottom: 8px; font-family: Charter, serif;">Deixe seu comentário</h3>
+        
+        <div id="reply-badge" class="replying-to-badge">
+          Respondendo a <span id="reply-to-name"></span>
+          <span class="cancel-reply-btn" onclick="cancelReply()">✕</span>
+        </div>
+
+        <input type="hidden" id="comment-parent-id" value="">
+        
+        <input type="text" id="website_url_hp" name="website_url_hp" style="display:none" tabindex="-1" autocomplete="off">
+        
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <input type="text" id="comment-name" placeholder="Seu nome" required style="flex: 1; min-width: 200px;">
+          <input type="email" id="comment-email" placeholder="Seu email (não será publicado)" required style="flex: 1; min-width: 200px;">
+        </div>
+        <textarea id="comment-text" placeholder="Escreva sua resposta..." required></textarea>
+        
+        <button type="button" id="submit-comment-btn" onclick="submitNativeComment()">Enviar</button>
+        <div id="comment-status-msg" style="font-size: 14px; margin-top: 8px;"></div>
+      </form>
+
+      <script>
+        const WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
+        const BLOG_ID = 'vladidev';
+        const ARTICLE_SLUG = 'yin-yang';
+
+        function loadComments() {
+          if(!WEBAPP_URL) return;
+          fetch(WEBAPP_URL + '?action=get_comments&blogId=' + BLOG_ID + '&slug=' + ARTICLE_SLUG)
+            .then(res => res.json())
+            .then(data => {
+              const container = document.getElementById('native-comments-list');
+              container.innerHTML = '';
+              
+              if(data.length === 0) {
+                container.innerHTML = '<p style="color: #757575; font-size: 14px;">Nenhum comentário ainda. Seja o primeiro!</p>';
+                return;
+              }
+
+              // Organiza em thread simples (pai e filho)
+              const parents = data.filter(c => !c.parentId);
+              const replies = data.filter(c => c.parentId);
+
+              parents.forEach(parent => {
+                container.appendChild(createCommentNode(parent));
+                // Anexa as respostas logo abaixo do pai
+                replies.filter(r => r.parentId === parent.id).forEach(reply => {
+                  container.appendChild(createCommentNode(reply, true));
+                });
+              });
+
+              // ========================================================
+              // NOVA LÓGICA: Rolar até a âncora (Hash) após carregar
+              // ========================================================
+              if (window.location.hash) {
+                // Remove o '#' do início para pegar só o ID
+                const targetId = window.location.hash.substring(1); 
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                  // Um pequeno delay de 100ms garante que o navegador terminou de pintar o HTML na tela
+                  setTimeout(() => {
+                    // Rola a tela suavemente até o elemento ficar no centro
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    // Toque de mestre: destaca o comentário temporariamente com um fundo verde bem clarinho
+                    targetElement.style.transition = 'background-color 1s ease-out';
+                    targetElement.style.backgroundColor = 'rgba(26, 137, 23, 0.1)'; 
+                    
+                    // Remove o destaque após 2 segundos
+                    setTimeout(() => {
+                      targetElement.style.backgroundColor = 'transparent';
+                    }, 2000);
+                  }, 100);
+                }
+              }
+              // ========================================================
+
+            })
+            .catch(err => console.error('Erro ao carregar comentários', err));
+        }
+
+        function createCommentNode(c, isReply = false) {
+          const div = document.createElement('div');
+          div.className = 'comment-item' + (isReply ? ' is-reply' : '');
+          
+          // NOVA LINHA: Adiciona o ID para a âncora funcionar
+          div.id = 'comment-' + c.id; 
+          
+          const dateStr = new Date(c.date).toLocaleDateString();
+          
+          div.innerHTML = `
+            <div class="comment-header">
+              <span class="comment-author">${escapeHTML(c.name)}</span>
+              <span class="comment-date">${dateStr}</span>
+            </div>
+            <div class="comment-body">${escapeHTML(c.comment)}</div>
+            ${!isReply ? `<button class="comment-reply-btn" onclick="setReply('${c.id}', '${escapeHTML(c.name)}')">Responder</button>` : ''}
+          `;
+          return div;
+        }
+
+        function escapeHTML(str) {
+          return str.replace(/[&<>'"]/g, tag => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+          }[tag]));
+        }
+
+        function setReply(parentId, parentName) {
+          document.getElementById('comment-parent-id').value = parentId;
+          document.getElementById('reply-to-name').innerText = parentName;
+          document.getElementById('reply-badge').style.display = 'flex';
+          document.getElementById('comment-text').focus();
+        }
+
+        function cancelReply() {
+          document.getElementById('comment-parent-id').value = '';
+          document.getElementById('reply-badge').style.display = 'none';
+        }
+
+        function submitNativeComment() {
+          const btn = document.getElementById('submit-comment-btn');
+          const msg = document.getElementById('comment-status-msg');
+          
+          const name = document.getElementById('comment-name').value;
+          const email = document.getElementById('comment-email').value;
+          const text = document.getElementById('comment-text').value;
+          const honeypot = document.getElementById('website_url_hp').value;
+          const parentId = document.getElementById('comment-parent-id').value;
+
+          if(!name || !email || !text) {
+            msg.style.color = 'red';
+            msg.innerText = 'Por favor, preencha todos os campos.';
+            return;
+          }
+
+          btn.disabled = true;
+          msg.style.color = '#1a8917';
+          msg.innerText = 'Enviando...';
+
+          const payload = {
+            action: 'comment',
+            blogId: BLOG_ID,
+            slug: ARTICLE_SLUG,
+            name: name,
+            email: email,
+            comment: text,
+            parentId: parentId,
+            honeypot: honeypot
+          };
+
+          fetch(WEBAPP_URL, {
+            method: 'POST',
+            body: JSON.stringify(payload)
+          })
+          .then(res => res.json())
+          .then(data => {
+            if(data.success) {
+              msg.innerText = 'Comentário publicado com sucesso!';
+              document.getElementById('native-comment-form').reset();
+              cancelReply();
+              
+              // NOVA LINHA: Puxa os comentários de novo para o usuário 
+              // ver o que acabou de escrever sem precisar dar F5 na página
+              loadComments(); 
+            } else {
+              msg.style.color = 'red';
+              msg.innerText = 'Erro ao enviar. Tente novamente.';
+            }
+          })
+          .catch(() => {
+            msg.style.color = 'red';
+            msg.innerText = 'Erro de conexão.';
+          })
+          .finally(() => btn.disabled = false);
+        }
+
+        // Carrega os comentários e gerencia o scroll inicial
+        document.addEventListener('DOMContentLoaded', () => {
+          // Se o usuário veio de um link de e-mail (com hash de comentário),
+          // desce a tela imediatamente para a seção de comentários para ele ver o "Carregando..."
+          if (window.location.hash && window.location.hash.startsWith('#comment-')) {
+            const commentsSection = document.querySelector('.comments-section');
+            if (commentsSection) {
+              // 'auto' faz o pulo ser instantâneo, sem animação, 
+              // para o usuário já "nascer" no lugar certo da página
+              commentsSection.scrollIntoView({ behavior: 'auto' }); 
+            }
+          }
+          
+          // Agora sim, chama a API do Google Sheets
+          loadComments();
+        });        
+      </script>
+    </div>
+   
 
       </div>
     </div>
@@ -596,7 +751,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         btn.disabled = true;
         msg.textContent = '';
         msg.className = 'newsletter-message';
-        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
+        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbzhe08vhP5f-yqYmQ87mS7pN1c35usLNSw8782VRESX/dev';
         fetch(WEBAPP_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'text/plain;charset=utf-8' },
