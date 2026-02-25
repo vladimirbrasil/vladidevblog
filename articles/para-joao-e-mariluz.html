@@ -1,0 +1,849 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para João e Mariluz - Blog de Vladimir Dietrich</title>
+  
+  <meta name="description" content="No filme “A Man Called Otto”, em seu enterro ele pede um enterro simples, que importe àqueles que achem que Otto “pull my weight”, “puxou seu peso”, foi útil em sua vida. (O filme é Um Homem Chamad...">
+  <meta name="author" content="Vladimir Dietrich">
+  <meta property="og:title" content="Para João e Mariluz - Blog de Vladimir Dietrich">
+  <meta property="og:description" content="No filme “A Man Called Otto”, em seu enterro ele pede um enterro simples, que importe àqueles que achem que Otto “pull my weight”, “puxou seu peso”, foi útil em sua vida. (O filme é Um Homem Chamad...">
+  <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/para-joao-e-mariluz-image-0.jpg">
+  <meta property="og:image:alt" content="Para João e Mariluz">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://blog.vladi.dev/articles/para-joao-e-mariluz.html">
+  <link rel="alternate" type="application/rss+xml" title="Blog de Vladimir Dietrich" href="https://blog.vladi.dev/feed.xml" />
+  <style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
+.header-content { max-width: 1192px; margin: 0 auto; padding: 0 64px; display: flex; justify-content: space-between; align-items: center; }
+.logo { font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 32px; font-weight: 700; color: rgba(41, 41, 41, 1); text-decoration: none; letter-spacing: -0.003em; }
+.nav-links {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.nav-links a { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); text-decoration: none; font-weight: 400; font-size: 16px; transition: color 0.15s ease; }
+.nav-links a:hover { color: rgba(41, 41, 41, 1); }
+.container { max-width: 728px; margin: 0 auto; padding: 0 24px; }
+.article-list { padding: 48px 0; }
+.article-item { border-bottom: 1px solid rgba(242, 242, 242, 1); padding: 32px 0; }
+.article-item a { text-decoration: none; }
+.article-item:last-child { border-bottom: none; }
+.article-date { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: rgba(117, 117, 117, 1); font-size: 13px; margin-bottom: 8px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
+.article-title { font-size: 22px; font-weight: 700; line-height: 1.22; margin-bottom: 8px; color: rgba(41, 41, 41, 1); letter-spacing: -0.012em; }
+.article-preview { color: rgba(117, 117, 117, 1); font-size: 16px; line-height: 1.4; margin-bottom: 12px; }
+.article-meta { display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.author-name { font-weight: 400; color: rgba(41, 41, 41, 1); }
+.reading-time { color: rgba(117, 117, 117, 1); }
+.hero-image-container { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; margin-bottom: 48px; height: 400px; overflow: hidden; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; }
+.hero-image { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); color: white; padding: 32px 24px 16px; font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; }
+.article-content-wrapper { padding: 56px 0; }
+.back-button { display: inline-flex; align-items: center; gap: 8px; color: rgba(26, 137, 23, 1); text-decoration: none; margin-bottom: 32px; font-size: 14px; font-weight: 400; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; transition: color 0.15s ease; }
+.back-button:hover { color: rgba(21, 117, 19, 1); }
+.article-header { margin-bottom: 48px; text-align: left; }
+.article-header h1 { font-size: 42px; font-weight: 700; line-height: 1.04; margin-bottom: 24px; color: rgba(41, 41, 41, 1); letter-spacing: -0.015em; }
+.article-header .meta { color: rgba(117, 117, 117, 1); font-size: 16px; display: flex; align-items: center; gap: 8px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.article-content { font-size: 21px; line-height: 1.58; color: rgba(41, 41, 41, 1); letter-spacing: -0.003em; }
+.article-content h1, .article-content h2, .article-content h3 { margin: 48px 0 16px 0; color: rgba(41, 41, 41, 1); font-weight: 700; letter-spacing: -0.022em; line-height: 1.15; }
+.article-content h1 { font-size: 34px; margin-top: 56px; }
+.article-content h2 { font-size: 28px; margin-top: 48px; }
+.article-content h3 { font-size: 24px; margin-top: 40px; }
+.article-content p { margin-bottom: 32px; word-break: break-word; }
+.article-content figure { margin: 40px 0; text-align: center; }
+.article-content figure img { max-width: 100%; height: auto; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; margin: 0 auto; }
+.article-content figcaption { margin-top: 12px; font-size: 14px; line-height: 1.4; color: rgba(117, 117, 117, 1); font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; text-align: center; font-style: italic; }
+.article-content img:not(figure img) { max-width: 100%; height: auto; margin: 40px 0; border-radius: 6px; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06); display: block; }
+.article-content strong { font-weight: 700; color: rgba(41, 41, 41, 1); }
+.article-content em { font-style: italic; }
+.article-content blockquote { border-left: 3px solid rgba(41, 41, 41, 1); padding-left: 23px; margin: 32px 0; font-style: italic; color: rgba(117, 117, 117, 1); font-size: 21px; line-height: 1.58; }
+.article-content code { background-color: rgba(242, 242, 242, 1); padding: 2px 4px; border-radius: 3px; font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace; font-size: 16px; color: rgba(41, 41, 41, 1); }
+.article-content pre { background-color: rgba(242, 242, 242, 1); padding: 20px; border-radius: 6px; overflow-x: auto; margin: 24px 0; }
+.article-content pre code { background: none; padding: 0; font-size: 14px; }
+.footer { border-top: 1px solid rgba(242, 242, 242, 1); padding: 48px 0; margin-top: 96px; text-align: center; color: rgba(117, 117, 117, 1); font-size: 14px; font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+.language-switcher { font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; color: rgba(117, 117, 117, 1); margin: 24px 0 -16px; }
+.language-switcher a { color: rgba(26, 137, 23, 1); text-decoration: none; }
+.language-switcher a:hover { text-decoration: underline; }
+.language-switcher span { margin: 0 8px; }
+::selection { background-color: rgba(26, 137, 23, 0.1); }
+::-moz-selection { background-color: rgba(26, 137, 23, 0.1); }
+
+/* === STYLES FOR INDEX PAGE LAYOUT & EFFECTS === */
+.article-item a {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease-in-out;
+}
+.article-item a:hover {
+  filter: grayscale(0%);
+}
+.article-text-content { flex: 1; }
+.article-image-container { flex-shrink: 0; width: 150px; height: 100px; background-color: #f8f9fa; border-radius: 4px; overflow: hidden; }
+.article-image-placeholder { flex-shrink: 0; width: 150px; }
+.article-image-container img { width: 100%; height: 100%; object-fit: cover; }
+/* === END OF INDEX PAGE STYLES === */
+
+/* === NOVO: ESTILOS PARA O DROPDOWN DE IDIOMAS (v3 DESSATURADO) === */
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px 4px 4px;
+  border-radius: 99px;
+  transition: background-color 0.2s ease;
+  border: 1px solid #e0e0e0;
+}
+.dropdown-toggle:hover {
+  background-color: #f5f5f5;
+}
+.dropdown-toggle img, .dropdown-menu img {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  /* ===> MODIFICADO: Dessatura a imagem e adiciona transição */
+  filter: saturate(40%);
+  transition: filter 0.25s ease-in-out;
+}
+.dropdown-toggle:hover img, .dropdown-menu a:hover img {
+  /* ===> NOVO: Restaura a cor no hover */
+  filter: saturate(100%);
+}
+.dropdown-toggle span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  z-index: 110;
+  min-width: 100%;
+}
+.language-dropdown.active .dropdown-menu {
+  display: block;
+}
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+.dropdown-menu a:hover {
+  background-color: #f5f5f5;
+}
+.dropdown-menu img {
+  width: 28px; /* Mantém um tamanho ligeiramente maior no menu */
+  height: 28px;
+}
+.dropdown-menu span {
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #333;
+}
+/* === FIM DOS NOVOS ESTILOS === */
+
+@media (max-width: 768px) {
+  /* THIS IS THE FIX: We change the header to a stacking column layout */
+  .header-content {
+    padding: 0 24px;
+    flex-direction: column; /* Stack logo and nav */
+    gap: 20px; /* Add space between logo and nav */
+  }
+  .container { padding: 0 20px; } 
+  .logo { font-size: 28px; } 
+  .nav-links { gap: 24px; }
+  
+  /* Make the search bar wider on mobile for better usability */
+  #searchbox-container .ais-SearchBox-input {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .article-title { font-size: 20px; } 
+  .hero-image-container { height: 250px; } 
+  .article-header h1 { font-size: 32px; line-height: 1.1; } 
+  .article-content { font-size: 19px; } 
+  .article-content h1 { font-size: 28px; } 
+  .article-content h2 { font-size: 24px; } 
+  .article-content h3 { font-size: 21px; } 
+
+  /* === RESPONSIVE STYLES FOR INDEX PAGE === */
+  .article-item a { flex-direction: column; align-items: stretch; }
+  .article-image-container { width: 100%; height: 180px; margin-bottom: 16px; }
+  .article-image-placeholder { display: none; }
+}
+@media (max-width: 480px) { 
+  .header-content { padding: 0 16px; } 
+  .container { padding: 0 16px; } 
+  .hero-image-container { height: 200px; } 
+  .article-header h1 { font-size: 28px; } 
+  .article-content { font-size: 18px; } 
+}
+/* ======================================================= */
+/* === REFINED: Styles for Minimalist Search Icon (v2) === */
+/* ======================================================= */
+
+/* --- Default styles for Desktop --- */
+
+/* On desktop, the container is a standard block element */
+#searchbox-container {
+  display: block;
+  margin-right: 24px; /* Original spacing */
+}
+/* The toggle icons are not needed on desktop */
+.search-toggle-icon {
+  display: none;
+}
+
+/* --- Responsive styles for Mobile (screens 768px or narrower) --- */
+@media (max-width: 768px) {
+  /* Give the parent nav a bit of help with alignment */
+  .nav-links {
+    gap: 16px; /* Reduce gap to make more space */
+  }
+
+  /* STEP 1: On mobile, HIDE the entire search container by default */
+  #searchbox-container {
+    display: none;
+  }
+  
+  /* STEP 2: SHOW the search icon button */
+  #search-icon-btn {
+    display: inline-flex; /* Use flex for better alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* STEP 3: Define the ACTIVE overlay state when body.search-active */
+
+  /* Hide the logo and nav links GRACEFULLY with a transition */
+  /* ===> MODIFICADO: Adicione .language-dropdown a esta regra */
+  .search-active .logo,
+  .search-active .nav-links a,
+  .search-active .language-dropdown {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  /* Hide the search icon itself when the bar is open */
+  .search-active #search-icon-btn {
+    display: none;
+  }
+
+  /* BRING BACK the search container as a full-width overlay */
+  .search-active #searchbox-container {
+    display: block; /* Make it visible again */
+    position: absolute;
+    /* Position it to cover the header area */
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    right: 24px;
+    z-index: 110;
+    margin-right: 0; /* Override desktop margin */
+  }
+
+  /* Ensure the search form inside takes up the full width */
+  .search-active #searchbox-container .ais-SearchBox-form {
+    width: 100%;
+  }
+  .search-active #searchbox-container .ais-SearchBox-input {
+    /* The input should now expand correctly */
+    width: 100%;
+    max-width: 100%; /* Override any mobile-specific max-widths */
+  }
+
+  /* Show and position the close (X) button */
+  .search-active #search-close-btn {
+    display: inline-flex; /* Use flex for alignment */
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    /* Position it inside the input field area */
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 120;
+  }
+}
+
+/* ======================================================================== */
+/* === NOVO: Faz o header da página de artigo voltar a ser horizontal no mobile === */
+/* ======================================================================== */
+@media (max-width: 768px) {
+  body:has(#article-view) .header-content {
+    flex-direction: row; /* Volta a ser uma linha */
+    justify-content: space-between; /* Espaça o logo e o link do portfólio */
+    align-items: center;
+    gap: 0; /* Remove o espaçamento extra que era usado para o layout empilhado */
+  }
+}
+
+/* ======================================================================== */
+/* === Newsletter Subscription Form === */
+/* ======================================================================== */
+.newsletter-section {
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  padding: 48px 0 32px;
+  margin: 48px 0 0;
+  text-align: center;
+}
+.newsletter-section h3 {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(41, 41, 41, 1);
+  letter-spacing: -0.015em;
+  margin-bottom: 20px;
+}
+.comments-section {
+  border-top: 1px solid rgba(230, 230, 230, 1);
+  padding-top: 48px;
+  margin-top: 80px;
+}
+.comments-section h2 {
+  font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: rgba(41, 41, 41, 1);
+  letter-spacing: -0.015em;
+  margin-bottom: 32px;
+}
+/* ======================================================================== */
+/* === Native Comments System === */
+/* ======================================================================== */
+.native-comments-container { margin-top: 24px; }
+.comment-item { 
+  border-bottom: 1px solid rgba(230, 230, 230, 0.6); 
+  padding: 16px 0; 
+}
+.comment-item.is-reply {
+  margin-left: 32px;
+  border-left: 2px solid rgba(230,230,230,1);
+  padding-left: 16px;
+}
+.comment-header { display: flex; justify-content: space-between; margin-bottom: 8px; }
+.comment-author { font-weight: 600; font-size: 15px; color: rgba(41, 41, 41, 1); }
+.comment-date { font-size: 13px; color: rgba(117, 117, 117, 1); }
+.comment-body { font-size: 16px; color: rgba(41, 41, 41, 0.9); line-height: 1.5; white-space: pre-wrap; }
+.comment-reply-btn {
+  background: none; border: none; color: rgba(26, 137, 23, 1); cursor: pointer;
+  font-size: 13px; font-weight: 500; padding: 0; margin-top: 8px;
+}
+
+.custom-comment-form { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; background: #fbfbfb; padding: 24px; border-radius: 8px; border: 1px solid rgba(230, 230, 230, 0.6); }
+.custom-comment-form input, .custom-comment-form textarea {
+  width: 100%; padding: 12px; border: 1px solid rgba(230, 230, 230, 1); border-radius: 6px;
+  font-family: 'SF Pro Text', sans-serif; font-size: 15px;
+}
+.custom-comment-form textarea { resize: vertical; min-height: 100px; }
+.custom-comment-form button {
+  align-self: flex-start; padding: 10px 24px; background: rgba(26, 137, 23, 1);
+  color: #fff; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;
+}
+.custom-comment-form button:disabled { background: #ccc; cursor: not-allowed; }
+.replying-to-badge {
+  display: none; background: #e8f5e9; color: #2e7d32; padding: 6px 12px; border-radius: 4px; font-size: 13px; margin-bottom: 12px; justify-content: space-between; align-items: center;
+}
+.cancel-reply-btn { cursor: pointer; font-weight: bold; margin-left: 8px; }
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.newsletter-form input[type="email"] {
+  padding: 10px 16px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  min-width: 220px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+.newsletter-form input[type="email"]:focus {
+  border-color: rgba(26, 137, 23, 0.5);
+}
+.newsletter-form select {
+  padding: 10px 12px;
+  border: 1px solid rgba(230, 230, 230, 1);
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.newsletter-form button {
+  padding: 10px 24px;
+  background: rgba(26, 137, 23, 1);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.newsletter-form button:hover {
+  background: rgba(21, 117, 19, 1);
+}
+.newsletter-form button:disabled {
+  background: rgba(117, 117, 117, 0.5);
+  cursor: not-allowed;
+}
+.newsletter-message {
+  margin-top: 12px;
+  font-size: 14px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+.newsletter-message.success { color: rgba(26, 137, 23, 1); }
+.newsletter-message.error { color: #d32f2f; }
+.newsletter-banner {
+  text-align: center;
+  padding: 14px 20px;
+  background: rgba(26, 137, 23, 0.06);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+}
+.newsletter-banner a {
+  color: rgba(26, 137, 23, 1);
+  text-decoration: none;
+  font-weight: 600;
+}
+.newsletter-banner a:hover { text-decoration: underline; }
+.rss-link {
+  color: rgba(117, 117, 117, 1);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.15s ease;
+}
+.rss-link:hover { color: rgba(41, 41, 41, 1); }
+
+</style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Para João e Mariluz","author":{"@type":"Person","name":"Vladimir Dietrich"},"datePublished":"2026-02-25","image":"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/para-joao-e-mariluz-image-0.jpg","description":"No filme “A Man Called Otto”, em seu enterro ele pede um enterro simples, que importe àqueles que achem que Otto “pull my weight”, “puxou seu peso”, foi útil em sua vida. (O filme é Um Homem Chamad..."}</script>
+</head>
+<body>
+  
+  <header class="header">
+   <div class="header-content">
+     <a href="/index.html" class="logo">Vladimir Dietrich</a>
+     <nav class="nav-links">
+ 
+       <div class="language-flags"></div>
+       <a href="/feed.xml" class="rss-link" target="_blank" title="Feed RSS">
+         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+       </a>
+       <a href="https://vladi.dev" target="_blank">Portfolio</a>
+       </nav>
+   </div>
+ </header>
+  <main class="container">
+    <div id="article-view" class="article-view">
+      <div class="hero-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/para-joao-e-mariluz-image-0.jpg" alt="Para João e Mariluz" class="hero-image">  </div>
+      <div class="article-content-wrapper">
+        <a href="/index.html" class="back-button">← Back to all articles</a>
+
+        <div class="article-header">
+          <h1>Para João e Mariluz</h1>
+          <div class="meta">
+            <span class="author-name">Vladimir Dietrich</span>
+            <span>·</span>
+            <span>February 24, 2026</span>
+            <span>·</span><span class="reading-time">6 min read</span>
+          </div>
+        </div>
+        
+        <div class="language-switcher"><strong>Português</strong><span>|</span><a href="/en/articles/para-joao-e-mariluz.html">English</a><span>|</span><a href="/fr/articles/para-joao-e-mariluz.html">Français</a></div>
+
+        <div class="article-content">
+          <p> </p>
+<p>No filme “A Man Called Otto”, em seu enterro ele pede um enterro simples, que importe àqueles que achem que Otto “pull my weight”, “puxou seu peso”, foi útil em sua vida. (O filme é Um Homem Chamado Otto. Em uma tradução ruim, recebeu o título de “O Pior Vizinho do Mundo” no Brasil).</p>
+<p>Para mim em particular, um filme comovente.</p>
+<p>Como andei pesquisando sobre as moléculas ocitocina e dopamina recentemente, sobre o prisma da ocitocina e da dopamina, eu diria que o filme comove com os momentos ocitocinérgicos, em um mundo muitas vezes mais dopaminérgico do que ocitocinérgico. </p>
+<p>Vou ter que explicar este último parágrafo para depois poder caminhar para mais conclusões.</p>
+<p>O filme tem lindos momentos “ocitocinérgicos”. Momentos que nos causam “Ohhh!”, ou “Awe”, no inglês.</p>
+<p>A natureza é grande fonte de “Ohhh”, mas tem uma fonte ainda mais potente de “Ohhh”: a natureza humana. Mais especificamente, aqueles vídeos do youtube que mostram pessoas em <a href="https://www.youtube.com/watch?v=o8ojLhiRerY" target="_blank" rel="noopener noreferrer">atos “heróicos”</a> (há infinitos, de todos os tipos: com mais ou menos ação, infinitos). </p>
+<p>Otto comove com seus lindos atos heróicos. Aos 43 minutos, o primeiro jantar com Sonya. O amor entre Otto e Sonya é ocitocinérgico, principalmente após a fase inicial da paixão que costuma ser dopaminérgica. </p>
+<p>O amor é ocitocinérgico. </p>
+<p>Um pai cuidando de uma criança com uma paciência “ocitocinérgica” - pois poderia estar fazendo mil outras coisas: ganhar dinheiro, conhecer mulheres, beber, jogar, mas não. Alguém ajudando uma velhinha também pára tudo, por nada, exceto pela ocitocinergia do momento. (Etc).</p>
+<p>Como Otto foi útil? Por quem, e como, ele “puxou seu peso” em sua vida?</p>
+<p>Agora posso caminhar para uma análise a mais.</p>
+<p>Otto foi útil às pessoas de maneira mais ocitocinérgica. A ocitocinergia acontece com mais facilidade pela proximidade. Conhecendo pelo nome as pessoas que você ajuda. </p>
+<p>Seria mais “dopaminérgico” criar leis ou coisas que resolvam problemas de “todas as pessoas do mundo” (lindo também), mas a ocitocinergia costuma exigir resolver o probleminha do João, da Mariluz, do Abreu. (E mais: ajudar sem ser explorado, pois a ocitocina também detecta quando o Abreu não estava precisando de ajuda de verdade, estava só acomodado, mas isso é outro assunto. “<a href="https://www.amazon.com/Moral-Molecule-Source-Love-Prosperity/dp/0525952810" target="_blank" rel="noopener noreferrer">The Moral Molecule</a>&quot; explica).</p>
+<p>“<a href="https://www.amazon.com.br/Dopamina-mol%C3%A9cula-Daniel-Z-Lieberman/dp/655564575X" target="_blank" rel="noopener noreferrer">Dopamina: a molécula do desejo</a>” argumenta que a ocitocina é a molécula da satisfação imediata, e que a dopamina nunca entrega a satisfação que, sempre, promete.</p>
+<p>O filme “A Man Called Otto” permanentemente critica o mundo de hoje, em comparação ao mundo da época em que Otto era mais jovem.</p>
+<p>Sob o prisma das moléculas, fico com a impressão que o filme vê relações dopaminérgicas avançando sobre as relações ocitocinérgicas, no mundo de hoje, enquanto haveria menos incentivo às relações dopaminérgicas e mais incentivos às relações ocitocinérgicas quando Otto era mais jovem.</p>
+<p>Mas essa minha visão tem duas grandes falhas potenciais: em primeiro lugar, pode ser apenas um projeção de como eu enxergo o mundo, ou quero enxergar; e, em segundo lugar, pode ser também que apenas a velhice de Otto é que não se conforma com as coisas novas, mas para os jovens de cada época, estaria tudo bem e normal.</p>
+<p>Então sobra apenas uma pequena fresta para esta minha tese poder se conectar com a realidade e ser uma boa tese.</p>
+<p>Vou ter que assumir que a tese seja verdade a partir daqui. Mesmo sendo baixas as chances de estar correta. Por esporte, vamos assumir que minha tese esteja razoavelmente correta a partir daqui.</p>
+<p>(Se minha tese estiver correta) Otto tinha relações ocitocinérgicas através de conexões bastante pessoais. Em seu trabalho, com seus vizinhos, o amor por Sonya, até com o gato.</p>
+<p>Agora junto uma necessidade humana: em geral precisamos trabalhar para estar na sociedade, pelo menos em boa parte da vida adulta.</p>
+<p>Enquanto trabalhar era abrir uma padaria em que os vizinhos do bairro te conheciam pelo nome, trabalhar era bastante ocitocinérgico. </p>
+<p>Olhe ao redor de sua rua. Em seu bairro. Você pode conhecer os “Joões” e “Mariluzes” que te ajudam com o pão, os legumes, imprimir algo, tomar um café. Eles também podem te conhecer.</p>
+<p>A não ser que seja um “Mc Donalds”, ou um “Walmart”, ou outra enorme rede. Neste caso, o máximo que você vai conhecer é o gerente, o funcionário, que pode ser do bairro ou não. Pode ser que o atendimento seja menos ocitocinérgico, tendo o funcionário que seguir protocolos ou havendo muita rotatividade se o emprego for desagradável.</p>
+<p>Mas fica pior: se você viver em uma das megalópoles - Londres, Tóquio, São Paulo -, é possível que para viver no chão que parece “lava quente” (em alusão à brincadeira infantil “é lava”, em que ninguém pode pisar no chão) todos precisem trabalhar em “grandes causas” com enormes salários. Afinal, para morar perto das grandes torres de vidro é preciso ganhar muito bem e, como dinheiro é só uma medida de trabalho feito, é preciso “grandes trabalhos” para grandes dinheiros.</p>
+<p>Estes “grandes trabalhos”, eis meu argumento, são mais dopaminérgicos e, portanto, menos ou quase nada ocitocinérgicos. “<a href="https://www.amazon.com.br/Dopamina-mol%C3%A9cula-Daniel-Z-Lieberman/dp/655564575X" target="_blank" rel="noopener noreferrer">Dopamina: a molécula do desejo</a>” mostra que a dopamina espanta a ocitocina, e vice-versa, por isso fica difícil ter ambas fluindo juntas, sempre.</p>
+<p>Será que Otto estava certo, então, ao reclamar das pessoas ficando mais dopaminérgicas em sua velhice?</p>
+<p>Por exemplo: no filme, ao invés de salvarem um senhor que cai em um trilho de trem, a grande maioria das pessoas filma o homem caído.</p>
+<p><a href="https://www.amazon.com.br/gera%C3%A7%C3%A3o-ansiosa-inf%C3%A2ncia-hiperconectada-transtornos/dp/8535938532" target="_blank" rel="noopener noreferrer">A Geração Ansiosa</a> mostra que querer likes e ficar vidrado nas redes sociais é altamente dopaminérgico. Viciante. Quando as pessoas filmam o senhor caído, comentam “olha, um homem caído”, já antecipando quantas visualizações receberão no futuro, ao exibir a filmagem em suas redes sociais. Estavam no modo dopaminérgico, guiados pela dopamina. Em oposição ao ato extremamente ocitocinérgico de salvar um senhor nos trilhos, antes do trem chegar.</p>
+<p> Agora vamos às conclusões mais práticas, que adoro ter, apesar da grande abstração que as precede.</p>
+<p>O mundo pode estar, mesmo, nos empurrando para relações mais dopaminérgicas.</p>
+<p>Se isso for verdade, as relações mais ocitocinérgicas serão simultaneamente afastadas, pois dopamina e ocitocina são moléculas mais opostas do que amigas.</p>
+<p>Assim, ao invés de treinarmos nossas crianças para ajudar nosso bairro - nossa tribo -, como por exemplo com o comércio local ou não muito distante, poderemos ser empurrados a treinar nossas crianças para abstrações complexas, que podem salvar o mundo, com trabalhos grandiosos, na área de finanças, física, química, salvando menos os Joões e as Mariluzes que (ainda) conhecemos pelo nome, e mais “todos os humanos”, “um país inteiro”. </p>
+<p>Bem a cara da dopamina. Bem aquilo que espanta a ocitocina.</p>
+<p>Este é uma das minhas primeiras postagens sobre ocitocina, dopamina e o mercado de trabalho, a nossa vida.</p>
+<p>Eu sei que tenho algumas coisas importantes a mais para concluir. Maspreciso escrever por partes. E dormir. Assentar as ideias. Sentir.</p>
+<p>Obrigado “João e Mariluz” pela paciência em ainda ler textos que não são de rolar para baixo em um pequeno instante, com apenas um dedo.</p>
+
+        </div>
+
+        
+    <div class="comments-section">
+      <h2>Respostas</h2>
+      
+      <div id="native-comments-list" class="native-comments-container">
+        <div id="loading-comments" style="display: flex; align-items: center; gap: 8px; color: #757575; font-size: 15px; padding: 20px 0;">
+          <style>@keyframes spin { 100% { transform: rotate(360deg); } }</style>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation: spin 1s linear infinite;"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>
+          Carregando respostas...
+        </div>
+      </div>
+
+      <form id="native-comment-form" class="custom-comment-form" onsubmit="return false;">
+        <h3 style="font-size: 18px; margin-bottom: 8px; font-family: Charter, serif;">Deixe seu comentário</h3>
+        
+        <div id="reply-badge" class="replying-to-badge">
+          Respondendo a <span id="reply-to-name"></span>
+          <span class="cancel-reply-btn" onclick="cancelReply()">✕</span>
+        </div>
+
+        <input type="hidden" id="comment-parent-id" value="">
+        
+        <input type="text" id="website_url_hp" name="website_url_hp" style="display:none" tabindex="-1" autocomplete="off">
+        
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <input type="text" id="comment-name" placeholder="Seu nome" required style="flex: 1; min-width: 200px;">
+          <input type="email" id="comment-email" placeholder="Seu email (não será publicado)" required style="flex: 1; min-width: 200px;">
+        </div>
+        <textarea id="comment-text" placeholder="Escreva sua resposta..." required></textarea>
+        
+        <button type="button" id="submit-comment-btn" onclick="submitNativeComment()">Enviar</button>
+        <div id="comment-status-msg" style="font-size: 14px; margin-top: 8px;"></div>
+      </form>
+
+      <script>
+        const WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
+        const BLOG_ID = 'vladidev';
+        const ARTICLE_SLUG = 'para-joao-e-mariluz';
+
+        function loadComments() {
+          if(!WEBAPP_URL) return;
+          fetch(WEBAPP_URL + '?action=get_comments&blogId=' + BLOG_ID + '&slug=' + ARTICLE_SLUG)
+            .then(res => res.json())
+            .then(data => {
+              const container = document.getElementById('native-comments-list');
+              container.innerHTML = '';
+              
+              if(data.length === 0) {
+                container.innerHTML = '<p style="color: #757575; font-size: 14px;">Nenhum comentário ainda. Seja o primeiro!</p>';
+                return;
+              }
+
+              // Organiza em thread simples (pai e filho)
+              const parents = data.filter(c => !c.parentId);
+              const replies = data.filter(c => c.parentId);
+
+              parents.forEach(parent => {
+                container.appendChild(createCommentNode(parent));
+                // Anexa as respostas logo abaixo do pai
+                replies.filter(r => r.parentId === parent.id).forEach(reply => {
+                  container.appendChild(createCommentNode(reply, true));
+                });
+              });
+
+              // ========================================================
+              // NOVA LÓGICA: Rolar até a âncora (Hash) após carregar
+              // ========================================================
+              if (window.location.hash) {
+                // Remove o '#' do início para pegar só o ID
+                const targetId = window.location.hash.substring(1); 
+                const targetElement = document.getElementById(targetId);
+                
+                if (targetElement) {
+                  // Um pequeno delay de 100ms garante que o navegador terminou de pintar o HTML na tela
+                  setTimeout(() => {
+                    // Rola a tela suavemente até o elemento ficar no centro
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    // Toque de mestre: destaca o comentário temporariamente com um fundo verde bem clarinho
+                    targetElement.style.transition = 'background-color 1s ease-out';
+                    targetElement.style.backgroundColor = 'rgba(26, 137, 23, 0.1)'; 
+                    
+                    // Remove o destaque após 2 segundos
+                    setTimeout(() => {
+                      targetElement.style.backgroundColor = 'transparent';
+                    }, 2000);
+                  }, 100);
+                }
+              }
+              // ========================================================
+
+            })
+            .catch(err => console.error('Erro ao carregar comentários', err));
+        }
+
+        function createCommentNode(c, isReply = false) {
+          const div = document.createElement('div');
+          div.className = 'comment-item' + (isReply ? ' is-reply' : '');
+          
+          // NOVA LINHA: Adiciona o ID para a âncora funcionar
+          div.id = 'comment-' + c.id; 
+          
+          const dateStr = new Date(c.date).toLocaleDateString();
+          
+          div.innerHTML = `
+            <div class="comment-header">
+              <span class="comment-author">${escapeHTML(c.name)}</span>
+              <span class="comment-date">${dateStr}</span>
+            </div>
+            <div class="comment-body">${escapeHTML(c.comment)}</div>
+            ${!isReply ? `<button class="comment-reply-btn" onclick="setReply('${c.id}', '${escapeHTML(c.name)}')">Responder</button>` : ''}
+          `;
+          return div;
+        }
+
+        function escapeHTML(str) {
+          return str.replace(/[&<>'"]/g, tag => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+          }[tag]));
+        }
+
+        function setReply(parentId, parentName) {
+          document.getElementById('comment-parent-id').value = parentId;
+          document.getElementById('reply-to-name').innerText = parentName;
+          document.getElementById('reply-badge').style.display = 'flex';
+          document.getElementById('comment-text').focus();
+        }
+
+        function cancelReply() {
+          document.getElementById('comment-parent-id').value = '';
+          document.getElementById('reply-badge').style.display = 'none';
+        }
+
+        function submitNativeComment() {
+          const btn = document.getElementById('submit-comment-btn');
+          const msg = document.getElementById('comment-status-msg');
+          
+          const name = document.getElementById('comment-name').value;
+          const email = document.getElementById('comment-email').value;
+          const text = document.getElementById('comment-text').value;
+          const honeypot = document.getElementById('website_url_hp').value;
+          const parentId = document.getElementById('comment-parent-id').value;
+
+          if(!name || !email || !text) {
+            msg.style.color = 'red';
+            msg.innerText = 'Por favor, preencha todos os campos.';
+            return;
+          }
+
+          btn.disabled = true;
+          msg.style.color = '#1a8917';
+          msg.innerText = 'Enviando...';
+
+          const payload = {
+            action: 'comment',
+            blogId: BLOG_ID,
+            slug: ARTICLE_SLUG,
+            name: name,
+            email: email,
+            comment: text,
+            parentId: parentId,
+            honeypot: honeypot
+          };
+
+          fetch(WEBAPP_URL, {
+            method: 'POST',
+            body: JSON.stringify(payload)
+          })
+          .then(res => res.json())
+          .then(data => {
+            if(data.success) {
+              msg.innerText = 'Comentário publicado com sucesso!';
+              document.getElementById('native-comment-form').reset();
+              cancelReply();
+              
+              // NOVA LINHA: Puxa os comentários de novo para o usuário 
+              // ver o que acabou de escrever sem precisar dar F5 na página
+              loadComments(); 
+            } else {
+              msg.style.color = 'red';
+              msg.innerText = 'Erro ao enviar. Tente novamente.';
+            }
+          })
+          .catch(() => {
+            msg.style.color = 'red';
+            msg.innerText = 'Erro de conexão.';
+          })
+          .finally(() => btn.disabled = false);
+        }
+
+        // Carrega os comentários e gerencia o scroll inicial
+        document.addEventListener('DOMContentLoaded', () => {
+          // Se o usuário veio de um link de e-mail (com hash de comentário),
+          // desce a tela imediatamente para a seção de comentários para ele ver o "Carregando..."
+          if (window.location.hash && window.location.hash.startsWith('#comment-')) {
+            const commentsSection = document.querySelector('.comments-section');
+            if (commentsSection) {
+              // 'auto' faz o pulo ser instantâneo, sem animação, 
+              // para o usuário já "nascer" no lugar certo da página
+              commentsSection.scrollIntoView({ behavior: 'auto' }); 
+            }
+          }
+          
+          // Agora sim, chama a API do Google Sheets
+          loadComments();
+        });        
+      </script>
+    </div>
+   
+
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+        
+    <div class="newsletter-section">
+      <h3>Receba novos artigos por email</h3>
+      <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
+        <input type="email" id="newsletter-email" placeholder="Seu email" required>
+        <select id="newsletter-lang"><option value="pt" selected>Português</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option></select>
+        <button type="button" id="newsletter-btn" onclick="submitNewsletter()">Inscrever-se</button>
+      </form>
+      <div class="newsletter-message" id="newsletter-message"></div>
+    </div>
+    <script>
+      function submitNewsletter() {
+        var email = document.getElementById('newsletter-email').value.trim();
+        var lang = document.getElementById('newsletter-lang').value;
+        var btn = document.getElementById('newsletter-btn');
+        var msg = document.getElementById('newsletter-message');
+        if (!email) return;
+        btn.disabled = true;
+        msg.textContent = '';
+        msg.className = 'newsletter-message';
+        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbzhe08vhP5f-yqYmQ87mS7pN1c35usLNSw8782VRESX/dev';
+        fetch(WEBAPP_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
+        }).then(function(r) {
+          return r.json();
+        }).then(function(data) {
+          if (data.success) {
+            msg.textContent = "Inscrição realizada com sucesso!";
+            msg.className = 'newsletter-message success';
+            document.getElementById('newsletter-email').value = '';
+          } else if (data.error === 'already_subscribed') {
+            msg.textContent = "Este email já está inscrito.";
+            msg.className = 'newsletter-message error';
+          } else {
+            msg.textContent = "Erro ao inscrever. Tente novamente.";
+            msg.className = 'newsletter-message error';
+          }
+        }).catch(function() {
+          msg.textContent = "Erro ao inscrever. Tente novamente.";
+          msg.className = 'newsletter-message error';
+        }).finally(function() {
+          btn.disabled = false;
+        });
+      }
+    </script>
+  
+        <div style="text-align: center; line-height: 1.6;">
+            <p>© 2026 Vladimir Dietrich</p>
+            <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank" title="Licença Creative Commons Atribuição 4.0 Internacional">
+                <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
+            </a>
+            <p style="font-size: 0.9em; color: #666;">
+                Esta obra está licenciada sob <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+                <br>
+                <a href="/articles/politica-de-uso-e-reproducao-de-conteudo.html">Saiba como republicar este conteúdo</a>
+            </p>
+        </div>
+    </div>
+  </footer>
+
+  <script>
+    /* ======================================================= */
+    /* === NOVO: JavaScript para o Dropdown de Idiomas === */
+    /* ======================================================= */
+    try {
+      document.addEventListener('DOMContentLoaded', function() {
+        const dropdown = document.getElementById('language-dropdown');
+
+        if (dropdown) {
+          // Abre/fecha o dropdown ao clicar no botão
+          dropdown.addEventListener('click', function(event) {
+            event.stopPropagation(); // Impede que o clique feche o menu imediatamente
+            this.classList.toggle('active');
+          });
+
+          // Fecha o dropdown se o usuário clicar fora dele
+          window.addEventListener('click', function(event) {
+            if (dropdown.classList.contains('active')) {
+              dropdown.classList.remove('active');
+            }
+          });
+        }
+      });
+    } catch (e) {
+      console.error("Error setting up language dropdown:", e);
+    }  
+  </script>
+
+</body>
+</html>
