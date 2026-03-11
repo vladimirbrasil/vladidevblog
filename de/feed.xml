@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/de/</link>
     <description>Blog von Vladimir Dietrich - Vladimir Dietrich</description>
     <language>de</language>
-    <lastBuildDate>Wed, 25 Feb 2026 19:45:17 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 11 Mar 2026 19:49:42 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wert</title>
+      <link>https://blog.vladi.dev/de/articles/valor.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/de/articles/valor.html</guid>
+      <pubDate>Wed, 11 Mar 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/valor-image-0.jpg&quot; alt=&quot;Wert&quot; /&gt;</description>
+    </item>
     <item>
       <title>Jetzt oder Gleich?</title>
       <link>https://blog.vladi.dev/de/articles/agora-ou-daqui-a-pouco.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 07 May 2021 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png&quot; alt=&quot;Sollen wir erhalten werden, um zuzusehen?&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Joker-Fabrik?</title>
-      <link>https://blog.vladi.dev/de/articles/fabrica-de-coringas.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/de/articles/fabrica-de-coringas.html</guid>
-      <pubDate>Sat, 31 Oct 2020 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png&quot; alt=&quot;Joker-Fabrik?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>
