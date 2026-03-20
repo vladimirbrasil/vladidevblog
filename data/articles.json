@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "um-picole",
+      "title": "Um picolé?",
+      "author": "Vladimir Dietrich",
+      "date": "2026-03-19",
+      "readingTime": 1,
+      "heroImage": {
+        "fileName": "documento-sem-nome-image-0.png",
+        "githubPath": "images/documento-sem-nome-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/documento-sem-nome-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-03-20T07:39:00.075Z"
+    },
+    {
       "id": "valor",
       "title": "Valor",
       "author": "Vladimir Dietrich",
@@ -853,5 +868,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-03-11T19:49:41.556Z"
+  "lastUpdated": "2026-03-20T07:39:01.035Z"
 }
