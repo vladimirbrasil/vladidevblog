@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/fr/</link>
     <description>Blog de Vladimir Dietrich - Vladimir Dietrich</description>
     <language>fr</language>
-    <lastBuildDate>Sun, 29 Mar 2026 14:10:12 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 12:21:31 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/fr/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Le meilleur café</title>
+      <link>https://blog.vladi.dev/fr/articles/o-melhor-cafe.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/fr/articles/o-melhor-cafe.html</guid>
+      <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/o-melhor-cafe-image-0.png&quot; alt=&quot;Le meilleur café&quot; /&gt;</description>
+    </item>
     <item>
       <title>Valeur</title>
       <link>https://blog.vladi.dev/fr/articles/valor.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 16 Nov 2021 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg&quot; alt=&quot;Neuragame&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Prévisible ?</title>
-      <link>https://blog.vladi.dev/fr/articles/previsivel.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/fr/articles/previsivel.html</guid>
-      <pubDate>Fri, 05 Nov 2021 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/previsivel-image-0.jpg&quot; alt=&quot;Prévisible ?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

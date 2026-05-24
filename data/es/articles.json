@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "o-melhor-cafe",
+      "title": "El mejor café",
+      "author": "Vladimir Dietrich",
+      "date": "2026-05-24",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "o-melhor-cafe-image-0.png",
+        "githubPath": "images/o-melhor-cafe-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/o-melhor-cafe-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-05-24T12:20:36.525Z"
+    },
+    {
       "id": "valor",
       "title": "Valor",
       "author": "Vladimir Dietrich",
@@ -391,5 +406,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-03-29T14:10:11.846Z"
+  "lastUpdated": "2026-05-24T12:21:31.747Z"
 }

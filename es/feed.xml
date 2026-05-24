@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/es/</link>
     <description>Blog de Vladimir Dietrich - Vladimir Dietrich</description>
     <language>es</language>
-    <lastBuildDate>Sun, 29 Mar 2026 14:10:11 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 12:21:31 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/es/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>El mejor café</title>
+      <link>https://blog.vladi.dev/es/articles/o-melhor-cafe.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/o-melhor-cafe.html</guid>
+      <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/o-melhor-cafe-image-0.png&quot; alt=&quot;El mejor café&quot; /&gt;</description>
+    </item>
     <item>
       <title>Valor</title>
       <link>https://blog.vladi.dev/es/articles/valor.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 31 Oct 2020 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png&quot; alt=&quot;¿Fábrica de Jokers?&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>¿Maximizar la atención plena?</title>
-      <link>https://blog.vladi.dev/es/articles/maximizar-mindfulness.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/maximizar-mindfulness.html</guid>
-      <pubDate>Thu, 09 Jul 2020 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/maximizar-mindfulness-image-0.png&quot; alt=&quot;¿Maximizar la atención plena?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

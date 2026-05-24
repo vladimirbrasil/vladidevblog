@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/de/</link>
     <description>Blog von Vladimir Dietrich - Vladimir Dietrich</description>
     <language>de</language>
-    <lastBuildDate>Sun, 29 Mar 2026 14:10:12 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 12:21:31 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Der beste Kaffee</title>
+      <link>https://blog.vladi.dev/de/articles/o-melhor-cafe.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/de/articles/o-melhor-cafe.html</guid>
+      <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/o-melhor-cafe-image-0.png&quot; alt=&quot;Der beste Kaffee&quot; /&gt;</description>
+    </item>
     <item>
       <title>Wert</title>
       <link>https://blog.vladi.dev/de/articles/valor.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 04 Nov 2021 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/vanilla-skyourself-image-0.jpg&quot; alt=&quot;Vanilla Skyourself&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Sollen wir erhalten werden, um zuzusehen?</title>
-      <link>https://blog.vladi.dev/de/articles/devemos-ser-preservados-para-observar.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/de/articles/devemos-ser-preservados-para-observar.html</guid>
-      <pubDate>Fri, 07 May 2021 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png&quot; alt=&quot;Sollen wir erhalten werden, um zuzusehen?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

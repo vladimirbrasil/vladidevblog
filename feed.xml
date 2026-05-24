@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/</link>
     <description>Blog de Vladimir Dietrich - Vladimir Dietrich</description>
     <language>pt</language>
-    <lastBuildDate>Sun, 29 Mar 2026 14:10:11 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 12:21:31 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>O melhor café</title>
+      <link>https://blog.vladi.dev/articles/o-melhor-cafe.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/articles/o-melhor-cafe.html</guid>
+      <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/o-melhor-cafe-image-0.png&quot; alt=&quot;O melhor café&quot; /&gt;</description>
+    </item>
     <item>
       <title>Você é meu melhor amigo</title>
       <link>https://blog.vladi.dev/articles/voce-e-meu-melhor-amigo.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Mon, 22 Apr 2024 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg&quot; alt=&quot;A menininha que nos leva para casa&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Onde estamos?</title>
-      <link>https://blog.vladi.dev/articles/onde-estamos.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/articles/onde-estamos.html</guid>
-      <pubDate>Tue, 19 Sep 2023 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg&quot; alt=&quot;Onde estamos?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>
