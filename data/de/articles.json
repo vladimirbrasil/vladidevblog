@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "pinoquio",
+      "title": "Pinocchio",
+      "author": "Vladimir Dietrich",
+      "date": "2026-05-24",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "pinoquio-image-0.png",
+        "githubPath": "images/pinoquio-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/pinoquio-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-05-24T14:35:28.771Z"
+    },
+    {
       "id": "o-melhor-cafe",
       "title": "Der beste Kaffee",
       "author": "Vladimir Dietrich",
@@ -436,5 +451,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-05-24T12:21:31.820Z"
+  "lastUpdated": "2026-05-24T14:38:11.809Z"
 }

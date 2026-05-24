@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/es/</link>
     <description>Blog de Vladimir Dietrich - Vladimir Dietrich</description>
     <language>es</language>
-    <lastBuildDate>Sun, 24 May 2026 12:21:31 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 14:38:11 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/es/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pinocho</title>
+      <link>https://blog.vladi.dev/es/articles/pinoquio.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/pinoquio.html</guid>
+      <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/pinoquio-image-0.png&quot; alt=&quot;Pinocho&quot; /&gt;</description>
+    </item>
     <item>
       <title>El mejor café</title>
       <link>https://blog.vladi.dev/es/articles/o-melhor-cafe.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 07 May 2021 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/devemos-ser-preservados-para-observar-image-0.png&quot; alt=&quot;¿Deberíamos ser preservados para observar?&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>¿Fábrica de Jokers?</title>
-      <link>https://blog.vladi.dev/es/articles/fabrica-de-coringas.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/es/articles/fabrica-de-coringas.html</guid>
-      <pubDate>Sat, 31 Oct 2020 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/fabrica-de-coringas-image-0.png&quot; alt=&quot;¿Fábrica de Jokers?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

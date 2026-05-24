@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/de/</link>
     <description>Blog von Vladimir Dietrich - Vladimir Dietrich</description>
     <language>de</language>
-    <lastBuildDate>Sun, 24 May 2026 12:21:31 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 14:38:11 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pinocchio</title>
+      <link>https://blog.vladi.dev/de/articles/pinoquio.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/de/articles/pinoquio.html</guid>
+      <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/pinoquio-image-0.png&quot; alt=&quot;Pinocchio&quot; /&gt;</description>
+    </item>
     <item>
       <title>Der beste Kaffee</title>
       <link>https://blog.vladi.dev/de/articles/o-melhor-cafe.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 05 Nov 2021 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/previsivel-image-0.jpg&quot; alt=&quot;Vorhersehbar?&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Vanilla Skyourself</title>
-      <link>https://blog.vladi.dev/de/articles/vanilla-skyourself.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/de/articles/vanilla-skyourself.html</guid>
-      <pubDate>Thu, 04 Nov 2021 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/vanilla-skyourself-image-0.jpg&quot; alt=&quot;Vanilla Skyourself&quot; /&gt;</description>
     </item>
   </channel>
 </rss>
