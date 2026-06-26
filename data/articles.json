@@ -1,6 +1,15 @@
 {
   "articles": [
     {
+      "id": "neymar-para-presidente",
+      "title": "Neymar para presidente.",
+      "author": "Vladimir Dietrich",
+      "date": "2026-06-25",
+      "readingTime": 1,
+      "heroImage": null,
+      "lastUpdated": "2026-06-26T07:38:37.435Z"
+    },
+    {
       "id": "pinoquio",
       "title": "Pinóquio",
       "author": "Vladimir Dietrich",
@@ -913,5 +922,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-05-25T07:40:28.272Z"
+  "lastUpdated": "2026-06-26T07:38:38.763Z"
 }
