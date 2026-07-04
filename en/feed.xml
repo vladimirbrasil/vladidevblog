@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/en/</link>
     <description>Vladimir Dietrich&apos;s Blog - Vladimir Dietrich</description>
     <language>en</language>
-    <lastBuildDate>Fri, 26 Jun 2026 07:38:39 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 07:39:37 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/en/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Purpose</title>
+      <link>https://blog.vladi.dev/en/articles/proposito.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/en/articles/proposito.html</guid>
+      <pubDate>Fri, 03 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description></description>
+    </item>
     <item>
       <title>Pinocchio</title>
       <link>https://blog.vladi.dev/en/articles/pinoquio.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 02 Apr 2022 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/global-and-focused-social-medias-image-0.jpg&quot; alt=&quot;Global and Focused Social Medias ❤️&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Scratch-[Vanities]</title>
-      <link>https://blog.vladi.dev/en/articles/arranha-vaidades.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/en/articles/arranha-vaidades.html</guid>
-      <pubDate>Tue, 08 Mar 2022 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/arranha-vaidades-image-0.jpg&quot; alt=&quot;Scratch-[Vanities]&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

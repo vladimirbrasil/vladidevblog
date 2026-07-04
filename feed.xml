@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/</link>
     <description>Blog de Vladimir Dietrich - Vladimir Dietrich</description>
     <language>pt</language>
-    <lastBuildDate>Fri, 26 Jun 2026 07:38:38 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 07:39:37 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Propósito</title>
+      <link>https://blog.vladi.dev/articles/proposito.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/articles/proposito.html</guid>
+      <pubDate>Fri, 03 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description></description>
+    </item>
     <item>
       <title>Neymar para presidente.</title>
       <link>https://blog.vladi.dev/articles/neymar-para-presidente.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sun, 15 Jun 2025 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/um-blog-facil-image-0.png&quot; alt=&quot;Um Blog Fácil&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Promoção especial para ti</title>
-      <link>https://blog.vladi.dev/articles/promocao-especial-para-ti.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/articles/promocao-especial-para-ti.html</guid>
-      <pubDate>Sun, 15 Jun 2025 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/promocao-especial-para-ti-image-0.jpg&quot; alt=&quot;Promoção especial para ti&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

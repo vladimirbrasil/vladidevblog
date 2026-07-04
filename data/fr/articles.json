@@ -1,6 +1,15 @@
 {
   "articles": [
     {
+      "id": "proposito",
+      "title": "Objectif",
+      "author": "Vladimir Dietrich",
+      "date": "2026-07-03",
+      "readingTime": 1,
+      "heroImage": null,
+      "lastUpdated": "2026-07-04T07:38:55.356Z"
+    },
+    {
       "id": "pinoquio",
       "title": "Pinocchio",
       "author": "Vladimir Dietrich",
@@ -481,5 +490,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-06-26T07:38:39.245Z"
+  "lastUpdated": "2026-07-04T07:39:37.448Z"
 }

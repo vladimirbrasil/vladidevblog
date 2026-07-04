@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/fr/</link>
     <description>Blog de Vladimir Dietrich - Vladimir Dietrich</description>
     <language>fr</language>
-    <lastBuildDate>Fri, 26 Jun 2026 07:38:39 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 07:39:37 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/fr/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Objectif</title>
+      <link>https://blog.vladi.dev/fr/articles/proposito.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/fr/articles/proposito.html</guid>
+      <pubDate>Fri, 03 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description></description>
+    </item>
     <item>
       <title>Pinocchio</title>
       <link>https://blog.vladi.dev/fr/articles/pinoquio.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 08 Mar 2022 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/arranha-vaidades-image-0.jpg&quot; alt=&quot;Gratte-[vanités]&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Pourquoi cracher la conscience ?</title>
-      <link>https://blog.vladi.dev/fr/articles/por-que-cuspir-a-consciencia.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/fr/articles/por-que-cuspir-a-consciencia.html</guid>
-      <pubDate>Tue, 30 Nov 2021 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-cuspir-a-consciencia-image-0.jpg&quot; alt=&quot;Pourquoi cracher la conscience ?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

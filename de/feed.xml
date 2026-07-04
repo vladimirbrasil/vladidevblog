@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/de/</link>
     <description>Blog von Vladimir Dietrich - Vladimir Dietrich</description>
     <language>de</language>
-    <lastBuildDate>Fri, 26 Jun 2026 07:38:39 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 07:39:37 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zweck</title>
+      <link>https://blog.vladi.dev/de/articles/proposito.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/de/articles/proposito.html</guid>
+      <pubDate>Fri, 03 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description></description>
+    </item>
     <item>
       <title>Pinocchio</title>
       <link>https://blog.vladi.dev/de/articles/pinoquio.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 16 Nov 2021 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neuragame-image-0.jpg&quot; alt=&quot;Neuragame&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Vorhersehbar?</title>
-      <link>https://blog.vladi.dev/de/articles/previsivel.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/de/articles/previsivel.html</guid>
-      <pubDate>Fri, 05 Nov 2021 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/previsivel-image-0.jpg&quot; alt=&quot;Vorhersehbar?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>
