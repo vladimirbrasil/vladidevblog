@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/en/</link>
     <description>Vladimir Dietrich&apos;s Blog - Vladimir Dietrich</description>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Jul 2026 07:39:37 GMT</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 01:55:20 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/en/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I want to play</title>
+      <link>https://blog.vladi.dev/en/articles/quero-brincar.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/en/articles/quero-brincar.html</guid>
+      <pubDate>Wed, 22 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quero-brincar-image-0.png&quot; alt=&quot;I want to play&quot; /&gt;</description>
+    </item>
     <item>
       <title>Purpose</title>
       <link>https://blog.vladi.dev/en/articles/proposito.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 08 Jun 2023 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/consciencia-entre-as-pernas-image-0.jpg&quot; alt=&quot;Awareness Between the Legs&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Global and Focused Social Medias ❤️</title>
-      <link>https://blog.vladi.dev/en/articles/global-and-focused-social-medias.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/en/articles/global-and-focused-social-medias.html</guid>
-      <pubDate>Sat, 02 Apr 2022 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/global-and-focused-social-medias-image-0.jpg&quot; alt=&quot;Global and Focused Social Medias ❤️&quot; /&gt;</description>
     </item>
   </channel>
 </rss>
