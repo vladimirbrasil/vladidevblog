@@ -1,6 +1,15 @@
 {
   "articles": [
     {
+      "id": "casas-vazias",
+      "title": "Casas Vazias",
+      "author": "Vladimir Dietrich",
+      "date": "2026-08-27",
+      "readingTime": 1,
+      "heroImage": null,
+      "lastUpdated": "2026-08-28T07:39:15.341Z"
+    },
+    {
       "id": "mms",
       "title": "m&m’s",
       "author": "Vladimir Dietrich",
@@ -955,5 +964,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-08-03T07:39:01.674Z"
+  "lastUpdated": "2026-08-28T07:39:17.156Z"
 }
