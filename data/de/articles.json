@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "casas-vazias",
+      "title": "Leere Häuser",
+      "author": "Vladimir Dietrich",
+      "date": "2026-08-27",
+      "readingTime": 2,
+      "heroImage": {
+        "fileName": "casas-vazias-image-0.png",
+        "githubPath": "images/casas-vazias-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/casas-vazias-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-08-29T07:38:50.812Z"
+    },
+    {
       "id": "quero-brincar",
       "title": "Ich will spielen",
       "author": "Vladimir Dietrich",
@@ -475,5 +490,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-08-28T07:39:18.084Z"
+  "lastUpdated": "2026-08-29T07:39:36.033Z"
 }
