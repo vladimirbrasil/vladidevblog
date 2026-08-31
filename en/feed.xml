@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/en/</link>
     <description>Vladimir Dietrich&apos;s Blog - Vladimir Dietrich</description>
     <language>en</language>
-    <lastBuildDate>Sat, 29 Aug 2026 07:39:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 02:02:50 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/en/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>What happened to those who studied in a school without classes, without tests, and without grades</title>
+      <link>https://blog.vladi.dev/en/articles/o-que-aconteceu-com-quem-estudou-numa-escola-sem-aulas-sem-provas-e-sem-notas.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/en/articles/o-que-aconteceu-com-quem-estudou-numa-escola-sem-aulas-sem-provas-e-sem-notas.html</guid>
+      <pubDate>Mon, 31 Aug 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description></description>
+    </item>
     <item>
       <title>Empty Houses</title>
       <link>https://blog.vladi.dev/en/articles/casas-vazias.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Mon, 22 Apr 2024 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg&quot; alt=&quot;The Little Girl Who Leads Us Home&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Where are we?</title>
-      <link>https://blog.vladi.dev/en/articles/onde-estamos.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/en/articles/onde-estamos.html</guid>
-      <pubDate>Tue, 19 Sep 2023 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg&quot; alt=&quot;Where are we?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

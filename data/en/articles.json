@@ -1,6 +1,15 @@
 {
   "articles": [
     {
+      "id": "o-que-aconteceu-com-quem-estudou-numa-escola-sem-aulas-sem-provas-e-sem-notas",
+      "title": "What happened to those who studied in a school without classes, without tests, and without grades",
+      "author": "Vladimir Dietrich",
+      "date": "2026-08-31",
+      "readingTime": 7,
+      "heroImage": null,
+      "lastUpdated": "2026-08-31T02:02:18.734Z"
+    },
+    {
       "id": "casas-vazias",
       "title": "Empty Houses",
       "author": "Vladimir Dietrich",
@@ -610,5 +619,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-08-29T07:39:35.564Z"
+  "lastUpdated": "2026-08-31T02:02:50.131Z"
 }

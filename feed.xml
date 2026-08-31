@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/</link>
     <description>Blog de Vladimir Dietrich - Vladimir Dietrich</description>
     <language>pt</language>
-    <lastBuildDate>Sat, 29 Aug 2026 07:39:35 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 02:02:50 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>O que aconteceu com quem estudou numa escola sem aulas, sem provas e sem notas</title>
+      <link>https://blog.vladi.dev/articles/o-que-aconteceu-com-quem-estudou-numa-escola-sem-aulas-sem-provas-e-sem-notas.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/articles/o-que-aconteceu-com-quem-estudou-numa-escola-sem-aulas-sem-provas-e-sem-notas.html</guid>
+      <pubDate>Mon, 31 Aug 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description></description>
+    </item>
     <item>
       <title>Casas Vazias</title>
       <link>https://blog.vladi.dev/articles/casas-vazias.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 30 Jul 2025 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-0.png&quot; alt=&quot;Juventude eterna: uma tirania?&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Quando a Máquina Pensa, o Homem Sente</title>
-      <link>https://blog.vladi.dev/articles/quando-a-maquina-pensa-o-homem-sente.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/articles/quando-a-maquina-pensa-o-homem-sente.html</guid>
-      <pubDate>Tue, 15 Jul 2025 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quando-a-maquina-pensa-o-homem-sente-image-0.png&quot; alt=&quot;Quando a Máquina Pensa, o Homem Sente&quot; /&gt;</description>
     </item>
   </channel>
 </rss>
