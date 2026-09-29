@@ -61,6 +61,21 @@
       "lastUpdated": "2026-09-29T15:36:09.109Z"
     },
     {
+      "id": "juventude-eterna-uma-tirania",
+      "title": "永遠の若さ：それは暴政か？",
+      "author": "Vladimir Dietrich",
+      "date": "2025-07-30",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "juventude-eterna-uma-tirania-image-hero.webp",
+        "githubPath": "images/juventude-eterna-uma-tirania-image-hero.webp",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-hero.webp",
+        "altText": "Juventude eterna: uma tirania?",
+        "caption": ""
+      },
+      "lastUpdated": "2026-09-29T21:39:34.184Z"
+    },
+    {
       "id": "quando-a-maquina-pensa-o-homem-sente",
       "title": "機械が考え、人間が感じるとき",
       "author": "Vladimir Dietrich",
@@ -121,5 +136,5 @@
       "lastUpdated": "2026-09-29T15:35:13.429Z"
     }
   ],
-  "lastUpdated": "2026-09-29T15:36:24.415Z"
+  "lastUpdated": "2026-09-29T21:39:41.336Z"
 }

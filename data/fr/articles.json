@@ -211,13 +211,13 @@
       "date": "2025-07-30",
       "readingTime": 4,
       "heroImage": {
-        "fileName": "juventude-eterna-uma-tirania-image-0.png",
-        "githubPath": "images/juventude-eterna-uma-tirania-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-0.png",
-        "altText": "",
+        "fileName": "juventude-eterna-uma-tirania-image-hero.webp",
+        "githubPath": "images/juventude-eterna-uma-tirania-image-hero.webp",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-hero.webp",
+        "altText": "Juventude eterna: uma tirania?",
         "caption": ""
       },
-      "lastUpdated": "2025-09-04T20:11:24.857Z"
+      "lastUpdated": "2026-09-29T21:39:34.184Z"
     },
     {
       "id": "quando-a-maquina-pensa-o-homem-sente",
@@ -550,5 +550,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-09-29T15:36:23.887Z"
+  "lastUpdated": "2026-09-29T21:39:40.943Z"
 }
