@@ -14,6 +14,7 @@
   <meta property="og:image:alt" content="Um picolé?">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://blog.vladi.dev/articles/um-picole.html">
+  <link rel="canonical" href="https://blog.vladi.dev/articles/um-picole.html">
   <link rel="alternate" type="application/rss+xml" title="Blog de Vladimir Dietrich" href="https://blog.vladi.dev/feed.xml" />
   <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -482,7 +483,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
  </header>
   <main class="container">
     <div id="article-view" class="article-view">
-      <div class="hero-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/documento-sem-nome-image-0.png" alt="Um picolé?" class="hero-image">  </div>
+      <div class="hero-image-container"><img src="https://blog.vladi.dev/images/documento-sem-nome-image-0.png" alt="Um picolé?" class="hero-image" fetchpriority="high">  </div>
       <div class="article-content-wrapper">
         <a href="/index.html" class="back-button">← Back to all articles</a>
 
@@ -499,6 +500,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         
 
         <div class="article-content">
+          
           <p>Somos picolés uns dos outros. Eis uma hipótese.</p>
 <p>Nossa juventude quer ser beijada. E beijar.</p>
 <p>A mulher se arruma, com primor, o homem se arruma. Se encontram. Mil homens e mil mulheres.</p>
@@ -507,6 +509,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>O picolé vai derretendo (ou endurecendo), quando somos, então, outras coisas uns dos outros. Ainda há juventude, mas criamos outras formas de amar que tolerem rugas, VO2 Max menor.</p>
 <p>Vai um picolé?</p>
 
+        
         </div>
 
         
@@ -729,7 +732,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       <h3>Receba novos artigos por email</h3>
       <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
         <input type="email" id="newsletter-email" placeholder="Seu email" required>
-        <select id="newsletter-lang"><option value="pt" selected>Português</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option></select>
+        <select id="newsletter-lang"><option value="pt" selected>Português</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="it">Italiano</option><option value="ja">日本語</option></select>
         <button type="button" id="newsletter-btn" onclick="submitNewsletter()">Inscrever-se</button>
       </form>
       <div class="newsletter-message" id="newsletter-message"></div>

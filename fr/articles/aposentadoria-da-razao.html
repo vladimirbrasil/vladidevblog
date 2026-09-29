@@ -13,7 +13,12 @@
   <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg">
   <meta property="og:image:alt" content="La retraite de la raison">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://blog.vladi.dev/articles/aposentadoria-da-razao.html">
+  <meta property="og:url" content="https://blog.vladi.dev/fr/articles/aposentadoria-da-razao.html">
+  <link rel="canonical" href="https://blog.vladi.dev/fr/articles/aposentadoria-da-razao.html">
+  <link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/articles/aposentadoria-da-razao.html">
+  <link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/articles/aposentadoria-da-razao.html">
+  <link rel="alternate" hreflang="fr" href="https://blog.vladi.dev/fr/articles/aposentadoria-da-razao.html">
+  <link rel="alternate" hreflang="x-default" href="https://blog.vladi.dev/articles/aposentadoria-da-razao.html">
   <link rel="alternate" type="application/rss+xml" title="Blog de Vladimir Dietrich" href="https://blog.vladi.dev/fr/feed.xml" />
   <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -482,7 +487,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
  </header>
   <main class="container">
     <div id="article-view" class="article-view">
-      <div class="hero-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/aposentadoria-da-razao-image-0.jpg" alt="La retraite de la raison" class="hero-image">  </div>
+      <div class="hero-image-container"><img src="https://blog.vladi.dev/images/aposentadoria-da-razao-image-0.jpg" alt="La retraite de la raison" class="hero-image" fetchpriority="high">  </div>
       <div class="article-content-wrapper">
         <a href="/fr/index.html" class="back-button">← Back to all articles</a>
 
@@ -499,6 +504,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         <div class="language-switcher"><a href="/articles/aposentadoria-da-razao.html">Português</a><span>|</span><a href="/en/articles/aposentadoria-da-razao.html">English</a><span>|</span><strong>Français</strong></div>
 
         <div class="article-content">
+          
           
           
           
@@ -532,6 +538,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Le profil changeant, la société change.</p>
 <p>---</p>
 <p><em>Ce texte est un peu difficile en raison de mon échec en tant qu’écrivain. Mais voici le concept que je suis en train de voir, et je m’excuse déjà non seulement pour le texte sec, sans histoires agréables et, pire encore, pouvant être avec une thèse totalement erronée. L’originalité - en me trompant ou non - je pense que je suis en train de la livrer, même si de manière mal rédigée. Si je réussis, j’améliore ce texte dès que cette compétence et le temps me viendront.</em></p>
+        
         
         
         
@@ -762,7 +769,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       <h3>Recevez les nouveaux articles par email</h3>
       <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
         <input type="email" id="newsletter-email" placeholder="Votre email" required>
-        <select id="newsletter-lang"><option value="pt">Português</option><option value="en">English</option><option value="es">Español</option><option value="fr" selected>Français</option><option value="de">Deutsch</option></select>
+        <select id="newsletter-lang"><option value="pt">Português</option><option value="en">English</option><option value="es">Español</option><option value="fr" selected>Français</option><option value="de">Deutsch</option><option value="it">Italiano</option><option value="ja">日本語</option></select>
         <button type="button" id="newsletter-btn" onclick="submitNewsletter()">S'abonner</button>
       </form>
       <div class="newsletter-message" id="newsletter-message"></div>
@@ -773,18 +780,42 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var lang = document.getElementById('newsletter-lang').value;
         var btn = document.getElementById('newsletter-btn');
         var msg = document.getElementById('newsletter-message');
+        
         if (!email) return;
+        
         btn.disabled = true;
-        msg.textContent = '';
+        msg.textContent = 'Inscrevendo...';
         msg.className = 'newsletter-message';
-        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbzhe08vhP5f-yqYmQ87mS7pN1c35usLNSw8782VRESX/dev';
+        
+        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
+        
+        if (!WEBAPP_URL || WEBAPP_URL === 'undefined') {
+          msg.textContent = "Erro: WEBAPP_URL está vazia. Rode storeWebAppUrl() no painel.";
+          msg.className = 'newsletter-message error';
+          btn.disabled = false;
+          return;
+        }
+
         fetch(WEBAPP_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
-        }).then(function(r) {
-          return r.json();
-        }).then(function(data) {
+        })
+        .then(function(r) {
+          // Lida com o erro se a resposta não for 200 OK (ex: erro de permissão ou CORS)
+          if (!r.ok) throw new Error('Falha na rede: Status ' + r.status);
+          return r.text(); // Pega como texto puro primeiro para podermos debugar
+        })
+        .then(function(text) {
+          console.log("Resposta do servidor:", text);
+          var data;
+          
+          try {
+             data = JSON.parse(text);
+          } catch(e) {
+             throw new Error('Servidor não retornou JSON válido. Resposta: ' + text.substring(0, 50) + '...');
+          }
+
           if (data.success) {
             msg.textContent = "Abonnement réussi !";
             msg.className = 'newsletter-message success';
@@ -793,13 +824,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.textContent = "Cet email est déjà abonné.";
             msg.className = 'newsletter-message error';
           } else {
-            msg.textContent = "Erreur lors de l'abonnement. Réessayez.";
+            // Imprime na tela O MOTIVO exato retornado pelo backend
+            msg.textContent = "Erro do App Script: " + (data.error || "Erro desconhecido.");
             msg.className = 'newsletter-message error';
           }
-        }).catch(function() {
-          msg.textContent = "Erreur lors de l'abonnement. Réessayez.";
+        })
+        .catch(function(err) {
+          msg.textContent = "Erro de conexão: " + err.message;
           msg.className = 'newsletter-message error';
-        }).finally(function() {
+          console.error("Erro completo:", err);
+        })
+        .finally(function() {
           btn.disabled = false;
         });
       }

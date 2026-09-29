@@ -14,6 +14,13 @@
   <meta property="og:image:alt" content="Yin Yang">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://blog.vladi.dev/articles/yin-yang.html">
+  <link rel="canonical" href="https://blog.vladi.dev/articles/yin-yang.html">
+  <link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/articles/yin-yang.html">
+  <link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/articles/yin-yang.html">
+  <link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/articles/yin-yang.html">
+  <link rel="alternate" hreflang="fr" href="https://blog.vladi.dev/fr/articles/yin-yang.html">
+  <link rel="alternate" hreflang="de" href="https://blog.vladi.dev/de/articles/yin-yang.html">
+  <link rel="alternate" hreflang="x-default" href="https://blog.vladi.dev/articles/yin-yang.html">
   <link rel="alternate" type="application/rss+xml" title="Blog de Vladimir Dietrich" href="https://blog.vladi.dev/feed.xml" />
   <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -482,7 +489,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
  </header>
   <main class="container">
     <div id="article-view" class="article-view">
-      <div class="hero-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/yin-yang-image-0.jpg" alt="Yin Yang" class="hero-image">  </div>
+      <div class="hero-image-container"><img src="https://blog.vladi.dev/images/yin-yang-image-0.jpg" alt="Yin Yang" class="hero-image" fetchpriority="high">  </div>
       <div class="article-content-wrapper">
         <a href="/index.html" class="back-button">← Back to all articles</a>
 
@@ -496,9 +503,10 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           </div>
         </div>
         
-        <div class="language-switcher"><strong>Português</strong><span>|</span><a href="/en/articles/yin-yang.html">English</a><span>|</span><a href="/fr/articles/yin-yang.html">Français</a><span>|</span><a href="/de/articles/yin-yang.html">Deutsch</a><span>|</span><a href="/es/articles/yin-yang.html">Español</a></div>
+        <div class="language-switcher"><strong>Português</strong><span>|</span><a href="/en/articles/yin-yang.html">English</a><span>|</span><a href="/es/articles/yin-yang.html">Español</a><span>|</span><a href="/fr/articles/yin-yang.html">Français</a><span>|</span><a href="/de/articles/yin-yang.html">Deutsch</a></div>
 
         <div class="article-content">
+          
           
           
           
@@ -550,6 +558,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Pode ser que o modo paz e amor rapidamente substitua o predomínio do modo estressado.</p>
 <p>Se realmente temos estes dois modos - é o que a biologia nos indica - seria interessante ver a humanidade florescer com predomínio do modo paz e amor, só para comparar com nosso predomínio atual, que é o ṕredomínio do modo estressado.</p>
 
+        
         
         
         
@@ -780,7 +789,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       <h3>Receba novos artigos por email</h3>
       <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
         <input type="email" id="newsletter-email" placeholder="Seu email" required>
-        <select id="newsletter-lang"><option value="pt" selected>Português</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option></select>
+        <select id="newsletter-lang"><option value="pt" selected>Português</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="it">Italiano</option><option value="ja">日本語</option></select>
         <button type="button" id="newsletter-btn" onclick="submitNewsletter()">Inscrever-se</button>
       </form>
       <div class="newsletter-message" id="newsletter-message"></div>
@@ -791,18 +800,42 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var lang = document.getElementById('newsletter-lang').value;
         var btn = document.getElementById('newsletter-btn');
         var msg = document.getElementById('newsletter-message');
+        
         if (!email) return;
+        
         btn.disabled = true;
-        msg.textContent = '';
+        msg.textContent = 'Inscrevendo...';
         msg.className = 'newsletter-message';
-        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbzhe08vhP5f-yqYmQ87mS7pN1c35usLNSw8782VRESX/dev';
+        
+        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
+        
+        if (!WEBAPP_URL || WEBAPP_URL === 'undefined') {
+          msg.textContent = "Erro: WEBAPP_URL está vazia. Rode storeWebAppUrl() no painel.";
+          msg.className = 'newsletter-message error';
+          btn.disabled = false;
+          return;
+        }
+
         fetch(WEBAPP_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
-        }).then(function(r) {
-          return r.json();
-        }).then(function(data) {
+        })
+        .then(function(r) {
+          // Lida com o erro se a resposta não for 200 OK (ex: erro de permissão ou CORS)
+          if (!r.ok) throw new Error('Falha na rede: Status ' + r.status);
+          return r.text(); // Pega como texto puro primeiro para podermos debugar
+        })
+        .then(function(text) {
+          console.log("Resposta do servidor:", text);
+          var data;
+          
+          try {
+             data = JSON.parse(text);
+          } catch(e) {
+             throw new Error('Servidor não retornou JSON válido. Resposta: ' + text.substring(0, 50) + '...');
+          }
+
           if (data.success) {
             msg.textContent = "Inscrição realizada com sucesso!";
             msg.className = 'newsletter-message success';
@@ -811,13 +844,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.textContent = "Este email já está inscrito.";
             msg.className = 'newsletter-message error';
           } else {
-            msg.textContent = "Erro ao inscrever. Tente novamente.";
+            // Imprime na tela O MOTIVO exato retornado pelo backend
+            msg.textContent = "Erro do App Script: " + (data.error || "Erro desconhecido.");
             msg.className = 'newsletter-message error';
           }
-        }).catch(function() {
-          msg.textContent = "Erro ao inscrever. Tente novamente.";
+        })
+        .catch(function(err) {
+          msg.textContent = "Erro de conexão: " + err.message;
           msg.className = 'newsletter-message error';
-        }).finally(function() {
+          console.error("Erro completo:", err);
+        })
+        .finally(function() {
           btn.disabled = false;
         });
       }

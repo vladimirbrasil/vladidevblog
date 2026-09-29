@@ -13,7 +13,11 @@
   <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neither-tv-nor-youtube-image-0.jpg">
   <meta property="og:image:alt" content="Neither tv, nor youtube">
   <meta property="og:type" content="article">
-  <meta property="og:url" content="https://blog.vladi.dev/articles/neither-tv-nor-youtube.html">
+  <meta property="og:url" content="https://blog.vladi.dev/en/articles/neither-tv-nor-youtube.html">
+  <link rel="canonical" href="https://blog.vladi.dev/en/articles/neither-tv-nor-youtube.html">
+  <link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/articles/neither-tv-nor-youtube.html">
+  <link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/articles/neither-tv-nor-youtube.html">
+  <link rel="alternate" hreflang="x-default" href="https://blog.vladi.dev/articles/neither-tv-nor-youtube.html">
   <link rel="alternate" type="application/rss+xml" title="Vladimir Dietrich's Blog" href="https://blog.vladi.dev/en/feed.xml" />
   <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -482,7 +486,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
  </header>
   <main class="container">
     <div id="article-view" class="article-view">
-      <div class="hero-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/neither-tv-nor-youtube-image-0.jpg" alt="Neither tv, nor youtube" class="hero-image">  </div>
+      <div class="hero-image-container"><img src="https://blog.vladi.dev/images/neither-tv-nor-youtube-image-0.jpg" alt="Neither tv, nor youtube" class="hero-image" fetchpriority="high">  </div>
       <div class="article-content-wrapper">
         <a href="/en/index.html" class="back-button">← Back to all articles</a>
 
@@ -507,6 +511,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           
           
           
+          
           <p></p>
 <p></p>
 <p>A permanent live-streaming. But one that only uses bandwidth when the person turns on your channel.</p>
@@ -520,6 +525,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 <p>Second. Older generations that still spent their childhood with TV may enjoy the passivity and synchronicity that this TV mode allows. With the addition of the democracy that YouTube allows. Rather than friends of governors and presidents, that is, bandwidth holders in the radio and TV band, anyone - you, me - can create and broadcast your TV channel. Like a TV. All of us can create any passive broadcast schedule.</p>
 <p>Third. Passivity and synchronicity can be part of the human essence, that is, not just something that lasts only the end of the last tv-generation.</p>
 <p>I briefly explained a technically simple idea. But I know I should go into more detail. Whoever doesn’t understand let me know and I may rewrite this short article.</p>
+        
         
         
         
@@ -750,7 +756,7 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       <h3>Get new articles by email</h3>
       <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
         <input type="email" id="newsletter-email" placeholder="Your email" required>
-        <select id="newsletter-lang"><option value="pt">Português</option><option value="en" selected>English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option></select>
+        <select id="newsletter-lang"><option value="pt">Português</option><option value="en" selected>English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="it">Italiano</option><option value="ja">日本語</option></select>
         <button type="button" id="newsletter-btn" onclick="submitNewsletter()">Subscribe</button>
       </form>
       <div class="newsletter-message" id="newsletter-message"></div>
@@ -761,18 +767,42 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
         var lang = document.getElementById('newsletter-lang').value;
         var btn = document.getElementById('newsletter-btn');
         var msg = document.getElementById('newsletter-message');
+        
         if (!email) return;
+        
         btn.disabled = true;
-        msg.textContent = '';
+        msg.textContent = 'Inscrevendo...';
         msg.className = 'newsletter-message';
-        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbzhe08vhP5f-yqYmQ87mS7pN1c35usLNSw8782VRESX/dev';
+        
+        var WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
+        
+        if (!WEBAPP_URL || WEBAPP_URL === 'undefined') {
+          msg.textContent = "Erro: WEBAPP_URL está vazia. Rode storeWebAppUrl() no painel.";
+          msg.className = 'newsletter-message error';
+          btn.disabled = false;
+          return;
+        }
+
         fetch(WEBAPP_URL, {
           method: 'POST',
           headers: { 'Content-Type': 'text/plain;charset=utf-8' },
           body: JSON.stringify({ email: email, lang: lang, blogId: 'vladidev' })
-        }).then(function(r) {
-          return r.json();
-        }).then(function(data) {
+        })
+        .then(function(r) {
+          // Lida com o erro se a resposta não for 200 OK (ex: erro de permissão ou CORS)
+          if (!r.ok) throw new Error('Falha na rede: Status ' + r.status);
+          return r.text(); // Pega como texto puro primeiro para podermos debugar
+        })
+        .then(function(text) {
+          console.log("Resposta do servidor:", text);
+          var data;
+          
+          try {
+             data = JSON.parse(text);
+          } catch(e) {
+             throw new Error('Servidor não retornou JSON válido. Resposta: ' + text.substring(0, 50) + '...');
+          }
+
           if (data.success) {
             msg.textContent = "Successfully subscribed!";
             msg.className = 'newsletter-message success';
@@ -781,13 +811,17 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
             msg.textContent = "This email is already subscribed.";
             msg.className = 'newsletter-message error';
           } else {
-            msg.textContent = "Subscription error. Please try again.";
+            // Imprime na tela O MOTIVO exato retornado pelo backend
+            msg.textContent = "Erro do App Script: " + (data.error || "Erro desconhecido.");
             msg.className = 'newsletter-message error';
           }
-        }).catch(function() {
-          msg.textContent = "Subscription error. Please try again.";
+        })
+        .catch(function(err) {
+          msg.textContent = "Erro de conexão: " + err.message;
           msg.className = 'newsletter-message error';
-        }).finally(function() {
+          console.error("Erro completo:", err);
+        })
+        .finally(function() {
           btn.disabled = false;
         });
       }
