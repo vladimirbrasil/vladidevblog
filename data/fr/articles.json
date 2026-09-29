@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "eterna-estabilidade",
+      "title": "Stabilité Éternelle",
+      "author": "Vladimir Dietrich",
+      "date": "2026-09-29",
+      "readingTime": 6,
+      "heroImage": {
+        "fileName": "eterna-estabilidade-image-0.jpg",
+        "githubPath": "images/eterna-estabilidade-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eterna-estabilidade-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-09-29T14:15:26.073Z"
+    },
+    {
       "id": "casas-vazias",
       "title": "Maisons Vides",
       "author": "Vladimir Dietrich",
@@ -520,5 +535,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-09-03T07:39:55.105Z"
+  "lastUpdated": "2026-09-29T14:17:56.233Z"
 }

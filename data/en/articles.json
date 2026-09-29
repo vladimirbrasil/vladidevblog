@@ -1,13 +1,19 @@
 {
   "articles": [
     {
-      "id": "o-que-aconteceu-com-quem-estudou-numa-escola-sem-aulas-sem-provas-e-sem-notas",
-      "title": "What happened to those who studied in a school without classes, without tests, and without grades",
+      "id": "eterna-estabilidade",
+      "title": "Eternal Stability",
       "author": "Vladimir Dietrich",
-      "date": "2026-08-31",
-      "readingTime": 7,
-      "heroImage": null,
-      "lastUpdated": "2026-08-31T07:39:39.845Z"
+      "date": "2026-09-29",
+      "readingTime": 6,
+      "heroImage": {
+        "fileName": "eterna-estabilidade-image-0.jpg",
+        "githubPath": "images/eterna-estabilidade-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eterna-estabilidade-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-09-29T14:15:26.073Z"
     },
     {
       "id": "casas-vazias",
@@ -619,5 +625,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-09-03T07:39:51.979Z"
+  "lastUpdated": "2026-09-29T14:17:55.797Z"
 }
