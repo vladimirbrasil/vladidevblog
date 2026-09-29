@@ -14,7 +14,52 @@
         "caption": ""
       },
       "lastUpdated": "2026-09-29T15:11:27.258Z"
+    },
+    {
+      "id": "quero-brincar",
+      "title": "Voglio giocare",
+      "author": "Vladimir Dietrich",
+      "date": "2026-07-22",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "quero-brincar-image-0.png",
+        "githubPath": "images/quero-brincar-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quero-brincar-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-09-29T15:29:27.312Z"
+    },
+    {
+      "id": "eugenia-na-comunicacao",
+      "title": "🍎 Eugenetica nella comunicazione?",
+      "author": "Vladimir Dietrich",
+      "date": "2022-02-11",
+      "readingTime": 12,
+      "heroImage": {
+        "fileName": "eugenia-na-comunicacao-image-0.jpg",
+        "githubPath": "images/eugenia-na-comunicacao-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-09-29T15:26:20.126Z"
+    },
+    {
+      "id": "a-curiosidade-humana",
+      "title": "La curiosità umana",
+      "author": "Vladimir Dietrich",
+      "date": "2019-09-11",
+      "readingTime": 11,
+      "heroImage": {
+        "fileName": "a-curiosidade-humana-image-0.jpg",
+        "githubPath": "images/a-curiosidade-humana-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-09-29T15:27:54.678Z"
     }
   ],
-  "lastUpdated": "2026-09-29T15:11:39.416Z"
+  "lastUpdated": "2026-09-29T15:29:40.773Z"
 }

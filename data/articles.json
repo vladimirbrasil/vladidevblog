@@ -52,7 +52,7 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2026-07-23T01:53:35.436Z"
+      "lastUpdated": "2026-09-29T15:29:27.312Z"
     },
     {
       "id": "proposito",
@@ -73,21 +73,6 @@
       "lastUpdated": "2026-06-26T07:38:37.435Z"
     },
     {
-      "id": "pinoquio",
-      "title": "Pinóquio",
-      "author": "Vladimir Dietrich",
-      "date": "2026-05-24",
-      "readingTime": 4,
-      "heroImage": {
-        "fileName": "pinoquio-image-0.png",
-        "githubPath": "images/pinoquio-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/pinoquio-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2026-05-25T07:38:46.159Z"
-    },
-    {
       "id": "o-melhor-cafe",
       "title": "O melhor café",
       "author": "Vladimir Dietrich",
@@ -101,6 +86,21 @@
         "caption": ""
       },
       "lastUpdated": "2026-05-24T12:20:36.525Z"
+    },
+    {
+      "id": "pinoquio",
+      "title": "Pinóquio",
+      "author": "Vladimir Dietrich",
+      "date": "2026-05-24",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "pinoquio-image-0.png",
+        "githubPath": "images/pinoquio-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/pinoquio-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-05-25T07:38:46.159Z"
     },
     {
       "id": "voce-e-meu-melhor-amigo",
@@ -538,7 +538,7 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-09-04T20:26:29.306Z"
+      "lastUpdated": "2026-09-29T15:26:20.126Z"
     },
     {
       "id": "por-que-cuspir-a-consciencia",
@@ -877,7 +877,7 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-09-04T20:36:43.380Z"
+      "lastUpdated": "2026-09-29T15:27:54.678Z"
     },
     {
       "id": "repensando-o-sistema-de-metas",
@@ -985,5 +985,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-09-29T15:11:38.911Z"
+  "lastUpdated": "2026-09-29T15:29:40.174Z"
 }

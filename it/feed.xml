@@ -5,7 +5,7 @@
     <link>https://blog.vladi.dev/it/</link>
     <description>Blog di Vladimir Dietrich - Vladimir Dietrich</description>
     <language>it</language>
-    <lastBuildDate>Tue, 29 Sep 2026 15:11:39 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 15:29:40 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/it/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eterna Stabilità</title>
@@ -14,6 +14,30 @@
       <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eterna-estabilidade-image-0.jpg&quot; alt=&quot;Eterna Stabilità&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>Voglio giocare</title>
+      <link>https://blog.vladi.dev/it/articles/quero-brincar.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/it/articles/quero-brincar.html</guid>
+      <pubDate>Wed, 22 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quero-brincar-image-0.png&quot; alt=&quot;Voglio giocare&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>🍎 Eugenetica nella comunicazione?</title>
+      <link>https://blog.vladi.dev/it/articles/eugenia-na-comunicacao.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/it/articles/eugenia-na-comunicacao.html</guid>
+      <pubDate>Fri, 11 Feb 2022 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg&quot; alt=&quot;🍎 Eugenetica nella comunicazione?&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>La curiosità umana</title>
+      <link>https://blog.vladi.dev/it/articles/a-curiosidade-humana.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/it/articles/a-curiosidade-humana.html</guid>
+      <pubDate>Wed, 11 Sep 2019 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg&quot; alt=&quot;La curiosità umana&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

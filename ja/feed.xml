@@ -5,7 +5,7 @@
     <link>https://blog.vladi.dev/ja/</link>
     <description>Vladimir Dietrich のブログ - Vladimir Dietrich</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 29 Sep 2026 15:11:39 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 15:29:40 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/ja/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>永遠の安定</title>
@@ -14,6 +14,30 @@
       <pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eterna-estabilidade-image-0.jpg&quot; alt=&quot;永遠の安定&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>遊びたい</title>
+      <link>https://blog.vladi.dev/ja/articles/quero-brincar.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/ja/articles/quero-brincar.html</guid>
+      <pubDate>Wed, 22 Jul 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quero-brincar-image-0.png&quot; alt=&quot;遊びたい&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>🍎 コミュニケーションにおける優生学？</title>
+      <link>https://blog.vladi.dev/ja/articles/eugenia-na-comunicacao.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/ja/articles/eugenia-na-comunicacao.html</guid>
+      <pubDate>Fri, 11 Feb 2022 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eugenia-na-comunicacao-image-0.jpg&quot; alt=&quot;🍎 コミュニケーションにおける優生学？&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>人間の好奇心</title>
+      <link>https://blog.vladi.dev/ja/articles/a-curiosidade-humana.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/ja/articles/a-curiosidade-humana.html</guid>
+      <pubDate>Wed, 11 Sep 2019 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg&quot; alt=&quot;人間の好奇心&quot; /&gt;</description>
     </item>
   </channel>
 </rss>
