@@ -5,7 +5,7 @@
     <link>https://blog.vladi.dev/ja/</link>
     <description>Vladimir Dietrich のブログ - Vladimir Dietrich</description>
     <language>ja</language>
-    <lastBuildDate>Tue, 29 Sep 2026 15:29:40 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 15:36:24 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/ja/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>永遠の安定</title>
@@ -24,6 +24,30 @@
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quero-brincar-image-0.png&quot; alt=&quot;遊びたい&quot; /&gt;</description>
     </item>
     <item>
+      <title>ピノッキオ</title>
+      <link>https://blog.vladi.dev/ja/articles/pinoquio.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/ja/articles/pinoquio.html</guid>
+      <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/pinoquio-image-0.png&quot; alt=&quot;ピノッキオ&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>人類の均衡点の変化</title>
+      <link>https://blog.vladi.dev/ja/articles/mudando-o-ponto-de-equilibrio-da-humanidade.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/ja/articles/mudando-o-ponto-de-equilibrio-da-humanidade.html</guid>
+      <pubDate>Tue, 23 Sep 2025 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/mudando-o-ponto-de-equilibrio-da-humanidade-image-0.jpg&quot; alt=&quot;人類の均衡点の変化&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>機械が考え、人間が感じるとき</title>
+      <link>https://blog.vladi.dev/ja/articles/quando-a-maquina-pensa-o-homem-sente.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/ja/articles/quando-a-maquina-pensa-o-homem-sente.html</guid>
+      <pubDate>Tue, 15 Jul 2025 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quando-a-maquina-pensa-o-homem-sente-image-0.png&quot; alt=&quot;機械が考え、人間が感じるとき&quot; /&gt;</description>
+    </item>
+    <item>
       <title>🍎 コミュニケーションにおける優生学？</title>
       <link>https://blog.vladi.dev/ja/articles/eugenia-na-comunicacao.html</link>
       <guid isPermaLink="true">https://blog.vladi.dev/ja/articles/eugenia-na-comunicacao.html</guid>
@@ -38,6 +62,14 @@
       <pubDate>Wed, 11 Sep 2019 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-curiosidade-humana-image-0.jpg&quot; alt=&quot;人間の好奇心&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>目標システムの再考</title>
+      <link>https://blog.vladi.dev/ja/articles/repensando-o-sistema-de-metas.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/ja/articles/repensando-o-sistema-de-metas.html</guid>
+      <pubDate>Wed, 28 Nov 2018 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/repensando-o-sistema-de-metas-image-0.jpg&quot; alt=&quot;目標システムの再考&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

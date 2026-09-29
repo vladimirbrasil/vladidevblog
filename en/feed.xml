@@ -5,7 +5,7 @@
     <link>https://blog.vladi.dev/en/</link>
     <description>Vladimir Dietrich&apos;s Blog - Vladimir Dietrich</description>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Sep 2026 15:29:40 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 15:36:23 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/en/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Eternal Stability</title>
@@ -40,20 +40,20 @@
       <description></description>
     </item>
     <item>
-      <title>The best coffee</title>
-      <link>https://blog.vladi.dev/en/articles/o-melhor-cafe.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/en/articles/o-melhor-cafe.html</guid>
-      <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/o-melhor-cafe-image-0.png&quot; alt=&quot;The best coffee&quot; /&gt;</description>
-    </item>
-    <item>
       <title>Pinocchio</title>
       <link>https://blog.vladi.dev/en/articles/pinoquio.html</link>
       <guid isPermaLink="true">https://blog.vladi.dev/en/articles/pinoquio.html</guid>
       <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/pinoquio-image-0.png&quot; alt=&quot;Pinocchio&quot; /&gt;</description>
+    </item>
+    <item>
+      <title>The best coffee</title>
+      <link>https://blog.vladi.dev/en/articles/o-melhor-cafe.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/en/articles/o-melhor-cafe.html</guid>
+      <pubDate>Sun, 24 May 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/o-melhor-cafe-image-0.png&quot; alt=&quot;The best coffee&quot; /&gt;</description>
     </item>
     <item>
       <title>Value</title>
@@ -96,12 +96,12 @@
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estao-as-pessoas-legais-image-0.png&quot; alt=&quot;Where are the cool people?&quot; /&gt;</description>
     </item>
     <item>
-      <title>Changing Humanity&apos;s Equilibrium Point</title>
+      <title>Changing Humanity&apos;s Tipping Point</title>
       <link>https://blog.vladi.dev/en/articles/mudando-o-ponto-de-equilibrio-da-humanidade.html</link>
       <guid isPermaLink="true">https://blog.vladi.dev/en/articles/mudando-o-ponto-de-equilibrio-da-humanidade.html</guid>
       <pubDate>Tue, 23 Sep 2025 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/mudando-o-ponto-de-equilibrio-da-humanidade-image-0.jpg&quot; alt=&quot;Changing Humanity&amp;apos;s Equilibrium Point&quot; /&gt;</description>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/mudando-o-ponto-de-equilibrio-da-humanidade-image-0.jpg&quot; alt=&quot;Changing Humanity&amp;apos;s Tipping Point&quot; /&gt;</description>
     </item>
     <item>
       <title>Two-Hour Interview</title>

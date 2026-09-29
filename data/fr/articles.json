@@ -55,6 +55,21 @@
       "lastUpdated": "2026-07-04T07:38:55.356Z"
     },
     {
+      "id": "pinoquio",
+      "title": "Pinocchio",
+      "author": "Vladimir Dietrich",
+      "date": "2026-05-24",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "pinoquio-image-0.png",
+        "githubPath": "images/pinoquio-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/pinoquio-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-09-29T15:33:02.497Z"
+    },
+    {
       "id": "o-melhor-cafe",
       "title": "Le meilleur café",
       "author": "Vladimir Dietrich",
@@ -68,21 +83,6 @@
         "caption": ""
       },
       "lastUpdated": "2026-05-24T12:20:36.525Z"
-    },
-    {
-      "id": "pinoquio",
-      "title": "Pinocchio",
-      "author": "Vladimir Dietrich",
-      "date": "2026-05-24",
-      "readingTime": 4,
-      "heroImage": {
-        "fileName": "pinoquio-image-0.png",
-        "githubPath": "images/pinoquio-image-0.png",
-        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/pinoquio-image-0.png",
-        "altText": "",
-        "caption": ""
-      },
-      "lastUpdated": "2026-05-25T07:38:46.159Z"
     },
     {
       "id": "valor",
@@ -161,7 +161,7 @@
     },
     {
       "id": "mudando-o-ponto-de-equilibrio-da-humanidade",
-      "title": "Changer le point d'équilibre de l'humanité",
+      "title": "Modifier le point d'équilibre de l'humanité",
       "author": "Vladimir Dietrich",
       "date": "2025-09-23",
       "readingTime": 7,
@@ -172,7 +172,7 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-09-24T18:49:53.720Z"
+      "lastUpdated": "2026-09-29T15:36:09.109Z"
     },
     {
       "id": "entrevista-de-duas-horas",
@@ -221,7 +221,7 @@
     },
     {
       "id": "quando-a-maquina-pensa-o-homem-sente",
-      "title": "Quand la machine pense, l'homme ressent",
+      "title": "Quand la Machine Pense, l'Homme Ressent",
       "author": "Vladimir Dietrich",
       "date": "2025-07-15",
       "readingTime": 3,
@@ -232,7 +232,7 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2025-09-04T20:13:54.691Z"
+      "lastUpdated": "2026-09-29T15:34:26.742Z"
     },
     {
       "id": "aposentadoria-da-razao",
@@ -502,7 +502,7 @@
         "altText": "Photo by J W on Unsplash",
         "caption": "Photo by J W on Unsplash"
       },
-      "lastUpdated": "2025-09-04T20:38:53.775Z"
+      "lastUpdated": "2026-09-29T15:35:13.429Z"
     },
     {
       "id": "spam-calls",
@@ -550,5 +550,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-09-29T15:29:40.516Z"
+  "lastUpdated": "2026-09-29T15:36:23.887Z"
 }

@@ -31,6 +31,51 @@
       "lastUpdated": "2026-09-29T15:29:27.312Z"
     },
     {
+      "id": "pinoquio",
+      "title": "Pinocchio",
+      "author": "Vladimir Dietrich",
+      "date": "2026-05-24",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "pinoquio-image-0.png",
+        "githubPath": "images/pinoquio-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/pinoquio-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-09-29T15:33:02.497Z"
+    },
+    {
+      "id": "mudando-o-ponto-de-equilibrio-da-humanidade",
+      "title": "Cambiare il punto di equilibrio dell'umanità",
+      "author": "Vladimir Dietrich",
+      "date": "2025-09-23",
+      "readingTime": 7,
+      "heroImage": {
+        "fileName": "mudando-o-ponto-de-equilibrio-da-humanidade-image-0.jpg",
+        "githubPath": "images/mudando-o-ponto-de-equilibrio-da-humanidade-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/mudando-o-ponto-de-equilibrio-da-humanidade-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-09-29T15:36:09.109Z"
+    },
+    {
+      "id": "quando-a-maquina-pensa-o-homem-sente",
+      "title": "Quando la Macchina Pensa, l'Uomo Sente",
+      "author": "Vladimir Dietrich",
+      "date": "2025-07-15",
+      "readingTime": 3,
+      "heroImage": {
+        "fileName": "quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "githubPath": "images/quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/quando-a-maquina-pensa-o-homem-sente-image-0.png",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-09-29T15:34:26.742Z"
+    },
+    {
       "id": "eugenia-na-comunicacao",
       "title": "🍎 Eugenetica nella comunicazione?",
       "author": "Vladimir Dietrich",
@@ -59,7 +104,22 @@
         "caption": ""
       },
       "lastUpdated": "2026-09-29T15:27:54.678Z"
+    },
+    {
+      "id": "repensando-o-sistema-de-metas",
+      "title": "Ripensare il sistema degli obiettivi",
+      "author": "Vladimir Dietrich",
+      "date": "2018-11-28",
+      "readingTime": 11,
+      "heroImage": {
+        "fileName": "repensando-o-sistema-de-metas-image-0.jpg",
+        "githubPath": "images/repensando-o-sistema-de-metas-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/repensando-o-sistema-de-metas-image-0.jpg",
+        "altText": "Photo by J W on Unsplash",
+        "caption": "Photo by J W on Unsplash"
+      },
+      "lastUpdated": "2026-09-29T15:35:13.429Z"
     }
   ],
-  "lastUpdated": "2026-09-29T15:29:40.773Z"
+  "lastUpdated": "2026-09-29T15:36:24.251Z"
 }
