@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "id": "eterna-estabilidade",
+      "title": "永遠の安定",
+      "author": "Vladimir Dietrich",
+      "date": "2026-09-29",
+      "readingTime": 6,
+      "heroImage": {
+        "fileName": "eterna-estabilidade-image-0.jpg",
+        "githubPath": "images/eterna-estabilidade-image-0.jpg",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eterna-estabilidade-image-0.jpg",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-09-29T15:11:27.258Z"
+    }
+  ],
+  "lastUpdated": "2026-09-29T15:11:39.515Z"
+}

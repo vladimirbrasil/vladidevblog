@@ -1,21 +1,16 @@
 
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="it">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eterna Estabilidade - Blog de Vladimir Dietrich</title>
+  <title>Blog di Vladimir Dietrich</title>
   
-  <meta name="description" content="Luis Fernando Veríssimo flertou com a possibilidade de uma estabilidade eterna em sua crônica A Frase.">
-  <meta name="author" content="Vladimir Dietrich">
-  <meta property="og:title" content="Eterna Estabilidade - Blog de Vladimir Dietrich">
-  <meta property="og:description" content="Luis Fernando Veríssimo flertou com a possibilidade de uma estabilidade eterna em sua crônica A Frase.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eterna-estabilidade-image-0.jpg">
-  <meta property="og:image:alt" content="Eterna Estabilidade">
-  <meta property="og:type" content="article">
-  <meta property="og:url" content="https://blog.vladi.dev/articles/eterna-estabilidade.html">
-  <link rel="alternate" type="application/rss+xml" title="Blog de Vladimir Dietrich" href="https://blog.vladi.dev/feed.xml" />
+  <meta name="description" content="Blog by Vladimir Dietrich">
+  <link rel="alternate" type="application/rss+xml" title="Blog di Vladimir Dietrich" href="https://blog.vladi.dev/it/feed.xml" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.css@8/themes/satellite-min.css" />
   <style>
+    
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; line-height: 1.58; color: rgba(41, 41, 41, 1); background-color: #fff; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 .header { border-bottom: 1px solid rgba(230, 230, 230, 1); padding: 25px 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); position: sticky; top: 0; z-index: 100; }
@@ -462,305 +457,122 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
 }
 .rss-link:hover { color: rgba(41, 41, 41, 1); }
 
-</style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Eterna Estabilidade","author":{"@type":"Person","name":"Vladimir Dietrich"},"datePublished":"2026-09-29","image":"https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eterna-estabilidade-image-0.jpg","description":"Luis Fernando Veríssimo flertou com a possibilidade de uma estabilidade eterna em sua crônica A Frase."}</script>
+
+    
+    /* === Medium-style Integrated Search Bar CSS (v3 - Final) === */
+    #searchbox-container {
+      margin-right: 24px;
+    }
+    .ais-SearchBox-form {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 38px;
+    }
+    .ais-SearchBox-input {
+      background-color: #f9f9f9;
+      border: 1px solid #f9f9f9;
+      border-radius: 99em;
+      padding: 8px 16px 8px 40px;
+      font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 15px;
+      height: 100%;
+      transition: all 0.2s ease-in-out;
+      
+      /* FIX #2: Give the input a fixed width to prevent layout shift */
+      width: 240px;
+
+      /* FIX #1: Use a background image for the icon for perfect alignment */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' viewBox='0 0 24 24'%3E%3Cpath fill='%236B6B6B' fill-rule='evenodd' d='M4.092 11.06a6.95 6.95 0 1 1 13.9 0 6.95 6.95 0 0 1-13.9 0m6.95-8.05a8.05 8.05 0 1 0 5.13 14.26l3.75 3.75a.56.56 0 1 0 .79-.79l-3.73-3.73A8.05 8.05 0 0 0 11.042 3z' clip-rule='evenodd'%3E%3C/path%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: left 14px center;
+      background-size: 20px 20px;
+    }
+    .ais-SearchBox-input:focus {
+      outline: none;
+      background-color: #fff;
+      border-color: #e0e0e0;
+      /* The width no longer changes on focus */
+    }
+    
+    .ais-SearchBox-input::placeholder { color: #8a8a8a; opacity: 1; }
+    .ais-SearchBox-input::-webkit-input-placeholder { color: #8a8a8a; }
+    .ais-SearchBox-input::-moz-placeholder { color: #8a8a8a; opacity: 1; }
+    .ais-SearchBox-input:-ms-input-placeholder { color: #8a8a8a; }
+    .ais-SearchBox-form::before { display: none !important; }
+
+    .ais-SearchBox-submit,
+    .ais-SearchBox-reset {
+      display: none;
+    }
+    
+    /* We no longer need the ::before rule for the icon */
+
+    .ais-Highlight-highlighted {
+        background-color: rgba(26, 137, 23, 0.1);
+        font-style: normal;
+    }
+  </style>
 </head>
 <body>
-  
   <header class="header">
-   <div class="header-content">
-     <a href="/index.html" class="logo">Vladimir Dietrich</a>
-     <nav class="nav-links">
+     <div class="header-content">
+       <a href="/it/index.html" class="logo">Vladimir Dietrich</a>
+       <nav class="nav-links">
  
-       <div class="language-flags"></div>
-       <a href="/feed.xml" class="rss-link" target="_blank" title="Feed RSS">
-         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
-       </a>
-       <a href="https://vladi.dev" target="_blank">Portfolio</a>
-       </nav>
-   </div>
- </header>
-  <main class="container">
-    <div id="article-view" class="article-view">
-      <div class="hero-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eterna-estabilidade-image-0.jpg" alt="Eterna Estabilidade" class="hero-image">  </div>
-      <div class="article-content-wrapper">
-        <a href="/index.html" class="back-button">← Back to all articles</a>
-
-        <div class="article-header">
-          <h1>Eterna Estabilidade</h1>
-          <div class="meta">
-            <span class="author-name">Vladimir Dietrich</span>
-            <span>·</span>
-            <span>September 28, 2026</span>
-            <span>·</span><span class="reading-time">6 min read</span>
-          </div>
+        <div class="language-flags">
+      <div class="language-dropdown" id="language-dropdown">
+        <div class="dropdown-toggle">
+          <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj48cGF0aCBmaWxsPSIjY2UyYjM3IiBkPSJNMCAwaDkwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDYwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjMDA5MjQ2IiBkPSJNMCAwaDMwMHY2MDBIMHoiLz48L3N2Zz4=" alt="Italiano">
+          <span>IT</span>
         </div>
-        
-        <div class="language-switcher"><strong>Português</strong><span>|</span><a href="/en/articles/eterna-estabilidade.html">English</a><span>|</span><a href="/fr/articles/eterna-estabilidade.html">Français</a><span>|</span><a href="/de/articles/eterna-estabilidade.html">Deutsch</a><span>|</span><a href="/es/articles/eterna-estabilidade.html">Español</a><span>|</span><a href="/it/articles/eterna-estabilidade.html">Italiano</a><span>|</span><a href="/ja/articles/eterna-estabilidade.html">日本語</a></div>
-
-        <div class="article-content">
-          <p>     </p>
-<p>Luis Fernando Veríssimo flertou com a possibilidade de uma estabilidade eterna em sua crônica <a href="https://rockbluescocaepipoca.wordpress.com/2009/08/10/a-frase-l-f-verissimo/" target="_blank" rel="noopener noreferrer">A Frase</a>.</p>
-<p>“Não atende nem mais a porta. Não se mexe da cadeira. Não lê mais nada, não vê televisão e fala somente o indispensável. Passa o dia sentado, de pernas cruzadas, com o olhar perdido. Alimenta-se de coisas vagamente brancas e bebe champanhe Brut em copos de tulipa. Com um leve sorriso nos cantos da boca.”</p>
-<p>Na crônica, “Bob” precisa trabalhar mas não vai. Estável. Eterno.</p>
-<p>Um futuro com 10 robôs para cada humano flerta com a mesma estabilidade do Bob, mas sem jamais precisar trabalhar - afinal, não vamos tirar empregos dos 10 robôs, vamos?</p>
-<p>O que acontece com a crônica de Luís Fernando Veríssimo se Bob nem precisar trabalhar, mesmo?</p>
-<p>Quero falar sobre esta tal estabilidade eterna. Podemos esquecer a crônica sobre Bob, um publicitário que fez uma super-frase publicitária e tomou champagne em silêncio o resto da vida.</p>
-<p>Pesquisas com ratos e crianças mostram que temos uma curiosidade natural para quê? Para coisas novas.</p>
-<p>&quot;Bebês (...) agarram qualquer objeto novo ao seu alcance (...). Essas ações diminuem drasticamente à medida que o bebê se familiariza com o objeto, mas retornam com força total quando um objeto novo e diferente substitui o antigo.&quot; - Free to Learn: Why Unleashing the Instinct to Play Will Make Our Children Happier, More Self-Reliant, and Better Students for Life, Basic Books, 2013, capa dura): página 125.</p>
-<p>Como podemos ter a tal estabilidade eterna - alimentar-se “de coisas vagamente brancas” e beber “champanhe Brut em copos de tulipa” - se somos movidos pela curiosidade por coisas novas?</p>
-<p>Estamos lidando com a possibilidade de longevidade aumentada - um milhão de anos - e sem precisar trabalhar - 10 robôs para cada humano.</p>
-<p>É possível viver um milhão de anos satisfazendo a curiosidade por coisas novas? Ou de pernas cruzadas, bebendo champagne e coisas brancas?</p>
-<p>A Frase de Luís Fernando Veríssimo é uma crônica atual.</p>
-<p>Ela fala sobre a dopamina, a necessidade da alcançar topos, novos desafios, “a frase perfeita”; só esqueceu de notar que a dopamina cessa a recompensa assim que se chega no topo, exigindo um novo desafio para injetar o prazer dopaminérgico, fugaz, em nossos fluxos corporais. De topo em topo, sem parar. A dopamina parece ser engrenagem importante da curiosidade.</p>
-<p>Beber champagne e comer coisas brancas de pernas cruzadas, sem fim, parece mais um monge sentado no topo do templo, nem tanto a busca dopaminérgica, incessante, por novos desafios. </p>
-<p>É possível que “Bob” tenha decidido parar de perseguir o ciclo dopaminérgico sem fim ao elaborar a melhor frase publicitária de sua época. Acalmou o coração, cessou sua dopamina para níveis basais, sentou. </p>
-<p>Ninguém precisa da melhor frase do mundo - ou de algum topo invejável - para decidir sentar como Bob fez. Viver com as dopaminas em níveis basais, meditando, escutando o silêncio, não requer ter sido o primeiro homem a escalar o topo do Everest, ou qualquer outra posição “única”.</p>
-<p>Ao contrário: se for pela molécula, quem persegue topos precisa de mais topos, é o que a dopamina exige, pois o prazer dopaminérgico só existe até meio segundo antes de você chegar no topo, cessando assim que chegamos. E fica ainda pior: nosso corpo impede muita dopamina de maneira muito frequente, exigindo dobrar a dose para o mesmo prazer, quando emendamos ações dopaminérgicas uma em seguida da outra.</p>
-<p>Então nosso Bob por coincidência resolveu parar com os ciclos dopaminérgicos ao elaborar a última frase publicitária.</p>
-<p>A tese da eterna curiosidade humana exigirá que outros Bobs - Joões, Carlas - produzam mais frases publicitárias, de maneira incessante, pois a humanidade enjoa, se acostuma, com uma frase, com uma música, com uma casa, com um marido, com um jardim, com qualquer coisa e, puxa, precisa de alguma variação de tempos em tempos. Após se afeiçoar com aquilo que era novo e já não é mais.</p>
-<p>É por isso que o mercado de entretenimento nunca, nunca, nunca (um milhão de vezes nunca) se esgotará.</p>
-<p>Em tese, nós não conseguimos assistir ao melhor filme de todos os tempos eternamente. Não há “melhor de todos os tempos” que aguente “eternamente”. Há?</p>
-<p>Então, nos contentamos com novos ciclos, não tão bons mas novos, que exigem nosso tatear, compreender, sentir - até que vire rotina e comum, no eterno ciclo da curiosidade.</p>
-<p>Pode ser que isso seja a vida-morte-vida citada por Clarissa Pinkola Estés em seu Mulheres que Correm com os Lobos. Sempre matamos uma ideia que fica antiga, dando espaço para uma nova.</p>
-<p>Qualquer ator fazendo qualquer filme, qualquer músico mudando um pouco tudo que já sabíamos de música, qualquer publicitário mudando o jeito de frasear, são flores novas dando lugar a pétalas velhas.</p>
-<p>Por que Bob parou, então, após criar a melhor frase publicitária de sua época?</p>
-<p>Luís Fernando Veríssimo pode estar flertando com um outro assunto: quanto mais coisas produzimos em nossos infindáveis ciclos de vida-morte-vida que alimenta nossa curiosidade eterna, acabamos produzindo coisas claramente muito, muito melhores do que outras.</p>
-<p>O melhor vídeo do youtube que ensina sobre polias; o melhor filme tal; a melhor lasagna; a melhor frase publicitária.</p>
-<p>Como podemos aceitar o novo - para alimentar a curiosidade eterna - quando, cada vez mais, sabemos que o novo não é tão bom quanto o novo “daquela outra época”, porém que já não é novo e não satisfaz nossa curiosidade.</p>
-<p>Bem, inventamos o retorno cíclico: quando ficamos muito tempo sem ver o melhor filme de todos os tempos, podemos ver de novo e boa parte da satisfação retorna.</p>
-<p>Podemos, então, ciclicamente, revisitar as coisas acontecidas há tanto tempo atrás.</p>
-<p>Com a morte a cada 80 anos (em média) era mais fácil ainda, pois gerações inteiras poderiam se deliciar com as melhores ideias de gerações anteriores, apenas requentadas. Com a vida eterna, esse fenômeno ainda é possível, pois “morre” em nosso cérebro, mesmo que parcialmente, a memória vívida de tudo que experimentamos, então acabamos criando espaço para ter prazer ao assistir de novo a mesma coisa, tendo quase tanto prazer quanto na primeira vez, contanto que esperemos tempo o suficiente.</p>
-<p>Assim, um ponto de equilíbrio para uma humanidade eterna, sem precisar trabalhar, pode ser ter conteúdo o suficiente para, ciclicamente, variar, sim, mas reapresentar os mesmos conteúdos requentados a cada tanto tempo, para cada área - música, arte, frases publicitárias (etc). É possível automatizar algo assim.</p>
-<p>Escritórios de publicidade, de moda, de música já fazem isso com humanos no controle de maneira mais, ou menos, consciente. Reapresentam tendências passadas. Repaginam o velho. A cada tanto tempo. Isso pode ser automatizado, seguindo a teoria da curiosidade cíclica em vida. Quanto tempo um cérebro precisa para poder rever um conteúdo que adorou em determinada época passada? Para cada indivíduo. Isso pode ser customizado ou generalizado com folga para satisfazer a grande maioria. </p>
-<p>A eternidade sem precisar trabalhar está próxima - ou pelo menos corremos o risco de chegar nisso.</p>
-<p>Como vamos cruzar as pernas? Comer. Beber. Ler. </p>
-<figure><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eterna-estabilidade-image-1.jpg" alt="" /></figure>
-
-        </div>
-
-        
-    <div class="comments-section">
-      <h2>Respostas</h2>
-      
-      <div id="native-comments-list" class="native-comments-container">
-        <div id="loading-comments" style="display: flex; align-items: center; gap: 8px; color: #757575; font-size: 15px; padding: 20px 0;">
-          <style>@keyframes spin { 100% { transform: rotate(360deg); } }</style>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="animation: spin 1s linear infinite;"><path d="M21 12a9 9 0 1 1-6.219-8.56"></path></svg>
-          Carregando respostas...
+        <div class="dropdown-menu">
+          <a href="/index.html" title="Português"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjMwIj48cGF0aCBmaWxsPSIjMDBhNjVjIiBkPSJNMCAwaDkwMHY2MzBIMHoiLz48cGF0aCBmaWxsPSIjZmZkMTAwIiBkPSJNODEgMzE1IDQ1MCAzMy43NSA4MTkgMzE1IDQ1MCA1OTYuMjV6Ii8+PGNpcmNsZSBjeD0iNDUwIiBjeT0iMzE1IiByPSIxMjUiIGZpbGw9IiMwMDM4OWMiLz48L3N2Zz4=" alt="Português"><span>PT</span></a><a href="/en/index.html" title="English"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNDUwIj48cGF0aCBmaWxsPSIjYjI0MzA4IiBkPSJNMCAwaDc1MHY0NTBIMHoiLz48cGF0aCBkPSJNMCAwYzI1MCAxNTAgNTAwIDMwMCA3NTAgNDUwWm03NTAtNDUwQzUwMCAxNTAgMjUwIDMwMCAwIDQ1MFoiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzAwMjQ3ZCIgc3Ryb2tlLXdpZHRoPSIzMCIvPjxwYXRoIGQ9Ik0zNzUgMHY0NTBaTTAtMjI1YzcyNSAwIDcyNSAwIDc1MCAwWiIgZmlsbD0iI2ZmZiIgc3Ryb2tlPSIjY2YxNDJiIiBzdHJva2Utd2lkdGg9IjUwIi8+PHBhdGggZmlsbD0iIzAwMjQ3ZCIgZD0iTTAgMGwzNzUgMjI1Wm0wIDQ1MEwzNzUgMjI1Wm0zNzUgMGwtMzc1LTIyNVptMzc1LTQ1MEwzNzUgMjI1WiIvPjwvc3ZnPg==" alt="English"><span>EN</span></a><a href="/es/index.html" title="Español"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA3NTAgNTAwIj48cGF0aCBmaWxsPSIjYzYwYjFiIiBkPSJNMCAwaDc1MHY1MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZkZDAwIiBkPSJNMCAxMjVoNzUwdjI1MEgwWiIvPjwvc3ZnPg==" alt="Español"><span>ES</span></a><a href="/fr/index.html" title="Français"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj48cGF0aCBmaWxsPSIjZWQyOTM5IiBkPSJNMCAwaDkwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDYwMHY2MDBIMHoiLz48cGF0aCBmaWxsPSIjMDAyMzk1IiBkPSJNMCAwaDMwMHY2MDBIMHoiLz48L3N2Zz4=" alt="Français"><span>FR</span></a><a href="/de/index.html" title="Deutsch"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MDAgNDgwIj48cGF0aCBkPSJNMCAwaDgwMHY0ODBIMHoiLz48cGF0aCBmaWxsPSIjZDAwIiBkPSJNMCAxNjBoODAwdjMyMEgwWiIvPjxwYXRoIGZpbGw9IiNmZjllMDAiIGQ9Ik0wIDMyMGg4MDB2MTYwSDBaIi8+PC9zdmc+" alt="Deutsch"><span>DE</span></a><a href="/ja/index.html" title="日本語"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNjAwIj48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMCAwaDkwMHY2MDBIMHoiLz48Y2lyY2xlIGN4PSI0NTAiIGN5PSIzMDAiIHI9IjE4MCIgZmlsbD0iI2JjMDAyZCIvPjwvc3ZnPg==" alt="日本語"><span>JA</span></a>
         </div>
       </div>
-
-      <form id="native-comment-form" class="custom-comment-form" onsubmit="return false;">
-        <h3 style="font-size: 18px; margin-bottom: 8px; font-family: Charter, serif;">Deixe seu comentário</h3>
-        
-        <div id="reply-badge" class="replying-to-badge">
-          Respondendo a <span id="reply-to-name"></span>
-          <span class="cancel-reply-btn" onclick="cancelReply()">✕</span>
-        </div>
-
-        <input type="hidden" id="comment-parent-id" value="">
-        
-        <input type="text" id="website_url_hp" name="website_url_hp" style="display:none" tabindex="-1" autocomplete="off">
-        
-        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
-          <input type="text" id="comment-name" placeholder="Seu nome" required style="flex: 1; min-width: 200px;">
-          <input type="email" id="comment-email" placeholder="Seu email (não será publicado)" required style="flex: 1; min-width: 200px;">
-        </div>
-        <textarea id="comment-text" placeholder="Escreva sua resposta..." required></textarea>
-        
-        <button type="button" id="submit-comment-btn" onclick="submitNativeComment()">Enviar</button>
-        <div id="comment-status-msg" style="font-size: 14px; margin-top: 8px;"></div>
-      </form>
-
-      <script>
-        const WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw7HH9_Vigtgfp8dW5RNh0oFkq46T9ZHtBGhZ_sT_tPBXpMtkPbwMUxx2TXYnWJRgx9sA/exec';
-        const BLOG_ID = 'vladidev';
-        const ARTICLE_SLUG = 'eterna-estabilidade';
-
-        function loadComments() {
-          if(!WEBAPP_URL) return;
-          fetch(WEBAPP_URL + '?action=get_comments&blogId=' + BLOG_ID + '&slug=' + ARTICLE_SLUG)
-            .then(res => res.json())
-            .then(data => {
-              const container = document.getElementById('native-comments-list');
-              container.innerHTML = '';
-              
-              if(data.length === 0) {
-                container.innerHTML = '<p style="color: #757575; font-size: 14px;">Nenhum comentário ainda. Seja o primeiro!</p>';
-                return;
-              }
-
-              // Organiza em thread simples (pai e filho)
-              const parents = data.filter(c => !c.parentId);
-              const replies = data.filter(c => c.parentId);
-
-              parents.forEach(parent => {
-                container.appendChild(createCommentNode(parent));
-                // Anexa as respostas logo abaixo do pai
-                replies.filter(r => r.parentId === parent.id).forEach(reply => {
-                  container.appendChild(createCommentNode(reply, true));
-                });
-              });
-
-              // ========================================================
-              // NOVA LÓGICA: Rolar até a âncora (Hash) após carregar
-              // ========================================================
-              if (window.location.hash) {
-                // Remove o '#' do início para pegar só o ID
-                const targetId = window.location.hash.substring(1); 
-                const targetElement = document.getElementById(targetId);
-                
-                if (targetElement) {
-                  // Um pequeno delay de 100ms garante que o navegador terminou de pintar o HTML na tela
-                  setTimeout(() => {
-                    // Rola a tela suavemente até o elemento ficar no centro
-                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    
-                    // Toque de mestre: destaca o comentário temporariamente com um fundo verde bem clarinho
-                    targetElement.style.transition = 'background-color 1s ease-out';
-                    targetElement.style.backgroundColor = 'rgba(26, 137, 23, 0.1)'; 
-                    
-                    // Remove o destaque após 2 segundos
-                    setTimeout(() => {
-                      targetElement.style.backgroundColor = 'transparent';
-                    }, 2000);
-                  }, 100);
-                }
-              }
-              // ========================================================
-
-            })
-            .catch(err => console.error('Erro ao carregar comentários', err));
-        }
-
-        function createCommentNode(c, isReply = false) {
-          const div = document.createElement('div');
-          div.className = 'comment-item' + (isReply ? ' is-reply' : '');
-          
-          // NOVA LINHA: Adiciona o ID para a âncora funcionar
-          div.id = 'comment-' + c.id; 
-          
-          const dateStr = new Date(c.date).toLocaleDateString();
-          
-          div.innerHTML = `
-            <div class="comment-header">
-              <span class="comment-author">${escapeHTML(c.name)}</span>
-              <span class="comment-date">${dateStr}</span>
-            </div>
-            <div class="comment-body">${escapeHTML(c.comment)}</div>
-            ${!isReply ? `<button class="comment-reply-btn" onclick="setReply('${c.id}', '${escapeHTML(c.name)}')">Responder</button>` : ''}
-          `;
-          return div;
-        }
-
-        function escapeHTML(str) {
-          return str.replace(/[&<>'"]/g, tag => ({
-            '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
-          }[tag]));
-        }
-
-        function setReply(parentId, parentName) {
-          document.getElementById('comment-parent-id').value = parentId;
-          document.getElementById('reply-to-name').innerText = parentName;
-          document.getElementById('reply-badge').style.display = 'flex';
-          document.getElementById('comment-text').focus();
-        }
-
-        function cancelReply() {
-          document.getElementById('comment-parent-id').value = '';
-          document.getElementById('reply-badge').style.display = 'none';
-        }
-
-        function submitNativeComment() {
-          const btn = document.getElementById('submit-comment-btn');
-          const msg = document.getElementById('comment-status-msg');
-          
-          const name = document.getElementById('comment-name').value;
-          const email = document.getElementById('comment-email').value;
-          const text = document.getElementById('comment-text').value;
-          const honeypot = document.getElementById('website_url_hp').value;
-          const parentId = document.getElementById('comment-parent-id').value;
-
-          if(!name || !email || !text) {
-            msg.style.color = 'red';
-            msg.innerText = 'Por favor, preencha todos os campos.';
-            return;
-          }
-
-          btn.disabled = true;
-          msg.style.color = '#1a8917';
-          msg.innerText = 'Enviando...';
-
-          const payload = {
-            action: 'comment',
-            blogId: BLOG_ID,
-            slug: ARTICLE_SLUG,
-            name: name,
-            email: email,
-            comment: text,
-            parentId: parentId,
-            honeypot: honeypot
-          };
-
-          fetch(WEBAPP_URL, {
-            method: 'POST',
-            body: JSON.stringify(payload)
-          })
-          .then(res => res.json())
-          .then(data => {
-            if(data.success) {
-              msg.innerText = 'Comentário publicado com sucesso!';
-              document.getElementById('native-comment-form').reset();
-              cancelReply();
-              
-              // NOVA LINHA: Puxa os comentários de novo para o usuário 
-              // ver o que acabou de escrever sem precisar dar F5 na página
-              loadComments(); 
-            } else {
-              msg.style.color = 'red';
-              msg.innerText = 'Erro ao enviar. Tente novamente.';
-            }
-          })
-          .catch(() => {
-            msg.style.color = 'red';
-            msg.innerText = 'Erro de conexão.';
-          })
-          .finally(() => btn.disabled = false);
-        }
-
-        // Carrega os comentários e gerencia o scroll inicial
-        document.addEventListener('DOMContentLoaded', () => {
-          // Se o usuário veio de um link de e-mail (com hash de comentário),
-          // desce a tela imediatamente para a seção de comentários para ele ver o "Carregando..."
-          if (window.location.hash && window.location.hash.startsWith('#comment-')) {
-            const commentsSection = document.querySelector('.comments-section');
-            if (commentsSection) {
-              // 'auto' faz o pulo ser instantâneo, sem animação, 
-              // para o usuário já "nascer" no lugar certo da página
-              commentsSection.scrollIntoView({ behavior: 'auto' }); 
-            }
-          }
-          
-          // Agora sim, chama a API do Google Sheets
-          loadComments();
-        });        
-      </script>
     </div>
-   
 
-      </div>
+         <div class="search-widget-wrapper">
+           <button id="search-icon-btn" class="search-toggle-icon">
+             <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="rgba(117, 117, 117, 1)" fill-rule="evenodd" d="M4.092 11.06a6.95 6.95 0 1 1 13.9 0 6.95 6.95 0 0 1-13.9 0m6.95-8.05a8.05 8.05 0 1 0 5.13 14.26l3.75 3.75a.56.56 0 1 0 .79-.79l-3.73-3.73A8.05 8.05 0 0 0 11.042 3z" clip-rule="evenodd"></path></svg>
+           </button>
+ 
+           <div id="searchbox-container">
+             <button id="search-close-btn" class="search-toggle-icon">
+               <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="rgba(117, 117, 117, 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.25 6.75l-10.5 10.5M6.75 6.75l10.5 10.5"></path></svg>
+             </button>
+           </div>
+         </div>
+ 
+         <a href="/it/feed.xml" class="rss-link" target="_blank" title="Feed RSS">
+           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="6.18" cy="17.82" r="2.18"/><path d="M4 4.44v2.83c7.03 0 12.73 5.7 12.73 12.73h2.83c0-8.59-6.97-15.56-15.56-15.56zm0 5.66v2.83c3.9 0 7.07 3.17 7.07 7.07h2.83c0-5.47-4.43-9.9-9.9-9.9z"/></svg>
+         </a>
+         <a href="https://vladi.dev" target="_blank">Portfolio</a>
+         </nav>
+     </div>
+   </header>
+
+  <main class="container">
+    <div class="newsletter-banner">
+      <a href="#newsletter-form" onclick="document.getElementById('newsletter-form').scrollIntoView({behavior:'smooth'});return false;">Ricevi i nuovi articoli via email</a>
+    </div>
+    <div id="hits-container" style="display: none;">
+        <div id="hits" class="article-list"></div>
+    </div>
+    <div id="article-list-container">
+      <div id="article-list" class="article-list"><div class="article-item"><a href="/it/articles/eterna-estabilidade.html"><div class="article-image-container"><img src="https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/eterna-estabilidade-image-0.jpg" alt="Eterna Stabilità"></div><div class="article-text-content"><div class="article-date">Sep 28, 2026</div><h2 class="article-title">Eterna Stabilità</h2><div class="article-meta"><span class="author-name">Vladimir Dietrich</span><span>·</span><span class="reading-time">6 min read</span></div></div></a></div></div>
     </div>
   </main>
+
   <footer class="footer">
-    <div class="container">
+     <div class="container">
         
     <div class="newsletter-section">
-      <h3>Receba novos artigos por email</h3>
+      <h3>Ricevi i nuovi articoli via email</h3>
       <form class="newsletter-form" id="newsletter-form" onsubmit="return false;">
-        <input type="email" id="newsletter-email" placeholder="Seu email" required>
-        <select id="newsletter-lang"><option value="pt" selected>Português</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="it">Italiano</option><option value="ja">日本語</option></select>
-        <button type="button" id="newsletter-btn" onclick="submitNewsletter()">Inscrever-se</button>
+        <input type="email" id="newsletter-email" placeholder="La tua email" required>
+        <select id="newsletter-lang"><option value="pt">Português</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="it" selected>Italiano</option><option value="ja">日本語</option></select>
+        <button type="button" id="newsletter-btn" onclick="submitNewsletter()">Iscriviti</button>
       </form>
       <div class="newsletter-message" id="newsletter-message"></div>
     </div>
@@ -807,11 +619,11 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
           }
 
           if (data.success) {
-            msg.textContent = "Inscrição realizada com sucesso!";
+            msg.textContent = "Iscrizione completata!";
             msg.className = 'newsletter-message success';
             document.getElementById('newsletter-email').value = '';
           } else if (data.error === 'already_subscribed') {
-            msg.textContent = "Este email já está inscrito.";
+            msg.textContent = "Questa email è già iscritta.";
             msg.className = 'newsletter-message error';
           } else {
             // Imprime na tela O MOTIVO exato retornado pelo backend
@@ -836,15 +648,109 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
                 <img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" />
             </a>
             <p style="font-size: 0.9em; color: #666;">
-                Esta obra está licenciada sob <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+                Quest'opera è distribuita con licenza <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
                 <br>
-                <a href="/articles/politica-de-uso-e-reproducao-de-conteudo.html">Saiba como republicar este conteúdo</a>
+                <a href="/it/articles/politica-de-uso-e-reproducao-de-conteudo.html">Scopri come ripubblicare questo contenuto</a>
             </p>
         </div>
-    </div>
+     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
   <script>
+    const ALGOLIA_APP_ID = 'GAYT43LOGW';
+    const ALGOLIA_SEARCH_KEY = '1fd79b56d5bf1629a7f60e5cd63f4e40';
+    const ALGOLIA_INDEX_NAME = 'vladidev_it';
+
+    if (!ALGOLIA_APP_ID || ALGOLIA_APP_ID.startsWith('{{')) {
+      document.getElementById('searchbox-container').style.display = 'none';
+    } else {
+      const searchClient = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_SEARCH_KEY);
+      const hitsContainer = document.getElementById('hits-container');
+      const articleListContainer = document.getElementById('article-list-container');
+      const search = instantsearch({
+        indexName: ALGOLIA_INDEX_NAME,
+        searchClient,
+        onStateChange({ uiState, setUiState }) {
+          if (uiState[ALGOLIA_INDEX_NAME] && uiState[ALGOLIA_INDEX_NAME].query) {
+            hitsContainer.style.display = 'block';
+            articleListContainer.style.display = 'none';
+          } else {
+            hitsContainer.style.display = 'none';
+            articleListContainer.style.display = 'block';
+          }
+          setUiState(uiState);
+        },
+      });
+      search.addWidgets([
+        instantsearch.widgets.searchBox({
+          container: '#searchbox-container',
+          placeholder: 'Search...',
+        }),
+        instantsearch.widgets.hits({
+          container: '#hits',
+          templates: {
+            item(hit, { html, components }) {
+              const heroHtml = hit.heroImage 
+                ? `<div class="article-image-container"><img src="${hit.heroImage}" alt="${hit.title}"></div>`
+                : `<div class="article-image-placeholder"></div>`;
+              return html`
+                <div class="article-item">
+                  <a href="${hit.url}">
+                    ${html(heroHtml)}
+                    <div class="article-text-content">
+                      <div class="article-date">${new Date(hit.date).toLocaleDateString('en-US', {month: 'short', day: 'numeric', year: 'numeric' })}</div>
+                      <h2 class="article-title">
+                        ${components.Highlight({ hit, attribute: 'title' })}
+                      </h2>
+                      <div class="article-meta">
+                        <span class="author-name">${hit.author}</span>
+                        ${hit.readingTime ? html`<span>·</span><span class="reading-time">${hit.readingTime} min read</span>` : ''}
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              `;
+            },
+            empty(results, { html }) {
+              return html`<p style="text-align:center; padding: 40px 0;">No results for <q>${results.query}</q>.</p>`;
+            },
+          },
+        })
+      ]);
+      search.start();
+    }
+
+    /* =============================================== */
+    /* === NEW: JavaScript for Search Toggle Logic === */
+    /* =============================================== */
+    try {
+      document.addEventListener('DOMContentLoaded', function() {
+        const searchIconBtn = document.getElementById('search-icon-btn');
+        const searchCloseBtn = document.getElementById('search-close-btn');
+        const searchInput = document.querySelector('.ais-SearchBox-input');
+
+        if (searchIconBtn) {
+          searchIconBtn.addEventListener('click', function() {
+            document.body.classList.add('search-active');
+            // Focus the input for a better user experience
+            if (searchInput) {
+              searchInput.focus();
+            }
+          });
+        }
+
+        if (searchCloseBtn) {
+          searchCloseBtn.addEventListener('click', function() {
+            document.body.classList.remove('search-active');
+          });
+        }
+      });
+    } catch(e) {
+      console.error("Error setting up search toggle:", e);
+    }
+
     /* ======================================================= */
     /* === NOVO: JavaScript para o Dropdown de Idiomas === */
     /* ======================================================= */
@@ -869,8 +775,8 @@ body { font-family: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif; 
       });
     } catch (e) {
       console.error("Error setting up language dropdown:", e);
-    }  
-  </script>
+    }
 
+  </script>
 </body>
 </html>

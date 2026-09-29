@@ -2,7 +2,7 @@
   "articles": [
     {
       "id": "eterna-estabilidade",
-      "title": "Estabilidad Eterna",
+      "title": "Eterna Estabilidad",
       "author": "Vladimir Dietrich",
       "date": "2026-09-29",
       "readingTime": 6,
@@ -13,7 +13,7 @@
         "altText": "",
         "caption": ""
       },
-      "lastUpdated": "2026-09-29T14:15:26.073Z"
+      "lastUpdated": "2026-09-29T15:11:27.258Z"
     },
     {
       "id": "casas-vazias",
@@ -475,5 +475,5 @@
       "lastUpdated": "2025-09-04T20:03:56.044Z"
     }
   ],
-  "lastUpdated": "2026-09-29T14:37:56.382Z"
+  "lastUpdated": "2026-09-29T15:11:39.076Z"
 }
