@@ -1,6 +1,21 @@
 {
   "articles": [
     {
+      "id": "por-que-ias-nao-podem-ler",
+      "title": "Perché le intelligenze artificiali non possono leggere?",
+      "author": "Vladimir Dietrich",
+      "date": "2026-10-14",
+      "readingTime": 4,
+      "heroImage": {
+        "fileName": "por-que-ias-nao-podem-ler-image-hero.webp",
+        "githubPath": "images/por-que-ias-nao-podem-ler-image-hero.webp",
+        "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-ias-nao-podem-ler-image-hero.webp",
+        "altText": "",
+        "caption": ""
+      },
+      "lastUpdated": "2026-10-14T18:22:53.755Z"
+    },
+    {
       "id": "eterna-estabilidade",
       "title": "Eterna Stabilità",
       "author": "Vladimir Dietrich",
@@ -136,5 +151,5 @@
       "lastUpdated": "2026-09-29T15:35:13.429Z"
     }
   ],
-  "lastUpdated": "2026-09-29T21:39:41.203Z"
+  "lastUpdated": "2026-10-14T18:22:54.690Z"
 }

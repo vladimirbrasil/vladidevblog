@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://blog.vladi.dev/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/"/>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://blog.vladi.dev/en/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/"/>
@@ -24,7 +24,7 @@
   </url>
   <url>
     <loc>https://blog.vladi.dev/es/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/"/>
@@ -35,7 +35,7 @@
   </url>
   <url>
     <loc>https://blog.vladi.dev/fr/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/"/>
@@ -46,7 +46,7 @@
   </url>
   <url>
     <loc>https://blog.vladi.dev/de/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/"/>
@@ -57,7 +57,7 @@
   </url>
   <url>
     <loc>https://blog.vladi.dev/it/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/"/>
@@ -68,7 +68,7 @@
   </url>
   <url>
     <loc>https://blog.vladi.dev/ja/</loc>
-    <lastmod>2026-09-29</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/"/>
@@ -1513,6 +1513,83 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/articles/por-que-cuspir-a-consciencia.html"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://blog.vladi.dev/fr/articles/por-que-cuspir-a-consciencia.html"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://blog.vladi.dev/de/articles/por-que-cuspir-a-consciencia.html"/>
+  </url>
+  <url>
+    <loc>https://blog.vladi.dev/articles/por-que-ias-nao-podem-ler.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://blog.vladi.dev/fr/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://blog.vladi.dev/de/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://blog.vladi.dev/it/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://blog.vladi.dev/ja/articles/por-que-ias-nao-podem-ler.html"/>
+  </url>
+  <url>
+    <loc>https://blog.vladi.dev/en/articles/por-que-ias-nao-podem-ler.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://blog.vladi.dev/fr/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://blog.vladi.dev/de/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://blog.vladi.dev/it/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://blog.vladi.dev/ja/articles/por-que-ias-nao-podem-ler.html"/>
+  </url>
+  <url>
+    <loc>https://blog.vladi.dev/es/articles/por-que-ias-nao-podem-ler.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://blog.vladi.dev/fr/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://blog.vladi.dev/de/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://blog.vladi.dev/it/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://blog.vladi.dev/ja/articles/por-que-ias-nao-podem-ler.html"/>
+  </url>
+  <url>
+    <loc>https://blog.vladi.dev/fr/articles/por-que-ias-nao-podem-ler.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://blog.vladi.dev/fr/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://blog.vladi.dev/de/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://blog.vladi.dev/it/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://blog.vladi.dev/ja/articles/por-que-ias-nao-podem-ler.html"/>
+  </url>
+  <url>
+    <loc>https://blog.vladi.dev/de/articles/por-que-ias-nao-podem-ler.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://blog.vladi.dev/fr/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://blog.vladi.dev/de/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://blog.vladi.dev/it/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://blog.vladi.dev/ja/articles/por-que-ias-nao-podem-ler.html"/>
+  </url>
+  <url>
+    <loc>https://blog.vladi.dev/it/articles/por-que-ias-nao-podem-ler.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://blog.vladi.dev/fr/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://blog.vladi.dev/de/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://blog.vladi.dev/it/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://blog.vladi.dev/ja/articles/por-que-ias-nao-podem-ler.html"/>
+  </url>
+  <url>
+    <loc>https://blog.vladi.dev/ja/articles/por-que-ias-nao-podem-ler.html</loc>
+    <lastmod>2026-10-14</lastmod>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://blog.vladi.dev/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://blog.vladi.dev/en/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://blog.vladi.dev/es/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://blog.vladi.dev/fr/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://blog.vladi.dev/de/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://blog.vladi.dev/it/articles/por-que-ias-nao-podem-ler.html"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://blog.vladi.dev/ja/articles/por-que-ias-nao-podem-ler.html"/>
   </url>
   <url>
     <loc>https://blog.vladi.dev/articles/previsivel.html</loc>

@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/en/</link>
     <description>Vladimir Dietrich&apos;s Blog - Vladimir Dietrich</description>
     <language>en</language>
-    <lastBuildDate>Tue, 29 Sep 2026 21:39:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 18:22:54 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/en/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Why AIs can&apos;t read?</title>
+      <link>https://blog.vladi.dev/en/articles/por-que-ias-nao-podem-ler.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/en/articles/por-que-ias-nao-podem-ler.html</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-ias-nao-podem-ler-image-hero.webp&quot; alt=&quot;Why AIs can&amp;apos;t read?&quot; /&gt;</description>
+    </item>
     <item>
       <title>Eternal Stability</title>
       <link>https://blog.vladi.dev/en/articles/eterna-estabilidade.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 11 Sep 2024 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/te-amo-image-0.jpg&quot; alt=&quot;❤️ I Love You&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>The Little Girl Who Leads Us Home</title>
-      <link>https://blog.vladi.dev/en/articles/a-menininha-que-nos-leva-para-casa.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/en/articles/a-menininha-que-nos-leva-para-casa.html</guid>
-      <pubDate>Mon, 22 Apr 2024 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/a-menininha-que-nos-leva-para-casa-image-0.jpg&quot; alt=&quot;The Little Girl Who Leads Us Home&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

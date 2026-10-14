@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/de/</link>
     <description>Blog von Vladimir Dietrich - Vladimir Dietrich</description>
     <language>de</language>
-    <lastBuildDate>Tue, 29 Sep 2026 21:39:41 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 18:22:54 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/de/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Warum können KIs nicht lesen?</title>
+      <link>https://blog.vladi.dev/de/articles/por-que-ias-nao-podem-ler.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/de/articles/por-que-ias-nao-podem-ler.html</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-ias-nao-podem-ler-image-hero.webp&quot; alt=&quot;Warum können KIs nicht lesen?&quot; /&gt;</description>
+    </item>
     <item>
       <title>Ewige Stabilität</title>
       <link>https://blog.vladi.dev/de/articles/eterna-estabilidade.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 19 Sep 2023 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/onde-estamos-image-0.jpg&quot; alt=&quot;Wo stehen wir?&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Stämme im Universum?</title>
-      <link>https://blog.vladi.dev/de/articles/troncos-no-universo.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/de/articles/troncos-no-universo.html</guid>
-      <pubDate>Tue, 11 Apr 2023 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/troncos-no-universo-image-0.png&quot; alt=&quot;Stämme im Universum?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>

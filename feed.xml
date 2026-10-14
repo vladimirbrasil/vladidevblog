@@ -5,8 +5,16 @@
     <link>https://blog.vladi.dev/</link>
     <description>Blog de Vladimir Dietrich - Vladimir Dietrich</description>
     <language>pt</language>
-    <lastBuildDate>Tue, 29 Sep 2026 21:39:40 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 14 Oct 2026 18:22:54 GMT</lastBuildDate>
     <atom:link href="https://blog.vladi.dev/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Por que IAs não podem ler?</title>
+      <link>https://blog.vladi.dev/articles/por-que-ias-nao-podem-ler.html</link>
+      <guid isPermaLink="true">https://blog.vladi.dev/articles/por-que-ias-nao-podem-ler.html</guid>
+      <pubDate>Wed, 14 Oct 2026 12:00:00 GMT</pubDate>
+      <dc:creator>Vladimir Dietrich</dc:creator>
+      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/por-que-ias-nao-podem-ler-image-hero.webp&quot; alt=&quot;Por que IAs não podem ler?&quot; /&gt;</description>
+    </item>
     <item>
       <title>Eterna Estabilidade</title>
       <link>https://blog.vladi.dev/articles/eterna-estabilidade.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 12 Aug 2025 12:00:00 GMT</pubDate>
       <dc:creator>Vladimir Dietrich</dc:creator>
       <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/adeus-empresariar-image-0.png&quot; alt=&quot;Adeus, empresariar&quot; /&gt;</description>
-    </item>
-    <item>
-      <title>Juventude eterna: uma tirania?</title>
-      <link>https://blog.vladi.dev/articles/juventude-eterna-uma-tirania.html</link>
-      <guid isPermaLink="true">https://blog.vladi.dev/articles/juventude-eterna-uma-tirania.html</guid>
-      <pubDate>Wed, 30 Jul 2025 12:00:00 GMT</pubDate>
-      <dc:creator>Vladimir Dietrich</dc:creator>
-      <description>&lt;img src=&quot;https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/juventude-eterna-uma-tirania-image-hero.webp&quot; alt=&quot;Juventude eterna: uma tirania?&quot; /&gt;</description>
     </item>
   </channel>
 </rss>
