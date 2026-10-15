@@ -1,0 +1,62 @@
+# Vladimir Dietrich's Blog
+
+> Blog by Vladimir Dietrich, in 7 languages. CC BY 4.0 license: you may cite and reproduce with attribution (author name + link to original).
+
+## Articles
+- [Por que IAs não podem ler?](https://blog.vladi.dev/articles/por-que-ias-nao-podem-ler.html)
+- [Eterna Estabilidade](https://blog.vladi.dev/articles/eterna-estabilidade.html)
+- [Casas Vazias](https://blog.vladi.dev/articles/casas-vazias.html)
+- [Quero brincar](https://blog.vladi.dev/articles/quero-brincar.html)
+- [Propósito](https://blog.vladi.dev/articles/proposito.html)
+- [Pinóquio](https://blog.vladi.dev/articles/pinoquio.html)
+- [O melhor café](https://blog.vladi.dev/articles/o-melhor-cafe.html)
+- [Valor](https://blog.vladi.dev/articles/valor.html)
+- [Para João e Mariluz](https://blog.vladi.dev/articles/para-joao-e-mariluz.html)
+- [Agora ou Daqui a Pouco?](https://blog.vladi.dev/articles/agora-ou-daqui-a-pouco.html)
+- [Yin Yang](https://blog.vladi.dev/articles/yin-yang.html)
+- [Onde estão as pessoas legais?](https://blog.vladi.dev/articles/onde-estao-as-pessoas-legais.html)
+- [Mudando o Ponto de Equilíbrio da Humanidade](https://blog.vladi.dev/articles/mudando-o-ponto-de-equilibrio-da-humanidade.html)
+- [Entrevista de duas horas](https://blog.vladi.dev/articles/entrevista-de-duas-horas.html)
+- [Adeus, empresariar](https://blog.vladi.dev/articles/adeus-empresariar.html)
+- [Juventude eterna: uma tirania?](https://blog.vladi.dev/articles/juventude-eterna-uma-tirania.html)
+- [Quando a Máquina Pensa, o Homem Sente](https://blog.vladi.dev/articles/quando-a-maquina-pensa-o-homem-sente.html)
+- [Aposentadoria da Razão](https://blog.vladi.dev/articles/aposentadoria-da-razao.html)
+- [Um Blog Fácil](https://blog.vladi.dev/articles/um-blog-facil.html)
+- [❤️ Te Amo](https://blog.vladi.dev/articles/te-amo.html)
+- [A menininha que nos leva para casa](https://blog.vladi.dev/articles/a-menininha-que-nos-leva-para-casa.html)
+- [Onde estamos?](https://blog.vladi.dev/articles/onde-estamos.html)
+- [Consciência entre as pernas](https://blog.vladi.dev/articles/consciencia-entre-as-pernas.html)
+- [Troncos no universo?](https://blog.vladi.dev/articles/troncos-no-universo.html)
+- [Global and Focused Social Medias ❤️](https://blog.vladi.dev/articles/global-and-focused-social-medias.html)
+- [Arranha-[vaidades]](https://blog.vladi.dev/articles/arranha-vaidades.html)
+- [🍎 Eugenia na comunicação?](https://blog.vladi.dev/articles/eugenia-na-comunicacao.html)
+- [Por que cuspir a consciência?](https://blog.vladi.dev/articles/por-que-cuspir-a-consciencia.html)
+- [Neuragame](https://blog.vladi.dev/articles/neuragame.html)
+- [Previsível?](https://blog.vladi.dev/articles/previsivel.html)
+- [Vanilla Skyourself](https://blog.vladi.dev/articles/vanilla-skyourself.html)
+- [Devemos ser preservados para observar?](https://blog.vladi.dev/articles/devemos-ser-preservados-para-observar.html)
+- [Modern punch.](https://blog.vladi.dev/articles/modern-punch.html)
+- [Neither tv, nor youtube](https://blog.vladi.dev/articles/neither-tv-nor-youtube.html)
+- [Instead of whatsapp?](https://blog.vladi.dev/articles/instead-of-whatsapp.html)
+- [Como agradar Noam Chomsky & Yuval Noah Harari?](https://blog.vladi.dev/articles/como-agradar-noam-chomsky-yuval-noah-harari.html)
+- [Noam Chomsky mixed with…](https://blog.vladi.dev/articles/noam-chomsky-mixed-with.html)
+- [Fábrica de coringas?](https://blog.vladi.dev/articles/fabrica-de-coringas.html)
+- [Maximizar mindfulness?](https://blog.vladi.dev/articles/maximizar-mindfulness.html)
+- [Sai o emprego, fica a produção](https://blog.vladi.dev/articles/sai-o-emprego-fica-a-producao.html)
+- [Oblivion](https://blog.vladi.dev/articles/oblivion.html)
+- [A curiosidade humana](https://blog.vladi.dev/articles/a-curiosidade-humana.html)
+- [Repensando o sistema de metas](https://blog.vladi.dev/articles/repensando-o-sistema-de-metas.html)
+- [Spam Calls](https://blog.vladi.dev/articles/spam-calls.html)
+- [Human Soup](https://blog.vladi.dev/articles/human-soup.html)
+- [A Thought About “True Cost”, The Movie](https://blog.vladi.dev/articles/a-thought-about-true-cost-the-movie.html)
+- [Clean your mind? Unsubscribe emails wouldn’t be a bad start](https://blog.vladi.dev/articles/clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start.html)
+- [Política de Uso e Reprodução de Conteúdo](https://blog.vladi.dev/articles/politica-de-uso-e-reproducao-de-conteudo.html)
+
+## Translations
+- Portuguese: https://blog.vladi.dev/
+- English: https://blog.vladi.dev/en/
+- Spanish: https://blog.vladi.dev/es/
+- French: https://blog.vladi.dev/fr/
+- German: https://blog.vladi.dev/de/
+- Italian: https://blog.vladi.dev/it/
+- Japanese: https://blog.vladi.dev/ja/
