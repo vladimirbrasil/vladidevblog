@@ -5,15 +5,28 @@
   "date": "1990-01-01",
   "readingTime": 2,
   "heroImage": {
-    "fileName": "politica-de-uso-e-reproducao-image-0.jpg",
-    "githubPath": "images/politica-de-uso-e-reproducao-image-0.jpg",
-    "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/politica-de-uso-e-reproducao-image-0.jpg",
+    "fileName": "politica-de-uso-e-reproducao-de-conteudo-image-hero.webp",
+    "githubPath": "images/politica-de-uso-e-reproducao-de-conteudo-image-hero.webp",
+    "githubUrl": "https://raw.githubusercontent.com/vladimirbrasil/vladidevblog/main/images/politica-de-uso-e-reproducao-de-conteudo-image-hero.webp",
     "altText": "",
     "caption": ""
   },
-  "lastUpdated": "2025-09-04T20:03:56.044Z",
-  "wordCount": 332,
-  "content": "<p> </p>\n<p>   </p>\n<p>Olá! Fico muito feliz pelo seu interesse em meu trabalho. Todo o conteúdo deste blog é criado com o objetivo de compartilhar conhecimento e ajudar a comunidade.</p>\n<p>Para facilitar o compartilhamento, adotei uma política de uso baseada em Creative Commons, que explico em detalhes abaixo.</p>\n<h2>Em resumo, o que você PODE fazer:</h2>\n<li>✅ <strong>Republicar</strong> meus artigos na íntegra no seu blog, portal ou newsletter.</li>\n<li>✅ <strong>Citar</strong> trechos dos meus artigos em seus próprios trabalhos.</li>\n<li>✅ <strong>Compartilhar</strong> qualquer conteúdo em redes sociais e outros canais.</li>\n<p>Tudo o que peço em troca é que siga as condições de atribuição detalhadas a seguir.</p>\n<h2>Nossas Condições (As Regras)</h2>\n<p>Para garantir que o ecossistema de conteúdo continue saudável e que todos recebam o devido crédito, por favor, siga estas duas regras simples ao reproduzir um artigo:</p>\n<h3>👉 1. Atribuição Clara</h3>\n<p>Você deve dar o crédito de forma clara, mencionando meu nome (<strong>Vladimir Dietrich</strong>) e incluindo um link visível para o artigo original.</p>\n<li><strong>Exemplo no início do artigo:</strong> <em>&quot;Este artigo foi escrito por Vladimir Dietrich e publicado originalmente no blog Vladi.dev (com link para o artigo original).&quot;</em></li>\n<li><strong>Exemplo no final do artigo:</strong> <em>&quot;O artigo &#039;Título do Artigo&#039; (com link para o original) foi escrito por Vladimir Dietrich.&quot;</em></li>\n<h3>👉 2. Link Canônico (Essencial para SEO)</h3>\n<p>Fico feliz que queira republicar! Além de citar a fonte, peço a gentileza de inserir a canonical tag no &lt;head&gt; da sua página. É uma linha de código que informa ao Google qual é a fonte original do conteúdo, evitando problemas de conteúdo duplicado para nós dois.</p>\n<p>Basta adicionar este código dentro da tag &lt;head&gt; do seu HTML:</p>\n<p>&lt;link rel=&quot;canonical&quot; href=&quot;https://ojs.sites.ufsc.br/index.php/avant/libraryFiles/downloadPublic/48&quot;&gt;</p>\n<p>Substitua https://ojs.sites.ufsc.br/index.php/avant/libraryFiles/downloadPublic/48 pela URL completa do post que você está republicando.</p>\n<h2>Dúvidas?</h2>\n<p>Se tiver qualquer pergunta sobre o uso do conteúdo ou quiser propor algum tipo de parceria, por favor, entre em <a href=\"mailto:hello@vladi.dev\" target=\"_blank\" rel=\"noopener noreferrer\">contato</a>: hello@vladi.dev.</p>\n<p>Agradeço muito por ajudar a compartilhar este conhecimento!</p>\n",
+  "lastUpdated": "2026-10-16T07:41:47.223Z",
+  "publishedLanguages": [
+    "pt",
+    "en",
+    "es",
+    "fr",
+    "de"
+  ],
+  "translatedTitles": {
+    "en": "Content Use and Reproduction Policy",
+    "es": "Política de Uso y Reproducción de Contenido",
+    "fr": "Politique d'utilisation et de reproduction de contenu",
+    "de": "Nutzungs- und Reproduktionsrichtlinie für Inhalte"
+  },
+  "wordCount": 359,
+  "content": "<p> </p>\n<p>   </p>\n<p>Olá! Fico muito feliz pelo seu interesse em meu trabalho. Todo o conteúdo deste blog é criado com o objetivo de compartilhar conhecimento e ajudar a comunidade.</p>\n<p>Para facilitar o compartilhamento, adotei uma política de uso baseada em Creative Commons, que explico em detalhes abaixo.</p>\n<h2>Em resumo, o que você PODE fazer:</h2>\n<li>✅ <strong>Republicar</strong> meus artigos na íntegra no seu blog, portal ou newsletter.</li>\n<li>✅ <strong>Citar</strong> trechos dos meus artigos em seus próprios trabalhos.</li>\n<li>✅ <strong>Compartilhar</strong> qualquer conteúdo em redes sociais e outros canais.</li>\n<li>✅ <strong>Deixar que IAs leiam</strong>, resumam e citem estes textos (assistentes, buscadores e modelos de linguagem), com o mesmo crédito: meu nome e link para o artigo original.</li>\n<p>Tudo o que peço em troca é que siga as condições de atribuição detalhadas a seguir.</p>\n<h2>Nossas Condições (As Regras)</h2>\n<p>Para garantir que o ecossistema de conteúdo continue saudável e que todos recebam o devido crédito, por favor, siga estas duas regras simples ao reproduzir um artigo:</p>\n<h3>👉 1. Atribuição Clara</h3>\n<p>Você deve dar o crédito de forma clara, mencionando meu nome (<strong>Vladimir Dietrich</strong>) e incluindo um link visível para o artigo original.</p>\n<li><strong>Exemplo no início do artigo:</strong> <em>&quot;Este artigo foi escrito por Vladimir Dietrich e publicado originalmente no blog Vladi.dev (com link para o artigo original).&quot;</em></li>\n<li><strong>Exemplo no final do artigo:</strong> <em>&quot;O artigo &#039;Título do Artigo&#039; (com link para o original) foi escrito por Vladimir Dietrich.&quot;</em></li>\n<h3>👉 2. Link Canônico (Essencial para SEO)</h3>\n<p>Fico feliz que queira republicar! Além de citar a fonte, peço a gentileza de inserir a canonical tag no &lt;head&gt; da sua página. É uma linha de código que informa ao Google qual é a fonte original do conteúdo, evitando problemas de conteúdo duplicado para nós dois.</p>\n<p>Basta adicionar este código dentro da tag &lt;head&gt; do seu HTML:</p>\n<p>&lt;link rel=&quot;canonical&quot; href=&quot;https://blog.vladi.dev/articles/titulo-do-artigo.html&quot;&gt;</p>\n<p>Substitua https://blog.vladi.dev/articles/titulo-do-artigo.html pelo endereço do artigo original, aqui no blog.</p>\n<h2>Dúvidas?</h2>\n<p>Se tiver qualquer pergunta sobre o uso do conteúdo ou quiser propor algum tipo de parceria, por favor, entre em <a href=\"mailto:hello@vladi.dev\" target=\"_blank\" rel=\"noopener noreferrer\">contato</a>: hello@vladi.dev.</p>\n<p>Agradeço muito por ajudar a compartilhar este conhecimento!</p>\n",
   "images": [],
-  "contentHash": "4aa26d112cc5c7a0b08c4aa4a18"
+  "contentHash": "6094a2dc4600019747c6f76b"
 }

@@ -50,7 +50,7 @@
 - [Human Soup](https://blog.vladi.dev/articles/human-soup.html)
 - [A Thought About “True Cost”, The Movie](https://blog.vladi.dev/articles/a-thought-about-true-cost-the-movie.html)
 - [Clean your mind? Unsubscribe emails wouldn’t be a bad start](https://blog.vladi.dev/articles/clean-your-mind-unsubscribe-emails-wouldnt-be-a-bad-start.html)
-- [Política de Uso e Reprodução de Conteúdo](https://blog.vladi.dev/articles/politica-de-uso-e-reproducao-de-conteudo.html)
+- [Política de Uso e Reprodução de Conteúdo](https://blog.vladi.dev/articles/politica-de-uso-e-reproducao-de-conteudo.html): Olá! Fico muito feliz pelo seu interesse em meu trabalho. Todo o conteúdo deste blog é criado com o objetivo de compartilhar conhecimento e ajudar a comunidade.
 
 ## Translations
 - Portuguese: https://blog.vladi.dev/
